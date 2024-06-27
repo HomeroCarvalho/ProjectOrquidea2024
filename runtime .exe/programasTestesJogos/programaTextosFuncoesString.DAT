@@ -1,0 +1,11 @@
+FunctionsGame functions = create();
+
+int saida=0;
+int contador=1;
+string newText="oi";
+while (saida<1)
+{
+	
+	newText=functions.ParseFromIntToString(contador);
+	contador= contador+1;
+}

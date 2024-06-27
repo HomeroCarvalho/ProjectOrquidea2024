@@ -1,0 +1,84 @@
+// acesso a funcoes de utilizade.
+FunctionsGame functions = create();
+
+
+int x1=0;
+
+// handler para tecla esquerda.
+ExpressionBase handlerLeftDWON= create("x1=x1-50");
+ExpressionBase handlerLeftUP= create("x1=0");
+
+// handler para tecla direita.
+ExpressionBase handlerRightDOWN= create("x1=x1+50");
+ExpressionBase handlerRightUP= create("x1=0");
+
+// registro dos handlers.
+Input.AddKeyDown("left", handlerLeftDWON);
+Input.AddKeyUp("left", handlerLeftUP)
+Input.AddKeyDown("right", handlerRightDOWN);
+Input.AddKeyUp("right", handlerRightUP);
+
+
+
+
+//Loop do jogo.
+// variaveis de dimensoes da tela (adicionar metodo de redimensionamento de tela);
+int widthTela= 1000;
+int heightTela= 800;
+LoopGame loop= create();
+loop.StartScreen(widthTela,heightTela);
+
+loop.LoadImages();
+
+
+// texto Text.
+Text txtHello= create("Jogo 8!");
+// variaveis de processamento do texto.
+int idTextHello= 0;
+int xTextHello = 0;
+int yTextHello = 0;
+
+
+// texto contador.
+Text txtContador= create("contando!");
+// variaveis de processamento do texto contador (id do Texto a obter via codigo).
+int idContador= 1;
+int xTextContador = 0;
+int yTextContador = 150;
+string newTextContador="init contador: ";
+int contador=0;
+
+int saida=1;
+while (saida>0)
+{
+	
+	// processamento de desenhos.
+	loop.BeginToDraw();
+
+		
+		loop.DrawText(idTextHello,xTextHello,yTextHello);
+		loop.DrawText(idContador,xTextContador,yTextContador);
+			
+	loop.ClearScreen();
+
+	loop.EndToDraw();
+	
+	
+	// processamento de entrada de teclado.
+	Input.Update();	
+
+
+	
+	
+	newTextContador= "contando menos:  " + functions.ParseFromIntToString(contador);
+	contador=contador+1;
+	txtContador.ModifyText(newTextContador);		
+	
+	
+	
+
+	
+	saida= loop.CloseWindow();
+	
+	
+};

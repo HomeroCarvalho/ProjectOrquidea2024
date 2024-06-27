@@ -1,0 +1,122 @@
+
+
+Time: 07/05/2024 09:30:42  Message: testes da classe game library
+Time: 07/05/2024 09:30:42  Message: teste: TestesJogoSpaceInvaders, na classe: Testes gerou excecao que interrompeu o seu processamento. falha porque: Exception has been thrown by the target of an invocation., Stack:    at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at parser.SuiteClasseTestes.ExecutaTestes() in F:\BACUKPS\ProjectOrquidea2024\ProjectOrquidea2024\testes\SuiteClasseTestes.cs:line 392
+
+
+Time: 07/05/2024 09:30:42  Message: teste: TesteImagensEInput, na classe: Testes gerou excecao que interrompeu o seu processamento. falha porque: Exception has been thrown by the target of an invocation., Stack:    at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at parser.SuiteClasseTestes.ExecutaTestes() in F:\BACUKPS\ProjectOrquidea2024\ProjectOrquidea2024\testes\SuiteClasseTestes.cs:line 392
+
+
+Time: 07/05/2024 09:30:42  Message: teste: TesteProgramaColisao, na classe: Testes gerou excecao que interrompeu o seu processamento. falha porque: Exception has been thrown by the target of an invocation., Stack:    at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at parser.SuiteClasseTestes.ExecutaTestes() in F:\BACUKPS\ProjectOrquidea2024\ProjectOrquidea2024\testes\SuiteClasseTestes.cs:line 392
+
+
+Time: 07/05/2024 09:30:42  Message: teste: TesteProgramaTextos, na classe: Testes gerou excecao que interrompeu o seu processamento. falha porque: Exception has been thrown by the target of an invocation., Stack:    at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at parser.SuiteClasseTestes.ExecutaTestes() in F:\BACUKPS\ProjectOrquidea2024\ProjectOrquidea2024\testes\SuiteClasseTestes.cs:line 392
+
+
+Time: 07/05/2024 09:30:42  Message: teste: TesteJogoOrquideaUnits, na classe: Testes gerou excecao que interrompeu o seu processamento. falha porque: Exception has been thrown by the target of an invocation., Stack:    at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at parser.SuiteClasseTestes.ExecutaTestes() in F:\BACUKPS\ProjectOrquidea2024\ProjectOrquidea2024\testes\SuiteClasseTestes.cs:line 392
+
+
+Time: 07/05/2024 09:30:42  Message: teste: TesteClassOrquideaComTeclado, na classe: Testes gerou excecao que interrompeu o seu processamento. falha porque: Exception has been thrown by the target of an invocation., Stack:    at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at parser.SuiteClasseTestes.ExecutaTestes() in F:\BACUKPS\ProjectOrquidea2024\ProjectOrquidea2024\testes\SuiteClasseTestes.cs:line 392
+
+
+Time: 07/05/2024 09:30:42  Message: teste: TesteProgramaTeclado, na classe: Testes gerou excecao que interrompeu o seu processamento. falha porque: Exception has been thrown by the target of an invocation., Stack:    at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at parser.SuiteClasseTestes.ExecutaTestes() in F:\BACUKPS\ProjectOrquidea2024\ProjectOrquidea2024\testes\SuiteClasseTestes.cs:line 392
+
+
+Time: 07/05/2024 09:30:42  Message: teste: TesteEsbocoCriacaoVector, na classe: Testes gerou excecao que interrompeu o seu processamento. falha porque: Exception has been thrown by the target of an invocation., Stack:    at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at parser.SuiteClasseTestes.ExecutaTestes() in F:\BACUKPS\ProjectOrquidea2024\ProjectOrquidea2024\testes\SuiteClasseTestes.cs:line 392
+
+
+Time: 07/05/2024 09:30:42  Message: teste: TesteScreenEmOrquidea, na classe: Testes gerou excecao que interrompeu o seu processamento. falha porque: Exception has been thrown by the target of an invocation., Stack:    at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at parser.SuiteClasseTestes.ExecutaTestes() in F:\BACUKPS\ProjectOrquidea2024\ProjectOrquidea2024\testes\SuiteClasseTestes.cs:line 392
+
+
+Time: 07/05/2024 09:30:42  Message: teste: TestesFuncoesUtils, na classe: Testes gerou excecao que interrompeu o seu processamento. falha porque: Exception has been thrown by the target of an invocation., Stack:    at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at parser.SuiteClasseTestes.ExecutaTestes() in F:\BACUKPS\ProjectOrquidea2024\ProjectOrquidea2024\testes\SuiteClasseTestes.cs:line 392
+
+
+Time: 07/05/2024 09:30:42  Message: teste: TesteProgramaEsbocoJogo1, na classe: Testes gerou excecao que interrompeu o seu processamento. falha porque: Exception has been thrown by the target of an invocation., Stack:    at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at parser.SuiteClasseTestes.ExecutaTestes() in F:\BACUKPS\ProjectOrquidea2024\ProjectOrquidea2024\testes\SuiteClasseTestes.cs:line 392
+
+
+Time: 07/05/2024 09:30:42  Message:   teste: [TesteImagensEInput]:   [TESTE NAO PASSOU.]info: TESTE FALHOU:  Could not find file 'F:\BACUKPS\ProjectOrquidea2024\ProjectOrquidea2024\bin\x86\Release\net8.0\ORQUIDIA.xml'.
+Time: 07/05/2024 09:30:42  Message:   teste: [TesteProgramaColisao]:   [TESTE NAO PASSOU.]info: TESTE FALHOU:  Could not find file 'F:\BACUKPS\ProjectOrquidea2024\ProjectOrquidea2024\bin\x86\Release\net8.0\ORQUIDIA.xml'.
+Time: 07/05/2024 09:30:42  Message: teste: TesteExpressionBase2, na classe: Testes gerou excecao que interrompeu o seu processamento. falha porque: Exception has been thrown by the target of an invocation., Stack:    at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at parser.SuiteClasseTestes.ExecutaTestes() in F:\BACUKPS\ProjectOrquidea2024\ProjectOrquidea2024\testes\SuiteClasseTestes.cs:line 392
+
+
+Time: 07/05/2024 09:30:42  Message: teste: TesteFuncoesString, na classe: Testes gerou excecao que interrompeu o seu processamento. falha porque: Exception has been thrown by the target of an invocation., Stack:    at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at parser.SuiteClasseTestes.ExecutaTestes() in F:\BACUKPS\ProjectOrquidea2024\ProjectOrquidea2024\testes\SuiteClasseTestes.cs:line 392
+
+
+Time: 07/05/2024 09:30:42  Message: teste: TestesProgramVMCreateInstrucao, na classe: Testes gerou excecao que interrompeu o seu processamento. falha porque: Exception has been thrown by the target of an invocation., Stack:    at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at parser.SuiteClasseTestes.ExecutaTestes() in F:\BACUKPS\ProjectOrquidea2024\ProjectOrquidea2024\testes\SuiteClasseTestes.cs:line 392
+
+
+Time: 07/05/2024 09:30:42  Message:   teste: [TesteProgramaTextos]:   [TESTE NAO PASSOU.]info: TESTE FALHOU:  Could not find file 'F:\BACUKPS\ProjectOrquidea2024\ProjectOrquidea2024\bin\x86\Release\net8.0\ORQUIDIA.xml'.
+Time: 07/05/2024 09:30:42  Message:   teste: [TesteJogoOrquideaUnits]:   [TESTE NAO PASSOU.]info: TESTE FALHOU:  Could not find file 'F:\BACUKPS\ProjectOrquidea2024\ProjectOrquidea2024\bin\x86\Release\net8.0\ORQUIDIA.xml'.
+
+
+Time: 07/05/2024 09:30:42  Message: todos cenarios de testes executados em: 346  mls.   
+
+
+
+
+Time: 07/06/2024 08:04:47  Message: TESTE DE DESEMPENHO BIBLIOTECA GRAFICA
+Time: 07/06/2024 08:04:47  Message: teste: TesteInvaderVersao2, na classe: Testes gerou excecao que interrompeu o seu processamento. falha porque: Exception has been thrown by the target of an invocation., Stack:    at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at parser.SuiteClasseTestes.ExecutaTestes() in F:\BACUKPS\ProjetoOrquidea2024_2\ProjectOrquidea2024\ProjectOrquidea2024\testes\SuiteClasseTestes.cs:line 392
+
+
+Time: 07/06/2024 08:04:47  Message: teste: TestesTextos, na classe: Testes gerou excecao que interrompeu o seu processamento. falha porque: Exception has been thrown by the target of an invocation., Stack:    at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at parser.SuiteClasseTestes.ExecutaTestes() in F:\BACUKPS\ProjetoOrquidea2024_2\ProjectOrquidea2024\ProjectOrquidea2024\testes\SuiteClasseTestes.cs:line 392
+
+
+Time: 07/06/2024 08:04:47  Message: teste: TesteInvadersSFMLComImagens, na classe: Testes gerou excecao que interrompeu o seu processamento. falha porque: Exception has been thrown by the target of an invocation., Stack:    at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at parser.SuiteClasseTestes.ExecutaTestes() in F:\BACUKPS\ProjetoOrquidea2024_2\ProjectOrquidea2024\ProjectOrquidea2024\testes\SuiteClasseTestes.cs:line 392
+
+
+
+
+Time: 07/06/2024 08:04:47  Message: todos cenarios de testes executados em: 220  mls.   
+
+

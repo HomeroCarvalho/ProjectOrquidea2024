@@ -1,0 +1,71 @@
+public class Entity{ 
+
+
+	public Imagem imageEntity;
+
+	// construtor. carrega a imagem do Entity, e seta as coordenadas de desenho da imagem do Entity.
+	public Entity(string pathFileImage, double xEntity, double yEntity){
+	
+
+		actual.imageEntity= create(pathFileImage, xEntity, yEntity);
+		actual.imageEntity.SetX(xEntity);
+		actual.imageEntity.SetY(yEntity);
+		
+	}; 
+	
+	
+		
+	// atualiza a situação do Entity.
+	public UpdateEntity()
+	{
+		  Prompt.sWrite("atualizando..");
+	
+	};
+		
+	public DrawEntity(LoopGame ls)
+	{
+		ls.Draw(actual.imageEntity);
+		
+	};
+
+ }
+ 
+
+// instancia o loop do game.
+LoopGame loopX= create();
+// seta as coordenadas da tela.
+loopX.StartScreen(900,700);
+
+
+// instancia um Entity, com possibilidade de instanciar mais, em escala industrial.
+Entity[] v1[20];
+Entity e = create("images\set1\Lich_1.png", 50.0, 500.0);
+v1[0] = e; 
+
+
+
+// carrega imagens.
+loopX.LoadImages(); 
+
+
+
+ 
+
+
+int saida=1;
+// loop de iteração do jogo.
+while  (saida>0){
+	
+	// processamento de desenhos.
+	loopX.BeginToDraw();
+
+		v1[0].DrawEntity(loopX);
+	
+	loopX.ClearScreen();
+	
+	loopX.EndToDraw();
+
+	
+};
+
+

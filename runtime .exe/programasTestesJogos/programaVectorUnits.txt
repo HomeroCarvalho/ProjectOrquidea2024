@@ -1,0 +1,115 @@
+public class Entity{ 
+
+
+	public Imagem imageEntity;
+	
+	public double xxImage;
+	public double yyImage;
+	
+
+	
+
+	// construtor. carrega a imagem do Entity, e seta as coordenadas de desenho da imagem do Entity.
+	public Entity(string pathFileImage, double xEntity2, double yEntity2){
+	
+		// registra os handlers de teclado. precisa uma classe [Player], para entrada de input de teclado.
+		Input.AddKeyDown("left", "actual.DecX();");
+		Input.AddKeyDown("right", "actual.IncX();");
+		
+		actual.xxImage = xEntity2;
+		actual.yyImage = yEntity2;
+		
+		
+		actual.imageEntity = create(pathFileImage);
+		
+	}; 
+	
+	
+		
+	// atualiza a situação do Entity.
+	public UpdateEntity()
+	{
+		  Prompt.sWrite("atualizando..");
+	
+	};
+		
+		
+	public DrawEntity(LoopGame ls)
+	{
+		// temporariamente desenhando a mesma textura. alterar id=0, para o id da imagem do entity currente.
+		ls.Draw(0,actual.xxImage, actual.yyImage);
+		
+	};
+
+	public IncX(){
+		
+		actual.xxImage=actual.xxImage+15.0;
+	}
+	
+	public DecX(){
+		
+		actual.xxImage=actual.xxImage-15.0;
+	}
+ }
+ 
+
+// instancia o loop do game.
+LoopGame loopX= create();
+// seta as coordenadas da tela.
+loopX.StartScreen(1000,800);
+
+
+
+Entity[] v1[20];
+
+double inc= 0.0;
+double xCoords=0.0;
+
+
+// instancia muitos entities.
+for (int i=0;i<5;i++){
+
+	xCoords= xCoords + 50.0;
+	Entity e1 = create("images\set1\Werebeast_1.png", xCoords, 350.0);
+	v1[i] = e1;
+
+
+};
+
+
+
+
+
+int saida=1;
+
+// carrega imagens.
+loopX.LoadImages(); 
+
+// loop de iteração do jogo.
+while  (saida>0){
+	
+	// processamento de desenhos.
+	loopX.BeginToDraw();
+
+		
+	
+		v1[0].DrawEntity(loopX);
+		v1[1].DrawEntity(loopX);
+		
+		
+		
+		
+	
+	loopX.ClearScreen();
+	
+	loopX.EndToDraw();
+
+	// processamento de teclado.
+	Input.Update();
+	
+	
+	// atualiza a malha while.
+	saida= loopX.CloseWindow();
+};
+
+

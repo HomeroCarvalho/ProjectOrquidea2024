@@ -1,0 +1,471 @@
+
+// instancia o loop do game.
+LoopGame window= create(1100,900,"esboco space invaders");
+window.SetFps(45);
+
+FunctionsGame fnc= create();
+
+//____________________________________________________________________________________________________________
+// SOMS UTILIZADOS NO GAME.
+Sound soundShot=create();
+Sound soundHit= create();
+soundShot.LoadSound("programa jogos\assets space invaders\shotPlayer.ogg", "shot");
+soundHit.LoadSound("programa jogos\assets space invaders\hit.ogg", "hit");
+
+// MUSICA DE FUNDO.
+Sound musicBackground= create();
+musicBackground.LoadMusic("programa jogos\assets space invaders\music1.ogg", "music1");
+musicBackground.PlayMusic("music1");
+
+//____________________________________________________________________________________________________________
+
+// coordenadas do texto de pontuacao.
+double coordXScoreText=0;
+double coordYScoreText=0;
+
+// instancia os textos info do jogo.
+Text apresentacao= create("jogo invaders!",200.0,0.0, 35);
+Text txtScore= create("pontos:0",coordXScoreText,coordYScoreText,35);
+Text txtGameOver= create("GAME OVER! Press [ENTER] to PLAY AGAIN",200.0,400.0,35);
+
+//______________________________________________________________________________________________________________
+// DADOS DOS BULLETS dos invaders.
+							 
+Imagem bulletInvader= create("programa jogos\assets space invaders\invaders_bullet.png");
+int maxBullets=11;
+int countBullets=0;
+double velBullet=5.0;
+
+// vectors de posicao dos bullets dos invader.
+double[] coord_X_BULLET_INVADER[1];
+double[] coord_Y_BULLET_INVADER[1];
+
+coord_X_BULLET_INVADER.Clear();
+coord_Y_BULLET_INVADER.Clear();
+//____________________________________________________________________________________________________________
+// DADOS DOS MISSEIS DO PLAYER
+int maxMissels= 5;
+int countMissels=0;
+double velMissel= 11.0;
+
+// vectors de posicao de misseis do player.
+double[] coordXMissel[1];
+double[] coordYMissel[1];
+
+coordXMissel.Clear();
+coordYMissel.Clear();
+
+Imagem imageMissel= create("programa jogos\assets space invaders\missel_1.png");
+
+//____________________________________________________________________________________________________________
+// DADOS DOS INVADERS.
+// quantidade de invaders na onda de invasao.
+int qtdInvaders=8;
+int maxInvaders=8;
+
+// velocidade dos invaders, podendo aumentar, como no jogo original.
+double velInvadersInit=6.0;
+double velInvaders=velInvadersInit;
+
+
+// coordenadas de desenho da formacao de onda invaders;
+double xxInit=0.0;
+double yyInit=20.0;
+
+double xx=xxInit;
+double yy=yyInit;
+
+
+// variavel de controle de descida da onda de invaders.
+double direction= 1.0;
+
+
+// instancia um vetor de imagens, e cria as imagens.
+Imagem[] imagesInvaders[qtdInvaders];
+imagesInvaders.Clear();
+for (int j=0;j<qtdInvaders;j++)
+{
+	Imagem imgInvader= create("programa jogos\assets space invaders\invader1.png");
+	imagesInvaders.Append(imgInvader);
+};
+
+//____________________________________________________________________________________________________________
+// dados da nave do player;
+double xPlayerInit= 450.0;
+double yPlayerInit= 600.0;
+
+double xPlayer=xPlayerInit;
+double yPlayer=yPlayerInit;
+
+
+Imagem imgPlayer= create("programa jogos\assets space invaders\player.png");
+
+// dados das naves dos invaders;
+double[] coordsXInvader[qtdInvaders];
+double[] coordsYInvader[qtdInvaders]; 
+double initXInvader= 0.0;
+double initYInvader= 50.0;
+
+int scorePlayer=0;
+//____________________________________________________________________________________________________________
+		
+
+// variavel de controle de fechamento da janela de jogo.
+int continua=0;
+
+// variaveis de malha.
+int j=0;
+int k=0;
+
+// texto de atualização do score.
+string newTextScore="";
+
+// variavel de probabilidade de tiro dos invaders.
+int chanceToShot=0;
+
+// variavel de malha de vetores.
+int i=0;
+
+// coordenadas de bullet atirada.
+double xPos=0.0;
+double yPos=0.0;
+
+int gameOver=0;
+
+// inicializa os vetores de coordenadas dos invaders.
+for (i=0;i<maxInvaders;i++)
+{
+	
+	coordsXInvader[i]= initXInvader+(43.0)*Castings.IntToDouble(i);
+	coordsYInvader[i]= 20.0;
+};
+
+RectangleCollision rectColisoes= create(0.0,0.0,0,0);
+
+// loop de iteração do jogo.
+while (continua==0)
+{
+	
+	window.dispachEvents();
+	
+	// inicio da area de desenhos.
+	window.BeginDraw();
+
+
+	// desenha um texto de apresentacao.
+	window.DrawText(apresentacao, 200.0, 0.0);
+	// desenha o texto do placar.
+	window.DrawText(1,0.0,0.0);
+
+	// se o jogo nao acabou, desenha o player, os invaders, os misseis do player, os bullets do player.
+	if (gameOver==0)
+	{
+		// DESENHO DAS IMAGENS DOS INVADERS.
+		for (j=0;j<coordsXInvader.size();j++)
+		{
+			window.Draw(imagesInvaders[j],coordsXInvader[j], coordsYInvader[j]);
+		};
+		
+		// DESENHO DA NAVE DO PLAYER.
+		window.Draw(imgPlayer,xPlayer,yPlayer);
+		
+	
+		// DESENHO DOS BULLETS DOS INVADERS.
+		for (j=0;j<coord_Y_BULLET_INVADER.size();j++)
+		{
+			window.Draw(bulletInvader, coord_X_BULLET_INVADER[j], coord_Y_BULLET_INVADER[j]);
+			
+			if (coord_Y_BULLET_INVADER[j]>yPlayer)
+			{
+				coord_X_BULLET_INVADER.remove(j);
+				coord_Y_BULLET_INVADER.remove(j);
+				countBullets= countBullets-1;
+				if (countBullets<0)
+				{
+					countBullets=0;
+				}
+			
+			};
+		};
+	
+	
+		// DESENHO DOS MISSEIS DO PLAYER.
+		for (j=0;j<coordXMissel.size();j++)
+		{
+			window.Draw(imageMissel, coordXMissel[j], coordYMissel[j]);	
+			
+			// se atingiu a borda da tela, remove o missel.
+			if (coordYMissel[j]<=0.0)
+			{
+				coordYMissel[j]= yPlayer-32.0;
+				coordXMissel.remove(j);
+				coordYMissel.remove(j);
+				countMissels= countMissels-1;
+				
+			};
+		};
+	};
+	
+	if (gameOver==1)
+	{
+		window.DrawText(txtGameOver,200.0,400.0);	
+	}
+		
+		
+	
+	
+	// verificacao de termino de jogo:
+	qtdInvaders= coordsXInvader.size();
+	if (qtdInvaders>0)
+	{
+		if (coordsYInvader[0]>yPlayer)
+		{
+			gameOver=1;
+			
+		};
+	
+	};
+	
+	
+	// fim da area de desenhos.
+	window.EndDraw();
+
+	
+	
+	
+
+	// controle da nave do player, INDO PARA ESQUERDA.
+	if (Input.isKeyDown("left"))
+	{
+		xPlayer=xPlayer-5.5;
+	
+	};
+	
+	// controle da nave do player, INDO PARA DIREITA.
+	if (Input.isKeyDown("right"))
+	{
+		xPlayer=xPlayer+5.5;
+	};
+	
+	// tecla de reinicio do jogo.
+	if (gameOver==1){
+		
+		if (Input.isKeyDown("enter"))
+		{
+			// muda o estado do jogo, para reiniciar os desenhos dos objetos do jogo.
+			gameOver=0;
+			
+			coordsXInvader.Clear();
+			coordsYInvader.Clear();
+			// reseta os invaders, reinicializando suas posicoes.
+			for (i=0;i<maxInvaders;i++)
+			{
+				double xPos=initXInvader+(43.0)*Castings.IntToDouble(i);
+				double yPos= 20.0;
+				// o problema do Append, passou no teste, mas no jogo nao esta funcionando.
+				coordsXInvader.Append(xPos);
+				coordsYInvader.Append(yPos);
+			};
+			
+			// constroi as imagens dos invaders.
+			imagesInvaders.Clear();
+			for (i=0;i<maxInvaders;i++)
+			{
+				Imagem imgInvader1= create("programa jogos\assets space invaders\invader1.png");
+				imagesInvaders.Append(imgInvader1);
+			};
+
+			
+			// reseta os bullets invaders.
+			coord_X_BULLET_INVADER.Clear();
+			coord_Y_BULLET_INVADER.Clear();
+			// reseta os misseis do player.
+			coordXMissel.Clear();
+			coordYMissel.Clear();
+			
+			// inicializa a variavel de contagem de invaders.
+			qtdInvaders= maxInvaders;
+			
+			// reinicializa as coordnadas do player.
+			xPlayer= xPlayerInit;
+			yPlayer= yPlayerInit;
+
+			// reseta as coordenadas ancora do grupo de invaders.
+			xx=xxInit;
+			yy=yyInit;
+			// reseta a velocidade dos invaders.
+			velInvaders= velInvadersInit;
+			
+			
+			// reseta os contadores de bullets.
+			countBullets=0;
+			countMissels=0;
+			// aumenta a quantidade de misseis, como bonus;
+			maxMissels= 5+6;
+			
+			// direção da onda dos invaders.
+			direction=1.0;
+		}
+		
+	}
+	
+	
+	// DISPARO DO PLAYER;
+	if (Input.isKeyDown("space"))
+	{
+		
+		if (gameOver==0)
+		{
+			if (countMissels<maxMissels)
+			{
+				soundShot.PlaySound("shot");
+				coordXMissel.Append(xPlayer + 40.0);
+				coordYMissel.Append(yPlayer - 80.0);
+				countMissels= countMissels+1;
+			};
+		};
+		
+	};
+	
+	// DISPARO DO INVADER;
+	for (j=0;j<coordsXInvader.size();j++)
+	{
+		// decisao de invaders disparar. 
+		chanceToShot=fnc.RandomInt(0, 100);
+		
+		if (chanceToShot==1)
+		{		
+			
+			if (countBullets<maxBullets)
+			{
+				soundShot.PlaySound("shot");
+				xPos= coordsXInvader[j]+20.0;
+				yPos= coordsYInvader[j]+30.0;
+				
+				coord_X_BULLET_INVADER.Append(xPos);
+				coord_Y_BULLET_INVADER.Append(yPos); 
+				
+				countBullets=countBullets+1;
+			};	
+		};	
+	};
+	
+//______________________________________________________________________________________________________________________
+// movimentos dos invaders.
+		
+	// atualiza a posicao ancora.
+	xx=xx+velInvaders*direction;
+	
+	
+	// atualiza a posicao dos invaders.
+	for (j=0;j<coordsXInvader.size();j++)
+	{
+		coordsXInvader[j]= coordsXInvader[j]+velInvaders*direction;
+	};
+		
+	qtdInvaders= coordsXInvader.size();
+	// se atingiu os limites da tela, inverte a direção.
+	if ((xx+Castings.IntToDouble(qtdInvaders*40))> 1100.0)
+	{
+		direction=-1.0;
+		xx= 1100.0 - Castings.IntToDouble(qtdInvaders*40);
+		velInvaders= velInvaders*1.15;
+		
+		for (k=0;k<coordsXInvader.size();k++){
+			
+			coordsXInvader[k]=xx-Castings.IntToDouble(k*40);
+			coordsYInvader[k]= coordsYInvader[k]+30.0;
+		};
+	};
+	
+	// se atingiu os limites da tela, inverte a direção.
+	if (xx < 5.0)
+	{
+		direction= 1.0;
+		xx= 6.0;
+		velInvaders= velInvaders*1.15;
+		
+		for (k=0;k<coordsXInvader.size();k++){
+			
+			coordsXInvader[k]=xx+Castings.IntToDouble(k*40);
+			coordsYInvader[k]= coordsYInvader[k]+30.0;
+		};
+
+	};
+	
+
+	
+	// ATUALIZACAO DOS MISSEIS DO PLAYER,
+	// E TESTES DE COLISAO MISSEIS vs. INVADERS.
+	for (j=0;j<coordYMissel.size();j++)
+	{
+		
+		coordYMissel[j]= coordYMissel[j]- velMissel;
+		
+		for (k=0; k<coordsXInvader.size();k++)
+		{
+			if (rect.isCollideImagens(coordXMissel[j],coordYMissel[j] , coordsXInvader[k], coordsYInvader[k], 32, 80, 40, 40))
+			{
+				
+				// som de atingir o invader.
+				soundHit.PlaySound("hit");
+				
+				// remocao do invader atingido.
+				coordsXInvader.remove(k);
+				coordsYInvader.remove(k);
+				imagesInvaders.remove(k);
+				qtdInvaders= qtdInvaders-1;
+			
+		
+				
+				// remocao do missel atigido.
+				coordXMissel.remove(j);
+				coordYMissel.remove(j);
+				countMissels= countMissels-1;
+	
+				
+				// pontuacao do player, que destruiu um invader.
+				scorePlayer= scorePlayer+1;
+				// modifica o placar do jogo.	
+				newTextScore="pontos: "+Castings.ToString(scorePlayer);
+				txtScore.SetText(newTextScore,coordXScoreText, coordYScoreText);
+
+				if (qtdInvaders<=0)
+				{
+					// fim de jogo, o player destruiu todos invaders.
+					gameOver=1;
+				};
+			};
+		};
+		
+	};
+//____________________________________________________________________________________________________________
+	// ATUALIZACAO DOS BULLETS DOS INVADERS, E 
+	// DE COLISAO BULLET DOS INVADERS vs. PLAYER.  
+	for (j=0;j<coord_Y_BULLET_INVADER.size();j++)
+	{
+	
+		coord_Y_BULLET_INVADER[j]= coord_Y_BULLET_INVADER[j]+velBullet;
+		
+		if (rect.isCollideImagens(coord_X_BULLET_INVADER[j],coord_Y_BULLET_INVADER[j] , xPlayer, yPlayer, 32, 70, 80, 80))
+		{
+			// fim de jogo, caso: player atingido por bullets do invaders.
+			gameOver=1;
+			
+			
+		};
+	
+		
+	};
+	
+	
+
+
+
+};
+
+
+
+window.CloseWindow();
+
+

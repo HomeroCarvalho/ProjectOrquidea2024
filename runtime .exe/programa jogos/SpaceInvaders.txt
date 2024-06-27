@@ -1,0 +1,135 @@
+public class Ship{ 
+
+	// imagem do ship.
+	public Imagem imageShip;
+	
+	public int idImagem;
+	
+	// coordenada x de posicao.
+	public double xxImage;
+
+	// coordenada y de posicao.
+	public double yyImage;
+	
+	// variavel de inversao de direcao do movimento de ship.
+	public double direcao;
+	
+
+
+
+	// construtor. carrega a imagem do ship, e seta as coordenadas iniciais de desenho da imagem do ship.
+	public Ship(string pathFileImage, double xEntity2, double yEntity2){
+	
+		// coordenadas do ship na tela.
+		actual.xxImage = xEntity2;
+		actual.yyImage = yEntity2;
+		
+		
+		// imagem e id da imagem do ship.
+		actual.imageShip = create(pathFileImage);
+		actual.idImagem = actual.imageShip.GetID();
+	
+		// redimensiona a imagem do ship.
+		actual.imageShip.redims(20,20);
+		
+		// direção do ship.
+		actual.direcao= -1.0;
+	}; 
+	
+	
+		
+	// atualiza a situação do Entity. movimento indo em uma direção, até uma das bordas, em seguida inversão da direção do movimento até atingir outra borda.
+	public UpdateShip()
+	{	
+		
+		
+		if (actual.xxImage > 800.0){
+			actual.direcao= -1.0;
+		};
+	
+		if (actual.xxImage < 0.0){
+			actual.direcao= 1.0;
+		};
+		
+		
+		
+		actual.xxImage= actual.xxImage + actual.direcao*5.0;
+	};
+		
+		
+		
+		
+	public DrawShip(LoopGame ls, int id)
+	{
+		// temporariamente desenhando a mesma textura. alterar id=0, para o id da imagem do entity currente. [actual.idImagem]
+		ls.Draw(id, actual.xxImage,  actual.yyImage);
+	};
+
+	
+ };
+
+
+
+
+// instancia o loop do game.
+LoopGame loopX= create();
+// seta as coordenadas da tela. 15 fps de atualização.
+loopX.StartScreen(1000,800, 200);
+
+// cria ships invader.
+Ship invader1= create("programa jogos\assets space invaders\invader3.png", 100.0,100.0);
+Ship invader2= create("programa jogos\assets space invaders\invader3.png", 480.0,100.0);
+Ship invader3= create("programa jogos\assets space invaders\invader3.png", 000.0,100.0);
+Ship invader4= create("programa jogos\assets space invaders\invader3.png", 080.0,100.0);
+Ship invader5= create("programa jogos\assets space invaders\invader3.png", 0300.0,100.0);
+
+
+
+Ship[] naves[20];
+naves[0]= invader1;
+naves[1]= invader2;
+naves[2]= invader3;
+naves[3]= invader4;
+naves[4]= invader5;
+
+
+
+
+int saida=1;
+int i;
+
+
+// carrega imagens.
+loopX.LoadImages(); 
+
+// loop de iteração do jogo.
+while  (saida>0){
+	
+	// processamento de desenhos.
+	loopX.BeginToDraw();
+
+	loopX.ClearScreen();
+	
+	
+	
+	for (int i=0;i<5;i++)
+	{
+		naves[i].UpdateShip();      
+		naves[i].DrawShip(loopX,0); 
+	
+	};
+	
+	
+	
+	
+	
+	loopX.EndToDraw();
+
+
+	
+	
+	// atualiza a malha while.
+	saida= loopX.CloseWindow();
+};
+
+

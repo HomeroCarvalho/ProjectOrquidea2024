@@ -1,0 +1,58 @@
+public class Contador
+{
+
+	public int contador_int;
+	public int inversor;
+
+	
+	// construtor.
+	public Contador()
+	{
+		
+		contador_int=1;
+		inversor=1;
+		
+		// linha sem tipo de variavel.
+		k=5;
+	};
+	
+	
+	
+	public void Write()
+	{
+		
+		Prompt.sWrite("contador a: "+Castings.IntToText(contador_int));
+		
+	};
+	
+	// atualiza a contagem de número do contador.
+	public void Atualiza()
+	{
+		
+		// verifica se atingiu o limite maximo. Se atingiu, muda a direção da contagem, de maior-->menor numeros.
+		if (contador_int>100)
+		{
+			inversor= -1;
+			
+		};
+		// verifica se atingiu o limite minimo. Se atingiu, muda a direção da contagem, de menor--->maior numeros.
+		if (contador_int<0)
+		{
+			
+			inversor=1;
+		};
+		
+		// atualizacao do contador.
+		contador_int= contador_int+inversor*1;
+	};
+
+};
+
+Contador objA= create();
+int saida=1;
+while (saida==1)
+{
+	objA.Atualiza();
+	objA.Write();
+
+};

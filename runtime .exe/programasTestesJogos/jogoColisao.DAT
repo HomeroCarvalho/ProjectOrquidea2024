@@ -1,0 +1,52 @@
+// loop do jogo.
+LoopGame loop= create();
+loop.StartScreen(800,600);
+
+
+
+// imagens do jogo.
+Imagem player= create("images\set1\Werebeast_2.png");
+Imagem enemy= create("images\set1\Human_Church_6.png");
+
+loop.LoadImages();
+
+double xPlayer=100.0;
+double xEnemy= 350.0;
+int saida=1;
+while (saida>0)
+{
+	
+
+	// movimento do player e inimigo.
+	//player.IncX(5.0);
+	//enemy.IncX(30.0);
+
+
+	// processamento de desenhos.
+	loop.BeginToDraw();
+
+
+			
+			// desenho das imagens do jogo.
+			loop.Draw(0, xPlayer,100.0);
+			loop.Draw(1, xEnemy,100.0);
+			
+			
+		
+			
+			// preenche a tela com uma cor.
+			loop.ClearScreen();
+
+	loop.EndToDraw();
+
+	
+	xPlayer = xPlayer+3.0;
+	xEnemy  = xEnemy-3.0;
+	
+	// teste de colisão. se colidiu, termino do loop de jogo.
+	if (RectangleCollision.isCollideImagens(player, enemy)){
+	
+		saida=0;
+	}
+	
+};

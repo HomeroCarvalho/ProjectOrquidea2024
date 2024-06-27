@@ -12,7 +12,6 @@
   <ItemGroup>
     <Folder Include="BuildFileHeader\" />
     <Folder Include="componentesDeInterpretadoresECompiladores\PROGRAMACAO FUNCIONAL\backup\" />
-    <Folder Include="NovaPasta\" />
     <Folder Include="testes\Service References\" />
   </ItemGroup>
 

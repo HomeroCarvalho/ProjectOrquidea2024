@@ -1,0 +1,9 @@
+LoopGame loop= create();
+
+Imagem img1= create("18.png");
+string textHelloInit="Prompt.sWrite(\"atualizando\")";
+ObjectGame obj1= create(textHelloInit, img1);
+
+
+loop.AddObjectGame(obj1);
+loop.Run();

@@ -1,0 +1,41 @@
+LoopGame window= create(900,600,"testes de mouse!");
+
+
+
+Imagem img1= create("18.png");
+Text textoBASE= create("Jogo testes de mouse!",200,0);
+
+
+double xTextHello = 0.0;
+double yTextHello = 0.0;
+
+
+double xPlayer=50.0;
+double yPlayer=100.0;
+
+Vector2D positionMouse= create(50.0,150.0);
+
+int saida=1;
+while (saida>0)
+{
+     
+	window.dispachEvents();
+	window.BeginDraw();
+
+		window.Draw(img1,xPlayer, yPlayer);
+		window.DrawText(textoBASE,xTextHello,yTextHello);
+			
+
+	window.EndDraw();
+	
+	
+	// obtem as coordenadas do mouse.
+	positionMouse= Input.GetMousePosition();
+						
+	// atualiza a posicao da imagem do player;
+	xPlayer= positionMouse.getX();
+	
+	
+};
+
+window.CloseWindow();
