@@ -1,0 +1,37 @@
+Para medir milissegundos em C#, você pode usar a classe `Stopwatch` do namespace `System.Diagnostics`. Aqui está um exemplo de como você pode implementar isso:
+
+```csharp
+using System;
+using System.Diagnostics;
+
+public class TimerExample
+{
+    public static void Main()
+    {
+        Stopwatch stopwatch = new Stopwatch();
+
+        // Começa a medir o tempo
+        stopwatch.Start();
+
+        // Coloque aqui o código que você quer medir
+        for(int i = 0; i < 1000; i++)
+        {
+            // Simulação de código
+        }
+
+        // Para de medir o tempo
+        stopwatch.Stop();
+
+        // Obtém o tempo total em milissegundos
+        Console.WriteLine($"Tempo decorrido: {stopwatch.ElapsedMilliseconds} ms");
+    }
+}
+```
+
+Este código inicia o cronômetro antes de executar o código que você deseja medir, e então para o cronômetro após a execução. O tempo decorrido é obtido em milissegundos com a propriedade `ElapsedMilliseconds` do objeto `Stopwatch`. Isso lhe dará uma medida precisa do tempo gasto em milissegundos.
+
+Origem: conversa com o Bing, 07/05/2024
+(1) c# - Measure code speed in .net in milliseconds - Stack Overflow. https://stackoverflow.com/questions/10111159/measure-code-speed-in-net-in-milliseconds.
+(2) datetime - Get time in milliseconds using C# - Stack Overflow. https://stackoverflow.com/questions/4016483/get-time-in-milliseconds-using-c-sharp.
+(3) Get time in milliseconds using C# - iDiTect.com. https://www.iditect.com/faq/csharp/get-time-in-milliseconds-using-c.html.
+(4) C# Stopwatch - measuring execution time in C# with Stopwatch - ZetCode. https://zetcode.com/csharp/stopwatch/.

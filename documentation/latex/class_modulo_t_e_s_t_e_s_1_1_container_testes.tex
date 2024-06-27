@@ -1,0 +1,153 @@
+\doxysection{Modulo\+TESTES.\+Container\+Testes Class Reference}
+\hypertarget{class_modulo_t_e_s_t_e_s_1_1_container_testes}{}\label{class_modulo_t_e_s_t_e_s_1_1_container_testes}\index{ModuloTESTES.ContainerTestes@{ModuloTESTES.ContainerTestes}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_container_testes_ae32c2c3c7f0547aee29dc7d859e7a663}{Container\+Testes}} (params \mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_teste}{Teste}}\mbox{[}$\,$\mbox{]} testes)
+\begin{DoxyCompactList}\small\item\em inicializa, executa , dos testes contidos na lista de testes da entrada. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_container_testes_ad3ec07be55c673d87615b76bbcce0f28}{Container\+Testes}} ()
+\begin{DoxyCompactList}\small\item\em apenas inicializa o objeto container, não realiza nenhum cálculo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_container_testes_ae2b687a407a721c7a489597c0bc49d9d}{add\+Teste}} (\mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_teste}{Teste}} test)
+\begin{DoxyCompactList}\small\item\em adiciona um teste para o container de testes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_container_testes_ae00c2d66aaa2b2857d858df4223a82fe}{add\+Teste}} (List$<$ \mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_teste}{Teste}} $>$ test)
+\begin{DoxyCompactList}\small\item\em adiciona uma lista de testes ao container já inicializado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_container_testes_a7ecc17ab8be9c1683527fd29decd9008}{add\+Teste}} (params \mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_teste}{Teste}}\mbox{[}$\,$\mbox{]} tests)
+\begin{DoxyCompactList}\small\item\em adiciona um vetor variável de Testes ao container de testes, já inicializados. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_container_testes_a2162a28e0e7603de2e9aec0c5528c6fd}{Executa\+Testes}} ()
+\begin{DoxyCompactList}\small\item\em executa os testes, mas não mostra nenhum resultado. Útil para executar os testes, mas não quiser mostrar os resultados no Console, preferindo extrair dos testes cada mensagem de resultado, para colocá-\/los então em objetos derivados de Forms, como text\+Field.\+Text. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_container_testes_a1b41f4f4b9144c4a0c5354b18aaaac8e}{Executa\+Um\+Teste\+Com\+Dados\+Configurados}} (string bd\+\_\+dados\+\_\+arquivo\+\_\+nome\+\_\+entrada, \mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_teste}{Teste}} teste\+ASer\+Executado)
+\item 
+bool \mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_container_testes_affb9679f2cf9bfc47facfe8da299d68b}{Valida\+Uma\+Variavel}} (string nome\+Variavel, string valor\+Saida)
+\item 
+void \mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_container_testes_a415a932da1d4e06a0e6c66af1e7efe4d}{Executa\+Testes\+EExibe\+Resultados}} ()
+\begin{DoxyCompactList}\small\item\em executa os testes e exibe os resultados. LEMBRAR\+: os resultados são exibidos no modo Console, se precisar passar em outro modo que não o Console como um Text\+Area em um Form, adicione os testes com o método \mbox{[}add\+Teste\mbox{]}, execute o container com \mbox{[}Executa\+Testes\mbox{]}, e depois leia de cada teste o resultado, através do campo\+: \mbox{[}mensagens\mbox{]} (ex., Text\+Field1.\+Text=um\+Teste.\+mensagens). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_container_testes_ad9a11912e43ab5270eba45b54137d0d6}{Executa\+Testes\+EGuarda\+Em\+Arquivo}} (string nome\+Arquivo)
+\begin{DoxyCompactList}\small\item\em executa os testes e grava os resultados em arquivo, colocando data da realização dos testes e a mensagem de resultado para cada teste. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_modulo_t_e_s_t_e_s_1_1_container_testes_ae32c2c3c7f0547aee29dc7d859e7a663}\index{ModuloTESTES.ContainerTestes@{ModuloTESTES.ContainerTestes}!ContainerTestes@{ContainerTestes}}
+\index{ContainerTestes@{ContainerTestes}!ModuloTESTES.ContainerTestes@{ModuloTESTES.ContainerTestes}}
+\doxysubsubsection{\texorpdfstring{ContainerTestes()}{ContainerTestes()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_modulo_t_e_s_t_e_s_1_1_container_testes_ae32c2c3c7f0547aee29dc7d859e7a663} 
+Modulo\+TESTES.\+Container\+Testes.\+Container\+Testes (\begin{DoxyParamCaption}\item[{params \mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_teste}{Teste}}\mbox{[}$\,$\mbox{]}}]{testes}{}\end{DoxyParamCaption})}
+
+
+
+inicializa, executa , dos testes contidos na lista de testes da entrada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em testes} & Lista de testes a serem executados.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_modulo_t_e_s_t_e_s_1_1_container_testes_ad3ec07be55c673d87615b76bbcce0f28}\index{ModuloTESTES.ContainerTestes@{ModuloTESTES.ContainerTestes}!ContainerTestes@{ContainerTestes}}
+\index{ContainerTestes@{ContainerTestes}!ModuloTESTES.ContainerTestes@{ModuloTESTES.ContainerTestes}}
+\doxysubsubsection{\texorpdfstring{ContainerTestes()}{ContainerTestes()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_modulo_t_e_s_t_e_s_1_1_container_testes_ad3ec07be55c673d87615b76bbcce0f28} 
+Modulo\+TESTES.\+Container\+Testes.\+Container\+Testes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+apenas inicializa o objeto container, não realiza nenhum cálculo. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_modulo_t_e_s_t_e_s_1_1_container_testes_ae00c2d66aaa2b2857d858df4223a82fe}\index{ModuloTESTES.ContainerTestes@{ModuloTESTES.ContainerTestes}!addTeste@{addTeste}}
+\index{addTeste@{addTeste}!ModuloTESTES.ContainerTestes@{ModuloTESTES.ContainerTestes}}
+\doxysubsubsection{\texorpdfstring{addTeste()}{addTeste()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_modulo_t_e_s_t_e_s_1_1_container_testes_ae00c2d66aaa2b2857d858df4223a82fe} 
+void Modulo\+TESTES.\+Container\+Testes.\+add\+Teste (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_teste}{Teste}} $>$}]{test}{}\end{DoxyParamCaption})}
+
+
+
+adiciona uma lista de testes ao container já inicializado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_modulo_t_e_s_t_e_s_1_1_container_testes_a7ecc17ab8be9c1683527fd29decd9008}\index{ModuloTESTES.ContainerTestes@{ModuloTESTES.ContainerTestes}!addTeste@{addTeste}}
+\index{addTeste@{addTeste}!ModuloTESTES.ContainerTestes@{ModuloTESTES.ContainerTestes}}
+\doxysubsubsection{\texorpdfstring{addTeste()}{addTeste()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_modulo_t_e_s_t_e_s_1_1_container_testes_a7ecc17ab8be9c1683527fd29decd9008} 
+void Modulo\+TESTES.\+Container\+Testes.\+add\+Teste (\begin{DoxyParamCaption}\item[{params \mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_teste}{Teste}}\mbox{[}$\,$\mbox{]}}]{tests}{}\end{DoxyParamCaption})}
+
+
+
+adiciona um vetor variável de Testes ao container de testes, já inicializados. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tests} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_modulo_t_e_s_t_e_s_1_1_container_testes_ae2b687a407a721c7a489597c0bc49d9d}\index{ModuloTESTES.ContainerTestes@{ModuloTESTES.ContainerTestes}!addTeste@{addTeste}}
+\index{addTeste@{addTeste}!ModuloTESTES.ContainerTestes@{ModuloTESTES.ContainerTestes}}
+\doxysubsubsection{\texorpdfstring{addTeste()}{addTeste()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_modulo_t_e_s_t_e_s_1_1_container_testes_ae2b687a407a721c7a489597c0bc49d9d} 
+void Modulo\+TESTES.\+Container\+Testes.\+add\+Teste (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_teste}{Teste}}}]{test}{}\end{DoxyParamCaption})}
+
+
+
+adiciona um teste para o container de testes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_modulo_t_e_s_t_e_s_1_1_container_testes_a2162a28e0e7603de2e9aec0c5528c6fd}\index{ModuloTESTES.ContainerTestes@{ModuloTESTES.ContainerTestes}!ExecutaTestes@{ExecutaTestes}}
+\index{ExecutaTestes@{ExecutaTestes}!ModuloTESTES.ContainerTestes@{ModuloTESTES.ContainerTestes}}
+\doxysubsubsection{\texorpdfstring{ExecutaTestes()}{ExecutaTestes()}}
+{\footnotesize\ttfamily \label{class_modulo_t_e_s_t_e_s_1_1_container_testes_a2162a28e0e7603de2e9aec0c5528c6fd} 
+void Modulo\+TESTES.\+Container\+Testes.\+Executa\+Testes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+executa os testes, mas não mostra nenhum resultado. Útil para executar os testes, mas não quiser mostrar os resultados no Console, preferindo extrair dos testes cada mensagem de resultado, para colocá-\/los então em objetos derivados de Forms, como text\+Field.\+Text. 
+
+\Hypertarget{class_modulo_t_e_s_t_e_s_1_1_container_testes_a415a932da1d4e06a0e6c66af1e7efe4d}\index{ModuloTESTES.ContainerTestes@{ModuloTESTES.ContainerTestes}!ExecutaTestesEExibeResultados@{ExecutaTestesEExibeResultados}}
+\index{ExecutaTestesEExibeResultados@{ExecutaTestesEExibeResultados}!ModuloTESTES.ContainerTestes@{ModuloTESTES.ContainerTestes}}
+\doxysubsubsection{\texorpdfstring{ExecutaTestesEExibeResultados()}{ExecutaTestesEExibeResultados()}}
+{\footnotesize\ttfamily \label{class_modulo_t_e_s_t_e_s_1_1_container_testes_a415a932da1d4e06a0e6c66af1e7efe4d} 
+void Modulo\+TESTES.\+Container\+Testes.\+Executa\+Testes\+EExibe\+Resultados (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+executa os testes e exibe os resultados. LEMBRAR\+: os resultados são exibidos no modo Console, se precisar passar em outro modo que não o Console como um Text\+Area em um Form, adicione os testes com o método \mbox{[}add\+Teste\mbox{]}, execute o container com \mbox{[}Executa\+Testes\mbox{]}, e depois leia de cada teste o resultado, através do campo\+: \mbox{[}mensagens\mbox{]} (ex., Text\+Field1.\+Text=um\+Teste.\+mensagens). 
+
+\Hypertarget{class_modulo_t_e_s_t_e_s_1_1_container_testes_ad9a11912e43ab5270eba45b54137d0d6}\index{ModuloTESTES.ContainerTestes@{ModuloTESTES.ContainerTestes}!ExecutaTestesEGuardaEmArquivo@{ExecutaTestesEGuardaEmArquivo}}
+\index{ExecutaTestesEGuardaEmArquivo@{ExecutaTestesEGuardaEmArquivo}!ModuloTESTES.ContainerTestes@{ModuloTESTES.ContainerTestes}}
+\doxysubsubsection{\texorpdfstring{ExecutaTestesEGuardaEmArquivo()}{ExecutaTestesEGuardaEmArquivo()}}
+{\footnotesize\ttfamily \label{class_modulo_t_e_s_t_e_s_1_1_container_testes_ad9a11912e43ab5270eba45b54137d0d6} 
+void Modulo\+TESTES.\+Container\+Testes.\+Executa\+Testes\+EGuarda\+Em\+Arquivo (\begin{DoxyParamCaption}\item[{string}]{nome\+Arquivo}{}\end{DoxyParamCaption})}
+
+
+
+executa os testes e grava os resultados em arquivo, colocando data da realização dos testes e a mensagem de resultado para cada teste. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Arquivo} & nome de arquivo para ser gravado os resultados dos testes.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_modulo_t_e_s_t_e_s_1_1_container_testes_a1b41f4f4b9144c4a0c5354b18aaaac8e}\index{ModuloTESTES.ContainerTestes@{ModuloTESTES.ContainerTestes}!ExecutaUmTesteComDadosConfigurados@{ExecutaUmTesteComDadosConfigurados}}
+\index{ExecutaUmTesteComDadosConfigurados@{ExecutaUmTesteComDadosConfigurados}!ModuloTESTES.ContainerTestes@{ModuloTESTES.ContainerTestes}}
+\doxysubsubsection{\texorpdfstring{ExecutaUmTesteComDadosConfigurados()}{ExecutaUmTesteComDadosConfigurados()}}
+{\footnotesize\ttfamily \label{class_modulo_t_e_s_t_e_s_1_1_container_testes_a1b41f4f4b9144c4a0c5354b18aaaac8e} 
+void Modulo\+TESTES.\+Container\+Testes.\+Executa\+Um\+Teste\+Com\+Dados\+Configurados (\begin{DoxyParamCaption}\item[{string}]{bd\+\_\+dados\+\_\+arquivo\+\_\+nome\+\_\+entrada}{, }\item[{\mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_teste}{Teste}}}]{teste\+ASer\+Executado}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_modulo_t_e_s_t_e_s_1_1_container_testes_affb9679f2cf9bfc47facfe8da299d68b}\index{ModuloTESTES.ContainerTestes@{ModuloTESTES.ContainerTestes}!ValidaUmaVariavel@{ValidaUmaVariavel}}
+\index{ValidaUmaVariavel@{ValidaUmaVariavel}!ModuloTESTES.ContainerTestes@{ModuloTESTES.ContainerTestes}}
+\doxysubsubsection{\texorpdfstring{ValidaUmaVariavel()}{ValidaUmaVariavel()}}
+{\footnotesize\ttfamily \label{class_modulo_t_e_s_t_e_s_1_1_container_testes_affb9679f2cf9bfc47facfe8da299d68b} 
+bool Modulo\+TESTES.\+Container\+Testes.\+Valida\+Uma\+Variavel (\begin{DoxyParamCaption}\item[{string}]{nome\+Variavel}{, }\item[{string}]{valor\+Saida}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/testes/\mbox{\hyperlink{_container_testes_8cs}{Container\+Testes.\+cs}}\end{DoxyCompactItemize}

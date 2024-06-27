@@ -1,0 +1,76 @@
+\doxysection{Util.\+Preencher\+Vazios Class Reference}
+\hypertarget{class_util_1_1_preencher_vazios}{}\label{class_util_1_1_preencher_vazios}\index{Util.PreencherVazios@{Util.PreencherVazios}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_util_1_1_preencher_vazios_a99b383c00e777edb6bd9663284f23c9c}{Elimina\+Palavra\+De\+Lista}} (ref List$<$ string $>$ programa, string token)
+\begin{DoxyCompactList}\small\item\em Elimina o texto \mbox{[}token\mbox{]} em sua primeira ocorrência na lista \mbox{[}programa\mbox{]}. Preserva os espaçamentos dentro da lista. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_util_1_1_preencher_vazios_a487cac651329e516a0794b2593be93e0}{Preenche\+Vazio}} (string programa\+Total, string token)
+\begin{DoxyCompactList}\small\item\em deleta a primeira ocorrência de \mbox{[}token\mbox{]}, no texto \mbox{[}programa\+Total\mbox{]}. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_util_1_1_preencher_vazios_a0911dcaed7336ec9729c3eb9cfb889d4}{Get\+Codigo\+Programa}} (string programa, params string\mbox{[}$\,$\mbox{]} termos\+\_\+\+Chave)
+\begin{DoxyCompactList}\small\item\em obtém um trecho de código, que se inicia em \mbox{[}termos\+\_\+\+Chave\mbox{[}0\mbox{]}\mbox{]} e \mbox{[}termos\+\_\+\+Chave\mbox{[}termos\+\_\+\+Chave-\/1\mbox{]}\mbox{]} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_util_1_1_preencher_vazios_a99b383c00e777edb6bd9663284f23c9c}\index{Util.PreencherVazios@{Util.PreencherVazios}!EliminaPalavraDeLista@{EliminaPalavraDeLista}}
+\index{EliminaPalavraDeLista@{EliminaPalavraDeLista}!Util.PreencherVazios@{Util.PreencherVazios}}
+\doxysubsubsection{\texorpdfstring{EliminaPalavraDeLista()}{EliminaPalavraDeLista()}}
+{\footnotesize\ttfamily \label{class_util_1_1_preencher_vazios_a99b383c00e777edb6bd9663284f23c9c} 
+static void Util.\+Preencher\+Vazios.\+Elimina\+Palavra\+De\+Lista (\begin{DoxyParamCaption}\item[{ref List$<$ string $>$}]{programa}{, }\item[{string}]{token}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Elimina o texto \mbox{[}token\mbox{]} em sua primeira ocorrência na lista \mbox{[}programa\mbox{]}. Preserva os espaçamentos dentro da lista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em programa} & lista a ser processada.\\
+\hline
+{\em token} & texto a ser deletado em sua primeira ocorrência.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_util_1_1_preencher_vazios_a0911dcaed7336ec9729c3eb9cfb889d4}\index{Util.PreencherVazios@{Util.PreencherVazios}!GetCodigoPrograma@{GetCodigoPrograma}}
+\index{GetCodigoPrograma@{GetCodigoPrograma}!Util.PreencherVazios@{Util.PreencherVazios}}
+\doxysubsubsection{\texorpdfstring{GetCodigoPrograma()}{GetCodigoPrograma()}}
+{\footnotesize\ttfamily \label{class_util_1_1_preencher_vazios_a0911dcaed7336ec9729c3eb9cfb889d4} 
+static string Util.\+Preencher\+Vazios.\+Get\+Codigo\+Programa (\begin{DoxyParamCaption}\item[{string}]{programa}{, }\item[{params string\mbox{[}$\,$\mbox{]}}]{termos\+\_\+\+Chave}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+obtém um trecho de código, que se inicia em \mbox{[}termos\+\_\+\+Chave\mbox{[}0\mbox{]}\mbox{]} e \mbox{[}termos\+\_\+\+Chave\mbox{[}termos\+\_\+\+Chave-\/1\mbox{]}\mbox{]} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em programa} & trecho de código a ser processado.\\
+\hline
+{\em termos\+\_\+\+Chave} & lista contendo o código a ser extraído.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna o trecho de código do \mbox{[}progrma\mbox{]} entre os \mbox{[}termos\+\_\+\+Chave\mbox{]}
+\end{DoxyReturn}
+\Hypertarget{class_util_1_1_preencher_vazios_a487cac651329e516a0794b2593be93e0}\index{Util.PreencherVazios@{Util.PreencherVazios}!PreencheVazio@{PreencheVazio}}
+\index{PreencheVazio@{PreencheVazio}!Util.PreencherVazios@{Util.PreencherVazios}}
+\doxysubsubsection{\texorpdfstring{PreencheVazio()}{PreencheVazio()}}
+{\footnotesize\ttfamily \label{class_util_1_1_preencher_vazios_a487cac651329e516a0794b2593be93e0} 
+static string Util.\+Preencher\+Vazios.\+Preenche\+Vazio (\begin{DoxyParamCaption}\item[{string}]{programa\+Total}{, }\item[{string}]{token}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+deleta a primeira ocorrência de \mbox{[}token\mbox{]}, no texto \mbox{[}programa\+Total\mbox{]}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em programa\+Total} & texto a ser processado.\\
+\hline
+{\em token} & elemento a ser deletado em sua primeira ocorrência em \mbox{[}programa\+Total\mbox{]}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna o texto sem a primeira ocorrência do texto \mbox{[}token\mbox{]}.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/\+Util/string\+Utils/\mbox{\hyperlink{_preencher_vazios_8cs}{Preencher\+Vazios.\+cs}}\end{DoxyCompactItemize}

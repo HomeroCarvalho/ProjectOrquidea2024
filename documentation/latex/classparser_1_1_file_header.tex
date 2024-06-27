@@ -1,0 +1,129 @@
+\doxysection{parser.\+File\+Header Class Reference}
+\hypertarget{classparser_1_1_file_header}{}\label{classparser_1_1_file_header}\index{parser.FileHeader@{parser.FileHeader}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classparser_1_1_file_header_1_1_testes}{Testes}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparser_1_1_file_header_a5621479ee678a85919b5219d0e04d285}{File\+Header}} ()
+\item 
+void \mbox{\hyperlink{classparser_1_1_file_header_ae6b467f0293161873330077a6598ae5e}{Extract\+Cabecalho\+De\+Classes}} (List$<$ string $>$ all\+\_\+tokens)
+\item 
+void \mbox{\hyperlink{classparser_1_1_file_header_aaf7d280b91d463c5a2289c030741fbfc}{Extract\+Cabecalho\+De\+Classes}} (string codigo)
+\item 
+void \mbox{\hyperlink{classparser_1_1_file_header_a72b2ba1a87b769db0264a8fe2312dd87}{Metodox\+Write}} ()
+\begin{DoxyCompactList}\small\item\em caso singular de acerto de parâmetros. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_file_header_afceca52fb8c7cab61baf82935bb058c9}{Extract\+Headers\+Class\+From\+Classes\+Orquidea}} (List$<$ \mbox{\hyperlink{classparser_1_1_classe}{Classe}} $>$ classes\+Do\+Repositorio, List$<$ \mbox{\hyperlink{classparser_1_1_header_class}{Header\+Class}} $>$ headers\+Classe)
+\begin{DoxyCompactList}\small\item\em extrai header de classes com o codigo orquidea. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_file_header_a9fab84fd91507e68027dc3dd91438822}{Extrai\+HEADERS\+\_\+\+CLASSES\+\_\+\+ORQUIDEA}} (List$<$ \mbox{\hyperlink{classparser_1_1_classe}{Classe}} $>$ classes\+Do\+Repositorio, List$<$ \mbox{\hyperlink{classparser_1_1_header_class}{Header\+Class}} $>$ headers\+Classe, int index\+Offseet, bool is\+To\+Include\+In\+Header)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_file_header_ad18a338f54918e25955ececcc1fd07b8}{errors\+Found}} = new List$<$string$>$()
+\begin{DoxyCompactList}\small\item\em lista de erros encontrada na compilacao do codigo de programador. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_header_class}{Header\+Class}} $>$ \mbox{\hyperlink{classparser_1_1_file_header_a80ff6f3744d530a2f79605a1485cddbc}{cabecalho\+De\+Classes}} = new List$<$\mbox{\hyperlink{classparser_1_1_header_class}{Header\+Class}}$>$()
+\begin{DoxyCompactList}\small\item\em contem as definicoes de classes extraidas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \mbox{\hyperlink{classparser_1_1_wrapper_data}{Wrapper\+Data}} $>$ \mbox{\hyperlink{classparser_1_1_file_header_a5f3aa4d08431416dc0f8df0e123bce87}{wrapper\+Definition}}
+\begin{DoxyCompactList}\small\item\em contem definicoes de wrapper data objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classparser_1_1_file_header_a5621479ee678a85919b5219d0e04d285}\index{parser.FileHeader@{parser.FileHeader}!FileHeader@{FileHeader}}
+\index{FileHeader@{FileHeader}!parser.FileHeader@{parser.FileHeader}}
+\doxysubsubsection{\texorpdfstring{FileHeader()}{FileHeader()}}
+{\footnotesize\ttfamily \label{classparser_1_1_file_header_a5621479ee678a85919b5219d0e04d285} 
+parser.\+File\+Header.\+File\+Header (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_file_header_ae6b467f0293161873330077a6598ae5e}\index{parser.FileHeader@{parser.FileHeader}!ExtractCabecalhoDeClasses@{ExtractCabecalhoDeClasses}}
+\index{ExtractCabecalhoDeClasses@{ExtractCabecalhoDeClasses}!parser.FileHeader@{parser.FileHeader}}
+\doxysubsubsection{\texorpdfstring{ExtractCabecalhoDeClasses()}{ExtractCabecalhoDeClasses()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_file_header_ae6b467f0293161873330077a6598ae5e} 
+void parser.\+File\+Header.\+Extract\+Cabecalho\+De\+Classes (\begin{DoxyParamCaption}\item[{List$<$ string $>$}]{all\+\_\+tokens}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_file_header_aaf7d280b91d463c5a2289c030741fbfc}\index{parser.FileHeader@{parser.FileHeader}!ExtractCabecalhoDeClasses@{ExtractCabecalhoDeClasses}}
+\index{ExtractCabecalhoDeClasses@{ExtractCabecalhoDeClasses}!parser.FileHeader@{parser.FileHeader}}
+\doxysubsubsection{\texorpdfstring{ExtractCabecalhoDeClasses()}{ExtractCabecalhoDeClasses()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_file_header_aaf7d280b91d463c5a2289c030741fbfc} 
+void parser.\+File\+Header.\+Extract\+Cabecalho\+De\+Classes (\begin{DoxyParamCaption}\item[{string}]{codigo}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_file_header_afceca52fb8c7cab61baf82935bb058c9}\index{parser.FileHeader@{parser.FileHeader}!ExtractHeadersClassFromClassesOrquidea@{ExtractHeadersClassFromClassesOrquidea}}
+\index{ExtractHeadersClassFromClassesOrquidea@{ExtractHeadersClassFromClassesOrquidea}!parser.FileHeader@{parser.FileHeader}}
+\doxysubsubsection{\texorpdfstring{ExtractHeadersClassFromClassesOrquidea()}{ExtractHeadersClassFromClassesOrquidea()}}
+{\footnotesize\ttfamily \label{classparser_1_1_file_header_afceca52fb8c7cab61baf82935bb058c9} 
+void parser.\+File\+Header.\+Extract\+Headers\+Class\+From\+Classes\+Orquidea (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classparser_1_1_classe}{Classe}} $>$}]{classes\+Do\+Repositorio}{, }\item[{List$<$ \mbox{\hyperlink{classparser_1_1_header_class}{Header\+Class}} $>$}]{headers\+Classe}{}\end{DoxyParamCaption})}
+
+
+
+extrai header de classes com o codigo orquidea. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em classes\+Do\+Repositorio} & classes armazendas.\\
+\hline
+{\em headers\+Classe} & headers de classes a serem extraidos.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_file_header_a9fab84fd91507e68027dc3dd91438822}\index{parser.FileHeader@{parser.FileHeader}!ExtraiHEADERS\_CLASSES\_ORQUIDEA@{ExtraiHEADERS\_CLASSES\_ORQUIDEA}}
+\index{ExtraiHEADERS\_CLASSES\_ORQUIDEA@{ExtraiHEADERS\_CLASSES\_ORQUIDEA}!parser.FileHeader@{parser.FileHeader}}
+\doxysubsubsection{\texorpdfstring{ExtraiHEADERS\_CLASSES\_ORQUIDEA()}{ExtraiHEADERS\_CLASSES\_ORQUIDEA()}}
+{\footnotesize\ttfamily \label{classparser_1_1_file_header_a9fab84fd91507e68027dc3dd91438822} 
+void parser.\+File\+Header.\+Extrai\+HEADERS\+\_\+\+CLASSES\+\_\+\+ORQUIDEA (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classparser_1_1_classe}{Classe}} $>$}]{classes\+Do\+Repositorio}{, }\item[{List$<$ \mbox{\hyperlink{classparser_1_1_header_class}{Header\+Class}} $>$}]{headers\+Classe}{, }\item[{int}]{index\+Offseet}{, }\item[{bool}]{is\+To\+Include\+In\+Header}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_file_header_a72b2ba1a87b769db0264a8fe2312dd87}\index{parser.FileHeader@{parser.FileHeader}!MetodoxWrite@{MetodoxWrite}}
+\index{MetodoxWrite@{MetodoxWrite}!parser.FileHeader@{parser.FileHeader}}
+\doxysubsubsection{\texorpdfstring{MetodoxWrite()}{MetodoxWrite()}}
+{\footnotesize\ttfamily \label{classparser_1_1_file_header_a72b2ba1a87b769db0264a8fe2312dd87} 
+void parser.\+File\+Header.\+Metodox\+Write (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+caso singular de acerto de parâmetros. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classparser_1_1_file_header_a80ff6f3744d530a2f79605a1485cddbc}\index{parser.FileHeader@{parser.FileHeader}!cabecalhoDeClasses@{cabecalhoDeClasses}}
+\index{cabecalhoDeClasses@{cabecalhoDeClasses}!parser.FileHeader@{parser.FileHeader}}
+\doxysubsubsection{\texorpdfstring{cabecalhoDeClasses}{cabecalhoDeClasses}}
+{\footnotesize\ttfamily \label{classparser_1_1_file_header_a80ff6f3744d530a2f79605a1485cddbc} 
+List$<$\mbox{\hyperlink{classparser_1_1_header_class}{Header\+Class}}$>$ parser.\+File\+Header.\+cabecalho\+De\+Classes = new List$<$\mbox{\hyperlink{classparser_1_1_header_class}{Header\+Class}}$>$()}
+
+
+
+contem as definicoes de classes extraidas. 
+
+\Hypertarget{classparser_1_1_file_header_ad18a338f54918e25955ececcc1fd07b8}\index{parser.FileHeader@{parser.FileHeader}!errorsFound@{errorsFound}}
+\index{errorsFound@{errorsFound}!parser.FileHeader@{parser.FileHeader}}
+\doxysubsubsection{\texorpdfstring{errorsFound}{errorsFound}}
+{\footnotesize\ttfamily \label{classparser_1_1_file_header_ad18a338f54918e25955ececcc1fd07b8} 
+List$<$string$>$ parser.\+File\+Header.\+errors\+Found = new List$<$string$>$()}
+
+
+
+lista de erros encontrada na compilacao do codigo de programador. 
+
+\Hypertarget{classparser_1_1_file_header_a5f3aa4d08431416dc0f8df0e123bce87}\index{parser.FileHeader@{parser.FileHeader}!wrapperDefinition@{wrapperDefinition}}
+\index{wrapperDefinition@{wrapperDefinition}!parser.FileHeader@{parser.FileHeader}}
+\doxysubsubsection{\texorpdfstring{wrapperDefinition}{wrapperDefinition}}
+{\footnotesize\ttfamily \label{classparser_1_1_file_header_a5f3aa4d08431416dc0f8df0e123bce87} 
+List$<$\mbox{\hyperlink{classparser_1_1_wrapper_data}{Wrapper\+Data}}$>$ parser.\+File\+Header.\+wrapper\+Definition\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+contem definicoes de wrapper data objects. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/componentes\+De\+Interpretadores\+ECompiladores/\+PROGRAMACAO ORIENTADA A OBJETOS/\mbox{\hyperlink{_file_header_8cs}{File\+Header.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,46 @@
+Se você suspeita que o aplicativo **Vincular ao Celular** está sendo usado de forma indevida por hackers, existem algumas etapas que você pode seguir para desvincular dispositivos e, se necessário, desinstalar o aplicativo:
+
+1. **Desvincular Dispositivos**:
+    - Para remover um dispositivo vinculado com êxito, siga estas etapas:
+        1. No seu dispositivo Android, verifique se você possui o aplicativo **Ligar ao Windows** (pré-instalado). Se sim:
+            - Acesse **Configurações > Dispositivos Conectados > Ligar ao Windows > Sobre Ligar ao Windows**.
+            - Clique na sua conta Microsoft e, em seguida, clique em **Remover conta**.
+        2. Se você tiver o **Ligar ao Windows** no **Surface Duo**:
+            - Abra o aplicativo **Ligar ao Windows** no Surface Duo.
+            - Toque na sua conta de e-mail e, em seguida, clique em **Remover conta**.
+        3. Se você tiver o **Ligar ao Windows (baixado)** em outros dispositivos Android selecionados:
+            - Abra o aplicativo **Ligar ao Windows** no dispositivo Android selecionado.
+            - Toque no ícone de configurações (canto superior direito) e selecione **Contas**.
+            - Encontre a conta Microsoft e toque em **Sair**.
+    - Em seguida, conclua as etapas de desvinculação no seu computador:
+        1. Abra o navegador no seu computador e acesse [aqui](https://account.microsoft.com/devices/android-ios).
+        2. Faça login com a sua conta Microsoft.
+        3. Você verá uma lista de todos os seus dispositivos conectados. Para cada um, selecione **Desvincular**.
+        4. Feche e reabra o aplicativo **Vincular ao Celular** no computador para aplicar as alterações de desvinculação.
+
+2. **Desinstalar o Aplicativo** (caso necessário):
+    - Se você deseja desinstalar completamente o aplicativo **Vincular ao Celular**, siga estas instruções específicas para a versão do seu sistema operacional:
+        - **Windows 10**:
+            - Pressione as teclas **Windows + Q**.
+            - Digite **powershell** e clique com o botão direito na primeira opção para **Executar como Administrador**.
+            - Copie e cole o seguinte comando:
+                ```
+                Get-AppxPackage *YourPhone* | Remove-AppxPackage
+                ```
+            - Reinicie a máquina após a conclusão.
+        - **Windows 11**:
+            1. Abra o aplicativo **Configurações**.
+            2. Vá para **Aplicativos** e selecione **Inicialização**.
+            3. Localize o **Phone Link** e defina-o como **Off**.
+            4. Alternativamente, use o **Gerenciador de Tarefas**:
+                - Pressione **Ctrl + Shift + Esc** para abrir o Gerenciador de Tarefas.
+                - Vá para a guia **Inicialização** e ajuste as configurações do **Phone Link**.
+
+Lembre-se de que essas etapas são para sua segurança e privacidade. Se você tiver mais alguma dúvida, não hesite em perguntar! 🛡️🔒
+
+Origem: conversa com o Bing, 09/04/2024
+(1) Desvincular um dispositivo no Vincular ao Celular. https://support.microsoft.com/pt-br/topic/desvincular-um-dispositivo-no-vincular-ao-celular-9382f770-b203-7e0e-c81e-18d4053cf4e5.
+(2) Tenho Windows 10 v.H22 e o aplicativo Vinculr ao Celular não abre .... https://bing.com/search?q=desinstalar+aplicativo+Vincular+ao+Celular.
+(3) Tenho Windows 10 v.H22 e o aplicativo Vinculr ao Celular não abre .... https://answers.microsoft.com/pt-br/windows/forum/all/tenho-windows-10-vh22-e-o-aplicativo-vinculr-ao/e8b9bbcf-7a78-4f7d-967d-96701b19c394.
+(4) Como desativar ou desinstalar completamente o Phone Link no Windows 11 .... https://thewindowsclub.blog/pt/how-to-completely-disable-or-uninstall-phone-link-on-windows-11/.
+(5) undefined. https://account.microsoft.com/devices/android-ios.

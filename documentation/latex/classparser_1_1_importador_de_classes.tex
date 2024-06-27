@@ -1,0 +1,99 @@
+\doxysection{parser.\+Importador\+De\+Classes Class Reference}
+\hypertarget{classparser_1_1_importador_de_classes}{}\label{classparser_1_1_importador_de_classes}\index{parser.ImportadorDeClasses@{parser.ImportadorDeClasses}}
+
+
+obtém classes da linguagem base\+: C Sharp, e as transfere para o repositório de classes do orquidea. importa métodos, e propriedades da classe.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparser_1_1_importador_de_classes_a1d4522a02c0c829487d0b49331b3eea2}{Importador\+De\+Classes}} (string aplicacao\+EXEou\+Biblioteca\+DLL)
+\begin{DoxyCompactList}\small\item\em carrega uma biblioteca externa. a biblioteca assembly fica na lista estática \mbox{[}\doxylink{classparser_1_1_linguagem_orquidea_a96356313c0a255e1afcda9717da4c73a}{Linguagem\+Orquidea.\+libraries}\mbox{]}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_importador_de_classes_a47fab9e432687bff0204eff8743c64ba}{Importador\+De\+Classes}} ()
+\begin{DoxyCompactList}\small\item\em construtor vazio. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_importador_de_classes_ae0a064550e1d4400a9db4d389f07ab9d}{Import\+AClass\+From\+Assembly}} (string name\+Class)
+\begin{DoxyCompactList}\small\item\em importa métodos e propriedades de uma classe, vinda de um Assembly \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_importador_de_classes_af5d64ef3a14fe03f7896aeb31efe8ac3}{Import\+All\+Classes\+From\+Assembly}} ()
+\begin{DoxyCompactList}\small\item\em faz a importacao de todas classes no \mbox{[}Assembly\mbox{]} biblioteca. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_importador_de_classes_a7e62acf700457078c73f055e8c1c9d7a}{Import\+AClass\+From\+Application}} (Type um\+Tipo\+Classe)
+\begin{DoxyCompactList}\small\item\em faz a importacao de classe importada\+: Method\+Info, Constructor\+Info, são carregado e instanciados metodos, propriedades. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+obtém classes da linguagem base\+: C Sharp, e as transfere para o repositório de classes do orquidea. importa métodos, e propriedades da classe. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classparser_1_1_importador_de_classes_a1d4522a02c0c829487d0b49331b3eea2}\index{parser.ImportadorDeClasses@{parser.ImportadorDeClasses}!ImportadorDeClasses@{ImportadorDeClasses}}
+\index{ImportadorDeClasses@{ImportadorDeClasses}!parser.ImportadorDeClasses@{parser.ImportadorDeClasses}}
+\doxysubsubsection{\texorpdfstring{ImportadorDeClasses()}{ImportadorDeClasses()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_importador_de_classes_a1d4522a02c0c829487d0b49331b3eea2} 
+parser.\+Importador\+De\+Classes.\+Importador\+De\+Classes (\begin{DoxyParamCaption}\item[{string}]{aplicacao\+EXEou\+Biblioteca\+DLL}{}\end{DoxyParamCaption})}
+
+
+
+carrega uma biblioteca externa. a biblioteca assembly fica na lista estática \mbox{[}\doxylink{classparser_1_1_linguagem_orquidea_a96356313c0a255e1afcda9717da4c73a}{Linguagem\+Orquidea.\+libraries}\mbox{]}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em aplicacao\+EXEou\+Biblioteca\+DLL} & nome do arquivo da biblioteca.\\
+\hline
+\end{DoxyParams}
+guarda o assembly, como uma biblioteca de classes externas.\Hypertarget{classparser_1_1_importador_de_classes_a47fab9e432687bff0204eff8743c64ba}\index{parser.ImportadorDeClasses@{parser.ImportadorDeClasses}!ImportadorDeClasses@{ImportadorDeClasses}}
+\index{ImportadorDeClasses@{ImportadorDeClasses}!parser.ImportadorDeClasses@{parser.ImportadorDeClasses}}
+\doxysubsubsection{\texorpdfstring{ImportadorDeClasses()}{ImportadorDeClasses()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_importador_de_classes_a47fab9e432687bff0204eff8743c64ba} 
+parser.\+Importador\+De\+Classes.\+Importador\+De\+Classes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+construtor vazio. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_importador_de_classes_a7e62acf700457078c73f055e8c1c9d7a}\index{parser.ImportadorDeClasses@{parser.ImportadorDeClasses}!ImportAClassFromApplication@{ImportAClassFromApplication}}
+\index{ImportAClassFromApplication@{ImportAClassFromApplication}!parser.ImportadorDeClasses@{parser.ImportadorDeClasses}}
+\doxysubsubsection{\texorpdfstring{ImportAClassFromApplication()}{ImportAClassFromApplication()}}
+{\footnotesize\ttfamily \label{classparser_1_1_importador_de_classes_a7e62acf700457078c73f055e8c1c9d7a} 
+void parser.\+Importador\+De\+Classes.\+Import\+AClass\+From\+Application (\begin{DoxyParamCaption}\item[{Type}]{um\+Tipo\+Classe}{}\end{DoxyParamCaption})}
+
+
+
+faz a importacao de classe importada\+: Method\+Info, Constructor\+Info, são carregado e instanciados metodos, propriedades. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em um\+Tipo\+Classe} & tipo da classe.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_importador_de_classes_ae0a064550e1d4400a9db4d389f07ab9d}\index{parser.ImportadorDeClasses@{parser.ImportadorDeClasses}!ImportAClassFromAssembly@{ImportAClassFromAssembly}}
+\index{ImportAClassFromAssembly@{ImportAClassFromAssembly}!parser.ImportadorDeClasses@{parser.ImportadorDeClasses}}
+\doxysubsubsection{\texorpdfstring{ImportAClassFromAssembly()}{ImportAClassFromAssembly()}}
+{\footnotesize\ttfamily \label{classparser_1_1_importador_de_classes_ae0a064550e1d4400a9db4d389f07ab9d} 
+void parser.\+Importador\+De\+Classes.\+Import\+AClass\+From\+Assembly (\begin{DoxyParamCaption}\item[{string}]{name\+Class}{}\end{DoxyParamCaption})}
+
+
+
+importa métodos e propriedades de uma classe, vinda de um Assembly 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+Class} & nome da classe importada.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_importador_de_classes_af5d64ef3a14fe03f7896aeb31efe8ac3}\index{parser.ImportadorDeClasses@{parser.ImportadorDeClasses}!ImportAllClassesFromAssembly@{ImportAllClassesFromAssembly}}
+\index{ImportAllClassesFromAssembly@{ImportAllClassesFromAssembly}!parser.ImportadorDeClasses@{parser.ImportadorDeClasses}}
+\doxysubsubsection{\texorpdfstring{ImportAllClassesFromAssembly()}{ImportAllClassesFromAssembly()}}
+{\footnotesize\ttfamily \label{classparser_1_1_importador_de_classes_af5d64ef3a14fe03f7896aeb31efe8ac3} 
+void parser.\+Importador\+De\+Classes.\+Import\+All\+Classes\+From\+Assembly (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+faz a importacao de todas classes no \mbox{[}Assembly\mbox{]} biblioteca. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/componentes\+De\+Interpretadores\+ECompiladores/\+PROGRAMACAO ORIENTADA A OBJETOS/classes de Apoio/\mbox{\hyperlink{_importador_de_classes_8cs}{Importador\+De\+Classes.\+cs}}\end{DoxyCompactItemize}

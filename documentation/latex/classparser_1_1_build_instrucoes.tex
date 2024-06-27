@@ -1,0 +1,388 @@
+\doxysection{parser.\+Build\+Instrucoes Class Reference}
+\hypertarget{classparser_1_1_build_instrucoes}{}\label{classparser_1_1_build_instrucoes}\index{parser.BuildInstrucoes@{parser.BuildInstrucoes}}
+Inheritance diagram for parser.\+Build\+Instrucoes\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classparser_1_1_build_instrucoes}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classparser_1_1_build_instrucoes_1_1_testes}{Testes}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparser_1_1_build_instrucoes_a965bd59ce54976cd719be616cd34c3c2}{Build\+Instrucoes}} (List$<$ string $>$ codigo)
+\begin{DoxyCompactList}\small\item\em construtor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_build_instrucoes_a860a0cf4e56d3e7af0b027080cc265f4}{Build\+Instrucoes}} (string code)
+\begin{DoxyCompactList}\small\item\em construtor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classparser_1_1_build_instrucoes_a6f59543c405ea517761f8e1a72ad499a}{Found\+ACompatible\+Constructor}} (string tipo\+Objeto, List$<$ \mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} $>$ parametros)
+\begin{DoxyCompactList}\small\item\em encontra um construtor compativel com a lista de parametros. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ \mbox{\hyperlink{classparser_1_1_build_instrucoes_a9b1281d4722c48d29c494527e4901d69}{Build\+Instrucao\+Module}} (\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}} sequencia, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em instrucao module. sintaxe\+: module name\+Library; \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ \mbox{\hyperlink{classparser_1_1_build_instrucoes_a5a24f3e34b6b019e18a3983eb81e8aa3}{Build\+Instrucao\+Importer}} (\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}} sequencia, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em instrucao exporter. sintaxe\+: importer ( nome\+Assembly). \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ \mbox{\hyperlink{classparser_1_1_build_instrucoes_a9746df8d32cfdb603a2fc5b1258615d9}{Build\+Instrucao\+Construtor\+UP}} (\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}} sequencia, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em instrucao constructor\+UP. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ \mbox{\hyperlink{classparser_1_1_build_instrucoes_a67ad765525ffcfdacd287d950b961cb9}{Build\+Instrucao\+Create}} (\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}} sequencia, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em Cria um novo objeto. pode criar um objeto simples, ou um objeto de variavel vetor. sintaxe\+: tipo objeto= create(parametros), ou objeto=create(parametros), parametros pode se null ou vazio. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_build_instrucoes_aa8d863491da26a0ca4097f687ec597f8}{Valida\+Tokens\+Da\+Sintaxe\+Da\+Instrucao}} (\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}} sequencia, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ \mbox{\hyperlink{classparser_1_1_build_instrucoes_a53b4c246eff54dd90a2bcd367497177a}{Build\+Instrucao\+Set\+Var}} (\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}} sequencia, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em instrucao Set\+Var. sintaxe\+: Set\+Var(nome\+Objeto,valor\+Do\+Objeto); \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ \mbox{\hyperlink{classparser_1_1_build_instrucoes_a3c68b1e3793b9fea897ac53b5458f248}{Build\+Instrucao\+Get\+Objeto}} (\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}} sequencia, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em instrucao Get\+Objeto. sintaxe\+: Get\+Objeto(nome\+Objeto). retorna uma \mbox{[}\doxylink{classparser_1_1_expressao_objeto}{Expressao\+Objeto}\mbox{]} contendo o objeto. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ \mbox{\hyperlink{classparser_1_1_build_instrucoes_a1d2746e06a511e3813126d6127e17669}{Build\+Instrucao\+While}} (\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}} sequencia, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em instrucao while. sintaxe\+: while(expressao\+Condicional)\{bloco\+De\+Instrucoes\}. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ \mbox{\hyperlink{classparser_1_1_build_instrucoes_a34806426662d9aafb1c316873d647a58}{Build\+Instrucao\+For}} (\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}} sequencia, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em instrucao for. sintaxe\+: for (int x=0; x\texorpdfstring{$<$}{<}3; x++)\{ bloco de instrucoes \}; \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ \mbox{\hyperlink{classparser_1_1_build_instrucoes_a56e13eff9fb99953f2549c20b77c7c28}{Build\+Instrucao\+IFs\+Com\+Ou\+Sem\+Else}} (\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}} sequencia, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em instrucao if/else. sintaxe\+: if (expressoes\+Condicionais)\{bloco de instrucao\}, ou if (expressoes\+Condicionais)\{bloco de instrucao if\} else \{bloco de instrucao else\}; \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ \mbox{\hyperlink{classparser_1_1_build_instrucoes_a0a64f69adc165a563b28a84656c71c7d}{Build\+Instrucao\+Cases\+Of\+Use}} (\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}} sequencia, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em instrucao cases\+Of\+Use\+: sintaxe\+: cases\+Of\+Use y\+: \{ (case \texorpdfstring{$<$}{<} x)\+: \{ y = 2; \}; \{mais cases\}\} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_build_instrucoes_ae0b9bacb6d6dc98d5b95ab23754a07bc}{Build\+Bloco\+If\+Else}} (int numero\+Do\+Bloco, List$<$ string $>$ tokens, ref \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo\+Da\+Instrucao, \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} instrucao\+Principal, ref \mbox{\hyperlink{classparser_1_1_processador_de_i_d}{Processador\+De\+ID}} processador\+Bloco)
+\begin{DoxyCompactList}\small\item\em constroi blocos de if/else, \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_build_instrucoes_ab4301b885d69a4c433102cb0c2805b28}{Build\+Bloco}} (int numero\+Do\+Bloco, List$<$ string $>$ tokens, ref \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo\+Da\+Instrucao, \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} instrucao\+Principal, ref \mbox{\hyperlink{classparser_1_1_processador_de_i_d}{Processador\+De\+ID}} processador\+Bloco)
+\begin{DoxyCompactList}\small\item\em constroi um bloco de instruções, em instrucoes\+: for, while, cases\+Of\+Use. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ \mbox{\hyperlink{classparser_1_1_build_instrucoes_ab69669ffae527ff65f869aa679303453}{Build\+Instrucao\+Return}} (\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}} sequencia, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em instrucao return. sintax\+: return expressao. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classparser_1_1_build_instrucoes_a965bd59ce54976cd719be616cd34c3c2}\index{parser.BuildInstrucoes@{parser.BuildInstrucoes}!BuildInstrucoes@{BuildInstrucoes}}
+\index{BuildInstrucoes@{BuildInstrucoes}!parser.BuildInstrucoes@{parser.BuildInstrucoes}}
+\doxysubsubsection{\texorpdfstring{BuildInstrucoes()}{BuildInstrucoes()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_build_instrucoes_a965bd59ce54976cd719be616cd34c3c2} 
+parser.\+Build\+Instrucoes.\+Build\+Instrucoes (\begin{DoxyParamCaption}\item[{List$<$ string $>$}]{codigo}{}\end{DoxyParamCaption})}
+
+
+
+construtor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em codigo} & lista de tokens da instrucao.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_build_instrucoes_a860a0cf4e56d3e7af0b027080cc265f4}\index{parser.BuildInstrucoes@{parser.BuildInstrucoes}!BuildInstrucoes@{BuildInstrucoes}}
+\index{BuildInstrucoes@{BuildInstrucoes}!parser.BuildInstrucoes@{parser.BuildInstrucoes}}
+\doxysubsubsection{\texorpdfstring{BuildInstrucoes()}{BuildInstrucoes()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_build_instrucoes_a860a0cf4e56d3e7af0b027080cc265f4} 
+parser.\+Build\+Instrucoes.\+Build\+Instrucoes (\begin{DoxyParamCaption}\item[{string}]{code}{}\end{DoxyParamCaption})}
+
+
+
+construtor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & texto contendo todos tokens da instrucao.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_build_instrucoes_ab4301b885d69a4c433102cb0c2805b28}\index{parser.BuildInstrucoes@{parser.BuildInstrucoes}!BuildBloco@{BuildBloco}}
+\index{BuildBloco@{BuildBloco}!parser.BuildInstrucoes@{parser.BuildInstrucoes}}
+\doxysubsubsection{\texorpdfstring{BuildBloco()}{BuildBloco()}}
+{\footnotesize\ttfamily \label{classparser_1_1_build_instrucoes_ab4301b885d69a4c433102cb0c2805b28} 
+void parser.\+Build\+Instrucoes.\+Build\+Bloco (\begin{DoxyParamCaption}\item[{int}]{numero\+Do\+Bloco}{, }\item[{List$<$ string $>$}]{tokens}{, }\item[{ref \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo\+Da\+Instrucao}{, }\item[{\mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}}}]{instrucao\+Principal}{, }\item[{ref \mbox{\hyperlink{classparser_1_1_processador_de_i_d}{Processador\+De\+ID}}}]{processador\+Bloco}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+constroi um bloco de instruções, em instrucoes\+: for, while, cases\+Of\+Use. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em numero\+Do\+Bloco} & indice do bloco.\\
+\hline
+{\em tokens} & tokens das instruções do bloco.\\
+\hline
+{\em escopo\+Da\+Instrucao} & contexto onde a expressao está.\\
+\hline
+{\em instrucao\+Principal} & instrucao do bloco.\\
+\hline
+{\em processador\+Bloco} & objeto compilador.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_build_instrucoes_ae0b9bacb6d6dc98d5b95ab23754a07bc}\index{parser.BuildInstrucoes@{parser.BuildInstrucoes}!BuildBlocoIfElse@{BuildBlocoIfElse}}
+\index{BuildBlocoIfElse@{BuildBlocoIfElse}!parser.BuildInstrucoes@{parser.BuildInstrucoes}}
+\doxysubsubsection{\texorpdfstring{BuildBlocoIfElse()}{BuildBlocoIfElse()}}
+{\footnotesize\ttfamily \label{classparser_1_1_build_instrucoes_ae0b9bacb6d6dc98d5b95ab23754a07bc} 
+void parser.\+Build\+Instrucoes.\+Build\+Bloco\+If\+Else (\begin{DoxyParamCaption}\item[{int}]{numero\+Do\+Bloco}{, }\item[{List$<$ string $>$}]{tokens}{, }\item[{ref \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo\+Da\+Instrucao}{, }\item[{\mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}}}]{instrucao\+Principal}{, }\item[{ref \mbox{\hyperlink{classparser_1_1_processador_de_i_d}{Processador\+De\+ID}}}]{processador\+Bloco}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+constroi blocos de if/else, 
+
+
+\begin{DoxyParams}{Parameters}
+{\em numero\+Do\+Bloco} & indice do bloco.\\
+\hline
+{\em tokens} & tokens de if, ou tokens de else.\\
+\hline
+{\em escopo\+Da\+Instrucao} & escopo da instrucao.\\
+\hline
+{\em instrucao\+Principal} & instrucao if/else.\\
+\hline
+{\em processador\+Bloco} & compilador.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_build_instrucoes_a0a64f69adc165a563b28a84656c71c7d}\index{parser.BuildInstrucoes@{parser.BuildInstrucoes}!BuildInstrucaoCasesOfUse@{BuildInstrucaoCasesOfUse}}
+\index{BuildInstrucaoCasesOfUse@{BuildInstrucaoCasesOfUse}!parser.BuildInstrucoes@{parser.BuildInstrucoes}}
+\doxysubsubsection{\texorpdfstring{BuildInstrucaoCasesOfUse()}{BuildInstrucaoCasesOfUse()}}
+{\footnotesize\ttfamily \label{classparser_1_1_build_instrucoes_a0a64f69adc165a563b28a84656c71c7d} 
+List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ parser.\+Build\+Instrucoes.\+Build\+Instrucao\+Cases\+Of\+Use (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}}}]{sequencia}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+instrucao cases\+Of\+Use\+: sintaxe\+: cases\+Of\+Use y\+: \{ (case \texorpdfstring{$<$}{<} x)\+: \{ y = 2; \}; \{mais cases\}\} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sequencia} & sequencia de tokens.\\
+\hline
+{\em escopo} & contexto onde a expressao está.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+exprss\mbox{[}um\+Case\+Index\mbox{]}\+:a expressao condicional do case. instrucao\mbox{[}um\+Case\+Index\mbox{]}\+: instrucoes.\Hypertarget{classparser_1_1_build_instrucoes_a9746df8d32cfdb603a2fc5b1258615d9}\index{parser.BuildInstrucoes@{parser.BuildInstrucoes}!BuildInstrucaoConstrutorUP@{BuildInstrucaoConstrutorUP}}
+\index{BuildInstrucaoConstrutorUP@{BuildInstrucaoConstrutorUP}!parser.BuildInstrucoes@{parser.BuildInstrucoes}}
+\doxysubsubsection{\texorpdfstring{BuildInstrucaoConstrutorUP()}{BuildInstrucaoConstrutorUP()}}
+{\footnotesize\ttfamily \label{classparser_1_1_build_instrucoes_a9746df8d32cfdb603a2fc5b1258615d9} 
+List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ parser.\+Build\+Instrucoes.\+Build\+Instrucao\+Construtor\+UP (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}}}]{sequencia}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+instrucao constructor\+UP. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sequencia} & sequencia de tokens da instrucao.\\
+\hline
+{\em escopo} & contexto onde a instrucao está.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+template= classe\+Herdeira.\+construtor\+UP(nome\+Classe\+Herdada, List$<$\+Expressao$>$ parametros\+Do\+Construtor). pode ser o objeto "{}actual"{};\Hypertarget{classparser_1_1_build_instrucoes_a67ad765525ffcfdacd287d950b961cb9}\index{parser.BuildInstrucoes@{parser.BuildInstrucoes}!BuildInstrucaoCreate@{BuildInstrucaoCreate}}
+\index{BuildInstrucaoCreate@{BuildInstrucaoCreate}!parser.BuildInstrucoes@{parser.BuildInstrucoes}}
+\doxysubsubsection{\texorpdfstring{BuildInstrucaoCreate()}{BuildInstrucaoCreate()}}
+{\footnotesize\ttfamily \label{classparser_1_1_build_instrucoes_a67ad765525ffcfdacd287d950b961cb9} 
+List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ parser.\+Build\+Instrucoes.\+Build\+Instrucao\+Create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}}}]{sequencia}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Cria um novo objeto. pode criar um objeto simples, ou um objeto de variavel vetor. sintaxe\+: tipo objeto= create(parametros), ou objeto=create(parametros), parametros pode se null ou vazio. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sequencia} & sequencia de tokens da instrucao.\\
+\hline
+{\em escopo} & contexto onde a instrucao está.\\
+\hline
+\end{DoxyParams}
+EXPRESSOES\+: a lista de expressões da instrução foi feita na seguinte sequência\+: 0-\/ NOME "{}create"{} 1-\/ tipo do objeto 2-\/ nome do objeto 3-\/ tipo template do objeto\+: Objeto/\+Vetor. 4-\/ expressoes indices vetor. 5-\/ expressoes parametros. 6-\/ indice do construtor. 7-\/ nome do objeto caller.
+
+ID ID = create ( ID , ID ) -\/-\/\texorpdfstring{$>$}{>} exemplo\+: int m= create(1,1).\Hypertarget{classparser_1_1_build_instrucoes_a34806426662d9aafb1c316873d647a58}\index{parser.BuildInstrucoes@{parser.BuildInstrucoes}!BuildInstrucaoFor@{BuildInstrucaoFor}}
+\index{BuildInstrucaoFor@{BuildInstrucaoFor}!parser.BuildInstrucoes@{parser.BuildInstrucoes}}
+\doxysubsubsection{\texorpdfstring{BuildInstrucaoFor()}{BuildInstrucaoFor()}}
+{\footnotesize\ttfamily \label{classparser_1_1_build_instrucoes_a34806426662d9aafb1c316873d647a58} 
+List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ parser.\+Build\+Instrucoes.\+Build\+Instrucao\+For (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}}}]{sequencia}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+instrucao for. sintaxe\+: for (int x=0; x\texorpdfstring{$<$}{<}3; x++)\{ bloco de instrucoes \}; 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sequencia} & sequencia de tokens.\\
+\hline
+{\em escopo} & contexto onde a instrucao está.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_build_instrucoes_a3c68b1e3793b9fea897ac53b5458f248}\index{parser.BuildInstrucoes@{parser.BuildInstrucoes}!BuildInstrucaoGetObjeto@{BuildInstrucaoGetObjeto}}
+\index{BuildInstrucaoGetObjeto@{BuildInstrucaoGetObjeto}!parser.BuildInstrucoes@{parser.BuildInstrucoes}}
+\doxysubsubsection{\texorpdfstring{BuildInstrucaoGetObjeto()}{BuildInstrucaoGetObjeto()}}
+{\footnotesize\ttfamily \label{classparser_1_1_build_instrucoes_a3c68b1e3793b9fea897ac53b5458f248} 
+List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ parser.\+Build\+Instrucoes.\+Build\+Instrucao\+Get\+Objeto (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}}}]{sequencia}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+instrucao Get\+Objeto. sintaxe\+: Get\+Objeto(nome\+Objeto). retorna uma \mbox{[}\doxylink{classparser_1_1_expressao_objeto}{Expressao\+Objeto}\mbox{]} contendo o objeto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sequencia} & sequencia de tokens da instrucao.\\
+\hline
+{\em escopo} & contexto onde a instrucao está.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_build_instrucoes_a56e13eff9fb99953f2549c20b77c7c28}\index{parser.BuildInstrucoes@{parser.BuildInstrucoes}!BuildInstrucaoIFsComOuSemElse@{BuildInstrucaoIFsComOuSemElse}}
+\index{BuildInstrucaoIFsComOuSemElse@{BuildInstrucaoIFsComOuSemElse}!parser.BuildInstrucoes@{parser.BuildInstrucoes}}
+\doxysubsubsection{\texorpdfstring{BuildInstrucaoIFsComOuSemElse()}{BuildInstrucaoIFsComOuSemElse()}}
+{\footnotesize\ttfamily \label{classparser_1_1_build_instrucoes_a56e13eff9fb99953f2549c20b77c7c28} 
+List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ parser.\+Build\+Instrucoes.\+Build\+Instrucao\+IFs\+Com\+Ou\+Sem\+Else (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}}}]{sequencia}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+instrucao if/else. sintaxe\+: if (expressoes\+Condicionais)\{bloco de instrucao\}, ou if (expressoes\+Condicionais)\{bloco de instrucao if\} else \{bloco de instrucao else\}; 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sequencia} & sequencia de tokens da instrucao.\\
+\hline
+{\em escopo} & contexto onde a expressao está.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+if (exprss) \{\} else \{\}.\Hypertarget{classparser_1_1_build_instrucoes_a5a24f3e34b6b019e18a3983eb81e8aa3}\index{parser.BuildInstrucoes@{parser.BuildInstrucoes}!BuildInstrucaoImporter@{BuildInstrucaoImporter}}
+\index{BuildInstrucaoImporter@{BuildInstrucaoImporter}!parser.BuildInstrucoes@{parser.BuildInstrucoes}}
+\doxysubsubsection{\texorpdfstring{BuildInstrucaoImporter()}{BuildInstrucaoImporter()}}
+{\footnotesize\ttfamily \label{classparser_1_1_build_instrucoes_a5a24f3e34b6b019e18a3983eb81e8aa3} 
+List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ parser.\+Build\+Instrucoes.\+Build\+Instrucao\+Importer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}}}]{sequencia}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+instrucao exporter. sintaxe\+: importer ( nome\+Assembly). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sequencia} & \\
+\hline
+{\em escopo} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_build_instrucoes_a9b1281d4722c48d29c494527e4901d69}\index{parser.BuildInstrucoes@{parser.BuildInstrucoes}!BuildInstrucaoModule@{BuildInstrucaoModule}}
+\index{BuildInstrucaoModule@{BuildInstrucaoModule}!parser.BuildInstrucoes@{parser.BuildInstrucoes}}
+\doxysubsubsection{\texorpdfstring{BuildInstrucaoModule()}{BuildInstrucaoModule()}}
+{\footnotesize\ttfamily \label{classparser_1_1_build_instrucoes_a9b1281d4722c48d29c494527e4901d69} 
+List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ parser.\+Build\+Instrucoes.\+Build\+Instrucao\+Module (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}}}]{sequencia}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+instrucao module. sintaxe\+: module name\+Library; 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sequencia} & sequencia da expressao.\\
+\hline
+{\em escopo} & contexto onde a expressao está.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_build_instrucoes_ab69669ffae527ff65f869aa679303453}\index{parser.BuildInstrucoes@{parser.BuildInstrucoes}!BuildInstrucaoReturn@{BuildInstrucaoReturn}}
+\index{BuildInstrucaoReturn@{BuildInstrucaoReturn}!parser.BuildInstrucoes@{parser.BuildInstrucoes}}
+\doxysubsubsection{\texorpdfstring{BuildInstrucaoReturn()}{BuildInstrucaoReturn()}}
+{\footnotesize\ttfamily \label{classparser_1_1_build_instrucoes_ab69669ffae527ff65f869aa679303453} 
+List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ parser.\+Build\+Instrucoes.\+Build\+Instrucao\+Return (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}}}]{sequencia}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+instrucao return. sintax\+: return expressao. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sequencia} & sequencia de tokens da instrucao.\\
+\hline
+{\em escopo} & contexto onde a instrucao está.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_build_instrucoes_a53b4c246eff54dd90a2bcd367497177a}\index{parser.BuildInstrucoes@{parser.BuildInstrucoes}!BuildInstrucaoSetVar@{BuildInstrucaoSetVar}}
+\index{BuildInstrucaoSetVar@{BuildInstrucaoSetVar}!parser.BuildInstrucoes@{parser.BuildInstrucoes}}
+\doxysubsubsection{\texorpdfstring{BuildInstrucaoSetVar()}{BuildInstrucaoSetVar()}}
+{\footnotesize\ttfamily \label{classparser_1_1_build_instrucoes_a53b4c246eff54dd90a2bcd367497177a} 
+List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ parser.\+Build\+Instrucoes.\+Build\+Instrucao\+Set\+Var (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}}}]{sequencia}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+instrucao Set\+Var. sintaxe\+: Set\+Var(nome\+Objeto,valor\+Do\+Objeto); 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sequencia} & sequencia de tokens.\\
+\hline
+{\em escopo} & contexto onde a sequencia está.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_build_instrucoes_a1d2746e06a511e3813126d6127e17669}\index{parser.BuildInstrucoes@{parser.BuildInstrucoes}!BuildInstrucaoWhile@{BuildInstrucaoWhile}}
+\index{BuildInstrucaoWhile@{BuildInstrucaoWhile}!parser.BuildInstrucoes@{parser.BuildInstrucoes}}
+\doxysubsubsection{\texorpdfstring{BuildInstrucaoWhile()}{BuildInstrucaoWhile()}}
+{\footnotesize\ttfamily \label{classparser_1_1_build_instrucoes_a1d2746e06a511e3813126d6127e17669} 
+List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ parser.\+Build\+Instrucoes.\+Build\+Instrucao\+While (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}}}]{sequencia}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+instrucao while. sintaxe\+: while(expressao\+Condicional)\{bloco\+De\+Instrucoes\}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sequencia} & sequencia de tokens da instrução.\\
+\hline
+{\em escopo} & contexto onde a instrucao está.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+while (exprss) bloco .\Hypertarget{classparser_1_1_build_instrucoes_a6f59543c405ea517761f8e1a72ad499a}\index{parser.BuildInstrucoes@{parser.BuildInstrucoes}!FoundACompatibleConstructor@{FoundACompatibleConstructor}}
+\index{FoundACompatibleConstructor@{FoundACompatibleConstructor}!parser.BuildInstrucoes@{parser.BuildInstrucoes}}
+\doxysubsubsection{\texorpdfstring{FoundACompatibleConstructor()}{FoundACompatibleConstructor()}}
+{\footnotesize\ttfamily \label{classparser_1_1_build_instrucoes_a6f59543c405ea517761f8e1a72ad499a} 
+static int parser.\+Build\+Instrucoes.\+Found\+ACompatible\+Constructor (\begin{DoxyParamCaption}\item[{string}]{tipo\+Objeto}{, }\item[{List$<$ \mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} $>$}]{parametros}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+encontra um construtor compativel com a lista de parametros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tipo\+Objeto} & tipo do objeto a instanciar.\\
+\hline
+{\em parametros} & lista de expressoes que compoem os parametros.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna o indice do construtor.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_build_instrucoes_aa8d863491da26a0ca4097f687ec597f8}\index{parser.BuildInstrucoes@{parser.BuildInstrucoes}!ValidaTokensDaSintaxeDaInstrucao@{ValidaTokensDaSintaxeDaInstrucao}}
+\index{ValidaTokensDaSintaxeDaInstrucao@{ValidaTokensDaSintaxeDaInstrucao}!parser.BuildInstrucoes@{parser.BuildInstrucoes}}
+\doxysubsubsection{\texorpdfstring{ValidaTokensDaSintaxeDaInstrucao()}{ValidaTokensDaSintaxeDaInstrucao()}}
+{\footnotesize\ttfamily \label{classparser_1_1_build_instrucoes_aa8d863491da26a0ca4097f687ec597f8} 
+bool parser.\+Build\+Instrucoes.\+Valida\+Tokens\+Da\+Sintaxe\+Da\+Instrucao (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}}}]{sequencia}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/componentes\+De\+Interpretadores\+ECompiladores/\+PROGRAMACAO FUNCIONAL/\mbox{\hyperlink{_processador_de_i_d__2_8cs}{Processador\+De\+ID\+\_\+2.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,148 @@
+\doxysection{META\+\_\+\+GAME.\+Testes.\+Manipulation\+Objects Class Reference}
+\hypertarget{class_m_e_t_a___g_a_m_e_1_1_testes_1_1_manipulation_objects}{}\label{class_m_e_t_a___g_a_m_e_1_1_testes_1_1_manipulation_objects}\index{META\_GAME.Testes.ManipulationObjects@{META\_GAME.Testes.ManipulationObjects}}
+
+
+Classe que registra via reflexão objetos do Script para testes.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_m_e_t_a___g_a_m_e_1_1_testes_1_1_manipulation_objects_a89c42365c74941cec802199ab033f15e}{Set\+Object\+Value}} (string nome\+Objeto, object objeto)
+\begin{DoxyCompactList}\small\item\em seta um objeto existente com um novo objeto parametro. \end{DoxyCompactList}\item 
+object \mbox{\hyperlink{class_m_e_t_a___g_a_m_e_1_1_testes_1_1_manipulation_objects_af3fbaa2c00aa2b003f99f272eb672e7f}{Get\+Object}} (string nome\+Objeto)
+\begin{DoxyCompactList}\small\item\em obtém o valor do objeto de nome objeto. \end{DoxyCompactList}\item 
+object \mbox{\hyperlink{class_m_e_t_a___g_a_m_e_1_1_testes_1_1_manipulation_objects_af1612bf8864b60b498a1c1531af8f8b0}{Get\+Property}} (string nome\+Objeto, string property\+Name)
+\begin{DoxyCompactList}\small\item\em retorna o valor de uma propriedade de um objeto registrado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_e_t_a___g_a_m_e_1_1_testes_1_1_manipulation_objects_a97f7afca1c52db0eb853561b22ac3e88}{Set\+Value}} (string nome\+Objeto, string propriedade, string tipo\+Objeto\+Valor, object objeto\+Valor)
+\begin{DoxyCompactList}\small\item\em seta um valor para uma propriedade de um objeto registrado, com valor igual \mbox{[}objeto\+Valor\mbox{]}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_m_e_t_a___g_a_m_e_1_1_testes_1_1_manipulation_objects_a98a30bea9811bbe2bedf3f635fba97f7}{Construtor\+Objects\+Registred}} (string name\+Object\+To\+Build, Type type\+Object\+To\+Build, List$<$ object $>$ objects\+Parameters)
+\begin{DoxyCompactList}\small\item\em construtor para objetos, via reflexão. \end{DoxyCompactList}\item 
+object \mbox{\hyperlink{class_m_e_t_a___g_a_m_e_1_1_testes_1_1_manipulation_objects_a5c49a748872638b4007c97215bd5386e}{Call\+Method}} (string name\+Object, string name\+Method, List$<$ object $>$ parameters)
+\begin{DoxyCompactList}\small\item\em chama um método de um objeto registrado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe que registra via reflexão objetos do Script para testes. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_m_e_t_a___g_a_m_e_1_1_testes_1_1_manipulation_objects_a5c49a748872638b4007c97215bd5386e}\index{META\_GAME.Testes.ManipulationObjects@{META\_GAME.Testes.ManipulationObjects}!CallMethod@{CallMethod}}
+\index{CallMethod@{CallMethod}!META\_GAME.Testes.ManipulationObjects@{META\_GAME.Testes.ManipulationObjects}}
+\doxysubsubsection{\texorpdfstring{CallMethod()}{CallMethod()}}
+{\footnotesize\ttfamily \label{class_m_e_t_a___g_a_m_e_1_1_testes_1_1_manipulation_objects_a5c49a748872638b4007c97215bd5386e} 
+object META\+\_\+\+GAME.\+Testes.\+Manipulation\+Objects.\+Call\+Method (\begin{DoxyParamCaption}\item[{string}]{name\+Object}{, }\item[{string}]{name\+Method}{, }\item[{List$<$ object $>$}]{parameters}{}\end{DoxyParamCaption})}
+
+
+
+chama um método de um objeto registrado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+Object} & nome do objeto registrado.\\
+\hline
+{\em name\+Method} & nome do método do objeto registrado.\\
+\hline
+{\em parameters} & lista de Parâmetros para o método chamado,\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_m_e_t_a___g_a_m_e_1_1_testes_1_1_manipulation_objects_a98a30bea9811bbe2bedf3f635fba97f7}\index{META\_GAME.Testes.ManipulationObjects@{META\_GAME.Testes.ManipulationObjects}!ConstrutorObjectsRegistred@{ConstrutorObjectsRegistred}}
+\index{ConstrutorObjectsRegistred@{ConstrutorObjectsRegistred}!META\_GAME.Testes.ManipulationObjects@{META\_GAME.Testes.ManipulationObjects}}
+\doxysubsubsection{\texorpdfstring{ConstrutorObjectsRegistred()}{ConstrutorObjectsRegistred()}}
+{\footnotesize\ttfamily \label{class_m_e_t_a___g_a_m_e_1_1_testes_1_1_manipulation_objects_a98a30bea9811bbe2bedf3f635fba97f7} 
+bool META\+\_\+\+GAME.\+Testes.\+Manipulation\+Objects.\+Construtor\+Objects\+Registred (\begin{DoxyParamCaption}\item[{string}]{name\+Object\+To\+Build}{, }\item[{Type}]{type\+Object\+To\+Build}{, }\item[{List$<$ object $>$}]{objects\+Parameters}{}\end{DoxyParamCaption})}
+
+
+
+construtor para objetos, via reflexão. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+Object\+To\+Build} & nome do objeto a ser construido.\\
+\hline
+{\em type\+Object\+To\+Build} & tipo do objeto a ser construido.\\
+\hline
+{\em objects\+Parameters} & lista de objetos parâmetros a ser passados para o construtor.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_m_e_t_a___g_a_m_e_1_1_testes_1_1_manipulation_objects_af3fbaa2c00aa2b003f99f272eb672e7f}\index{META\_GAME.Testes.ManipulationObjects@{META\_GAME.Testes.ManipulationObjects}!GetObject@{GetObject}}
+\index{GetObject@{GetObject}!META\_GAME.Testes.ManipulationObjects@{META\_GAME.Testes.ManipulationObjects}}
+\doxysubsubsection{\texorpdfstring{GetObject()}{GetObject()}}
+{\footnotesize\ttfamily \label{class_m_e_t_a___g_a_m_e_1_1_testes_1_1_manipulation_objects_af3fbaa2c00aa2b003f99f272eb672e7f} 
+object META\+\_\+\+GAME.\+Testes.\+Manipulation\+Objects.\+Get\+Object (\begin{DoxyParamCaption}\item[{string}]{nome\+Objeto}{}\end{DoxyParamCaption})}
+
+
+
+obtém o valor do objeto de nome objeto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Objeto} & nome do objeto.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna o valor do objeto.
+\end{DoxyReturn}
+\Hypertarget{class_m_e_t_a___g_a_m_e_1_1_testes_1_1_manipulation_objects_af1612bf8864b60b498a1c1531af8f8b0}\index{META\_GAME.Testes.ManipulationObjects@{META\_GAME.Testes.ManipulationObjects}!GetProperty@{GetProperty}}
+\index{GetProperty@{GetProperty}!META\_GAME.Testes.ManipulationObjects@{META\_GAME.Testes.ManipulationObjects}}
+\doxysubsubsection{\texorpdfstring{GetProperty()}{GetProperty()}}
+{\footnotesize\ttfamily \label{class_m_e_t_a___g_a_m_e_1_1_testes_1_1_manipulation_objects_af1612bf8864b60b498a1c1531af8f8b0} 
+object META\+\_\+\+GAME.\+Testes.\+Manipulation\+Objects.\+Get\+Property (\begin{DoxyParamCaption}\item[{string}]{nome\+Objeto}{, }\item[{string}]{property\+Name}{}\end{DoxyParamCaption})}
+
+
+
+retorna o valor de uma propriedade de um objeto registrado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Objeto} & nome do objeto registrado a ser consultado em sua propriedade.\\
+\hline
+{\em property\+Name} & nome da propriedade a ser consultada.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_m_e_t_a___g_a_m_e_1_1_testes_1_1_manipulation_objects_a89c42365c74941cec802199ab033f15e}\index{META\_GAME.Testes.ManipulationObjects@{META\_GAME.Testes.ManipulationObjects}!SetObjectValue@{SetObjectValue}}
+\index{SetObjectValue@{SetObjectValue}!META\_GAME.Testes.ManipulationObjects@{META\_GAME.Testes.ManipulationObjects}}
+\doxysubsubsection{\texorpdfstring{SetObjectValue()}{SetObjectValue()}}
+{\footnotesize\ttfamily \label{class_m_e_t_a___g_a_m_e_1_1_testes_1_1_manipulation_objects_a89c42365c74941cec802199ab033f15e} 
+void META\+\_\+\+GAME.\+Testes.\+Manipulation\+Objects.\+Set\+Object\+Value (\begin{DoxyParamCaption}\item[{string}]{nome\+Objeto}{, }\item[{object}]{objeto}{}\end{DoxyParamCaption})}
+
+
+
+seta um objeto existente com um novo objeto parametro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Objeto} & nome do objeto a ser modificado.\\
+\hline
+{\em objeto} & novo valor para o objeto.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_m_e_t_a___g_a_m_e_1_1_testes_1_1_manipulation_objects_a97f7afca1c52db0eb853561b22ac3e88}\index{META\_GAME.Testes.ManipulationObjects@{META\_GAME.Testes.ManipulationObjects}!SetValue@{SetValue}}
+\index{SetValue@{SetValue}!META\_GAME.Testes.ManipulationObjects@{META\_GAME.Testes.ManipulationObjects}}
+\doxysubsubsection{\texorpdfstring{SetValue()}{SetValue()}}
+{\footnotesize\ttfamily \label{class_m_e_t_a___g_a_m_e_1_1_testes_1_1_manipulation_objects_a97f7afca1c52db0eb853561b22ac3e88} 
+void META\+\_\+\+GAME.\+Testes.\+Manipulation\+Objects.\+Set\+Value (\begin{DoxyParamCaption}\item[{string}]{nome\+Objeto}{, }\item[{string}]{propriedade}{, }\item[{string}]{tipo\+Objeto\+Valor}{, }\item[{object}]{objeto\+Valor}{}\end{DoxyParamCaption})}
+
+
+
+seta um valor para uma propriedade de um objeto registrado, com valor igual \mbox{[}objeto\+Valor\mbox{]}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Objeto} & nome do objeto a ter o valor de propriedade modificada.\\
+\hline
+{\em propriedade} & nome da propriedade a ter o valor alterado.\\
+\hline
+{\em objeto\+Valor} & onjeto valor para a propriedade.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/testes/\mbox{\hyperlink{_parser_scripts_8cs}{Parser\+Scripts.\+cs}}\end{DoxyCompactItemize}

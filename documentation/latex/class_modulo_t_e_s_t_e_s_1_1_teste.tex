@@ -1,0 +1,180 @@
+\doxysection{Modulo\+TESTES.\+Teste Class Reference}
+\hypertarget{class_modulo_t_e_s_t_e_s_1_1_teste}{}\label{class_modulo_t_e_s_t_e_s_1_1_teste}\index{ModuloTESTES.Teste@{ModuloTESTES.Teste}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, List$<$ string $>$ $>$ \mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_teste_a26e736e7b92279a50ee01c68bd459ca8}{Get\+Banco\+Dados\+Teste}} ()
+\item 
+void \mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_teste_abb768d2ae46cc51536d9bd228809e14a}{Set\+Banco\+Dados\+Teste}} (Dictionary$<$ string, List$<$ string $>$ $>$ banco\+DB)
+\item 
+string \mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_teste_a4583f1041fe27608e6336ab81fa48a25}{Get\+Nome\+Do\+Teste}} ()
+\item 
+\mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_assercoes}{Assercoes}} \mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_teste_a83d55f46757c9ecb5675ba19297ba27d}{Get\+Assercoes}} ()
+\item 
+delegate void \mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_teste_ab2dba5208023d5d3e2cdc8a4e4116582}{Metodo\+Do\+Teste}} (\mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_assercoes}{Assercoes}} assercao)
+\begin{DoxyCompactList}\small\item\em assinatura que o método que executa tem que ter. O objeto \mbox{[}assercao\mbox{]} deve ser utilizado para fazer testes de condição, que serão mostrados no \mbox{[}Container\+Teste\mbox{]} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_teste_a5cbe1fe4a267e5ec40a54d88d28b3b8d}{Teste}} (\mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_teste_ab2dba5208023d5d3e2cdc8a4e4116582}{Metodo\+Do\+Teste}} metodo\+Teste, string nome\+Do\+Teste)
+\begin{DoxyCompactList}\small\item\em inicializa o teste, tendo o método com assinatura tendo como parãmetro um \doxylink{class_modulo_t_e_s_t_e_s_1_1_assercoes}{Assercoes}, e um nome para o teste para diferenciar dos demais. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_teste_a3ee712e54f0021ac39617660d3b98947}{Executa\+Teste}} ()
+\begin{DoxyCompactList}\small\item\em executa o teste. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_teste_af5f17f3aa9da33bd08ddb43f1eeb6629}{Teste\+Com\+Banco\+De\+Dados}} (string nome\+Do\+Teste, \mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_teste_ab2dba5208023d5d3e2cdc8a4e4116582}{Metodo\+Do\+Teste}} metodo\+Teste, string file\+Name\+Banco\+De\+Dados\+TXT)
+\begin{DoxyCompactList}\small\item\em inicializa um novo teste, e carrega um banco de dados (formato simples, TXT, com todos campos separados por vírgulas). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Dictionary$<$ string, List$<$ string $>$ $>$ \mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_teste_a155454df10b1263aef7e783ced464b72}{Carrega\+Dados}} (string file\+Name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_teste_a91a9ce3fc5b544edd3c4994490d57727}{TIME\+\_\+\+PASSED}} = 0.\+0
+\item 
+bool \mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_teste_a7ce86e8cbf4663927907c0b9e84fd12f}{Teste\+Falhou}} = false
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_teste_a87f0403c1b7d38b81c7b180e294c2708}{mensagens}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em recebe mensagens de objetos como \doxylink{class_modulo_t_e_s_t_e_s_1_1_assercoes}{Assercoes}, útil para automação e simplificação do framework. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_teste_ab2dba5208023d5d3e2cdc8a4e4116582}{Metodo\+Do\+Teste}} \mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_teste_acc959b49eddd9bcb6242e2dbc00822b4}{METHOD}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em método a ser executado para se realizar o teste, contém o teste em si. tudo que precisa é ter a assinatura com uma asserção como parâmetro, que o teste será executado por passagem da função por delegate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_modulo_t_e_s_t_e_s_1_1_teste_a5cbe1fe4a267e5ec40a54d88d28b3b8d}\index{ModuloTESTES.Teste@{ModuloTESTES.Teste}!Teste@{Teste}}
+\index{Teste@{Teste}!ModuloTESTES.Teste@{ModuloTESTES.Teste}}
+\doxysubsubsection{\texorpdfstring{Teste()}{Teste()}}
+{\footnotesize\ttfamily \label{class_modulo_t_e_s_t_e_s_1_1_teste_a5cbe1fe4a267e5ec40a54d88d28b3b8d} 
+Modulo\+TESTES.\+Teste.\+Teste (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_teste_ab2dba5208023d5d3e2cdc8a4e4116582}{Metodo\+Do\+Teste}}}]{metodo\+Teste}{, }\item[{string}]{nome\+Do\+Teste}{}\end{DoxyParamCaption})}
+
+
+
+inicializa o teste, tendo o método com assinatura tendo como parãmetro um \doxylink{class_modulo_t_e_s_t_e_s_1_1_assercoes}{Assercoes}, e um nome para o teste para diferenciar dos demais. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em metodo\+Teste} & método a ser executado para realizar o teste.\\
+\hline
+{\em nome\+Do\+Teste} & nome do teste, útil para diferenciar entre muitos testes.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_modulo_t_e_s_t_e_s_1_1_teste_a155454df10b1263aef7e783ced464b72}\index{ModuloTESTES.Teste@{ModuloTESTES.Teste}!CarregaDados@{CarregaDados}}
+\index{CarregaDados@{CarregaDados}!ModuloTESTES.Teste@{ModuloTESTES.Teste}}
+\doxysubsubsection{\texorpdfstring{CarregaDados()}{CarregaDados()}}
+{\footnotesize\ttfamily \label{class_modulo_t_e_s_t_e_s_1_1_teste_a155454df10b1263aef7e783ced464b72} 
+static Dictionary$<$ string, List$<$ string $>$ $>$ Modulo\+TESTES.\+Teste.\+Carrega\+Dados (\begin{DoxyParamCaption}\item[{string}]{file\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_modulo_t_e_s_t_e_s_1_1_teste_a3ee712e54f0021ac39617660d3b98947}\index{ModuloTESTES.Teste@{ModuloTESTES.Teste}!ExecutaTeste@{ExecutaTeste}}
+\index{ExecutaTeste@{ExecutaTeste}!ModuloTESTES.Teste@{ModuloTESTES.Teste}}
+\doxysubsubsection{\texorpdfstring{ExecutaTeste()}{ExecutaTeste()}}
+{\footnotesize\ttfamily \label{class_modulo_t_e_s_t_e_s_1_1_teste_a3ee712e54f0021ac39617660d3b98947} 
+void Modulo\+TESTES.\+Teste.\+Executa\+Teste (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+executa o teste. 
+
+\Hypertarget{class_modulo_t_e_s_t_e_s_1_1_teste_a83d55f46757c9ecb5675ba19297ba27d}\index{ModuloTESTES.Teste@{ModuloTESTES.Teste}!GetAssercoes@{GetAssercoes}}
+\index{GetAssercoes@{GetAssercoes}!ModuloTESTES.Teste@{ModuloTESTES.Teste}}
+\doxysubsubsection{\texorpdfstring{GetAssercoes()}{GetAssercoes()}}
+{\footnotesize\ttfamily \label{class_modulo_t_e_s_t_e_s_1_1_teste_a83d55f46757c9ecb5675ba19297ba27d} 
+\mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_assercoes}{Assercoes}} Modulo\+TESTES.\+Teste.\+Get\+Assercoes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_modulo_t_e_s_t_e_s_1_1_teste_a26e736e7b92279a50ee01c68bd459ca8}\index{ModuloTESTES.Teste@{ModuloTESTES.Teste}!GetBancoDadosTeste@{GetBancoDadosTeste}}
+\index{GetBancoDadosTeste@{GetBancoDadosTeste}!ModuloTESTES.Teste@{ModuloTESTES.Teste}}
+\doxysubsubsection{\texorpdfstring{GetBancoDadosTeste()}{GetBancoDadosTeste()}}
+{\footnotesize\ttfamily \label{class_modulo_t_e_s_t_e_s_1_1_teste_a26e736e7b92279a50ee01c68bd459ca8} 
+Dictionary$<$ string, List$<$ string $>$ $>$ Modulo\+TESTES.\+Teste.\+Get\+Banco\+Dados\+Teste (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_modulo_t_e_s_t_e_s_1_1_teste_a4583f1041fe27608e6336ab81fa48a25}\index{ModuloTESTES.Teste@{ModuloTESTES.Teste}!GetNomeDoTeste@{GetNomeDoTeste}}
+\index{GetNomeDoTeste@{GetNomeDoTeste}!ModuloTESTES.Teste@{ModuloTESTES.Teste}}
+\doxysubsubsection{\texorpdfstring{GetNomeDoTeste()}{GetNomeDoTeste()}}
+{\footnotesize\ttfamily \label{class_modulo_t_e_s_t_e_s_1_1_teste_a4583f1041fe27608e6336ab81fa48a25} 
+string Modulo\+TESTES.\+Teste.\+Get\+Nome\+Do\+Teste (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_modulo_t_e_s_t_e_s_1_1_teste_ab2dba5208023d5d3e2cdc8a4e4116582}\index{ModuloTESTES.Teste@{ModuloTESTES.Teste}!MetodoDoTeste@{MetodoDoTeste}}
+\index{MetodoDoTeste@{MetodoDoTeste}!ModuloTESTES.Teste@{ModuloTESTES.Teste}}
+\doxysubsubsection{\texorpdfstring{MetodoDoTeste()}{MetodoDoTeste()}}
+{\footnotesize\ttfamily \label{class_modulo_t_e_s_t_e_s_1_1_teste_ab2dba5208023d5d3e2cdc8a4e4116582} 
+delegate void Modulo\+TESTES.\+Teste.\+Metodo\+Do\+Teste (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_assercoes}{Assercoes}}}]{assercao}{}\end{DoxyParamCaption})}
+
+
+
+assinatura que o método que executa tem que ter. O objeto \mbox{[}assercao\mbox{]} deve ser utilizado para fazer testes de condição, que serão mostrados no \mbox{[}Container\+Teste\mbox{]} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em assercao} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_modulo_t_e_s_t_e_s_1_1_teste_abb768d2ae46cc51536d9bd228809e14a}\index{ModuloTESTES.Teste@{ModuloTESTES.Teste}!SetBancoDadosTeste@{SetBancoDadosTeste}}
+\index{SetBancoDadosTeste@{SetBancoDadosTeste}!ModuloTESTES.Teste@{ModuloTESTES.Teste}}
+\doxysubsubsection{\texorpdfstring{SetBancoDadosTeste()}{SetBancoDadosTeste()}}
+{\footnotesize\ttfamily \label{class_modulo_t_e_s_t_e_s_1_1_teste_abb768d2ae46cc51536d9bd228809e14a} 
+void Modulo\+TESTES.\+Teste.\+Set\+Banco\+Dados\+Teste (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, List$<$ string $>$ $>$}]{banco\+DB}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_modulo_t_e_s_t_e_s_1_1_teste_af5f17f3aa9da33bd08ddb43f1eeb6629}\index{ModuloTESTES.Teste@{ModuloTESTES.Teste}!TesteComBancoDeDados@{TesteComBancoDeDados}}
+\index{TesteComBancoDeDados@{TesteComBancoDeDados}!ModuloTESTES.Teste@{ModuloTESTES.Teste}}
+\doxysubsubsection{\texorpdfstring{TesteComBancoDeDados()}{TesteComBancoDeDados()}}
+{\footnotesize\ttfamily \label{class_modulo_t_e_s_t_e_s_1_1_teste_af5f17f3aa9da33bd08ddb43f1eeb6629} 
+void Modulo\+TESTES.\+Teste.\+Teste\+Com\+Banco\+De\+Dados (\begin{DoxyParamCaption}\item[{string}]{nome\+Do\+Teste}{, }\item[{\mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_teste_ab2dba5208023d5d3e2cdc8a4e4116582}{Metodo\+Do\+Teste}}}]{metodo\+Teste}{, }\item[{string}]{file\+Name\+Banco\+De\+Dados\+TXT}{}\end{DoxyParamCaption})}
+
+
+
+inicializa um novo teste, e carrega um banco de dados (formato simples, TXT, com todos campos separados por vírgulas). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Do\+Teste} & nome do teste, para identificação do teste perante uma lista de testes.\\
+\hline
+{\em metodo\+Teste} & método a ser executado para captar os dados a serem mensurados.\+Observe que este método está feito no programa principal.\\
+\hline
+{\em file\+Name\+Banco\+De\+Dados\+TXT} & nome do banco de dados no format TXT. Cada linha e cada coluna devem ser separados por vírgulas.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_modulo_t_e_s_t_e_s_1_1_teste_a7ce86e8cbf4663927907c0b9e84fd12f}\index{ModuloTESTES.Teste@{ModuloTESTES.Teste}!TesteFalhou@{TesteFalhou}}
+\index{TesteFalhou@{TesteFalhou}!ModuloTESTES.Teste@{ModuloTESTES.Teste}}
+\doxysubsubsection{\texorpdfstring{TesteFalhou}{TesteFalhou}}
+{\footnotesize\ttfamily \label{class_modulo_t_e_s_t_e_s_1_1_teste_a7ce86e8cbf4663927907c0b9e84fd12f} 
+bool Modulo\+TESTES.\+Teste.\+Teste\+Falhou = false}
+
+\Hypertarget{class_modulo_t_e_s_t_e_s_1_1_teste_a91a9ce3fc5b544edd3c4994490d57727}\index{ModuloTESTES.Teste@{ModuloTESTES.Teste}!TIME\_PASSED@{TIME\_PASSED}}
+\index{TIME\_PASSED@{TIME\_PASSED}!ModuloTESTES.Teste@{ModuloTESTES.Teste}}
+\doxysubsubsection{\texorpdfstring{TIME\_PASSED}{TIME\_PASSED}}
+{\footnotesize\ttfamily \label{class_modulo_t_e_s_t_e_s_1_1_teste_a91a9ce3fc5b544edd3c4994490d57727} 
+double Modulo\+TESTES.\+Teste.\+TIME\+\_\+\+PASSED = 0.\+0}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_modulo_t_e_s_t_e_s_1_1_teste_a87f0403c1b7d38b81c7b180e294c2708}\index{ModuloTESTES.Teste@{ModuloTESTES.Teste}!mensagens@{mensagens}}
+\index{mensagens@{mensagens}!ModuloTESTES.Teste@{ModuloTESTES.Teste}}
+\doxysubsubsection{\texorpdfstring{mensagens}{mensagens}}
+{\footnotesize\ttfamily \label{class_modulo_t_e_s_t_e_s_1_1_teste_a87f0403c1b7d38b81c7b180e294c2708} 
+string Modulo\+TESTES.\+Teste.\+mensagens\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+recebe mensagens de objetos como \doxylink{class_modulo_t_e_s_t_e_s_1_1_assercoes}{Assercoes}, útil para automação e simplificação do framework. 
+
+\Hypertarget{class_modulo_t_e_s_t_e_s_1_1_teste_acc959b49eddd9bcb6242e2dbc00822b4}\index{ModuloTESTES.Teste@{ModuloTESTES.Teste}!METHOD@{METHOD}}
+\index{METHOD@{METHOD}!ModuloTESTES.Teste@{ModuloTESTES.Teste}}
+\doxysubsubsection{\texorpdfstring{METHOD}{METHOD}}
+{\footnotesize\ttfamily \label{class_modulo_t_e_s_t_e_s_1_1_teste_acc959b49eddd9bcb6242e2dbc00822b4} 
+\mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_teste_ab2dba5208023d5d3e2cdc8a4e4116582}{Metodo\+Do\+Teste}} Modulo\+TESTES.\+Teste.\+METHOD\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+método a ser executado para se realizar o teste, contém o teste em si. tudo que precisa é ter a assinatura com uma asserção como parâmetro, que o teste será executado por passagem da função por delegate. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/testes/\mbox{\hyperlink{_teste_8cs}{Teste.\+cs}}\end{DoxyCompactItemize}

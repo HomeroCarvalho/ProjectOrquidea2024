@@ -1,0 +1,204 @@
+\doxysection{parser.\+Parser\+AFile Class Reference}
+\hypertarget{classparser_1_1_parser_a_file}{}\label{classparser_1_1_parser_a_file}\index{parser.ParserAFile@{parser.ParserAFile}}
+
+
+converte uma arquivo de texto, em uma lista de tokens da linguagem orquidea. funcionalidades extras\+: executar um programa orquidea contido num arquivo de texto.  
+
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classparser_1_1_parser_a_file_1_1_testes}{Testes}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_parser_a_file_a7b7a444eb2d6a35b4a4c35236f9a1d76}{Get\+Code}} ()
+\begin{DoxyCompactList}\small\item\em retorna as linhas de codigo. \end{DoxyCompactList}\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_parser_a_file_a9a66a098459615d7061a2d75a51313dd}{Get\+Tokens}} ()
+\begin{DoxyCompactList}\small\item\em retorna os tokens do codigo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_parser_a_file_a8b74e662af1ae72b640f1b93ec778ddd}{Parser\+AFile}} (string path\+File)
+\begin{DoxyCompactList}\small\item\em construtor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_parser_a_file_ac2196c67db17d75d83d65b2402a80087}{Calc\+Lines\+Of\+Code}} (string path\+File\+Program)
+\begin{DoxyCompactList}\small\item\em calcula as linhas de codigo puro, somente codigo, e linhas de espaço vazio (para fins de linha de texto). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classparser_1_1_parser_a_file_a73a2653eed2cdbadb197ce7124fb34b9}{Init\+System}} ()
+\begin{DoxyCompactList}\small\item\em inicialia o sistema utilizado. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classparser_1_1_parser_a_file_a8b487beb078ca79ae27c5cb11f306bbf}{Execute\+AProgram}} (string file\+Name)
+\begin{DoxyCompactList}\small\item\em le, obtem tokens, compila e executa um programa orqquidea. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{classparser_1_1_parser_a_file_a76f89b401e792890fea2ee9b3b75bef5}{Get\+Line}} (int index\+Line)
+\begin{DoxyCompactList}\small\item\em retorna a linha de codigo, e a linha de texto do arquivo do programa, UTILIZADO PARA OBTER LINHAS DE CODIGO EM Util\+Tokens.\+Write\+\_\+\+AMensage\+Error(). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_parser_a_file_add35a14a53555b2c7a6da07dedc27a91}{msg\+Erros}} = new List$<$string$>$()
+\begin{DoxyCompactList}\small\item\em lista de erros no carregamento do arquivo de codigo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ int $>$ \mbox{\hyperlink{classparser_1_1_parser_a_file_aed7d431a5ae00d83311ed82a1efe3752}{LINE\+\_\+\+TEXT\+\_\+\+FILE}} = new List$<$int$>$()
+\begin{DoxyCompactList}\small\item\em linhas vazias, ou linhas de comentarios. \end{DoxyCompactList}\item 
+static List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_parser_a_file_adcc6f9e8ea236da2973a2b6c1c3786be}{LINE\+\_\+\+CODE}} = new List$<$string$>$()
+\begin{DoxyCompactList}\small\item\em linhas contendo codigo. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classparser_1_1_parser_a_file_a767ba84bfd0e30a75ef3a0b89a8436cd}{DEBUG}} = false
+\begin{DoxyCompactList}\small\item\em modo de depuracao para encontrar falhas no algoritmo de contagem de linhas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+converte uma arquivo de texto, em uma lista de tokens da linguagem orquidea. funcionalidades extras\+: executar um programa orquidea contido num arquivo de texto. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classparser_1_1_parser_a_file_a8b74e662af1ae72b640f1b93ec778ddd}\index{parser.ParserAFile@{parser.ParserAFile}!ParserAFile@{ParserAFile}}
+\index{ParserAFile@{ParserAFile}!parser.ParserAFile@{parser.ParserAFile}}
+\doxysubsubsection{\texorpdfstring{ParserAFile()}{ParserAFile()}}
+{\footnotesize\ttfamily \label{classparser_1_1_parser_a_file_a8b74e662af1ae72b640f1b93ec778ddd} 
+parser.\+Parser\+AFile.\+Parser\+AFile (\begin{DoxyParamCaption}\item[{string}]{path\+File}{}\end{DoxyParamCaption})}
+
+
+
+construtor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path\+File} & caminho do arquivo que contem o codigo a executar.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_parser_a_file_ac2196c67db17d75d83d65b2402a80087}\index{parser.ParserAFile@{parser.ParserAFile}!CalcLinesOfCode@{CalcLinesOfCode}}
+\index{CalcLinesOfCode@{CalcLinesOfCode}!parser.ParserAFile@{parser.ParserAFile}}
+\doxysubsubsection{\texorpdfstring{CalcLinesOfCode()}{CalcLinesOfCode()}}
+{\footnotesize\ttfamily \label{classparser_1_1_parser_a_file_ac2196c67db17d75d83d65b2402a80087} 
+void parser.\+Parser\+AFile.\+Calc\+Lines\+Of\+Code (\begin{DoxyParamCaption}\item[{string}]{path\+File\+Program}{}\end{DoxyParamCaption})}
+
+
+
+calcula as linhas de codigo puro, somente codigo, e linhas de espaço vazio (para fins de linha de texto). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path\+File\+Program} & path para o aquivo de programa.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_parser_a_file_a8b487beb078ca79ae27c5cb11f306bbf}\index{parser.ParserAFile@{parser.ParserAFile}!ExecuteAProgram@{ExecuteAProgram}}
+\index{ExecuteAProgram@{ExecuteAProgram}!parser.ParserAFile@{parser.ParserAFile}}
+\doxysubsubsection{\texorpdfstring{ExecuteAProgram()}{ExecuteAProgram()}}
+{\footnotesize\ttfamily \label{classparser_1_1_parser_a_file_a8b487beb078ca79ae27c5cb11f306bbf} 
+static void parser.\+Parser\+AFile.\+Execute\+AProgram (\begin{DoxyParamCaption}\item[{string}]{file\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+le, obtem tokens, compila e executa um programa orqquidea. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & nome do arquivo contendo o programa.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & lança uma exceção se nenhum token foi encontrado.\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classparser_1_1_parser_a_file_a7b7a444eb2d6a35b4a4c35236f9a1d76}\index{parser.ParserAFile@{parser.ParserAFile}!GetCode@{GetCode}}
+\index{GetCode@{GetCode}!parser.ParserAFile@{parser.ParserAFile}}
+\doxysubsubsection{\texorpdfstring{GetCode()}{GetCode()}}
+{\footnotesize\ttfamily \label{classparser_1_1_parser_a_file_a7b7a444eb2d6a35b4a4c35236f9a1d76} 
+List$<$ string $>$ parser.\+Parser\+AFile.\+Get\+Code (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+retorna as linhas de codigo. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_parser_a_file_a76f89b401e792890fea2ee9b3b75bef5}\index{parser.ParserAFile@{parser.ParserAFile}!GetLine@{GetLine}}
+\index{GetLine@{GetLine}!parser.ParserAFile@{parser.ParserAFile}}
+\doxysubsubsection{\texorpdfstring{GetLine()}{GetLine()}}
+{\footnotesize\ttfamily \label{classparser_1_1_parser_a_file_a76f89b401e792890fea2ee9b3b75bef5} 
+static string parser.\+Parser\+AFile.\+Get\+Line (\begin{DoxyParamCaption}\item[{int}]{index\+Line}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+retorna a linha de codigo, e a linha de texto do arquivo do programa, UTILIZADO PARA OBTER LINHAS DE CODIGO EM Util\+Tokens.\+Write\+\_\+\+AMensage\+Error(). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index\+Line} & linha de codigo, somente codigo.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_parser_a_file_a9a66a098459615d7061a2d75a51313dd}\index{parser.ParserAFile@{parser.ParserAFile}!GetTokens@{GetTokens}}
+\index{GetTokens@{GetTokens}!parser.ParserAFile@{parser.ParserAFile}}
+\doxysubsubsection{\texorpdfstring{GetTokens()}{GetTokens()}}
+{\footnotesize\ttfamily \label{classparser_1_1_parser_a_file_a9a66a098459615d7061a2d75a51313dd} 
+List$<$ string $>$ parser.\+Parser\+AFile.\+Get\+Tokens (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+retorna os tokens do codigo. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_parser_a_file_a73a2653eed2cdbadb197ce7124fb34b9}\index{parser.ParserAFile@{parser.ParserAFile}!InitSystem@{InitSystem}}
+\index{InitSystem@{InitSystem}!parser.ParserAFile@{parser.ParserAFile}}
+\doxysubsubsection{\texorpdfstring{InitSystem()}{InitSystem()}}
+{\footnotesize\ttfamily \label{classparser_1_1_parser_a_file_a73a2653eed2cdbadb197ce7124fb34b9} 
+static void parser.\+Parser\+AFile.\+Init\+System (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+inicialia o sistema utilizado. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classparser_1_1_parser_a_file_a767ba84bfd0e30a75ef3a0b89a8436cd}\index{parser.ParserAFile@{parser.ParserAFile}!DEBUG@{DEBUG}}
+\index{DEBUG@{DEBUG}!parser.ParserAFile@{parser.ParserAFile}}
+\doxysubsubsection{\texorpdfstring{DEBUG}{DEBUG}}
+{\footnotesize\ttfamily \label{classparser_1_1_parser_a_file_a767ba84bfd0e30a75ef3a0b89a8436cd} 
+bool parser.\+Parser\+AFile.\+DEBUG = false\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+modo de depuracao para encontrar falhas no algoritmo de contagem de linhas. 
+
+\Hypertarget{classparser_1_1_parser_a_file_adcc6f9e8ea236da2973a2b6c1c3786be}\index{parser.ParserAFile@{parser.ParserAFile}!LINE\_CODE@{LINE\_CODE}}
+\index{LINE\_CODE@{LINE\_CODE}!parser.ParserAFile@{parser.ParserAFile}}
+\doxysubsubsection{\texorpdfstring{LINE\_CODE}{LINE\_CODE}}
+{\footnotesize\ttfamily \label{classparser_1_1_parser_a_file_adcc6f9e8ea236da2973a2b6c1c3786be} 
+List$<$string$>$ parser.\+Parser\+AFile.\+LINE\+\_\+\+CODE = new List$<$string$>$()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+linhas contendo codigo. 
+
+\Hypertarget{classparser_1_1_parser_a_file_aed7d431a5ae00d83311ed82a1efe3752}\index{parser.ParserAFile@{parser.ParserAFile}!LINE\_TEXT\_FILE@{LINE\_TEXT\_FILE}}
+\index{LINE\_TEXT\_FILE@{LINE\_TEXT\_FILE}!parser.ParserAFile@{parser.ParserAFile}}
+\doxysubsubsection{\texorpdfstring{LINE\_TEXT\_FILE}{LINE\_TEXT\_FILE}}
+{\footnotesize\ttfamily \label{classparser_1_1_parser_a_file_aed7d431a5ae00d83311ed82a1efe3752} 
+List$<$int$>$ parser.\+Parser\+AFile.\+LINE\+\_\+\+TEXT\+\_\+\+FILE = new List$<$int$>$()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+linhas vazias, ou linhas de comentarios. 
+
+\Hypertarget{classparser_1_1_parser_a_file_add35a14a53555b2c7a6da07dedc27a91}\index{parser.ParserAFile@{parser.ParserAFile}!msgErros@{msgErros}}
+\index{msgErros@{msgErros}!parser.ParserAFile@{parser.ParserAFile}}
+\doxysubsubsection{\texorpdfstring{msgErros}{msgErros}}
+{\footnotesize\ttfamily \label{classparser_1_1_parser_a_file_add35a14a53555b2c7a6da07dedc27a91} 
+List$<$string$>$ parser.\+Parser\+AFile.\+msg\+Erros = new List$<$string$>$()}
+
+
+
+lista de erros no carregamento do arquivo de codigo. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/\+Maquina\+Virtual/\mbox{\hyperlink{_parser_a_file_8cs}{Parser\+AFile.\+cs}}\end{DoxyCompactItemize}

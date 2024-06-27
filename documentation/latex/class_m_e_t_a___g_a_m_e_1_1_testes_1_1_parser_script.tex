@@ -1,0 +1,91 @@
+\doxysection{META\+\_\+\+GAME.\+Testes.\+Parser\+Script Class Reference}
+\hypertarget{class_m_e_t_a___g_a_m_e_1_1_testes_1_1_parser_script}{}\label{class_m_e_t_a___g_a_m_e_1_1_testes_1_1_parser_script}\index{META\_GAME.Testes.ParserScript@{META\_GAME.Testes.ParserScript}}
+
+
+INTERPRETA TEXTOS EM SCRIPT, PARA TESTES ASSOCIADOS AO SCRIPT.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_m_e_t_a___g_a_m_e_1_1_testes_1_1_parser_script_a347602787999640a0f4896e87612f5fa}{Parser\+Script}} ()
+\item 
+void \mbox{\hyperlink{class_m_e_t_a___g_a_m_e_1_1_testes_1_1_parser_script_aa50016f6973fe7dfe6809c107fbf0338}{Parser}} (string file\+Name\+Script)
+\begin{DoxyCompactList}\small\item\em este é o coração do Interpretador de Scripts de \doxylink{namespace_m_e_t_a___g_a_m_e_1_1_testes}{Testes}. Para os \doxylink{namespace_m_e_t_a___g_a_m_e_1_1_testes}{Testes}, é recomendado utilizar o banco de dados \mbox{[}Data\+Set\mbox{]} para carregar dados para a execução do Teste. \end{DoxyCompactList}\item 
+List$<$ string $>$ \mbox{\hyperlink{class_m_e_t_a___g_a_m_e_1_1_testes_1_1_parser_script_a19e4ca9c9d13b06f7599080107c9d7d8}{Interpretador}} (string file\+Name\+Script)
+\begin{DoxyCompactList}\small\item\em retorna os comandos script de um arquivo script. \end{DoxyCompactList}\item 
+List$<$ string $>$ \mbox{\hyperlink{class_m_e_t_a___g_a_m_e_1_1_testes_1_1_parser_script_a961959f25fe8eea30dfd6c1db64831fa}{Use\+Script}} (string nome\+Arquivo, bool compila)
+\begin{DoxyCompactList}\small\item\em comando USE\+\_\+\+SCRIPT, que utiliza um script colocando-\/o dentro de outro script. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+INTERPRETA TEXTOS EM SCRIPT, PARA TESTES ASSOCIADOS AO SCRIPT. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_m_e_t_a___g_a_m_e_1_1_testes_1_1_parser_script_a347602787999640a0f4896e87612f5fa}\index{META\_GAME.Testes.ParserScript@{META\_GAME.Testes.ParserScript}!ParserScript@{ParserScript}}
+\index{ParserScript@{ParserScript}!META\_GAME.Testes.ParserScript@{META\_GAME.Testes.ParserScript}}
+\doxysubsubsection{\texorpdfstring{ParserScript()}{ParserScript()}}
+{\footnotesize\ttfamily \label{class_m_e_t_a___g_a_m_e_1_1_testes_1_1_parser_script_a347602787999640a0f4896e87612f5fa} 
+META\+\_\+\+GAME.\+Testes.\+Parser\+Script.\+Parser\+Script (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_m_e_t_a___g_a_m_e_1_1_testes_1_1_parser_script_a19e4ca9c9d13b06f7599080107c9d7d8}\index{META\_GAME.Testes.ParserScript@{META\_GAME.Testes.ParserScript}!Interpretador@{Interpretador}}
+\index{Interpretador@{Interpretador}!META\_GAME.Testes.ParserScript@{META\_GAME.Testes.ParserScript}}
+\doxysubsubsection{\texorpdfstring{Interpretador()}{Interpretador()}}
+{\footnotesize\ttfamily \label{class_m_e_t_a___g_a_m_e_1_1_testes_1_1_parser_script_a19e4ca9c9d13b06f7599080107c9d7d8} 
+List$<$ string $>$ META\+\_\+\+GAME.\+Testes.\+Parser\+Script.\+Interpretador (\begin{DoxyParamCaption}\item[{string}]{file\+Name\+Script}{}\end{DoxyParamCaption})}
+
+
+
+retorna os comandos script de um arquivo script. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lines\+Script} & instruções de código das linhas de script (um comando válido por linha).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna uma lista de comandos que consegue processar.
+\end{DoxyReturn}
+\Hypertarget{class_m_e_t_a___g_a_m_e_1_1_testes_1_1_parser_script_aa50016f6973fe7dfe6809c107fbf0338}\index{META\_GAME.Testes.ParserScript@{META\_GAME.Testes.ParserScript}!Parser@{Parser}}
+\index{Parser@{Parser}!META\_GAME.Testes.ParserScript@{META\_GAME.Testes.ParserScript}}
+\doxysubsubsection{\texorpdfstring{Parser()}{Parser()}}
+{\footnotesize\ttfamily \label{class_m_e_t_a___g_a_m_e_1_1_testes_1_1_parser_script_aa50016f6973fe7dfe6809c107fbf0338} 
+void META\+\_\+\+GAME.\+Testes.\+Parser\+Script.\+Parser (\begin{DoxyParamCaption}\item[{string}]{file\+Name\+Script}{}\end{DoxyParamCaption})}
+
+
+
+este é o coração do Interpretador de Scripts de \doxylink{namespace_m_e_t_a___g_a_m_e_1_1_testes}{Testes}. Para os \doxylink{namespace_m_e_t_a___g_a_m_e_1_1_testes}{Testes}, é recomendado utilizar o banco de dados \mbox{[}Data\+Set\mbox{]} para carregar dados para a execução do Teste. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em linhas\+Script} & linhas de código script.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_m_e_t_a___g_a_m_e_1_1_testes_1_1_parser_script_a961959f25fe8eea30dfd6c1db64831fa}\index{META\_GAME.Testes.ParserScript@{META\_GAME.Testes.ParserScript}!UseScript@{UseScript}}
+\index{UseScript@{UseScript}!META\_GAME.Testes.ParserScript@{META\_GAME.Testes.ParserScript}}
+\doxysubsubsection{\texorpdfstring{UseScript()}{UseScript()}}
+{\footnotesize\ttfamily \label{class_m_e_t_a___g_a_m_e_1_1_testes_1_1_parser_script_a961959f25fe8eea30dfd6c1db64831fa} 
+List$<$ string $>$ META\+\_\+\+GAME.\+Testes.\+Parser\+Script.\+Use\+Script (\begin{DoxyParamCaption}\item[{string}]{nome\+Arquivo}{, }\item[{bool}]{compila}{}\end{DoxyParamCaption})}
+
+
+
+comando USE\+\_\+\+SCRIPT, que utiliza um script colocando-\/o dentro de outro script. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Arquivo} & nome do arquivo contendo o script a ser adicionado.\\
+\hline
+{\em compila} & se \mbox{[}true\mbox{]}, compila o código adicionado, se \mbox{[}false\mbox{]} retorna somente as linhas do script acrescentado.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna as linhas de script adicionado.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/testes/\mbox{\hyperlink{_parser_scripts_8cs}{Parser\+Scripts.\+cs}}\end{DoxyCompactItemize}

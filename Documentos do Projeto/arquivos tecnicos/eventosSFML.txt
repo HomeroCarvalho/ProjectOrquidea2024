@@ -1,0 +1,56 @@
+Na biblioteca SFML para C++, os eventos são utilizados para lidar com a entrada do usuário e outros tipos de notificações. Aqui estão alguns dos eventos mais comuns que você pode tratar:
+
+- **sf::Event::Closed**: Este evento é acionado quando o usuário deseja fechar a janela.
+- **sf::Event::Resized**: Acionado quando a janela é redimensionada.
+- **sf::Event::LostFocus**: Ocorre quando a janela perde o foco.
+- **sf::Event::GainedFocus**: Ocorre quando a janela ganha foco.
+- **sf::Event::TextEntered**: Quando um caractere de texto é inserido.
+- **sf::Event::KeyPressed**: Acionado quando uma tecla é pressionada.
+- **sf::Event::KeyReleased**: Acionado quando uma tecla é liberada.
+- **sf::Event::MouseWheelMoved**: Quando a roda do mouse é movida.
+- **sf::Event::MouseButtonPressed**: Acionado quando um botão do mouse é pressionado.
+- **sf::Event::MouseButtonReleased**: Acionado quando um botão do mouse é liberado.
+- **sf::Event::MouseMoved**: Quando o mouse é movido.
+- **sf::Event::MouseEntered**: Quando o mouse entra na área da janela.
+- **sf::Event::MouseLeft**: Quando o mouse deixa a área da janela.
+
+Cada um desses eventos pode ser tratado dentro de um laço de eventos, geralmente utilizando a função `pollEvent` ou `waitEvent` da classe `sf::Window`. Aqui está um exemplo de como você pode configurar um laço de eventos básico:
+
+```cpp
+sf::Window window(sf::VideoMode(640, 480), "SFML window");
+sf::Event event;
+
+while (window.isOpen()) {
+    while (window.pollEvent(event)) {
+        switch (event.type) {
+            case sf::Event::Closed:
+                window.close();
+                break;
+            // Trate outros eventos aqui
+        }
+    }
+}
+```
+
+Para mais detalhes e eventos específicos, você pode consultar a [documentação oficial da SFML](^1^) ou tutoriais disponíveis online.
+
+Origem: conversa com o Bing, 08/05/2024
+(1) Events explained (SFML / Learn / 2.5 Tutorials) - Simple and Fast .... https://www.sfml-dev.org/tutorials/2.5/window-events.php.
+(2) Biblioteca de gráficos SFML | Tutorial rápido – Barcelona Geeks. https://barcelonageeks.com/biblioteca-de-graficos-sfml-tutorial-rapido/.
+(3) SFML 2, biblioteca para el desarrollo de videojuegos - Genbeta. https://www.genbeta.com/desarrollo/sfml-2-biblioteca-para-el-desarrollo-de-videojuegos.
+(4) SFML.NET: Introdução ao desenvolvimento de jogos com C#. http://www.linhadecodigo.com.br/artigo/3701/sfmlnet-introducao-ao-desenvolvimento-de-jogos-com-csharp.aspx.
+
+
+sf::Window window(sf::VideoMode(640, 480), "SFML window");
+sf::Event event;
+
+while (window.isOpen()) {
+    while (window.pollEvent(event)) {
+        switch (event.type) {
+            case sf::Event::Closed:
+                window.close();
+                break;
+            // Trate outros eventos aqui
+        }
+    }
+}

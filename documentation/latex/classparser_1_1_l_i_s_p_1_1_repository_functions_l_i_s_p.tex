@@ -1,0 +1,143 @@
+\doxysection{parser.\+LISP.\+Repository\+Functions\+LISP Class Reference}
+\hypertarget{classparser_1_1_l_i_s_p_1_1_repository_functions_l_i_s_p}{}\label{classparser_1_1_l_i_s_p_1_1_repository_functions_l_i_s_p}\index{parser.LISP.RepositoryFunctionsLISP@{parser.LISP.RepositoryFunctionsLISP}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_repository_functions_l_i_s_p_aa2af11044de5fe99e0c627e61a6d36ee}{Restaura\+Funcao}} (string nome\+Funcao)
+\begin{DoxyCompactList}\small\item\em restaura os dados da função, caso haja vazamento por referências envolvendo funções. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p}{Funcao\+LISP}} $>$ \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_repository_functions_l_i_s_p_a835d541483089efd888a32475b99476f}{Get\+Functions}} ()
+\item 
+bool \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_repository_functions_l_i_s_p_a6497b35c0bb28222afef33b5b1c5a05a}{Is\+Function\+Stored}} (string nome\+Funcao)
+\begin{DoxyCompactList}\small\item\em verifica se a função do nome de entrada está no repositório. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p}{Funcao\+LISP}} \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_repository_functions_l_i_s_p_aa65718a7b142a3dbc607162fedd86644}{Find\+Function}} (string nome\+Funcao)
+\begin{DoxyCompactList}\small\item\em Encontra uma função armazenada no repositório. Se não estiver, retorna null;. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_repository_functions_l_i_s_p_a600501fbf638d3693746ddc2772134cc}{Add\+Funcion}} (\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p}{Funcao\+LISP}} uma\+Funcao\+Lisp)
+\begin{DoxyCompactList}\small\item\em adiciona uma função lisp ao repositorio de funções. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_repository_functions_l_i_s_p_adb300fda4e1b59baf3ef3ec5cdd12989}{Save\+In\+File}} (\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p}{Funcao\+LISP}} funcao)
+\begin{DoxyCompactList}\small\item\em Grava em Arquivo o texto de uma função. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p}{Funcao\+LISP}} \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_repository_functions_l_i_s_p_ab6e0ba6acff9a571c17ddaf27db748f0}{Read\+In\+File}} (string nome\+Funcao)
+\begin{DoxyCompactList}\small\item\em Lê de um Arquivo um função. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_repository_functions_l_i_s_p}{Repository\+Functions\+LISP}} \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_repository_functions_l_i_s_p_acd9132ad0a138ba9e3b8c97c25afbf71}{Instance}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_repository_functions_l_i_s_p_a600501fbf638d3693746ddc2772134cc}\index{parser.LISP.RepositoryFunctionsLISP@{parser.LISP.RepositoryFunctionsLISP}!AddFuncion@{AddFuncion}}
+\index{AddFuncion@{AddFuncion}!parser.LISP.RepositoryFunctionsLISP@{parser.LISP.RepositoryFunctionsLISP}}
+\doxysubsubsection{\texorpdfstring{AddFuncion()}{AddFuncion()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_repository_functions_l_i_s_p_a600501fbf638d3693746ddc2772134cc} 
+void parser.\+LISP.\+Repository\+Functions\+LISP.\+Add\+Funcion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p}{Funcao\+LISP}}}]{uma\+Funcao\+Lisp}{}\end{DoxyParamCaption})}
+
+
+
+adiciona uma função lisp ao repositorio de funções. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uma\+Funcao\+Lisp} & função a ser registrada no repositório.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_repository_functions_l_i_s_p_aa65718a7b142a3dbc607162fedd86644}\index{parser.LISP.RepositoryFunctionsLISP@{parser.LISP.RepositoryFunctionsLISP}!FindFunction@{FindFunction}}
+\index{FindFunction@{FindFunction}!parser.LISP.RepositoryFunctionsLISP@{parser.LISP.RepositoryFunctionsLISP}}
+\doxysubsubsection{\texorpdfstring{FindFunction()}{FindFunction()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_repository_functions_l_i_s_p_aa65718a7b142a3dbc607162fedd86644} 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p}{Funcao\+LISP}} parser.\+LISP.\+Repository\+Functions\+LISP.\+Find\+Function (\begin{DoxyParamCaption}\item[{string}]{nome\+Funcao}{}\end{DoxyParamCaption})}
+
+
+
+Encontra uma função armazenada no repositório. Se não estiver, retorna null;. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Funcao} & nome da função a ser procurada.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_repository_functions_l_i_s_p_a835d541483089efd888a32475b99476f}\index{parser.LISP.RepositoryFunctionsLISP@{parser.LISP.RepositoryFunctionsLISP}!GetFunctions@{GetFunctions}}
+\index{GetFunctions@{GetFunctions}!parser.LISP.RepositoryFunctionsLISP@{parser.LISP.RepositoryFunctionsLISP}}
+\doxysubsubsection{\texorpdfstring{GetFunctions()}{GetFunctions()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_repository_functions_l_i_s_p_a835d541483089efd888a32475b99476f} 
+List$<$ \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p}{Funcao\+LISP}} $>$ parser.\+LISP.\+Repository\+Functions\+LISP.\+Get\+Functions (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_repository_functions_l_i_s_p_acd9132ad0a138ba9e3b8c97c25afbf71}\index{parser.LISP.RepositoryFunctionsLISP@{parser.LISP.RepositoryFunctionsLISP}!Instance@{Instance}}
+\index{Instance@{Instance}!parser.LISP.RepositoryFunctionsLISP@{parser.LISP.RepositoryFunctionsLISP}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_repository_functions_l_i_s_p_acd9132ad0a138ba9e3b8c97c25afbf71} 
+static \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_repository_functions_l_i_s_p}{Repository\+Functions\+LISP}} parser.\+LISP.\+Repository\+Functions\+LISP.\+Instance (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_repository_functions_l_i_s_p_a6497b35c0bb28222afef33b5b1c5a05a}\index{parser.LISP.RepositoryFunctionsLISP@{parser.LISP.RepositoryFunctionsLISP}!IsFunctionStored@{IsFunctionStored}}
+\index{IsFunctionStored@{IsFunctionStored}!parser.LISP.RepositoryFunctionsLISP@{parser.LISP.RepositoryFunctionsLISP}}
+\doxysubsubsection{\texorpdfstring{IsFunctionStored()}{IsFunctionStored()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_repository_functions_l_i_s_p_a6497b35c0bb28222afef33b5b1c5a05a} 
+bool parser.\+LISP.\+Repository\+Functions\+LISP.\+Is\+Function\+Stored (\begin{DoxyParamCaption}\item[{string}]{nome\+Funcao}{}\end{DoxyParamCaption})}
+
+
+
+verifica se a função do nome de entrada está no repositório. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Funcao} & nome da função a se verificar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_repository_functions_l_i_s_p_ab6e0ba6acff9a571c17ddaf27db748f0}\index{parser.LISP.RepositoryFunctionsLISP@{parser.LISP.RepositoryFunctionsLISP}!ReadInFile@{ReadInFile}}
+\index{ReadInFile@{ReadInFile}!parser.LISP.RepositoryFunctionsLISP@{parser.LISP.RepositoryFunctionsLISP}}
+\doxysubsubsection{\texorpdfstring{ReadInFile()}{ReadInFile()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_repository_functions_l_i_s_p_ab6e0ba6acff9a571c17ddaf27db748f0} 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p}{Funcao\+LISP}} parser.\+LISP.\+Repository\+Functions\+LISP.\+Read\+In\+File (\begin{DoxyParamCaption}\item[{string}]{nome\+Funcao}{}\end{DoxyParamCaption})}
+
+
+
+Lê de um Arquivo um função. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Funcao} & nome da função a ser lida.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna uma função lisp como o nome de entrada.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_repository_functions_l_i_s_p_aa2af11044de5fe99e0c627e61a6d36ee}\index{parser.LISP.RepositoryFunctionsLISP@{parser.LISP.RepositoryFunctionsLISP}!RestauraFuncao@{RestauraFuncao}}
+\index{RestauraFuncao@{RestauraFuncao}!parser.LISP.RepositoryFunctionsLISP@{parser.LISP.RepositoryFunctionsLISP}}
+\doxysubsubsection{\texorpdfstring{RestauraFuncao()}{RestauraFuncao()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_repository_functions_l_i_s_p_aa2af11044de5fe99e0c627e61a6d36ee} 
+void parser.\+LISP.\+Repository\+Functions\+LISP.\+Restaura\+Funcao (\begin{DoxyParamCaption}\item[{string}]{nome\+Funcao}{}\end{DoxyParamCaption})}
+
+
+
+restaura os dados da função, caso haja vazamento por referências envolvendo funções. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Funcao} & nome da função.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_repository_functions_l_i_s_p_adb300fda4e1b59baf3ef3ec5cdd12989}\index{parser.LISP.RepositoryFunctionsLISP@{parser.LISP.RepositoryFunctionsLISP}!SaveInFile@{SaveInFile}}
+\index{SaveInFile@{SaveInFile}!parser.LISP.RepositoryFunctionsLISP@{parser.LISP.RepositoryFunctionsLISP}}
+\doxysubsubsection{\texorpdfstring{SaveInFile()}{SaveInFile()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_repository_functions_l_i_s_p_adb300fda4e1b59baf3ef3ec5cdd12989} 
+void parser.\+LISP.\+Repository\+Functions\+LISP.\+Save\+In\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p}{Funcao\+LISP}}}]{funcao}{}\end{DoxyParamCaption})}
+
+
+
+Grava em Arquivo o texto de uma função. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em funcao} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/componentes\+De\+Interpretadores\+ECompiladores/\+LISP/\mbox{\hyperlink{_funcao_l_i_s_p_8cs}{Funcao\+LISP.\+cs}}\end{DoxyCompactItemize}

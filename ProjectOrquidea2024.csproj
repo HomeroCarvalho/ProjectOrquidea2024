@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <Platforms>AnyCPU;x86</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="BuildFileHeader\" />
+    <Folder Include="componentesDeInterpretadoresECompiladores\PROGRAMACAO FUNCIONAL\backup\" />
+    <Folder Include="testes\Service References\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MathNet.Numerics" Version="5.0.0" />
+    <PackageReference Include="MathNet.Spatial" Version="0.6.0" />
+    <PackageReference Include="SFML.Net" Version="2.6.0" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,211 @@
+\doxysection{Modulos.\+Prompt Class Reference}
+\hypertarget{class_modulos_1_1_prompt}{}\label{class_modulos_1_1_prompt}\index{Modulos.Prompt@{Modulos.Prompt}}
+
+
+class to read/write text, numbers, in terminal. read too arguments passed via terminal command. all methods are static, dont instantiate object this class. this methods are executable like functions and pass to code orquidea. Homero T. Carvalho 2022, vs. 1.\+0.  
+
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_modulos_1_1_prompt_1_1_testes}{Testes}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_modulos_1_1_prompt_a237217b084a76f6caae9ba7086d5a7e3}{x\+Write}} (string text, \mbox{\hyperlink{classparser_1_1_vector}{Vector}} sub\+Textos)
+\begin{DoxyCompactList}\small\item\em imprime textos a partir de um vetor multi-\/argumento. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_modulos_1_1_prompt_aa1f4668c9df783a4c78d465df744be03}{x\+Write\+Hello\+World}} ()
+\begin{DoxyCompactList}\small\item\em um prompt de saldacao. se precisar de escrever algo na tela, mas há a possibilidade de erro de formatacao, utilizar esta funcao. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_modulos_1_1_prompt_a5790ceef29988b5f5bd667a14c2b0ddb}{s\+Read}} (string caption)
+\begin{DoxyCompactList}\small\item\em Read a text from terminal. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_modulos_1_1_prompt_a8ae6feb2830352e19eab2aba7152ee59}{i\+Read}} (string caption)
+\begin{DoxyCompactList}\small\item\em Read an int number from terminal. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_modulos_1_1_prompt_abbcb5bed7144175b7efaf0a04e66c395}{f\+Read}} (string caption)
+\begin{DoxyCompactList}\small\item\em Read an float number from terminal. \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{class_modulos_1_1_prompt_aedcaf14b8c61606fe49e8ea66950ee26}{d\+Read}} (string caption)
+\begin{DoxyCompactList}\small\item\em Read an double number from terminal. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_modulos_1_1_prompt_a61ebbf7a804454f644b701bac69a477b}{s\+Write}} (string write\+Text)
+\begin{DoxyCompactList}\small\item\em Write a text to terminal. \end{DoxyCompactList}\item 
+static string\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_modulos_1_1_prompt_a69e8ded7ec3e73523251485cff72b35b}{Get\+Args}} ()
+\begin{DoxyCompactList}\small\item\em Read line arguments CLI. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_modulos_1_1_prompt_a4c47da23e4ebdda99545007d062afec2}{Init}} ()
+\begin{DoxyCompactList}\small\item\em inicializacao da classe, ajustando alguns parametros. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_modulos_1_1_prompt_a438cd6120fff405e5a87b784fa285742}{aspas}} = "{}\textbackslash{}"{}"{}
+\begin{DoxyCompactList}\small\item\em caracter de literais constantes. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_modulos_1_1_prompt_a36d596dc37322c4acd4b25035eb77335}{single\+Quote}} = "{}\textbackslash{}\textquotesingle{}"{}
+\begin{DoxyCompactList}\small\item\em caracter delimitador para char constantes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+class to read/write text, numbers, in terminal. read too arguments passed via terminal command. all methods are static, dont instantiate object this class. this methods are executable like functions and pass to code orquidea. Homero T. Carvalho 2022, vs. 1.\+0. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_modulos_1_1_prompt_aedcaf14b8c61606fe49e8ea66950ee26}\index{Modulos.Prompt@{Modulos.Prompt}!dRead@{dRead}}
+\index{dRead@{dRead}!Modulos.Prompt@{Modulos.Prompt}}
+\doxysubsubsection{\texorpdfstring{dRead()}{dRead()}}
+{\footnotesize\ttfamily \label{class_modulos_1_1_prompt_aedcaf14b8c61606fe49e8ea66950ee26} 
+static double Modulos.\+Prompt.\+d\+Read (\begin{DoxyParamCaption}\item[{string}]{caption}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Read an double number from terminal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em caption} & text info.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return an double, if valid. throw a execption for invalid data input.
+\end{DoxyReturn}
+\Hypertarget{class_modulos_1_1_prompt_abbcb5bed7144175b7efaf0a04e66c395}\index{Modulos.Prompt@{Modulos.Prompt}!fRead@{fRead}}
+\index{fRead@{fRead}!Modulos.Prompt@{Modulos.Prompt}}
+\doxysubsubsection{\texorpdfstring{fRead()}{fRead()}}
+{\footnotesize\ttfamily \label{class_modulos_1_1_prompt_abbcb5bed7144175b7efaf0a04e66c395} 
+static float Modulos.\+Prompt.\+f\+Read (\begin{DoxyParamCaption}\item[{string}]{caption}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Read an float number from terminal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em caption} & text info.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return a float, if valid. throw a execption for invalid data input.
+\end{DoxyReturn}
+\Hypertarget{class_modulos_1_1_prompt_a69e8ded7ec3e73523251485cff72b35b}\index{Modulos.Prompt@{Modulos.Prompt}!GetArgs@{GetArgs}}
+\index{GetArgs@{GetArgs}!Modulos.Prompt@{Modulos.Prompt}}
+\doxysubsubsection{\texorpdfstring{GetArgs()}{GetArgs()}}
+{\footnotesize\ttfamily \label{class_modulos_1_1_prompt_a69e8ded7ec3e73523251485cff72b35b} 
+static string\mbox{[}$\,$\mbox{]} Modulos.\+Prompt.\+Get\+Args (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Read line arguments CLI. 
+
+\begin{DoxyReturn}{Returns}
+return a array of args passed in terminal console.
+\end{DoxyReturn}
+\Hypertarget{class_modulos_1_1_prompt_a4c47da23e4ebdda99545007d062afec2}\index{Modulos.Prompt@{Modulos.Prompt}!Init@{Init}}
+\index{Init@{Init}!Modulos.Prompt@{Modulos.Prompt}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily \label{class_modulos_1_1_prompt_a4c47da23e4ebdda99545007d062afec2} 
+static void Modulos.\+Prompt.\+Init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+inicializacao da classe, ajustando alguns parametros. 
+
+\Hypertarget{class_modulos_1_1_prompt_a8ae6feb2830352e19eab2aba7152ee59}\index{Modulos.Prompt@{Modulos.Prompt}!iRead@{iRead}}
+\index{iRead@{iRead}!Modulos.Prompt@{Modulos.Prompt}}
+\doxysubsubsection{\texorpdfstring{iRead()}{iRead()}}
+{\footnotesize\ttfamily \label{class_modulos_1_1_prompt_a8ae6feb2830352e19eab2aba7152ee59} 
+static int Modulos.\+Prompt.\+i\+Read (\begin{DoxyParamCaption}\item[{string}]{caption}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Read an int number from terminal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em caption} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return an int, if valid.\+throw a execption for invalid data input .
+\end{DoxyReturn}
+\Hypertarget{class_modulos_1_1_prompt_a5790ceef29988b5f5bd667a14c2b0ddb}\index{Modulos.Prompt@{Modulos.Prompt}!sRead@{sRead}}
+\index{sRead@{sRead}!Modulos.Prompt@{Modulos.Prompt}}
+\doxysubsubsection{\texorpdfstring{sRead()}{sRead()}}
+{\footnotesize\ttfamily \label{class_modulos_1_1_prompt_a5790ceef29988b5f5bd667a14c2b0ddb} 
+static string Modulos.\+Prompt.\+s\+Read (\begin{DoxyParamCaption}\item[{string}]{caption}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Read a text from terminal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em caption} & text info.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return a text read from terminal.
+\end{DoxyReturn}
+\Hypertarget{class_modulos_1_1_prompt_a61ebbf7a804454f644b701bac69a477b}\index{Modulos.Prompt@{Modulos.Prompt}!sWrite@{sWrite}}
+\index{sWrite@{sWrite}!Modulos.Prompt@{Modulos.Prompt}}
+\doxysubsubsection{\texorpdfstring{sWrite()}{sWrite()}}
+{\footnotesize\ttfamily \label{class_modulos_1_1_prompt_a61ebbf7a804454f644b701bac69a477b} 
+static void Modulos.\+Prompt.\+s\+Write (\begin{DoxyParamCaption}\item[{string}]{write\+Text}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Write a text to terminal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em write\+Text} & text to write. rise if text to write is null.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_modulos_1_1_prompt_a237217b084a76f6caae9ba7086d5a7e3}\index{Modulos.Prompt@{Modulos.Prompt}!xWrite@{xWrite}}
+\index{xWrite@{xWrite}!Modulos.Prompt@{Modulos.Prompt}}
+\doxysubsubsection{\texorpdfstring{xWrite()}{xWrite()}}
+{\footnotesize\ttfamily \label{class_modulos_1_1_prompt_a237217b084a76f6caae9ba7086d5a7e3} 
+static void Modulos.\+Prompt.\+x\+Write (\begin{DoxyParamCaption}\item[{string}]{text}{, }\item[{\mbox{\hyperlink{classparser_1_1_vector}{Vector}}}]{sub\+Textos}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+imprime textos a partir de um vetor multi-\/argumento. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & texto base.\\
+\hline
+{\em sub\+Textos} & subtextos inseridos no texto base.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_modulos_1_1_prompt_aa1f4668c9df783a4c78d465df744be03}\index{Modulos.Prompt@{Modulos.Prompt}!xWriteHelloWorld@{xWriteHelloWorld}}
+\index{xWriteHelloWorld@{xWriteHelloWorld}!Modulos.Prompt@{Modulos.Prompt}}
+\doxysubsubsection{\texorpdfstring{xWriteHelloWorld()}{xWriteHelloWorld()}}
+{\footnotesize\ttfamily \label{class_modulos_1_1_prompt_aa1f4668c9df783a4c78d465df744be03} 
+static void Modulos.\+Prompt.\+x\+Write\+Hello\+World (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+um prompt de saldacao. se precisar de escrever algo na tela, mas há a possibilidade de erro de formatacao, utilizar esta funcao. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_modulos_1_1_prompt_a438cd6120fff405e5a87b784fa285742}\index{Modulos.Prompt@{Modulos.Prompt}!aspas@{aspas}}
+\index{aspas@{aspas}!Modulos.Prompt@{Modulos.Prompt}}
+\doxysubsubsection{\texorpdfstring{aspas}{aspas}}
+{\footnotesize\ttfamily \label{class_modulos_1_1_prompt_a438cd6120fff405e5a87b784fa285742} 
+string Modulos.\+Prompt.\+aspas = "{}\textbackslash{}"{}"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+caracter de literais constantes. 
+
+\Hypertarget{class_modulos_1_1_prompt_a36d596dc37322c4acd4b25035eb77335}\index{Modulos.Prompt@{Modulos.Prompt}!singleQuote@{singleQuote}}
+\index{singleQuote@{singleQuote}!Modulos.Prompt@{Modulos.Prompt}}
+\doxysubsubsection{\texorpdfstring{singleQuote}{singleQuote}}
+{\footnotesize\ttfamily \label{class_modulos_1_1_prompt_a36d596dc37322c4acd4b25035eb77335} 
+string Modulos.\+Prompt.\+single\+Quote = "{}\textbackslash{}\textquotesingle{}"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+caracter delimitador para char constantes. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/\+LIBRARIES/\mbox{\hyperlink{_prompt_8cs}{Prompt.\+cs}}\end{DoxyCompactItemize}

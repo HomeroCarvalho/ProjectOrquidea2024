@@ -1,0 +1,273 @@
+\doxysection{Modulo\+TESTES.\+Assercoes Class Reference}
+\hypertarget{class_modulo_t_e_s_t_e_s_1_1_assercoes}{}\label{class_modulo_t_e_s_t_e_s_1_1_assercoes}\index{ModuloTESTES.Assercoes@{ModuloTESTES.Assercoes}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_assercoes_a6dbaf6175d2f1d46c3b0e063f3f8259a}{Assercoes}} (\mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_teste}{Teste}} testecurrente)
+\begin{DoxyCompactList}\small\item\em construtor, aceita um \mbox{[}\doxylink{class_modulo_t_e_s_t_e_s_1_1_teste}{Teste}\mbox{]} para fazer operação de teste de condições. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_assercoes_abd0b80cf6d37de63757f5141d17bedf7}{Msg\+Sucess}} ()
+\begin{DoxyCompactList}\small\item\em mostra a mensagem de teste bem sucedido, para o teste currente. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_assercoes_ae29a628decccbe4ab0bf9b4bc3e84219}{Msg\+Sucess}} (string msg)
+\begin{DoxyCompactList}\small\item\em mostra a mensagem de teste bem sucedido, mais a mensagem \mbox{[}msg\mbox{]}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_assercoes_a26c6cb3941759ae0ba7084b63a935b2c}{Msg\+Fail}} ()
+\begin{DoxyCompactList}\small\item\em passa para o teste currente a mensagem de falha, somente. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_assercoes_a8280ea378cc389dc818ef87c6441b074}{Msg\+Fail}} (string msg)
+\begin{DoxyCompactList}\small\item\em passa para o teste currente a mensagem de falha, mais a mensagem \mbox{[}msg\mbox{]}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_assercoes_a5574b9d849601bf44297db237279ef6d}{Equals$<$ T $>$}} (T valor\+Atual, T valor\+Esperado)
+\begin{DoxyCompactList}\small\item\em asserção genérica.\+Deve-\/se ter cuidado se os valores são objetos, pois podem comparar referências e não valores dentro deles. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_assercoes_a846e49c962e613776e41debc5057c6fb}{Equals\+Obj}} (Value\+Type valor\+Atual, Value\+Type valor\+Esperado)
+\begin{DoxyCompactList}\small\item\em verifica se dois objetos são iguais por valor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_assercoes_a30cef69a05d52162704d55d078aeee2b}{Equals\+String}} (string valor\+Atual, string valor\+Esperado)
+\begin{DoxyCompactList}\small\item\em compara se duas strings são iguais. Retorna true se as strings são iguais, false se contrário. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_assercoes_a97806bbb283f0a5029ea7ac6fb9f85bf}{Equals\+Double}} (double valor\+Atual, double valor\+Esperado, double delta)
+\begin{DoxyCompactList}\small\item\em retorna true se \texorpdfstring{$\vert$}{|}valor\+Atual-\/valor\+Esperado\texorpdfstring{$\vert$}{|}\texorpdfstring{$<$}{<}delta. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_assercoes_a6bd2b0f19d8f18f2baeb147851fda3d7}{Equals\+Float}} (float valor\+Atual, float valor\+Esperado, float delta)
+\begin{DoxyCompactList}\small\item\em retorna true se \texorpdfstring{$\vert$}{|}valor\+Atual-\/valor\+Esperado\texorpdfstring{$\vert$}{|}\texorpdfstring{$<$}{<}delta. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_assercoes_ae91928bde3d1744d813402bd89d75cd7}{Is\+True}} (bool condicao)
+\begin{DoxyCompactList}\small\item\em retorna true se uma determinada condição (resultado booleano) for true, retorna false se a condição for false.\+Útil para testar resultados que dependam de uma condição de teste. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_assercoes_a1d69b8d8165d817c7723a9cc172188d1}{Fail}} (string msg)
+\begin{DoxyCompactList}\small\item\em mostra a mensagem de falha, mais a mensagem \mbox{[}msg\mbox{]}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_assercoes_a736954df6732509326a2df3ae838e373}{Sucess}} (string msg)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_teste}{Teste}} \mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_assercoes_ad8d162f5aad53a9af0bde08ca3828693}{teste\+Currente}}
+\begin{DoxyCompactList}\small\item\em teste associado ao objeto \doxylink{class_modulo_t_e_s_t_e_s_1_1_assercoes}{Assercoes} currente. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_modulo_t_e_s_t_e_s_1_1_assercoes_a6dbaf6175d2f1d46c3b0e063f3f8259a}\index{ModuloTESTES.Assercoes@{ModuloTESTES.Assercoes}!Assercoes@{Assercoes}}
+\index{Assercoes@{Assercoes}!ModuloTESTES.Assercoes@{ModuloTESTES.Assercoes}}
+\doxysubsubsection{\texorpdfstring{Assercoes()}{Assercoes()}}
+{\footnotesize\ttfamily \label{class_modulo_t_e_s_t_e_s_1_1_assercoes_a6dbaf6175d2f1d46c3b0e063f3f8259a} 
+Modulo\+TESTES.\+Assercoes.\+Assercoes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_teste}{Teste}}}]{testecurrente}{}\end{DoxyParamCaption})}
+
+
+
+construtor, aceita um \mbox{[}\doxylink{class_modulo_t_e_s_t_e_s_1_1_teste}{Teste}\mbox{]} para fazer operação de teste de condições. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em testecurrente} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_modulo_t_e_s_t_e_s_1_1_assercoes_a5574b9d849601bf44297db237279ef6d}\index{ModuloTESTES.Assercoes@{ModuloTESTES.Assercoes}!Equals$<$ T $>$@{Equals$<$ T $>$}}
+\index{Equals$<$ T $>$@{Equals$<$ T $>$}!ModuloTESTES.Assercoes@{ModuloTESTES.Assercoes}}
+\doxysubsubsection{\texorpdfstring{Equals$<$ T $>$()}{Equals< T >()}}
+{\footnotesize\ttfamily \label{class_modulo_t_e_s_t_e_s_1_1_assercoes_a5574b9d849601bf44297db237279ef6d} 
+bool Modulo\+TESTES.\+Assercoes.\+Equals$<$ T $>$ (\begin{DoxyParamCaption}\item[{T}]{valor\+Atual}{, }\item[{T}]{valor\+Esperado}{}\end{DoxyParamCaption})}
+
+
+
+asserção genérica.\+Deve-\/se ter cuidado se os valores são objetos, pois podem comparar referências e não valores dentro deles. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em valor\+Atual} & \\
+\hline
+{\em valor\+Esperado} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_modulo_t_e_s_t_e_s_1_1_assercoes_a97806bbb283f0a5029ea7ac6fb9f85bf}\index{ModuloTESTES.Assercoes@{ModuloTESTES.Assercoes}!EqualsDouble@{EqualsDouble}}
+\index{EqualsDouble@{EqualsDouble}!ModuloTESTES.Assercoes@{ModuloTESTES.Assercoes}}
+\doxysubsubsection{\texorpdfstring{EqualsDouble()}{EqualsDouble()}}
+{\footnotesize\ttfamily \label{class_modulo_t_e_s_t_e_s_1_1_assercoes_a97806bbb283f0a5029ea7ac6fb9f85bf} 
+bool Modulo\+TESTES.\+Assercoes.\+Equals\+Double (\begin{DoxyParamCaption}\item[{double}]{valor\+Atual}{, }\item[{double}]{valor\+Esperado}{, }\item[{double}]{delta}{}\end{DoxyParamCaption})}
+
+
+
+retorna true se \texorpdfstring{$\vert$}{|}valor\+Atual-\/valor\+Esperado\texorpdfstring{$\vert$}{|}\texorpdfstring{$<$}{<}delta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor\+Atual} & valor encontrado no programa testado.\\
+\hline
+{\em valor\+Esperado} & valor esperado para o programa testado.\\
+\hline
+{\em delta} & diferença mínima para resultar true.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}true\mbox{]} se o módulo da diferença do valor atual e valor esperado for menor que delta.
+\end{DoxyReturn}
+\Hypertarget{class_modulo_t_e_s_t_e_s_1_1_assercoes_a6bd2b0f19d8f18f2baeb147851fda3d7}\index{ModuloTESTES.Assercoes@{ModuloTESTES.Assercoes}!EqualsFloat@{EqualsFloat}}
+\index{EqualsFloat@{EqualsFloat}!ModuloTESTES.Assercoes@{ModuloTESTES.Assercoes}}
+\doxysubsubsection{\texorpdfstring{EqualsFloat()}{EqualsFloat()}}
+{\footnotesize\ttfamily \label{class_modulo_t_e_s_t_e_s_1_1_assercoes_a6bd2b0f19d8f18f2baeb147851fda3d7} 
+bool Modulo\+TESTES.\+Assercoes.\+Equals\+Float (\begin{DoxyParamCaption}\item[{float}]{valor\+Atual}{, }\item[{float}]{valor\+Esperado}{, }\item[{float}]{delta}{}\end{DoxyParamCaption})}
+
+
+
+retorna true se \texorpdfstring{$\vert$}{|}valor\+Atual-\/valor\+Esperado\texorpdfstring{$\vert$}{|}\texorpdfstring{$<$}{<}delta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor\+Atual} & valor encontrado no programa testado.\\
+\hline
+{\em valor\+Esperado} & valor esperado para o programa testado.\\
+\hline
+{\em delta} & diferença mínima para resultar true.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}true\mbox{]} se o módulo da diferença do valor atual e valor esperado for menor que delta.
+\end{DoxyReturn}
+\Hypertarget{class_modulo_t_e_s_t_e_s_1_1_assercoes_a846e49c962e613776e41debc5057c6fb}\index{ModuloTESTES.Assercoes@{ModuloTESTES.Assercoes}!EqualsObj@{EqualsObj}}
+\index{EqualsObj@{EqualsObj}!ModuloTESTES.Assercoes@{ModuloTESTES.Assercoes}}
+\doxysubsubsection{\texorpdfstring{EqualsObj()}{EqualsObj()}}
+{\footnotesize\ttfamily \label{class_modulo_t_e_s_t_e_s_1_1_assercoes_a846e49c962e613776e41debc5057c6fb} 
+bool Modulo\+TESTES.\+Assercoes.\+Equals\+Obj (\begin{DoxyParamCaption}\item[{Value\+Type}]{valor\+Atual}{, }\item[{Value\+Type}]{valor\+Esperado}{}\end{DoxyParamCaption})}
+
+
+
+verifica se dois objetos são iguais por valor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor\+Atual} & objeto encontrado no programa a ser testado.\\
+\hline
+{\em valor\+Esperado} & objeto esperado o programa calcular.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna true se os objetos são iguais.
+\end{DoxyReturn}
+\Hypertarget{class_modulo_t_e_s_t_e_s_1_1_assercoes_a30cef69a05d52162704d55d078aeee2b}\index{ModuloTESTES.Assercoes@{ModuloTESTES.Assercoes}!EqualsString@{EqualsString}}
+\index{EqualsString@{EqualsString}!ModuloTESTES.Assercoes@{ModuloTESTES.Assercoes}}
+\doxysubsubsection{\texorpdfstring{EqualsString()}{EqualsString()}}
+{\footnotesize\ttfamily \label{class_modulo_t_e_s_t_e_s_1_1_assercoes_a30cef69a05d52162704d55d078aeee2b} 
+bool Modulo\+TESTES.\+Assercoes.\+Equals\+String (\begin{DoxyParamCaption}\item[{string}]{valor\+Atual}{, }\item[{string}]{valor\+Esperado}{}\end{DoxyParamCaption})}
+
+
+
+compara se duas strings são iguais. Retorna true se as strings são iguais, false se contrário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor\+Atual} & valor encontrado no programa testado.\\
+\hline
+{\em valor\+Esperado} & valor esperado para o programa testado.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}true\mbox{]} se as strings valor\+Atual e valor\+Esperado são iguais.
+\end{DoxyReturn}
+\Hypertarget{class_modulo_t_e_s_t_e_s_1_1_assercoes_a1d69b8d8165d817c7723a9cc172188d1}\index{ModuloTESTES.Assercoes@{ModuloTESTES.Assercoes}!Fail@{Fail}}
+\index{Fail@{Fail}!ModuloTESTES.Assercoes@{ModuloTESTES.Assercoes}}
+\doxysubsubsection{\texorpdfstring{Fail()}{Fail()}}
+{\footnotesize\ttfamily \label{class_modulo_t_e_s_t_e_s_1_1_assercoes_a1d69b8d8165d817c7723a9cc172188d1} 
+void Modulo\+TESTES.\+Assercoes.\+Fail (\begin{DoxyParamCaption}\item[{string}]{msg}{}\end{DoxyParamCaption})}
+
+
+
+mostra a mensagem de falha, mais a mensagem \mbox{[}msg\mbox{]}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_modulo_t_e_s_t_e_s_1_1_assercoes_ae91928bde3d1744d813402bd89d75cd7}\index{ModuloTESTES.Assercoes@{ModuloTESTES.Assercoes}!IsTrue@{IsTrue}}
+\index{IsTrue@{IsTrue}!ModuloTESTES.Assercoes@{ModuloTESTES.Assercoes}}
+\doxysubsubsection{\texorpdfstring{IsTrue()}{IsTrue()}}
+{\footnotesize\ttfamily \label{class_modulo_t_e_s_t_e_s_1_1_assercoes_ae91928bde3d1744d813402bd89d75cd7} 
+bool Modulo\+TESTES.\+Assercoes.\+Is\+True (\begin{DoxyParamCaption}\item[{bool}]{condicao}{}\end{DoxyParamCaption})}
+
+
+
+retorna true se uma determinada condição (resultado booleano) for true, retorna false se a condição for false.\+Útil para testar resultados que dependam de uma condição de teste. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em condicao} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_modulo_t_e_s_t_e_s_1_1_assercoes_a26c6cb3941759ae0ba7084b63a935b2c}\index{ModuloTESTES.Assercoes@{ModuloTESTES.Assercoes}!MsgFail@{MsgFail}}
+\index{MsgFail@{MsgFail}!ModuloTESTES.Assercoes@{ModuloTESTES.Assercoes}}
+\doxysubsubsection{\texorpdfstring{MsgFail()}{MsgFail()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_modulo_t_e_s_t_e_s_1_1_assercoes_a26c6cb3941759ae0ba7084b63a935b2c} 
+void Modulo\+TESTES.\+Assercoes.\+Msg\+Fail (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+passa para o teste currente a mensagem de falha, somente. 
+
+\Hypertarget{class_modulo_t_e_s_t_e_s_1_1_assercoes_a8280ea378cc389dc818ef87c6441b074}\index{ModuloTESTES.Assercoes@{ModuloTESTES.Assercoes}!MsgFail@{MsgFail}}
+\index{MsgFail@{MsgFail}!ModuloTESTES.Assercoes@{ModuloTESTES.Assercoes}}
+\doxysubsubsection{\texorpdfstring{MsgFail()}{MsgFail()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_modulo_t_e_s_t_e_s_1_1_assercoes_a8280ea378cc389dc818ef87c6441b074} 
+void Modulo\+TESTES.\+Assercoes.\+Msg\+Fail (\begin{DoxyParamCaption}\item[{string}]{msg}{}\end{DoxyParamCaption})}
+
+
+
+passa para o teste currente a mensagem de falha, mais a mensagem \mbox{[}msg\mbox{]}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_modulo_t_e_s_t_e_s_1_1_assercoes_abd0b80cf6d37de63757f5141d17bedf7}\index{ModuloTESTES.Assercoes@{ModuloTESTES.Assercoes}!MsgSucess@{MsgSucess}}
+\index{MsgSucess@{MsgSucess}!ModuloTESTES.Assercoes@{ModuloTESTES.Assercoes}}
+\doxysubsubsection{\texorpdfstring{MsgSucess()}{MsgSucess()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_modulo_t_e_s_t_e_s_1_1_assercoes_abd0b80cf6d37de63757f5141d17bedf7} 
+void Modulo\+TESTES.\+Assercoes.\+Msg\+Sucess (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+mostra a mensagem de teste bem sucedido, para o teste currente. 
+
+\Hypertarget{class_modulo_t_e_s_t_e_s_1_1_assercoes_ae29a628decccbe4ab0bf9b4bc3e84219}\index{ModuloTESTES.Assercoes@{ModuloTESTES.Assercoes}!MsgSucess@{MsgSucess}}
+\index{MsgSucess@{MsgSucess}!ModuloTESTES.Assercoes@{ModuloTESTES.Assercoes}}
+\doxysubsubsection{\texorpdfstring{MsgSucess()}{MsgSucess()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_modulo_t_e_s_t_e_s_1_1_assercoes_ae29a628decccbe4ab0bf9b4bc3e84219} 
+void Modulo\+TESTES.\+Assercoes.\+Msg\+Sucess (\begin{DoxyParamCaption}\item[{string}]{msg}{}\end{DoxyParamCaption})}
+
+
+
+mostra a mensagem de teste bem sucedido, mais a mensagem \mbox{[}msg\mbox{]}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_modulo_t_e_s_t_e_s_1_1_assercoes_a736954df6732509326a2df3ae838e373}\index{ModuloTESTES.Assercoes@{ModuloTESTES.Assercoes}!Sucess@{Sucess}}
+\index{Sucess@{Sucess}!ModuloTESTES.Assercoes@{ModuloTESTES.Assercoes}}
+\doxysubsubsection{\texorpdfstring{Sucess()}{Sucess()}}
+{\footnotesize\ttfamily \label{class_modulo_t_e_s_t_e_s_1_1_assercoes_a736954df6732509326a2df3ae838e373} 
+void Modulo\+TESTES.\+Assercoes.\+Sucess (\begin{DoxyParamCaption}\item[{string}]{msg}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_modulo_t_e_s_t_e_s_1_1_assercoes_ad8d162f5aad53a9af0bde08ca3828693}\index{ModuloTESTES.Assercoes@{ModuloTESTES.Assercoes}!testeCurrente@{testeCurrente}}
+\index{testeCurrente@{testeCurrente}!ModuloTESTES.Assercoes@{ModuloTESTES.Assercoes}}
+\doxysubsubsection{\texorpdfstring{testeCurrente}{testeCurrente}}
+{\footnotesize\ttfamily \label{class_modulo_t_e_s_t_e_s_1_1_assercoes_ad8d162f5aad53a9af0bde08ca3828693} 
+\mbox{\hyperlink{class_modulo_t_e_s_t_e_s_1_1_teste}{Teste}} Modulo\+TESTES.\+Assercoes.\+teste\+Currente}
+
+
+
+teste associado ao objeto \doxylink{class_modulo_t_e_s_t_e_s_1_1_assercoes}{Assercoes} currente. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/testes/\mbox{\hyperlink{_assercoes_8cs}{Assercoes.\+cs}}\end{DoxyCompactItemize}

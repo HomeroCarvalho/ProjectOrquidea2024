@@ -1,0 +1,148 @@
+\doxysection{parser.\+Pilha\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{classparser_1_1_pilha}{}\label{classparser_1_1_pilha}\index{parser.Pilha$<$ T $>$@{parser.Pilha$<$ T $>$}}
+
+
+\doxylink{classparser_1_1_classe}{Classe} de estrutura de dados pilha genérica.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ T $>$ \mbox{\hyperlink{classparser_1_1_pilha_a9afdc973c09518ae374500e80d0ec256}{Get\+Elementos}} ()
+\item 
+void \mbox{\hyperlink{classparser_1_1_pilha_a7a2dc71e3329dcec2f03047a4ab80d24}{Esvazia}} ()
+\item 
+\mbox{\hyperlink{classparser_1_1_pilha_a2cc8d3247a97dfe68fbb6e86d59947a2}{Pilha}} (string nome\+Pilha)
+\begin{DoxyCompactList}\small\item\em construtor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_pilha_a94912ea50a16f6d4ec48a6144b316828}{Push}} (T op)
+\begin{DoxyCompactList}\small\item\em empilha o elemento \mbox{[}op\mbox{]} no topo da pilha. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_pilha_a542a0551baddbc315f76bf1512f29813}{Pop}} (int contador\+Desempilha)
+\item 
+T \mbox{\hyperlink{classparser_1_1_pilha_a6b58e80da722c8a22abe89e9c5a74fed}{Pop}} ()
+\begin{DoxyCompactList}\small\item\em retira e retorna o elemento no topo da pilha. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{classparser_1_1_pilha_aa024befddf31de4d58728b234d89c244}{Peek}} ()
+\begin{DoxyCompactList}\small\item\em retorna o elemento no topo da pilha, sem retirá-\/lo. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_pilha_aac4fe11d0e25748ba8f4224b31ea5104}{Empty}} ()
+\begin{DoxyCompactList}\small\item\em retorna \mbox{[}true\mbox{]} se a pilha está vazia, \mbox{[}false\mbox{]} se tem elementos na pilha. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classparser_1_1_pilha_a2147d87aa185b98b0c1490dead816e86}{lenght\+Pilha}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{classparser_1_1_classe}{Classe} de estrutura de dados pilha genérica. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & tipo genérico\\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classparser_1_1_pilha_a2cc8d3247a97dfe68fbb6e86d59947a2}\index{parser.Pilha$<$ T $>$@{parser.Pilha$<$ T $>$}!Pilha@{Pilha}}
+\index{Pilha@{Pilha}!parser.Pilha$<$ T $>$@{parser.Pilha$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Pilha()}{Pilha()}}
+{\footnotesize\ttfamily \label{classparser_1_1_pilha_a2cc8d3247a97dfe68fbb6e86d59947a2} 
+\mbox{\hyperlink{classparser_1_1_pilha}{parser.\+Pilha}}$<$ T $>$.\mbox{\hyperlink{classparser_1_1_pilha}{Pilha}} (\begin{DoxyParamCaption}\item[{string}]{nome\+Pilha}{}\end{DoxyParamCaption})}
+
+
+
+construtor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Pilha} & nome da pilha.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_pilha_aac4fe11d0e25748ba8f4224b31ea5104}\index{parser.Pilha$<$ T $>$@{parser.Pilha$<$ T $>$}!Empty@{Empty}}
+\index{Empty@{Empty}!parser.Pilha$<$ T $>$@{parser.Pilha$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Empty()}{Empty()}}
+{\footnotesize\ttfamily \label{classparser_1_1_pilha_aac4fe11d0e25748ba8f4224b31ea5104} 
+bool \mbox{\hyperlink{classparser_1_1_pilha}{parser.\+Pilha}}$<$ T $>$.Empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+retorna \mbox{[}true\mbox{]} se a pilha está vazia, \mbox{[}false\mbox{]} se tem elementos na pilha. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{[}true\mbox{]} se a pilha está vazia, \mbox{[}false\mbox{]} se contrário.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_pilha_a7a2dc71e3329dcec2f03047a4ab80d24}\index{parser.Pilha$<$ T $>$@{parser.Pilha$<$ T $>$}!Esvazia@{Esvazia}}
+\index{Esvazia@{Esvazia}!parser.Pilha$<$ T $>$@{parser.Pilha$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Esvazia()}{Esvazia()}}
+{\footnotesize\ttfamily \label{classparser_1_1_pilha_a7a2dc71e3329dcec2f03047a4ab80d24} 
+void \mbox{\hyperlink{classparser_1_1_pilha}{parser.\+Pilha}}$<$ T $>$.Esvazia (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_pilha_a9afdc973c09518ae374500e80d0ec256}\index{parser.Pilha$<$ T $>$@{parser.Pilha$<$ T $>$}!GetElementos@{GetElementos}}
+\index{GetElementos@{GetElementos}!parser.Pilha$<$ T $>$@{parser.Pilha$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetElementos()}{GetElementos()}}
+{\footnotesize\ttfamily \label{classparser_1_1_pilha_a9afdc973c09518ae374500e80d0ec256} 
+List$<$ T $>$ \mbox{\hyperlink{classparser_1_1_pilha}{parser.\+Pilha}}$<$ T $>$.Get\+Elementos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_pilha_aa024befddf31de4d58728b234d89c244}\index{parser.Pilha$<$ T $>$@{parser.Pilha$<$ T $>$}!Peek@{Peek}}
+\index{Peek@{Peek}!parser.Pilha$<$ T $>$@{parser.Pilha$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Peek()}{Peek()}}
+{\footnotesize\ttfamily \label{classparser_1_1_pilha_aa024befddf31de4d58728b234d89c244} 
+T \mbox{\hyperlink{classparser_1_1_pilha}{parser.\+Pilha}}$<$ T $>$.Peek (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+retorna o elemento no topo da pilha, sem retirá-\/lo. 
+
+\begin{DoxyReturn}{Returns}
+retorna o elemento no topo da pilha.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_pilha_a6b58e80da722c8a22abe89e9c5a74fed}\index{parser.Pilha$<$ T $>$@{parser.Pilha$<$ T $>$}!Pop@{Pop}}
+\index{Pop@{Pop}!parser.Pilha$<$ T $>$@{parser.Pilha$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Pop()}{Pop()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_pilha_a6b58e80da722c8a22abe89e9c5a74fed} 
+T \mbox{\hyperlink{classparser_1_1_pilha}{parser.\+Pilha}}$<$ T $>$.Pop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+retira e retorna o elemento no topo da pilha. 
+
+\begin{DoxyReturn}{Returns}
+elemento empilhado no topo da pilha.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_pilha_a542a0551baddbc315f76bf1512f29813}\index{parser.Pilha$<$ T $>$@{parser.Pilha$<$ T $>$}!Pop@{Pop}}
+\index{Pop@{Pop}!parser.Pilha$<$ T $>$@{parser.Pilha$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Pop()}{Pop()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_pilha_a542a0551baddbc315f76bf1512f29813} 
+void \mbox{\hyperlink{classparser_1_1_pilha}{parser.\+Pilha}}$<$ T $>$.Pop (\begin{DoxyParamCaption}\item[{int}]{contador\+Desempilha}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_pilha_a94912ea50a16f6d4ec48a6144b316828}\index{parser.Pilha$<$ T $>$@{parser.Pilha$<$ T $>$}!Push@{Push}}
+\index{Push@{Push}!parser.Pilha$<$ T $>$@{parser.Pilha$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Push()}{Push()}}
+{\footnotesize\ttfamily \label{classparser_1_1_pilha_a94912ea50a16f6d4ec48a6144b316828} 
+void \mbox{\hyperlink{classparser_1_1_pilha}{parser.\+Pilha}}$<$ T $>$.Push (\begin{DoxyParamCaption}\item[{T}]{op}{}\end{DoxyParamCaption})}
+
+
+
+empilha o elemento \mbox{[}op\mbox{]} no topo da pilha. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em op} & elemento a ser empilhado.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{classparser_1_1_pilha_a2147d87aa185b98b0c1490dead816e86}\index{parser.Pilha$<$ T $>$@{parser.Pilha$<$ T $>$}!lenghtPilha@{lenghtPilha}}
+\index{lenghtPilha@{lenghtPilha}!parser.Pilha$<$ T $>$@{parser.Pilha$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{lenghtPilha}{lenghtPilha}}
+{\footnotesize\ttfamily \label{classparser_1_1_pilha_a2147d87aa185b98b0c1490dead816e86} 
+int \mbox{\hyperlink{classparser_1_1_pilha}{parser.\+Pilha}}$<$ T $>$.lenght\+Pilha\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/\+Util/string\+Utils/\mbox{\hyperlink{str_pilha_8cs}{str\+Pilha.\+cs}}\end{DoxyCompactItemize}

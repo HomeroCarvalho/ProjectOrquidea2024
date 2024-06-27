@@ -1,0 +1,197 @@
+\doxysection{parser.\+Token\+Parser Class Reference}
+\hypertarget{classparser_1_1_token_parser}{}\label{classparser_1_1_token_parser}\index{parser.TokenParser@{parser.TokenParser}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparser_1_1_token_parser_ac6dd0ff5cd751ebaef2846280dd98526}{Token\+Parser}} ()
+\item 
+\mbox{\hyperlink{classparser_1_1_token_parser_aac6187c53fb698b0389222aa43fb42a4}{Token\+Parser}} (List$<$ string $>$ programa)
+\item 
+\mbox{\hyperlink{classparser_1_1_token_parser_a48f53248c61fdc68ae784038152502fb}{Token\+Parser}} (string\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classparser_1_1_token_parser_a113d4c45bb7a6adb494a4038fa450aa5}{tokens}})
+\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_token_parser_a94909222d0e79f0be7289728666fa184}{All\+Tokens}} ()
+\item 
+void \mbox{\hyperlink{classparser_1_1_token_parser_a1188b884719daf3f9b9dc60211566c77}{Set\+Current\+Token}} (string token\+Subsituto)
+\item 
+void \mbox{\hyperlink{classparser_1_1_token_parser_a5598a45b0898b285385e06e754dacd8f}{Remove\+Current\+Token}} (int index)
+\item 
+void \mbox{\hyperlink{classparser_1_1_token_parser_a718cef44968687ba5be47654105e6733}{Remove\+Range\+Tokens}} (int ini, int fini)
+\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_token_parser_a15d4d6f99a2c218f3ae40265069cf60d}{Get\+Range}} (int ini, int fini)
+\item 
+void \mbox{\hyperlink{classparser_1_1_token_parser_a5740d284a10acb4e779d6da085bac73a}{Insert}} (int index, string token)
+\item 
+void \mbox{\hyperlink{classparser_1_1_token_parser_ac77ef989131358036289b6d0368a221e}{Push\+Parser}} ()
+\item 
+void \mbox{\hyperlink{classparser_1_1_token_parser_ab506c6279c7531208b873e576ac92509}{Pop\+Parser}} ()
+\begin{DoxyCompactList}\small\item\em recupera o parser a partir de um objeto temporário. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classparser_1_1_token_parser_aba47c72a3112f4557702afb840a68b11}{Current}} ()
+\item 
+string \mbox{\hyperlink{classparser_1_1_token_parser_aa1aff176c24d4d11a99d3c8096d895df}{Next}} ()
+\item 
+string \mbox{\hyperlink{classparser_1_1_token_parser_a08baf54d5a5f9f6e8be0da0686796803}{Previous}} ()
+\item 
+string \mbox{\hyperlink{classparser_1_1_token_parser_a2f147198a915e9b00b2f3a86ad78111a}{Peek}} (int inc\+Indice)
+\item 
+int \mbox{\hyperlink{classparser_1_1_token_parser_a4a2b985fbfff2c4ad74b00313cdb8947}{Index}} ()
+\item 
+void \mbox{\hyperlink{classparser_1_1_token_parser_a66040c0339d00a095dcf59eaca351f4a}{Set\+Index}} (int index)
+\item 
+\mbox{\hyperlink{classparser_1_1_token_parser}{Token\+Parser}} \mbox{\hyperlink{classparser_1_1_token_parser_a465a4649557af87d13054c82f6540910}{Clone}} ()
+\begin{DoxyCompactList}\small\item\em obtém uma cópia do parser currente. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_token_parser_adda343e996adef9668673080fff995d8}{Do\+Empty}} ()
+\begin{DoxyCompactList}\small\item\em coloca o ponteiro dos tokens para o índice inicial. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_token_parser_a113d4c45bb7a6adb494a4038fa450aa5}{tokens}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classparser_1_1_token_parser_ac6dd0ff5cd751ebaef2846280dd98526}\index{parser.TokenParser@{parser.TokenParser}!TokenParser@{TokenParser}}
+\index{TokenParser@{TokenParser}!parser.TokenParser@{parser.TokenParser}}
+\doxysubsubsection{\texorpdfstring{TokenParser()}{TokenParser()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{classparser_1_1_token_parser_ac6dd0ff5cd751ebaef2846280dd98526} 
+parser.\+Token\+Parser.\+Token\+Parser (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_token_parser_aac6187c53fb698b0389222aa43fb42a4}\index{parser.TokenParser@{parser.TokenParser}!TokenParser@{TokenParser}}
+\index{TokenParser@{TokenParser}!parser.TokenParser@{parser.TokenParser}}
+\doxysubsubsection{\texorpdfstring{TokenParser()}{TokenParser()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{classparser_1_1_token_parser_aac6187c53fb698b0389222aa43fb42a4} 
+parser.\+Token\+Parser.\+Token\+Parser (\begin{DoxyParamCaption}\item[{List$<$ string $>$}]{programa}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_token_parser_a48f53248c61fdc68ae784038152502fb}\index{parser.TokenParser@{parser.TokenParser}!TokenParser@{TokenParser}}
+\index{TokenParser@{TokenParser}!parser.TokenParser@{parser.TokenParser}}
+\doxysubsubsection{\texorpdfstring{TokenParser()}{TokenParser()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{classparser_1_1_token_parser_a48f53248c61fdc68ae784038152502fb} 
+parser.\+Token\+Parser.\+Token\+Parser (\begin{DoxyParamCaption}\item[{string\mbox{[}$\,$\mbox{]}}]{tokens}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_token_parser_a94909222d0e79f0be7289728666fa184}\index{parser.TokenParser@{parser.TokenParser}!AllTokens@{AllTokens}}
+\index{AllTokens@{AllTokens}!parser.TokenParser@{parser.TokenParser}}
+\doxysubsubsection{\texorpdfstring{AllTokens()}{AllTokens()}}
+{\footnotesize\ttfamily \label{classparser_1_1_token_parser_a94909222d0e79f0be7289728666fa184} 
+List$<$ string $>$ parser.\+Token\+Parser.\+All\+Tokens (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_token_parser_a465a4649557af87d13054c82f6540910}\index{parser.TokenParser@{parser.TokenParser}!Clone@{Clone}}
+\index{Clone@{Clone}!parser.TokenParser@{parser.TokenParser}}
+\doxysubsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily \label{classparser_1_1_token_parser_a465a4649557af87d13054c82f6540910} 
+\mbox{\hyperlink{classparser_1_1_token_parser}{Token\+Parser}} parser.\+Token\+Parser.\+Clone (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+obtém uma cópia do parser currente. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_token_parser_aba47c72a3112f4557702afb840a68b11}\index{parser.TokenParser@{parser.TokenParser}!Current@{Current}}
+\index{Current@{Current}!parser.TokenParser@{parser.TokenParser}}
+\doxysubsubsection{\texorpdfstring{Current()}{Current()}}
+{\footnotesize\ttfamily \label{classparser_1_1_token_parser_aba47c72a3112f4557702afb840a68b11} 
+string parser.\+Token\+Parser.\+Current (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_token_parser_adda343e996adef9668673080fff995d8}\index{parser.TokenParser@{parser.TokenParser}!DoEmpty@{DoEmpty}}
+\index{DoEmpty@{DoEmpty}!parser.TokenParser@{parser.TokenParser}}
+\doxysubsubsection{\texorpdfstring{DoEmpty()}{DoEmpty()}}
+{\footnotesize\ttfamily \label{classparser_1_1_token_parser_adda343e996adef9668673080fff995d8} 
+void parser.\+Token\+Parser.\+Do\+Empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+coloca o ponteiro dos tokens para o índice inicial. 
+
+\Hypertarget{classparser_1_1_token_parser_a15d4d6f99a2c218f3ae40265069cf60d}\index{parser.TokenParser@{parser.TokenParser}!GetRange@{GetRange}}
+\index{GetRange@{GetRange}!parser.TokenParser@{parser.TokenParser}}
+\doxysubsubsection{\texorpdfstring{GetRange()}{GetRange()}}
+{\footnotesize\ttfamily \label{classparser_1_1_token_parser_a15d4d6f99a2c218f3ae40265069cf60d} 
+List$<$ string $>$ parser.\+Token\+Parser.\+Get\+Range (\begin{DoxyParamCaption}\item[{int}]{ini}{, }\item[{int}]{fini}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_token_parser_a4a2b985fbfff2c4ad74b00313cdb8947}\index{parser.TokenParser@{parser.TokenParser}!Index@{Index}}
+\index{Index@{Index}!parser.TokenParser@{parser.TokenParser}}
+\doxysubsubsection{\texorpdfstring{Index()}{Index()}}
+{\footnotesize\ttfamily \label{classparser_1_1_token_parser_a4a2b985fbfff2c4ad74b00313cdb8947} 
+int parser.\+Token\+Parser.\+Index (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_token_parser_a5740d284a10acb4e779d6da085bac73a}\index{parser.TokenParser@{parser.TokenParser}!Insert@{Insert}}
+\index{Insert@{Insert}!parser.TokenParser@{parser.TokenParser}}
+\doxysubsubsection{\texorpdfstring{Insert()}{Insert()}}
+{\footnotesize\ttfamily \label{classparser_1_1_token_parser_a5740d284a10acb4e779d6da085bac73a} 
+void parser.\+Token\+Parser.\+Insert (\begin{DoxyParamCaption}\item[{int}]{index}{, }\item[{string}]{token}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_token_parser_aa1aff176c24d4d11a99d3c8096d895df}\index{parser.TokenParser@{parser.TokenParser}!Next@{Next}}
+\index{Next@{Next}!parser.TokenParser@{parser.TokenParser}}
+\doxysubsubsection{\texorpdfstring{Next()}{Next()}}
+{\footnotesize\ttfamily \label{classparser_1_1_token_parser_aa1aff176c24d4d11a99d3c8096d895df} 
+string parser.\+Token\+Parser.\+Next (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_token_parser_a2f147198a915e9b00b2f3a86ad78111a}\index{parser.TokenParser@{parser.TokenParser}!Peek@{Peek}}
+\index{Peek@{Peek}!parser.TokenParser@{parser.TokenParser}}
+\doxysubsubsection{\texorpdfstring{Peek()}{Peek()}}
+{\footnotesize\ttfamily \label{classparser_1_1_token_parser_a2f147198a915e9b00b2f3a86ad78111a} 
+string parser.\+Token\+Parser.\+Peek (\begin{DoxyParamCaption}\item[{int}]{inc\+Indice}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_token_parser_ab506c6279c7531208b873e576ac92509}\index{parser.TokenParser@{parser.TokenParser}!PopParser@{PopParser}}
+\index{PopParser@{PopParser}!parser.TokenParser@{parser.TokenParser}}
+\doxysubsubsection{\texorpdfstring{PopParser()}{PopParser()}}
+{\footnotesize\ttfamily \label{classparser_1_1_token_parser_ab506c6279c7531208b873e576ac92509} 
+void parser.\+Token\+Parser.\+Pop\+Parser (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+recupera o parser a partir de um objeto temporário. 
+
+\Hypertarget{classparser_1_1_token_parser_a08baf54d5a5f9f6e8be0da0686796803}\index{parser.TokenParser@{parser.TokenParser}!Previous@{Previous}}
+\index{Previous@{Previous}!parser.TokenParser@{parser.TokenParser}}
+\doxysubsubsection{\texorpdfstring{Previous()}{Previous()}}
+{\footnotesize\ttfamily \label{classparser_1_1_token_parser_a08baf54d5a5f9f6e8be0da0686796803} 
+string parser.\+Token\+Parser.\+Previous (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_token_parser_ac77ef989131358036289b6d0368a221e}\index{parser.TokenParser@{parser.TokenParser}!PushParser@{PushParser}}
+\index{PushParser@{PushParser}!parser.TokenParser@{parser.TokenParser}}
+\doxysubsubsection{\texorpdfstring{PushParser()}{PushParser()}}
+{\footnotesize\ttfamily \label{classparser_1_1_token_parser_ac77ef989131358036289b6d0368a221e} 
+void parser.\+Token\+Parser.\+Push\+Parser (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+guarda o parser num objeto temporário. \Hypertarget{classparser_1_1_token_parser_a5598a45b0898b285385e06e754dacd8f}\index{parser.TokenParser@{parser.TokenParser}!RemoveCurrentToken@{RemoveCurrentToken}}
+\index{RemoveCurrentToken@{RemoveCurrentToken}!parser.TokenParser@{parser.TokenParser}}
+\doxysubsubsection{\texorpdfstring{RemoveCurrentToken()}{RemoveCurrentToken()}}
+{\footnotesize\ttfamily \label{classparser_1_1_token_parser_a5598a45b0898b285385e06e754dacd8f} 
+void parser.\+Token\+Parser.\+Remove\+Current\+Token (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_token_parser_a718cef44968687ba5be47654105e6733}\index{parser.TokenParser@{parser.TokenParser}!RemoveRangeTokens@{RemoveRangeTokens}}
+\index{RemoveRangeTokens@{RemoveRangeTokens}!parser.TokenParser@{parser.TokenParser}}
+\doxysubsubsection{\texorpdfstring{RemoveRangeTokens()}{RemoveRangeTokens()}}
+{\footnotesize\ttfamily \label{classparser_1_1_token_parser_a718cef44968687ba5be47654105e6733} 
+void parser.\+Token\+Parser.\+Remove\+Range\+Tokens (\begin{DoxyParamCaption}\item[{int}]{ini}{, }\item[{int}]{fini}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_token_parser_a1188b884719daf3f9b9dc60211566c77}\index{parser.TokenParser@{parser.TokenParser}!SetCurrentToken@{SetCurrentToken}}
+\index{SetCurrentToken@{SetCurrentToken}!parser.TokenParser@{parser.TokenParser}}
+\doxysubsubsection{\texorpdfstring{SetCurrentToken()}{SetCurrentToken()}}
+{\footnotesize\ttfamily \label{classparser_1_1_token_parser_a1188b884719daf3f9b9dc60211566c77} 
+void parser.\+Token\+Parser.\+Set\+Current\+Token (\begin{DoxyParamCaption}\item[{string}]{token\+Subsituto}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_token_parser_a66040c0339d00a095dcf59eaca351f4a}\index{parser.TokenParser@{parser.TokenParser}!SetIndex@{SetIndex}}
+\index{SetIndex@{SetIndex}!parser.TokenParser@{parser.TokenParser}}
+\doxysubsubsection{\texorpdfstring{SetIndex()}{SetIndex()}}
+{\footnotesize\ttfamily \label{classparser_1_1_token_parser_a66040c0339d00a095dcf59eaca351f4a} 
+void parser.\+Token\+Parser.\+Set\+Index (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{classparser_1_1_token_parser_a113d4c45bb7a6adb494a4038fa450aa5}\index{parser.TokenParser@{parser.TokenParser}!tokens@{tokens}}
+\index{tokens@{tokens}!parser.TokenParser@{parser.TokenParser}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily \label{classparser_1_1_token_parser_a113d4c45bb7a6adb494a4038fa450aa5} 
+List$<$string$>$ parser.\+Token\+Parser.\+tokens\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/componentes\+De\+Interpretadores\+ECompiladores/\+PROGRAMACAO ORIENTADA A OBJETOS/\mbox{\hyperlink{_tokens_8cs}{Tokens.\+cs}}\end{DoxyCompactItemize}

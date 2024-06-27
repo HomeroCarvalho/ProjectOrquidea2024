@@ -1,0 +1,148 @@
+\doxysection{parser.\+Producao Class Reference}
+\hypertarget{classparser_1_1_producao}{}\label{classparser_1_1_producao}\index{parser.Producao@{parser.Producao}}
+
+
+esta \doxylink{classparser_1_1_classe}{Classe} é para o termo cunhado na teoria dos automatos\+: a producao de uma linguagem que é onde se define o caminho na máquina de estados onde o automato irá percorrer, bem como define os termos da linguagem.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override string \mbox{\hyperlink{classparser_1_1_producao_aada8c007a67bc01bfb27ce724513ce8d}{To\+String}} ()
+\item 
+\mbox{\hyperlink{classparser_1_1_producao_a74f74b309a3ede2b33f67ff94ed3610d}{Producao}} (\mbox{\hyperlink{classparser_1_1_producao}{Producao}} p)
+\item 
+\mbox{\hyperlink{classparser_1_1_producao_a2b7c2b7c6bf1f677028894b2b3ddcb4c}{Producao}} (string nome\+Prod, string tipo\+Prod, List$<$ string $>$ maq\+De\+Estados, string\mbox{[}$\,$\mbox{]} termoschave)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparser_1_1_posicao_e_codigo}{Posicao\+ECodigo}} \mbox{\hyperlink{classparser_1_1_producao_a312b1bb2831348f114d4e6fdefe32b9d}{posicao}}
+\item 
+string \mbox{\hyperlink{classparser_1_1_producao_ae7c3c199d283c811d0ad2229317ce061}{index\+Ordenacao}}
+\item 
+\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}} \mbox{\hyperlink{classparser_1_1_producao_a47fdd575057602de2ac73bc5830205f3}{sequencia}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_producao_adf344f5fa8f012b05cec2c65aa39fe06}{maquina\+De\+Estados}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_producao_af3c9247e74939e2b2972907b4b3ed718}{termos\+\_\+\+Chave}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{classparser_1_1_producao_abb479cafee9216d8e90249c04593ed26}{nome\+Producao}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{classparser_1_1_producao_a982169798a19c919d26d76618134bc14}{tipo}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{classparser_1_1_producao_ad05b49fee42e0b8306c1fa446e41949a}{trecho\+Programa}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{classparser_1_1_producao_a00ef4da83ee2afbef6b1d13fdebd4ec2}{str\+\_\+termoschave}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_producao_a0a3550d40b5a84721fe816c86e47b5f9}{semi\+\_\+producoes}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_producao_a4dfbcfd8a11ce4828ae307628efc9f3e}{semi\+Producoes\+Trecho\+De\+Codigo}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+esta \doxylink{classparser_1_1_classe}{Classe} é para o termo cunhado na teoria dos automatos\+: a producao de uma linguagem que é onde se define o caminho na máquina de estados onde o automato irá percorrer, bem como define os termos da linguagem. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classparser_1_1_producao_a74f74b309a3ede2b33f67ff94ed3610d}\index{parser.Producao@{parser.Producao}!Producao@{Producao}}
+\index{Producao@{Producao}!parser.Producao@{parser.Producao}}
+\doxysubsubsection{\texorpdfstring{Producao()}{Producao()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_producao_a74f74b309a3ede2b33f67ff94ed3610d} 
+parser.\+Producao.\+Producao (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_producao}{Producao}}}]{p}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_producao_a2b7c2b7c6bf1f677028894b2b3ddcb4c}\index{parser.Producao@{parser.Producao}!Producao@{Producao}}
+\index{Producao@{Producao}!parser.Producao@{parser.Producao}}
+\doxysubsubsection{\texorpdfstring{Producao()}{Producao()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_producao_a2b7c2b7c6bf1f677028894b2b3ddcb4c} 
+parser.\+Producao.\+Producao (\begin{DoxyParamCaption}\item[{string}]{nome\+Prod}{, }\item[{string}]{tipo\+Prod}{, }\item[{List$<$ string $>$}]{maq\+De\+Estados}{, }\item[{string\mbox{[}$\,$\mbox{]}}]{termoschave}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_producao_aada8c007a67bc01bfb27ce724513ce8d}\index{parser.Producao@{parser.Producao}!ToString@{ToString}}
+\index{ToString@{ToString}!parser.Producao@{parser.Producao}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily \label{classparser_1_1_producao_aada8c007a67bc01bfb27ce724513ce8d} 
+override string parser.\+Producao.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classparser_1_1_producao_ae7c3c199d283c811d0ad2229317ce061}\index{parser.Producao@{parser.Producao}!indexOrdenacao@{indexOrdenacao}}
+\index{indexOrdenacao@{indexOrdenacao}!parser.Producao@{parser.Producao}}
+\doxysubsubsection{\texorpdfstring{indexOrdenacao}{indexOrdenacao}}
+{\footnotesize\ttfamily \label{classparser_1_1_producao_ae7c3c199d283c811d0ad2229317ce061} 
+string parser.\+Producao.\+index\+Ordenacao}
+
+\Hypertarget{classparser_1_1_producao_a312b1bb2831348f114d4e6fdefe32b9d}\index{parser.Producao@{parser.Producao}!posicao@{posicao}}
+\index{posicao@{posicao}!parser.Producao@{parser.Producao}}
+\doxysubsubsection{\texorpdfstring{posicao}{posicao}}
+{\footnotesize\ttfamily \label{classparser_1_1_producao_a312b1bb2831348f114d4e6fdefe32b9d} 
+\mbox{\hyperlink{classparser_1_1_posicao_e_codigo}{Posicao\+ECodigo}} parser.\+Producao.\+posicao}
+
+\Hypertarget{classparser_1_1_producao_a47fdd575057602de2ac73bc5830205f3}\index{parser.Producao@{parser.Producao}!sequencia@{sequencia}}
+\index{sequencia@{sequencia}!parser.Producao@{parser.Producao}}
+\doxysubsubsection{\texorpdfstring{sequencia}{sequencia}}
+{\footnotesize\ttfamily \label{classparser_1_1_producao_a47fdd575057602de2ac73bc5830205f3} 
+\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}} parser.\+Producao.\+sequencia}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{classparser_1_1_producao_adf344f5fa8f012b05cec2c65aa39fe06}\index{parser.Producao@{parser.Producao}!maquinaDeEstados@{maquinaDeEstados}}
+\index{maquinaDeEstados@{maquinaDeEstados}!parser.Producao@{parser.Producao}}
+\doxysubsubsection{\texorpdfstring{maquinaDeEstados}{maquinaDeEstados}}
+{\footnotesize\ttfamily \label{classparser_1_1_producao_adf344f5fa8f012b05cec2c65aa39fe06} 
+List$<$string$>$ parser.\+Producao.\+maquina\+De\+Estados\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{classparser_1_1_producao_abb479cafee9216d8e90249c04593ed26}\index{parser.Producao@{parser.Producao}!nomeProducao@{nomeProducao}}
+\index{nomeProducao@{nomeProducao}!parser.Producao@{parser.Producao}}
+\doxysubsubsection{\texorpdfstring{nomeProducao}{nomeProducao}}
+{\footnotesize\ttfamily \label{classparser_1_1_producao_abb479cafee9216d8e90249c04593ed26} 
+string parser.\+Producao.\+nome\+Producao\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{classparser_1_1_producao_a0a3550d40b5a84721fe816c86e47b5f9}\index{parser.Producao@{parser.Producao}!semi\_producoes@{semi\_producoes}}
+\index{semi\_producoes@{semi\_producoes}!parser.Producao@{parser.Producao}}
+\doxysubsubsection{\texorpdfstring{semi\_producoes}{semi\_producoes}}
+{\footnotesize\ttfamily \label{classparser_1_1_producao_a0a3550d40b5a84721fe816c86e47b5f9} 
+List$<$string$>$ parser.\+Producao.\+semi\+\_\+producoes\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{classparser_1_1_producao_a4dfbcfd8a11ce4828ae307628efc9f3e}\index{parser.Producao@{parser.Producao}!semiProducoesTrechoDeCodigo@{semiProducoesTrechoDeCodigo}}
+\index{semiProducoesTrechoDeCodigo@{semiProducoesTrechoDeCodigo}!parser.Producao@{parser.Producao}}
+\doxysubsubsection{\texorpdfstring{semiProducoesTrechoDeCodigo}{semiProducoesTrechoDeCodigo}}
+{\footnotesize\ttfamily \label{classparser_1_1_producao_a4dfbcfd8a11ce4828ae307628efc9f3e} 
+List$<$string$>$ parser.\+Producao.\+semi\+Producoes\+Trecho\+De\+Codigo\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{classparser_1_1_producao_a00ef4da83ee2afbef6b1d13fdebd4ec2}\index{parser.Producao@{parser.Producao}!str\_termoschave@{str\_termoschave}}
+\index{str\_termoschave@{str\_termoschave}!parser.Producao@{parser.Producao}}
+\doxysubsubsection{\texorpdfstring{str\_termoschave}{str\_termoschave}}
+{\footnotesize\ttfamily \label{classparser_1_1_producao_a00ef4da83ee2afbef6b1d13fdebd4ec2} 
+string parser.\+Producao.\+str\+\_\+termoschave\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{classparser_1_1_producao_af3c9247e74939e2b2972907b4b3ed718}\index{parser.Producao@{parser.Producao}!termos\_Chave@{termos\_Chave}}
+\index{termos\_Chave@{termos\_Chave}!parser.Producao@{parser.Producao}}
+\doxysubsubsection{\texorpdfstring{termos\_Chave}{termos\_Chave}}
+{\footnotesize\ttfamily \label{classparser_1_1_producao_af3c9247e74939e2b2972907b4b3ed718} 
+List$<$string$>$ parser.\+Producao.\+termos\+\_\+\+Chave\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{classparser_1_1_producao_a982169798a19c919d26d76618134bc14}\index{parser.Producao@{parser.Producao}!tipo@{tipo}}
+\index{tipo@{tipo}!parser.Producao@{parser.Producao}}
+\doxysubsubsection{\texorpdfstring{tipo}{tipo}}
+{\footnotesize\ttfamily \label{classparser_1_1_producao_a982169798a19c919d26d76618134bc14} 
+string parser.\+Producao.\+tipo\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{classparser_1_1_producao_ad05b49fee42e0b8306c1fa446e41949a}\index{parser.Producao@{parser.Producao}!trechoPrograma@{trechoPrograma}}
+\index{trechoPrograma@{trechoPrograma}!parser.Producao@{parser.Producao}}
+\doxysubsubsection{\texorpdfstring{trechoPrograma}{trechoPrograma}}
+{\footnotesize\ttfamily \label{classparser_1_1_producao_ad05b49fee42e0b8306c1fa446e41949a} 
+string parser.\+Producao.\+trecho\+Programa\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/componentes\+De\+Interpretadores\+ECompiladores/\+PROGRAMACAO FUNCIONAL/\mbox{\hyperlink{_producao_8cs}{Producao.\+cs}}\end{DoxyCompactItemize}

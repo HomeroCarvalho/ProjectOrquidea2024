@@ -1,0 +1,156 @@
+Para tocar um som usando a biblioteca SFML em C++, você pode seguir estes passos básicos:
+
+1. **Inclua o cabeçalho necessário**:
+   ```cpp
+   #include <SFML/Audio.hpp>
+   ```
+
+2. **Carregue os dados do som** em um `sf::SoundBuffer`:
+   ```cpp
+   sf::SoundBuffer buffer;
+   if (!buffer.loadFromFile("caminho/para/seu/som.wav")) {
+       // erro ao carregar o arquivo
+       return -1;
+   }
+   ```
+
+3. **Crie uma instância de `sf::Sound`** e atribua o buffer de som a ela:
+   ```cpp
+   sf::Sound sound;
+   sound.setBuffer(buffer);
+   ```
+
+4. **Toque o som**:
+   ```cpp
+   sound.play();
+   ```
+
+Lembre-se de que `sf::Sound` é usado para sons pequenos que podem caber na memória e que não devem sofrer atrasos ao serem reproduzidos, como tiros ou passos. Para música ou sons mais longos que são transmitidos do arquivo, você deve usar `sf::Music`⁴.
+
+Aqui está um exemplo completo de como tocar um som:
+```cpp
+#include <SFML/Audio.hpp>
+
+int main() {
+    sf::SoundBuffer buffer;
+    if (!buffer.loadFromFile("sound.wav")) {
+        // erro ao carregar o arquivo
+        return -1;
+    }
+
+    sf::Sound sound;
+    sound.setBuffer(buffer);
+    sound.play();
+
+    // Mantenha o programa rodando enquanto o som estiver tocando
+    while (sound.getStatus() == sf::Sound::Playing) {
+        // Você pode fazer outras coisas aqui...
+    }
+
+    return 0;
+}
+```
+Espero que isso ajude! Se você tiver mais perguntas ou precisar de mais detalhes, fique à vontade para perguntar.
+
+Origem: conversa com o Bing, 09/05/2024
+(1) Playing sounds and music (SFML / Learn / 2.5 Tutorials). https://www.sfml-dev.org/tutorials/2.5/audio-sounds.php.
+(2) Biblioteca | Som Ambiente - Para estudar e se concentrar.. https://www.youtube.com/watch?v=kDm4yWN7_ls.
+(3) Juntar MIC e SOM do PC - Tutorial Voicemeeter [LEIA A DESCRIÇÃO!!!]. https://www.youtube.com/watch?v=usoQG8fbn1A.
+(4) Como Usar Sound Fonts sf2 no FL Studio 11 Tutorial Português. https://www.youtube.com/watch?v=1vyeFt4476E.
+(5) Instalando e configurando a biblioteca SFML no Visual Studio 2022. https://www.youtube.com/watch?v=M5ee-4R0SD4.
+(6) Biblioteca de gráficos SFML | Tutorial Rápido – Acervo Lima. https://acervolima.com/biblioteca-de-graficos-sfml-tutorial-rapido/.
+(7) SFML – Wikipédia, a enciclopédia livre. https://pt.wikipedia.org/wiki/SFML.
+(8) undefined. http://goo.gl/WHuZcH.
+(9) undefined. http://youtu.be/hKm253dr4EQ.
+(10) undefined. http://goo.gl/ZMcwSl.
+(11) undefined. https://www.sfml-dev.org/tutorials/2.0/window-window.php.
+
+
+
+
+#include <SFML/Audio.hpp>
+
+int main() {
+    sf::SoundBuffer buffer;
+    if (!buffer.loadFromFile("sound.wav")) {
+        // erro ao carregar o arquivo
+        return -1;
+    }
+
+    sf::Sound sound;
+    sound.setBuffer(buffer);
+    sound.play();
+
+    // Mantenha o programa rodando enquanto o som estiver tocando
+    while (sound.getStatus() == sf::Sound::Playing) {
+        // Você pode fazer outras coisas aqui...
+    }
+
+    return 0;
+}
+
+
+A biblioteca SFML (Simple and Fast Multimedia Library) suporta vários tipos de arquivos de áudio para uso em projetos de desenvolvimento de jogos e multimídia. Os formatos de arquivo de áudio comumente suportados pelo SFML incluem:
+
+- **OGG**: Um formato contêiner que pode incluir vários tipos de codecs de áudio, sendo o Vorbis o mais comum para arquivos OGG.
+- **WAV**: Um formato de áudio sem compressão, conhecido por sua alta qualidade de som, mas também por seu tamanho de arquivo maior.
+- **FLAC**: Um formato de áudio sem perda que oferece qualidade de som de alta fidelidade e é mais eficiente em termos de armazenamento do que o WAV.
+- **AIFF**: Um formato de áudio semelhante ao WAV, comumente usado em produtos da Apple.
+- **MP3**: Um formato de áudio com perda muito popular, que usa compressão para reduzir o tamanho do arquivo, mantendo uma qualidade de som aceitável.
+
+Esses formatos são escolhidos por sua ampla compatibilidade e equilíbrio entre qualidade de áudio e tamanho de arquivo. Para projetos específicos, você pode escolher o formato que melhor se adapta às suas necessidades de qualidade de áudio e restrições de armazenamento.
+
+Origem: conversa com o Bing, 09/05/2024
+(1) Comparativo: 10 formatos de áudio e quando você deve utilizá-los. https://www.tecmundo.com.br/audio/105486-comparativo-10-formatos-audio-voce-deve-utiliza-los.htm.
+(2) Formatos de ficheiros áudio: O guia definitivo - eMastered. https://emastered.com/pt/blog/audio-file-formats.
+(3) Tipos de Arquivo de Áudio Sem Perda - Kits.AI. https://www.kits.ai/pt/glossary/lossless-file-types-audio.
+(4) Formato de arquivo SF2 - SoundFont 2 Sound Bank - File Format Docs. https://docs.fileformat.com/pt/audio/sf2/.
+(5) Formatos de arquivo de áudio: como escolher o tipo de arquivo correto .... https://blog.teclacenter.com.br/formatos-de-arquivo-de-audio-como-escolher-o-tipo-de-arquivo-correto/.
+
+
+
+Para tocar uma música em SFML (Simple and Fast Multimedia Library), você pode usar a classe `sf::Music`, que é projetada para reproduzir arquivos de música que são muito grandes para serem carregados na memória de uma só vez. Aqui está um exemplo básico de como você pode fazer isso:
+
+```cpp
+#include <SFML/Audio.hpp>
+
+int main() {
+    // Crie um objeto de música
+    sf::Music music;
+
+    // Abra um arquivo de música do disco
+    if (!music.openFromFile("caminho/para/sua/musica.ogg")) {
+        // erro ao abrir arquivo
+        return -1;
+    }
+
+    // Reproduza a música
+    music.play();
+
+    // Mantenha o aplicativo rodando enquanto a música estiver tocando
+    while (music.getStatus() == sf::Music::Playing) {
+        // Atualize a música
+        sf::sleep(sf::milliseconds(100));
+    }
+
+    return 0;
+}
+```
+
+Neste código, `openFromFile` é usado para carregar a música. O método `play` é chamado para começar a reprodução. O loop `while` mantém o aplicativo rodando enquanto a música está tocando. Lembre-se de substituir `"caminho/para/sua/musica.ogg"` pelo caminho real do arquivo de música que você deseja tocar.
+
+A SFML suporta formatos de arquivo de áudio como **WAV**, **OGG/Vorbis** e **FLAC**. Devido a questões de licenciamento, o formato MP3 não é suportado.
+
+Espero que isso ajude! Se você tiver mais perguntas ou precisar de mais detalhes, fique à vontade para perguntar.
+
+Origem: conversa com o Bing, 09/05/2024
+(1) Playing sounds and music (SFML / Learn / 2.5 Tutorials). https://www.sfml-dev.org/tutorials/2.5/audio-sounds.php.
+(2) [SFM] Source Filmmaker Tutorial - How to add Music in Sfm. https://www.youtube.com/watch?v=3sXEbloAHec.
+(3) SFML 2.4.x Tutorial 008 - Playing & Recording Audio. https://www.youtube.com/watch?v=ygPW8saCu6o.
+(4) SFML 2.1 Tutorial 9 - Live Keyboard Input. https://www.youtube.com/watch?v=Gc0sIbhbzbs.
+(5) Playing a music (SFML / Learn / 1.6 Tutorials) - Simple and Fast .... https://www.sfml-dev.org/tutorials/1.6/audio-music.php.
+(6) SFML - Part 9 - Sound and music | Lulu's blog. https://lucidar.me/en/sfml/sfml-part-9-sound-and-music/.
+(7) Biblioteca de gráficos SFML | Tutorial Rápido – Acervo Lima. https://acervolima.com/biblioteca-de-graficos-sfml-tutorial-rapido/.
+(8) null. https://www.kite.com/get-kite/?utm_medium=referral&utm_source=youtube&utm.
+(9) null. http://www.lucidarme.me/?p=6127%29.
+(10) null. https://www.sfml-dev.org/tutorials/2.0/window-window.php.

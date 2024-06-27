@@ -1,0 +1,98 @@
+\doxysection{parser.\+Queue\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{classparser_1_1_queue}{}\label{classparser_1_1_queue}\index{parser.Queue$<$ T $>$@{parser.Queue$<$ T $>$}}
+
+
+estrutura de dados básica de Fila.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparser_1_1_queue_a9502b811fc4c38e5895abfe24218510a}{Queue}} (string \+\_\+nome\+Fila)
+\begin{DoxyCompactList}\small\item\em construtor básico. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{classparser_1_1_queue_ad2f1b52b5cdbce697a3a7901ed93f820}{De\+Queue}} ()
+\begin{DoxyCompactList}\small\item\em retira o primeiro elemento da fila. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_queue_a8fa100a42c2e52e40e1c4fcabf5d7cff}{En\+Queue}} (T element)
+\begin{DoxyCompactList}\small\item\em enfilera no fim da fila o elemento parâmetro. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_queue_a44f5eb056f167de2ac07ac1159fc2e31}{Empty}} ()
+\begin{DoxyCompactList}\small\item\em retorna \mbox{[}true\mbox{]} se a fila está vazia, \mbox{[}false\mbox{]} se contrário. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_queue_a3b536f24ff41899a9775b6e23bd571c6}{Clear}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+estrutura de dados básica de Fila. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & tipo de elemento a ser guardada na fila.\\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classparser_1_1_queue_a9502b811fc4c38e5895abfe24218510a}\index{parser.Queue$<$ T $>$@{parser.Queue$<$ T $>$}!Queue@{Queue}}
+\index{Queue@{Queue}!parser.Queue$<$ T $>$@{parser.Queue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Queue()}{Queue()}}
+{\footnotesize\ttfamily \label{classparser_1_1_queue_a9502b811fc4c38e5895abfe24218510a} 
+\mbox{\hyperlink{classparser_1_1_queue}{parser.\+Queue}}$<$ T $>$.\mbox{\hyperlink{classparser_1_1_queue}{Queue}} (\begin{DoxyParamCaption}\item[{string}]{\+\_\+nome\+Fila}{}\end{DoxyParamCaption})}
+
+
+
+construtor básico. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_queue_a3b536f24ff41899a9775b6e23bd571c6}\index{parser.Queue$<$ T $>$@{parser.Queue$<$ T $>$}!Clear@{Clear}}
+\index{Clear@{Clear}!parser.Queue$<$ T $>$@{parser.Queue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily \label{classparser_1_1_queue_a3b536f24ff41899a9775b6e23bd571c6} 
+void \mbox{\hyperlink{classparser_1_1_queue}{parser.\+Queue}}$<$ T $>$.Clear (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_queue_ad2f1b52b5cdbce697a3a7901ed93f820}\index{parser.Queue$<$ T $>$@{parser.Queue$<$ T $>$}!DeQueue@{DeQueue}}
+\index{DeQueue@{DeQueue}!parser.Queue$<$ T $>$@{parser.Queue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{DeQueue()}{DeQueue()}}
+{\footnotesize\ttfamily \label{classparser_1_1_queue_ad2f1b52b5cdbce697a3a7901ed93f820} 
+T \mbox{\hyperlink{classparser_1_1_queue}{parser.\+Queue}}$<$ T $>$.De\+Queue (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+retira o primeiro elemento da fila. 
+
+\begin{DoxyReturn}{Returns}
+retorna o primeiro elemento da fila.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_queue_a44f5eb056f167de2ac07ac1159fc2e31}\index{parser.Queue$<$ T $>$@{parser.Queue$<$ T $>$}!Empty@{Empty}}
+\index{Empty@{Empty}!parser.Queue$<$ T $>$@{parser.Queue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Empty()}{Empty()}}
+{\footnotesize\ttfamily \label{classparser_1_1_queue_a44f5eb056f167de2ac07ac1159fc2e31} 
+bool \mbox{\hyperlink{classparser_1_1_queue}{parser.\+Queue}}$<$ T $>$.Empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+retorna \mbox{[}true\mbox{]} se a fila está vazia, \mbox{[}false\mbox{]} se contrário. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{[}true\mbox{]} se a fila está vazia, \mbox{[}false\mbox{]} se está cheia.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_queue_a8fa100a42c2e52e40e1c4fcabf5d7cff}\index{parser.Queue$<$ T $>$@{parser.Queue$<$ T $>$}!EnQueue@{EnQueue}}
+\index{EnQueue@{EnQueue}!parser.Queue$<$ T $>$@{parser.Queue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{EnQueue()}{EnQueue()}}
+{\footnotesize\ttfamily \label{classparser_1_1_queue_a8fa100a42c2e52e40e1c4fcabf5d7cff} 
+void \mbox{\hyperlink{classparser_1_1_queue}{parser.\+Queue}}$<$ T $>$.En\+Queue (\begin{DoxyParamCaption}\item[{T}]{element}{}\end{DoxyParamCaption})}
+
+
+
+enfilera no fim da fila o elemento parâmetro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & elemento parâmetro a ser enfilerado.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/\+Util/string\+Utils/\mbox{\hyperlink{str_fila_8cs}{str\+Fila.\+cs}}\end{DoxyCompactItemize}

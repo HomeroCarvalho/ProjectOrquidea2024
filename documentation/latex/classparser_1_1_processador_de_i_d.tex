@@ -1,0 +1,321 @@
+\doxysection{parser.\+Processador\+De\+ID Class Reference}
+\hypertarget{classparser_1_1_processador_de_i_d}{}\label{classparser_1_1_processador_de_i_d}\index{parser.ProcessadorDeID@{parser.ProcessadorDeID}}
+
+
+sistema de compilação de código orquidea.  
+
+
+Inheritance diagram for parser.\+Processador\+De\+ID\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classparser_1_1_processador_de_i_d}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classparser_1_1_processador_de_i_d_1_1_metodo_tratador_ordenacao}{Metodo\+Tratador\+Ordenacao}}
+\begin{DoxyCompactList}\small\item\em classe para handlers de instrucoes de comandos de programação estruturada. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classparser_1_1_processador_de_i_d_1_1_testes}{Testes}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+delegate List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ \mbox{\hyperlink{classparser_1_1_processador_de_i_d_a5b11a6340534a913395fcef2abce54e1}{Metodo\+Tratador}} (\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}} sequencia, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} \mbox{\hyperlink{classparser_1_1_processador_de_i_d_a4081e63be52224b98757392930f13594}{escopo}})
+\begin{DoxyCompactList}\small\item\em assinatura de uma função compiladora de uma instrucao da linguagem. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ \mbox{\hyperlink{classparser_1_1_processador_de_i_d_af8d664ac763df3ba848dc5b49d1fa417}{Get\+Instrucoes}} ()
+\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_processador_de_i_d_1_1_metodo_tratador_ordenacao}{Metodo\+Tratador\+Ordenacao}} $>$ \mbox{\hyperlink{classparser_1_1_processador_de_i_d_a3daaa93cd0c3bc792d9745d2ed237333}{Get\+Handlers}} ()
+\item 
+\mbox{\hyperlink{classparser_1_1_processador_de_i_d_adac40aa7b863addd92b1c4b55b93590c}{Processador\+De\+ID}} (string code)
+\begin{DoxyCompactList}\small\item\em compila o codigo, na linha de codigo \mbox{[}code\mbox{]}, para instruções orquidea. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_processador_de_i_d_acbf72eb4c910ed91ad39170bb3b36cf6}{Processador\+De\+ID}} (List$<$ string $>$ code)
+\begin{DoxyCompactList}\small\item\em compila o codigo, da lista de tokens, para instruções orquidea. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_processador_de_i_d_a4af7b4a3363f3f86c5ef18b83a26d1ab}{Compilar}} ()
+\begin{DoxyCompactList}\small\item\em compila o codigo carregado no construtor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_processador_de_i_d_a87785e94aa46b576a255ca88436ffa2c}{Match\+Sequencias}} (\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}} sequencia, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} \mbox{\hyperlink{classparser_1_1_processador_de_i_d_a4081e63be52224b98757392930f13594}{escopo}})
+\begin{DoxyCompactList}\small\item\em encontra um indice de handler que fará a compilação da sequencia de tokens parametro. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classparser_1_1_build_instrucoes}{parser.\+Build\+Instrucoes}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparser_1_1_build_instrucoes_a965bd59ce54976cd719be616cd34c3c2}{Build\+Instrucoes}} (List$<$ string $>$ codigo)
+\begin{DoxyCompactList}\small\item\em construtor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_build_instrucoes_a860a0cf4e56d3e7af0b027080cc265f4}{Build\+Instrucoes}} (string code)
+\begin{DoxyCompactList}\small\item\em construtor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classparser_1_1_processador_de_i_d_af6ff6b904ea6c71382e31de62eda81a7}{Load\+Handler}} (\mbox{\hyperlink{classparser_1_1_processador_de_i_d_a5b11a6340534a913395fcef2abce54e1}{Metodo\+Tratador}} um\+Tratador, string pattern\+Resumed\+Of\+Sequence)
+\begin{DoxyCompactList}\small\item\em adiciona a uma lista, um handler, que faz o processamento se o pattern parametro for encontrado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{classparser_1_1_build_instrucoes}{parser.\+Build\+Instrucoes}}}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classparser_1_1_build_instrucoes_a6f59543c405ea517761f8e1a72ad499a}{Found\+ACompatible\+Constructor}} (string tipo\+Objeto, List$<$ \mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} $>$ parametros)
+\begin{DoxyCompactList}\small\item\em encontra um construtor compativel com a lista de parametros. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_processador_de_i_d_a0a541c249bf21b1a36a6877d40a7b2cc}{codigo}}
+\begin{DoxyCompactList}\small\item\em codigo de um processador id. lista de tokens para compilar \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} \mbox{\hyperlink{classparser_1_1_processador_de_i_d_a4081e63be52224b98757392930f13594}{escopo}}
+\begin{DoxyCompactList}\small\item\em escopo do processador. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ \mbox{\hyperlink{classparser_1_1_processador_de_i_d_a1af289c5bb0caaa52db41d5a7242a966}{instrucoes}} = new List$<$\mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}}$>$()
+\begin{DoxyCompactList}\small\item\em lista de instruções construidas na compilação. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classparser_1_1_processador_de_i_d_aac00cde5acb3f389080774c4dbf8021c}{line\+In\+Compilation}} = 0
+\begin{DoxyCompactList}\small\item\em guarda a linha de compilação com falha. \end{DoxyCompactList}\item 
+static List$<$ \mbox{\hyperlink{classparser_1_1_processador_de_i_d_1_1_metodo_tratador_ordenacao}{Metodo\+Tratador\+Ordenacao}} $>$ \mbox{\hyperlink{classparser_1_1_processador_de_i_d_a7793a131b89fe07c926b72b7c73f019f}{tratadores}} = new List$<$\mbox{\hyperlink{classparser_1_1_processador_de_i_d_1_1_metodo_tratador_ordenacao}{Metodo\+Tratador\+Ordenacao}}$>$()
+\begin{DoxyCompactList}\small\item\em lista de métodos tratadores para ordenação. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ \mbox{\hyperlink{classparser_1_1_processador_de_i_d_abcb72def011fcb4f904ded69a72fda23}{Build\+Expressao\+Valida}} (\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}} sequencia, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} \mbox{\hyperlink{classparser_1_1_processador_de_i_d_a4081e63be52224b98757392930f13594}{escopo}})
+\begin{DoxyCompactList}\small\item\em constroi a instrucao \mbox{[}Expressao\+Valida\mbox{]}, que não contem comandos estruturados, como atribuicao, chamadas de metodo, operacoes aritmeticas, etc... \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ \mbox{\hyperlink{classparser_1_1_processador_de_i_d_a815e7f84fa83802fb3e6de4ee9b34343}{Build\+Definicao\+De\+Aspecto}} (\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}} sequencia, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} \mbox{\hyperlink{classparser_1_1_processador_de_i_d_a4081e63be52224b98757392930f13594}{escopo}})
+\begin{DoxyCompactList}\small\item\em constroi uma definição de aspecto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classparser_1_1_build_instrucoes}{parser.\+Build\+Instrucoes}}}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ \mbox{\hyperlink{classparser_1_1_build_instrucoes_a9b1281d4722c48d29c494527e4901d69}{Build\+Instrucao\+Module}} (\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}} sequencia, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em instrucao module. sintaxe\+: module name\+Library; \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ \mbox{\hyperlink{classparser_1_1_build_instrucoes_a5a24f3e34b6b019e18a3983eb81e8aa3}{Build\+Instrucao\+Importer}} (\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}} sequencia, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em instrucao exporter. sintaxe\+: importer ( nome\+Assembly). \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ \mbox{\hyperlink{classparser_1_1_build_instrucoes_a9746df8d32cfdb603a2fc5b1258615d9}{Build\+Instrucao\+Construtor\+UP}} (\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}} sequencia, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em instrucao constructor\+UP. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ \mbox{\hyperlink{classparser_1_1_build_instrucoes_a67ad765525ffcfdacd287d950b961cb9}{Build\+Instrucao\+Create}} (\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}} sequencia, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em Cria um novo objeto. pode criar um objeto simples, ou um objeto de variavel vetor. sintaxe\+: tipo objeto= create(parametros), ou objeto=create(parametros), parametros pode se null ou vazio. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_build_instrucoes_aa8d863491da26a0ca4097f687ec597f8}{Valida\+Tokens\+Da\+Sintaxe\+Da\+Instrucao}} (\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}} sequencia, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ \mbox{\hyperlink{classparser_1_1_build_instrucoes_a53b4c246eff54dd90a2bcd367497177a}{Build\+Instrucao\+Set\+Var}} (\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}} sequencia, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em instrucao Set\+Var. sintaxe\+: Set\+Var(nome\+Objeto,valor\+Do\+Objeto); \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ \mbox{\hyperlink{classparser_1_1_build_instrucoes_a3c68b1e3793b9fea897ac53b5458f248}{Build\+Instrucao\+Get\+Objeto}} (\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}} sequencia, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em instrucao Get\+Objeto. sintaxe\+: Get\+Objeto(nome\+Objeto). retorna uma \mbox{[}\doxylink{classparser_1_1_expressao_objeto}{Expressao\+Objeto}\mbox{]} contendo o objeto. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ \mbox{\hyperlink{classparser_1_1_build_instrucoes_a1d2746e06a511e3813126d6127e17669}{Build\+Instrucao\+While}} (\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}} sequencia, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em instrucao while. sintaxe\+: while(expressao\+Condicional)\{bloco\+De\+Instrucoes\}. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ \mbox{\hyperlink{classparser_1_1_build_instrucoes_a34806426662d9aafb1c316873d647a58}{Build\+Instrucao\+For}} (\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}} sequencia, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em instrucao for. sintaxe\+: for (int x=0; x\texorpdfstring{$<$}{<}3; x++)\{ bloco de instrucoes \}; \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ \mbox{\hyperlink{classparser_1_1_build_instrucoes_a56e13eff9fb99953f2549c20b77c7c28}{Build\+Instrucao\+IFs\+Com\+Ou\+Sem\+Else}} (\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}} sequencia, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em instrucao if/else. sintaxe\+: if (expressoes\+Condicionais)\{bloco de instrucao\}, ou if (expressoes\+Condicionais)\{bloco de instrucao if\} else \{bloco de instrucao else\}; \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ \mbox{\hyperlink{classparser_1_1_build_instrucoes_a0a64f69adc165a563b28a84656c71c7d}{Build\+Instrucao\+Cases\+Of\+Use}} (\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}} sequencia, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em instrucao cases\+Of\+Use\+: sintaxe\+: cases\+Of\+Use y\+: \{ (case \texorpdfstring{$<$}{<} x)\+: \{ y = 2; \}; \{mais cases\}\} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_build_instrucoes_ae0b9bacb6d6dc98d5b95ab23754a07bc}{Build\+Bloco\+If\+Else}} (int numero\+Do\+Bloco, List$<$ string $>$ tokens, ref \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo\+Da\+Instrucao, \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} instrucao\+Principal, ref \mbox{\hyperlink{classparser_1_1_processador_de_i_d}{Processador\+De\+ID}} processador\+Bloco)
+\begin{DoxyCompactList}\small\item\em constroi blocos de if/else, \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_build_instrucoes_ab4301b885d69a4c433102cb0c2805b28}{Build\+Bloco}} (int numero\+Do\+Bloco, List$<$ string $>$ tokens, ref \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo\+Da\+Instrucao, \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} instrucao\+Principal, ref \mbox{\hyperlink{classparser_1_1_processador_de_i_d}{Processador\+De\+ID}} processador\+Bloco)
+\begin{DoxyCompactList}\small\item\em constroi um bloco de instruções, em instrucoes\+: for, while, cases\+Of\+Use. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ \mbox{\hyperlink{classparser_1_1_build_instrucoes_ab69669ffae527ff65f869aa679303453}{Build\+Instrucao\+Return}} (\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}} sequencia, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em instrucao return. sintax\+: return expressao. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+sistema de compilação de código orquidea. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classparser_1_1_processador_de_i_d_adac40aa7b863addd92b1c4b55b93590c}\index{parser.ProcessadorDeID@{parser.ProcessadorDeID}!ProcessadorDeID@{ProcessadorDeID}}
+\index{ProcessadorDeID@{ProcessadorDeID}!parser.ProcessadorDeID@{parser.ProcessadorDeID}}
+\doxysubsubsection{\texorpdfstring{ProcessadorDeID()}{ProcessadorDeID()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_processador_de_i_d_adac40aa7b863addd92b1c4b55b93590c} 
+parser.\+Processador\+De\+ID.\+Processador\+De\+ID (\begin{DoxyParamCaption}\item[{string}]{code}{}\end{DoxyParamCaption})}
+
+
+
+compila o codigo, na linha de codigo \mbox{[}code\mbox{]}, para instruções orquidea. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & linha de codigo contendo todos os tokens do programa VM\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_processador_de_i_d_acbf72eb4c910ed91ad39170bb3b36cf6}\index{parser.ProcessadorDeID@{parser.ProcessadorDeID}!ProcessadorDeID@{ProcessadorDeID}}
+\index{ProcessadorDeID@{ProcessadorDeID}!parser.ProcessadorDeID@{parser.ProcessadorDeID}}
+\doxysubsubsection{\texorpdfstring{ProcessadorDeID()}{ProcessadorDeID()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_processador_de_i_d_acbf72eb4c910ed91ad39170bb3b36cf6} 
+parser.\+Processador\+De\+ID.\+Processador\+De\+ID (\begin{DoxyParamCaption}\item[{List$<$ string $>$}]{code}{}\end{DoxyParamCaption})}
+
+
+
+compila o codigo, da lista de tokens, para instruções orquidea. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & lista de tokens do programa VM.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_processador_de_i_d_a815e7f84fa83802fb3e6de4ee9b34343}\index{parser.ProcessadorDeID@{parser.ProcessadorDeID}!BuildDefinicaoDeAspecto@{BuildDefinicaoDeAspecto}}
+\index{BuildDefinicaoDeAspecto@{BuildDefinicaoDeAspecto}!parser.ProcessadorDeID@{parser.ProcessadorDeID}}
+\doxysubsubsection{\texorpdfstring{BuildDefinicaoDeAspecto()}{BuildDefinicaoDeAspecto()}}
+{\footnotesize\ttfamily \label{classparser_1_1_processador_de_i_d_a815e7f84fa83802fb3e6de4ee9b34343} 
+List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ parser.\+Processador\+De\+ID.\+Build\+Definicao\+De\+Aspecto (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}}}]{sequencia}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+constroi uma definição de aspecto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sequencia} & sequencia gatilho.\\
+\hline
+{\em escopo} & contexto geral de sequencias.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+template\+: aspecto Name\+Id type\+Insert\+Id (Tipo\+Ojbeto\+:string, string, Nome\+Metodo\+: string ) \{ funcao\+Corte(\+Objeto x)\{\}\}.\Hypertarget{classparser_1_1_processador_de_i_d_abcb72def011fcb4f904ded69a72fda23}\index{parser.ProcessadorDeID@{parser.ProcessadorDeID}!BuildExpressaoValida@{BuildExpressaoValida}}
+\index{BuildExpressaoValida@{BuildExpressaoValida}!parser.ProcessadorDeID@{parser.ProcessadorDeID}}
+\doxysubsubsection{\texorpdfstring{BuildExpressaoValida()}{BuildExpressaoValida()}}
+{\footnotesize\ttfamily \label{classparser_1_1_processador_de_i_d_abcb72def011fcb4f904ded69a72fda23} 
+List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ parser.\+Processador\+De\+ID.\+Build\+Expressao\+Valida (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}}}]{sequencia}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+constroi a instrucao \mbox{[}Expressao\+Valida\mbox{]}, que não contem comandos estruturados, como atribuicao, chamadas de metodo, operacoes aritmeticas, etc... 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sequencia} & sequencia a processar.\\
+\hline
+{\em escopo} & contexto onde a sequencia está.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna instruções \mbox{[}Expressao\+Valida\mbox{]}, como resultado do processamento.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_processador_de_i_d_a4af7b4a3363f3f86c5ef18b83a26d1ab}\index{parser.ProcessadorDeID@{parser.ProcessadorDeID}!Compilar@{Compilar}}
+\index{Compilar@{Compilar}!parser.ProcessadorDeID@{parser.ProcessadorDeID}}
+\doxysubsubsection{\texorpdfstring{Compilar()}{Compilar()}}
+{\footnotesize\ttfamily \label{classparser_1_1_processador_de_i_d_a4af7b4a3363f3f86c5ef18b83a26d1ab} 
+void parser.\+Processador\+De\+ID.\+Compilar (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+compila o codigo carregado no construtor. 
+
+\Hypertarget{classparser_1_1_processador_de_i_d_a3daaa93cd0c3bc792d9745d2ed237333}\index{parser.ProcessadorDeID@{parser.ProcessadorDeID}!GetHandlers@{GetHandlers}}
+\index{GetHandlers@{GetHandlers}!parser.ProcessadorDeID@{parser.ProcessadorDeID}}
+\doxysubsubsection{\texorpdfstring{GetHandlers()}{GetHandlers()}}
+{\footnotesize\ttfamily \label{classparser_1_1_processador_de_i_d_a3daaa93cd0c3bc792d9745d2ed237333} 
+List$<$ \mbox{\hyperlink{classparser_1_1_processador_de_i_d_1_1_metodo_tratador_ordenacao}{Metodo\+Tratador\+Ordenacao}} $>$ parser.\+Processador\+De\+ID.\+Get\+Handlers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_processador_de_i_d_af8d664ac763df3ba848dc5b49d1fa417}\index{parser.ProcessadorDeID@{parser.ProcessadorDeID}!GetInstrucoes@{GetInstrucoes}}
+\index{GetInstrucoes@{GetInstrucoes}!parser.ProcessadorDeID@{parser.ProcessadorDeID}}
+\doxysubsubsection{\texorpdfstring{GetInstrucoes()}{GetInstrucoes()}}
+{\footnotesize\ttfamily \label{classparser_1_1_processador_de_i_d_af8d664ac763df3ba848dc5b49d1fa417} 
+List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ parser.\+Processador\+De\+ID.\+Get\+Instrucoes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_processador_de_i_d_af6ff6b904ea6c71382e31de62eda81a7}\index{parser.ProcessadorDeID@{parser.ProcessadorDeID}!LoadHandler@{LoadHandler}}
+\index{LoadHandler@{LoadHandler}!parser.ProcessadorDeID@{parser.ProcessadorDeID}}
+\doxysubsubsection{\texorpdfstring{LoadHandler()}{LoadHandler()}}
+{\footnotesize\ttfamily \label{classparser_1_1_processador_de_i_d_af6ff6b904ea6c71382e31de62eda81a7} 
+static void parser.\+Processador\+De\+ID.\+Load\+Handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_processador_de_i_d_a5b11a6340534a913395fcef2abce54e1}{Metodo\+Tratador}}}]{um\+Tratador}{, }\item[{string}]{pattern\+Resumed\+Of\+Sequence}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+adiciona a uma lista, um handler, que faz o processamento se o pattern parametro for encontrado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em um\+Tratador} & função handler que fará o processamento.\\
+\hline
+{\em pattern\+Resumed\+Of\+Sequence} & pattern para acionar o handler, se encontrado.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_processador_de_i_d_a87785e94aa46b576a255ca88436ffa2c}\index{parser.ProcessadorDeID@{parser.ProcessadorDeID}!MatchSequencias@{MatchSequencias}}
+\index{MatchSequencias@{MatchSequencias}!parser.ProcessadorDeID@{parser.ProcessadorDeID}}
+\doxysubsubsection{\texorpdfstring{MatchSequencias()}{MatchSequencias()}}
+{\footnotesize\ttfamily \label{classparser_1_1_processador_de_i_d_a87785e94aa46b576a255ca88436ffa2c} 
+void parser.\+Processador\+De\+ID.\+Match\+Sequencias (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}}}]{sequencia}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})}
+
+
+
+encontra um indice de handler que fará a compilação da sequencia de tokens parametro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sequencia} & sequencia pre-\/agrupada, com tokens relacionados.\\
+\hline
+{\em escopo} & contexto onde a sequencia está.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_processador_de_i_d_a5b11a6340534a913395fcef2abce54e1}\index{parser.ProcessadorDeID@{parser.ProcessadorDeID}!MetodoTratador@{MetodoTratador}}
+\index{MetodoTratador@{MetodoTratador}!parser.ProcessadorDeID@{parser.ProcessadorDeID}}
+\doxysubsubsection{\texorpdfstring{MetodoTratador()}{MetodoTratador()}}
+{\footnotesize\ttfamily \label{classparser_1_1_processador_de_i_d_a5b11a6340534a913395fcef2abce54e1} 
+delegate List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ parser.\+Processador\+De\+ID.\+Metodo\+Tratador (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}}}]{sequencia}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})}
+
+
+
+assinatura de uma função compiladora de uma instrucao da linguagem. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sequencia} & texto contendo uma sequencia possivel de commpilar.\\
+\hline
+{\em escopo} & contexto onde o texto está.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classparser_1_1_processador_de_i_d_a0a541c249bf21b1a36a6877d40a7b2cc}\index{parser.ProcessadorDeID@{parser.ProcessadorDeID}!codigo@{codigo}}
+\index{codigo@{codigo}!parser.ProcessadorDeID@{parser.ProcessadorDeID}}
+\doxysubsubsection{\texorpdfstring{codigo}{codigo}}
+{\footnotesize\ttfamily \label{classparser_1_1_processador_de_i_d_a0a541c249bf21b1a36a6877d40a7b2cc} 
+List$<$string$>$ parser.\+Processador\+De\+ID.\+codigo}
+
+
+
+codigo de um processador id. lista de tokens para compilar 
+
+\Hypertarget{classparser_1_1_processador_de_i_d_a4081e63be52224b98757392930f13594}\index{parser.ProcessadorDeID@{parser.ProcessadorDeID}!escopo@{escopo}}
+\index{escopo@{escopo}!parser.ProcessadorDeID@{parser.ProcessadorDeID}}
+\doxysubsubsection{\texorpdfstring{escopo}{escopo}}
+{\footnotesize\ttfamily \label{classparser_1_1_processador_de_i_d_a4081e63be52224b98757392930f13594} 
+\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} parser.\+Processador\+De\+ID.\+escopo}
+
+
+
+escopo do processador. 
+
+\Hypertarget{classparser_1_1_processador_de_i_d_a1af289c5bb0caaa52db41d5a7242a966}\index{parser.ProcessadorDeID@{parser.ProcessadorDeID}!instrucoes@{instrucoes}}
+\index{instrucoes@{instrucoes}!parser.ProcessadorDeID@{parser.ProcessadorDeID}}
+\doxysubsubsection{\texorpdfstring{instrucoes}{instrucoes}}
+{\footnotesize\ttfamily \label{classparser_1_1_processador_de_i_d_a1af289c5bb0caaa52db41d5a7242a966} 
+List$<$\mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}}$>$ parser.\+Processador\+De\+ID.\+instrucoes = new List$<$\mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}}$>$()}
+
+
+
+lista de instruções construidas na compilação. 
+
+\Hypertarget{classparser_1_1_processador_de_i_d_aac00cde5acb3f389080774c4dbf8021c}\index{parser.ProcessadorDeID@{parser.ProcessadorDeID}!lineInCompilation@{lineInCompilation}}
+\index{lineInCompilation@{lineInCompilation}!parser.ProcessadorDeID@{parser.ProcessadorDeID}}
+\doxysubsubsection{\texorpdfstring{lineInCompilation}{lineInCompilation}}
+{\footnotesize\ttfamily \label{classparser_1_1_processador_de_i_d_aac00cde5acb3f389080774c4dbf8021c} 
+int parser.\+Processador\+De\+ID.\+line\+In\+Compilation = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+guarda a linha de compilação com falha. 
+
+\Hypertarget{classparser_1_1_processador_de_i_d_a7793a131b89fe07c926b72b7c73f019f}\index{parser.ProcessadorDeID@{parser.ProcessadorDeID}!tratadores@{tratadores}}
+\index{tratadores@{tratadores}!parser.ProcessadorDeID@{parser.ProcessadorDeID}}
+\doxysubsubsection{\texorpdfstring{tratadores}{tratadores}}
+{\footnotesize\ttfamily \label{classparser_1_1_processador_de_i_d_a7793a131b89fe07c926b72b7c73f019f} 
+List$<$\mbox{\hyperlink{classparser_1_1_processador_de_i_d_1_1_metodo_tratador_ordenacao}{Metodo\+Tratador\+Ordenacao}}$>$ parser.\+Processador\+De\+ID.\+tratadores = new List$<$\mbox{\hyperlink{classparser_1_1_processador_de_i_d_1_1_metodo_tratador_ordenacao}{Metodo\+Tratador\+Ordenacao}}$>$()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+lista de métodos tratadores para ordenação. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/componentes\+De\+Interpretadores\+ECompiladores/\+PROGRAMACAO FUNCIONAL/\mbox{\hyperlink{_processador_de_i_d_8cs}{Processador\+De\+ID.\+cs}}\end{DoxyCompactItemize}

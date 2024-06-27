@@ -1,0 +1,31 @@
+Para obter a cor de um pixel específico em SFML, você pode usar o método `getPixel` da classe `sf::Image`. Aqui está um exemplo de como você pode fazer isso:
+
+```cpp
+sf::Image imagem;
+if (!imagem.loadFromFile("caminho/para/sua/imagem.png")) {
+    // Tratar erro de carregamento
+}
+
+// Supondo que você queira a cor do pixel na posição (x, y)
+sf::Color cor = imagem.getPixel(x, y);
+```
+
+Neste código, `imagem` é um objeto da classe `sf::Image` e `getPixel` é chamado com as coordenadas `x` e `y` do pixel desejado. O método retorna um objeto `sf::Color` que contém os componentes vermelho (R), verde (G), azul (B) e alfa (A) da cor do pixel⁴.
+
+Lembre-se de substituir `"caminho/para/sua/imagem.png"` pelo caminho real do arquivo de imagem e `x`, `y` pelas coordenadas do pixel que você deseja verificar.
+
+Espero que isso ajude! Se precisar de mais assistência, estou aqui para ajudar.
+
+Origem: conversa com o Bing, 09/05/2024
+(1) How to get the color of a pixel in an image in C++ (sfml). https://stackoverflow.com/questions/51256740/how-to-get-the-color-of-a-pixel-in-an-image-in-c-sfml.
+(2) how to setup sfml for visual studio code and mingw. https://www.youtube.com/watch?v=jKbWBcVPLWQ.
+(3) SFML 2.4.x Tutorial 013 - Pixel Perfect Collision Detection. https://www.youtube.com/watch?v=g5hFOANHjlQ.
+(4) Como instalar SFML no CODE BLOCKS | Tutorial SFML & C++. https://www.youtube.com/watch?v=BmLTqVkWPls.
+(5) How to Use Colors in SFML - Learn SFML. https://learnsfml.com/basics/graphics/how-to-use-colors-in-sfml/.
+(6) Como posso obter a cor de um pixel usando python3. https://pt.stackoverflow.com/questions/364823/como-posso-obter-a-cor-de-um-pixel-usando-python3.
+(7) Retornar pixel de uma determinada cor analisada pelo ImageGrab. https://pt.stackoverflow.com/questions/433799/retornar-pixel-de-uma-determinada-cor-analisada-pelo-imagegrab.
+(8) undefined. https://www.kite.com/get-kite/?utm_medium=referral&utm_source=youtube&utm.
+(9) undefined. https://www.sfml-dev.org/.
+(10) undefined. https://www.sfml-dev.org/download/sfml/2.4.2/.
+(11) undefined. https://www.codeblocks.org/.
+(12) undefined. https://sourceforge.net/projects/codeblocks/files/Binaries/17.12/Windows.

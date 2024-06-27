@@ -1,0 +1,496 @@
+\doxysection{parser.\+Linguagem\+Orquidea Class Reference}
+\hypertarget{classparser_1_1_linguagem_orquidea}{}\label{classparser_1_1_linguagem_orquidea}\index{parser.LinguagemOrquidea@{parser.LinguagemOrquidea}}
+
+
+classe de Programação Orientada a Objetos Orquidea.  
+
+
+Inheritance diagram for parser.\+Linguagem\+Orquidea\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classparser_1_1_linguagem_orquidea}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classparser_1_1_linguagem_orquidea_a5c411327fdcc14d9dd37c8cf3c293036}{is\+Class\+To\+Include\+Object\+Caller\+As\+Parameter}} (string nome\+Classe)
+\begin{DoxyCompactList}\small\item\em lista de classes, que permite a inclusão do objeto caller como primeiro parametro, numa chamada de funcao. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_linguagem_orquidea_abfd470e1d5f3df51fb3ae284822570b2}{Inicializa\+Classes\+Basicas}} (bool inicializa\+Classes\+Importadas)
+\begin{DoxyCompactList}\small\item\em inicializa as classes base da linguagem, como escrita/leitura no terminal, classes de desenvolvimento de games, wrapper objects, processamento de arquivos,... \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_linguagem_orquidea_a09989c518888a2323a17b0562cd93d97}{Add\+Operator}} (\mbox{\hyperlink{classparser_1_1_operador}{Operador}} operador)
+\begin{DoxyCompactList}\small\item\em adiciona o operador para os operadores binários da linguagem. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_classe}{Classe}} $>$ \mbox{\hyperlink{classparser_1_1_linguagem_orquidea_a2e41ce950efe501dd408e944a3235863}{Get\+Classes}} ()
+\begin{DoxyCompactList}\small\item\em retorna a lista de classes base orquidea. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_linguagem_orquidea_af9f39f991925242d56d49ec2f41da6e3}{adiciona\+Classe}} (\mbox{\hyperlink{classparser_1_1_classe}{Classe}} c)
+\begin{DoxyCompactList}\small\item\em adiciona uma classe, no repositorio de classes, e na lista de classes orquidea base. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{classparser_1_1_linguagem_orquidea_ad166ff5d957f0d48e2c64e5179383ee4}{inicializa\+Producoes\+Da\+Linguagem}} ()
+\begin{DoxyCompactList}\small\item\em inicializa as produções a partir de um arquivo XML. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_operador}{Operador}} \mbox{\hyperlink{classparser_1_1_linguagem_orquidea_ade89790b88bd9a369b121873f71f302d}{Get\+Operador}} (string nome, string nome\+Classe)
+\begin{DoxyCompactList}\small\item\em retorna um operador. \end{DoxyCompactList}\item 
+override List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_linguagem_orquidea_a0c716ca2e1a3e5a2fb9530b1cc246e6d}{Get\+Todos\+Operadores}} ()
+\begin{DoxyCompactList}\small\item\em obtem uma lista de nomes de todos operadores, das classes base. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_linguagem_orquidea_a9ae0d7abb4c088469489b927beeb85ce}{is\+Operador}} (string token\+Operador)
+\begin{DoxyCompactList}\small\item\em retorna true se o token é nome de um operador. \end{DoxyCompactList}\item 
+override List$<$ \mbox{\hyperlink{classparser_1_1_operador}{Operador}} $>$ \mbox{\hyperlink{classparser_1_1_linguagem_orquidea_ad6b019b1a5026bc0b4d9e4d67b349619}{Get\+Operadores}} ()
+\begin{DoxyCompactList}\small\item\em retorna uma lista de todos operadores das classes base. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_operador}{Operador}} $>$ \mbox{\hyperlink{classparser_1_1_linguagem_orquidea_a7804ed0cadaef30ab266d6be06c9c9a2}{Get\+Operadores\+Condicionais}} ()
+\begin{DoxyCompactList}\small\item\em retorna uma lista de todos operadores condificionais. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_operador}{Operador}} $>$ \mbox{\hyperlink{classparser_1_1_linguagem_orquidea_a467c6b19110c779a055fcfd99094ac8b}{Get\+Operadores\+Binarios}} ()
+\begin{DoxyCompactList}\small\item\em retorna uma lista de todos operadores binarios. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_operador}{Operador}} $>$ \mbox{\hyperlink{classparser_1_1_linguagem_orquidea_a4fd5945ab5c127b90ab5550a47708dee}{Get\+Operadores\+Unarios}} ()
+\begin{DoxyCompactList}\small\item\em retorna uma lista de todos operadores unarios. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_linguagem_orquidea_a5dc4381dcf65b3039d18115b75628cec}{Is\+Operador\+Binario}} (string nome\+Operador)
+\begin{DoxyCompactList}\small\item\em retorna true se o nome do operador é de um operador binario. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_linguagem_orquidea_af0ff3738f2e8e19bd1f8d2990462a65c}{Is\+Operador\+Unario}} (string nome\+Operador)
+\begin{DoxyCompactList}\small\item\em retrona true se o nome do operador é de um operador unario. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_linguagem_orquidea_aa63b98fd7b16230471918f2534694d1a}{Is\+Operador\+Condicional}} (string nome\+Operador)
+\begin{DoxyCompactList}\small\item\em retorna true se o nome do operador é de um operador condicional. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_linguagem_orquidea_a2c2fc86386a7ab35cfc79d36b3f87e55}{Is\+Operador\+Aritmetico}} (string nome\+Operador)
+\begin{DoxyCompactList}\small\item\em retorna true se o nome do operador é de um operador aritimetico. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional}{parser.\+Uma\+Gramatica\+Computacional}}}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_producao}{Producao}} $>$ \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_a85916e1dc4830f6c83e6c6644af24c6c}{Get\+Producoes}} ()
+\begin{DoxyCompactList}\small\item\em retorna uma lista de todas produções da linguagem. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_a07b663dbf4d722eefe3f714d4c1c303f}{inicializa\+Producoes\+Da\+Linguagem}} ()
+\begin{DoxyCompactList}\small\item\em carrega as producoes da linguagem via um arquivo .XML. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_a5b8d586016bf5e7bbf1d062169dfdf72}{Uma\+Gramatica\+Computacional}} ()
+\begin{DoxyCompactList}\small\item\em inicializa a linguagem\+: definições em \mbox{[}producoes\mbox{]}, carregada por um arquivo .XML A ideia eh separar o front end do compilador do back end. Isto permite uma possibilidade de modificar a linguagem de forma mais facil, com o arquivo de definicao cobrindo tambem a maquina virtual (VM), permitindo o compilador e a execucao do programa compilado mais faceis de ser modificado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_ab76e8b871e115eecc81b044979a28826}{Remove\+Termo\+Chave}} (string termo\+Chave\+AExcluir)
+\begin{DoxyCompactList}\small\item\em remove um termo-\/chave de nome parametro. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_producao}{Producao}} \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_aca8f8ca5fc5fffd1d29ad2b9f22f2edf}{Localiza\+Producao\+Pelo\+Tipo}} (string tipo, \mbox{\hyperlink{classparser_1_1_producao}{Producao}} prod)
+\begin{DoxyCompactList}\small\item\em obtém uma produção ou produções pelo seu tipo. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_producao}{Producao}} $>$ \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_a59131f3d4c0e108c30ca6675a59d3a53}{Localiza\+Producoes\+Por\+Termo\+Chave}} (string termo\+Chave\+Procura)
+\begin{DoxyCompactList}\small\item\em localiza as produções com primeiro termo chave igual a \mbox{[}primeiro\+Termo\+Chave\mbox{]} \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_producao}{Producao}} $>$ \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_aca4a82073f27f8d975652a6b69972d53}{Localiza\+Producoes\+Pelo\+Nome}} (string nome, \mbox{\hyperlink{classparser_1_1_producao}{Producao}} prod)
+\begin{DoxyCompactList}\small\item\em localiza uma produção pelo nome. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_a0afc081354a390265749a3cac286d528}{adiciona\+Producao}} (\mbox{\hyperlink{classparser_1_1_producao}{Producao}} novaproducao)
+\begin{DoxyCompactList}\small\item\em adiciona uma producao para a sintaxe da linguagem. \end{DoxyCompactList}\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_aebbc129b5af61dd78ab0bac3bf407911}{Get\+Todos\+Termos\+Chave}} ()
+\begin{DoxyCompactList}\small\item\em retorna todos os termos chave de todas produções da linguagem currente, inclusive de todos operadores registrados na linguagem currente. \end{DoxyCompactList}\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_a05e2e5b5f2803ef9ec4ae825bb720f5b}{Get\+Operadores\+Bloco}} ()
+\begin{DoxyCompactList}\small\item\em retorna uma lista de operadores de bloco. \end{DoxyCompactList}\item 
+List$<$ string\mbox{[}$\,$\mbox{]}$>$ \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_a9126e452621eeff94a2be9649ae466dc}{Get\+Todos\+Operadores\+Duplos}} ()
+\begin{DoxyCompactList}\small\item\em obtém todos operadores duplos (exemplo\+: \mbox{[}(\mbox{]} e \mbox{[})\mbox{]} ).São operadores que aparecem com dois tokens. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_a70729aab378215ec5be2fcd39ba4cceb}{Verifica\+Se\+Eh\+Operador\+Duplo}} (string token)
+\begin{DoxyCompactList}\small\item\em verifica se uma palavra é um operador-\/duplo, um tipo especial de operador que aparece duas vezes para complitude. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_a2d2ed550d569f37d5d8aea21c5d3edea}{Verifica\+Se\+Eh\+Operador\+Binario}} (string token)
+\begin{DoxyCompactList}\small\item\em verifica se uma palavra é um operador binário. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_a6dd14854ba621b0014c8bc41a35594dc}{Verifica\+Se\+Eh\+Operador\+Unario}} (string token)
+\begin{DoxyCompactList}\small\item\em verifica se uma palavra é um operador unário. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_a329fc4a171db7d34a6295d51bf787bdb}{Verifica\+Se\+Eh\+Operador}} (string token)
+\begin{DoxyCompactList}\small\item\em verifica se a palavra é um operador. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_a9e2867d0a57b7aaaf864bfe838da807d}{Is\+Numero}} (string token)
+\begin{DoxyCompactList}\small\item\em verifica se uma palavra é um número\+: int, float, ou double. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_a454f3fc2ac3d05a66eca7c7b99d73796}{Verifica\+Se\+EString}} (string token)
+\begin{DoxyCompactList}\small\item\em verifica se um token é uma literal, constante string. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_ad938bbd5a0e846e84abcfff2b9e483f5}{Verifica\+Se\+Eh\+Int}} (string token)
+\begin{DoxyCompactList}\small\item\em verifica se um token é de um numero inteiro. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_af106f059ae5a46e1d3118c2bd8932584}{Verifica\+Se\+Eh\+Float}} (string token)
+\begin{DoxyCompactList}\small\item\em verifica se um token é um texto de numero ponto-\/flutuante float. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_ab377f086712e1820d1961276e72f5680}{is\+Termo\+Chave}} (string token)
+\begin{DoxyCompactList}\small\item\em retorna true se o token parametro é um termo-\/chave da linguagem. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_ab9dd9225f886823730bbded01b1c8bda}{Is\+ID}} (string token)
+\begin{DoxyCompactList}\small\item\em Verifica se o token é um ID ou número. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classparser_1_1_linguagem_orquidea}{Linguagem\+Orquidea}} \mbox{\hyperlink{classparser_1_1_linguagem_orquidea_a9994f3dfdf239b7e61bfa71818729693}{Instance}} ()
+\begin{DoxyCompactList}\small\item\em singleton da classe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional}{parser.\+Uma\+Gramatica\+Computacional}}}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_a26678b94e3e2c5ed0a3d43ed279d205b}{Registra\+Operador}} (\mbox{\hyperlink{classparser_1_1_operador}{Operador}} operador)
+\begin{DoxyCompactList}\small\item\em adiciona um operador para a lista de operadores. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ Assembly $>$ \mbox{\hyperlink{classparser_1_1_linguagem_orquidea_a96356313c0a255e1afcda9717da4c73a}{libraries}} = new List$<$Assembly$>$()
+\begin{DoxyCompactList}\small\item\em bibliotecas carregada externamente. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional}{parser.\+Uma\+Gramatica\+Computacional}}}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \mbox{\hyperlink{classparser_1_1_operador}{Operador}} $>$ \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_a47dacfaf290f6d78228db3f3cdbdce66}{operadores}} = new List$<$\mbox{\hyperlink{classparser_1_1_operador}{Operador}}$>$()
+\begin{DoxyCompactList}\small\item\em lista de todos operadores da linguagem. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \mbox{\hyperlink{classparser_1_1_operador}{Operador}} $>$ \mbox{\hyperlink{classparser_1_1_linguagem_orquidea_ae07f34a413341a3d5ce27aa56350167f}{operadores\+Condicionais}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em lista de todos operadores condicionais. \end{DoxyCompactList}\item 
+static List$<$ \mbox{\hyperlink{classparser_1_1_operador}{Operador}} $>$ \mbox{\hyperlink{classparser_1_1_linguagem_orquidea_a8a1caccb32f0bef46974c412765452c9}{operadores\+Binarios}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em lista de todos operadores binarios. \end{DoxyCompactList}\item 
+static List$<$ \mbox{\hyperlink{classparser_1_1_operador}{Operador}} $>$ \mbox{\hyperlink{classparser_1_1_linguagem_orquidea_aaa31ff38a177cc113f377c8e918a4da7}{operadores\+Unarios}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em lista de todos operadores unarios. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_aspecto}{Aspecto}} $>$ \mbox{\hyperlink{classparser_1_1_linguagem_orquidea_a6c83aee3e522b487152f74e906970cbe}{Aspectos}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em lista de objetos aspectos instanciados no codigo. \end{DoxyCompactList}\item 
+static List$<$ \mbox{\hyperlink{classparser_1_1_classe}{Classe}} $>$ \mbox{\hyperlink{classparser_1_1_linguagem_orquidea_a52d9f95c59a5cdebdcec61e08faad40f}{Classes}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em lista de clases base orquidea. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional}{parser.\+Uma\+Gramatica\+Computacional}}}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \mbox{\hyperlink{classparser_1_1_producao}{Producao}} $>$ \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_aff869c0703848ff36fa5b71cfd1b26d1}{producoes}} = new List$<$\mbox{\hyperlink{classparser_1_1_producao}{Producao}}$>$()
+\begin{DoxyCompactList}\small\item\em lista das produções da linguagem. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+classe de Programação Orientada a Objetos Orquidea. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_linguagem_orquidea_a09989c518888a2323a17b0562cd93d97}\index{parser.LinguagemOrquidea@{parser.LinguagemOrquidea}!AddOperator@{AddOperator}}
+\index{AddOperator@{AddOperator}!parser.LinguagemOrquidea@{parser.LinguagemOrquidea}}
+\doxysubsubsection{\texorpdfstring{AddOperator()}{AddOperator()}}
+{\footnotesize\ttfamily \label{classparser_1_1_linguagem_orquidea_a09989c518888a2323a17b0562cd93d97} 
+bool parser.\+Linguagem\+Orquidea.\+Add\+Operator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_operador}{Operador}}}]{operador}{}\end{DoxyParamCaption})}
+
+
+
+adiciona o operador para os operadores binários da linguagem. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em operador} & objeto operador binario.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_linguagem_orquidea_af9f39f991925242d56d49ec2f41da6e3}\index{parser.LinguagemOrquidea@{parser.LinguagemOrquidea}!adicionaClasse@{adicionaClasse}}
+\index{adicionaClasse@{adicionaClasse}!parser.LinguagemOrquidea@{parser.LinguagemOrquidea}}
+\doxysubsubsection{\texorpdfstring{adicionaClasse()}{adicionaClasse()}}
+{\footnotesize\ttfamily \label{classparser_1_1_linguagem_orquidea_af9f39f991925242d56d49ec2f41da6e3} 
+void parser.\+Linguagem\+Orquidea.\+adiciona\+Classe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_classe}{Classe}}}]{c}{}\end{DoxyParamCaption})}
+
+
+
+adiciona uma classe, no repositorio de classes, e na lista de classes orquidea base. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & classe a registrar.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_linguagem_orquidea_a2e41ce950efe501dd408e944a3235863}\index{parser.LinguagemOrquidea@{parser.LinguagemOrquidea}!GetClasses@{GetClasses}}
+\index{GetClasses@{GetClasses}!parser.LinguagemOrquidea@{parser.LinguagemOrquidea}}
+\doxysubsubsection{\texorpdfstring{GetClasses()}{GetClasses()}}
+{\footnotesize\ttfamily \label{classparser_1_1_linguagem_orquidea_a2e41ce950efe501dd408e944a3235863} 
+List$<$ \mbox{\hyperlink{classparser_1_1_classe}{Classe}} $>$ parser.\+Linguagem\+Orquidea.\+Get\+Classes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+retorna a lista de classes base orquidea. 
+
+\begin{DoxyReturn}{Returns}
+a lista de todas classes base orquidea\+: int, double, string, char, \doxylink{classparser_1_1_vector}{Vector}, \doxylink{classparser_1_1_dictionary_text}{Dictionary\+Text}, \doxylink{classparser_1_1_matriz}{Matriz}, \doxylink{classparser_1_1_jagged_array}{Jagged\+Array}...
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_linguagem_orquidea_ade89790b88bd9a369b121873f71f302d}\index{parser.LinguagemOrquidea@{parser.LinguagemOrquidea}!GetOperador@{GetOperador}}
+\index{GetOperador@{GetOperador}!parser.LinguagemOrquidea@{parser.LinguagemOrquidea}}
+\doxysubsubsection{\texorpdfstring{GetOperador()}{GetOperador()}}
+{\footnotesize\ttfamily \label{classparser_1_1_linguagem_orquidea_ade89790b88bd9a369b121873f71f302d} 
+\mbox{\hyperlink{classparser_1_1_operador}{Operador}} parser.\+Linguagem\+Orquidea.\+Get\+Operador (\begin{DoxyParamCaption}\item[{string}]{nome}{, }\item[{string}]{nome\+Classe}{}\end{DoxyParamCaption})}
+
+
+
+retorna um operador. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome} & nome do operador.\\
+\hline
+{\em nome\+Classe} & classe do operador.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_linguagem_orquidea_ad6b019b1a5026bc0b4d9e4d67b349619}\index{parser.LinguagemOrquidea@{parser.LinguagemOrquidea}!GetOperadores@{GetOperadores}}
+\index{GetOperadores@{GetOperadores}!parser.LinguagemOrquidea@{parser.LinguagemOrquidea}}
+\doxysubsubsection{\texorpdfstring{GetOperadores()}{GetOperadores()}}
+{\footnotesize\ttfamily \label{classparser_1_1_linguagem_orquidea_ad6b019b1a5026bc0b4d9e4d67b349619} 
+override List$<$ \mbox{\hyperlink{classparser_1_1_operador}{Operador}} $>$ parser.\+Linguagem\+Orquidea.\+Get\+Operadores (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+retorna uma lista de todos operadores das classes base. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_a1286a172b35abbd89516e5b7934914e5}{parser.\+Uma\+Gramatica\+Computacional}}.
+
+\Hypertarget{classparser_1_1_linguagem_orquidea_a467c6b19110c779a055fcfd99094ac8b}\index{parser.LinguagemOrquidea@{parser.LinguagemOrquidea}!GetOperadoresBinarios@{GetOperadoresBinarios}}
+\index{GetOperadoresBinarios@{GetOperadoresBinarios}!parser.LinguagemOrquidea@{parser.LinguagemOrquidea}}
+\doxysubsubsection{\texorpdfstring{GetOperadoresBinarios()}{GetOperadoresBinarios()}}
+{\footnotesize\ttfamily \label{classparser_1_1_linguagem_orquidea_a467c6b19110c779a055fcfd99094ac8b} 
+List$<$ \mbox{\hyperlink{classparser_1_1_operador}{Operador}} $>$ parser.\+Linguagem\+Orquidea.\+Get\+Operadores\+Binarios (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+retorna uma lista de todos operadores binarios. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_linguagem_orquidea_a7804ed0cadaef30ab266d6be06c9c9a2}\index{parser.LinguagemOrquidea@{parser.LinguagemOrquidea}!GetOperadoresCondicionais@{GetOperadoresCondicionais}}
+\index{GetOperadoresCondicionais@{GetOperadoresCondicionais}!parser.LinguagemOrquidea@{parser.LinguagemOrquidea}}
+\doxysubsubsection{\texorpdfstring{GetOperadoresCondicionais()}{GetOperadoresCondicionais()}}
+{\footnotesize\ttfamily \label{classparser_1_1_linguagem_orquidea_a7804ed0cadaef30ab266d6be06c9c9a2} 
+List$<$ \mbox{\hyperlink{classparser_1_1_operador}{Operador}} $>$ parser.\+Linguagem\+Orquidea.\+Get\+Operadores\+Condicionais (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+retorna uma lista de todos operadores condificionais. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_linguagem_orquidea_a4fd5945ab5c127b90ab5550a47708dee}\index{parser.LinguagemOrquidea@{parser.LinguagemOrquidea}!GetOperadoresUnarios@{GetOperadoresUnarios}}
+\index{GetOperadoresUnarios@{GetOperadoresUnarios}!parser.LinguagemOrquidea@{parser.LinguagemOrquidea}}
+\doxysubsubsection{\texorpdfstring{GetOperadoresUnarios()}{GetOperadoresUnarios()}}
+{\footnotesize\ttfamily \label{classparser_1_1_linguagem_orquidea_a4fd5945ab5c127b90ab5550a47708dee} 
+List$<$ \mbox{\hyperlink{classparser_1_1_operador}{Operador}} $>$ parser.\+Linguagem\+Orquidea.\+Get\+Operadores\+Unarios (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+retorna uma lista de todos operadores unarios. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_linguagem_orquidea_a0c716ca2e1a3e5a2fb9530b1cc246e6d}\index{parser.LinguagemOrquidea@{parser.LinguagemOrquidea}!GetTodosOperadores@{GetTodosOperadores}}
+\index{GetTodosOperadores@{GetTodosOperadores}!parser.LinguagemOrquidea@{parser.LinguagemOrquidea}}
+\doxysubsubsection{\texorpdfstring{GetTodosOperadores()}{GetTodosOperadores()}}
+{\footnotesize\ttfamily \label{classparser_1_1_linguagem_orquidea_a0c716ca2e1a3e5a2fb9530b1cc246e6d} 
+override List$<$ string $>$ parser.\+Linguagem\+Orquidea.\+Get\+Todos\+Operadores (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+obtem uma lista de nomes de todos operadores, das classes base. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_a8a118cfe204476d294b27714196a39a1}{parser.\+Uma\+Gramatica\+Computacional}}.
+
+\Hypertarget{classparser_1_1_linguagem_orquidea_abfd470e1d5f3df51fb3ae284822570b2}\index{parser.LinguagemOrquidea@{parser.LinguagemOrquidea}!InicializaClassesBasicas@{InicializaClassesBasicas}}
+\index{InicializaClassesBasicas@{InicializaClassesBasicas}!parser.LinguagemOrquidea@{parser.LinguagemOrquidea}}
+\doxysubsubsection{\texorpdfstring{InicializaClassesBasicas()}{InicializaClassesBasicas()}}
+{\footnotesize\ttfamily \label{classparser_1_1_linguagem_orquidea_abfd470e1d5f3df51fb3ae284822570b2} 
+void parser.\+Linguagem\+Orquidea.\+Inicializa\+Classes\+Basicas (\begin{DoxyParamCaption}\item[{bool}]{inicializa\+Classes\+Importadas}{}\end{DoxyParamCaption})}
+
+
+
+inicializa as classes base da linguagem, como escrita/leitura no terminal, classes de desenvolvimento de games, wrapper objects, processamento de arquivos,... 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inicializa\+Classes\+Importadas} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_linguagem_orquidea_ad166ff5d957f0d48e2c64e5179383ee4}\index{parser.LinguagemOrquidea@{parser.LinguagemOrquidea}!inicializaProducoesDaLinguagem@{inicializaProducoesDaLinguagem}}
+\index{inicializaProducoesDaLinguagem@{inicializaProducoesDaLinguagem}!parser.LinguagemOrquidea@{parser.LinguagemOrquidea}}
+\doxysubsubsection{\texorpdfstring{inicializaProducoesDaLinguagem()}{inicializaProducoesDaLinguagem()}}
+{\footnotesize\ttfamily \label{classparser_1_1_linguagem_orquidea_ad166ff5d957f0d48e2c64e5179383ee4} 
+override void parser.\+Linguagem\+Orquidea.\+inicializa\+Producoes\+Da\+Linguagem (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+inicializa as produções a partir de um arquivo XML. 
+
+\Hypertarget{classparser_1_1_linguagem_orquidea_a9994f3dfdf239b7e61bfa71818729693}\index{parser.LinguagemOrquidea@{parser.LinguagemOrquidea}!Instance@{Instance}}
+\index{Instance@{Instance}!parser.LinguagemOrquidea@{parser.LinguagemOrquidea}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily \label{classparser_1_1_linguagem_orquidea_a9994f3dfdf239b7e61bfa71818729693} 
+static \mbox{\hyperlink{classparser_1_1_linguagem_orquidea}{Linguagem\+Orquidea}} parser.\+Linguagem\+Orquidea.\+Instance (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+singleton da classe. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_linguagem_orquidea_a5c411327fdcc14d9dd37c8cf3c293036}\index{parser.LinguagemOrquidea@{parser.LinguagemOrquidea}!isClassToIncludeObjectCallerAsParameter@{isClassToIncludeObjectCallerAsParameter}}
+\index{isClassToIncludeObjectCallerAsParameter@{isClassToIncludeObjectCallerAsParameter}!parser.LinguagemOrquidea@{parser.LinguagemOrquidea}}
+\doxysubsubsection{\texorpdfstring{isClassToIncludeObjectCallerAsParameter()}{isClassToIncludeObjectCallerAsParameter()}}
+{\footnotesize\ttfamily \label{classparser_1_1_linguagem_orquidea_a5c411327fdcc14d9dd37c8cf3c293036} 
+bool parser.\+Linguagem\+Orquidea.\+is\+Class\+To\+Include\+Object\+Caller\+As\+Parameter (\begin{DoxyParamCaption}\item[{string}]{nome\+Classe}{}\end{DoxyParamCaption})}
+
+
+
+lista de classes, que permite a inclusão do objeto caller como primeiro parametro, numa chamada de funcao. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Classe} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_linguagem_orquidea_a9ae0d7abb4c088469489b927beeb85ce}\index{parser.LinguagemOrquidea@{parser.LinguagemOrquidea}!isOperador@{isOperador}}
+\index{isOperador@{isOperador}!parser.LinguagemOrquidea@{parser.LinguagemOrquidea}}
+\doxysubsubsection{\texorpdfstring{isOperador()}{isOperador()}}
+{\footnotesize\ttfamily \label{classparser_1_1_linguagem_orquidea_a9ae0d7abb4c088469489b927beeb85ce} 
+bool parser.\+Linguagem\+Orquidea.\+is\+Operador (\begin{DoxyParamCaption}\item[{string}]{token\+Operador}{}\end{DoxyParamCaption})}
+
+
+
+retorna true se o token é nome de um operador. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em token\+Operador} & nome do operador.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_linguagem_orquidea_a2c2fc86386a7ab35cfc79d36b3f87e55}\index{parser.LinguagemOrquidea@{parser.LinguagemOrquidea}!IsOperadorAritmetico@{IsOperadorAritmetico}}
+\index{IsOperadorAritmetico@{IsOperadorAritmetico}!parser.LinguagemOrquidea@{parser.LinguagemOrquidea}}
+\doxysubsubsection{\texorpdfstring{IsOperadorAritmetico()}{IsOperadorAritmetico()}}
+{\footnotesize\ttfamily \label{classparser_1_1_linguagem_orquidea_a2c2fc86386a7ab35cfc79d36b3f87e55} 
+bool parser.\+Linguagem\+Orquidea.\+Is\+Operador\+Aritmetico (\begin{DoxyParamCaption}\item[{string}]{nome\+Operador}{}\end{DoxyParamCaption})}
+
+
+
+retorna true se o nome do operador é de um operador aritimetico. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Operador} & nome do operador.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_linguagem_orquidea_a5dc4381dcf65b3039d18115b75628cec}\index{parser.LinguagemOrquidea@{parser.LinguagemOrquidea}!IsOperadorBinario@{IsOperadorBinario}}
+\index{IsOperadorBinario@{IsOperadorBinario}!parser.LinguagemOrquidea@{parser.LinguagemOrquidea}}
+\doxysubsubsection{\texorpdfstring{IsOperadorBinario()}{IsOperadorBinario()}}
+{\footnotesize\ttfamily \label{classparser_1_1_linguagem_orquidea_a5dc4381dcf65b3039d18115b75628cec} 
+bool parser.\+Linguagem\+Orquidea.\+Is\+Operador\+Binario (\begin{DoxyParamCaption}\item[{string}]{nome\+Operador}{}\end{DoxyParamCaption})}
+
+
+
+retorna true se o nome do operador é de um operador binario. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Operador} & nome do operador.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_linguagem_orquidea_aa63b98fd7b16230471918f2534694d1a}\index{parser.LinguagemOrquidea@{parser.LinguagemOrquidea}!IsOperadorCondicional@{IsOperadorCondicional}}
+\index{IsOperadorCondicional@{IsOperadorCondicional}!parser.LinguagemOrquidea@{parser.LinguagemOrquidea}}
+\doxysubsubsection{\texorpdfstring{IsOperadorCondicional()}{IsOperadorCondicional()}}
+{\footnotesize\ttfamily \label{classparser_1_1_linguagem_orquidea_aa63b98fd7b16230471918f2534694d1a} 
+bool parser.\+Linguagem\+Orquidea.\+Is\+Operador\+Condicional (\begin{DoxyParamCaption}\item[{string}]{nome\+Operador}{}\end{DoxyParamCaption})}
+
+
+
+retorna true se o nome do operador é de um operador condicional. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Operador} & nome do operador.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_linguagem_orquidea_af0ff3738f2e8e19bd1f8d2990462a65c}\index{parser.LinguagemOrquidea@{parser.LinguagemOrquidea}!IsOperadorUnario@{IsOperadorUnario}}
+\index{IsOperadorUnario@{IsOperadorUnario}!parser.LinguagemOrquidea@{parser.LinguagemOrquidea}}
+\doxysubsubsection{\texorpdfstring{IsOperadorUnario()}{IsOperadorUnario()}}
+{\footnotesize\ttfamily \label{classparser_1_1_linguagem_orquidea_af0ff3738f2e8e19bd1f8d2990462a65c} 
+bool parser.\+Linguagem\+Orquidea.\+Is\+Operador\+Unario (\begin{DoxyParamCaption}\item[{string}]{nome\+Operador}{}\end{DoxyParamCaption})}
+
+
+
+retrona true se o nome do operador é de um operador unario. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Operador} & nome do operador.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classparser_1_1_linguagem_orquidea_a96356313c0a255e1afcda9717da4c73a}\index{parser.LinguagemOrquidea@{parser.LinguagemOrquidea}!libraries@{libraries}}
+\index{libraries@{libraries}!parser.LinguagemOrquidea@{parser.LinguagemOrquidea}}
+\doxysubsubsection{\texorpdfstring{libraries}{libraries}}
+{\footnotesize\ttfamily \label{classparser_1_1_linguagem_orquidea_a96356313c0a255e1afcda9717da4c73a} 
+List$<$Assembly$>$ parser.\+Linguagem\+Orquidea.\+libraries = new List$<$Assembly$>$()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+bibliotecas carregada externamente. 
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{classparser_1_1_linguagem_orquidea_a6c83aee3e522b487152f74e906970cbe}\index{parser.LinguagemOrquidea@{parser.LinguagemOrquidea}!Aspectos@{Aspectos}}
+\index{Aspectos@{Aspectos}!parser.LinguagemOrquidea@{parser.LinguagemOrquidea}}
+\doxysubsubsection{\texorpdfstring{Aspectos}{Aspectos}}
+{\footnotesize\ttfamily \label{classparser_1_1_linguagem_orquidea_a6c83aee3e522b487152f74e906970cbe} 
+List$<$\mbox{\hyperlink{classparser_1_1_aspecto}{Aspecto}}$>$ parser.\+Linguagem\+Orquidea.\+Aspectos\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+lista de objetos aspectos instanciados no codigo. 
+
+\Hypertarget{classparser_1_1_linguagem_orquidea_a52d9f95c59a5cdebdcec61e08faad40f}\index{parser.LinguagemOrquidea@{parser.LinguagemOrquidea}!Classes@{Classes}}
+\index{Classes@{Classes}!parser.LinguagemOrquidea@{parser.LinguagemOrquidea}}
+\doxysubsubsection{\texorpdfstring{Classes}{Classes}}
+{\footnotesize\ttfamily \label{classparser_1_1_linguagem_orquidea_a52d9f95c59a5cdebdcec61e08faad40f} 
+List$<$\mbox{\hyperlink{classparser_1_1_classe}{Classe}}$>$ parser.\+Linguagem\+Orquidea.\+Classes\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+lista de clases base orquidea. 
+
+\Hypertarget{classparser_1_1_linguagem_orquidea_a8a1caccb32f0bef46974c412765452c9}\index{parser.LinguagemOrquidea@{parser.LinguagemOrquidea}!operadoresBinarios@{operadoresBinarios}}
+\index{operadoresBinarios@{operadoresBinarios}!parser.LinguagemOrquidea@{parser.LinguagemOrquidea}}
+\doxysubsubsection{\texorpdfstring{operadoresBinarios}{operadoresBinarios}}
+{\footnotesize\ttfamily \label{classparser_1_1_linguagem_orquidea_a8a1caccb32f0bef46974c412765452c9} 
+List$<$\mbox{\hyperlink{classparser_1_1_operador}{Operador}}$>$ parser.\+Linguagem\+Orquidea.\+operadores\+Binarios\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+lista de todos operadores binarios. 
+
+\Hypertarget{classparser_1_1_linguagem_orquidea_ae07f34a413341a3d5ce27aa56350167f}\index{parser.LinguagemOrquidea@{parser.LinguagemOrquidea}!operadoresCondicionais@{operadoresCondicionais}}
+\index{operadoresCondicionais@{operadoresCondicionais}!parser.LinguagemOrquidea@{parser.LinguagemOrquidea}}
+\doxysubsubsection{\texorpdfstring{operadoresCondicionais}{operadoresCondicionais}}
+{\footnotesize\ttfamily \label{classparser_1_1_linguagem_orquidea_ae07f34a413341a3d5ce27aa56350167f} 
+List$<$\mbox{\hyperlink{classparser_1_1_operador}{Operador}}$>$ parser.\+Linguagem\+Orquidea.\+operadores\+Condicionais\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+lista de todos operadores condicionais. 
+
+\Hypertarget{classparser_1_1_linguagem_orquidea_aaa31ff38a177cc113f377c8e918a4da7}\index{parser.LinguagemOrquidea@{parser.LinguagemOrquidea}!operadoresUnarios@{operadoresUnarios}}
+\index{operadoresUnarios@{operadoresUnarios}!parser.LinguagemOrquidea@{parser.LinguagemOrquidea}}
+\doxysubsubsection{\texorpdfstring{operadoresUnarios}{operadoresUnarios}}
+{\footnotesize\ttfamily \label{classparser_1_1_linguagem_orquidea_aaa31ff38a177cc113f377c8e918a4da7} 
+List$<$\mbox{\hyperlink{classparser_1_1_operador}{Operador}}$>$ parser.\+Linguagem\+Orquidea.\+operadores\+Unarios\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+lista de todos operadores unarios. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/\+Gramatica\+Componentes/\mbox{\hyperlink{lng_linguagem_orquidia_8cs}{lng\+Linguagem\+Orquidia.\+cs}}\end{DoxyCompactItemize}

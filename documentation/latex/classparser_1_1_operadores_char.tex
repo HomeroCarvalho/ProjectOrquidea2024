@@ -1,0 +1,149 @@
+\doxysection{parser.\+Operadores\+Char Class Reference}
+\hypertarget{classparser_1_1_operadores_char}{}\label{classparser_1_1_operadores_char}\index{parser.OperadoresChar@{parser.OperadoresChar}}
+Inheritance diagram for parser.\+Operadores\+Char\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classparser_1_1_operadores_char}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+delegate Char \mbox{\hyperlink{classparser_1_1_operadores_char_a30020ef63de9aa5ad2a6013a4b746f99}{operador\+Binario}} (Char x, Char y)
+\item 
+delegate Char \mbox{\hyperlink{classparser_1_1_operadores_char_ad77123627bc36c5a9f0866c97525e499}{operador\+Unario}} (Char x)
+\item 
+Char \mbox{\hyperlink{classparser_1_1_operadores_char_a6caa1e4001d2faeb2dfe481adb6c72f5}{Igual}} (Char x, Char y)
+\item 
+bool \mbox{\hyperlink{classparser_1_1_operadores_char_ad46282003f6848fcbf9c120a35ac6f38}{Comparacao\+Igual}} (Char x, Char y)
+\item 
+bool \mbox{\hyperlink{classparser_1_1_operadores_char_ad71b57674f68037415259ed10bdfb4be}{Desigual}} (Char x, Char y)
+\item 
+bool \mbox{\hyperlink{classparser_1_1_operadores_char_ab0bf55d62f6413c2a7bcab63ffa09094}{Maior}} (Char x, Char y)
+\item 
+bool \mbox{\hyperlink{classparser_1_1_operadores_char_ac7ec65ea1f7155a2aec133e18ee58315}{Maior\+Ou\+Igual}} (Char x, Char y)
+\item 
+bool \mbox{\hyperlink{classparser_1_1_operadores_char_a4c6456c77e0b767d982052033890644e}{Menor}} (Char x, Char y)
+\item 
+bool \mbox{\hyperlink{classparser_1_1_operadores_char_a0ea7a868df0919117f478409bb830062}{Menor\+Ou\+Igual}} (Char x, Char y)
+\item 
+bool \mbox{\hyperlink{classparser_1_1_operadores_char_a3f17f207d4aa990b5229c3d3512a6114}{AND}} (bool x, bool y)
+\item 
+bool \mbox{\hyperlink{classparser_1_1_operadores_char_a84d7eb6516a860dbb5449b3c6a84910d}{OR}} (bool x, bool y)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classparser_1_1_operadores_implementacao}{parser.\+Operadores\+Implementacao}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparser_1_1_operadores_implementacao_a9b7bccfd8d82e767421c8a1fcc0662e3}{Operadores\+Implementacao}} (string name\+Assembly, string name\+Class\+With\+Operators)
+\begin{DoxyCompactList}\small\item\em obtem o assembly que contem os tipos com metodos de operadores. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_operadores_implementacao_ad4213c879983bd8ab2adfa326457bba5}{Operadores\+Implementacao}} ()
+\item 
+\mbox{\hyperlink{classparser_1_1_operador}{Operador}} \mbox{\hyperlink{classparser_1_1_operadores_implementacao_a7289f4c4f487beb377feedda3a746caa}{Get\+Operator\+Com\+Metodo\+Importado}} (string name\+Class\+Operator, string class\+Operadores, string name\+Method\+Impl, string name\+Operator\+In\+Orquidea, int prioridade)
+\begin{DoxyCompactList}\small\item\em constroi um operador a partir da metodos importados da classe base. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_operadores_implementacao_a7350936c8cc4c409957d83d6f46510b3}{Get\+Operators}} ()
+\begin{DoxyCompactList}\small\item\em metodo principal\+: obtem os metodos implementadores, e instancia os operadores orquidea. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_metodo}{Metodo}} $>$ \mbox{\hyperlink{classparser_1_1_operadores_implementacao_ac0524f3d7b123568543f15fe3479cefc}{Get\+Implementacao}} (string classe\+Operador)
+\begin{DoxyCompactList}\small\item\em obtem a implementação do operador, de função importada da classe base. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_operadores_implementacao_af6b1eafae18e41eaaf677bd5931c0180}{Adiciona\+Operador\+Nativo}} (string nome\+Operador, Method\+Info um\+Metodo\+Impl, int prioridade, string classe\+Do\+Operador)
+\begin{DoxyCompactList}\small\item\em permite a extensão de operadores, com importação da função que executa o operador, atraves de reflexão. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classparser_1_1_operadores_implementacao}{parser.\+Operadores\+Implementacao}}}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classparser_1_1_operadores_implementacao_a679098d65d8ed73a903f406ae69dfb8d}{nome}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classparser_1_1_operadores_implementacao}{parser.\+Operadores\+Implementacao}}}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \mbox{\hyperlink{classparser_1_1_metodo}{Metodo}} $>$ \mbox{\hyperlink{classparser_1_1_operadores_implementacao_ae1d03e4b30debbbe58f05580761f85a3}{funcao\+Impl\+Operadores}} = new List$<$\mbox{\hyperlink{classparser_1_1_metodo}{Metodo}}$>$()
+\item 
+static List$<$ Method\+Info $>$ \mbox{\hyperlink{classparser_1_1_operadores_implementacao_a503a2b224030e820a6e67cf53caf281a}{metodos\+Impl}} = new List$<$Method\+Info$>$()
+\item 
+static List$<$ \mbox{\hyperlink{classparser_1_1_operador}{Operador}} $>$ \mbox{\hyperlink{classparser_1_1_operadores_implementacao_a0fc06d12ec7a2115fbd9f6e924863a77}{operadores\+Int}} = new List$<$\mbox{\hyperlink{classparser_1_1_operador}{Operador}}$>$()
+\item 
+static List$<$ \mbox{\hyperlink{classparser_1_1_operador}{Operador}} $>$ \mbox{\hyperlink{classparser_1_1_operadores_implementacao_a7c2d56c23ecb394cbaaa1915b62ba60d}{operadores\+Double}} = new List$<$\mbox{\hyperlink{classparser_1_1_operador}{Operador}}$>$()
+\item 
+static List$<$ \mbox{\hyperlink{classparser_1_1_operador}{Operador}} $>$ \mbox{\hyperlink{classparser_1_1_operadores_implementacao_a604a0014ed3b31147aed2d22c42390ed}{operadores\+Float}} = new List$<$\mbox{\hyperlink{classparser_1_1_operador}{Operador}}$>$()
+\item 
+static List$<$ \mbox{\hyperlink{classparser_1_1_operador}{Operador}} $>$ \mbox{\hyperlink{classparser_1_1_operadores_implementacao_a8543db7fa33c9d1f5d5d71fa3a1030ce}{operadores\+String}} = new List$<$\mbox{\hyperlink{classparser_1_1_operador}{Operador}}$>$()
+\item 
+static List$<$ \mbox{\hyperlink{classparser_1_1_operador}{Operador}} $>$ \mbox{\hyperlink{classparser_1_1_operadores_implementacao_ae3e885563b67d168e4a6c0c450566b3b}{operadores\+Char}} = new List$<$\mbox{\hyperlink{classparser_1_1_operador}{Operador}}$>$()
+\item 
+static List$<$ \mbox{\hyperlink{classparser_1_1_operador}{Operador}} $>$ \mbox{\hyperlink{classparser_1_1_operadores_implementacao_a7b6b0bc94927c0789e6af88fd6b0b840}{operadores\+Boolean}} = new List$<$\mbox{\hyperlink{classparser_1_1_operador}{Operador}}$>$()
+\item 
+static List$<$ \mbox{\hyperlink{classparser_1_1_operador}{Operador}} $>$ \mbox{\hyperlink{classparser_1_1_operadores_implementacao_a76fd1bf1cb463efb65acb97b3ef6be04}{operadores\+Matriz}} = new List$<$\mbox{\hyperlink{classparser_1_1_operador}{Operador}}$>$()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_operadores_char_a3f17f207d4aa990b5229c3d3512a6114}\index{parser.OperadoresChar@{parser.OperadoresChar}!AND@{AND}}
+\index{AND@{AND}!parser.OperadoresChar@{parser.OperadoresChar}}
+\doxysubsubsection{\texorpdfstring{AND()}{AND()}}
+{\footnotesize\ttfamily \label{classparser_1_1_operadores_char_a3f17f207d4aa990b5229c3d3512a6114} 
+bool parser.\+Operadores\+Char.\+AND (\begin{DoxyParamCaption}\item[{bool}]{x}{, }\item[{bool}]{y}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_operadores_char_ad46282003f6848fcbf9c120a35ac6f38}\index{parser.OperadoresChar@{parser.OperadoresChar}!ComparacaoIgual@{ComparacaoIgual}}
+\index{ComparacaoIgual@{ComparacaoIgual}!parser.OperadoresChar@{parser.OperadoresChar}}
+\doxysubsubsection{\texorpdfstring{ComparacaoIgual()}{ComparacaoIgual()}}
+{\footnotesize\ttfamily \label{classparser_1_1_operadores_char_ad46282003f6848fcbf9c120a35ac6f38} 
+bool parser.\+Operadores\+Char.\+Comparacao\+Igual (\begin{DoxyParamCaption}\item[{Char}]{x}{, }\item[{Char}]{y}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_operadores_char_ad71b57674f68037415259ed10bdfb4be}\index{parser.OperadoresChar@{parser.OperadoresChar}!Desigual@{Desigual}}
+\index{Desigual@{Desigual}!parser.OperadoresChar@{parser.OperadoresChar}}
+\doxysubsubsection{\texorpdfstring{Desigual()}{Desigual()}}
+{\footnotesize\ttfamily \label{classparser_1_1_operadores_char_ad71b57674f68037415259ed10bdfb4be} 
+bool parser.\+Operadores\+Char.\+Desigual (\begin{DoxyParamCaption}\item[{Char}]{x}{, }\item[{Char}]{y}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_operadores_char_a6caa1e4001d2faeb2dfe481adb6c72f5}\index{parser.OperadoresChar@{parser.OperadoresChar}!Igual@{Igual}}
+\index{Igual@{Igual}!parser.OperadoresChar@{parser.OperadoresChar}}
+\doxysubsubsection{\texorpdfstring{Igual()}{Igual()}}
+{\footnotesize\ttfamily \label{classparser_1_1_operadores_char_a6caa1e4001d2faeb2dfe481adb6c72f5} 
+Char parser.\+Operadores\+Char.\+Igual (\begin{DoxyParamCaption}\item[{Char}]{x}{, }\item[{Char}]{y}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_operadores_char_ab0bf55d62f6413c2a7bcab63ffa09094}\index{parser.OperadoresChar@{parser.OperadoresChar}!Maior@{Maior}}
+\index{Maior@{Maior}!parser.OperadoresChar@{parser.OperadoresChar}}
+\doxysubsubsection{\texorpdfstring{Maior()}{Maior()}}
+{\footnotesize\ttfamily \label{classparser_1_1_operadores_char_ab0bf55d62f6413c2a7bcab63ffa09094} 
+bool parser.\+Operadores\+Char.\+Maior (\begin{DoxyParamCaption}\item[{Char}]{x}{, }\item[{Char}]{y}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_operadores_char_ac7ec65ea1f7155a2aec133e18ee58315}\index{parser.OperadoresChar@{parser.OperadoresChar}!MaiorOuIgual@{MaiorOuIgual}}
+\index{MaiorOuIgual@{MaiorOuIgual}!parser.OperadoresChar@{parser.OperadoresChar}}
+\doxysubsubsection{\texorpdfstring{MaiorOuIgual()}{MaiorOuIgual()}}
+{\footnotesize\ttfamily \label{classparser_1_1_operadores_char_ac7ec65ea1f7155a2aec133e18ee58315} 
+bool parser.\+Operadores\+Char.\+Maior\+Ou\+Igual (\begin{DoxyParamCaption}\item[{Char}]{x}{, }\item[{Char}]{y}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_operadores_char_a4c6456c77e0b767d982052033890644e}\index{parser.OperadoresChar@{parser.OperadoresChar}!Menor@{Menor}}
+\index{Menor@{Menor}!parser.OperadoresChar@{parser.OperadoresChar}}
+\doxysubsubsection{\texorpdfstring{Menor()}{Menor()}}
+{\footnotesize\ttfamily \label{classparser_1_1_operadores_char_a4c6456c77e0b767d982052033890644e} 
+bool parser.\+Operadores\+Char.\+Menor (\begin{DoxyParamCaption}\item[{Char}]{x}{, }\item[{Char}]{y}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_operadores_char_a0ea7a868df0919117f478409bb830062}\index{parser.OperadoresChar@{parser.OperadoresChar}!MenorOuIgual@{MenorOuIgual}}
+\index{MenorOuIgual@{MenorOuIgual}!parser.OperadoresChar@{parser.OperadoresChar}}
+\doxysubsubsection{\texorpdfstring{MenorOuIgual()}{MenorOuIgual()}}
+{\footnotesize\ttfamily \label{classparser_1_1_operadores_char_a0ea7a868df0919117f478409bb830062} 
+bool parser.\+Operadores\+Char.\+Menor\+Ou\+Igual (\begin{DoxyParamCaption}\item[{Char}]{x}{, }\item[{Char}]{y}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_operadores_char_a30020ef63de9aa5ad2a6013a4b746f99}\index{parser.OperadoresChar@{parser.OperadoresChar}!operadorBinario@{operadorBinario}}
+\index{operadorBinario@{operadorBinario}!parser.OperadoresChar@{parser.OperadoresChar}}
+\doxysubsubsection{\texorpdfstring{operadorBinario()}{operadorBinario()}}
+{\footnotesize\ttfamily \label{classparser_1_1_operadores_char_a30020ef63de9aa5ad2a6013a4b746f99} 
+delegate Char parser.\+Operadores\+Char.\+operador\+Binario (\begin{DoxyParamCaption}\item[{Char}]{x}{, }\item[{Char}]{y}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_operadores_char_ad77123627bc36c5a9f0866c97525e499}\index{parser.OperadoresChar@{parser.OperadoresChar}!operadorUnario@{operadorUnario}}
+\index{operadorUnario@{operadorUnario}!parser.OperadoresChar@{parser.OperadoresChar}}
+\doxysubsubsection{\texorpdfstring{operadorUnario()}{operadorUnario()}}
+{\footnotesize\ttfamily \label{classparser_1_1_operadores_char_ad77123627bc36c5a9f0866c97525e499} 
+delegate Char parser.\+Operadores\+Char.\+operador\+Unario (\begin{DoxyParamCaption}\item[{Char}]{x}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_operadores_char_a84d7eb6516a860dbb5449b3c6a84910d}\index{parser.OperadoresChar@{parser.OperadoresChar}!OR@{OR}}
+\index{OR@{OR}!parser.OperadoresChar@{parser.OperadoresChar}}
+\doxysubsubsection{\texorpdfstring{OR()}{OR()}}
+{\footnotesize\ttfamily \label{classparser_1_1_operadores_char_a84d7eb6516a860dbb5449b3c6a84910d} 
+bool parser.\+Operadores\+Char.\+OR (\begin{DoxyParamCaption}\item[{bool}]{x}{, }\item[{bool}]{y}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/componentes\+De\+Interpretadores\+ECompiladores/\+PROGRAMACAO ORIENTADA A OBJETOS/\mbox{\hyperlink{_operadores_nativos_8cs}{Operadores\+Nativos.\+cs}}\end{DoxyCompactItemize}

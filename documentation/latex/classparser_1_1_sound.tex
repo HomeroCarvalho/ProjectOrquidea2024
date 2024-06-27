@@ -1,0 +1,246 @@
+\doxysection{parser.\+Sound Class Reference}
+\hypertarget{classparser_1_1_sound}{}\label{classparser_1_1_sound}\index{parser.Sound@{parser.Sound}}
+
+
+classe de audio\+: sound, music. instanciação feito com path relativo do arquivo de som, musica. e o acesso é por um id de texto, como dicionarios C Sharp. Play\+Music("{}nome\+Alias\+Musica"{});  
+
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classparser_1_1_sound_1_1_testes}{Testes}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classparser_1_1_sound_ad5047ba90e02f606ad0d0a1d3145ddc8}{Load\+Music}} (string filename, string id\+\_\+musica)
+\begin{DoxyCompactList}\small\item\em carrraga um arquivo de musica. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_sound_a0af1bc2f8daecec1d4a5de5744b68e61}{Repeat\+Music}} (string id)
+\begin{DoxyCompactList}\small\item\em loop continuo de tocar a musica. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_sound_af357fe962417575ec2ccb1efad78a813}{Pause\+Music}} (string id)
+\begin{DoxyCompactList}\small\item\em pausa da musica currente. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_sound_aede8c9fd5c06c591efe1b3d39abbc626}{Play\+Music}} (string id)
+\begin{DoxyCompactList}\small\item\em toca a musica. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_sound_a900fd543556d14e87b0162db534cd1a8}{Volume\+Music}} (string id, float volume)
+\begin{DoxyCompactList}\small\item\em ajusta o volume da musica. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_sound_a90b3476ab080cbdbc1e4b2facc6ac269}{Load\+Sound}} (string path\+File, string id\+\_\+sound)
+\begin{DoxyCompactList}\small\item\em carrega um aquivo de soms. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_sound_a1669aedbfe2c5157cfdfba1b1faf8bc0}{Load\+Sound}} (SFML.\+Audio.\+Sound sound, string id\+\_\+sound)
+\begin{DoxyCompactList}\small\item\em carrega um som, a partir de outro som. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_sound_af889bff2c9939e90ee3bf3eb3cae11bb}{Play\+Sound}} (string id)
+\begin{DoxyCompactList}\small\item\em toca o som. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_sound_af771a402cdfe10650c90e55ecbaa1881}{Stop\+Sound}} (string id)
+\begin{DoxyCompactList}\small\item\em para de tocar o som. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_sound_a713b3082d98da819c9cb1fb3502c9399}{Volume\+Sound}} (string id, int volume)
+\begin{DoxyCompactList}\small\item\em ajuasta o volume do som. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_sound_acc9b657ee863c5e81df15e2107f7f6f4}{Pause\+Sound}} (string id)
+\begin{DoxyCompactList}\small\item\em pausa de tocar o som. \end{DoxyCompactList}\item 
+SFML.\+Audio.\+Sound \mbox{\hyperlink{classparser_1_1_sound_ae9a2b3cbd6c2ae9a0186c9937d679853}{Get\+Sound}} (string id\+\_\+name\+Sound)
+\begin{DoxyCompactList}\small\item\em obtem um som, a partir de um indice. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+classe de audio\+: sound, music. instanciação feito com path relativo do arquivo de som, musica. e o acesso é por um id de texto, como dicionarios C Sharp. Play\+Music("{}nome\+Alias\+Musica"{}); 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_sound_ae9a2b3cbd6c2ae9a0186c9937d679853}\index{parser.Sound@{parser.Sound}!GetSound@{GetSound}}
+\index{GetSound@{GetSound}!parser.Sound@{parser.Sound}}
+\doxysubsubsection{\texorpdfstring{GetSound()}{GetSound()}}
+{\footnotesize\ttfamily \label{classparser_1_1_sound_ae9a2b3cbd6c2ae9a0186c9937d679853} 
+SFML.\+Audio.\+Sound parser.\+Sound.\+Get\+Sound (\begin{DoxyParamCaption}\item[{string}]{id\+\_\+name\+Sound}{}\end{DoxyParamCaption})}
+
+
+
+obtem um som, a partir de um indice. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_sound_ad5047ba90e02f606ad0d0a1d3145ddc8}\index{parser.Sound@{parser.Sound}!LoadMusic@{LoadMusic}}
+\index{LoadMusic@{LoadMusic}!parser.Sound@{parser.Sound}}
+\doxysubsubsection{\texorpdfstring{LoadMusic()}{LoadMusic()}}
+{\footnotesize\ttfamily \label{classparser_1_1_sound_ad5047ba90e02f606ad0d0a1d3145ddc8} 
+void parser.\+Sound.\+Load\+Music (\begin{DoxyParamCaption}\item[{string}]{filename}{, }\item[{string}]{id\+\_\+musica}{}\end{DoxyParamCaption})}
+
+
+
+carrraga um arquivo de musica. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & path para o arquivo da mmusica.\\
+\hline
+{\em id\+\_\+musica} & id de identificacao da musica.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_sound_a1669aedbfe2c5157cfdfba1b1faf8bc0}\index{parser.Sound@{parser.Sound}!LoadSound@{LoadSound}}
+\index{LoadSound@{LoadSound}!parser.Sound@{parser.Sound}}
+\doxysubsubsection{\texorpdfstring{LoadSound()}{LoadSound()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_sound_a1669aedbfe2c5157cfdfba1b1faf8bc0} 
+void parser.\+Sound.\+Load\+Sound (\begin{DoxyParamCaption}\item[{SFML.\+Audio.\+Sound}]{sound}{, }\item[{string}]{id\+\_\+sound}{}\end{DoxyParamCaption})}
+
+
+
+carrega um som, a partir de outro som. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sound} & nome do som.\\
+\hline
+{\em id\+\_\+sound} & id de identifcacao do som.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_sound_a90b3476ab080cbdbc1e4b2facc6ac269}\index{parser.Sound@{parser.Sound}!LoadSound@{LoadSound}}
+\index{LoadSound@{LoadSound}!parser.Sound@{parser.Sound}}
+\doxysubsubsection{\texorpdfstring{LoadSound()}{LoadSound()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_sound_a90b3476ab080cbdbc1e4b2facc6ac269} 
+void parser.\+Sound.\+Load\+Sound (\begin{DoxyParamCaption}\item[{string}]{path\+File}{, }\item[{string}]{id\+\_\+sound}{}\end{DoxyParamCaption})}
+
+
+
+carrega um aquivo de soms. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path\+File} & path do arquivo de som.\\
+\hline
+{\em id\+\_\+sound} & um nome que identifique o som.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna um id de identifacao para acesso ao som.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_sound_af357fe962417575ec2ccb1efad78a813}\index{parser.Sound@{parser.Sound}!PauseMusic@{PauseMusic}}
+\index{PauseMusic@{PauseMusic}!parser.Sound@{parser.Sound}}
+\doxysubsubsection{\texorpdfstring{PauseMusic()}{PauseMusic()}}
+{\footnotesize\ttfamily \label{classparser_1_1_sound_af357fe962417575ec2ccb1efad78a813} 
+void parser.\+Sound.\+Pause\+Music (\begin{DoxyParamCaption}\item[{string}]{id}{}\end{DoxyParamCaption})}
+
+
+
+pausa da musica currente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_sound_acc9b657ee863c5e81df15e2107f7f6f4}\index{parser.Sound@{parser.Sound}!PauseSound@{PauseSound}}
+\index{PauseSound@{PauseSound}!parser.Sound@{parser.Sound}}
+\doxysubsubsection{\texorpdfstring{PauseSound()}{PauseSound()}}
+{\footnotesize\ttfamily \label{classparser_1_1_sound_acc9b657ee863c5e81df15e2107f7f6f4} 
+void parser.\+Sound.\+Pause\+Sound (\begin{DoxyParamCaption}\item[{string}]{id}{}\end{DoxyParamCaption})}
+
+
+
+pausa de tocar o som. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & nome que identifica o som./param\texorpdfstring{$>$}{>} \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_sound_aede8c9fd5c06c591efe1b3d39abbc626}\index{parser.Sound@{parser.Sound}!PlayMusic@{PlayMusic}}
+\index{PlayMusic@{PlayMusic}!parser.Sound@{parser.Sound}}
+\doxysubsubsection{\texorpdfstring{PlayMusic()}{PlayMusic()}}
+{\footnotesize\ttfamily \label{classparser_1_1_sound_aede8c9fd5c06c591efe1b3d39abbc626} 
+void parser.\+Sound.\+Play\+Music (\begin{DoxyParamCaption}\item[{string}]{id}{}\end{DoxyParamCaption})}
+
+
+
+toca a musica. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_sound_af889bff2c9939e90ee3bf3eb3cae11bb}\index{parser.Sound@{parser.Sound}!PlaySound@{PlaySound}}
+\index{PlaySound@{PlaySound}!parser.Sound@{parser.Sound}}
+\doxysubsubsection{\texorpdfstring{PlaySound()}{PlaySound()}}
+{\footnotesize\ttfamily \label{classparser_1_1_sound_af889bff2c9939e90ee3bf3eb3cae11bb} 
+void parser.\+Sound.\+Play\+Sound (\begin{DoxyParamCaption}\item[{string}]{id}{}\end{DoxyParamCaption})}
+
+
+
+toca o som. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & nome que identifica o som.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_sound_a0af1bc2f8daecec1d4a5de5744b68e61}\index{parser.Sound@{parser.Sound}!RepeatMusic@{RepeatMusic}}
+\index{RepeatMusic@{RepeatMusic}!parser.Sound@{parser.Sound}}
+\doxysubsubsection{\texorpdfstring{RepeatMusic()}{RepeatMusic()}}
+{\footnotesize\ttfamily \label{classparser_1_1_sound_a0af1bc2f8daecec1d4a5de5744b68e61} 
+void parser.\+Sound.\+Repeat\+Music (\begin{DoxyParamCaption}\item[{string}]{id}{}\end{DoxyParamCaption})}
+
+
+
+loop continuo de tocar a musica. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & id de identificacao da musica.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_sound_af771a402cdfe10650c90e55ecbaa1881}\index{parser.Sound@{parser.Sound}!StopSound@{StopSound}}
+\index{StopSound@{StopSound}!parser.Sound@{parser.Sound}}
+\doxysubsubsection{\texorpdfstring{StopSound()}{StopSound()}}
+{\footnotesize\ttfamily \label{classparser_1_1_sound_af771a402cdfe10650c90e55ecbaa1881} 
+void parser.\+Sound.\+Stop\+Sound (\begin{DoxyParamCaption}\item[{string}]{id}{}\end{DoxyParamCaption})}
+
+
+
+para de tocar o som. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & nome que identifica o som.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_sound_a900fd543556d14e87b0162db534cd1a8}\index{parser.Sound@{parser.Sound}!VolumeMusic@{VolumeMusic}}
+\index{VolumeMusic@{VolumeMusic}!parser.Sound@{parser.Sound}}
+\doxysubsubsection{\texorpdfstring{VolumeMusic()}{VolumeMusic()}}
+{\footnotesize\ttfamily \label{classparser_1_1_sound_a900fd543556d14e87b0162db534cd1a8} 
+void parser.\+Sound.\+Volume\+Music (\begin{DoxyParamCaption}\item[{string}]{id}{, }\item[{float}]{volume}{}\end{DoxyParamCaption})}
+
+
+
+ajusta o volume da musica. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & identificacao da musica.\\
+\hline
+{\em volume} & valor de 0..100 do volume.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_sound_a713b3082d98da819c9cb1fb3502c9399}\index{parser.Sound@{parser.Sound}!VolumeSound@{VolumeSound}}
+\index{VolumeSound@{VolumeSound}!parser.Sound@{parser.Sound}}
+\doxysubsubsection{\texorpdfstring{VolumeSound()}{VolumeSound()}}
+{\footnotesize\ttfamily \label{classparser_1_1_sound_a713b3082d98da819c9cb1fb3502c9399} 
+void parser.\+Sound.\+Volume\+Sound (\begin{DoxyParamCaption}\item[{string}]{id}{, }\item[{int}]{volume}{}\end{DoxyParamCaption})}
+
+
+
+ajuasta o volume do som. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & identificacao do som.\\
+\hline
+{\em volume} & volume de 0...100.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/\+LIBRARIES/\+Game Support/\+Library\+Games/\+Library\+SFML/\mbox{\hyperlink{_sound_8cs}{Sound.\+cs}}\end{DoxyCompactItemize}

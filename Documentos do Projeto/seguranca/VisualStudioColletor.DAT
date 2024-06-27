@@ -1,0 +1,36 @@
+Para remover o serviço **Visual Studio 15 Collector** no **Windows 11**, você pode seguir uma das duas opções abaixo:
+
+1. **Excluir o serviço usando o Prompt de Comando**:
+    - Abra o **Console de Serviços** digitando `services.msc` na barra de pesquisa do menu Iniciar e pressionando Enter.
+    - Localize o serviço chamado **Visual Studio 15 Collector** na lista de serviços.
+    - Anote o **nome do serviço** (por exemplo, "Exemplo") a partir das propriedades do serviço.
+    - Abra o **Prompt de Comando** como administrador. [nome do serviço: VSStandardCollectorService150].
+    - Digite o seguinte comando no prompt de comando elevado e pressione Enter:
+        ```
+        sc delete "Nome do Serviço"
+        ```
+        Substitua "Nome do Serviço" pelo nome real do serviço (por exemplo, "Exemplo") que você anotou anteriormente.
+    - Você pode fechar o Console de Serviços e o Prompt de Comando após executar o comando.
+
+2. **Excluir o serviço usando o Editor de Registro**:
+    - Abra o **Console de Serviços** digitando `services.msc` na barra de pesquisa do menu Iniciar e pressionando Enter.
+    - Localize o serviço chamado **Visual Studio 15 Collector** na lista de serviços.
+    - Anote o **nome do serviço** (por exemplo, "Exemplo") a partir das propriedades do serviço.
+    - Abra o **Editor de Registro** digitando `regedit.exe` na barra de pesquisa do menu Iniciar e pressionando Enter.
+    - Navegue até a chave do registro abaixo no painel esquerdo do Editor de Registro:
+        ```
+        HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services
+        ```
+    - Clique com o botão direito do mouse no nome do serviço (por exemplo, "Exemplo") e selecione **Excluir**.
+    - Confirme a exclusão clicando em **Sim**.
+    - Feche o Console de Serviços e o Editor de Registro.
+    - Reinicie o computador para aplicar as alterações.
+
+Lembre-se de que, ao excluir serviços, é importante ter cuidado para não remover serviços essenciais do sistema. Se você não tiver certeza, é recomendável desabilitar o serviço em vez de excluí-lo.
+
+Origem: conversa com o Bing, 08/04/2024
+(1) Delete Services in Windows 11 Tutorial | Windows 11 Forum. https://www.elevenforum.com/t/delete-services-in-windows-11.3108/.
+(2) Como instalar e desinstalar serviços Windows - .NET Framework. https://learn.microsoft.com/pt-br/dotnet/framework/windows-services/how-to-install-and-uninstall-services.
+(3) Como remover um serviço no Windows 10 - WinNotas.com.br. https://winnotas.com.br/como-remover-um-servico-no-windows-10/.
+(4) Desativar Assistente de Compatibilidade no Windows 11. https://answers.microsoft.com/pt-br/windows/forum/all/desativar-assistente-de-compatibilidade-no-windows/8f304871-df70-4987-a1c9-be4442ef1305.
+(5) Como: Instalar e desinstalar serviços do Windows - .NET Framework. https://learn.microsoft.com/pt-pt/dotnet/framework/windows-services/how-to-install-and-uninstall-services.

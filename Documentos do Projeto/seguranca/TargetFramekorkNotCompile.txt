@@ -1,0 +1,24 @@
+[1]: https://learn.microsoft.com/en-us/troubleshoot/developer/visualstudio/project-build/troubleshooting-dotnet-framework-targeting-errors ""
+[2]: https://www.rickvandenbosch.net/blog/object-does-not-match-target-type-error-calling-a-method-on-an-assembly-loaded-using-reflection/ ""
+[3]: https://stackoverflow.com/questions/41970341/object-does-not-match-target-type-when-calling-methods-using-string-in-c-sharp ""
+[4]: https://github.com/dotnet/runtime/issues/97022 ""
+[5]: https://learn.microsoft.com/en-us/answers/questions/527807/customcontrol-targettype-does-not-match-type-of-el ""
+
+The error "TargetException: Object does not match target type" typically occurs when there's a mismatch between the object type and the target type. This can happen in several scenarios, such as:
+
+1. **Incorrect .NET Framework Targeting**: If you're targeting a different version of .NET Framework than the one specified in your `app.config` file, you might encounter this error¹[1]. You can resolve this by editing the `app.config` file in Visual Studio and changing the version to match the appropriate version of .NET¹[1].
+
+2. **Reflection Issues**: If you're using reflection to load an assembly and call a method from a class in the loaded assembly, ensure that the methods in the assembly you loaded are static²[2]. 
+
+3. **Method Invocation Issues**: If you're calling methods using strings, make sure you're passing in the object to call the method on, not the Type³[3].
+
+4. **Custom Control Issues in WPF**: If you're working with custom controls in WPF, ensure that the `TargetType` matches the type of the element⁴[5].
+
+Please check your code and configuration to see if any of these scenarios apply. If the problem persists, you might want to provide more context or code snippets for further assistance. Remember, it's always a good practice to keep your software and libraries up-to-date to avoid such issues.
+
+Origem: conversa com o Bing, 26/04/2024
+(1) Troubleshoot .NET Framework targeting errors - Visual Studio. https://learn.microsoft.com/en-us/troubleshoot/developer/visualstudio/project-build/troubleshooting-dotnet-framework-targeting-errors.
+(2) “Object does not match target type” error calling a method on an .... https://www.rickvandenbosch.net/blog/object-does-not-match-target-type-error-calling-a-method-on-an-assembly-loaded-using-reflection/.
+(3) "Object does not match target type" when calling methods using string .... https://stackoverflow.com/questions/41970341/object-does-not-match-target-type-when-calling-methods-using-string-in-c-sharp.
+(4) CustomControl TargetType does not match type of element throws error in .... https://learn.microsoft.com/en-us/answers/questions/527807/customcontrol-targettype-does-not-match-type-of-el.
+(5) Improve error reporting for dynamic method invocation via reflection .... https://github.com/dotnet/runtime/issues/97022.

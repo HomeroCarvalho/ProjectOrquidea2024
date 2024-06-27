@@ -1,0 +1,120 @@
+\doxysection{parser.\+PROLOG.\+Consultas Class Reference}
+\hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_consultas}{}\label{classparser_1_1_p_r_o_l_o_g_1_1_consultas}\index{parser.PROLOG.Consultas@{parser.PROLOG.Consultas}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}} $>$ \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_consultas_a6bf1716f21cefef942ff30254252f10a}{Consulta\+Lista}} (\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog}{Lista\+Prolog}} uma\+Lista)
+\begin{DoxyCompactList}\small\item\em consulta uma lista (entrada, como \mbox{[}1 5 6\mbox{]}), procurando predicados que combinam com a lista. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}} $>$ \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_consultas_ab3112bea44d9cd5d39d9312696dc3587}{Consulta\+Back\+Tracking}} (\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_regra}{Regra}} uma\+Regra)
+\item 
+\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog}{Lista\+Prolog}} \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_consultas_a24057dbed66b1b38bbc0db8ab1570139}{Programa\+Para\+Listas}} (\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_regra}{Regra}} uma\+Regra\+De\+Listas, \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog}{Lista\+Prolog}} lista\+Entrada, int index\+Predicado)
+\begin{DoxyCompactList}\small\item\em executa um algoritmo recursivo aplicado a listas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_consultas}{Consultas}} \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_consultas_a7f298a5f90bdeaab4346808dab89257c}{Instance}} ()
+\item 
+static void \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_consultas_aa042a5fd007e6e05c47d86b195e36293}{Substitui\+Variaveis}} (\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}} predicado\+Da\+Base\+De\+Conhecimento, \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}} predicado\+Regra, Dictionary$<$ string, string $>$ variaveis\+Anteriormente\+Guardadas)
+\item 
+static bool \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_consultas_adec3dab772a523efe9dfed540a27ced8}{Valida\+Variaveis}} (\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_regra}{Regra}} regra\+Molde, List$<$ \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}} $>$ predicados\+Meta\+Solucao)
+\begin{DoxyCompactList}\small\item\em Valida variáveis para soluções como\+: homem(\+X)\+:-\/ mortal(\+X), mamifero(\+X). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_consultas_a6a0ebd9bda7bde5d57eb6fc6bb9f541c}{variaveis}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_consultas_ab3112bea44d9cd5d39d9312696dc3587}\index{parser.PROLOG.Consultas@{parser.PROLOG.Consultas}!ConsultaBackTracking@{ConsultaBackTracking}}
+\index{ConsultaBackTracking@{ConsultaBackTracking}!parser.PROLOG.Consultas@{parser.PROLOG.Consultas}}
+\doxysubsubsection{\texorpdfstring{ConsultaBackTracking()}{ConsultaBackTracking()}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_consultas_ab3112bea44d9cd5d39d9312696dc3587} 
+List$<$ \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}} $>$ parser.\+PROLOG.\+Consultas.\+Consulta\+Back\+Tracking (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_regra}{Regra}}}]{uma\+Regra}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_consultas_a6bf1716f21cefef942ff30254252f10a}\index{parser.PROLOG.Consultas@{parser.PROLOG.Consultas}!ConsultaLista@{ConsultaLista}}
+\index{ConsultaLista@{ConsultaLista}!parser.PROLOG.Consultas@{parser.PROLOG.Consultas}}
+\doxysubsubsection{\texorpdfstring{ConsultaLista()}{ConsultaLista()}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_consultas_a6bf1716f21cefef942ff30254252f10a} 
+List$<$ \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}} $>$ parser.\+PROLOG.\+Consultas.\+Consulta\+Lista (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog}{Lista\+Prolog}}}]{uma\+Lista}{}\end{DoxyParamCaption})}
+
+
+
+consulta uma lista (entrada, como \mbox{[}1 5 6\mbox{]}), procurando predicados que combinam com a lista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uma\+Lista} & lista de entrada a ser consultada.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna uma lista de predicados que combinam com a lista de entrada.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_consultas_a7f298a5f90bdeaab4346808dab89257c}\index{parser.PROLOG.Consultas@{parser.PROLOG.Consultas}!Instance@{Instance}}
+\index{Instance@{Instance}!parser.PROLOG.Consultas@{parser.PROLOG.Consultas}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_consultas_a7f298a5f90bdeaab4346808dab89257c} 
+static \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_consultas}{Consultas}} parser.\+PROLOG.\+Consultas.\+Instance (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_consultas_a24057dbed66b1b38bbc0db8ab1570139}\index{parser.PROLOG.Consultas@{parser.PROLOG.Consultas}!ProgramaParaListas@{ProgramaParaListas}}
+\index{ProgramaParaListas@{ProgramaParaListas}!parser.PROLOG.Consultas@{parser.PROLOG.Consultas}}
+\doxysubsubsection{\texorpdfstring{ProgramaParaListas()}{ProgramaParaListas()}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_consultas_a24057dbed66b1b38bbc0db8ab1570139} 
+\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog}{Lista\+Prolog}} parser.\+PROLOG.\+Consultas.\+Programa\+Para\+Listas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_regra}{Regra}}}]{uma\+Regra\+De\+Listas}{, }\item[{\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog}{Lista\+Prolog}}}]{lista\+Entrada}{, }\item[{int}]{index\+Predicado}{}\end{DoxyParamCaption})}
+
+
+
+executa um algoritmo recursivo aplicado a listas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uma\+Regra\+De\+Listas} & uma \doxylink{classparser_1_1_p_r_o_l_o_g_1_1_regra}{Regra} contendo definições lista.\\
+\hline
+{\em lista\+Entrada} & lista de entrada a ser transformada pelo algoritmo.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_consultas_aa042a5fd007e6e05c47d86b195e36293}\index{parser.PROLOG.Consultas@{parser.PROLOG.Consultas}!SubstituiVariaveis@{SubstituiVariaveis}}
+\index{SubstituiVariaveis@{SubstituiVariaveis}!parser.PROLOG.Consultas@{parser.PROLOG.Consultas}}
+\doxysubsubsection{\texorpdfstring{SubstituiVariaveis()}{SubstituiVariaveis()}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_consultas_aa042a5fd007e6e05c47d86b195e36293} 
+static void parser.\+PROLOG.\+Consultas.\+Substitui\+Variaveis (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}}}]{predicado\+Da\+Base\+De\+Conhecimento}{, }\item[{\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}}}]{predicado\+Regra}{, }\item[{Dictionary$<$ string, string $>$}]{variaveis\+Anteriormente\+Guardadas}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+1-\/ verifica se variaveis\mbox{[}uma\+Var\mbox{]} está presente ou nao no mapa de (nome,valor) de variaveis. 2-\/ se está presente, faz a substituicao no mapa colocando o valor como nome do atomo do predicado. 3-\/ se a variavel não está presente\+: 3.\+1-\/ se o valores\mbox{[}uma\+Var\mbox{]} não está presente no mapa das variaveis faz a substituicao 3.\+2-\/ continue;\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_consultas_adec3dab772a523efe9dfed540a27ced8}\index{parser.PROLOG.Consultas@{parser.PROLOG.Consultas}!ValidaVariaveis@{ValidaVariaveis}}
+\index{ValidaVariaveis@{ValidaVariaveis}!parser.PROLOG.Consultas@{parser.PROLOG.Consultas}}
+\doxysubsubsection{\texorpdfstring{ValidaVariaveis()}{ValidaVariaveis()}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_consultas_adec3dab772a523efe9dfed540a27ced8} 
+static bool parser.\+PROLOG.\+Consultas.\+Valida\+Variaveis (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_regra}{Regra}}}]{regra\+Molde}{, }\item[{List$<$ \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}} $>$}]{predicados\+Meta\+Solucao}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Valida variáveis para soluções como\+: homem(\+X)\+:-\/ mortal(\+X), mamifero(\+X). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em regra\+Molde} & regra que contém as variáveis a serem analisadas na consulta.\\
+\hline
+{\em predicados\+Meta\+Solucao} & um conjunto de predicados, que compõe uma solução.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}true\mbox{]} se todos valores para as variáveis (como X, em homem(\+X)\+:-\/ mortal(\+X), mamifero(\+X)) forem iguais.
+\end{DoxyReturn}
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_consultas_a6a0ebd9bda7bde5d57eb6fc6bb9f541c}\index{parser.PROLOG.Consultas@{parser.PROLOG.Consultas}!variaveis@{variaveis}}
+\index{variaveis@{variaveis}!parser.PROLOG.Consultas@{parser.PROLOG.Consultas}}
+\doxysubsubsection{\texorpdfstring{variaveis}{variaveis}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_consultas_a6a0ebd9bda7bde5d57eb6fc6bb9f541c} 
+List$<$string$>$ parser.\+PROLOG.\+Consultas.\+variaveis\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+MÓ\+DULO CONSULTAS FUNCIONALIDADES EXPORTADAS\+: 1-\/ CONSULTA(\+TEXTO), ANALISA UM PREDICADO EXPRESSO EM TEXTO, COM REGISTROS DA BASE DE CONHECIMENTO. 2-\/ CONSULTA(\+PREEDICADO)\+: ANALISA UM PREDICADO, SE TEM REGISTROS QUE COMBINAM NA BASE DE CONHECIMENTO. 3-\/ CONSULTA(\+REGRA)\+: ANALISA UMA REGRA (CONJUNTO DE PREDICADOS COM VARIÁ\+VEIS RELACIONADAS OU NÃO ENTRE SI), SE COMBINAM COM PREDICADOS NA BASE DE CONHECIMENTO. 4-\/ CONSULTA LISTAS()\+: VERIFICA NA BASE DE CONHECIMENTO SE HÁ LISTAS QUE COMBINEM COM A LISTA DE ENTRADA. 5-\/ PROGRAMA PARA LISTAS()\+: ANALISA UM PROGRAMA \doxylink{namespaceparser_1_1_p_r_o_l_o_g}{PROLOG}, APLICADO A LISTAS.
+
+NOTAS\+: OS MÉ\+TODOS CONSULTA RETORNAM APENAS A PRIMEIRA SOLUÇÃO VIÁ\+VEL, E NÃO TODAS SOLUÇÕ\+ES VIÁ\+VEIS. PROPRIEDADES EXPORTADAS\+: 1-\/ variaveis\+: CONTÉM O NOME E VALOR DE VARIÁ\+VEIS, EXTRAÍ\+DAS DE UMA REGRA, E UM CONJUNTO DE PREDICADOS SOLUÇÃO DE UMA CONSULTA(\+REGRA). 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/componentes\+De\+Interpretadores\+ECompiladores/\+PROLOG/\mbox{\hyperlink{_consultas_8cs}{Consultas.\+cs}}\end{DoxyCompactItemize}

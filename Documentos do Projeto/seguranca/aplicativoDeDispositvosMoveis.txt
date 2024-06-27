@@ -1,0 +1,15 @@
+O Windows 11 introduziu um novo sistema de suporte para dispositivos móveis chamado **Phone Link**¹. Este sistema facilita a integração entre o seu PC e o seu smartphone, permitindo que você acesse seus aplicativos e arquivos de qualquer dispositivo, sincronize notificações e muito mais¹. Aqui estão os passos para usar o Phone Link:
+
+1. **Baixe e instale a atualização mais recente do Windows 11**: Antes de começar a usar o novo sistema de suporte a dispositivos móveis, certifique-se de ter a versão mais recente do Windows 11 instalada em seu computador¹.
+2. **Conecte seu dispositivo móvel ao computador**: Use um cabo USB ou conexão Bluetooth para conectar seu dispositivo móvel ao computador Windows 11¹.
+3. **Ative o modo de suporte móvel no seu dispositivo**: No seu dispositivo móvel, acesse as configurações e ative o modo de suporte a dispositivos móveis ou a conectividade do Windows¹.
+4. **Abra o aplicativo “Telefone” no Windows 11**: No seu computador, encontre e abra o aplicativo “Telefone” para acessar o novo sistema de suporte a dispositivos móveis¹.
+5. **Vincule seu dispositivo móvel ao aplicativo “Telefone”**: Siga as instruções no aplicativo “Telefone” para emparelhar seu dispositivo móvel com Windows 11¹.
+6. **Explore os recursos disponíveis**: Uma vez emparelhado, explore os diferentes recursos disponíveis, como visualizar e responder mensagens, gerenciar notificações e acessar fotos no seu dispositivo móvel¹.
+7. **Desconecte seu dispositivo móvel com segurança**: Quando terminar de usar o sistema de suporte a dispositivos móveis, desconecte seu dispositivo móvel com segurança para evitar problemas de conexão¹.
+
+Para conectar seu dispositivo móvel ao Windows 11, primeiro você precisa instalar o aplicativo “Phone Link” em seu telefone na loja de aplicativos correspondente (App Store ou Google Play Store). Assim que o aplicativo estiver instalado, abra-o e siga as instruções para emparelhar seu telefone com o Windows 11¹. Uma vez emparelhado, você poderá acessar os recursos do seu telefone no seu computador com Windows 11¹.
+
+Origem: conversa com o Bing, 18/04/2024
+(1) Como usar o novo sistema de suporte a dispositivos móveis no Windows 11. https://tecnobits.com/pt/como-usar-o-novo-sistema-de-suporte-para-dispositivos-m%C3%B3veis-no-windows-11/.
+(2) Pare ou permita que este PC acesse seus dispositivos móveis no Windows 11. https://thewindowsclub.blog/pt/stop-or-allow-this-pc-to-access-your-mobile-devices-on-windows-11/.

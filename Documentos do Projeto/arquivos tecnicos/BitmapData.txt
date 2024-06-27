@@ -1,0 +1,57 @@
+Working with `BitmapData` in C# involves using the `LockBits` and `UnlockBits` methods of the `Bitmap` class to directly access the pixel data of an image. Here's a basic example of how you can use `BitmapData`:
+
+```csharp
+using System.Drawing;
+using System.Drawing.Imaging;
+
+// Load the bitmap
+Bitmap bmp = new Bitmap("path_to_image");
+
+// Lock the bitmap's bits
+Rectangle rect = new Rectangle(0, 0, bmp.Width, bmp.Height);
+BitmapData bmpData = bmp.LockBits(rect, ImageLockMode.ReadWrite, bmp.PixelFormat);
+
+// Get the address of the first line
+IntPtr ptr = bmpData.Scan0;
+
+// Declare an array to hold the bytes of the bitmap
+int bytes = Math.Abs(bmpData.Stride) * bmp.Height;
+byte[] rgbValues = new byte[bytes];
+
+// Copy the RGB values into the array
+System.Runtime.InteropServices.Marshal.Copy(ptr, rgbValues, 0, bytes);
+
+// Manipulate the bitmap, for example, set the first pixel to red
+rgbValues[0] = 255; // Red
+rgbValues[1] = 0;   // Green
+rgbValues[2] = 0;   // Blue
+
+// Copy the RGB values back to the bitmap
+System.Runtime.InteropServices.Marshal.Copy(rgbValues, 0, ptr, bytes);
+
+// Unlock the bits
+bmp.UnlockBits(bmpData);
+
+// Save or use the modified bitmap
+bmp.Save("path_to_new_image");
+```
+
+This code snippet demonstrates how to:
+- Load a bitmap from a file.
+- Lock the bitmap's bits to access the pixel data.
+- Copy the pixel data to an array.
+- Modify the pixel data (in this case, setting the first pixel to red).
+- Copy the modified data back to the bitmap.
+- Unlock the bitmap's bits.
+- Save the modified bitmap to a new file.
+
+Remember, when working with `BitmapData`, you're dealing with unmanaged resources, so it's important to ensure that you always unlock the bits after you're done to avoid memory leaks.
+
+For more detailed information and examples, you can refer to the official [Microsoft documentation on `BitmapData`](^2^) or explore community-contributed examples and discussions, such as those found on [Stack Overflow](^1^).
+
+Origem: conversa com o Bing, 09/05/2024
+(1) BitmapData Class (System.Drawing.Imaging) | Microsoft Learn. https://learn.microsoft.com/en-us/dotnet/api/system.drawing.imaging.bitmapdata?view=windowsdesktop-7.0.
+(2) .net - Fast work with Bitmaps in C# - Stack Overflow. https://stackoverflow.com/questions/1563038/fast-work-with-bitmaps-in-c-sharp.
+(3) Working with Images, Bitmaps, Icons, and Metafiles. https://learn.microsoft.com/en-us/dotnet/desktop/winforms/advanced/working-with-images-bitmaps-icons-and-metafiles?view=netframeworkdesktop-4.8.
+(4) github.com. https://github.com/ArconWell/Handwritten-Digit-Recognition-Perceptron-Neural-Network/tree/8e409afd6bf014305e7231c51675710c11012103/Backend%2FNeuralNetwork.cs.
+(5) github.com. https://github.com/rstamatov/CellTool-Mac-OS-Version-pending-changes/tree/6288286da54556554aae82d54739577fa57dd14e/Cell%20Tool%203%2FRawImageDrawer.cs.

@@ -1,0 +1,267 @@
+\doxysection{parser.\+Instrucao Class Reference}
+\hypertarget{classparser_1_1_instrucao}{}\label{classparser_1_1_instrucao}\index{parser.Instrucao@{parser.Instrucao}}
+
+
+// uma instrução da linguagem orquidea tem 4 objetos\+: 1-\/ um id do tipo int, para controle de chamadas de métodos/funções, 2-\/ o codigo da instrução, 3-\/ a lista de expressões utilizadas, 4-\/ a lista de blocos de sequencias que comporarão bloos associados à instrução.  
+
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classparser_1_1_instrucao_1_1_testes}{Testes}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+delegate void \mbox{\hyperlink{classparser_1_1_instrucao_a296a442c70b01bcfd58710f311ca4285}{Build\+Instruction}} (int \mbox{\hyperlink{classparser_1_1_instrucao_a3b082d10f2a6266ee0dd9ad8ae2f4f9c}{code}}, List$<$ \mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} $>$ expressoes\+Da\+Instrucao, List$<$ List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ $>$ \mbox{\hyperlink{classparser_1_1_instrucao_a2ed9bdef5f5e8c99baa2b4a98b4b2f1f}{blocos}}, \mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}} sequencia)
+\item 
+void \mbox{\hyperlink{classparser_1_1_instrucao_aaa7f781f64697ff9e7072c1932f5166e}{Init\+Names}} ()
+\item 
+delegate \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} \mbox{\hyperlink{classparser_1_1_instrucao_aaf3bb44995fad3cd4c26aafdce5721f7}{handler\+Compilador}} (\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}} sequencia, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\item 
+void \mbox{\hyperlink{classparser_1_1_instrucao_a7767b094d16ca9781bb05d1d21c09429}{Add\+New\+Type\+Of\+Instruction}} (int \mbox{\hyperlink{classparser_1_1_instrucao_a3b082d10f2a6266ee0dd9ad8ae2f4f9c}{code}}, string template\+Instruction, \mbox{\hyperlink{classparser_1_1_programa_em_v_m_a6afa1b84a56973c7c93b82967e330507}{Programa\+Em\+VM.\+Handler\+Instrucao}} instruction, string sequencia\+ID\+\_\+mapeada, \mbox{\hyperlink{classparser_1_1_instrucao_aaf3bb44995fad3cd4c26aafdce5721f7}{handler\+Compilador}} build\+Compilador)
+\begin{DoxyCompactList}\small\item\em POSSIBILITA A EXTENSÃO DE INSTRUÇÕ\+ES DA LINGUAGEM, REUNINDO EM UM SÓ LUGAR TODOS OBJETOS NECESSÁ\+RIOS PARA IMPLEMENTAR UMA NOVA INSTRUÇÃO. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_instrucao_abf8ea8ed79685e7e61bad4b42d958ad4}{Instrucao}} ()
+\item 
+\mbox{\hyperlink{classparser_1_1_instrucao_a2abbed001f71b28af5c5ed448e50e4b4}{Instrucao}} (int \mbox{\hyperlink{classparser_1_1_instrucao_a3b082d10f2a6266ee0dd9ad8ae2f4f9c}{code}}, List$<$ \mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} $>$ expressoes\+Da\+Instrucao, List$<$ List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ $>$ \mbox{\hyperlink{classparser_1_1_instrucao_a2ed9bdef5f5e8c99baa2b4a98b4b2f1f}{blocos}})
+\begin{DoxyCompactList}\small\item\em construtor. contém os elementos de uma instrução VM\+: codigo ID, expressoes associadas, e blocos de instruções. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_instrucao_af0295945ecd39d8bf0102e5e363b8227}{Instrucao}} (int \mbox{\hyperlink{classparser_1_1_instrucao_a3b082d10f2a6266ee0dd9ad8ae2f4f9c}{code}}, List$<$ \mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} $>$ expressoes\+Da\+Instrucao, List$<$ List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ $>$ \mbox{\hyperlink{classparser_1_1_instrucao_a2ed9bdef5f5e8c99baa2b4a98b4b2f1f}{blocos}}, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em construtor. contém os elementos de uma instrução VM\+: codigo ID, expressoes associadas, e blocos de instruções. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_instrucao_af26854b5511c96d3350bd09c72b689a4}{Add\+Tipo\+Instrucao}} (\mbox{\hyperlink{classparser_1_1_programa_em_v_m_a6afa1b84a56973c7c93b82967e330507}{Programa\+Em\+VM.\+Handler\+Instrucao}} novo\+Tipo\+Instrucao, int \mbox{\hyperlink{classparser_1_1_instrucao_a3b082d10f2a6266ee0dd9ad8ae2f4f9c}{code}})
+\begin{DoxyCompactList}\small\item\em funcao aditiva, permitindo que a lista de instruções da VM possa ser extendida. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{classparser_1_1_instrucao_a9cbb27d5208887f2a820f16dbbcea02d}{To\+String}} ()
+\item 
+void \mbox{\hyperlink{classparser_1_1_instrucao_a0b89574f5d711c7252a3008a4347db6d}{Testes\+Pequenos\+Programas\+Textos}} (Assercao\+Suite\+Classe assercao)
+\item 
+void \mbox{\hyperlink{classparser_1_1_instrucao_a0372a7e75672e307e3ea88bca84fb827}{Testes\+Pequenos\+Programas}} (Assercao\+Suite\+Classe assercao)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classparser_1_1_instrucao_a3b082d10f2a6266ee0dd9ad8ae2f4f9c}{code}}
+\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} $>$ \mbox{\hyperlink{classparser_1_1_instrucao_a6072b1f5e251e2a0cbde91c85ddced51}{expressoes}} = new List$<$\mbox{\hyperlink{classparser_1_1_expressao}{Expressao}}$>$()
+\begin{DoxyCompactList}\small\item\em expressões da instrução. \end{DoxyCompactList}\item 
+List$<$ List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ $>$ \mbox{\hyperlink{classparser_1_1_instrucao_a2ed9bdef5f5e8c99baa2b4a98b4b2f1f}{blocos}} = new List$<$List$<$\mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}}$>$$>$()
+\begin{DoxyCompactList}\small\item\em lista de blocos instrucoes relacionado a blocos. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} $>$ \mbox{\hyperlink{classparser_1_1_instrucao_acde46c5402819962eccc61d93d5fe33a}{escopos\+De\+Bloco}} = new List$<$\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}$>$()
+\begin{DoxyCompactList}\small\item\em lista de escopos de blocos de instruções de bloco; \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{classparser_1_1_instrucao_a104671519250a7218e21e81e82b2fbb3}{EH\+\_\+\+OBJETO}} = 1
+\item 
+const int \mbox{\hyperlink{classparser_1_1_instrucao_aa1f2eba6d653161c946301ee0e520a5c}{EH\+\_\+\+VETOR}} = 7
+\item 
+const int \mbox{\hyperlink{classparser_1_1_instrucao_a5992361a9b59d9bd926debb7dcff09ba}{EH\+\_\+\+PRPOPRIEDADE\+\_\+\+ESTATICA}} = 4
+\item 
+const int \mbox{\hyperlink{classparser_1_1_instrucao_a8218e8db57c84fd8caa49f90f464ee45}{EH\+\_\+\+DEFINICAO}} = 5
+\item 
+const int \mbox{\hyperlink{classparser_1_1_instrucao_a8afa18c61c3063b6e3e9d5dbd1fb972f}{EH\+\_\+\+MODIFICACAO}} = 6
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ int $>$ \mbox{\hyperlink{classparser_1_1_instrucao_a2fed4495aa6dadb13d7ed32f61d93d99}{flags}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+// uma instrução da linguagem orquidea tem 4 objetos\+: 1-\/ um id do tipo int, para controle de chamadas de métodos/funções, 2-\/ o codigo da instrução, 3-\/ a lista de expressões utilizadas, 4-\/ a lista de blocos de sequencias que comporarão bloos associados à instrução. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classparser_1_1_instrucao_abf8ea8ed79685e7e61bad4b42d958ad4}\index{parser.Instrucao@{parser.Instrucao}!Instrucao@{Instrucao}}
+\index{Instrucao@{Instrucao}!parser.Instrucao@{parser.Instrucao}}
+\doxysubsubsection{\texorpdfstring{Instrucao()}{Instrucao()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{classparser_1_1_instrucao_abf8ea8ed79685e7e61bad4b42d958ad4} 
+parser.\+Instrucao.\+Instrucao (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_instrucao_a2abbed001f71b28af5c5ed448e50e4b4}\index{parser.Instrucao@{parser.Instrucao}!Instrucao@{Instrucao}}
+\index{Instrucao@{Instrucao}!parser.Instrucao@{parser.Instrucao}}
+\doxysubsubsection{\texorpdfstring{Instrucao()}{Instrucao()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{classparser_1_1_instrucao_a2abbed001f71b28af5c5ed448e50e4b4} 
+parser.\+Instrucao.\+Instrucao (\begin{DoxyParamCaption}\item[{int}]{code}{, }\item[{List$<$ \mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} $>$}]{expressoes\+Da\+Instrucao}{, }\item[{List$<$ List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ $>$}]{blocos}{}\end{DoxyParamCaption})}
+
+
+
+construtor. contém os elementos de uma instrução VM\+: codigo ID, expressoes associadas, e blocos de instruções. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & id de identificacao da instrucao.\\
+\hline
+{\em expressoes\+Da\+Instrucao} & lista de expressoes da instrucao.\\
+\hline
+{\em blocos} & blocos de instrucao da instrucao.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_instrucao_af0295945ecd39d8bf0102e5e363b8227}\index{parser.Instrucao@{parser.Instrucao}!Instrucao@{Instrucao}}
+\index{Instrucao@{Instrucao}!parser.Instrucao@{parser.Instrucao}}
+\doxysubsubsection{\texorpdfstring{Instrucao()}{Instrucao()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{classparser_1_1_instrucao_af0295945ecd39d8bf0102e5e363b8227} 
+parser.\+Instrucao.\+Instrucao (\begin{DoxyParamCaption}\item[{int}]{code}{, }\item[{List$<$ \mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} $>$}]{expressoes\+Da\+Instrucao}{, }\item[{List$<$ List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ $>$}]{blocos}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})}
+
+
+
+construtor. contém os elementos de uma instrução VM\+: codigo ID, expressoes associadas, e blocos de instruções. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & id de identificacao de tipo da instrucao.\\
+\hline
+{\em expressoes\+Da\+Instrucao} & lista de expressoes da instrucao.\\
+\hline
+{\em blocos} & blocos de instrucoes da instrucao.\\
+\hline
+{\em escopo} & contexto onde a expressao está.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_instrucao_a7767b094d16ca9781bb05d1d21c09429}\index{parser.Instrucao@{parser.Instrucao}!AddNewTypeOfInstruction@{AddNewTypeOfInstruction}}
+\index{AddNewTypeOfInstruction@{AddNewTypeOfInstruction}!parser.Instrucao@{parser.Instrucao}}
+\doxysubsubsection{\texorpdfstring{AddNewTypeOfInstruction()}{AddNewTypeOfInstruction()}}
+{\footnotesize\ttfamily \label{classparser_1_1_instrucao_a7767b094d16ca9781bb05d1d21c09429} 
+void parser.\+Instrucao.\+Add\+New\+Type\+Of\+Instruction (\begin{DoxyParamCaption}\item[{int}]{code}{, }\item[{string}]{template\+Instruction}{, }\item[{\mbox{\hyperlink{classparser_1_1_programa_em_v_m_a6afa1b84a56973c7c93b82967e330507}{Programa\+Em\+VM.\+Handler\+Instrucao}}}]{instruction}{, }\item[{string}]{sequencia\+ID\+\_\+mapeada}{, }\item[{\mbox{\hyperlink{classparser_1_1_instrucao_aaf3bb44995fad3cd4c26aafdce5721f7}{handler\+Compilador}}}]{build\+Compilador}{}\end{DoxyParamCaption})}
+
+
+
+POSSIBILITA A EXTENSÃO DE INSTRUÇÕ\+ES DA LINGUAGEM, REUNINDO EM UM SÓ LUGAR TODOS OBJETOS NECESSÁ\+RIOS PARA IMPLEMENTAR UMA NOVA INSTRUÇÃO. 
+
+adiciona um novo tipo de instrução, com id identificador, texto contendo a sintaxe da instrução, e um método para processamento da instrução, e um metodo para comiplar a instrucao, e também uma sequencia id para reconhecer a instrucao, no compilador. \Hypertarget{classparser_1_1_instrucao_af26854b5511c96d3350bd09c72b689a4}\index{parser.Instrucao@{parser.Instrucao}!AddTipoInstrucao@{AddTipoInstrucao}}
+\index{AddTipoInstrucao@{AddTipoInstrucao}!parser.Instrucao@{parser.Instrucao}}
+\doxysubsubsection{\texorpdfstring{AddTipoInstrucao()}{AddTipoInstrucao()}}
+{\footnotesize\ttfamily \label{classparser_1_1_instrucao_af26854b5511c96d3350bd09c72b689a4} 
+void parser.\+Instrucao.\+Add\+Tipo\+Instrucao (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_programa_em_v_m_a6afa1b84a56973c7c93b82967e330507}{Programa\+Em\+VM.\+Handler\+Instrucao}}}]{novo\+Tipo\+Instrucao}{, }\item[{int}]{code}{}\end{DoxyParamCaption})}
+
+
+
+funcao aditiva, permitindo que a lista de instruções da VM possa ser extendida. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em novo\+Tipo\+Instrucao} & \\
+\hline
+{\em code} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_instrucao_a296a442c70b01bcfd58710f311ca4285}\index{parser.Instrucao@{parser.Instrucao}!BuildInstruction@{BuildInstruction}}
+\index{BuildInstruction@{BuildInstruction}!parser.Instrucao@{parser.Instrucao}}
+\doxysubsubsection{\texorpdfstring{BuildInstruction()}{BuildInstruction()}}
+{\footnotesize\ttfamily \label{classparser_1_1_instrucao_a296a442c70b01bcfd58710f311ca4285} 
+delegate void parser.\+Instrucao.\+Build\+Instruction (\begin{DoxyParamCaption}\item[{int}]{code}{, }\item[{List$<$ \mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} $>$}]{expressoes\+Da\+Instrucao}{, }\item[{List$<$ List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ $>$}]{blocos}{, }\item[{\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}}}]{sequencia}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_instrucao_aaf3bb44995fad3cd4c26aafdce5721f7}\index{parser.Instrucao@{parser.Instrucao}!handlerCompilador@{handlerCompilador}}
+\index{handlerCompilador@{handlerCompilador}!parser.Instrucao@{parser.Instrucao}}
+\doxysubsubsection{\texorpdfstring{handlerCompilador()}{handlerCompilador()}}
+{\footnotesize\ttfamily \label{classparser_1_1_instrucao_aaf3bb44995fad3cd4c26aafdce5721f7} 
+delegate \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} parser.\+Instrucao.\+handler\+Compilador (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}}}]{sequencia}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_instrucao_aaa7f781f64697ff9e7072c1932f5166e}\index{parser.Instrucao@{parser.Instrucao}!InitNames@{InitNames}}
+\index{InitNames@{InitNames}!parser.Instrucao@{parser.Instrucao}}
+\doxysubsubsection{\texorpdfstring{InitNames()}{InitNames()}}
+{\footnotesize\ttfamily \label{classparser_1_1_instrucao_aaa7f781f64697ff9e7072c1932f5166e} 
+void parser.\+Instrucao.\+Init\+Names (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_instrucao_a0372a7e75672e307e3ea88bca84fb827}\index{parser.Instrucao@{parser.Instrucao}!TestesPequenosProgramas@{TestesPequenosProgramas}}
+\index{TestesPequenosProgramas@{TestesPequenosProgramas}!parser.Instrucao@{parser.Instrucao}}
+\doxysubsubsection{\texorpdfstring{TestesPequenosProgramas()}{TestesPequenosProgramas()}}
+{\footnotesize\ttfamily \label{classparser_1_1_instrucao_a0372a7e75672e307e3ea88bca84fb827} 
+void parser.\+Instrucao.\+Testes\+Pequenos\+Programas (\begin{DoxyParamCaption}\item[{Assercao\+Suite\+Classe}]{assercao}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_instrucao_a0b89574f5d711c7252a3008a4347db6d}\index{parser.Instrucao@{parser.Instrucao}!TestesPequenosProgramasTextos@{TestesPequenosProgramasTextos}}
+\index{TestesPequenosProgramasTextos@{TestesPequenosProgramasTextos}!parser.Instrucao@{parser.Instrucao}}
+\doxysubsubsection{\texorpdfstring{TestesPequenosProgramasTextos()}{TestesPequenosProgramasTextos()}}
+{\footnotesize\ttfamily \label{classparser_1_1_instrucao_a0b89574f5d711c7252a3008a4347db6d} 
+void parser.\+Instrucao.\+Testes\+Pequenos\+Programas\+Textos (\begin{DoxyParamCaption}\item[{Assercao\+Suite\+Classe}]{assercao}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_instrucao_a9cbb27d5208887f2a820f16dbbcea02d}\index{parser.Instrucao@{parser.Instrucao}!ToString@{ToString}}
+\index{ToString@{ToString}!parser.Instrucao@{parser.Instrucao}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily \label{classparser_1_1_instrucao_a9cbb27d5208887f2a820f16dbbcea02d} 
+override string parser.\+Instrucao.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classparser_1_1_instrucao_a2ed9bdef5f5e8c99baa2b4a98b4b2f1f}\index{parser.Instrucao@{parser.Instrucao}!blocos@{blocos}}
+\index{blocos@{blocos}!parser.Instrucao@{parser.Instrucao}}
+\doxysubsubsection{\texorpdfstring{blocos}{blocos}}
+{\footnotesize\ttfamily \label{classparser_1_1_instrucao_a2ed9bdef5f5e8c99baa2b4a98b4b2f1f} 
+List$<$List$<$\mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}}$>$ $>$ parser.\+Instrucao.\+blocos = new List$<$List$<$\mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}}$>$$>$()}
+
+
+
+lista de blocos instrucoes relacionado a blocos. 
+
+\Hypertarget{classparser_1_1_instrucao_a3b082d10f2a6266ee0dd9ad8ae2f4f9c}\index{parser.Instrucao@{parser.Instrucao}!code@{code}}
+\index{code@{code}!parser.Instrucao@{parser.Instrucao}}
+\doxysubsubsection{\texorpdfstring{code}{code}}
+{\footnotesize\ttfamily \label{classparser_1_1_instrucao_a3b082d10f2a6266ee0dd9ad8ae2f4f9c} 
+int parser.\+Instrucao.\+code}
+
+\Hypertarget{classparser_1_1_instrucao_a8218e8db57c84fd8caa49f90f464ee45}\index{parser.Instrucao@{parser.Instrucao}!EH\_DEFINICAO@{EH\_DEFINICAO}}
+\index{EH\_DEFINICAO@{EH\_DEFINICAO}!parser.Instrucao@{parser.Instrucao}}
+\doxysubsubsection{\texorpdfstring{EH\_DEFINICAO}{EH\_DEFINICAO}}
+{\footnotesize\ttfamily \label{classparser_1_1_instrucao_a8218e8db57c84fd8caa49f90f464ee45} 
+const int parser.\+Instrucao.\+EH\+\_\+\+DEFINICAO = 5\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_instrucao_a8afa18c61c3063b6e3e9d5dbd1fb972f}\index{parser.Instrucao@{parser.Instrucao}!EH\_MODIFICACAO@{EH\_MODIFICACAO}}
+\index{EH\_MODIFICACAO@{EH\_MODIFICACAO}!parser.Instrucao@{parser.Instrucao}}
+\doxysubsubsection{\texorpdfstring{EH\_MODIFICACAO}{EH\_MODIFICACAO}}
+{\footnotesize\ttfamily \label{classparser_1_1_instrucao_a8afa18c61c3063b6e3e9d5dbd1fb972f} 
+const int parser.\+Instrucao.\+EH\+\_\+\+MODIFICACAO = 6\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_instrucao_a104671519250a7218e21e81e82b2fbb3}\index{parser.Instrucao@{parser.Instrucao}!EH\_OBJETO@{EH\_OBJETO}}
+\index{EH\_OBJETO@{EH\_OBJETO}!parser.Instrucao@{parser.Instrucao}}
+\doxysubsubsection{\texorpdfstring{EH\_OBJETO}{EH\_OBJETO}}
+{\footnotesize\ttfamily \label{classparser_1_1_instrucao_a104671519250a7218e21e81e82b2fbb3} 
+const int parser.\+Instrucao.\+EH\+\_\+\+OBJETO = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_instrucao_a5992361a9b59d9bd926debb7dcff09ba}\index{parser.Instrucao@{parser.Instrucao}!EH\_PRPOPRIEDADE\_ESTATICA@{EH\_PRPOPRIEDADE\_ESTATICA}}
+\index{EH\_PRPOPRIEDADE\_ESTATICA@{EH\_PRPOPRIEDADE\_ESTATICA}!parser.Instrucao@{parser.Instrucao}}
+\doxysubsubsection{\texorpdfstring{EH\_PRPOPRIEDADE\_ESTATICA}{EH\_PRPOPRIEDADE\_ESTATICA}}
+{\footnotesize\ttfamily \label{classparser_1_1_instrucao_a5992361a9b59d9bd926debb7dcff09ba} 
+const int parser.\+Instrucao.\+EH\+\_\+\+PRPOPRIEDADE\+\_\+\+ESTATICA = 4\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_instrucao_aa1f2eba6d653161c946301ee0e520a5c}\index{parser.Instrucao@{parser.Instrucao}!EH\_VETOR@{EH\_VETOR}}
+\index{EH\_VETOR@{EH\_VETOR}!parser.Instrucao@{parser.Instrucao}}
+\doxysubsubsection{\texorpdfstring{EH\_VETOR}{EH\_VETOR}}
+{\footnotesize\ttfamily \label{classparser_1_1_instrucao_aa1f2eba6d653161c946301ee0e520a5c} 
+const int parser.\+Instrucao.\+EH\+\_\+\+VETOR = 7\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_instrucao_acde46c5402819962eccc61d93d5fe33a}\index{parser.Instrucao@{parser.Instrucao}!escoposDeBloco@{escoposDeBloco}}
+\index{escoposDeBloco@{escoposDeBloco}!parser.Instrucao@{parser.Instrucao}}
+\doxysubsubsection{\texorpdfstring{escoposDeBloco}{escoposDeBloco}}
+{\footnotesize\ttfamily \label{classparser_1_1_instrucao_acde46c5402819962eccc61d93d5fe33a} 
+List$<$\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}$>$ parser.\+Instrucao.\+escopos\+De\+Bloco = new List$<$\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}$>$()}
+
+
+
+lista de escopos de blocos de instruções de bloco; 
+
+\Hypertarget{classparser_1_1_instrucao_a6072b1f5e251e2a0cbde91c85ddced51}\index{parser.Instrucao@{parser.Instrucao}!expressoes@{expressoes}}
+\index{expressoes@{expressoes}!parser.Instrucao@{parser.Instrucao}}
+\doxysubsubsection{\texorpdfstring{expressoes}{expressoes}}
+{\footnotesize\ttfamily \label{classparser_1_1_instrucao_a6072b1f5e251e2a0cbde91c85ddced51} 
+List$<$\mbox{\hyperlink{classparser_1_1_expressao}{Expressao}}$>$ parser.\+Instrucao.\+expressoes = new List$<$\mbox{\hyperlink{classparser_1_1_expressao}{Expressao}}$>$()}
+
+
+
+expressões da instrução. 
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{classparser_1_1_instrucao_a2fed4495aa6dadb13d7ed32f61d93d99}\index{parser.Instrucao@{parser.Instrucao}!flags@{flags}}
+\index{flags@{flags}!parser.Instrucao@{parser.Instrucao}}
+\doxysubsubsection{\texorpdfstring{flags}{flags}}
+{\footnotesize\ttfamily \label{classparser_1_1_instrucao_a2fed4495aa6dadb13d7ed32f61d93d99} 
+List$<$int$>$ parser.\+Instrucao.\+flags\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/\+Maquina\+Virtual/\mbox{\hyperlink{_processamento_instrucoes_8cs}{Processamento\+Instrucoes.\+cs}}\end{DoxyCompactItemize}

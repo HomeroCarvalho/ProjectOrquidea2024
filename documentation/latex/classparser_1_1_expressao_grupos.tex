@@ -1,0 +1,146 @@
+\doxysection{parser.\+Expressao\+Grupos Class Reference}
+\hypertarget{classparser_1_1_expressao_grupos}{}\label{classparser_1_1_expressao_grupos}\index{parser.ExpressaoGrupos@{parser.ExpressaoGrupos}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classparser_1_1_expressao_grupos_1_1_data_operators}{Data\+Operators}}
+\item 
+class \mbox{\hyperlink{classparser_1_1_expressao_grupos_1_1_grupos_entre_parenteses}{Grupos\+Entre\+Parenteses}}
+\begin{DoxyCompactList}\small\item\em agrupa tokens entre parenteses, para um objeto grupo. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classparser_1_1_expressao_grupos_1_1_testes}{Testes}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} $>$ \mbox{\hyperlink{classparser_1_1_expressao_grupos_a63c1ee1ce533d15be950a3f4accb98fb}{Extrai\+Expressoes}} (string codigo, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em extrai expressoes, utilizando a tecnica original de resumir os tokens, retirando tokens entre parenteses, tornando melhor o processamento de expressoes, ja que o codigo resumido não varia muito. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} $>$ \mbox{\hyperlink{classparser_1_1_expressao_grupos_a5a1197389330167d61dee3feb7304d2e}{Extrai\+Expressoes}} (List$<$ string $>$ tokens\+Resumidos, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em extrai expressoes, utilizando a tecnica original de resumir os tokens, retirando tokens entre parenteses, tornando melhor o processamento de expressoes, ja que o codigo resumido não varia muito. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} $>$ \mbox{\hyperlink{classparser_1_1_expressao_grupos_acaaf9744849d35dfb997735ae148c97f}{Extrai\+Multipas\+Expressoes\+Independentes}} (string codigo, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em extrai expressoes, que nao tem nada a ver um com outro. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_expressao_chamada_de_metodo}{Expressao\+Chamada\+De\+Metodo}} \mbox{\hyperlink{classparser_1_1_expressao_grupos_a5d7c6bcf24e14645f3219b40278ac849}{Build\+Calling\+Method}} (\mbox{\hyperlink{classparser_1_1_objeto}{Objeto}} obj\+Currente, List$<$ string $>$ tokens\+Chamada\+De\+Metodo, List$<$ string $>$ tokens\+Resumidos, string nome\+Classe, string nome\+Metodo, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo, bool is\+Static\+Calling)
+\begin{DoxyCompactList}\small\item\em constroi uma expressao chamada de metodo, a partir de tokens da chamada de metodo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classparser_1_1_expressao_grupos_a73d8cc8282bd1b361671dacf912e08ba}{Get\+Nomes\+Operadores\+Binarios\+EUnarios}} (ref List$<$ string $>$ op\+Binary, ref List$<$ string $>$ op\+Unary, ref List$<$ string $>$ op\+Binary\+And\+To\+Unary)
+\begin{DoxyCompactList}\small\item\em extrai dos headers, todos nome de operadores das classes presente no codigo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_expressao_grupos_a5d7c6bcf24e14645f3219b40278ac849}\index{parser.ExpressaoGrupos@{parser.ExpressaoGrupos}!BuildCallingMethod@{BuildCallingMethod}}
+\index{BuildCallingMethod@{BuildCallingMethod}!parser.ExpressaoGrupos@{parser.ExpressaoGrupos}}
+\doxysubsubsection{\texorpdfstring{BuildCallingMethod()}{BuildCallingMethod()}}
+{\footnotesize\ttfamily \label{classparser_1_1_expressao_grupos_a5d7c6bcf24e14645f3219b40278ac849} 
+\mbox{\hyperlink{classparser_1_1_expressao_chamada_de_metodo}{Expressao\+Chamada\+De\+Metodo}} parser.\+Expressao\+Grupos.\+Build\+Calling\+Method (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_objeto}{Objeto}}}]{obj\+Currente}{, }\item[{List$<$ string $>$}]{tokens\+Chamada\+De\+Metodo}{, }\item[{List$<$ string $>$}]{tokens\+Resumidos}{, }\item[{string}]{nome\+Classe}{, }\item[{string}]{nome\+Metodo}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{, }\item[{bool}]{is\+Static\+Calling}{}\end{DoxyParamCaption})}
+
+
+
+constroi uma expressao chamada de metodo, a partir de tokens da chamada de metodo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj\+Currente} & objeto que invoca o metodo.\\
+\hline
+{\em tokens\+Chamada\+De\+Metodo} & tokens da chamada de metodo.\\
+\hline
+{\em tokens\+Resumidos} & tokens resumidos, sem grupos de tokens entre parenteses.\\
+\hline
+{\em nome\+Classe} & nome da classe.\\
+\hline
+{\em nome\+Metodo} & nome do metodo.\\
+\hline
+{\em escopo} & contexto onde os tokens da chamada de metodo está.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_expressao_grupos_a5a1197389330167d61dee3feb7304d2e}\index{parser.ExpressaoGrupos@{parser.ExpressaoGrupos}!ExtraiExpressoes@{ExtraiExpressoes}}
+\index{ExtraiExpressoes@{ExtraiExpressoes}!parser.ExpressaoGrupos@{parser.ExpressaoGrupos}}
+\doxysubsubsection{\texorpdfstring{ExtraiExpressoes()}{ExtraiExpressoes()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_expressao_grupos_a5a1197389330167d61dee3feb7304d2e} 
+List$<$ \mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} $>$ parser.\+Expressao\+Grupos.\+Extrai\+Expressoes (\begin{DoxyParamCaption}\item[{List$<$ string $>$}]{tokens\+Resumidos}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})}
+
+
+
+extrai expressoes, utilizando a tecnica original de resumir os tokens, retirando tokens entre parenteses, tornando melhor o processamento de expressoes, ja que o codigo resumido não varia muito. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tokens\+Resumidos} & tokens de formato reduzido, sem tokens entre parenteses.\\
+\hline
+{\em escopo} & contexto em que a expressao esta.\\
+\hline
+\end{DoxyParams}
+
+
+\begin{DoxyReturn}{Returns}
+retorna uma lista de expressoes formadas a partir do codigo.
+\end{DoxyReturn}
+FAZ o processamento de OBJETOS ESTATICOS, OBJETOS NAO ESTATICOS, OBJETO DE CLASSE ACTUAL. se não há operador dot, ja registra o objeto como expressao objeto, na lista de expressoes de retorno.
+
+REGISTRO de objeto, SEM operador dot, seguinte\+: ex.\+: a=1;\Hypertarget{classparser_1_1_expressao_grupos_a63c1ee1ce533d15be950a3f4accb98fb}\index{parser.ExpressaoGrupos@{parser.ExpressaoGrupos}!ExtraiExpressoes@{ExtraiExpressoes}}
+\index{ExtraiExpressoes@{ExtraiExpressoes}!parser.ExpressaoGrupos@{parser.ExpressaoGrupos}}
+\doxysubsubsection{\texorpdfstring{ExtraiExpressoes()}{ExtraiExpressoes()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_expressao_grupos_a63c1ee1ce533d15be950a3f4accb98fb} 
+List$<$ \mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} $>$ parser.\+Expressao\+Grupos.\+Extrai\+Expressoes (\begin{DoxyParamCaption}\item[{string}]{codigo}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})}
+
+
+
+extrai expressoes, utilizando a tecnica original de resumir os tokens, retirando tokens entre parenteses, tornando melhor o processamento de expressoes, ja que o codigo resumido não varia muito. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em codigo} & codigo contendo a expressao.\\
+\hline
+{\em escopo} & contexto em que a expressao esta.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna uma lista de expressoes formadas a partir do codigo.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_expressao_grupos_acaaf9744849d35dfb997735ae148c97f}\index{parser.ExpressaoGrupos@{parser.ExpressaoGrupos}!ExtraiMultipasExpressoesIndependentes@{ExtraiMultipasExpressoesIndependentes}}
+\index{ExtraiMultipasExpressoesIndependentes@{ExtraiMultipasExpressoesIndependentes}!parser.ExpressaoGrupos@{parser.ExpressaoGrupos}}
+\doxysubsubsection{\texorpdfstring{ExtraiMultipasExpressoesIndependentes()}{ExtraiMultipasExpressoesIndependentes()}}
+{\footnotesize\ttfamily \label{classparser_1_1_expressao_grupos_acaaf9744849d35dfb997735ae148c97f} 
+List$<$ \mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} $>$ parser.\+Expressao\+Grupos.\+Extrai\+Multipas\+Expressoes\+Independentes (\begin{DoxyParamCaption}\item[{string}]{codigo}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})}
+
+
+
+extrai expressoes, que nao tem nada a ver um com outro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em codigo} & codigo com as expressoes.\\
+\hline
+{\em escopo} & contexto onde o codigo está,\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna uma lista de expressoes ou null se resultar em erros.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_expressao_grupos_a73d8cc8282bd1b361671dacf912e08ba}\index{parser.ExpressaoGrupos@{parser.ExpressaoGrupos}!GetNomesOperadoresBinariosEUnarios@{GetNomesOperadoresBinariosEUnarios}}
+\index{GetNomesOperadoresBinariosEUnarios@{GetNomesOperadoresBinariosEUnarios}!parser.ExpressaoGrupos@{parser.ExpressaoGrupos}}
+\doxysubsubsection{\texorpdfstring{GetNomesOperadoresBinariosEUnarios()}{GetNomesOperadoresBinariosEUnarios()}}
+{\footnotesize\ttfamily \label{classparser_1_1_expressao_grupos_a73d8cc8282bd1b361671dacf912e08ba} 
+static void parser.\+Expressao\+Grupos.\+Get\+Nomes\+Operadores\+Binarios\+EUnarios (\begin{DoxyParamCaption}\item[{ref List$<$ string $>$}]{op\+Binary}{, }\item[{ref List$<$ string $>$}]{op\+Unary}{, }\item[{ref List$<$ string $>$}]{op\+Binary\+And\+To\+Unary}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+extrai dos headers, todos nome de operadores das classes presente no codigo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em op\+Binary} & lista de operadores binarios.\\
+\hline
+{\em op\+Unary} & lista de operadores unarios.\\
+\hline
+{\em op\+Binary\+And\+To\+Unary} & lista de operadores que sao unarios e binarios.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/componentes\+De\+Interpretadores\+ECompiladores/\+PROGRAMACAO ORIENTADA A OBJETOS/\mbox{\hyperlink{_expressao_grupos_8cs}{Expressao\+Grupos.\+cs}}\end{DoxyCompactItemize}

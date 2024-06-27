@@ -1,0 +1,185 @@
+\doxysection{parser.\+Header\+Class Class Reference}
+\hypertarget{classparser_1_1_header_class}{}\label{classparser_1_1_header_class}\index{parser.HeaderClass@{parser.HeaderClass}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparser_1_1_header_class_a12abeac0d7a3048c7ba930ac35386318}{Header\+Class}} (List$<$ string $>$ alltokokens, string \mbox{\hyperlink{classparser_1_1_header_class_a0e643025a92f5318647a51481143445f}{nome\+Classe}}, int offset)
+\begin{DoxyCompactList}\small\item\em construtor, inicializa os tokens da classe, construindo os tokens classificados pelo seu tipo. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_header_class_a50ac6fb5f8bee3fe8a599f386679b1b2}{Extract\+AClass}} ()
+\begin{DoxyCompactList}\small\item\em extrai propriedades, metodos, operadores, da classe currente. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{classparser_1_1_header_class_a8a6f1fcf42c3c220fe9a66838a8daf57}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classparser_1_1_header_class_ab3824faf5ce1f6b8113c3717bd58b805}{Build\+Parametros\+Wrapper\+Object}} (ref int index\+TOKEN, List$<$ string $>$ tokens\+Property, ref \mbox{\hyperlink{classparser_1_1_header_property}{Header\+Property}} property, bool is\+Ready\+Only)
+\begin{DoxyCompactList}\small\item\em constroi parametros \doxylink{classparser_1_1_wrapper_data}{Wrapper\+Data} Object, com mais de 2 ids de definicao. caso encontre, atualiza automaticamente o indice de tokens. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classparser_1_1_header_class_a1ec1ff2d9efa5dc606d1662a9098a958}{Is\+ID}} (string exprss\+ID)
+\begin{DoxyCompactList}\small\item\em verifica se a expressao nao eh um ID. um ID não contem caracteres como parenteses, colchetes, virgula, ponto-\/e-\/virgula, nomes de operadores. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classparser_1_1_header_class_a0e643025a92f5318647a51481143445f}{nome\+Classe}}
+\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_header_class_a0045d5c3b11a293e1bb5166231be8375}{heranca}} = new List$<$string$>$()
+\begin{DoxyCompactList}\small\item\em nome e tokens de classes herdadas. \end{DoxyCompactList}\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_header_class_ae45ecfa32dd2de42838884ee622e071a}{deseranca}} = new List$<$string$>$()
+\begin{DoxyCompactList}\small\item\em nome e tokens de classes deserdadas. \end{DoxyCompactList}\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_header_class_aad7f8b0855987dd143fa334d0ec93cc1}{tokens\+Da\+Classe}} = new List$<$string$>$()
+\begin{DoxyCompactList}\small\item\em tokens do corpo da classe. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_header_class_a660425d94e544ffbee0eb32266a34233}{has\+Errors}} = false
+\begin{DoxyCompactList}\small\item\em se true, hove erros na compilacao header. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_header_property}{Header\+Property}} $>$ \mbox{\hyperlink{classparser_1_1_header_class_a1f3363f9cf4d0f5003dbb447618c385f}{properties}} = new List$<$\mbox{\hyperlink{classparser_1_1_header_property}{Header\+Property}}$>$()
+\begin{DoxyCompactList}\small\item\em lista de propriedades da classe. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_header_method}{Header\+Method}} $>$ \mbox{\hyperlink{classparser_1_1_header_class_a4484572885649cc76271a6d495115f3b}{methods}} = new List$<$\mbox{\hyperlink{classparser_1_1_header_method}{Header\+Method}}$>$()
+\begin{DoxyCompactList}\small\item\em lista de metodos da classe. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_header_operator}{Header\+Operator}} $>$ \mbox{\hyperlink{classparser_1_1_header_class_a844f5f1c91ea7fca3711f03e8913b822}{operators}} = new List$<$\mbox{\hyperlink{classparser_1_1_header_operator}{Header\+Operator}}$>$()
+\begin{DoxyCompactList}\small\item\em lista de operadores da classe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classparser_1_1_header_class_a12abeac0d7a3048c7ba930ac35386318}\index{parser.HeaderClass@{parser.HeaderClass}!HeaderClass@{HeaderClass}}
+\index{HeaderClass@{HeaderClass}!parser.HeaderClass@{parser.HeaderClass}}
+\doxysubsubsection{\texorpdfstring{HeaderClass()}{HeaderClass()}}
+{\footnotesize\ttfamily \label{classparser_1_1_header_class_a12abeac0d7a3048c7ba930ac35386318} 
+parser.\+Header\+Class.\+Header\+Class (\begin{DoxyParamCaption}\item[{List$<$ string $>$}]{alltokokens}{, }\item[{string}]{nome\+Classe}{, }\item[{int}]{offset}{}\end{DoxyParamCaption})}
+
+
+
+construtor, inicializa os tokens da classe, construindo os tokens classificados pelo seu tipo. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_header_class_ab3824faf5ce1f6b8113c3717bd58b805}\index{parser.HeaderClass@{parser.HeaderClass}!BuildParametrosWrapperObject@{BuildParametrosWrapperObject}}
+\index{BuildParametrosWrapperObject@{BuildParametrosWrapperObject}!parser.HeaderClass@{parser.HeaderClass}}
+\doxysubsubsection{\texorpdfstring{BuildParametrosWrapperObject()}{BuildParametrosWrapperObject()}}
+{\footnotesize\ttfamily \label{classparser_1_1_header_class_ab3824faf5ce1f6b8113c3717bd58b805} 
+static bool parser.\+Header\+Class.\+Build\+Parametros\+Wrapper\+Object (\begin{DoxyParamCaption}\item[{ref int}]{index\+TOKEN}{, }\item[{List$<$ string $>$}]{tokens\+Property}{, }\item[{ref \mbox{\hyperlink{classparser_1_1_header_property}{Header\+Property}}}]{property}{, }\item[{bool}]{is\+Ready\+Only}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+constroi parametros \doxylink{classparser_1_1_wrapper_data}{Wrapper\+Data} Object, com mais de 2 ids de definicao. caso encontre, atualiza automaticamente o indice de tokens. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index\+TOKEN} & indice currente da malha de tokens.\\
+\hline
+{\em tokens\+Property} & tokens da propriedade, delimitados.\\
+\hline
+{\em property} & parametro/propriedade wrapper object, retornado.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}true\mbox{]} se localizaou um wrapper object, \mbox{[}false\mbox{]} se nao.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_header_class_a50ac6fb5f8bee3fe8a599f386679b1b2}\index{parser.HeaderClass@{parser.HeaderClass}!ExtractAClass@{ExtractAClass}}
+\index{ExtractAClass@{ExtractAClass}!parser.HeaderClass@{parser.HeaderClass}}
+\doxysubsubsection{\texorpdfstring{ExtractAClass()}{ExtractAClass()}}
+{\footnotesize\ttfamily \label{classparser_1_1_header_class_a50ac6fb5f8bee3fe8a599f386679b1b2} 
+bool parser.\+Header\+Class.\+Extract\+AClass (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+extrai propriedades, metodos, operadores, da classe currente. 
+
+\Hypertarget{classparser_1_1_header_class_a1ec1ff2d9efa5dc606d1662a9098a958}\index{parser.HeaderClass@{parser.HeaderClass}!IsID@{IsID}}
+\index{IsID@{IsID}!parser.HeaderClass@{parser.HeaderClass}}
+\doxysubsubsection{\texorpdfstring{IsID()}{IsID()}}
+{\footnotesize\ttfamily \label{classparser_1_1_header_class_a1ec1ff2d9efa5dc606d1662a9098a958} 
+static bool parser.\+Header\+Class.\+Is\+ID (\begin{DoxyParamCaption}\item[{string}]{exprss\+ID}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+verifica se a expressao nao eh um ID. um ID não contem caracteres como parenteses, colchetes, virgula, ponto-\/e-\/virgula, nomes de operadores. 
+
+\Hypertarget{classparser_1_1_header_class_a8a6f1fcf42c3c220fe9a66838a8daf57}\index{parser.HeaderClass@{parser.HeaderClass}!ToString@{ToString}}
+\index{ToString@{ToString}!parser.HeaderClass@{parser.HeaderClass}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily \label{classparser_1_1_header_class_a8a6f1fcf42c3c220fe9a66838a8daf57} 
+override string parser.\+Header\+Class.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classparser_1_1_header_class_ae45ecfa32dd2de42838884ee622e071a}\index{parser.HeaderClass@{parser.HeaderClass}!deseranca@{deseranca}}
+\index{deseranca@{deseranca}!parser.HeaderClass@{parser.HeaderClass}}
+\doxysubsubsection{\texorpdfstring{deseranca}{deseranca}}
+{\footnotesize\ttfamily \label{classparser_1_1_header_class_ae45ecfa32dd2de42838884ee622e071a} 
+List$<$string$>$ parser.\+Header\+Class.\+deseranca = new List$<$string$>$()}
+
+
+
+nome e tokens de classes deserdadas. 
+
+\Hypertarget{classparser_1_1_header_class_a660425d94e544ffbee0eb32266a34233}\index{parser.HeaderClass@{parser.HeaderClass}!hasErrors@{hasErrors}}
+\index{hasErrors@{hasErrors}!parser.HeaderClass@{parser.HeaderClass}}
+\doxysubsubsection{\texorpdfstring{hasErrors}{hasErrors}}
+{\footnotesize\ttfamily \label{classparser_1_1_header_class_a660425d94e544ffbee0eb32266a34233} 
+bool parser.\+Header\+Class.\+has\+Errors = false}
+
+
+
+se true, hove erros na compilacao header. 
+
+\Hypertarget{classparser_1_1_header_class_a0045d5c3b11a293e1bb5166231be8375}\index{parser.HeaderClass@{parser.HeaderClass}!heranca@{heranca}}
+\index{heranca@{heranca}!parser.HeaderClass@{parser.HeaderClass}}
+\doxysubsubsection{\texorpdfstring{heranca}{heranca}}
+{\footnotesize\ttfamily \label{classparser_1_1_header_class_a0045d5c3b11a293e1bb5166231be8375} 
+List$<$string$>$ parser.\+Header\+Class.\+heranca = new List$<$string$>$()}
+
+
+
+nome e tokens de classes herdadas. 
+
+\Hypertarget{classparser_1_1_header_class_a4484572885649cc76271a6d495115f3b}\index{parser.HeaderClass@{parser.HeaderClass}!methods@{methods}}
+\index{methods@{methods}!parser.HeaderClass@{parser.HeaderClass}}
+\doxysubsubsection{\texorpdfstring{methods}{methods}}
+{\footnotesize\ttfamily \label{classparser_1_1_header_class_a4484572885649cc76271a6d495115f3b} 
+List$<$\mbox{\hyperlink{classparser_1_1_header_method}{Header\+Method}}$>$ parser.\+Header\+Class.\+methods = new List$<$\mbox{\hyperlink{classparser_1_1_header_method}{Header\+Method}}$>$()}
+
+
+
+lista de metodos da classe. 
+
+\Hypertarget{classparser_1_1_header_class_a0e643025a92f5318647a51481143445f}\index{parser.HeaderClass@{parser.HeaderClass}!nomeClasse@{nomeClasse}}
+\index{nomeClasse@{nomeClasse}!parser.HeaderClass@{parser.HeaderClass}}
+\doxysubsubsection{\texorpdfstring{nomeClasse}{nomeClasse}}
+{\footnotesize\ttfamily \label{classparser_1_1_header_class_a0e643025a92f5318647a51481143445f} 
+string parser.\+Header\+Class.\+nome\+Classe}
+
+\Hypertarget{classparser_1_1_header_class_a844f5f1c91ea7fca3711f03e8913b822}\index{parser.HeaderClass@{parser.HeaderClass}!operators@{operators}}
+\index{operators@{operators}!parser.HeaderClass@{parser.HeaderClass}}
+\doxysubsubsection{\texorpdfstring{operators}{operators}}
+{\footnotesize\ttfamily \label{classparser_1_1_header_class_a844f5f1c91ea7fca3711f03e8913b822} 
+List$<$\mbox{\hyperlink{classparser_1_1_header_operator}{Header\+Operator}}$>$ parser.\+Header\+Class.\+operators = new List$<$\mbox{\hyperlink{classparser_1_1_header_operator}{Header\+Operator}}$>$()}
+
+
+
+lista de operadores da classe. 
+
+\Hypertarget{classparser_1_1_header_class_a1f3363f9cf4d0f5003dbb447618c385f}\index{parser.HeaderClass@{parser.HeaderClass}!properties@{properties}}
+\index{properties@{properties}!parser.HeaderClass@{parser.HeaderClass}}
+\doxysubsubsection{\texorpdfstring{properties}{properties}}
+{\footnotesize\ttfamily \label{classparser_1_1_header_class_a1f3363f9cf4d0f5003dbb447618c385f} 
+List$<$\mbox{\hyperlink{classparser_1_1_header_property}{Header\+Property}}$>$ parser.\+Header\+Class.\+properties = new List$<$\mbox{\hyperlink{classparser_1_1_header_property}{Header\+Property}}$>$()}
+
+
+
+lista de propriedades da classe. 
+
+\Hypertarget{classparser_1_1_header_class_aad7f8b0855987dd143fa334d0ec93cc1}\index{parser.HeaderClass@{parser.HeaderClass}!tokensDaClasse@{tokensDaClasse}}
+\index{tokensDaClasse@{tokensDaClasse}!parser.HeaderClass@{parser.HeaderClass}}
+\doxysubsubsection{\texorpdfstring{tokensDaClasse}{tokensDaClasse}}
+{\footnotesize\ttfamily \label{classparser_1_1_header_class_aad7f8b0855987dd143fa334d0ec93cc1} 
+List$<$string$>$ parser.\+Header\+Class.\+tokens\+Da\+Classe = new List$<$string$>$()}
+
+
+
+tokens do corpo da classe. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/componentes\+De\+Interpretadores\+ECompiladores/\+PROGRAMACAO ORIENTADA A OBJETOS/\mbox{\hyperlink{_file_header_8cs}{File\+Header.\+cs}}\end{DoxyCompactItemize}

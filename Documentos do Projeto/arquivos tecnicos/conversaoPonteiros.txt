@@ -1,0 +1,27 @@
+// CS0212b.cs  
+// compile with: /unsafe /target:library  
+using System;  
+  
+public class MyClass  
+{  
+   unsafe public void M()  
+   {  
+      // Null-terminated ASCII characters in an sbyte array
+      sbyte[] sbArr1 = new sbyte[] { 0x41, 0x42, 0x43, 0x00 };  
+      sbyte* pAsciiUpper = &sbArr1[0];   // CS0212  
+      // To resolve this error, delete the previous line and
+      // uncomment the following code:  
+      // fixed (sbyte* pAsciiUpper = sbArr1)  
+      // {  
+      //    String szAsciiUpper = new String(pAsciiUpper);  
+      // }  
+   }  
+}
+
+
+Color *colors = LoadImageColors(image);
+int index = (y * image.width) + x;
+Color pixel = colors[index];
+
+
+(10,10) ---> (0,255,0)

@@ -1,0 +1,165 @@
+\doxysection{parser.\+Expressao\+Por\+Classificacao Class Reference}
+\hypertarget{classparser_1_1_expressao_por_classificacao}{}\label{classparser_1_1_expressao_por_classificacao}\index{parser.ExpressaoPorClassificacao@{parser.ExpressaoPorClassificacao}}
+
+
+motor de processamento de expressoes.  
+
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classparser_1_1_expressao_por_classificacao_1_1_data_operators}{Data\+Operators}}
+\begin{DoxyCompactList}\small\item\em classe para processamento de operadores em uma expressao. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classparser_1_1_expressao_por_classificacao_1_1_testes}{Testes}}
+\item 
+class \mbox{\hyperlink{classparser_1_1_expressao_por_classificacao_1_1_testes2}{Testes2}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} $>$ \mbox{\hyperlink{classparser_1_1_expressao_por_classificacao_a2aa813f4cbfe4edd0a7160cb633f71c8}{Extrai\+Expressoes}} (List$<$ string $>$ tokens, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em faz o processamento de expressoes, construindo sub-\/expressoes da expressao representado pelos tokens parametros. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} $>$ \mbox{\hyperlink{classparser_1_1_expressao_por_classificacao_a306687c8676501f9f480984d28812803}{Extrai\+Expressoes}} (string code, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em faz o processamento de expressoes, construindo sub-\/expressoes da expressao representado pelos tokens parametros. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} $>$ \mbox{\hyperlink{classparser_1_1_expressao_por_classificacao_abb1418bde22cd8678bd6757a0107dc78}{Extrai\+Multipas\+Expressoes\+Independentes}} (string codigo, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em extrai expressoes, que nao tem nada a ver um com outro. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classparser_1_1_expressao_por_classificacao_a3c22858611b551f7be5d4a2e4e272bd7}{Get\+Nomes\+Operadores\+Binarios\+EUnarios}} (ref List$<$ string $>$ op\+Binary, ref List$<$ string $>$ op\+Unary, ref List$<$ string $>$ op\+Binary\+And\+To\+Unary)
+\begin{DoxyCompactList}\small\item\em extrai dos headers, todos nome de operadores das classes presente no codigo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classparser_1_1_expressao_por_classificacao_ae4e72bb9e140558c50e97b6a8f35ed8a}{QUANTIDADE\+\_\+\+EXPRESSOES\+\_\+\+INDEPPENDENTES}} = 0
+\begin{DoxyCompactList}\small\item\em contem a quantidade de expressoes independentes foramm processado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classparser_1_1_classificador_1_1_tabela_hash}{Classificador.\+Tabela\+Hash}} \mbox{\hyperlink{classparser_1_1_expressao_por_classificacao_aa3f2c97cc65952c43557437b4af7b3f8}{TABLE}}
+\begin{DoxyCompactList}\small\item\em tabela hash de classificao de tokens. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classparser_1_1_expressao_por_classificacao_a900f080008945c2e53d38add2df7f4b6}{count\+Objetos\+Elementos\+De\+Wrapper\+Object}} = 0
+\begin{DoxyCompactList}\small\item\em contador de ids para objetos-\/elemento de wrapper object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+motor de processamento de expressoes. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_expressao_por_classificacao_a2aa813f4cbfe4edd0a7160cb633f71c8}\index{parser.ExpressaoPorClassificacao@{parser.ExpressaoPorClassificacao}!ExtraiExpressoes@{ExtraiExpressoes}}
+\index{ExtraiExpressoes@{ExtraiExpressoes}!parser.ExpressaoPorClassificacao@{parser.ExpressaoPorClassificacao}}
+\doxysubsubsection{\texorpdfstring{ExtraiExpressoes()}{ExtraiExpressoes()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_expressao_por_classificacao_a2aa813f4cbfe4edd0a7160cb633f71c8} 
+List$<$ \mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} $>$ parser.\+Expressao\+Por\+Classificacao.\+Extrai\+Expressoes (\begin{DoxyParamCaption}\item[{List$<$ string $>$}]{tokens}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})}
+
+
+
+faz o processamento de expressoes, construindo sub-\/expressoes da expressao representado pelos tokens parametros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tokens} & lista de tokens da expressao.\\
+\hline
+{\em escopo} & contexto onde a expressao está.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna uma lista de sub-\/expressoes, ou null se houve falha no processamento.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_expressao_por_classificacao_a306687c8676501f9f480984d28812803}\index{parser.ExpressaoPorClassificacao@{parser.ExpressaoPorClassificacao}!ExtraiExpressoes@{ExtraiExpressoes}}
+\index{ExtraiExpressoes@{ExtraiExpressoes}!parser.ExpressaoPorClassificacao@{parser.ExpressaoPorClassificacao}}
+\doxysubsubsection{\texorpdfstring{ExtraiExpressoes()}{ExtraiExpressoes()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_expressao_por_classificacao_a306687c8676501f9f480984d28812803} 
+List$<$ \mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} $>$ parser.\+Expressao\+Por\+Classificacao.\+Extrai\+Expressoes (\begin{DoxyParamCaption}\item[{string}]{code}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})}
+
+
+
+faz o processamento de expressoes, construindo sub-\/expressoes da expressao representado pelos tokens parametros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & texto contendo os tokens da expressao.\\
+\hline
+{\em escopo} & contexto onde a expressao está.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna uma lista de sub-\/expressoes, ou null se houve falha no processamento.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_expressao_por_classificacao_abb1418bde22cd8678bd6757a0107dc78}\index{parser.ExpressaoPorClassificacao@{parser.ExpressaoPorClassificacao}!ExtraiMultipasExpressoesIndependentes@{ExtraiMultipasExpressoesIndependentes}}
+\index{ExtraiMultipasExpressoesIndependentes@{ExtraiMultipasExpressoesIndependentes}!parser.ExpressaoPorClassificacao@{parser.ExpressaoPorClassificacao}}
+\doxysubsubsection{\texorpdfstring{ExtraiMultipasExpressoesIndependentes()}{ExtraiMultipasExpressoesIndependentes()}}
+{\footnotesize\ttfamily \label{classparser_1_1_expressao_por_classificacao_abb1418bde22cd8678bd6757a0107dc78} 
+List$<$ \mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} $>$ parser.\+Expressao\+Por\+Classificacao.\+Extrai\+Multipas\+Expressoes\+Independentes (\begin{DoxyParamCaption}\item[{string}]{codigo}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})}
+
+
+
+extrai expressoes, que nao tem nada a ver um com outro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em codigo} & codigo com as expressoes.\\
+\hline
+{\em escopo} & contexto onde o codigo está,\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna uma lista de expressoes ou null se resultar em erros.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_expressao_por_classificacao_a3c22858611b551f7be5d4a2e4e272bd7}\index{parser.ExpressaoPorClassificacao@{parser.ExpressaoPorClassificacao}!GetNomesOperadoresBinariosEUnarios@{GetNomesOperadoresBinariosEUnarios}}
+\index{GetNomesOperadoresBinariosEUnarios@{GetNomesOperadoresBinariosEUnarios}!parser.ExpressaoPorClassificacao@{parser.ExpressaoPorClassificacao}}
+\doxysubsubsection{\texorpdfstring{GetNomesOperadoresBinariosEUnarios()}{GetNomesOperadoresBinariosEUnarios()}}
+{\footnotesize\ttfamily \label{classparser_1_1_expressao_por_classificacao_a3c22858611b551f7be5d4a2e4e272bd7} 
+static void parser.\+Expressao\+Por\+Classificacao.\+Get\+Nomes\+Operadores\+Binarios\+EUnarios (\begin{DoxyParamCaption}\item[{ref List$<$ string $>$}]{op\+Binary}{, }\item[{ref List$<$ string $>$}]{op\+Unary}{, }\item[{ref List$<$ string $>$}]{op\+Binary\+And\+To\+Unary}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+extrai dos headers, todos nome de operadores das classes presente no codigo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em op\+Binary} & lista de operadores binarios.\\
+\hline
+{\em op\+Unary} & lista de operadores unarios.\\
+\hline
+{\em op\+Binary\+And\+To\+Unary} & lista de operadores que sao unarios e binarios.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classparser_1_1_expressao_por_classificacao_a900f080008945c2e53d38add2df7f4b6}\index{parser.ExpressaoPorClassificacao@{parser.ExpressaoPorClassificacao}!countObjetosElementosDeWrapperObject@{countObjetosElementosDeWrapperObject}}
+\index{countObjetosElementosDeWrapperObject@{countObjetosElementosDeWrapperObject}!parser.ExpressaoPorClassificacao@{parser.ExpressaoPorClassificacao}}
+\doxysubsubsection{\texorpdfstring{countObjetosElementosDeWrapperObject}{countObjetosElementosDeWrapperObject}}
+{\footnotesize\ttfamily \label{classparser_1_1_expressao_por_classificacao_a900f080008945c2e53d38add2df7f4b6} 
+int parser.\+Expressao\+Por\+Classificacao.\+count\+Objetos\+Elementos\+De\+Wrapper\+Object = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+contador de ids para objetos-\/elemento de wrapper object. 
+
+\Hypertarget{classparser_1_1_expressao_por_classificacao_ae4e72bb9e140558c50e97b6a8f35ed8a}\index{parser.ExpressaoPorClassificacao@{parser.ExpressaoPorClassificacao}!QUANTIDADE\_EXPRESSOES\_INDEPPENDENTES@{QUANTIDADE\_EXPRESSOES\_INDEPPENDENTES}}
+\index{QUANTIDADE\_EXPRESSOES\_INDEPPENDENTES@{QUANTIDADE\_EXPRESSOES\_INDEPPENDENTES}!parser.ExpressaoPorClassificacao@{parser.ExpressaoPorClassificacao}}
+\doxysubsubsection{\texorpdfstring{QUANTIDADE\_EXPRESSOES\_INDEPPENDENTES}{QUANTIDADE\_EXPRESSOES\_INDEPPENDENTES}}
+{\footnotesize\ttfamily \label{classparser_1_1_expressao_por_classificacao_ae4e72bb9e140558c50e97b6a8f35ed8a} 
+int parser.\+Expressao\+Por\+Classificacao.\+QUANTIDADE\+\_\+\+EXPRESSOES\+\_\+\+INDEPPENDENTES = 0}
+
+
+
+contem a quantidade de expressoes independentes foramm processado. 
+
+\Hypertarget{classparser_1_1_expressao_por_classificacao_aa3f2c97cc65952c43557437b4af7b3f8}\index{parser.ExpressaoPorClassificacao@{parser.ExpressaoPorClassificacao}!TABLE@{TABLE}}
+\index{TABLE@{TABLE}!parser.ExpressaoPorClassificacao@{parser.ExpressaoPorClassificacao}}
+\doxysubsubsection{\texorpdfstring{TABLE}{TABLE}}
+{\footnotesize\ttfamily \label{classparser_1_1_expressao_por_classificacao_aa3f2c97cc65952c43557437b4af7b3f8} 
+\mbox{\hyperlink{classparser_1_1_classificador_1_1_tabela_hash}{Classificador.\+Tabela\+Hash}} parser.\+Expressao\+Por\+Classificacao.\+TABLE\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+tabela hash de classificao de tokens. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/componentes\+De\+Interpretadores\+ECompiladores/\+PROGRAMACAO ORIENTADA A OBJETOS/\mbox{\hyperlink{_expressao_por_classificacao_8cs}{Expressao\+Por\+Classificacao.\+cs}}\end{DoxyCompactItemize}

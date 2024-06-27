@@ -1,0 +1,129 @@
+\doxysection{parser.\+Posicao\+ECodigo Class Reference}
+\hypertarget{classparser_1_1_posicao_e_codigo}{}\label{classparser_1_1_posicao_e_codigo}\index{parser.PosicaoECodigo@{parser.PosicaoECodigo}}
+
+
+\doxylink{classparser_1_1_classe}{Classe} que mapeia as posições de cada instrução, dentro de uma lista de instruções.  
+
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classparser_1_1_posicao_e_codigo_1_1token_e_posicao}{token\+EPosicao}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparser_1_1_posicao_e_codigo_ab0978e468c1b4cb68a9f5b7c6801d115}{Posicao\+ECodigo}} (List$<$ string $>$ tokens\+Localizadores)
+\begin{DoxyCompactList}\small\item\em construtor.\+obtem a posição de um grupo de tokens, ante um trecho de codigo. tokens\+Localizadores\+: lista dos tokens que se quer localizar. começa na linha=1, coluna=1, não é baseado na contagem a partir do 0, mas a partir de 1. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{classparser_1_1_posicao_e_codigo_aff699b01b892437ed77191ceb553719e}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classparser_1_1_posicao_e_codigo_a16a74982a0c888273d31fedf5315863f}{Init\+Calculo\+Posicoes}} ()
+\item 
+static void \mbox{\hyperlink{classparser_1_1_posicao_e_codigo_a08f6970d3eef54f1aa4e4ac6380407d2}{Add\+Line\+Of\+Code}} (string line)
+\begin{DoxyCompactList}\small\item\em processa uma linha de codigo, calculando a posição (linha, coluna) de cada token. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classparser_1_1_posicao_e_codigo_a09d1a2a694d18bc587b3a25d40b49a29}{line\+Current\+Processing}} = 0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classparser_1_1_posicao_e_codigo_a44648271f5eea4104f7cc0d5b3709eaf}{coluna}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{classparser_1_1_posicao_e_codigo_a9d95ed7283f22b7a4a1e261094a7bdac}{linha}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{classparser_1_1_posicao_e_codigo_afd7aead5be3a35525ffc114d7417753c}{trecho\+Codigo}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{classparser_1_1_posicao_e_codigo_a5804bc80c6c0e08cf4e1f15ffbf822b9}{index\+Para\+Ordenacao}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{classparser_1_1_classe}{Classe} que mapeia as posições de cada instrução, dentro de uma lista de instruções. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classparser_1_1_posicao_e_codigo_ab0978e468c1b4cb68a9f5b7c6801d115}\index{parser.PosicaoECodigo@{parser.PosicaoECodigo}!PosicaoECodigo@{PosicaoECodigo}}
+\index{PosicaoECodigo@{PosicaoECodigo}!parser.PosicaoECodigo@{parser.PosicaoECodigo}}
+\doxysubsubsection{\texorpdfstring{PosicaoECodigo()}{PosicaoECodigo()}}
+{\footnotesize\ttfamily \label{classparser_1_1_posicao_e_codigo_ab0978e468c1b4cb68a9f5b7c6801d115} 
+parser.\+Posicao\+ECodigo.\+Posicao\+ECodigo (\begin{DoxyParamCaption}\item[{List$<$ string $>$}]{tokens\+Localizadores}{}\end{DoxyParamCaption})}
+
+
+
+construtor.\+obtem a posição de um grupo de tokens, ante um trecho de codigo. tokens\+Localizadores\+: lista dos tokens que se quer localizar. começa na linha=1, coluna=1, não é baseado na contagem a partir do 0, mas a partir de 1. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_posicao_e_codigo_a08f6970d3eef54f1aa4e4ac6380407d2}\index{parser.PosicaoECodigo@{parser.PosicaoECodigo}!AddLineOfCode@{AddLineOfCode}}
+\index{AddLineOfCode@{AddLineOfCode}!parser.PosicaoECodigo@{parser.PosicaoECodigo}}
+\doxysubsubsection{\texorpdfstring{AddLineOfCode()}{AddLineOfCode()}}
+{\footnotesize\ttfamily \label{classparser_1_1_posicao_e_codigo_a08f6970d3eef54f1aa4e4ac6380407d2} 
+static void parser.\+Posicao\+ECodigo.\+Add\+Line\+Of\+Code (\begin{DoxyParamCaption}\item[{string}]{line}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+processa uma linha de codigo, calculando a posição (linha, coluna) de cada token. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & uma linha de um arquivo texto, contendo tokens da linguagem orquidea.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_posicao_e_codigo_a16a74982a0c888273d31fedf5315863f}\index{parser.PosicaoECodigo@{parser.PosicaoECodigo}!InitCalculoPosicoes@{InitCalculoPosicoes}}
+\index{InitCalculoPosicoes@{InitCalculoPosicoes}!parser.PosicaoECodigo@{parser.PosicaoECodigo}}
+\doxysubsubsection{\texorpdfstring{InitCalculoPosicoes()}{InitCalculoPosicoes()}}
+{\footnotesize\ttfamily \label{classparser_1_1_posicao_e_codigo_a16a74982a0c888273d31fedf5315863f} 
+static void parser.\+Posicao\+ECodigo.\+Init\+Calculo\+Posicoes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_posicao_e_codigo_aff699b01b892437ed77191ceb553719e}\index{parser.PosicaoECodigo@{parser.PosicaoECodigo}!ToString@{ToString}}
+\index{ToString@{ToString}!parser.PosicaoECodigo@{parser.PosicaoECodigo}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily \label{classparser_1_1_posicao_e_codigo_aff699b01b892437ed77191ceb553719e} 
+override string parser.\+Posicao\+ECodigo.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classparser_1_1_posicao_e_codigo_a09d1a2a694d18bc587b3a25d40b49a29}\index{parser.PosicaoECodigo@{parser.PosicaoECodigo}!lineCurrentProcessing@{lineCurrentProcessing}}
+\index{lineCurrentProcessing@{lineCurrentProcessing}!parser.PosicaoECodigo@{parser.PosicaoECodigo}}
+\doxysubsubsection{\texorpdfstring{lineCurrentProcessing}{lineCurrentProcessing}}
+{\footnotesize\ttfamily \label{classparser_1_1_posicao_e_codigo_a09d1a2a694d18bc587b3a25d40b49a29} 
+int parser.\+Posicao\+ECodigo.\+line\+Current\+Processing = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{classparser_1_1_posicao_e_codigo_a44648271f5eea4104f7cc0d5b3709eaf}\index{parser.PosicaoECodigo@{parser.PosicaoECodigo}!coluna@{coluna}}
+\index{coluna@{coluna}!parser.PosicaoECodigo@{parser.PosicaoECodigo}}
+\doxysubsubsection{\texorpdfstring{coluna}{coluna}}
+{\footnotesize\ttfamily \label{classparser_1_1_posicao_e_codigo_a44648271f5eea4104f7cc0d5b3709eaf} 
+int parser.\+Posicao\+ECodigo.\+coluna\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{classparser_1_1_posicao_e_codigo_a5804bc80c6c0e08cf4e1f15ffbf822b9}\index{parser.PosicaoECodigo@{parser.PosicaoECodigo}!indexParaOrdenacao@{indexParaOrdenacao}}
+\index{indexParaOrdenacao@{indexParaOrdenacao}!parser.PosicaoECodigo@{parser.PosicaoECodigo}}
+\doxysubsubsection{\texorpdfstring{indexParaOrdenacao}{indexParaOrdenacao}}
+{\footnotesize\ttfamily \label{classparser_1_1_posicao_e_codigo_a5804bc80c6c0e08cf4e1f15ffbf822b9} 
+int parser.\+Posicao\+ECodigo.\+index\+Para\+Ordenacao\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{classparser_1_1_posicao_e_codigo_a9d95ed7283f22b7a4a1e261094a7bdac}\index{parser.PosicaoECodigo@{parser.PosicaoECodigo}!linha@{linha}}
+\index{linha@{linha}!parser.PosicaoECodigo@{parser.PosicaoECodigo}}
+\doxysubsubsection{\texorpdfstring{linha}{linha}}
+{\footnotesize\ttfamily \label{classparser_1_1_posicao_e_codigo_a9d95ed7283f22b7a4a1e261094a7bdac} 
+int parser.\+Posicao\+ECodigo.\+linha\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{classparser_1_1_posicao_e_codigo_afd7aead5be3a35525ffc114d7417753c}\index{parser.PosicaoECodigo@{parser.PosicaoECodigo}!trechoCodigo@{trechoCodigo}}
+\index{trechoCodigo@{trechoCodigo}!parser.PosicaoECodigo@{parser.PosicaoECodigo}}
+\doxysubsubsection{\texorpdfstring{trechoCodigo}{trechoCodigo}}
+{\footnotesize\ttfamily \label{classparser_1_1_posicao_e_codigo_afd7aead5be3a35525ffc114d7417753c} 
+string parser.\+Posicao\+ECodigo.\+trecho\+Codigo\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/componentes\+De\+Interpretadores\+ECompiladores/\+PROGRAMACAO ORIENTADA A OBJETOS/\mbox{\hyperlink{_posicao_de_codigo_8cs}{Posicao\+De\+Codigo.\+cs}}\end{DoxyCompactItemize}

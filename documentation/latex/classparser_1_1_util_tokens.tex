@@ -1,0 +1,375 @@
+\doxysection{parser.\+Util\+Tokens Class Reference}
+\hypertarget{classparser_1_1_util_tokens}{}\label{classparser_1_1_util_tokens}\index{parser.UtilTokens@{parser.UtilTokens}}
+
+
+classe com funções uteis na implementação de codigo no compilador.  
+
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classparser_1_1_util_tokens_1_1_testes}{Testes}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Type \mbox{\hyperlink{classparser_1_1_util_tokens_afa69fe83238ea92b12bca9db9215f78c}{Get\+Type}} (string type\+Name)
+\begin{DoxyCompactList}\small\item\em retorna o tipo de uma classe. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classparser_1_1_util_tokens_a7e7fa8cfef84ce55ff13f709dc5db912}{Write\+AError\+Mensage}} (string mensagem\+De\+Erro, List$<$ string $>$ tokens\+DOProcessamento, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em registra uma mensagem de erro de compilação, no escopo parâmetro, e também numa lista de errros estatica. \end{DoxyCompactList}\item 
+static List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_util_tokens_a615c4f6138eb54b5d119b73fbadf3c28}{Get\+Codigo\+Entre\+Operadores}} (int indice\+Inicio, string operador\+Abre, string operador\+Fecha, List$<$ string $>$ tokens\+Entre\+Operadores)
+\begin{DoxyCompactList}\small\item\em obtem uma lista de tokens, entre operador abre e operador fecha, com criterio que a quantidade da diferenca dos operadores abre/fecha seja = 0. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classparser_1_1_util_tokens_a1e3122d5fa8fcf87b398b9ef25fba258}{Print\+Tokens}} (List$<$ string $>$ tokens, string caption)
+\begin{DoxyCompactList}\small\item\em imprime no terminal, a lista de tokens parametro. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classparser_1_1_util_tokens_ade99f446a1d06e9bcdba1f6ba3ab6c99}{Print\+Tokens\+Without\+Spaces}} (List$<$ string $>$ tokens, string caption)
+\begin{DoxyCompactList}\small\item\em imprime numa linha de texto somente, no terminal, a lista de tokens parametro. \end{DoxyCompactList}\item 
+static List$<$ List$<$ List$<$ string $>$ $>$ $>$ \mbox{\hyperlink{classparser_1_1_util_tokens_a64e8b2a511f2bbedb874ed54214b1548}{Get\+Codigo\+Entre\+Operadores\+Cases}} (List$<$ string $>$ tokens1)
+\begin{DoxyCompactList}\small\item\em extracao de tokens de expressoes para instrução case. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{classparser_1_1_util_tokens_aac64f3c7f9b2a89b4ec95defcda113ba}{Casting}} (string tipo)
+\begin{DoxyCompactList}\small\item\em faz a conversao de tipos basicos de classes importado, para o sistema de tipos da linguagem orquidea. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classparser_1_1_operador}{Operador}} \mbox{\hyperlink{classparser_1_1_util_tokens_aa9a166e6901fb912c75adb5a76252ff9}{Find\+Operator\+Binario\+EUnario\+Mas\+Como\+BINARIO}} (string class\+Operator, string name\+Operator, string tipo\+Operando1, string tipo\+Operando2)
+\begin{DoxyCompactList}\small\item\em encontra um operador que é binario e unario ao mesmo tempo, mas funcionando com binario. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classparser_1_1_operador}{Operador}} \mbox{\hyperlink{classparser_1_1_util_tokens_ac51a242fa64f28945227eb4f3d8bc095}{Find\+Operator\+Binario\+Unario\+Mas\+Como\+UNARIO}} (string name\+Operator, string tipo\+Operando1, string tipo\+Operando2)
+\begin{DoxyCompactList}\small\item\em encontra um operador unario e binario ao mesmo tempo, mas funcionando como unario. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classparser_1_1_util_tokens_a01571c31a67eadb2ce4cc63a9c68b9d1}{Is\+Unary\+Operator}} (string name\+Operator, \mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} operand)
+\begin{DoxyCompactList}\small\item\em verficia se um nome é um token de operador unario. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classparser_1_1_operador}{Operador}} \mbox{\hyperlink{classparser_1_1_util_tokens_a812ba1da7e8f09e7070109805a42c5cc}{Find\+Operator\+Compatible}} (string name\+Operator, string tipo\+Operando1, string tipo\+Operando2, ref bool is\+Binary\+And\+Unary)
+\begin{DoxyCompactList}\small\item\em encontra um operador, binario, unario pos, ou unario pre, de nome de entrada, e com tipos de operandos de entrada. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classparser_1_1_metodo}{Metodo}} \mbox{\hyperlink{classparser_1_1_util_tokens_ad9f9bcb3e068051516db8e8bdebdef2d}{Find\+Method\+Compatible}} (\mbox{\hyperlink{classparser_1_1_objeto}{Objeto}} obj\+Caller, string class\+Obj\+Caller, string name\+Method, string name\+Class, List$<$ \mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} $>$ parameters, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo, bool is\+Static, bool is\+To\+Include\+First\+Parameter\+Object\+Caller)
+\begin{DoxyCompactList}\small\item\em encontra um metodo que seja compativel com a lista de parâmetros de uma chamada de método. se for para incluir o objeto caller na lista de parâmetros da chamada, faz e valida com a lista de parametros do metodo. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classparser_1_1_metodo}{Metodo}} \mbox{\hyperlink{classparser_1_1_util_tokens_a1a58b74d869d469b3c6626a1b1153c13}{Find\+Constructor\+Compatible}} (string name\+Class, List$<$ \mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} $>$ parametros\+Expressao, ref int index\+Construtor)
+\begin{DoxyCompactList}\small\item\em encontra um construtor registrado, compativel com os parametros expressoes. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classparser_1_1_util_tokens_ac8c7359db6dab5656de9c3e54bfffec7}{Validating\+Parameters\+Multi\+Arguments}} (\mbox{\hyperlink{classparser_1_1_metodo}{Metodo}} method)
+\item 
+static void \mbox{\hyperlink{classparser_1_1_util_tokens_af561b9d233a20aded2b4c9ab607d53ee}{Link\+Escopo\+Pai\+Escopo\+Filhos}} (\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo\+Pai, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo\+Filho)
+\begin{DoxyCompactList}\small\item\em faz a liguação entre um escopo principal, com um sub-\/escopo. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{classparser_1_1_util_tokens_acae904a1e507d9abf0a19683700fb9fa}{Formata\+Entrada}} (string input)
+\begin{DoxyCompactList}\small\item\em formata um texto de entrada, colocando espaçamento de 1 unidade, nos tokens do texto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+classe com funções uteis na implementação de codigo no compilador. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_util_tokens_aac64f3c7f9b2a89b4ec95defcda113ba}\index{parser.UtilTokens@{parser.UtilTokens}!Casting@{Casting}}
+\index{Casting@{Casting}!parser.UtilTokens@{parser.UtilTokens}}
+\doxysubsubsection{\texorpdfstring{Casting()}{Casting()}}
+{\footnotesize\ttfamily \label{classparser_1_1_util_tokens_aac64f3c7f9b2a89b4ec95defcda113ba} 
+static string parser.\+Util\+Tokens.\+Casting (\begin{DoxyParamCaption}\item[{string}]{tipo}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+faz a conversao de tipos basicos de classes importado, para o sistema de tipos da linguagem orquidea. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tipo} & tipo importado.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna o tipo correpondente, ou o tipo parametro se nao houver correspondente.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_util_tokens_a1a58b74d869d469b3c6626a1b1153c13}\index{parser.UtilTokens@{parser.UtilTokens}!FindConstructorCompatible@{FindConstructorCompatible}}
+\index{FindConstructorCompatible@{FindConstructorCompatible}!parser.UtilTokens@{parser.UtilTokens}}
+\doxysubsubsection{\texorpdfstring{FindConstructorCompatible()}{FindConstructorCompatible()}}
+{\footnotesize\ttfamily \label{classparser_1_1_util_tokens_a1a58b74d869d469b3c6626a1b1153c13} 
+static \mbox{\hyperlink{classparser_1_1_metodo}{Metodo}} parser.\+Util\+Tokens.\+Find\+Constructor\+Compatible (\begin{DoxyParamCaption}\item[{string}]{name\+Class}{, }\item[{List$<$ \mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} $>$}]{parametros\+Expressao}{, }\item[{ref int}]{index\+Construtor}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+encontra um construtor registrado, compativel com os parametros expressoes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+Class} & nome da classe do construtor.\\
+\hline
+{\em parametros\+Expressao} & expressoes que formam os parametros.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna o metodo do construtor compativel, ou null se nao encontrar um construtor compativel.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_util_tokens_ad9f9bcb3e068051516db8e8bdebdef2d}\index{parser.UtilTokens@{parser.UtilTokens}!FindMethodCompatible@{FindMethodCompatible}}
+\index{FindMethodCompatible@{FindMethodCompatible}!parser.UtilTokens@{parser.UtilTokens}}
+\doxysubsubsection{\texorpdfstring{FindMethodCompatible()}{FindMethodCompatible()}}
+{\footnotesize\ttfamily \label{classparser_1_1_util_tokens_ad9f9bcb3e068051516db8e8bdebdef2d} 
+static \mbox{\hyperlink{classparser_1_1_metodo}{Metodo}} parser.\+Util\+Tokens.\+Find\+Method\+Compatible (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_objeto}{Objeto}}}]{obj\+Caller}{, }\item[{string}]{class\+Obj\+Caller}{, }\item[{string}]{name\+Method}{, }\item[{string}]{name\+Class}{, }\item[{List$<$ \mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} $>$}]{parameters}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{, }\item[{bool}]{is\+Static}{, }\item[{bool}]{is\+To\+Include\+First\+Parameter\+Object\+Caller}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+encontra um metodo que seja compativel com a lista de parâmetros de uma chamada de método. se for para incluir o objeto caller na lista de parâmetros da chamada, faz e valida com a lista de parametros do metodo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj\+Caller} & objeto que chama a funcao.\\
+\hline
+{\em class\+Obj\+Caller} & classe do objeto da chamada de metodo.\\
+\hline
+{\em name\+Method} & nome do metodo\\
+\hline
+{\em name\+Class} & classe do metodo\\
+\hline
+{\em parameters} & lista de parâmetros da chamada de metodo, que o metodo tenha para validar.\\
+\hline
+{\em escopo} & contexto onde a chamada de método está.\\
+\hline
+{\em is\+Static} & chamada estatica ou nao.\\
+\hline
+{\em is\+To\+Include\+First\+Parameter\+Object\+Caller} & se \mbox{[}true\mbox{]}, inclui o objeto caller como primeiro parametro.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna um metodo, com nome, e lista de parâmetros compativel aos parâmetros da chamada.
+\end{DoxyReturn}
+PROCESSAMENTO DE PARAMETRO-\/\+METODO.\Hypertarget{classparser_1_1_util_tokens_aa9a166e6901fb912c75adb5a76252ff9}\index{parser.UtilTokens@{parser.UtilTokens}!FindOperatorBinarioEUnarioMasComoBINARIO@{FindOperatorBinarioEUnarioMasComoBINARIO}}
+\index{FindOperatorBinarioEUnarioMasComoBINARIO@{FindOperatorBinarioEUnarioMasComoBINARIO}!parser.UtilTokens@{parser.UtilTokens}}
+\doxysubsubsection{\texorpdfstring{FindOperatorBinarioEUnarioMasComoBINARIO()}{FindOperatorBinarioEUnarioMasComoBINARIO()}}
+{\footnotesize\ttfamily \label{classparser_1_1_util_tokens_aa9a166e6901fb912c75adb5a76252ff9} 
+static \mbox{\hyperlink{classparser_1_1_operador}{Operador}} parser.\+Util\+Tokens.\+Find\+Operator\+Binario\+EUnario\+Mas\+Como\+BINARIO (\begin{DoxyParamCaption}\item[{string}]{class\+Operator}{, }\item[{string}]{name\+Operator}{, }\item[{string}]{tipo\+Operando1}{, }\item[{string}]{tipo\+Operando2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+encontra um operador que é binario e unario ao mesmo tempo, mas funcionando com binario. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+Operator} & nome do operador\\
+\hline
+{\em tipo\+Operando1} & tipo do operando 1.\\
+\hline
+{\em tipo\+Operando2} & tipo do operando 2.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna a funcao que implementa o operador.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_util_tokens_ac51a242fa64f28945227eb4f3d8bc095}\index{parser.UtilTokens@{parser.UtilTokens}!FindOperatorBinarioUnarioMasComoUNARIO@{FindOperatorBinarioUnarioMasComoUNARIO}}
+\index{FindOperatorBinarioUnarioMasComoUNARIO@{FindOperatorBinarioUnarioMasComoUNARIO}!parser.UtilTokens@{parser.UtilTokens}}
+\doxysubsubsection{\texorpdfstring{FindOperatorBinarioUnarioMasComoUNARIO()}{FindOperatorBinarioUnarioMasComoUNARIO()}}
+{\footnotesize\ttfamily \label{classparser_1_1_util_tokens_ac51a242fa64f28945227eb4f3d8bc095} 
+static \mbox{\hyperlink{classparser_1_1_operador}{Operador}} parser.\+Util\+Tokens.\+Find\+Operator\+Binario\+Unario\+Mas\+Como\+UNARIO (\begin{DoxyParamCaption}\item[{string}]{name\+Operator}{, }\item[{string}]{tipo\+Operando1}{, }\item[{string}]{tipo\+Operando2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+encontra um operador unario e binario ao mesmo tempo, mas funcionando como unario. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+Operator} & nome do operador.\\
+\hline
+{\em tipo\+Operando1} & tipo do operando 1.\\
+\hline
+{\em tipo\+Operando2} & tipo do operando 2,dentro da expressao (operador unario tem apenas um operando).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna a funcao que implementa o operador.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_util_tokens_a812ba1da7e8f09e7070109805a42c5cc}\index{parser.UtilTokens@{parser.UtilTokens}!FindOperatorCompatible@{FindOperatorCompatible}}
+\index{FindOperatorCompatible@{FindOperatorCompatible}!parser.UtilTokens@{parser.UtilTokens}}
+\doxysubsubsection{\texorpdfstring{FindOperatorCompatible()}{FindOperatorCompatible()}}
+{\footnotesize\ttfamily \label{classparser_1_1_util_tokens_a812ba1da7e8f09e7070109805a42c5cc} 
+static \mbox{\hyperlink{classparser_1_1_operador}{Operador}} parser.\+Util\+Tokens.\+Find\+Operator\+Compatible (\begin{DoxyParamCaption}\item[{string}]{name\+Operator}{, }\item[{string}]{tipo\+Operando1}{, }\item[{string}]{tipo\+Operando2}{, }\item[{ref bool}]{is\+Binary\+And\+Unary}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+encontra um operador, binario, unario pos, ou unario pre, de nome de entrada, e com tipos de operandos de entrada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+Operator} & nome do operador.\\
+\hline
+{\em tipo\+Operando1} & tipo do operando 1.\\
+\hline
+{\em tipo\+Operando2} & tipo do operando 2.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_util_tokens_acae904a1e507d9abf0a19683700fb9fa}\index{parser.UtilTokens@{parser.UtilTokens}!FormataEntrada@{FormataEntrada}}
+\index{FormataEntrada@{FormataEntrada}!parser.UtilTokens@{parser.UtilTokens}}
+\doxysubsubsection{\texorpdfstring{FormataEntrada()}{FormataEntrada()}}
+{\footnotesize\ttfamily \label{classparser_1_1_util_tokens_acae904a1e507d9abf0a19683700fb9fa} 
+static string parser.\+Util\+Tokens.\+Formata\+Entrada (\begin{DoxyParamCaption}\item[{string}]{input}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+formata um texto de entrada, colocando espaçamento de 1 unidade, nos tokens do texto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & texto a ser formatado.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_util_tokens_a615c4f6138eb54b5d119b73fbadf3c28}\index{parser.UtilTokens@{parser.UtilTokens}!GetCodigoEntreOperadores@{GetCodigoEntreOperadores}}
+\index{GetCodigoEntreOperadores@{GetCodigoEntreOperadores}!parser.UtilTokens@{parser.UtilTokens}}
+\doxysubsubsection{\texorpdfstring{GetCodigoEntreOperadores()}{GetCodigoEntreOperadores()}}
+{\footnotesize\ttfamily \label{classparser_1_1_util_tokens_a615c4f6138eb54b5d119b73fbadf3c28} 
+static List$<$ string $>$ parser.\+Util\+Tokens.\+Get\+Codigo\+Entre\+Operadores (\begin{DoxyParamCaption}\item[{int}]{indice\+Inicio}{, }\item[{string}]{operador\+Abre}{, }\item[{string}]{operador\+Fecha}{, }\item[{List$<$ string $>$}]{tokens\+Entre\+Operadores}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+obtem uma lista de tokens, entre operador abre e operador fecha, com criterio que a quantidade da diferenca dos operadores abre/fecha seja = 0. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em indice\+Inicio} & indice inicial, cujo token deste indice é um operador abre.\\
+\hline
+{\em operador\+Abre} & operador inicial.\\
+\hline
+{\em operador\+Fecha} & operador final.\\
+\hline
+{\em tokens\+Entre\+Operadores} & tokens contendo inclusive a lista de tokens resultante.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna uma lista de tokens entre os parenteses, ou null se não resultar em tokens, ou se o numero de tokens \texorpdfstring{$<$}{<} 2
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_util_tokens_a64e8b2a511f2bbedb874ed54214b1548}\index{parser.UtilTokens@{parser.UtilTokens}!GetCodigoEntreOperadoresCases@{GetCodigoEntreOperadoresCases}}
+\index{GetCodigoEntreOperadoresCases@{GetCodigoEntreOperadoresCases}!parser.UtilTokens@{parser.UtilTokens}}
+\doxysubsubsection{\texorpdfstring{GetCodigoEntreOperadoresCases()}{GetCodigoEntreOperadoresCases()}}
+{\footnotesize\ttfamily \label{classparser_1_1_util_tokens_a64e8b2a511f2bbedb874ed54214b1548} 
+static List$<$ List$<$ List$<$ string $>$ $>$ $>$ parser.\+Util\+Tokens.\+Get\+Codigo\+Entre\+Operadores\+Cases (\begin{DoxyParamCaption}\item[{List$<$ string $>$}]{tokens1}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+extracao de tokens de expressoes para instrução case. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tokens1} & lista de tokens para processamento.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_util_tokens_afa69fe83238ea92b12bca9db9215f78c}\index{parser.UtilTokens@{parser.UtilTokens}!GetType@{GetType}}
+\index{GetType@{GetType}!parser.UtilTokens@{parser.UtilTokens}}
+\doxysubsubsection{\texorpdfstring{GetType()}{GetType()}}
+{\footnotesize\ttfamily \label{classparser_1_1_util_tokens_afa69fe83238ea92b12bca9db9215f78c} 
+static Type parser.\+Util\+Tokens.\+Get\+Type (\begin{DoxyParamCaption}\item[{string}]{type\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+retorna o tipo de uma classe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type\+Name} & nome da classe.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_util_tokens_a01571c31a67eadb2ce4cc63a9c68b9d1}\index{parser.UtilTokens@{parser.UtilTokens}!IsUnaryOperator@{IsUnaryOperator}}
+\index{IsUnaryOperator@{IsUnaryOperator}!parser.UtilTokens@{parser.UtilTokens}}
+\doxysubsubsection{\texorpdfstring{IsUnaryOperator()}{IsUnaryOperator()}}
+{\footnotesize\ttfamily \label{classparser_1_1_util_tokens_a01571c31a67eadb2ce4cc63a9c68b9d1} 
+static bool parser.\+Util\+Tokens.\+Is\+Unary\+Operator (\begin{DoxyParamCaption}\item[{string}]{name\+Operator}{, }\item[{\mbox{\hyperlink{classparser_1_1_expressao}{Expressao}}}]{operand}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+verficia se um nome é um token de operador unario. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+Operator} & nome do tokens dito operador unario a investigar.\\
+\hline
+{\em operand} & expressao que contem o tipo de operando do operador unario.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_util_tokens_af561b9d233a20aded2b4c9ab607d53ee}\index{parser.UtilTokens@{parser.UtilTokens}!LinkEscopoPaiEscopoFilhos@{LinkEscopoPaiEscopoFilhos}}
+\index{LinkEscopoPaiEscopoFilhos@{LinkEscopoPaiEscopoFilhos}!parser.UtilTokens@{parser.UtilTokens}}
+\doxysubsubsection{\texorpdfstring{LinkEscopoPaiEscopoFilhos()}{LinkEscopoPaiEscopoFilhos()}}
+{\footnotesize\ttfamily \label{classparser_1_1_util_tokens_af561b9d233a20aded2b4c9ab607d53ee} 
+static void parser.\+Util\+Tokens.\+Link\+Escopo\+Pai\+Escopo\+Filhos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo\+Pai}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo\+Filho}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+faz a liguação entre um escopo principal, com um sub-\/escopo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em escopo\+Pai} & escopo principal.\\
+\hline
+{\em escopo\+Filho} & sub-\/escopo.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_util_tokens_a1e3122d5fa8fcf87b398b9ef25fba258}\index{parser.UtilTokens@{parser.UtilTokens}!PrintTokens@{PrintTokens}}
+\index{PrintTokens@{PrintTokens}!parser.UtilTokens@{parser.UtilTokens}}
+\doxysubsubsection{\texorpdfstring{PrintTokens()}{PrintTokens()}}
+{\footnotesize\ttfamily \label{classparser_1_1_util_tokens_a1e3122d5fa8fcf87b398b9ef25fba258} 
+static void parser.\+Util\+Tokens.\+Print\+Tokens (\begin{DoxyParamCaption}\item[{List$<$ string $>$}]{tokens}{, }\item[{string}]{caption}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+imprime no terminal, a lista de tokens parametro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tokens} & lista de tokens a imprimir.\\
+\hline
+{\em caption} & texto caption-\/info da impressão.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_util_tokens_ade99f446a1d06e9bcdba1f6ba3ab6c99}\index{parser.UtilTokens@{parser.UtilTokens}!PrintTokensWithoutSpaces@{PrintTokensWithoutSpaces}}
+\index{PrintTokensWithoutSpaces@{PrintTokensWithoutSpaces}!parser.UtilTokens@{parser.UtilTokens}}
+\doxysubsubsection{\texorpdfstring{PrintTokensWithoutSpaces()}{PrintTokensWithoutSpaces()}}
+{\footnotesize\ttfamily \label{classparser_1_1_util_tokens_ade99f446a1d06e9bcdba1f6ba3ab6c99} 
+static void parser.\+Util\+Tokens.\+Print\+Tokens\+Without\+Spaces (\begin{DoxyParamCaption}\item[{List$<$ string $>$}]{tokens}{, }\item[{string}]{caption}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+imprime numa linha de texto somente, no terminal, a lista de tokens parametro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tokens} & lista de tokens a imprimir.\\
+\hline
+{\em caption} & texto info-\/caption de impressao.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_util_tokens_ac8c7359db6dab5656de9c3e54bfffec7}\index{parser.UtilTokens@{parser.UtilTokens}!ValidatingParametersMultiArguments@{ValidatingParametersMultiArguments}}
+\index{ValidatingParametersMultiArguments@{ValidatingParametersMultiArguments}!parser.UtilTokens@{parser.UtilTokens}}
+\doxysubsubsection{\texorpdfstring{ValidatingParametersMultiArguments()}{ValidatingParametersMultiArguments()}}
+{\footnotesize\ttfamily \label{classparser_1_1_util_tokens_ac8c7359db6dab5656de9c3e54bfffec7} 
+static bool parser.\+Util\+Tokens.\+Validating\+Parameters\+Multi\+Arguments (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_metodo}{Metodo}}}]{method}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+retorna true se há parametros multi-\/argummentos invalidados. 2 parametros multi-\/argumentos em sequencia não podem ter o mesmo tipo, pois torna impossivel saber se um parametro pertence a qual parametro-\/argumento.
+
+
+\begin{DoxyParams}{Parameters}
+{\em method} & metodo com os parmaetros multi-\/argumentos.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}true\mbox{]} se é invalido o metodo com parametros multi-\/argumentos, \mbox{[}false\mbox{]} se houve irregularidade.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_util_tokens_a7e7fa8cfef84ce55ff13f709dc5db912}\index{parser.UtilTokens@{parser.UtilTokens}!WriteAErrorMensage@{WriteAErrorMensage}}
+\index{WriteAErrorMensage@{WriteAErrorMensage}!parser.UtilTokens@{parser.UtilTokens}}
+\doxysubsubsection{\texorpdfstring{WriteAErrorMensage()}{WriteAErrorMensage()}}
+{\footnotesize\ttfamily \label{classparser_1_1_util_tokens_a7e7fa8cfef84ce55ff13f709dc5db912} 
+static void parser.\+Util\+Tokens.\+Write\+AError\+Mensage (\begin{DoxyParamCaption}\item[{string}]{mensagem\+De\+Erro}{, }\item[{List$<$ string $>$}]{tokens\+DOProcessamento}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+registra uma mensagem de erro de compilação, no escopo parâmetro, e também numa lista de errros estatica. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mensagem\+De\+Erro} & mensagem a registrar.\\
+\hline
+{\em tokens\+DOProcessamento} & tokens para localizar a linha e coluna da falha.\\
+\hline
+{\em escopo} & contexto onde os tokens estão, e também uma das formas de armazenar a mensage, num dos seus campos.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/\+Util/\mbox{\hyperlink{_util_tokens_8cs}{Util\+Tokens.\+cs}}\end{DoxyCompactItemize}

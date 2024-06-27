@@ -1,0 +1,25 @@
+anotações:
+
+	um sistema de compilação que guarde o programa compilado. pode ser feito
+	por serialização/desserialização de objetos: expressoes, objetos, instrucoes, classes, interfaces, 
+	metodos importados, classes importadas, tudo. há pacote Nu-GET que faz a serialização sem erros
+	de processamento circular de objetos.
+				Com esse sistema, é possivel escrever programas de jogos muito grandes, com varias classes.
+				é só guardar um numero id, que identifica se a classe foi modificada, e então compilar apenas
+				esta classe. instrucoes tamém, fora das classes. O objetivo é diminuir o tempo de compilação.
+				
+	
+	mais bibliotecas importadas: o que me fascinou foi a rapidez de construção de bibliotecas 
+	para esta linguagem. com via API Reflexão, é possível escrever bibliotecas C Sharp, numa escalabilidade
+	potencialmente muito grande. E também de importar bibliotecas de terceiros!
+	
+	
+	fixar erros encontrados, e que não foram previstos;
+					------> continuar com foco em classes orquidea;
+					------> heranças de classes, deserança de classes: cenarios de testes;
+					------> interfaces: cenarios de teste;
+					------> instrução if/else, o bloco de else não foi verificado em cenarios de testes, ADEQUADAMENTE;
+					------> processamento de operadores customizados, de classes orquidea;
+					
+	
+	

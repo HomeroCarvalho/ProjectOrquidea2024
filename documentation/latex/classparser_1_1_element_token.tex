@@ -1,0 +1,217 @@
+\doxysection{parser.\+Element\+Token Class Reference}
+\hypertarget{classparser_1_1_element_token}{}\label{classparser_1_1_element_token}\index{parser.ElementToken@{parser.ElementToken}}
+
+
+um elemento extraido do classificador de tokens.  
+
+
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfd}{type\+Token}} \{ \newline
+\mbox{\hyperlink{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfdaafa69c4fde2618cf9a82f85d790eba7a}{name\+Classe}}
+, \mbox{\hyperlink{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfda6285fd4195b4395b3c7395194fa9f5d6}{name\+Object}}
+, \mbox{\hyperlink{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfda61c984a370a78dc86c8e4eb49b7bccf3}{name\+Function}}
+, \mbox{\hyperlink{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfda00f1f0d6bad80c72eedf30ae76556307}{name\+Parameter}}
+, \newline
+\mbox{\hyperlink{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfda695c644521c674b8c2f8d6fd1e9067f9}{name\+Property}}
+, \mbox{\hyperlink{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfdaa113098455d955fe275a578571e32fde}{name\+Operator}}
+, \mbox{\hyperlink{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfdafc040ec43e5fa654eacb75050af99ef8}{name\+Operand}}
+, \mbox{\hyperlink{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfda66e4abe5bd63be056441166aceedea4b}{name\+Key\+Term}}
+, \newline
+\mbox{\hyperlink{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfda541d5d459d0a05a36f3b2565ef1862f2}{not\+Classificate}}
+, \mbox{\hyperlink{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfda283b9daf9e1a1aba3bace91313ae231f}{name\+Number}}
+, \mbox{\hyperlink{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfda2cc3106c9ebde27bfa88cd862ad81a20}{name\+Literal}}
+, \mbox{\hyperlink{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfdab6c739b9d146a3dfb50feab95e89b1a1}{name\+Operator\+Key\+Term}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparser_1_1_element_token_abd51fa8348bc309fedbae7854754ef9d}{Element\+Token}} (string \mbox{\hyperlink{classparser_1_1_element_token_a6b58346a0bf835254f3bdf037d85106e}{nome\+Classe}}, \mbox{\hyperlink{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfd}{type\+Token}} tipo\+Token, string \mbox{\hyperlink{classparser_1_1_element_token_ae10e58219582347d068d611f65883fab}{nome\+Token}}, string \mbox{\hyperlink{classparser_1_1_element_token_a7b8af54eaf4749149d554862c6cecdb3}{nome\+Tipo}})
+\begin{DoxyCompactList}\small\item\em instancia um elemento de classificacao. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_element_token_af490a4c643c0718ebaabbb5a742483bd}{Add\+Parameter}} (\mbox{\hyperlink{classparser_1_1_element_token}{Element\+Token}} param)
+\begin{DoxyCompactList}\small\item\em adiciona um elemento parametro de uma funcao, metodo. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{classparser_1_1_element_token_aef48df110c7966548bc13cdbf4bc9fe8}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classparser_1_1_element_token_a6b58346a0bf835254f3bdf037d85106e}{nome\+Classe}}
+\begin{DoxyCompactList}\small\item\em nome da classe a qual pertence o token. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classparser_1_1_element_token_a7b8af54eaf4749149d554862c6cecdb3}{nome\+Tipo}}
+\begin{DoxyCompactList}\small\item\em nome do tipo de retorno do objeto. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classparser_1_1_element_token_ae10e58219582347d068d611f65883fab}{nome\+Token}}
+\begin{DoxyCompactList}\small\item\em nome do token. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfd}{type\+Token}} \mbox{\hyperlink{classparser_1_1_element_token_a49810b996cfdd445c546089a41bca3cf}{tipo\+Classificacao}}
+\begin{DoxyCompactList}\small\item\em tipo do token. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_element_token}{Element\+Token}} $>$ \mbox{\hyperlink{classparser_1_1_element_token_a44a6782ff4d8ecf1ec0748e02a9ad4af}{parameters}} = new List$<$\mbox{\hyperlink{classparser_1_1_element_token}{Element\+Token}}$>$()
+\begin{DoxyCompactList}\small\item\em lista de parametro de função, ou operador. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+um elemento extraido do classificador de tokens. 
+
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfd}\index{parser.ElementToken@{parser.ElementToken}!typeToken@{typeToken}}
+\index{typeToken@{typeToken}!parser.ElementToken@{parser.ElementToken}}
+\doxysubsubsection{\texorpdfstring{typeToken}{typeToken}}
+{\footnotesize\ttfamily \label{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfd} 
+enum \mbox{\hyperlink{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfd}{parser.\+Element\+Token.\+type\+Token}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{nameClasse@{nameClasse}!parser.ElementToken@{parser.ElementToken}}\index{parser.ElementToken@{parser.ElementToken}!nameClasse@{nameClasse}}}\Hypertarget{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfdaafa69c4fde2618cf9a82f85d790eba7a}\label{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfd} 
+name\+Classe&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{nameObject@{nameObject}!parser.ElementToken@{parser.ElementToken}}\index{parser.ElementToken@{parser.ElementToken}!nameObject@{nameObject}}}\Hypertarget{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfda6285fd4195b4395b3c7395194fa9f5d6}\label{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfd} 
+name\+Object&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{nameFunction@{nameFunction}!parser.ElementToken@{parser.ElementToken}}\index{parser.ElementToken@{parser.ElementToken}!nameFunction@{nameFunction}}}\Hypertarget{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfda61c984a370a78dc86c8e4eb49b7bccf3}\label{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfd} 
+name\+Function&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{nameParameter@{nameParameter}!parser.ElementToken@{parser.ElementToken}}\index{parser.ElementToken@{parser.ElementToken}!nameParameter@{nameParameter}}}\Hypertarget{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfda00f1f0d6bad80c72eedf30ae76556307}\label{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfd} 
+name\+Parameter&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{nameProperty@{nameProperty}!parser.ElementToken@{parser.ElementToken}}\index{parser.ElementToken@{parser.ElementToken}!nameProperty@{nameProperty}}}\Hypertarget{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfda695c644521c674b8c2f8d6fd1e9067f9}\label{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfd} 
+name\+Property&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{nameOperator@{nameOperator}!parser.ElementToken@{parser.ElementToken}}\index{parser.ElementToken@{parser.ElementToken}!nameOperator@{nameOperator}}}\Hypertarget{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfdaa113098455d955fe275a578571e32fde}\label{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfd} 
+name\+Operator&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{nameOperand@{nameOperand}!parser.ElementToken@{parser.ElementToken}}\index{parser.ElementToken@{parser.ElementToken}!nameOperand@{nameOperand}}}\Hypertarget{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfdafc040ec43e5fa654eacb75050af99ef8}\label{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfd} 
+name\+Operand&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{nameKeyTerm@{nameKeyTerm}!parser.ElementToken@{parser.ElementToken}}\index{parser.ElementToken@{parser.ElementToken}!nameKeyTerm@{nameKeyTerm}}}\Hypertarget{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfda66e4abe5bd63be056441166aceedea4b}\label{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfd} 
+name\+Key\+Term&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{notClassificate@{notClassificate}!parser.ElementToken@{parser.ElementToken}}\index{parser.ElementToken@{parser.ElementToken}!notClassificate@{notClassificate}}}\Hypertarget{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfda541d5d459d0a05a36f3b2565ef1862f2}\label{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfd} 
+not\+Classificate&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{nameNumber@{nameNumber}!parser.ElementToken@{parser.ElementToken}}\index{parser.ElementToken@{parser.ElementToken}!nameNumber@{nameNumber}}}\Hypertarget{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfda283b9daf9e1a1aba3bace91313ae231f}\label{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfd} 
+name\+Number&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{nameLiteral@{nameLiteral}!parser.ElementToken@{parser.ElementToken}}\index{parser.ElementToken@{parser.ElementToken}!nameLiteral@{nameLiteral}}}\Hypertarget{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfda2cc3106c9ebde27bfa88cd862ad81a20}\label{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfd} 
+name\+Literal&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{nameOperatorKeyTerm@{nameOperatorKeyTerm}!parser.ElementToken@{parser.ElementToken}}\index{parser.ElementToken@{parser.ElementToken}!nameOperatorKeyTerm@{nameOperatorKeyTerm}}}\Hypertarget{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfdab6c739b9d146a3dfb50feab95e89b1a1}\label{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfd} 
+name\+Operator\+Key\+Term&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classparser_1_1_element_token_abd51fa8348bc309fedbae7854754ef9d}\index{parser.ElementToken@{parser.ElementToken}!ElementToken@{ElementToken}}
+\index{ElementToken@{ElementToken}!parser.ElementToken@{parser.ElementToken}}
+\doxysubsubsection{\texorpdfstring{ElementToken()}{ElementToken()}}
+{\footnotesize\ttfamily \label{classparser_1_1_element_token_abd51fa8348bc309fedbae7854754ef9d} 
+parser.\+Element\+Token.\+Element\+Token (\begin{DoxyParamCaption}\item[{string}]{nome\+Classe}{, }\item[{\mbox{\hyperlink{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfd}{type\+Token}}}]{tipo\+Token}{, }\item[{string}]{nome\+Token}{, }\item[{string}]{nome\+Tipo}{}\end{DoxyParamCaption})}
+
+
+
+instancia um elemento de classificacao. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Classe} & nome da classe do elemento-\/token.\\
+\hline
+{\em tipo\+Token} & tipo do elemento.\\
+\hline
+{\em nome\+Token} & nome do elemento.\\
+\hline
+{\em nome\+Tipo} & nome do tipo de elemento, utilizado em funcoes, metodos.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_element_token_af490a4c643c0718ebaabbb5a742483bd}\index{parser.ElementToken@{parser.ElementToken}!AddParameter@{AddParameter}}
+\index{AddParameter@{AddParameter}!parser.ElementToken@{parser.ElementToken}}
+\doxysubsubsection{\texorpdfstring{AddParameter()}{AddParameter()}}
+{\footnotesize\ttfamily \label{classparser_1_1_element_token_af490a4c643c0718ebaabbb5a742483bd} 
+void parser.\+Element\+Token.\+Add\+Parameter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_element_token}{Element\+Token}}}]{param}{}\end{DoxyParamCaption})}
+
+
+
+adiciona um elemento parametro de uma funcao, metodo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em param} & elemento parametro a adicionar.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_element_token_aef48df110c7966548bc13cdbf4bc9fe8}\index{parser.ElementToken@{parser.ElementToken}!ToString@{ToString}}
+\index{ToString@{ToString}!parser.ElementToken@{parser.ElementToken}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily \label{classparser_1_1_element_token_aef48df110c7966548bc13cdbf4bc9fe8} 
+override string parser.\+Element\+Token.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classparser_1_1_element_token_a6b58346a0bf835254f3bdf037d85106e}\index{parser.ElementToken@{parser.ElementToken}!nomeClasse@{nomeClasse}}
+\index{nomeClasse@{nomeClasse}!parser.ElementToken@{parser.ElementToken}}
+\doxysubsubsection{\texorpdfstring{nomeClasse}{nomeClasse}}
+{\footnotesize\ttfamily \label{classparser_1_1_element_token_a6b58346a0bf835254f3bdf037d85106e} 
+string parser.\+Element\+Token.\+nome\+Classe}
+
+
+
+nome da classe a qual pertence o token. 
+
+\Hypertarget{classparser_1_1_element_token_a7b8af54eaf4749149d554862c6cecdb3}\index{parser.ElementToken@{parser.ElementToken}!nomeTipo@{nomeTipo}}
+\index{nomeTipo@{nomeTipo}!parser.ElementToken@{parser.ElementToken}}
+\doxysubsubsection{\texorpdfstring{nomeTipo}{nomeTipo}}
+{\footnotesize\ttfamily \label{classparser_1_1_element_token_a7b8af54eaf4749149d554862c6cecdb3} 
+string parser.\+Element\+Token.\+nome\+Tipo}
+
+
+
+nome do tipo de retorno do objeto. 
+
+\Hypertarget{classparser_1_1_element_token_ae10e58219582347d068d611f65883fab}\index{parser.ElementToken@{parser.ElementToken}!nomeToken@{nomeToken}}
+\index{nomeToken@{nomeToken}!parser.ElementToken@{parser.ElementToken}}
+\doxysubsubsection{\texorpdfstring{nomeToken}{nomeToken}}
+{\footnotesize\ttfamily \label{classparser_1_1_element_token_ae10e58219582347d068d611f65883fab} 
+string parser.\+Element\+Token.\+nome\+Token}
+
+
+
+nome do token. 
+
+\Hypertarget{classparser_1_1_element_token_a44a6782ff4d8ecf1ec0748e02a9ad4af}\index{parser.ElementToken@{parser.ElementToken}!parameters@{parameters}}
+\index{parameters@{parameters}!parser.ElementToken@{parser.ElementToken}}
+\doxysubsubsection{\texorpdfstring{parameters}{parameters}}
+{\footnotesize\ttfamily \label{classparser_1_1_element_token_a44a6782ff4d8ecf1ec0748e02a9ad4af} 
+List$<$\mbox{\hyperlink{classparser_1_1_element_token}{Element\+Token}}$>$ parser.\+Element\+Token.\+parameters = new List$<$\mbox{\hyperlink{classparser_1_1_element_token}{Element\+Token}}$>$()}
+
+
+
+lista de parametro de função, ou operador. 
+
+\Hypertarget{classparser_1_1_element_token_a49810b996cfdd445c546089a41bca3cf}\index{parser.ElementToken@{parser.ElementToken}!tipoClassificacao@{tipoClassificacao}}
+\index{tipoClassificacao@{tipoClassificacao}!parser.ElementToken@{parser.ElementToken}}
+\doxysubsubsection{\texorpdfstring{tipoClassificacao}{tipoClassificacao}}
+{\footnotesize\ttfamily \label{classparser_1_1_element_token_a49810b996cfdd445c546089a41bca3cf} 
+\mbox{\hyperlink{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfd}{type\+Token}} parser.\+Element\+Token.\+tipo\+Classificacao}
+
+
+
+tipo do token. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/componentes\+De\+Interpretadores\+ECompiladores/\+PROGRAMACAO ORIENTADA A OBJETOS/\mbox{\hyperlink{_classificador_8cs}{Classificador.\+cs}}\end{DoxyCompactItemize}

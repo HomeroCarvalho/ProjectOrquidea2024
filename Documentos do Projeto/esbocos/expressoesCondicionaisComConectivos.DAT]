@@ -1,0 +1,24 @@
+formato de expressoes condicionais com conectivos;
+
+	exprss.Element[0]: expressao codicional entre parenteses.
+	exprss.Element[0].expressaoEntreParenteses: a sequencia de todos operandos e operadores condicionais,
+	dispostos em sequencia, no mesmo Elements da expressaoEntreParenteses;
+	
+	
+	-----> verificar se [exprss.Element[0]]= [ExpressaoEntreParentes];
+	-----> se for,obter [exprss.Element[0].expressaoEntreParenteses];
+					----> nesta expressao, estão todos operandos e operadores condicionais incluindo os conectivos.
+					
+					
+		Execucao de uma expressao condicional com conectivos:
+		
+		-----> verificar se em [exprss.Element[0].expressaoEntreParenteses];
+						-----> se nao tiver, avalia a expressao condicional e retorna o valor [true],ou [false];
+						-----> se tiver:
+										------> processa a primeira condicional;
+													-----> se true, e o proximo conectivo for and, processa a 2a. expressao condicional,
+													-----> se true e o proximo conectivo for or, retorna true sem verificar a 2a. condicional.
+													-----> se false, e o proximo conectivo for and, retorna false sem verificar a 2a. condicional.
+													-----> se false, e o proximo conectivo for or, processa a 2a. expressao condicional.
+													
+								

@@ -1,0 +1,347 @@
+\doxysection{parser.\+Input Class Reference}
+\hypertarget{classparser_1_1_input}{}\label{classparser_1_1_input}\index{parser.Input@{parser.Input}}
+
+
+classe para entrada de dados\+: teclas, mouse.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparser_1_1_input_ad3a9114a046a60d18bb1ff4fa2b64660}{Input}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classparser_1_1_input_adaae6107522c75cfc17f62fd1d8fd41f}{Init\+Input}} ()
+\begin{DoxyCompactList}\small\item\em inicializa o sistema de input. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classparser_1_1_input_a5bd0c2e46981cdddfb9d898981d8ea93}{is\+Key\+Down}} (string key)
+\begin{DoxyCompactList}\small\item\em retorna true se uma tecla monitorada foi pressionada. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classparser_1_1_input_a93af35ed6371d6097a11823eeeee9999}{is\+Key\+UP}} (string key)
+\begin{DoxyCompactList}\small\item\em retorna true se uma tecla monitorada foi despressionada. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classparser_1_1_input_a0338632f7f3e230c787d6f8d5639a2e0}{Mouseleft\+Pressed}} ()
+\begin{DoxyCompactList}\small\item\em retonra 1 se o botao esquerdo do mouse foi pressionado. retorna 0 se não. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classparser_1_1_input_a366034e0d7558885e919ebe77003c67d}{Mouseright\+Pressed}} ()
+\begin{DoxyCompactList}\small\item\em retorna 1 se o botao direito do mouse foi pressionado. retorna 0 se não. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classparser_1_1_input_a150989a9c13db46130117a775962d8e5}{Mouse\+Move}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em obtem as coordenadas do mouse. transfere para o vector 2d mouse\+Position. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classparser_1_1_input_aaaecd01dbf817fc71a0f0d058b0a5f1a}{Mouse\+Wheel\+Moved}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em obtem as coordenada da roda do mouse. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classparser_1_1_vector2_d}{Vector2D}} \mbox{\hyperlink{classparser_1_1_input_a1a3f99a8355776d589eea60a2eaa1759}{Get\+Mouse\+Position}} ()
+\begin{DoxyCompactList}\small\item\em retorna a posicao do mouse. \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{classparser_1_1_input_a07b982b2693003e472b6e9eb31a777f5}{Get\+Delta\+Wheel}} ()
+\begin{DoxyCompactList}\small\item\em obtem o delta da roda do mouse \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classparser_1_1_input_add2176d8c736f43a426f5cabc0ad3b45}{Mouse\+Button\+Left\+Pressed}} ()
+\begin{DoxyCompactList}\small\item\em retorna \mbox{[}true\mbox{]} se o botao esquerdo do mouse foi pressionado ou nao. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classparser_1_1_input_a1b66754a6963c32b14293d76cc24838a}{Mouse\+Button\+Right\+Pressed}} ()
+\begin{DoxyCompactList}\small\item\em retorna \mbox{[}true\mbox{]} se o botao direito do mouse foi pressionado. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classparser_1_1_input_aaa9904afe1d7a0e80e46dbfd69d7de14}{Mouse\+Button\+Left\+Released}} ()
+\begin{DoxyCompactList}\small\item\em retorna \mbox{[}true\mbox{]} se o botao esquerdo do mouse foi despressionado ou nao. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classparser_1_1_input_a8b5231fa7d6a6dab099406992b03dbc4}{Mouse\+Button\+Right\+Released}} ()
+\begin{DoxyCompactList}\small\item\em retorna \mbox{[}true\mbox{]} se o botao direito do mouse foi despressionado ou nao. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classparser_1_1_input_a631e12220abbcf507c07a13eb00667da}{is\+Mouse\+Left\+Button\+Is\+Pressed}} = false
+\begin{DoxyCompactList}\small\item\em true de o botao esquerdo do mouse foi pressionado. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classparser_1_1_input_a32512a51cebe9f44b6f5efa5a04ecd80}{is\+Mouse\+Right\+Button\+Is\+Pressed}} = false
+\begin{DoxyCompactList}\small\item\em true se o botao direito do mouse foi pressionado. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classparser_1_1_input_a10dd3b961448ee9bd845b3d7ba3d14da}{is\+Mouse\+Left\+Button\+Is\+Released}} = false
+\begin{DoxyCompactList}\small\item\em tre se o botao esquerdo do mouse foi despressionado. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classparser_1_1_input_ad4662bd8c4d065d909e4c9f5af0dc7e8}{is\+Mouse\+Right\+Button\+Is\+Released}} = false
+\begin{DoxyCompactList}\small\item\em true se o botao direito do mouse foi despressionado. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classparser_1_1_vector2_d}{Vector2D}} \mbox{\hyperlink{classparser_1_1_input_a7725604b5fdd9b1dd92d0b1c54b7b74f}{mouse\+Position}} = new \mbox{\hyperlink{classparser_1_1_vector2_d}{Vector2D}}(0.\+0, 0.\+0)
+\begin{DoxyCompactList}\small\item\em coordenadas do ponteiro do mouse. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classparser_1_1_vector2_d}{Vector2D}} \mbox{\hyperlink{classparser_1_1_input_abd6099dc80ca91ab89898928070633ba}{mouse\+Wheel\+Position}} = new \mbox{\hyperlink{classparser_1_1_vector2_d}{Vector2D}}(0.\+0, 0.\+0)
+\begin{DoxyCompactList}\small\item\em coordenadas relativas a roda do mouse. \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{classparser_1_1_input_adbd980b807cce6b4f22c9b07da344389}{delta\+Mouse\+Wheel}} = 0.\+0
+\begin{DoxyCompactList}\small\item\em valor delta da roda do mouse. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classparser_1_1_input_a553e2284de02b3b7ff16ce79afa7a7e0}{is\+Already\+Init}} = false
+\begin{DoxyCompactList}\small\item\em se true, o sistema de input ja foi inicializado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+classe para entrada de dados\+: teclas, mouse. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classparser_1_1_input_ad3a9114a046a60d18bb1ff4fa2b64660}\index{parser.Input@{parser.Input}!Input@{Input}}
+\index{Input@{Input}!parser.Input@{parser.Input}}
+\doxysubsubsection{\texorpdfstring{Input()}{Input()}}
+{\footnotesize\ttfamily \label{classparser_1_1_input_ad3a9114a046a60d18bb1ff4fa2b64660} 
+parser.\+Input.\+Input (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_input_a07b982b2693003e472b6e9eb31a777f5}\index{parser.Input@{parser.Input}!GetDeltaWheel@{GetDeltaWheel}}
+\index{GetDeltaWheel@{GetDeltaWheel}!parser.Input@{parser.Input}}
+\doxysubsubsection{\texorpdfstring{GetDeltaWheel()}{GetDeltaWheel()}}
+{\footnotesize\ttfamily \label{classparser_1_1_input_a07b982b2693003e472b6e9eb31a777f5} 
+static double parser.\+Input.\+Get\+Delta\+Wheel (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+obtem o delta da roda do mouse 
+
+\begin{DoxyReturn}{Returns}
+retorna um inteiro contendo o delta da roda do mouse.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_input_a1a3f99a8355776d589eea60a2eaa1759}\index{parser.Input@{parser.Input}!GetMousePosition@{GetMousePosition}}
+\index{GetMousePosition@{GetMousePosition}!parser.Input@{parser.Input}}
+\doxysubsubsection{\texorpdfstring{GetMousePosition()}{GetMousePosition()}}
+{\footnotesize\ttfamily \label{classparser_1_1_input_a1a3f99a8355776d589eea60a2eaa1759} 
+static \mbox{\hyperlink{classparser_1_1_vector2_d}{Vector2D}} parser.\+Input.\+Get\+Mouse\+Position (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+retorna a posicao do mouse. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_input_adaae6107522c75cfc17f62fd1d8fd41f}\index{parser.Input@{parser.Input}!InitInput@{InitInput}}
+\index{InitInput@{InitInput}!parser.Input@{parser.Input}}
+\doxysubsubsection{\texorpdfstring{InitInput()}{InitInput()}}
+{\footnotesize\ttfamily \label{classparser_1_1_input_adaae6107522c75cfc17f62fd1d8fd41f} 
+static void parser.\+Input.\+Init\+Input (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+inicializa o sistema de input. 
+
+\Hypertarget{classparser_1_1_input_a5bd0c2e46981cdddfb9d898981d8ea93}\index{parser.Input@{parser.Input}!isKeyDown@{isKeyDown}}
+\index{isKeyDown@{isKeyDown}!parser.Input@{parser.Input}}
+\doxysubsubsection{\texorpdfstring{isKeyDown()}{isKeyDown()}}
+{\footnotesize\ttfamily \label{classparser_1_1_input_a5bd0c2e46981cdddfb9d898981d8ea93} 
+static bool parser.\+Input.\+is\+Key\+Down (\begin{DoxyParamCaption}\item[{string}]{key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+retorna true se uma tecla monitorada foi pressionada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & tecla a verificar\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_input_a93af35ed6371d6097a11823eeeee9999}\index{parser.Input@{parser.Input}!isKeyUP@{isKeyUP}}
+\index{isKeyUP@{isKeyUP}!parser.Input@{parser.Input}}
+\doxysubsubsection{\texorpdfstring{isKeyUP()}{isKeyUP()}}
+{\footnotesize\ttfamily \label{classparser_1_1_input_a93af35ed6371d6097a11823eeeee9999} 
+static bool parser.\+Input.\+is\+Key\+UP (\begin{DoxyParamCaption}\item[{string}]{key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+retorna true se uma tecla monitorada foi despressionada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_input_add2176d8c736f43a426f5cabc0ad3b45}\index{parser.Input@{parser.Input}!MouseButtonLeftPressed@{MouseButtonLeftPressed}}
+\index{MouseButtonLeftPressed@{MouseButtonLeftPressed}!parser.Input@{parser.Input}}
+\doxysubsubsection{\texorpdfstring{MouseButtonLeftPressed()}{MouseButtonLeftPressed()}}
+{\footnotesize\ttfamily \label{classparser_1_1_input_add2176d8c736f43a426f5cabc0ad3b45} 
+static bool parser.\+Input.\+Mouse\+Button\+Left\+Pressed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+retorna \mbox{[}true\mbox{]} se o botao esquerdo do mouse foi pressionado ou nao. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_input_aaa9904afe1d7a0e80e46dbfd69d7de14}\index{parser.Input@{parser.Input}!MouseButtonLeftReleased@{MouseButtonLeftReleased}}
+\index{MouseButtonLeftReleased@{MouseButtonLeftReleased}!parser.Input@{parser.Input}}
+\doxysubsubsection{\texorpdfstring{MouseButtonLeftReleased()}{MouseButtonLeftReleased()}}
+{\footnotesize\ttfamily \label{classparser_1_1_input_aaa9904afe1d7a0e80e46dbfd69d7de14} 
+static bool parser.\+Input.\+Mouse\+Button\+Left\+Released (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+retorna \mbox{[}true\mbox{]} se o botao esquerdo do mouse foi despressionado ou nao. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_input_a1b66754a6963c32b14293d76cc24838a}\index{parser.Input@{parser.Input}!MouseButtonRightPressed@{MouseButtonRightPressed}}
+\index{MouseButtonRightPressed@{MouseButtonRightPressed}!parser.Input@{parser.Input}}
+\doxysubsubsection{\texorpdfstring{MouseButtonRightPressed()}{MouseButtonRightPressed()}}
+{\footnotesize\ttfamily \label{classparser_1_1_input_a1b66754a6963c32b14293d76cc24838a} 
+static bool parser.\+Input.\+Mouse\+Button\+Right\+Pressed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+retorna \mbox{[}true\mbox{]} se o botao direito do mouse foi pressionado. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_input_a8b5231fa7d6a6dab099406992b03dbc4}\index{parser.Input@{parser.Input}!MouseButtonRightReleased@{MouseButtonRightReleased}}
+\index{MouseButtonRightReleased@{MouseButtonRightReleased}!parser.Input@{parser.Input}}
+\doxysubsubsection{\texorpdfstring{MouseButtonRightReleased()}{MouseButtonRightReleased()}}
+{\footnotesize\ttfamily \label{classparser_1_1_input_a8b5231fa7d6a6dab099406992b03dbc4} 
+static bool parser.\+Input.\+Mouse\+Button\+Right\+Released (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+retorna \mbox{[}true\mbox{]} se o botao direito do mouse foi despressionado ou nao. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_input_a0338632f7f3e230c787d6f8d5639a2e0}\index{parser.Input@{parser.Input}!MouseleftPressed@{MouseleftPressed}}
+\index{MouseleftPressed@{MouseleftPressed}!parser.Input@{parser.Input}}
+\doxysubsubsection{\texorpdfstring{MouseleftPressed()}{MouseleftPressed()}}
+{\footnotesize\ttfamily \label{classparser_1_1_input_a0338632f7f3e230c787d6f8d5639a2e0} 
+static int parser.\+Input.\+Mouseleft\+Pressed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+retonra 1 se o botao esquerdo do mouse foi pressionado. retorna 0 se não. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_input_a150989a9c13db46130117a775962d8e5}\index{parser.Input@{parser.Input}!MouseMove@{MouseMove}}
+\index{MouseMove@{MouseMove}!parser.Input@{parser.Input}}
+\doxysubsubsection{\texorpdfstring{MouseMove()}{MouseMove()}}
+{\footnotesize\ttfamily \label{classparser_1_1_input_a150989a9c13db46130117a775962d8e5} 
+static void parser.\+Input.\+Mouse\+Move (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+obtem as coordenadas do mouse. transfere para o vector 2d mouse\+Position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & coordenada X atual do mouse.\\
+\hline
+{\em y} & coordenada Y atual do mouse.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_input_a366034e0d7558885e919ebe77003c67d}\index{parser.Input@{parser.Input}!MouserightPressed@{MouserightPressed}}
+\index{MouserightPressed@{MouserightPressed}!parser.Input@{parser.Input}}
+\doxysubsubsection{\texorpdfstring{MouserightPressed()}{MouserightPressed()}}
+{\footnotesize\ttfamily \label{classparser_1_1_input_a366034e0d7558885e919ebe77003c67d} 
+static int parser.\+Input.\+Mouseright\+Pressed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+retorna 1 se o botao direito do mouse foi pressionado. retorna 0 se não. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_input_aaaecd01dbf817fc71a0f0d058b0a5f1a}\index{parser.Input@{parser.Input}!MouseWheelMoved@{MouseWheelMoved}}
+\index{MouseWheelMoved@{MouseWheelMoved}!parser.Input@{parser.Input}}
+\doxysubsubsection{\texorpdfstring{MouseWheelMoved()}{MouseWheelMoved()}}
+{\footnotesize\ttfamily \label{classparser_1_1_input_aaaecd01dbf817fc71a0f0d058b0a5f1a} 
+static void parser.\+Input.\+Mouse\+Wheel\+Moved (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+obtem as coordenada da roda do mouse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & coordenada X atual da roda do mouse.\\
+\hline
+{\em y} & coordenada Y atual da roda do mouse.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classparser_1_1_input_adbd980b807cce6b4f22c9b07da344389}\index{parser.Input@{parser.Input}!deltaMouseWheel@{deltaMouseWheel}}
+\index{deltaMouseWheel@{deltaMouseWheel}!parser.Input@{parser.Input}}
+\doxysubsubsection{\texorpdfstring{deltaMouseWheel}{deltaMouseWheel}}
+{\footnotesize\ttfamily \label{classparser_1_1_input_adbd980b807cce6b4f22c9b07da344389} 
+double parser.\+Input.\+delta\+Mouse\+Wheel = 0.\+0\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+valor delta da roda do mouse. 
+
+\Hypertarget{classparser_1_1_input_a553e2284de02b3b7ff16ce79afa7a7e0}\index{parser.Input@{parser.Input}!isAlreadyInit@{isAlreadyInit}}
+\index{isAlreadyInit@{isAlreadyInit}!parser.Input@{parser.Input}}
+\doxysubsubsection{\texorpdfstring{isAlreadyInit}{isAlreadyInit}}
+{\footnotesize\ttfamily \label{classparser_1_1_input_a553e2284de02b3b7ff16ce79afa7a7e0} 
+bool parser.\+Input.\+is\+Already\+Init = false\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+se true, o sistema de input ja foi inicializado. 
+
+\Hypertarget{classparser_1_1_input_a631e12220abbcf507c07a13eb00667da}\index{parser.Input@{parser.Input}!isMouseLeftButtonIsPressed@{isMouseLeftButtonIsPressed}}
+\index{isMouseLeftButtonIsPressed@{isMouseLeftButtonIsPressed}!parser.Input@{parser.Input}}
+\doxysubsubsection{\texorpdfstring{isMouseLeftButtonIsPressed}{isMouseLeftButtonIsPressed}}
+{\footnotesize\ttfamily \label{classparser_1_1_input_a631e12220abbcf507c07a13eb00667da} 
+bool parser.\+Input.\+is\+Mouse\+Left\+Button\+Is\+Pressed = false\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+true de o botao esquerdo do mouse foi pressionado. 
+
+\Hypertarget{classparser_1_1_input_a10dd3b961448ee9bd845b3d7ba3d14da}\index{parser.Input@{parser.Input}!isMouseLeftButtonIsReleased@{isMouseLeftButtonIsReleased}}
+\index{isMouseLeftButtonIsReleased@{isMouseLeftButtonIsReleased}!parser.Input@{parser.Input}}
+\doxysubsubsection{\texorpdfstring{isMouseLeftButtonIsReleased}{isMouseLeftButtonIsReleased}}
+{\footnotesize\ttfamily \label{classparser_1_1_input_a10dd3b961448ee9bd845b3d7ba3d14da} 
+bool parser.\+Input.\+is\+Mouse\+Left\+Button\+Is\+Released = false\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+tre se o botao esquerdo do mouse foi despressionado. 
+
+\Hypertarget{classparser_1_1_input_a32512a51cebe9f44b6f5efa5a04ecd80}\index{parser.Input@{parser.Input}!isMouseRightButtonIsPressed@{isMouseRightButtonIsPressed}}
+\index{isMouseRightButtonIsPressed@{isMouseRightButtonIsPressed}!parser.Input@{parser.Input}}
+\doxysubsubsection{\texorpdfstring{isMouseRightButtonIsPressed}{isMouseRightButtonIsPressed}}
+{\footnotesize\ttfamily \label{classparser_1_1_input_a32512a51cebe9f44b6f5efa5a04ecd80} 
+bool parser.\+Input.\+is\+Mouse\+Right\+Button\+Is\+Pressed = false\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+true se o botao direito do mouse foi pressionado. 
+
+\Hypertarget{classparser_1_1_input_ad4662bd8c4d065d909e4c9f5af0dc7e8}\index{parser.Input@{parser.Input}!isMouseRightButtonIsReleased@{isMouseRightButtonIsReleased}}
+\index{isMouseRightButtonIsReleased@{isMouseRightButtonIsReleased}!parser.Input@{parser.Input}}
+\doxysubsubsection{\texorpdfstring{isMouseRightButtonIsReleased}{isMouseRightButtonIsReleased}}
+{\footnotesize\ttfamily \label{classparser_1_1_input_ad4662bd8c4d065d909e4c9f5af0dc7e8} 
+bool parser.\+Input.\+is\+Mouse\+Right\+Button\+Is\+Released = false\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+true se o botao direito do mouse foi despressionado. 
+
+\Hypertarget{classparser_1_1_input_a7725604b5fdd9b1dd92d0b1c54b7b74f}\index{parser.Input@{parser.Input}!mousePosition@{mousePosition}}
+\index{mousePosition@{mousePosition}!parser.Input@{parser.Input}}
+\doxysubsubsection{\texorpdfstring{mousePosition}{mousePosition}}
+{\footnotesize\ttfamily \label{classparser_1_1_input_a7725604b5fdd9b1dd92d0b1c54b7b74f} 
+\mbox{\hyperlink{classparser_1_1_vector2_d}{Vector2D}} parser.\+Input.\+mouse\+Position = new \mbox{\hyperlink{classparser_1_1_vector2_d}{Vector2D}}(0.\+0, 0.\+0)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+coordenadas do ponteiro do mouse. 
+
+\Hypertarget{classparser_1_1_input_abd6099dc80ca91ab89898928070633ba}\index{parser.Input@{parser.Input}!mouseWheelPosition@{mouseWheelPosition}}
+\index{mouseWheelPosition@{mouseWheelPosition}!parser.Input@{parser.Input}}
+\doxysubsubsection{\texorpdfstring{mouseWheelPosition}{mouseWheelPosition}}
+{\footnotesize\ttfamily \label{classparser_1_1_input_abd6099dc80ca91ab89898928070633ba} 
+\mbox{\hyperlink{classparser_1_1_vector2_d}{Vector2D}} parser.\+Input.\+mouse\+Wheel\+Position = new \mbox{\hyperlink{classparser_1_1_vector2_d}{Vector2D}}(0.\+0, 0.\+0)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+coordenadas relativas a roda do mouse. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/\+LIBRARIES/\+Game Support/\+Library\+Games/\+Library\+SFML/\mbox{\hyperlink{_input_8cs}{Input.\+cs}}\end{DoxyCompactItemize}

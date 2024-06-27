@@ -1,0 +1,333 @@
+Certamente! Aqui está uma lista de 45 funções matemáticas comumente utilizadas em linguagens de programação modernas 
+para resolver problemas de computação:
+
+BIBLIOTECA DE TEXTO - STRINGS: 
+Aqui estão 35 funções string mais utilizadas em problemas atuais de computação:
+* length(): Retorna o comprimento da string.
+* substr(): Retorna uma substring da string.
+* charAt(): Retorna o caractere na posição especificada da string.
+* indexOf(): Retorna a posição do primeiro caractere especificado na string.
+* lastIndexOf(): Retorna a posição do último caractere especificado na string.
+* concat(): Concatena duas strings.
+* toLowerCase(): Converte a string para minúsculas.
+* toUpperCase(): Converte a string para maiúsculas.
+* trim(): Remove espaços em branco do início e do fim da string.
+* replace(): Substitui todas as ocorrências de um caractere ou substring por outro.
+* split(): Divide a string em um array de substrings.
+* join(): Junta um array de strings em uma única string.
+* equals(): Compara duas strings.
+* equalsIgnoreCase(): Compara duas strings, ignorando as maiúsculas e minúsculas.
+* startsWith(): Verifica se a string começa com uma substring especificada.
+* endsWith(): Verifica se a string termina com uma substring especificada.
+* contains(): Verifica se a string contém uma substring especificada.
+* parseInt(): Converte uma string para um número inteiro.
+* parseFloat(): Converte uma string para um número real.
+* format(): Formata uma string de acordo com um formato especificado.
+* toUpperCase(): Converte a string para maiúsculas.
+* toLowerCase(): Converte a string para minúsculas.
+* trim(): Remove espaços em branco do início e do fim da string.
+* replace(): Substitui todas as ocorrências de um caractere ou substring por outro.
+* split(): Divide a string em um array de substrings.
+* join(): Junta um array de strings em uma única string.
+Essas funções são usadas para uma variedade de tarefas, incluindo:
+* Manipulação de texto: As funções string são usadas para manipular texto, como filtrar, formatar e comparar.
+* Processamento de dados: As funções string são usadas para processar dados, como converter números e strings.
+* Desenvolvimento web: As funções string são usadas para desenvolver sites e aplicativos web, como lidar com URLs e formulários.
+* Programação de jogos: As funções string são usadas para desenvolver jogos, como criar diálogos e exibir texto na tela.
+Aqui estão alguns exemplos de como essas funções podem ser usadas:
+* Para calcular o comprimento de uma string, podemos usar a função length().
+
+
+// Calcula o comprimento da string "Olá, mundo!"
+var comprimento = "Olá, mundo!".length;
+console.log(comprimento); // 12
+
+* Para retornar uma substring da string, podemos usar a função substr().
+
+
+// Retorna a substring da string "Olá, mundo!" começando na posição 4
+var substring = "Olá, mundo!".substr(4);
+console.log(substring); // "mundo!"
+
+* Para retornar o caractere na posição especificada da string, podemos usar a função charAt().
+
+
+// Retorna o caractere na posição 2 da string "Olá, mundo!"
+var caractere = "Olá, mundo!".charAt(2);
+console.log(caractere); // "l"
+
+* Para verificar se a string contém uma substring especificada, podemos usar a função contains().
+
+
+// Verifica se a string "Olá, mundo!" contém a substring "lá"
+var contém = "Olá, mundo!".contains("lá");
+console.log(contém); // true
+
+Essas são apenas algumas das muitas funções string que estão disponíveis.
+Para aprender mais sobre essas funções, você pode consultar a documentação da linguagem de programação que você está usando.
+_____________________________________________________________________________________________________________________________________________________________________
+FUNÇÕES - BIBLIOTECA DE MATEMÁTICA - RELAÇÃO 1:
+1. **Operações Básicas:**
+   - Adição: `+`
+   - Subtração: `-`
+   - Multiplicação: `*`
+   - Divisão: `/`
+   - Módulo (resto da divisão): `%`
+
+2. **Funções Exponenciais e Logarítmicas:**
+   - Exponenciação: `pow(x, y)` ou `x ** y`
+   - Logaritmo natural: `log(x)` ou `ln(x)`
+   - Logaritmo na base 10: `log10(x)`
+
+3. **Funções Trigonométricas:**
+   - Seno: `sin(x)`
+   - Cosseno: `cos(x)`
+   - Tangente: `tan(x)`
+   - Arcoseno: `asin(x)`
+   - Arcocosseno: `acos(x)`
+   - Arcotangente: `atan(x)`
+
+4. **Funções Hiperbólicas:**
+   - Seno hiperbólico: `sinh(x)`
+   - Cosseno hiperbólico: `cosh(x)`
+   - Tangente hiperbólica: `tanh(x)`
+
+5. **Arredondamento e Truncamento:**
+   - Arredondamento para inteiro: `round(x)`
+   - Truncamento para inteiro: `int(x)`
+   - Teto (menor inteiro maior ou igual a x): `ceil(x)`
+   - Piso (maior inteiro menor ou igual a x): `floor(x)`
+
+6. **Valor Absoluto:**
+   - Valor absoluto: `abs(x)`
+
+7. **Funções Estatísticas:**
+   - Média: `mean(array)`
+   - Mediana: `median(array)`
+   - Desvio padrão: `stddev(array)`
+   - Variância: `variance(array)`
+
+8. **Números Aleatórios:**
+   - Gerar número aleatório: `random()`
+
+9. **Funções de Números Complexos:**
+   - Parte real: `real(x)`
+   - Parte imaginária: `imag(x)`
+   - Conjugado: `conj(x)`
+
+10. **Funções de Álgebra Linear:**
+    - Produto escalar: `dot(vector1, vector2)`
+    - Produto de matrizes: `matmul(matrix1, matrix2)`
+    - Transposição de matriz: `transpose(matrix)`
+
+11. **Funções de Lógica Booleana:**
+    - E lógico: `and`
+    - Ou lógico: `or`
+    - Negação lógica: `not`
+
+12. **Funções de Comparação:**
+    - Maior que: `>`
+    - Menor que: `<`
+    - Maior ou igual a: `>=`
+    - Menor ou igual a: `<=`
+    - Igual a: `==`
+    - Diferente de: `!=`
+
+Estas são apenas algumas das funções matemáticas mais comuns, e a escolha específica dependerá do 
+contexto e dos requisitos do problema que você está tentando resolver.
+
+_____________________________________________________________________________________________________________________________________________________________________
+BIBLIOTECA FUNÇÕES MATEMÁTICAS: RELAÇÃO 2:
+
+Claro, aqui estão 35 funções que poderiam fazer parte de uma biblioteca de matemática em uma linguagem de programação,
+focando em resolver problemas frequentes de computação nos dias de hoje:
+
+1. **Operações Básicas:**
+   - `add(x, y)`: Retorna a soma de x e y.
+   - `subtract(x, y)`: Retorna a diferença entre x e y.
+   - `multiply(x, y)`: Retorna o produto de x e y.
+   - `divide(x, y)`: Retorna o quociente de x dividido por y.
+   - `modulo(x, y)`: Retorna o resto da divisão de x por y.
+
+2. **Funções Exponenciais e Logarítmicas:**
+   - `power(base, exponent)`: Retorna a base elevada ao expoente.
+   - `logarithm(x, base)`: Retorna o logaritmo de x na base especificada.
+
+3. **Funções Trigonométricas:**
+   - `sine(angle)`: Retorna o seno do ângulo.
+   - `cosine(angle)`: Retorna o cosseno do ângulo.
+   - `tangent(angle)`: Retorna a tangente do ângulo.
+   - `arcsine(x)`: Retorna o arco seno de x.
+   - `arccosine(x)`: Retorna o arco cosseno de x.
+   - `arctangent(x)`: Retorna o arco tangente de x.
+
+4. **Funções Hiperbólicas:**
+   - `sinh(x)`: Retorna o seno hiperbólico de x.
+   - `cosh(x)`: Retorna o cosseno hiperbólico de x.
+   - `tanh(x)`: Retorna a tangente hiperbólica de x.
+
+5. **Arredondamento e Truncamento:**
+   - `round(x)`: Retorna o valor de x arredondado para o inteiro mais próximo.
+   - `truncate(x)`: Retorna a parte inteira de x.
+   - `ceil(x)`: Retorna o menor número inteiro maior ou igual a x (teto).
+   - `floor(x)`: Retorna o maior número inteiro menor ou igual a x (piso).
+
+6. **Valor Absoluto:**
+   - `absolute(x)`: Retorna o valor absoluto de x.
+
+7. **Funções Estatísticas:**
+   - `mean(data)`: Retorna a média dos valores em um conjunto de dados.
+   - `median(data)`: Retorna a mediana dos valores em um conjunto de dados.
+   - `stddev(data)`: Retorna o desvio padrão dos valores em um conjunto de dados.
+   - `variance(data)`: Retorna a variância dos valores em um conjunto de dados.
+
+8. **Números Aleatórios:**
+   - `random()`: Retorna um número aleatório entre 0 e 1.
+
+9. **Funções de Números Complexos:**
+   - `real_part(complex_num)`: Retorna a parte real de um número complexo.
+   - `imaginary_part(complex_num)`: Retorna a parte imaginária de um número complexo.
+   - `conjugate(complex_num)`: Retorna o conjugado de um número complexo.
+
+10. **Funções de Álgebra Linear:**
+    - `dot_product(vector1, vector2)`: Retorna o produto escalar de dois vetores.
+    - `matrix_multiply(matrix1, matrix2)`: Retorna o produto de duas matrizes.
+    - `transpose(matrix)`: Retorna a transposta de uma matriz.
+
+11. **Funções de Lógica Booleana:**
+    - `logical_and(a, b)`: Retorna o resultado do operador lógico "E".
+    - `logical_or(a, b)`: Retorna o resultado do operador lógico "OU".
+    - `logical_not(a)`: Retorna o resultado do operador lógico "NÃO".
+
+12. **Funções de Comparação:**
+    - `greater_than(x, y)`: Retorna verdadeiro se x for maior que y, caso contrário, falso.
+    - `less_than(x, y)`: Retorna verdadeiro se x for menor que y, caso contrário, falso.
+    - `equals(x, y)`: Retorna verdadeiro se x for igual a y, caso contrário, falso.
+
+Essas funções abrangem uma variedade de operações matemáticas que são comumente utilizadas em problemas de computação modernos.
+A implementação exata pode variar dependendo da linguagem de programação utilizada.
+
+
+____________________________________________________________________________________________________________________________________________________________________
+FUNÇÕES DE TEXTO - STRINGS: RELAÇÃO 1:
+Certamente! Aqui estão 45 funções de processamento de strings que uma biblioteca de linguagem de programação moderna pode oferecer para resolver problemas atuais no mundo da computação:
+
+1. **Concatenação:**
+   - `concat(str1, str2)`: Concatena duas strings.
+
+2. **Comprimento da String:**
+   - `length(str)`: Retorna o comprimento da string.
+
+3. **Acesso a Caracteres:**
+   - `charAt(str, index)`: Retorna o caractere na posição específica.
+
+4. **Substrings:**
+   - `substring(str, start, end)`: Retorna uma substring com base nos índices de início e fim.
+
+5. **Busca de Substring:**
+   - `indexOf(str, substr)`: Retorna o índice da primeira ocorrência da substring.
+   - `lastIndexOf(str, substr)`: Retorna o índice da última ocorrência da substring.
+
+6. **Comparação de Strings:**
+   - `compare(str1, str2)`: Compara duas strings lexicograficamente.
+
+7. **Transformação de Maiúsculas e Minúsculas:**
+   - `toUpperCase(str)`: Converte a string para maiúsculas.
+   - `toLowerCase(str)`: Converte a string para minúsculas.
+
+8. **Remoção de Espaços em Branco:**
+   - `trim(str)`: Remove espaços em branco do início e do final da string.
+
+9. **Substituição de Substring:**
+   - `replace(str, oldSubstr, newSubstr)`: Substitui todas as ocorrências de uma substring por outra.
+
+10. **Divisão de String:**
+    - `split(str, delimiter)`: Divide a string em uma lista usando um delimitador.
+
+11. **Verificação de Prefixo e Sufixo:**
+    - `startsWith(str, prefix)`: Verifica se a string começa com o prefixo especificado.
+    - `endsWith(str, suffix)`: Verifica se a string termina com o sufixo especificado.
+
+12. **Verificação de Conteúdo:**
+    - `contains(str, substr)`: Verifica se a string contém uma determinada substring.
+
+13. **Padronização de Strings:**
+    - `capitalize(str)`: Capitaliza a primeira letra da string.
+    - `titleCase(str)`: Converte para título (capitaliza a primeira letra de cada palavra).
+
+14. **Inversão de String:**
+    - `reverse(str)`: Inverte a ordem dos caracteres na string.
+	
+
+
+15. **Preenchimento de String:**
+    - `padStart(str, length, padChar)`: Preenche a string com caracteres à esquerda.
+    - `padEnd(str, length, padChar)`: Preenche a string com caracteres à direita.
+
+16. **Remoção de Caracteres Específicos:**
+    - `removeChars(str, charsToRemove)`: Remove caracteres específicos da string.
+
+17. **Validação de Formato:**
+    - `isNumeric(str)`: Verifica se a string representa um número.
+    - `isEmail(str)`: Verifica se a string é um endereço de e-mail válido.
+
+18. **Formatação de Números:**
+    - `formatNumber(number)`: Formata um número como uma string.
+
+19. **Repetição de Strings:**
+    - `repeat(str, count)`: Repete a string um determinado número de vezes.
+
+20. **Leitura e Escrita de Strings em Arquivos:**
+    - `readFromFile(filePath)`: Lê uma string de um arquivo.
+    - `writeToFile(filePath, str)`: Escreve uma string em um arquivo.
+
+21. **Geração de Strings Aleatórias:**
+    - `generateRandomString(length)`: Gera uma string aleatória com o comprimento especificado.
+
+22. **Formatação de Data em Strings:**
+    - `formatDate(date, format)`: Formata uma data como uma string de acordo com o formato especificado.
+
+23. **Escape de Caracteres Especiais:**
+    - `escapeSpecialCharacters(str)`: Escapa caracteres especiais em uma string.
+
+24. **Conversão de Tipos:**
+    - `toString(value)`: Converte um valor para uma string.
+
+25. **Contagem de Ocorrências:**
+    - `countOccurrences(str, substr)`: Conta o número de ocorrências de uma substring na string.
+
+26. **Remoção de Acentos:**
+    - `removeAccents(str)`: Remove acentos de caracteres em uma string.
+
+27. **Validação de Palíndromo:**
+    - `isPalindrome(str)`: Verifica se a string é um palíndromo.
+
+28. **Conversão de String para Números:**
+    - `parseInt(str)`: Converte uma string para um número inteiro.
+    - `parseFloat(str)`: Converte uma string para um número de ponto flutuante.
+
+29. **Codificação e Decodificação Base64:**
+    - `encodeBase64(str)`: Codifica a string em Base64.
+    - `decodeBase64(encodedStr)`: Decodifica uma string Base64.
+
+30. **Separação de Linhas em Multilinhas:**
+    - `splitLines(str)`: Separa uma string em um array de linhas.
+
+31. **Truncamento de String:**
+    - `truncate(str, maxLength)`: Trunca a string para um comprimento máximo.
+
+32. **Conversão de Case Snake/Camel:**
+    - `toSnakeCase(str)`: Converte a string para o formato snake_case.
+    - `toCamelCase(str)`: Converte a string para o formato camelCase.
+
+33. **Validação de Números Inteiros Positivos:**
+    - `isPositiveInteger(str)`: Verifica se a string representa um número inteiro positivo.
+
+34. **Contagem de Palavras:**
+    - `countWords(str)`: Conta o número de palavras em uma string.
+
+35. **Ordenação de Strings:**
+    - `sortStrings(strings)`: Ordena uma lista de strings lexicograficamente.
+
+Estas são apenas algumas das muitas funções úteis para processamento de strings em programação.
+A inclusão exata pode depender da linguagem de programação específica.

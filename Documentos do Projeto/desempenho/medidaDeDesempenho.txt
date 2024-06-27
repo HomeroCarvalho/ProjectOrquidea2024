@@ -1,0 +1,13 @@
+Para medir o desempenho de um código C# no Visual Studio 2022 Community, você pode usar a ferramenta de análise de desempenho integrada. Aqui estão os passos:
+
+1. **Abra seu projeto no Visual Studio**: Inicie o Visual Studio e abra o projeto que você deseja analisar.
+2. **Inicie a Análise de Desempenho**: Vá para o menu `Debug`, selecione `Performance Profiler...` ou pressione `Alt + F2`. Isso abrirá a janela do Performance Profiler.
+3. **Escolha as Ferramentas de Análise**: Você verá uma lista de ferramentas disponíveis para análise de desempenho. Para a maioria dos cenários, `CPU Usage` e `Memory Usage` são boas escolhas. Selecione as ferramentas que você deseja usar e clique em `Start`.
+4. **Execute seu Código**: O Visual Studio começará a coletar dados de desempenho enquanto seu aplicativo está sendo executado. Execute as partes do seu código que você deseja analisar.
+5. **Pare a Coleta de Dados**: Quando terminar de executar seu código, clique em `Stop collection` ou feche seu aplicativo para parar a coleta de dados.
+6. **Analise os Resultados**: O Visual Studio exibirá os resultados da análise de desempenho. Você pode explorar os detalhes para ver onde seu código está gastando tempo e memória.
+
+Lembre-se de que a análise de desempenho pode afetar o desempenho do seu código,
+ então os resultados devem ser usados apenas para entender as tendências relativas
+ e não os tempos de execução absolutos. Espero que isso ajude! Se você tiver mais 
+ perguntas, sinta-se à vontade para perguntar.

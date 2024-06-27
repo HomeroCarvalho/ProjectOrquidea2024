@@ -1,0 +1,395 @@
+\doxysection{parser.\+Operador Class Reference}
+\hypertarget{classparser_1_1_operador}{}\label{classparser_1_1_operador}\index{parser.Operador@{parser.Operador}}
+Inheritance diagram for parser.\+Operador\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classparser_1_1_operador}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+new string \mbox{\hyperlink{classparser_1_1_operador_a58642c9488846accf93ae4540b4515ed}{Get\+Nome}} ()
+\item 
+int \mbox{\hyperlink{classparser_1_1_operador_aab115d597e031a36eda3143975f5a20b}{Get\+Prioridade}} ()
+\item 
+string \mbox{\hyperlink{classparser_1_1_operador_a60e3c494591a9e29795cc80e0ae4bafd}{Get\+Tipo\+Funcao}} ()
+\item 
+void \mbox{\hyperlink{classparser_1_1_operador_aff94d3a5a279810e734295db7c994bea}{Set\+Tipo}} (string tipo\+Novo)
+\item 
+\mbox{\hyperlink{classparser_1_1_operador_afce6f65732b317b8509b81df3325605e}{Operador}} (string \mbox{\hyperlink{classparser_1_1_metodo_aaa45c5125f06faccd5663b4287226481}{nome\+Classe}}, string nome\+Operador, int \mbox{\hyperlink{classparser_1_1_operador_ab3ac6dea3b860edbfdbd2e7a01701ca0}{prioridade}}, \mbox{\hyperlink{classparser_1_1_objeto}{Objeto}}\mbox{[}$\,$\mbox{]} parametros, string tipo\+Operador, Method\+Info metodo\+Impl, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo\+Do\+Operador)
+\item 
+\mbox{\hyperlink{classparser_1_1_operador_a46ecf6a639b0319e8e21cddbe06eea2e}{Operador}} (string \mbox{\hyperlink{classparser_1_1_metodo_aaa45c5125f06faccd5663b4287226481}{nome\+Classe}}, string nome\+Operador, int \mbox{\hyperlink{classparser_1_1_operador_ab3ac6dea3b860edbfdbd2e7a01701ca0}{prioridade}}, string\mbox{[}$\,$\mbox{]} tipos\+Parametros, string tipo\+Operador, \mbox{\hyperlink{classparser_1_1_metodo}{Metodo}} funcao\+De\+Implementacao\+Do\+Operador, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo\+Do\+Operador)
+\item 
+\mbox{\hyperlink{classparser_1_1_operador_a981d5681d64af452e94e16bc076ee585}{Operador}} (string nome\+Clase, string nome\+Operador, int \mbox{\hyperlink{classparser_1_1_operador_ab3ac6dea3b860edbfdbd2e7a01701ca0}{prioridade}}, string \mbox{\hyperlink{classparser_1_1_operador_aa95c29204c0be74cf756c22e6ff7ec55}{tipo\+Retorno}}, List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ instrucoes\+Corpo, \mbox{\hyperlink{classparser_1_1_objeto}{Objeto}}\mbox{[}$\,$\mbox{]} parametros, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo\+Do\+Operador)
+\item 
+new \mbox{\hyperlink{classparser_1_1_operador}{Operador}} \mbox{\hyperlink{classparser_1_1_operador_a8c0dd4d6451eb400abe8c9bd84596072}{Clone}} ()
+\item 
+object \mbox{\hyperlink{classparser_1_1_operador_ae0e45a9e1059dd2b4e2c2e9d89134c33}{Execute\+Operador}} (string nome\+Do\+Operador, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo, params object\mbox{[}$\,$\mbox{]} valores\+Parametros)
+\item 
+override string \mbox{\hyperlink{classparser_1_1_operador_a3b2e63a9581ec8aa410e38c93b79f628}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classparser_1_1_metodo}{parser.\+Metodo}}}
+\begin{DoxyCompactItemize}
+\item 
+delegate object \mbox{\hyperlink{classparser_1_1_metodo_ae4335cef210a148055a5e5d0cd33c897}{Funcao\+Geral}} (params object\mbox{[}$\,$\mbox{]} parametros)
+\begin{DoxyCompactList}\small\item\em prototipo para funções genérica. \end{DoxyCompactList}\item 
+delegate void \mbox{\hyperlink{classparser_1_1_metodo_abcb6ca78a3a656568c15fe3c487fd6f2}{Call\+Function}} ()
+\begin{DoxyCompactList}\small\item\em prototipo de execução da função, implementada na liguagem utilizada na construção do compilador; \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_metodo_a28e6909bd516c76d14e5be218f9f94fd}{Add\+Parameter}} (\mbox{\hyperlink{classparser_1_1_objeto}{Objeto}} parameter)
+\begin{DoxyCompactList}\small\item\em adiciona um parametro na lista de parãmetros. util quando o parametro for um metodo, com tipo de retorno, classe, e parametros definidos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_metodo_a9966e3a0967a3566807d7c212bd93efa}{Set\+Nome\+Longo}} (string classe\+Do\+Metodo)
+\begin{DoxyCompactList}\small\item\em em implementações anteriores, para distinguir metodos herdados, de metodos atuais, foi de design setar o nome de metodos como nome longo (nome\+Classe@nome\+Metodo). se descontinuidade. \end{DoxyCompactList}\item 
+object \mbox{\hyperlink{classparser_1_1_metodo_a6416532b90d316c6010e296c77a5e26c}{Execute\+AFunction\+Importada}} (ref \mbox{\hyperlink{classparser_1_1_objeto}{Objeto}} obj\+Caller, List$<$ object $>$ valores\+Parametros, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em faz a avaliacao de uma funcao importada. \end{DoxyCompactList}\item 
+object \mbox{\hyperlink{classparser_1_1_metodo_afa2efaaf1d8210df9ada3944d40d910c}{Execute\+AFunction\+Orquidea}} (\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo\+Function\+Orquidea, \mbox{\hyperlink{classparser_1_1_objeto}{Objeto}} obj\+Caller)
+\begin{DoxyCompactList}\small\item\em executa uma funcao orquidea, parametros estão dentro do escopo sessao do metodo, assim como variaveis globais, variaveis do corpo do metodo, propriedades do objeto caller. \end{DoxyCompactList}\item 
+object \mbox{\hyperlink{classparser_1_1_metodo_ab9c0aa71531bf7441431d75f24b9ab58}{Execute\+AFunction}} (List$<$ \mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} $>$ parametros, object \mbox{\hyperlink{classparser_1_1_metodo_a2269ab81850040ae702dec4e196f80ae}{caller}}, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo\+Da\+Funcao)
+\begin{DoxyCompactList}\small\item\em avalia uma função, tendo como parâmetros expressões, \end{DoxyCompactList}\item 
+object \mbox{\hyperlink{classparser_1_1_metodo_a0d363ca04f0851dbb770b79f81b3b4a8}{Execute\+AFunction}} (\mbox{\hyperlink{classparser_1_1_objeto}{Objeto}} obj\+Caller, List$<$ object $>$ valores\+Dos\+Parametros, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em Modos de execucao da função\+: 1-\/ via instruções da linguagem orquidea. é criado uma copia do escopo da classe, na chamada de método. como só há chamadas de métodos, o escopo é sempre clonado, evitando chamadas intercaladas do método, resultando em erros de instanciação dos objets do escopo. 2-\/ via metodo via reflexao (é preciso setar o objeto que fará a chamada do método). \end{DoxyCompactList}\item 
+object \mbox{\hyperlink{classparser_1_1_metodo_a135b030d2bd4269b03908d563e181459}{Execute\+AMethod}} (List$<$ \mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} $>$ params\+Chamada\+De\+Metodo, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo\+Externo, ref \mbox{\hyperlink{classparser_1_1_objeto}{Objeto}} objeto\+Caller, int flag\+Build)
+\begin{DoxyCompactList}\small\item\em executa um metodo, com parametros e objeto caller que invoca a expressao chamada de metodo. \end{DoxyCompactList}\item 
+object \mbox{\hyperlink{classparser_1_1_metodo_aa0019c97792bb072f0bce93d521bf379}{Execute\+AConstructor}} (ref \mbox{\hyperlink{classparser_1_1_objeto}{Objeto}} obj\+Caller, List$<$ \mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} $>$ parametros, string \mbox{\hyperlink{classparser_1_1_metodo_aaa45c5125f06faccd5663b4287226481}{nome\+Classe}}, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo\+Funcao, int \mbox{\hyperlink{classparser_1_1_objeto_a06ef836fe95ede38c6a099c1cd1d1d14}{index\+Construtor}})
+\begin{DoxyCompactList}\small\item\em executa um construtor de uma classe orquidea. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_metodo_ac12b23d93c65d3dbc6290b1443ad4af3}{Set\+Atributes\+Method}} (bool is\+Expression\+Estatic)
+\begin{DoxyCompactList}\small\item\em seta propriedades particulares de metodos de certo tipo de classes. \end{DoxyCompactList}\item 
+new \mbox{\hyperlink{classparser_1_1_metodo}{Metodo}} \mbox{\hyperlink{classparser_1_1_metodo_a18c1937c5add962f39eecc12b02c77c8}{Clone}} ()
+\item 
+\mbox{\hyperlink{classparser_1_1_metodo_a9ad6aba74983123b77b3ca8d7ee2a751}{Metodo}} ()
+\item 
+\mbox{\hyperlink{classparser_1_1_metodo_a2f072278bc0a8d686c2d91bc4ace6385}{Metodo}} (string \mbox{\hyperlink{classparser_1_1_metodo_a7d370f087db7ed022c544abd22460281}{acessor}}, string \mbox{\hyperlink{classparser_1_1_metodo_a4b875dcf2687b4e86adacbf34023c900}{nome}}, \mbox{\hyperlink{classparser_1_1_metodo_ae4335cef210a148055a5e5d0cd33c897}{Funcao\+Geral}} fnc\+Implementa, string tipo\+Retorno, params \mbox{\hyperlink{classparser_1_1_objeto}{Objeto}}\mbox{[}$\,$\mbox{]} parametros\+Metodo)
+\item 
+\mbox{\hyperlink{classparser_1_1_metodo_a5373c6e3c54bd58848fc96974bee4a0f}{Metodo}} (string classe, string \mbox{\hyperlink{classparser_1_1_metodo_a7d370f087db7ed022c544abd22460281}{acessor}}, string \mbox{\hyperlink{classparser_1_1_metodo_a4b875dcf2687b4e86adacbf34023c900}{nome}}, \mbox{\hyperlink{classparser_1_1_objeto}{Objeto}}\mbox{[}$\,$\mbox{]} parametros\+Metodo, string tipo\+Retorno, List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ instrucoes\+Corpo, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo\+Da\+Funcao)
+\item 
+\mbox{\hyperlink{classparser_1_1_metodo_add7928d348a7d8c4f9c85b7da87a7388}{Metodo}} (string \mbox{\hyperlink{classparser_1_1_metodo_aaa45c5125f06faccd5663b4287226481}{nome\+Classe}}, string \mbox{\hyperlink{classparser_1_1_metodo_a7d370f087db7ed022c544abd22460281}{acessor}}, string \mbox{\hyperlink{classparser_1_1_metodo_a4b875dcf2687b4e86adacbf34023c900}{nome}}, Method\+Info metodo\+Importado, string tipo\+Retorno, params \mbox{\hyperlink{classparser_1_1_objeto}{Objeto}}\mbox{[}$\,$\mbox{]} parametros\+Metodo)
+\begin{DoxyCompactList}\small\item\em construtor com método importado via API Reflexao. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_metodo_a479cfa7e70ecc32f7ddd1f45c730bf75}{Metodo}} (string \mbox{\hyperlink{classparser_1_1_metodo_aaa45c5125f06faccd5663b4287226481}{nome\+Classe}}, string \mbox{\hyperlink{classparser_1_1_metodo_a7d370f087db7ed022c544abd22460281}{acessor}}, string \mbox{\hyperlink{classparser_1_1_metodo_a4b875dcf2687b4e86adacbf34023c900}{nome}}, Constructor\+Info construtor\+Importado, string tipo\+Retorno, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo\+Da\+Funcao, params \mbox{\hyperlink{classparser_1_1_objeto}{Objeto}}\mbox{[}$\,$\mbox{]} parametros\+Metodo)
+\item 
+override string \mbox{\hyperlink{classparser_1_1_metodo_a021ea0a6498b902b075c260dc536ed18}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classparser_1_1_objeto}{parser.\+Objeto}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparser_1_1_objeto_af414146eda40baa1e6c0770bcb75eb46}{Objeto}} ()
+\item 
+\mbox{\hyperlink{classparser_1_1_objeto_a1780382a3f992db095d15ea484509d7e}{Objeto}} (\mbox{\hyperlink{classparser_1_1_objeto}{Objeto}} objeto)
+\item 
+\mbox{\hyperlink{classparser_1_1_objeto_ab42120287b91ec43ea932b54afc0435e}{Objeto}} (string nome\+Acessor, string nome\+Classe, string nome\+Objeto, string nome\+Campo, object valor\+Campo)
+\item 
+\mbox{\hyperlink{classparser_1_1_objeto_a8f9b8149867c2441559b91008063fda1}{Objeto}} (string nome\+Acessor, string nome\+Classe, string nome\+Objeto, object \mbox{\hyperlink{classparser_1_1_objeto_af928497b36eac436fc8fc3df1f96031c}{valor}})
+\item 
+\mbox{\hyperlink{classparser_1_1_objeto_a258fff294b1f185229142e0cfb8ef768}{Objeto}} (string nome\+Acessor, string nome\+Classe, string nome\+Objeto, object \mbox{\hyperlink{classparser_1_1_objeto_af928497b36eac436fc8fc3df1f96031c}{valor}}, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo, bool \mbox{\hyperlink{classparser_1_1_objeto_acbbc932e535fcbf623fcdb59f77798d7}{is\+Static}})
+\item 
+\mbox{\hyperlink{classparser_1_1_objeto_aa3521dcfd79679cc30a4d9dd2cfe0792}{Objeto}} (string nome\+Acessor, string nome\+Classe, string nome\+OObjeto, object \mbox{\hyperlink{classparser_1_1_objeto_af928497b36eac436fc8fc3df1f96031c}{valor}}, List$<$ \mbox{\hyperlink{classparser_1_1_objeto}{Objeto}} $>$ campos, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\item 
+bool \mbox{\hyperlink{classparser_1_1_objeto_ac6bb4d7b5da2a791b7c8891bdb31f724}{Add\+Property}} (string name\+Property, string type\+Property, string name\+Class)
+\begin{DoxyCompactList}\small\item\em adiciona uma propriedade para uma classe. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_objeto_a607245044e7631e41fa833dfe1518078}{Remove\+Property}} (string name\+Property, string name\+Class)
+\begin{DoxyCompactList}\small\item\em remove uma propriedade de uma classe. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_objeto_a466399c1e58664cbfbe3ada561ebf7d8}{Remove\+AFunction}} (\mbox{\hyperlink{classparser_1_1_metodo}{Metodo}} fnc, string name\+Class)
+\begin{DoxyCompactList}\small\item\em remove uma funcao para uma classe. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_objeto_a8eddd5e9443150c37d15a47bbdd11b9c}{Add\+AFunction}} (\mbox{\hyperlink{classparser_1_1_metodo}{Metodo}} fnc, string name\+Class)
+\begin{DoxyCompactList}\small\item\em adiciona uma função para uma classe. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_objeto}{Objeto}} \mbox{\hyperlink{classparser_1_1_objeto_a9e2c6c5d4809be879d0bd5284092bfbf}{Clone}} ()
+\begin{DoxyCompactList}\small\item\em clona o objeto que chamou o metodo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_objeto_a98b738a8f2924190b9e5e28d625b31ef}{Copy\+Objeto}} (\mbox{\hyperlink{classparser_1_1_objeto}{Objeto}} obj\+To\+Copy)
+\begin{DoxyCompactList}\small\item\em copia para o objeto que chamou, os dados do objeto parametro. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classparser_1_1_objeto_a9f9887186d6ff391a360f4ff3df290b1}{Get\+Tipo\+Element}} ()
+\begin{DoxyCompactList}\small\item\em retorna o tipo dos elementos constituinte do objeto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_objeto_a43aa935bc191dc019c5940917d6b6de8}{Set\+Tipo\+Element}} (string \mbox{\hyperlink{classparser_1_1_objeto_a68d674daea97e7ae65659cffb0ea4a45}{tipo}})
+\begin{DoxyCompactList}\small\item\em seta o tipo dos elementos constituintes do objeto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_objeto_ac4c48d639034243f9662245f35b5636b}{Update\+Propriedade}} (string nome\+Propriedade, string classe\+Propriedade, object new\+Valor)
+\begin{DoxyCompactList}\small\item\em atualiza o valor de uma propriedade. se a propriedade nao existir cria a propriedade e seta para o novo valor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_objeto}{Objeto}} \mbox{\hyperlink{classparser_1_1_objeto_aac55638b33f281525dbd871a5255bde1}{Get\+Property}} (string \mbox{\hyperlink{classparser_1_1_objeto_a9914d37174f7494a5abe78adc9e66d7c}{nome}})
+\begin{DoxyCompactList}\small\item\em obtem uma propriedade do objeto. FUNCAO LEGADO, estando em versoes antigas de classe de \doxylink{classparser_1_1_expressao}{Expressao}. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classparser_1_1_objeto_ac4748b7aa0359e3b67994de4e16bd49d}{Get\+Acessor}} ()
+\begin{DoxyCompactList}\small\item\em retorna o tipo de acessor do objeto\+: public, private, ou protected. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_objeto_ab6c86388e39238889d26a9b762241050}{Set\+Acessor}} (string \mbox{\hyperlink{classparser_1_1_objeto_a43b3f34b1feb40c1f291e0f03fcf997d}{acessor}})
+\begin{DoxyCompactList}\small\item\em seta o acessor do objeto\+: private, protected, ou public. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_objeto_ae3a4b4aaf9885357d9af3d54461b486e}{Set\+Nome\+Longo}} ()
+\begin{DoxyCompactList}\small\item\em seta o nome longo do objeto\+: tipo@nome. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_objeto_a04e8cddbcbc365cee47ffe9bba075219}{Set\+Valor\+Objeto}} (object new\+Value)
+\begin{DoxyCompactList}\small\item\em seta o valor do objeto, com o valor parametro. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_objeto_a3cfa7c9ffdb630a064ce93a5ef734a89}{SET}} (string nome\+Propriedade, string classe\+Propriedade, object \mbox{\hyperlink{classparser_1_1_objeto_af928497b36eac436fc8fc3df1f96031c}{valor}})
+\begin{DoxyCompactList}\small\item\em seta uma propriedade com um valor. FUNCAO ATUALIZADO, UTILIZACAO EM classes Orquidea, PARA SETAR PROPRIEDADES ADICIONAIS, OU MODIFICAÇÕ\+ES EM PROPRIEDADES. \end{DoxyCompactList}\item 
+object \mbox{\hyperlink{classparser_1_1_objeto_aec3bfa361438ec4ed722025d497a41c3}{GET}} (string nome\+Propriedade)
+\begin{DoxyCompactList}\small\item\em obtem o valor de uma propriedade. FUNCAO ATUALIZADO, UTILIZADO COMO GETTER DE UMA CLASSE ORQUIDEA (FEITO COM classe OBJETO). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_objeto_a10a5f489de29d1d8f77f1b85e1f86b40}{Set\+Field}} (\mbox{\hyperlink{classparser_1_1_objeto}{Objeto}} novo\+Field)
+\begin{DoxyCompactList}\small\item\em seta uma propriedade do objeto, com o valor parametro. se nao houver a propriedade, cria a propriedade e acrescenta a lista de propriedades do objeto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_objeto_a923df2e7e247c84ca3f1c8efbcb467b4}{Set\+Valor\+Field}} (string \mbox{\hyperlink{classparser_1_1_objeto_a9914d37174f7494a5abe78adc9e66d7c}{nome}}, object novo\+Valor)
+\begin{DoxyCompactList}\small\item\em implementa a otimizacao de expressoes. Se uma expressao conter a variavel que está sendo modificada, a expressao é setada para modificacao=true. isso auxilia nos calculos de valor da expressao, que é avaliada apenas se se alguma variavel-\/componente da expressao for modificada. \doxylink{namespace_util}{Util} para expressoes com variaveis que mudam de valor em tempo de reação humana, ou em tempo-\/real. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_objeto_a1ef708c41b148c5e0ca548d0f8e12c4f}{Set\+Valor}} (object novo\+Valor)
+\begin{DoxyCompactList}\small\item\em seta o valor do objeto. \end{DoxyCompactList}\item 
+object \mbox{\hyperlink{classparser_1_1_objeto_abba5fa502dbb3bd7c1c9445d7dc690b5}{Get\+Valor}} ()
+\begin{DoxyCompactList}\small\item\em obtem o valor, conteúdo de dados que o \doxylink{classparser_1_1_objeto}{Objeto} tem. o valor é o real dado do \doxylink{classparser_1_1_objeto}{Objeto}. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classparser_1_1_objeto_a41d72bb00ab653d52e1b0a086b5f5464}{Get\+Nome}} ()
+\begin{DoxyCompactList}\small\item\em obtem o nome do objeto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_objeto_a47f9f33436f4ef93574e8e0e97e2e4f0}{Set\+Nome}} (string \mbox{\hyperlink{classparser_1_1_objeto_a9914d37174f7494a5abe78adc9e66d7c}{nome}})
+\begin{DoxyCompactList}\small\item\em seta o nome do objeto. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classparser_1_1_objeto_a4be03857f47563a99ec208c6b7bf174d}{Get\+Tipo}} ()
+\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_objeto}{Objeto}} $>$ \mbox{\hyperlink{classparser_1_1_objeto_ad97ac643bb9b19c43f0e440ba5b2e4b2}{Get\+Fields}} ()
+\begin{DoxyCompactList}\small\item\em obtem as propriedades contidas no objeto. uso interno, porque não á List no codigo orquidea. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{classparser_1_1_objeto_a58490f9a84881647597319b56d56b050}{To\+String}} ()
+\item 
+void \mbox{\hyperlink{classparser_1_1_objeto_ac676bf7e098fb795f04a56c7ebea6788}{Set\+Hash\+With\+Text}} (int qtd\+Chars)
+\begin{DoxyCompactList}\small\item\em obtem o valor hash do \doxylink{classparser_1_1_objeto}{Objeto}, se seu elemento for uma string; $<$params name="{}qtd\+Chars"{}$>$ quantidade de caracteres a serem usados para calcular o hash. $<$/params$>$ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classparser_1_1_operador_ae0950a01557bd03c6ee07b43315cf3c1}{Iguais\+Operadores}} (\mbox{\hyperlink{classparser_1_1_operador}{Operador}} op1, \mbox{\hyperlink{classparser_1_1_operador}{Operador}} op2)
+\item 
+static \mbox{\hyperlink{classparser_1_1_operador}{Operador}} \mbox{\hyperlink{classparser_1_1_operador_af83233c774163da4f58de02f40c01388}{Get\+Operador}} (string nome\+Operador, string classe\+Operador, string \mbox{\hyperlink{classparser_1_1_metodo_a7f1db34d2160e931f09c46492c483491}{tipo}}, \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional}{Uma\+Gramatica\+Computacional}} lng)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{classparser_1_1_metodo}{parser.\+Metodo}}}
+\begin{DoxyCompactItemize}
+\item 
+static object \mbox{\hyperlink{classparser_1_1_metodo_abaee27d9bbc2a295b2d5cb5647e5e99a}{Execute\+AConstructor\+Importado}} (Type tipo\+Objeto\+Construir, List$<$ object $>$ parametros, int \mbox{\hyperlink{classparser_1_1_objeto_a06ef836fe95ede38c6a099c1cd1d1d14}{index\+Construtor}})
+\begin{DoxyCompactList}\small\item\em executa o construtor de uma classe importada. \end{DoxyCompactList}\item 
+static object \mbox{\hyperlink{classparser_1_1_metodo_a845e751379f6c06bcb0df272816cc703}{Build\+Object\+From\+Construtor\+Without\+Parameters}} (Type tipo\+Do\+Objeto)
+\begin{DoxyCompactList}\small\item\em constroi um objeto com um construtor sem parametros. utilidade para objetos estáticos. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classparser_1_1_metodo_aabe0f454566dee7f731384a22402a413}{Iguais\+Funcoes}} (\mbox{\hyperlink{classparser_1_1_metodo}{Metodo}} fncA, \mbox{\hyperlink{classparser_1_1_metodo}{Metodo}} fncB)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{classparser_1_1_objeto}{parser.\+Objeto}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classparser_1_1_objeto}{Objeto}} \mbox{\hyperlink{classparser_1_1_objeto_ab305405a7f6e108e00f016becf1704a8}{Get\+Objeto\+By\+Definition\+In\+Headers}} (string nome\+Classe\+Do\+Objeto)
+\begin{DoxyCompactList}\small\item\em obtem um objeto da classe parametro,por definição nos headers. util quando a classe nao foi compilada. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classparser_1_1_objeto_a2e515508a2dce445180ac9d61ff63174}{is\+NILL}} (\mbox{\hyperlink{classparser_1_1_objeto}{Objeto}} objeto)
+\begin{DoxyCompactList}\small\item\em retorna \mbox{[}true\mbox{]} se o objeto é nulo, sem dados. \end{DoxyCompactList}\item 
+static object \mbox{\hyperlink{classparser_1_1_objeto_a9a5ad278d11df3fe3a7d4d6bca8beab3}{Get\+Static\+Object}} (string nome\+Classe)
+\begin{DoxyCompactList}\small\item\em obtem o objeto estatico unico, evitando perda de dados quando se utilizar um metodo, propriedade estática, com um objto estático. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classparser_1_1_objeto}{Objeto}} \mbox{\hyperlink{classparser_1_1_objeto_a49e47797919b9c2070435662ca0d68a9}{Build\+Object}} (string name\+Object, string name\+Class)
+\begin{DoxyCompactList}\small\item\em constroi um objeto da classe parametro, com todas propriedades da classe. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classparser_1_1_objeto_a1b10a06f1a8638df4e5316d3353640b1}{Set\+Value\+Default}} (\mbox{\hyperlink{classparser_1_1_objeto}{Objeto}} obj)
+\begin{DoxyCompactList}\small\item\em seta valores default, para objetos com classe int, float, double, string, char. se nao for dessas classes, seta como um valor object. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classparser_1_1_objeto}{Objeto}} \mbox{\hyperlink{classparser_1_1_objeto_ab5544c404e4df316b194d2a29f80ee3c}{Get\+Campo}} (string classe\+Objeto, string nome\+Campo)
+\begin{DoxyCompactList}\small\item\em obtem um \mbox{[}\doxylink{classparser_1_1_objeto}{Objeto}\mbox{]} de uma propriedade do objeto. \end{DoxyCompactList}\item 
+static object \mbox{\hyperlink{classparser_1_1_objeto_a158e72e4a067f651947c8c127a123a83}{Factory\+Objetos}} (string \mbox{\hyperlink{classparser_1_1_objeto_a68d674daea97e7ae65659cffb0ea4a45}{tipo}})
+\begin{DoxyCompactList}\small\item\em constroi um objeto com um valor padrão default. não utilize se uma classe \mbox{[}\doxylink{classparser_1_1_objeto}{Objeto}\mbox{]} genérico não tiver um construtor sem parâmetros. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+new int \mbox{\hyperlink{classparser_1_1_operador_ab3ac6dea3b860edbfdbd2e7a01701ca0}{prioridade}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{classparser_1_1_operador_aa95c29204c0be74cf756c22e6ff7ec55}{tipo\+Retorno}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classparser_1_1_metodo}{Metodo}} \mbox{\hyperlink{classparser_1_1_operador_a03a1879e2d3253bf5579d77ac8d69c27}{funcao\+Implementadora\+Do\+Operador}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{classparser_1_1_metodo}{parser.\+Metodo}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classparser_1_1_metodo_a3cee10b967e1af3dbb8694a6c09215df}{is\+Method\+Imported}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em retorna true se o metodo é importado. \end{DoxyCompactList}\item 
+Method\+Info \mbox{\hyperlink{classparser_1_1_metodo_a955fa60f15d5f139ff4f065f13bb126a}{Info\+Method}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em DADOS DE METODO IMPORTADO DA LINGUAGEM BASE;. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classparser_1_1_metodo}{parser.\+Metodo}}}
+\begin{DoxyCompactItemize}
+\item 
+new string \mbox{\hyperlink{classparser_1_1_metodo_a7d370f087db7ed022c544abd22460281}{acessor}} = "{}public"{}
+\begin{DoxyCompactList}\small\item\em acessor\+: public, protected, private. por default, setado para public \end{DoxyCompactList}\item 
+new string \mbox{\hyperlink{classparser_1_1_metodo_a4b875dcf2687b4e86adacbf34023c900}{nome}}
+\begin{DoxyCompactList}\small\item\em nome do metodo. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classparser_1_1_metodo_a2d9fa678931cd9410067902070eafade}{nome\+Longo}}
+\begin{DoxyCompactList}\small\item\em nome longo do metodo (classe.\+nome\+Metodo). para diferenciar em caso de metodos herdados de mesmo nome, possibilitando chamar tanto 1 quanto o outro, utilizando o metodo longo. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classparser_1_1_metodo_aaa45c5125f06faccd5663b4287226481}{nome\+Classe}}
+\begin{DoxyCompactList}\small\item\em nome da classe do metodo. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_metodo_ae35d1c59694ce04af26f12a0c918d5ce}{is\+Compiled}} = false
+\item 
+int \mbox{\hyperlink{classparser_1_1_metodo_a2efa08075ae98e334f1c3e9a9d60c4ee}{prioridade}}
+\begin{DoxyCompactList}\small\item\em prioridade de execução em expressões. \end{DoxyCompactList}\item 
+new string \mbox{\hyperlink{classparser_1_1_metodo_a7f1db34d2160e931f09c46492c483491}{tipo}}
+\item 
+int \mbox{\hyperlink{classparser_1_1_metodo_ac58866f34c4c6ab4067de0ad3a44b8c7}{id\+Escopo}} = -\/1
+\begin{DoxyCompactList}\small\item\em id do scopo, dentro do escopo da familia. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_objeto}{Objeto}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classparser_1_1_metodo_ada7e518b55b2b87826ae81269d7029a8}{parametros\+Da\+Funcao}}
+\begin{DoxyCompactList}\small\item\em parâmetros do metodo. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classparser_1_1_metodo_a2ad4cdd0fb675cf5d3e7a672ca33b4ea}{tipo\+Return}}
+\begin{DoxyCompactList}\small\item\em nome do tipo do objeto de retorno da função. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_metodo_a62c6d0d6ee0d91488b1a6e232907ef59}{is\+To\+Include\+Caller\+Into\+Parameters}} = false
+\begin{DoxyCompactList}\small\item\em se true, o objeto caller (que chamou o metodo) é incluido na lista de parâmetros. \end{DoxyCompactList}\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_metodo_a90825fa31e858005f07078c6f3e3a5fd}{tokens}} = new List$<$string$>$()
+\begin{DoxyCompactList}\small\item\em tokens das instrucoes do metodo, se for um metodo da linguagem orquidea, nao metodo importado. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classparser_1_1_metodo_a84dc4dfe16c0a6a810261f8071a28963}{index\+In\+Class}}
+\begin{DoxyCompactList}\small\item\em o indice deste metodo perante aos outros metodos da classe. \end{DoxyCompactList}\item 
+Constructor\+Info \mbox{\hyperlink{classparser_1_1_metodo_a818953782883381eeaaaae8b796ba571}{Info\+Constructor}}
+\begin{DoxyCompactList}\small\item\em CONSTRUTOR DE CLASSES IMPORTADA DA LINGUAGEM BASE, SEM PARAMETROS. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ \mbox{\hyperlink{classparser_1_1_metodo_af6c4df22cf28ddddaca22f71587ea889}{instrucoes\+Funcao}}
+\begin{DoxyCompactList}\small\item\em contém as INSTRUÇÕ\+ES DE CODIGO ORQUIDEA. \end{DoxyCompactList}\item 
+object \mbox{\hyperlink{classparser_1_1_metodo_a2269ab81850040ae702dec4e196f80ae}{caller}} = null
+\begin{DoxyCompactList}\small\item\em OBJETO QUE ESTÁ INVOCANDO A FUNÇÃO\+: p.\+ex., obj1.\+metodo1()\+: obj1 é o objeto caller. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} \mbox{\hyperlink{classparser_1_1_metodo_a2976df75574c82cb1bf1b7a17e55da9f}{escopo\+CORPO\+\_\+\+METODO}}
+\begin{DoxyCompactList}\small\item\em escopo interno do metodo, contendo variaveis, objetos e funcoes dentro do corpo do metodo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} \mbox{\hyperlink{classparser_1_1_metodo_a6a90a607696e1e9f4b2dd890416bce3c}{escopo\+Se\+SSAODo\+Metodo}}
+\begin{DoxyCompactList}\small\item\em escopo total do metodo\+: escopo externo, escopo dos parametros, escopo do corpo do metodo. \end{DoxyCompactList}\item 
+new \mbox{\hyperlink{classparser_1_1_objeto}{Objeto}} \mbox{\hyperlink{classparser_1_1_metodo_a9d835ef7b6d0c554543ae41d3b116312}{actual}}
+\begin{DoxyCompactList}\small\item\em contem o objeto caller desta função. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classparser_1_1_objeto}{parser.\+Objeto}}}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classparser_1_1_objeto_a43b3f34b1feb40c1f291e0f03fcf997d}{acessor}}
+\begin{DoxyCompactList}\small\item\em private, protected, ou public. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classparser_1_1_objeto_a68d674daea97e7ae65659cffb0ea4a45}{tipo}}
+\begin{DoxyCompactList}\small\item\em classe do objeto. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classparser_1_1_objeto_a522ec8bba7ad340b1f9809929a062705}{tipo\+Elemento}}
+\begin{DoxyCompactList}\small\item\em classe de elementos constituintes desse objeeto. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classparser_1_1_objeto_a9914d37174f7494a5abe78adc9e66d7c}{nome}}
+\begin{DoxyCompactList}\small\item\em nome do objeto. \end{DoxyCompactList}\item 
+object \mbox{\hyperlink{classparser_1_1_objeto_af928497b36eac436fc8fc3df1f96031c}{valor}}
+\begin{DoxyCompactList}\small\item\em valor do objeto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_objeto}{Objeto}} \mbox{\hyperlink{classparser_1_1_objeto_ac23bafd9a80a63d29c7f9b4f0982d5bb}{actual}}
+\begin{DoxyCompactList}\small\item\em objeto de manipulaçao do objeto principal, dentro da classe a que o objeto principal pertence. acesso a propriedades do objeto principal. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classparser_1_1_objeto_a7846b016f531cdffb0531632735525b7}{nome\+Objeto\+Caller}}
+\begin{DoxyCompactList}\small\item\em nome do objeto caller a qual o actual representa. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classparser_1_1_objeto_a4d0789973cc0e5f9134e1c1d5c2335ba}{classe\+Pertence}}
+\begin{DoxyCompactList}\small\item\em classe a qual o objeto pertence; \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classparser_1_1_objeto_a06ef836fe95ede38c6a099c1cd1d1d14}{index\+Construtor}} = -\/1
+\begin{DoxyCompactList}\small\item\em indice do construtor do objeto. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_objeto_a3d1641b5d06be452f463609050b4af68}{is\+Method}} = false
+\begin{DoxyCompactList}\small\item\em se true o objeto é também um metodo. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_objeto_acbbc932e535fcbf623fcdb59f77798d7}{is\+Static}} = false
+\begin{DoxyCompactList}\small\item\em se true o objeto é estático. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_objeto_abbedb94bcc9f17a536632d6e61aab33d}{is\+Mult\+Argument}} = false
+\begin{DoxyCompactList}\small\item\em se true o objeto é multi-\/argumento. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_objeto_a858c5d342207577361b8688bb901df21}{is\+Wrapper\+Object}} = false
+\begin{DoxyCompactList}\small\item\em se true o objeto é um wrapper data object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_objeto_a4d80a8118b876afebd91d82410ec190d}{is\+Function\+Parameter}} = false
+\begin{DoxyCompactList}\small\item\em se tre o objeto é um objeto-\/ metodo. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_objeto_af550220a359fbc6d42465a5bdedfcfe7}{is\+Read\+Only}} = false
+\begin{DoxyCompactList}\small\item\em se true o obejto como parâmetro é passado por valor. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_objeto}{Objeto}} $>$ \mbox{\hyperlink{classparser_1_1_objeto_aac8fefe67f3477c644885c525fec3149}{propriedades}} = new List$<$\mbox{\hyperlink{classparser_1_1_objeto}{Objeto}}$>$()
+\begin{DoxyCompactList}\small\item\em lista de campos do objeto. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_objeto_afe668ff3bff2d3359ee6956de3bb7ab4}{create\+First}} = false
+\begin{DoxyCompactList}\small\item\em se \mbox{[}true\mbox{]}, instancia em tempo de compilação. \end{DoxyCompactList}\item 
+long \mbox{\hyperlink{classparser_1_1_objeto_af026563346e5eab6a4408a7ab4f44b8c}{hash}}
+\begin{DoxyCompactList}\small\item\em valor para ordenações de listas de \doxylink{classparser_1_1_objeto}{Objeto}. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classparser_1_1_objeto_aac17be6dd41a33c47617d3a1bf98c2e9}{hash\+Text}} = "{}"{}
+\begin{DoxyCompactList}\small\item\em valor para ordenações de listas de objetos, com tipo elemento for string; \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_metodo}{Metodo}} $>$ \mbox{\hyperlink{classparser_1_1_objeto_ac901fae588c66515e4b335b41aad9eaf}{construtores}} = new List$<$\mbox{\hyperlink{classparser_1_1_metodo}{Metodo}}$>$()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classparser_1_1_metodo}{parser.\+Metodo}}}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classparser_1_1_metodo_ab0fcb59c12bcc7b32556ba9dd2e13e03}{is\+DEBUG}} = false
+\begin{DoxyCompactList}\small\item\em se \mbox{[}true\mbox{]}, ativa o modo de depuração de variaveis. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classparser_1_1_metodo_a64526c822080080e7d97886bbf98e177}{IS\+\_\+\+CONSTRUCTOR}} = 1
+\item 
+static int \mbox{\hyperlink{classparser_1_1_metodo_a206fae450f02f377303236f7f7c23eea}{IS\+\_\+\+METHOD}} = 2
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classparser_1_1_objeto}{parser.\+Objeto}}}
+\begin{DoxyCompactItemize}
+\item 
+const string \mbox{\hyperlink{classparser_1_1_objeto_a835d168b0fa47c6e271d8f26b02295c1}{TRUE}} = "{}TRUE"{}
+\begin{DoxyCompactList}\small\item\em token TRUE, utilizado em instanciacao de objetos booleanos, e em condicionais. \end{DoxyCompactList}\item 
+const string \mbox{\hyperlink{classparser_1_1_objeto_a0450b60577908477c3709517b3c44a48}{FALSE}} = "{}FALSE"{}
+\begin{DoxyCompactList}\small\item\em token FALSE, utilizado em instanciacao de objetos booleanosl, e em condicionais. \end{DoxyCompactList}\item 
+static List$<$ object $>$ \mbox{\hyperlink{classparser_1_1_objeto_a54c9b58a3685a4f76a26867c3e56ec0a}{POOL\+\_\+objetos\+Estaticos}} = new List$<$object$>$()
+\begin{DoxyCompactList}\small\item\em uma lista de objetos estáticos gerados na compilação. \end{DoxyCompactList}\item 
+static List$<$ Type $>$ \mbox{\hyperlink{classparser_1_1_objeto_a0262019163a645e80813dc2e5e6ce142}{POOL\+\_\+tipos\+Objetos\+Estaticos}} = new List$<$Type$>$()
+\begin{DoxyCompactList}\small\item\em uma lista de tipos de objetos estáticos quando o programa orquidea é compilado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classparser_1_1_operador_afce6f65732b317b8509b81df3325605e}\index{parser.Operador@{parser.Operador}!Operador@{Operador}}
+\index{Operador@{Operador}!parser.Operador@{parser.Operador}}
+\doxysubsubsection{\texorpdfstring{Operador()}{Operador()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{classparser_1_1_operador_afce6f65732b317b8509b81df3325605e} 
+parser.\+Operador.\+Operador (\begin{DoxyParamCaption}\item[{string}]{nome\+Classe}{, }\item[{string}]{nome\+Operador}{, }\item[{int}]{prioridade}{, }\item[{\mbox{\hyperlink{classparser_1_1_objeto}{Objeto}}\mbox{[}$\,$\mbox{]}}]{parametros}{, }\item[{string}]{tipo\+Operador}{, }\item[{Method\+Info}]{metodo\+Impl}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo\+Do\+Operador}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_operador_a46ecf6a639b0319e8e21cddbe06eea2e}\index{parser.Operador@{parser.Operador}!Operador@{Operador}}
+\index{Operador@{Operador}!parser.Operador@{parser.Operador}}
+\doxysubsubsection{\texorpdfstring{Operador()}{Operador()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{classparser_1_1_operador_a46ecf6a639b0319e8e21cddbe06eea2e} 
+parser.\+Operador.\+Operador (\begin{DoxyParamCaption}\item[{string}]{nome\+Classe}{, }\item[{string}]{nome\+Operador}{, }\item[{int}]{prioridade}{, }\item[{string\mbox{[}$\,$\mbox{]}}]{tipos\+Parametros}{, }\item[{string}]{tipo\+Operador}{, }\item[{\mbox{\hyperlink{classparser_1_1_metodo}{Metodo}}}]{funcao\+De\+Implementacao\+Do\+Operador}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo\+Do\+Operador}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_operador_a981d5681d64af452e94e16bc076ee585}\index{parser.Operador@{parser.Operador}!Operador@{Operador}}
+\index{Operador@{Operador}!parser.Operador@{parser.Operador}}
+\doxysubsubsection{\texorpdfstring{Operador()}{Operador()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{classparser_1_1_operador_a981d5681d64af452e94e16bc076ee585} 
+parser.\+Operador.\+Operador (\begin{DoxyParamCaption}\item[{string}]{nome\+Clase}{, }\item[{string}]{nome\+Operador}{, }\item[{int}]{prioridade}{, }\item[{string}]{tipo\+Retorno}{, }\item[{List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$}]{instrucoes\+Corpo}{, }\item[{\mbox{\hyperlink{classparser_1_1_objeto}{Objeto}}\mbox{[}$\,$\mbox{]}}]{parametros}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo\+Do\+Operador}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_operador_a8c0dd4d6451eb400abe8c9bd84596072}\index{parser.Operador@{parser.Operador}!Clone@{Clone}}
+\index{Clone@{Clone}!parser.Operador@{parser.Operador}}
+\doxysubsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily \label{classparser_1_1_operador_a8c0dd4d6451eb400abe8c9bd84596072} 
+new \mbox{\hyperlink{classparser_1_1_operador}{Operador}} parser.\+Operador.\+Clone (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_operador_ae0e45a9e1059dd2b4e2c2e9d89134c33}\index{parser.Operador@{parser.Operador}!ExecuteOperador@{ExecuteOperador}}
+\index{ExecuteOperador@{ExecuteOperador}!parser.Operador@{parser.Operador}}
+\doxysubsubsection{\texorpdfstring{ExecuteOperador()}{ExecuteOperador()}}
+{\footnotesize\ttfamily \label{classparser_1_1_operador_ae0e45a9e1059dd2b4e2c2e9d89134c33} 
+object parser.\+Operador.\+Execute\+Operador (\begin{DoxyParamCaption}\item[{string}]{nome\+Do\+Operador}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{, }\item[{params object\mbox{[}$\,$\mbox{]}}]{valores\+Parametros}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_operador_a58642c9488846accf93ae4540b4515ed}\index{parser.Operador@{parser.Operador}!GetNome@{GetNome}}
+\index{GetNome@{GetNome}!parser.Operador@{parser.Operador}}
+\doxysubsubsection{\texorpdfstring{GetNome()}{GetNome()}}
+{\footnotesize\ttfamily \label{classparser_1_1_operador_a58642c9488846accf93ae4540b4515ed} 
+new string parser.\+Operador.\+Get\+Nome (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_operador_af83233c774163da4f58de02f40c01388}\index{parser.Operador@{parser.Operador}!GetOperador@{GetOperador}}
+\index{GetOperador@{GetOperador}!parser.Operador@{parser.Operador}}
+\doxysubsubsection{\texorpdfstring{GetOperador()}{GetOperador()}}
+{\footnotesize\ttfamily \label{classparser_1_1_operador_af83233c774163da4f58de02f40c01388} 
+static \mbox{\hyperlink{classparser_1_1_operador}{Operador}} parser.\+Operador.\+Get\+Operador (\begin{DoxyParamCaption}\item[{string}]{nome\+Operador}{, }\item[{string}]{classe\+Operador}{, }\item[{string}]{tipo}{, }\item[{\mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional}{Uma\+Gramatica\+Computacional}}}]{lng}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_operador_aab115d597e031a36eda3143975f5a20b}\index{parser.Operador@{parser.Operador}!GetPrioridade@{GetPrioridade}}
+\index{GetPrioridade@{GetPrioridade}!parser.Operador@{parser.Operador}}
+\doxysubsubsection{\texorpdfstring{GetPrioridade()}{GetPrioridade()}}
+{\footnotesize\ttfamily \label{classparser_1_1_operador_aab115d597e031a36eda3143975f5a20b} 
+int parser.\+Operador.\+Get\+Prioridade (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_operador_a60e3c494591a9e29795cc80e0ae4bafd}\index{parser.Operador@{parser.Operador}!GetTipoFuncao@{GetTipoFuncao}}
+\index{GetTipoFuncao@{GetTipoFuncao}!parser.Operador@{parser.Operador}}
+\doxysubsubsection{\texorpdfstring{GetTipoFuncao()}{GetTipoFuncao()}}
+{\footnotesize\ttfamily \label{classparser_1_1_operador_a60e3c494591a9e29795cc80e0ae4bafd} 
+string parser.\+Operador.\+Get\+Tipo\+Funcao (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_operador_ae0950a01557bd03c6ee07b43315cf3c1}\index{parser.Operador@{parser.Operador}!IguaisOperadores@{IguaisOperadores}}
+\index{IguaisOperadores@{IguaisOperadores}!parser.Operador@{parser.Operador}}
+\doxysubsubsection{\texorpdfstring{IguaisOperadores()}{IguaisOperadores()}}
+{\footnotesize\ttfamily \label{classparser_1_1_operador_ae0950a01557bd03c6ee07b43315cf3c1} 
+static bool parser.\+Operador.\+Iguais\+Operadores (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_operador}{Operador}}}]{op1}{, }\item[{\mbox{\hyperlink{classparser_1_1_operador}{Operador}}}]{op2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_operador_aff94d3a5a279810e734295db7c994bea}\index{parser.Operador@{parser.Operador}!SetTipo@{SetTipo}}
+\index{SetTipo@{SetTipo}!parser.Operador@{parser.Operador}}
+\doxysubsubsection{\texorpdfstring{SetTipo()}{SetTipo()}}
+{\footnotesize\ttfamily \label{classparser_1_1_operador_aff94d3a5a279810e734295db7c994bea} 
+void parser.\+Operador.\+Set\+Tipo (\begin{DoxyParamCaption}\item[{string}]{tipo\+Novo}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_operador_a3b2e63a9581ec8aa410e38c93b79f628}\index{parser.Operador@{parser.Operador}!ToString@{ToString}}
+\index{ToString@{ToString}!parser.Operador@{parser.Operador}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily \label{classparser_1_1_operador_a3b2e63a9581ec8aa410e38c93b79f628} 
+override string parser.\+Operador.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{classparser_1_1_operador_a03a1879e2d3253bf5579d77ac8d69c27}\index{parser.Operador@{parser.Operador}!funcaoImplementadoraDoOperador@{funcaoImplementadoraDoOperador}}
+\index{funcaoImplementadoraDoOperador@{funcaoImplementadoraDoOperador}!parser.Operador@{parser.Operador}}
+\doxysubsubsection{\texorpdfstring{funcaoImplementadoraDoOperador}{funcaoImplementadoraDoOperador}}
+{\footnotesize\ttfamily \label{classparser_1_1_operador_a03a1879e2d3253bf5579d77ac8d69c27} 
+\mbox{\hyperlink{classparser_1_1_metodo}{Metodo}} parser.\+Operador.\+funcao\+Implementadora\+Do\+Operador\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{classparser_1_1_operador_ab3ac6dea3b860edbfdbd2e7a01701ca0}\index{parser.Operador@{parser.Operador}!prioridade@{prioridade}}
+\index{prioridade@{prioridade}!parser.Operador@{parser.Operador}}
+\doxysubsubsection{\texorpdfstring{prioridade}{prioridade}}
+{\footnotesize\ttfamily \label{classparser_1_1_operador_ab3ac6dea3b860edbfdbd2e7a01701ca0} 
+new int parser.\+Operador.\+prioridade\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{classparser_1_1_operador_aa95c29204c0be74cf756c22e6ff7ec55}\index{parser.Operador@{parser.Operador}!tipoRetorno@{tipoRetorno}}
+\index{tipoRetorno@{tipoRetorno}!parser.Operador@{parser.Operador}}
+\doxysubsubsection{\texorpdfstring{tipoRetorno}{tipoRetorno}}
+{\footnotesize\ttfamily \label{classparser_1_1_operador_aa95c29204c0be74cf756c22e6ff7ec55} 
+string parser.\+Operador.\+tipo\+Retorno\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/componentes\+De\+Interpretadores\+ECompiladores/\+PROGRAMACAO ORIENTADA A OBJETOS/\mbox{\hyperlink{metodo_8cs}{metodo.\+cs}}\end{DoxyCompactItemize}

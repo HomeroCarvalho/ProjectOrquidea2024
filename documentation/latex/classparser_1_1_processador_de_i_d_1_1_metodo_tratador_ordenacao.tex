@@ -1,0 +1,119 @@
+\doxysection{parser.\+Processador\+De\+ID.\+Metodo\+Tratador\+Ordenacao Class Reference}
+\hypertarget{classparser_1_1_processador_de_i_d_1_1_metodo_tratador_ordenacao}{}\label{classparser_1_1_processador_de_i_d_1_1_metodo_tratador_ordenacao}\index{parser.ProcessadorDeID.MetodoTratadorOrdenacao@{parser.ProcessadorDeID.MetodoTratadorOrdenacao}}
+
+
+classe para handlers de instrucoes de comandos de programação estruturada.  
+
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classparser_1_1_processador_de_i_d_1_1_metodo_tratador_ordenacao_1_1_comparer_metodos_tratador}{Comparer\+Metodos\+Tratador}}
+\begin{DoxyCompactList}\small\item\em ordena decrescentemente pelo cumprimento da sequencia do metodo tratador, e priorizando sequencias que contem termos-\/chaves de comando. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparser_1_1_processador_de_i_d_1_1_metodo_tratador_ordenacao_a724912ce3c5251365b8bfb11956264b0}{Metodo\+Tratador\+Ordenacao}} (\mbox{\hyperlink{classparser_1_1_processador_de_i_d_a5b11a6340534a913395fcef2abce54e1}{Metodo\+Tratador}} um\+Metodo, string pattern\+Resumed\+Da\+Sequencia)
+\begin{DoxyCompactList}\small\item\em construtor. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{classparser_1_1_processador_de_i_d_1_1_metodo_tratador_ordenacao_ad9631f3b21bf6f9f109689c10d9e9b51}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em retorna um texto identificacao do metodo tratador. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_processador_de_i_d_1_1_metodo_tratador_ordenacao_a5c8b96739a681bcab69db90221a36a96}{tokens}} = new List$<$string$>$()
+\begin{DoxyCompactList}\small\item\em tokens mapeados. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classparser_1_1_processador_de_i_d_1_1_metodo_tratador_ordenacao_aa938f22c857f631d7a27dfef9d8bdc30}{patter\+Resumed}}
+\begin{DoxyCompactList}\small\item\em pattern de identificacao de sequencias mapeadas. \end{DoxyCompactList}\item 
+Regex \mbox{\hyperlink{classparser_1_1_processador_de_i_d_1_1_metodo_tratador_ordenacao_ae7b3346c2433f074062db008eb9dbec7}{regex\+\_\+sequencia}}
+\begin{DoxyCompactList}\small\item\em regex de sequecia. LEGADO. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparser_1_1_processador_de_i_d_a5b11a6340534a913395fcef2abce54e1}{Metodo\+Tratador}} \mbox{\hyperlink{classparser_1_1_processador_de_i_d_1_1_metodo_tratador_ordenacao_a2118439b5d5c9fc5b62abc556129ce52}{metodo}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+classe para handlers de instrucoes de comandos de programação estruturada. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classparser_1_1_processador_de_i_d_1_1_metodo_tratador_ordenacao_a724912ce3c5251365b8bfb11956264b0}\index{parser.ProcessadorDeID.MetodoTratadorOrdenacao@{parser.ProcessadorDeID.MetodoTratadorOrdenacao}!MetodoTratadorOrdenacao@{MetodoTratadorOrdenacao}}
+\index{MetodoTratadorOrdenacao@{MetodoTratadorOrdenacao}!parser.ProcessadorDeID.MetodoTratadorOrdenacao@{parser.ProcessadorDeID.MetodoTratadorOrdenacao}}
+\doxysubsubsection{\texorpdfstring{MetodoTratadorOrdenacao()}{MetodoTratadorOrdenacao()}}
+{\footnotesize\ttfamily \label{classparser_1_1_processador_de_i_d_1_1_metodo_tratador_ordenacao_a724912ce3c5251365b8bfb11956264b0} 
+parser.\+Processador\+De\+ID.\+Metodo\+Tratador\+Ordenacao.\+Metodo\+Tratador\+Ordenacao (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_processador_de_i_d_a5b11a6340534a913395fcef2abce54e1}{Metodo\+Tratador}}}]{um\+Metodo}{, }\item[{string}]{pattern\+Resumed\+Da\+Sequencia}{}\end{DoxyParamCaption})}
+
+
+
+construtor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em um\+Metodo} & uma handler para uma sequencia.\\
+\hline
+{\em pattern\+Resumed\+Da\+Sequencia} & pattern de sequencia\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_processador_de_i_d_1_1_metodo_tratador_ordenacao_ad9631f3b21bf6f9f109689c10d9e9b51}\index{parser.ProcessadorDeID.MetodoTratadorOrdenacao@{parser.ProcessadorDeID.MetodoTratadorOrdenacao}!ToString@{ToString}}
+\index{ToString@{ToString}!parser.ProcessadorDeID.MetodoTratadorOrdenacao@{parser.ProcessadorDeID.MetodoTratadorOrdenacao}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily \label{classparser_1_1_processador_de_i_d_1_1_metodo_tratador_ordenacao_ad9631f3b21bf6f9f109689c10d9e9b51} 
+override string parser.\+Processador\+De\+ID.\+Metodo\+Tratador\+Ordenacao.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+retorna um texto identificacao do metodo tratador. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classparser_1_1_processador_de_i_d_1_1_metodo_tratador_ordenacao_aa938f22c857f631d7a27dfef9d8bdc30}\index{parser.ProcessadorDeID.MetodoTratadorOrdenacao@{parser.ProcessadorDeID.MetodoTratadorOrdenacao}!patterResumed@{patterResumed}}
+\index{patterResumed@{patterResumed}!parser.ProcessadorDeID.MetodoTratadorOrdenacao@{parser.ProcessadorDeID.MetodoTratadorOrdenacao}}
+\doxysubsubsection{\texorpdfstring{patterResumed}{patterResumed}}
+{\footnotesize\ttfamily \label{classparser_1_1_processador_de_i_d_1_1_metodo_tratador_ordenacao_aa938f22c857f631d7a27dfef9d8bdc30} 
+string parser.\+Processador\+De\+ID.\+Metodo\+Tratador\+Ordenacao.\+patter\+Resumed}
+
+
+
+pattern de identificacao de sequencias mapeadas. 
+
+\Hypertarget{classparser_1_1_processador_de_i_d_1_1_metodo_tratador_ordenacao_ae7b3346c2433f074062db008eb9dbec7}\index{parser.ProcessadorDeID.MetodoTratadorOrdenacao@{parser.ProcessadorDeID.MetodoTratadorOrdenacao}!regex\_sequencia@{regex\_sequencia}}
+\index{regex\_sequencia@{regex\_sequencia}!parser.ProcessadorDeID.MetodoTratadorOrdenacao@{parser.ProcessadorDeID.MetodoTratadorOrdenacao}}
+\doxysubsubsection{\texorpdfstring{regex\_sequencia}{regex\_sequencia}}
+{\footnotesize\ttfamily \label{classparser_1_1_processador_de_i_d_1_1_metodo_tratador_ordenacao_ae7b3346c2433f074062db008eb9dbec7} 
+Regex parser.\+Processador\+De\+ID.\+Metodo\+Tratador\+Ordenacao.\+regex\+\_\+sequencia}
+
+
+
+regex de sequecia. LEGADO. 
+
+\Hypertarget{classparser_1_1_processador_de_i_d_1_1_metodo_tratador_ordenacao_a5c8b96739a681bcab69db90221a36a96}\index{parser.ProcessadorDeID.MetodoTratadorOrdenacao@{parser.ProcessadorDeID.MetodoTratadorOrdenacao}!tokens@{tokens}}
+\index{tokens@{tokens}!parser.ProcessadorDeID.MetodoTratadorOrdenacao@{parser.ProcessadorDeID.MetodoTratadorOrdenacao}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily \label{classparser_1_1_processador_de_i_d_1_1_metodo_tratador_ordenacao_a5c8b96739a681bcab69db90221a36a96} 
+List$<$string$>$ parser.\+Processador\+De\+ID.\+Metodo\+Tratador\+Ordenacao.\+tokens = new List$<$string$>$()}
+
+
+
+tokens mapeados. 
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{classparser_1_1_processador_de_i_d_1_1_metodo_tratador_ordenacao_a2118439b5d5c9fc5b62abc556129ce52}\index{parser.ProcessadorDeID.MetodoTratadorOrdenacao@{parser.ProcessadorDeID.MetodoTratadorOrdenacao}!metodo@{metodo}}
+\index{metodo@{metodo}!parser.ProcessadorDeID.MetodoTratadorOrdenacao@{parser.ProcessadorDeID.MetodoTratadorOrdenacao}}
+\doxysubsubsection{\texorpdfstring{metodo}{metodo}}
+{\footnotesize\ttfamily \label{classparser_1_1_processador_de_i_d_1_1_metodo_tratador_ordenacao_a2118439b5d5c9fc5b62abc556129ce52} 
+\mbox{\hyperlink{classparser_1_1_processador_de_i_d_a5b11a6340534a913395fcef2abce54e1}{Metodo\+Tratador}} parser.\+Processador\+De\+ID.\+Metodo\+Tratador\+Ordenacao.\+metodo\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/componentes\+De\+Interpretadores\+ECompiladores/\+PROGRAMACAO FUNCIONAL/\mbox{\hyperlink{_processador_de_i_d_8cs}{Processador\+De\+ID.\+cs}}\end{DoxyCompactItemize}

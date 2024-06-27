@@ -1,0 +1,346 @@
+\doxysection{parser.\+Escopo Class Reference}
+\hypertarget{classparser_1_1_escopo}{}\label{classparser_1_1_escopo}\index{parser.Escopo@{parser.Escopo}}
+
+
+classe que reune objetos, funcões, dentro de um determinado contexto, como classes, metodos, blocos de instrucoes.  
+
+
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classparser_1_1_escopo_a3e78854c09f64cf2d9da616269ea6a65}{tipo\+Escopo}} \{ \mbox{\hyperlink{classparser_1_1_escopo_a3e78854c09f64cf2d9da616269ea6a65aee383a963e927bfae3ffd2e69d410943}{escopo\+Global}}
+, \mbox{\hyperlink{classparser_1_1_escopo_a3e78854c09f64cf2d9da616269ea6a65a6443efccec126d4d9b8e6a16193b9fc4}{escopo\+Normal}}
+ \}
+\begin{DoxyCompactList}\small\item\em tipos de escopos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_escopo_a0660bbb7be03e5d0ab45fe22cc954ebe}{Get\+Msg\+Erros}} ()
+\begin{DoxyCompactList}\small\item\em retorna a lista de mensagens de erros, encontrados no processamento deste escopo. LEGADO, os erros estão em \mbox{[}\doxylink{classparser_1_1_system_init_ab96e681c04aefbf8791fc11f20ac8571}{System\+Init.\+errors\+In\+Copiling}\mbox{]}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_escopo_a83a2a10508512ed10ccd06e30d90ced8}{Escopo}} (string code)
+\begin{DoxyCompactList}\small\item\em escopo deste contexto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_escopo_a46d47a856222ac73496702f0eb82612b}{Escopo}} (List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_escopo_a3f18458210ff107ae49359c162eac934}{codigo}})
+\begin{DoxyCompactList}\small\item\em constroi a rede de escopos para um programa. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_escopo_a5fe17695312add9b88be867b216506ab}{Escopo}} (\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em construtor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} \mbox{\hyperlink{classparser_1_1_escopo_a0b31bb23c004e2a4866dcd3e1120bfe8}{Clone}} ()
+\begin{DoxyCompactList}\small\item\em retorna um clone deste escopo. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_escopo_a437519a6ba2e2c556d4c3e4a5b12667b}{is\+Present\+Object}} (string nome\+Objeto)
+\begin{DoxyCompactList}\small\item\em verifica se um objeto está presente neste escopo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_escopo_a816bca487c1584255d87ca6e910a5249}{Dispose}} ()
+\item 
+string \mbox{\hyperlink{classparser_1_1_escopo_a4f1fdcdbb27dc53f875b2238319dd863}{Write\+Call\+At\+Method}} (List$<$ List$<$ string $>$ $>$ chamada\+AMetodo, int index\+Chamada)
+\begin{DoxyCompactList}\small\item\em escreve no terminal, os tokens de chamadas de metodo. LEGADO. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparser_1_1_escopo_a3e78854c09f64cf2d9da616269ea6a65}{tipo\+Escopo}} \mbox{\hyperlink{classparser_1_1_escopo_a0afe3324d22fc521e2ba967f11050bcd}{ID}} = \mbox{\hyperlink{classparser_1_1_escopo_a3e78854c09f64cf2d9da616269ea6a65a6443efccec126d4d9b8e6a16193b9fc4}{tipo\+Escopo.\+escopo\+Normal}}
+\begin{DoxyCompactList}\small\item\em tipo do escopo currente. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classparser_1_1_escopo_ab69f3bf55e02bdebd46d51b419cbeb8d}{nome}} = "{}"{}
+\begin{DoxyCompactList}\small\item\em nome id do escopo. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} $>$ \mbox{\hyperlink{classparser_1_1_escopo_a85cfbf843f2d5c87913b95e67ebad53d}{escopo\+Folhas}} = null
+\begin{DoxyCompactList}\small\item\em escopos de mesmo nivel horizontal. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}} $>$ \mbox{\hyperlink{classparser_1_1_escopo_a351c75d431b432c63962b64b612bcb3d}{sequencias}}
+\begin{DoxyCompactList}\small\item\em lista de sequencias id encontradas neste escopo. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classparser_1_1_escopo_a37013a9588f408c0bad7dec286b80128}{nome\+Escopo}} = "{}"{}
+\begin{DoxyCompactList}\small\item\em nome do escopo. \end{DoxyCompactList}\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_escopo_a94aa5ebf55b0272c55babf4ba9e8036d}{Msg\+Erros}} = new List$<$string$>$()
+\begin{DoxyCompactList}\small\item\em lista de erros na escrita de codigo feito pelo programador quando utiliza a linguagem orquidea. \end{DoxyCompactList}\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_escopo_a3f18458210ff107ae49359c162eac934}{codigo}}
+\begin{DoxyCompactList}\small\item\em codigo contido no contexto do escopo; \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} \mbox{\hyperlink{classparser_1_1_escopo_a7d8d2a44c5ab66f5426fdd91771e493c}{escopo\+ROOT}}
+\begin{DoxyCompactList}\small\item\em primeiro escopo do codigo, acessso a todos outros escopos de classes, funcoes, blocos. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} \mbox{\hyperlink{classparser_1_1_escopo_ac4f70780e5fc143e1a36975b7e926ad7}{escopo\+CURRENT}}
+\begin{DoxyCompactList}\small\item\em escopo onde o codigo currente está sendo executado. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{classparser_1_1_escopo_aa9e7feb3cf52402392923189fdd4a651}{nome\+Classe\+Currente}}
+\begin{DoxyCompactList}\small\item\em nome da classe sendo compilada. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} \mbox{\hyperlink{classparser_1_1_escopo_a114babec118916545fd7ddb6e178a93b}{escopo\+Pai}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em escopo raiz do escopo currente. Se o escopo pai for null, e o escopo não for escopo\+Global, retorna o escopo\+Global. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_tablela_de_valores}{Tablela\+De\+Valores}} \mbox{\hyperlink{classparser_1_1_escopo_a44b0c36eb170f9c430cdfc58a1b76f32}{tabela}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em contém as variáveis, funções, métodos, propriedades, classes registradas neste escopo. ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+classe que reune objetos, funcões, dentro de um determinado contexto, como classes, metodos, blocos de instrucoes. 
+
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{classparser_1_1_escopo_a3e78854c09f64cf2d9da616269ea6a65}\index{parser.Escopo@{parser.Escopo}!tipoEscopo@{tipoEscopo}}
+\index{tipoEscopo@{tipoEscopo}!parser.Escopo@{parser.Escopo}}
+\doxysubsubsection{\texorpdfstring{tipoEscopo}{tipoEscopo}}
+{\footnotesize\ttfamily \label{classparser_1_1_escopo_a3e78854c09f64cf2d9da616269ea6a65} 
+enum \mbox{\hyperlink{classparser_1_1_escopo_a3e78854c09f64cf2d9da616269ea6a65}{parser.\+Escopo.\+tipo\+Escopo}}}
+
+
+
+tipos de escopos. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{escopoGlobal@{escopoGlobal}!parser.Escopo@{parser.Escopo}}\index{parser.Escopo@{parser.Escopo}!escopoGlobal@{escopoGlobal}}}\Hypertarget{classparser_1_1_escopo_a3e78854c09f64cf2d9da616269ea6a65aee383a963e927bfae3ffd2e69d410943}\label{classparser_1_1_escopo_a3e78854c09f64cf2d9da616269ea6a65} 
+escopo\+Global&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{escopoNormal@{escopoNormal}!parser.Escopo@{parser.Escopo}}\index{parser.Escopo@{parser.Escopo}!escopoNormal@{escopoNormal}}}\Hypertarget{classparser_1_1_escopo_a3e78854c09f64cf2d9da616269ea6a65a6443efccec126d4d9b8e6a16193b9fc4}\label{classparser_1_1_escopo_a3e78854c09f64cf2d9da616269ea6a65} 
+escopo\+Normal&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classparser_1_1_escopo_a83a2a10508512ed10ccd06e30d90ced8}\index{parser.Escopo@{parser.Escopo}!Escopo@{Escopo}}
+\index{Escopo@{Escopo}!parser.Escopo@{parser.Escopo}}
+\doxysubsubsection{\texorpdfstring{Escopo()}{Escopo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{classparser_1_1_escopo_a83a2a10508512ed10ccd06e30d90ced8} 
+parser.\+Escopo.\+Escopo (\begin{DoxyParamCaption}\item[{string}]{code}{}\end{DoxyParamCaption})}
+
+
+
+escopo deste contexto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & linha de todo codigo, para fins de encontrar falhas.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_escopo_a46d47a856222ac73496702f0eb82612b}\index{parser.Escopo@{parser.Escopo}!Escopo@{Escopo}}
+\index{Escopo@{Escopo}!parser.Escopo@{parser.Escopo}}
+\doxysubsubsection{\texorpdfstring{Escopo()}{Escopo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{classparser_1_1_escopo_a46d47a856222ac73496702f0eb82612b} 
+parser.\+Escopo.\+Escopo (\begin{DoxyParamCaption}\item[{List$<$ string $>$}]{codigo}{}\end{DoxyParamCaption})}
+
+
+
+constroi a rede de escopos para um programa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em codigo} & trecho de código bruto, sem conversao de tokens.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_escopo_a5fe17695312add9b88be867b216506ab}\index{parser.Escopo@{parser.Escopo}!Escopo@{Escopo}}
+\index{Escopo@{Escopo}!parser.Escopo@{parser.Escopo}}
+\doxysubsubsection{\texorpdfstring{Escopo()}{Escopo()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{classparser_1_1_escopo_a5fe17695312add9b88be867b216506ab} 
+parser.\+Escopo.\+Escopo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})}
+
+
+
+construtor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em escopo} & escopo a copiar.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_escopo_a0b31bb23c004e2a4866dcd3e1120bfe8}\index{parser.Escopo@{parser.Escopo}!Clone@{Clone}}
+\index{Clone@{Clone}!parser.Escopo@{parser.Escopo}}
+\doxysubsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily \label{classparser_1_1_escopo_a0b31bb23c004e2a4866dcd3e1120bfe8} 
+\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} parser.\+Escopo.\+Clone (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+retorna um clone deste escopo. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_escopo_a816bca487c1584255d87ca6e910a5249}\index{parser.Escopo@{parser.Escopo}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!parser.Escopo@{parser.Escopo}}
+\doxysubsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily \label{classparser_1_1_escopo_a816bca487c1584255d87ca6e910a5249} 
+void parser.\+Escopo.\+Dispose (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_escopo_a0660bbb7be03e5d0ab45fe22cc954ebe}\index{parser.Escopo@{parser.Escopo}!GetMsgErros@{GetMsgErros}}
+\index{GetMsgErros@{GetMsgErros}!parser.Escopo@{parser.Escopo}}
+\doxysubsubsection{\texorpdfstring{GetMsgErros()}{GetMsgErros()}}
+{\footnotesize\ttfamily \label{classparser_1_1_escopo_a0660bbb7be03e5d0ab45fe22cc954ebe} 
+List$<$ string $>$ parser.\+Escopo.\+Get\+Msg\+Erros (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+retorna a lista de mensagens de erros, encontrados no processamento deste escopo. LEGADO, os erros estão em \mbox{[}\doxylink{classparser_1_1_system_init_ab96e681c04aefbf8791fc11f20ac8571}{System\+Init.\+errors\+In\+Copiling}\mbox{]}. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_escopo_a437519a6ba2e2c556d4c3e4a5b12667b}\index{parser.Escopo@{parser.Escopo}!isPresentObject@{isPresentObject}}
+\index{isPresentObject@{isPresentObject}!parser.Escopo@{parser.Escopo}}
+\doxysubsubsection{\texorpdfstring{isPresentObject()}{isPresentObject()}}
+{\footnotesize\ttfamily \label{classparser_1_1_escopo_a437519a6ba2e2c556d4c3e4a5b12667b} 
+bool parser.\+Escopo.\+is\+Present\+Object (\begin{DoxyParamCaption}\item[{string}]{nome\+Objeto}{}\end{DoxyParamCaption})}
+
+
+
+verifica se um objeto está presente neste escopo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Objeto} & nome do objeto a verificar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se o objeto está no escopo.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_escopo_a4f1fdcdbb27dc53f875b2238319dd863}\index{parser.Escopo@{parser.Escopo}!WriteCallAtMethod@{WriteCallAtMethod}}
+\index{WriteCallAtMethod@{WriteCallAtMethod}!parser.Escopo@{parser.Escopo}}
+\doxysubsubsection{\texorpdfstring{WriteCallAtMethod()}{WriteCallAtMethod()}}
+{\footnotesize\ttfamily \label{classparser_1_1_escopo_a4f1fdcdbb27dc53f875b2238319dd863} 
+string parser.\+Escopo.\+Write\+Call\+At\+Method (\begin{DoxyParamCaption}\item[{List$<$ List$<$ string $>$ $>$}]{chamada\+AMetodo}{, }\item[{int}]{index\+Chamada}{}\end{DoxyParamCaption})}
+
+
+
+escreve no terminal, os tokens de chamadas de metodo. LEGADO. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em chamada\+AMetodo} & \\
+\hline
+{\em index\+Chamada} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classparser_1_1_escopo_a3f18458210ff107ae49359c162eac934}\index{parser.Escopo@{parser.Escopo}!codigo@{codigo}}
+\index{codigo@{codigo}!parser.Escopo@{parser.Escopo}}
+\doxysubsubsection{\texorpdfstring{codigo}{codigo}}
+{\footnotesize\ttfamily \label{classparser_1_1_escopo_a3f18458210ff107ae49359c162eac934} 
+List$<$string$>$ parser.\+Escopo.\+codigo}
+
+
+
+codigo contido no contexto do escopo; 
+
+\Hypertarget{classparser_1_1_escopo_ac4f70780e5fc143e1a36975b7e926ad7}\index{parser.Escopo@{parser.Escopo}!escopoCURRENT@{escopoCURRENT}}
+\index{escopoCURRENT@{escopoCURRENT}!parser.Escopo@{parser.Escopo}}
+\doxysubsubsection{\texorpdfstring{escopoCURRENT}{escopoCURRENT}}
+{\footnotesize\ttfamily \label{classparser_1_1_escopo_ac4f70780e5fc143e1a36975b7e926ad7} 
+\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} parser.\+Escopo.\+escopo\+CURRENT\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+escopo onde o codigo currente está sendo executado. 
+
+\Hypertarget{classparser_1_1_escopo_a85cfbf843f2d5c87913b95e67ebad53d}\index{parser.Escopo@{parser.Escopo}!escopoFolhas@{escopoFolhas}}
+\index{escopoFolhas@{escopoFolhas}!parser.Escopo@{parser.Escopo}}
+\doxysubsubsection{\texorpdfstring{escopoFolhas}{escopoFolhas}}
+{\footnotesize\ttfamily \label{classparser_1_1_escopo_a85cfbf843f2d5c87913b95e67ebad53d} 
+List$<$\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}$>$ parser.\+Escopo.\+escopo\+Folhas = null}
+
+
+
+escopos de mesmo nivel horizontal. 
+
+\Hypertarget{classparser_1_1_escopo_a7d8d2a44c5ab66f5426fdd91771e493c}\index{parser.Escopo@{parser.Escopo}!escopoROOT@{escopoROOT}}
+\index{escopoROOT@{escopoROOT}!parser.Escopo@{parser.Escopo}}
+\doxysubsubsection{\texorpdfstring{escopoROOT}{escopoROOT}}
+{\footnotesize\ttfamily \label{classparser_1_1_escopo_a7d8d2a44c5ab66f5426fdd91771e493c} 
+\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} parser.\+Escopo.\+escopo\+ROOT\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+primeiro escopo do codigo, acessso a todos outros escopos de classes, funcoes, blocos. 
+
+\Hypertarget{classparser_1_1_escopo_a0afe3324d22fc521e2ba967f11050bcd}\index{parser.Escopo@{parser.Escopo}!ID@{ID}}
+\index{ID@{ID}!parser.Escopo@{parser.Escopo}}
+\doxysubsubsection{\texorpdfstring{ID}{ID}}
+{\footnotesize\ttfamily \label{classparser_1_1_escopo_a0afe3324d22fc521e2ba967f11050bcd} 
+\mbox{\hyperlink{classparser_1_1_escopo_a3e78854c09f64cf2d9da616269ea6a65}{tipo\+Escopo}} parser.\+Escopo.\+ID = \mbox{\hyperlink{classparser_1_1_escopo_a3e78854c09f64cf2d9da616269ea6a65a6443efccec126d4d9b8e6a16193b9fc4}{tipo\+Escopo.\+escopo\+Normal}}}
+
+
+
+tipo do escopo currente. 
+
+\Hypertarget{classparser_1_1_escopo_a94aa5ebf55b0272c55babf4ba9e8036d}\index{parser.Escopo@{parser.Escopo}!MsgErros@{MsgErros}}
+\index{MsgErros@{MsgErros}!parser.Escopo@{parser.Escopo}}
+\doxysubsubsection{\texorpdfstring{MsgErros}{MsgErros}}
+{\footnotesize\ttfamily \label{classparser_1_1_escopo_a94aa5ebf55b0272c55babf4ba9e8036d} 
+List$<$string$>$ parser.\+Escopo.\+Msg\+Erros = new List$<$string$>$()}
+
+
+
+lista de erros na escrita de codigo feito pelo programador quando utiliza a linguagem orquidea. 
+
+\Hypertarget{classparser_1_1_escopo_ab69f3bf55e02bdebd46d51b419cbeb8d}\index{parser.Escopo@{parser.Escopo}!nome@{nome}}
+\index{nome@{nome}!parser.Escopo@{parser.Escopo}}
+\doxysubsubsection{\texorpdfstring{nome}{nome}}
+{\footnotesize\ttfamily \label{classparser_1_1_escopo_ab69f3bf55e02bdebd46d51b419cbeb8d} 
+string parser.\+Escopo.\+nome = "{}"{}}
+
+
+
+nome id do escopo. 
+
+\Hypertarget{classparser_1_1_escopo_aa9e7feb3cf52402392923189fdd4a651}\index{parser.Escopo@{parser.Escopo}!nomeClasseCurrente@{nomeClasseCurrente}}
+\index{nomeClasseCurrente@{nomeClasseCurrente}!parser.Escopo@{parser.Escopo}}
+\doxysubsubsection{\texorpdfstring{nomeClasseCurrente}{nomeClasseCurrente}}
+{\footnotesize\ttfamily \label{classparser_1_1_escopo_aa9e7feb3cf52402392923189fdd4a651} 
+string parser.\+Escopo.\+nome\+Classe\+Currente\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+nome da classe sendo compilada. 
+
+\Hypertarget{classparser_1_1_escopo_a37013a9588f408c0bad7dec286b80128}\index{parser.Escopo@{parser.Escopo}!nomeEscopo@{nomeEscopo}}
+\index{nomeEscopo@{nomeEscopo}!parser.Escopo@{parser.Escopo}}
+\doxysubsubsection{\texorpdfstring{nomeEscopo}{nomeEscopo}}
+{\footnotesize\ttfamily \label{classparser_1_1_escopo_a37013a9588f408c0bad7dec286b80128} 
+string parser.\+Escopo.\+nome\+Escopo = "{}"{}}
+
+
+
+nome do escopo. 
+
+\Hypertarget{classparser_1_1_escopo_a351c75d431b432c63962b64b612bcb3d}\index{parser.Escopo@{parser.Escopo}!sequencias@{sequencias}}
+\index{sequencias@{sequencias}!parser.Escopo@{parser.Escopo}}
+\doxysubsubsection{\texorpdfstring{sequencias}{sequencias}}
+{\footnotesize\ttfamily \label{classparser_1_1_escopo_a351c75d431b432c63962b64b612bcb3d} 
+List$<$\mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_uma_sequencia_i_d}{Uma\+Sequencia\+ID}}$>$ parser.\+Escopo.\+sequencias}
+
+
+
+lista de sequencias id encontradas neste escopo. 
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{classparser_1_1_escopo_a114babec118916545fd7ddb6e178a93b}\index{parser.Escopo@{parser.Escopo}!escopoPai@{escopoPai}}
+\index{escopoPai@{escopoPai}!parser.Escopo@{parser.Escopo}}
+\doxysubsubsection{\texorpdfstring{escopoPai}{escopoPai}}
+{\footnotesize\ttfamily \label{classparser_1_1_escopo_a114babec118916545fd7ddb6e178a93b} 
+\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} parser.\+Escopo.\+escopo\+Pai\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+escopo raiz do escopo currente. Se o escopo pai for null, e o escopo não for escopo\+Global, retorna o escopo\+Global. 
+
+\Hypertarget{classparser_1_1_escopo_a44b0c36eb170f9c430cdfc58a1b76f32}\index{parser.Escopo@{parser.Escopo}!tabela@{tabela}}
+\index{tabela@{tabela}!parser.Escopo@{parser.Escopo}}
+\doxysubsubsection{\texorpdfstring{tabela}{tabela}}
+{\footnotesize\ttfamily \label{classparser_1_1_escopo_a44b0c36eb170f9c430cdfc58a1b76f32} 
+\mbox{\hyperlink{classparser_1_1_tablela_de_valores}{Tablela\+De\+Valores}} parser.\+Escopo.\+tabela\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+contém as variáveis, funções, métodos, propriedades, classes registradas neste escopo. ~\newline
+ 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/componentes\+De\+Interpretadores\+ECompiladores/\+PROGRAMACAO FUNCIONAL/\mbox{\hyperlink{_escopo_8cs}{Escopo.\+cs}}\end{DoxyCompactItemize}

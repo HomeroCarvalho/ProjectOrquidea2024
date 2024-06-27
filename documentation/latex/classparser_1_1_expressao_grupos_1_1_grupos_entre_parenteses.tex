@@ -1,0 +1,152 @@
+\doxysection{parser.\+Expressao\+Grupos.\+Grupos\+Entre\+Parenteses Class Reference}
+\hypertarget{classparser_1_1_expressao_grupos_1_1_grupos_entre_parenteses}{}\label{classparser_1_1_expressao_grupos_1_1_grupos_entre_parenteses}\index{parser.ExpressaoGrupos.GruposEntreParenteses@{parser.ExpressaoGrupos.GruposEntreParenteses}}
+
+
+agrupa tokens entre parenteses, para um objeto grupo.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparser_1_1_expressao_grupos_1_1_grupos_entre_parenteses_a803377578341c9605c5182ad3caae2de}{Grupos\+Entre\+Parenteses}} (List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_expressao_grupos_1_1_grupos_entre_parenteses_a777274e4e0e171fb1e1a8154884eabe9}{tokens}}, int \mbox{\hyperlink{classparser_1_1_expressao_grupos_1_1_grupos_entre_parenteses_ad1891d835e365002702785a4b69dee77}{index}})
+\begin{DoxyCompactList}\small\item\em construtor. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{classparser_1_1_expressao_grupos_1_1_grupos_entre_parenteses_a1a011ddf95616317686c24e9817c16f2}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_expressao_grupos_1_1_grupos_entre_parenteses_af6850e5f04c66de8e1570a73467e034b}{Remove\+And\+Registry\+Groups}} (string codigo, ref List$<$ \mbox{\hyperlink{classparser_1_1_expressao_grupos_1_1_grupos_entre_parenteses}{Grupos\+Entre\+Parenteses}} $>$ grupos, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em retira grupos de tokens entre parenteses, tornnando "{}facil"{} fazer o processamento de tokens de expressoes. \end{DoxyCompactList}\item 
+static List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_expressao_grupos_1_1_grupos_entre_parenteses_a07daeff38cc0d937447f78c80b6383e3}{Remove\+And\+Registry\+Groups}} (List$<$ string $>$ tokens\+Expressao, ref List$<$ \mbox{\hyperlink{classparser_1_1_expressao_grupos_1_1_grupos_entre_parenteses}{Grupos\+Entre\+Parenteses}} $>$ grupos, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em extrai tokens entre parenteses, formando uma lista de tokens resumidos. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classparser_1_1_expressao_grupos_1_1_grupos_entre_parenteses_a012e5ed123ad99480d4cfc2d55ecb3b6}{Is\+ID}} (string exprss\+ID)
+\begin{DoxyCompactList}\small\item\em verifica se a expressao nao eh um ID. um ID não contem caracteres como parenteses, colchetes, virgula, ponto-\/e-\/virgula, nomes de operadores. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_expressao_grupos_1_1_grupos_entre_parenteses_a777274e4e0e171fb1e1a8154884eabe9}{tokens}} = new List$<$string$>$()
+\begin{DoxyCompactList}\small\item\em tokens do grupo. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classparser_1_1_expressao_grupos_1_1_grupos_entre_parenteses_ad1891d835e365002702785a4b69dee77}{index}}
+\begin{DoxyCompactList}\small\item\em indice dentro dos tokens da expressao. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classparser_1_1_expressao_grupos_1_1_grupos_entre_parenteses_a1a724afeef0c4666cc84ef1d24ef3d3c}{text}}
+\begin{DoxyCompactList}\small\item\em texto contendo todos tokens, formatados em modo texto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+agrupa tokens entre parenteses, para um objeto grupo. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classparser_1_1_expressao_grupos_1_1_grupos_entre_parenteses_a803377578341c9605c5182ad3caae2de}\index{parser.ExpressaoGrupos.GruposEntreParenteses@{parser.ExpressaoGrupos.GruposEntreParenteses}!GruposEntreParenteses@{GruposEntreParenteses}}
+\index{GruposEntreParenteses@{GruposEntreParenteses}!parser.ExpressaoGrupos.GruposEntreParenteses@{parser.ExpressaoGrupos.GruposEntreParenteses}}
+\doxysubsubsection{\texorpdfstring{GruposEntreParenteses()}{GruposEntreParenteses()}}
+{\footnotesize\ttfamily \label{classparser_1_1_expressao_grupos_1_1_grupos_entre_parenteses_a803377578341c9605c5182ad3caae2de} 
+parser.\+Expressao\+Grupos.\+Grupos\+Entre\+Parenteses.\+Grupos\+Entre\+Parenteses (\begin{DoxyParamCaption}\item[{List$<$ string $>$}]{tokens}{, }\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+
+
+construtor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tokens} & tokens entre parenteses extraido.\\
+\hline
+{\em index} & indice dos tokens entre a expressao dos tokens.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_expressao_grupos_1_1_grupos_entre_parenteses_a012e5ed123ad99480d4cfc2d55ecb3b6}\index{parser.ExpressaoGrupos.GruposEntreParenteses@{parser.ExpressaoGrupos.GruposEntreParenteses}!IsID@{IsID}}
+\index{IsID@{IsID}!parser.ExpressaoGrupos.GruposEntreParenteses@{parser.ExpressaoGrupos.GruposEntreParenteses}}
+\doxysubsubsection{\texorpdfstring{IsID()}{IsID()}}
+{\footnotesize\ttfamily \label{classparser_1_1_expressao_grupos_1_1_grupos_entre_parenteses_a012e5ed123ad99480d4cfc2d55ecb3b6} 
+static bool parser.\+Expressao\+Grupos.\+Grupos\+Entre\+Parenteses.\+Is\+ID (\begin{DoxyParamCaption}\item[{string}]{exprss\+ID}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+verifica se a expressao nao eh um ID. um ID não contem caracteres como parenteses, colchetes, virgula, ponto-\/e-\/virgula, nomes de operadores. 
+
+\Hypertarget{classparser_1_1_expressao_grupos_1_1_grupos_entre_parenteses_a07daeff38cc0d937447f78c80b6383e3}\index{parser.ExpressaoGrupos.GruposEntreParenteses@{parser.ExpressaoGrupos.GruposEntreParenteses}!RemoveAndRegistryGroups@{RemoveAndRegistryGroups}}
+\index{RemoveAndRegistryGroups@{RemoveAndRegistryGroups}!parser.ExpressaoGrupos.GruposEntreParenteses@{parser.ExpressaoGrupos.GruposEntreParenteses}}
+\doxysubsubsection{\texorpdfstring{RemoveAndRegistryGroups()}{RemoveAndRegistryGroups()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_expressao_grupos_1_1_grupos_entre_parenteses_a07daeff38cc0d937447f78c80b6383e3} 
+static List$<$ string $>$ parser.\+Expressao\+Grupos.\+Grupos\+Entre\+Parenteses.\+Remove\+And\+Registry\+Groups (\begin{DoxyParamCaption}\item[{List$<$ string $>$}]{tokens\+Expressao}{, }\item[{ref List$<$ \mbox{\hyperlink{classparser_1_1_expressao_grupos_1_1_grupos_entre_parenteses}{Grupos\+Entre\+Parenteses}} $>$}]{grupos}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+extrai tokens entre parenteses, formando uma lista de tokens resumidos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tokens\+Expressao} & tokens com grupos de parenteses.\\
+\hline
+{\em grupos} & grupo de tokens entre parenteses.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_expressao_grupos_1_1_grupos_entre_parenteses_af6850e5f04c66de8e1570a73467e034b}\index{parser.ExpressaoGrupos.GruposEntreParenteses@{parser.ExpressaoGrupos.GruposEntreParenteses}!RemoveAndRegistryGroups@{RemoveAndRegistryGroups}}
+\index{RemoveAndRegistryGroups@{RemoveAndRegistryGroups}!parser.ExpressaoGrupos.GruposEntreParenteses@{parser.ExpressaoGrupos.GruposEntreParenteses}}
+\doxysubsubsection{\texorpdfstring{RemoveAndRegistryGroups()}{RemoveAndRegistryGroups()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_expressao_grupos_1_1_grupos_entre_parenteses_af6850e5f04c66de8e1570a73467e034b} 
+static List$<$ string $>$ parser.\+Expressao\+Grupos.\+Grupos\+Entre\+Parenteses.\+Remove\+And\+Registry\+Groups (\begin{DoxyParamCaption}\item[{string}]{codigo}{, }\item[{ref List$<$ \mbox{\hyperlink{classparser_1_1_expressao_grupos_1_1_grupos_entre_parenteses}{Grupos\+Entre\+Parenteses}} $>$}]{grupos}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+retira grupos de tokens entre parenteses, tornnando "{}facil"{} fazer o processamento de tokens de expressoes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em codigo} & codgo da expressao.\\
+\hline
+{\em grupos} & grupos extraidos.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna um lista de tokens sem os grupos.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_expressao_grupos_1_1_grupos_entre_parenteses_a1a011ddf95616317686c24e9817c16f2}\index{parser.ExpressaoGrupos.GruposEntreParenteses@{parser.ExpressaoGrupos.GruposEntreParenteses}!ToString@{ToString}}
+\index{ToString@{ToString}!parser.ExpressaoGrupos.GruposEntreParenteses@{parser.ExpressaoGrupos.GruposEntreParenteses}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily \label{classparser_1_1_expressao_grupos_1_1_grupos_entre_parenteses_a1a011ddf95616317686c24e9817c16f2} 
+override string parser.\+Expressao\+Grupos.\+Grupos\+Entre\+Parenteses.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classparser_1_1_expressao_grupos_1_1_grupos_entre_parenteses_ad1891d835e365002702785a4b69dee77}\index{parser.ExpressaoGrupos.GruposEntreParenteses@{parser.ExpressaoGrupos.GruposEntreParenteses}!index@{index}}
+\index{index@{index}!parser.ExpressaoGrupos.GruposEntreParenteses@{parser.ExpressaoGrupos.GruposEntreParenteses}}
+\doxysubsubsection{\texorpdfstring{index}{index}}
+{\footnotesize\ttfamily \label{classparser_1_1_expressao_grupos_1_1_grupos_entre_parenteses_ad1891d835e365002702785a4b69dee77} 
+int parser.\+Expressao\+Grupos.\+Grupos\+Entre\+Parenteses.\+index}
+
+
+
+indice dentro dos tokens da expressao. 
+
+\Hypertarget{classparser_1_1_expressao_grupos_1_1_grupos_entre_parenteses_a1a724afeef0c4666cc84ef1d24ef3d3c}\index{parser.ExpressaoGrupos.GruposEntreParenteses@{parser.ExpressaoGrupos.GruposEntreParenteses}!text@{text}}
+\index{text@{text}!parser.ExpressaoGrupos.GruposEntreParenteses@{parser.ExpressaoGrupos.GruposEntreParenteses}}
+\doxysubsubsection{\texorpdfstring{text}{text}}
+{\footnotesize\ttfamily \label{classparser_1_1_expressao_grupos_1_1_grupos_entre_parenteses_a1a724afeef0c4666cc84ef1d24ef3d3c} 
+string parser.\+Expressao\+Grupos.\+Grupos\+Entre\+Parenteses.\+text}
+
+
+
+texto contendo todos tokens, formatados em modo texto. 
+
+\Hypertarget{classparser_1_1_expressao_grupos_1_1_grupos_entre_parenteses_a777274e4e0e171fb1e1a8154884eabe9}\index{parser.ExpressaoGrupos.GruposEntreParenteses@{parser.ExpressaoGrupos.GruposEntreParenteses}!tokens@{tokens}}
+\index{tokens@{tokens}!parser.ExpressaoGrupos.GruposEntreParenteses@{parser.ExpressaoGrupos.GruposEntreParenteses}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily \label{classparser_1_1_expressao_grupos_1_1_grupos_entre_parenteses_a777274e4e0e171fb1e1a8154884eabe9} 
+List$<$string$>$ parser.\+Expressao\+Grupos.\+Grupos\+Entre\+Parenteses.\+tokens = new List$<$string$>$()}
+
+
+
+tokens do grupo. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/componentes\+De\+Interpretadores\+ECompiladores/\+PROGRAMACAO ORIENTADA A OBJETOS/\mbox{\hyperlink{_expressao_grupos_8cs}{Expressao\+Grupos.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,249 @@
+\doxysection{parser.\+Functions\+Game Class Reference}
+\hypertarget{classparser_1_1_functions_game}{}\label{classparser_1_1_functions_game}\index{parser.FunctionsGame@{parser.FunctionsGame}}
+
+
+funcoes uteis para jogos\+: random, clamp,...  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparser_1_1_functions_game_a5f72c15cb72775a24c3dd8dd95c0c2fb}{Functions\+Game}} ()
+\item 
+string \mbox{\hyperlink{classparser_1_1_functions_game_a86e865f88b5496313858b8cb45337744}{Get\+Text\+Random}} ()
+\item 
+int \mbox{\hyperlink{classparser_1_1_functions_game_a05dec72d70980043967e24c653b992be}{Random\+Int}} (int init, int end)
+\begin{DoxyCompactList}\small\item\em retorna um numero randomico na faixa dos parametros init, e end. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classparser_1_1_functions_game_a673b592347233bb4171e23e95b1a10e7}{Random\+Double}} ()
+\begin{DoxyCompactList}\small\item\em retorna um numero ponto-\/flutuante entre 0..1; \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classparser_1_1_functions_game_a4023babe4529869f18df0d0d58103721}{Random\+Double}} (double init, double end)
+\begin{DoxyCompactList}\small\item\em retorna um numero ponto-\/flutuante entre \mbox{[}init\mbox{]}..\mbox{[}end\mbox{]}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classparser_1_1_functions_game_ae30d3880da7b85b63917ac8ac8ce3658}{Random\+Distribution\+Normal}} (double media, double variancia)
+\begin{DoxyCompactList}\small\item\em retorna um numero randomico, para uma distribuicao normal. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classparser_1_1_functions_game_afe5f0b432be3de092344e8dbc43257a1}{Clamp\+Double}} (double min, double max, double value)
+\begin{DoxyCompactList}\small\item\em funcao clamp. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classparser_1_1_functions_game_aef9ee395bd579c1d6bb39faaf6e35e65}{Clamp\+Int}} (int min, int max, int value)
+\begin{DoxyCompactList}\small\item\em funcao clamp. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classparser_1_1_functions_game_ace4eb311791b225e11743c03004baa14}{Parse\+To\+Int}} (double numero)
+\begin{DoxyCompactList}\small\item\em funcao de converte um double para um int. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classparser_1_1_functions_game_a242c86ccfb2c6180c8d13e593fee775a}{Parse\+To\+Double}} (int numero)
+\begin{DoxyCompactList}\small\item\em funcao que converte um int para um double. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classparser_1_1_functions_game_a1c9b1eecaed6b8ee31c259460e073525}{Parse\+From\+Int\+To\+String}} (int numero)
+\begin{DoxyCompactList}\small\item\em converte um numero para um texto string. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classparser_1_1_functions_game_a61e8ba886e649ce57bc8ca6c08d0ee81}{Parse\+Double\+Int\+To\+String}} (double numero)
+\begin{DoxyCompactList}\small\item\em converte um numero para um texto string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+funcoes uteis para jogos\+: random, clamp,... 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classparser_1_1_functions_game_a5f72c15cb72775a24c3dd8dd95c0c2fb}\index{parser.FunctionsGame@{parser.FunctionsGame}!FunctionsGame@{FunctionsGame}}
+\index{FunctionsGame@{FunctionsGame}!parser.FunctionsGame@{parser.FunctionsGame}}
+\doxysubsubsection{\texorpdfstring{FunctionsGame()}{FunctionsGame()}}
+{\footnotesize\ttfamily \label{classparser_1_1_functions_game_a5f72c15cb72775a24c3dd8dd95c0c2fb} 
+parser.\+Functions\+Game.\+Functions\+Game (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_functions_game_afe5f0b432be3de092344e8dbc43257a1}\index{parser.FunctionsGame@{parser.FunctionsGame}!ClampDouble@{ClampDouble}}
+\index{ClampDouble@{ClampDouble}!parser.FunctionsGame@{parser.FunctionsGame}}
+\doxysubsubsection{\texorpdfstring{ClampDouble()}{ClampDouble()}}
+{\footnotesize\ttfamily \label{classparser_1_1_functions_game_afe5f0b432be3de092344e8dbc43257a1} 
+double parser.\+Functions\+Game.\+Clamp\+Double (\begin{DoxyParamCaption}\item[{double}]{min}{, }\item[{double}]{max}{, }\item[{double}]{value}{}\end{DoxyParamCaption})}
+
+
+
+funcao clamp. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em min} & valor minimo.\\
+\hline
+{\em max} & valor maximo.\\
+\hline
+{\em value} & valor currente.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_functions_game_aef9ee395bd579c1d6bb39faaf6e35e65}\index{parser.FunctionsGame@{parser.FunctionsGame}!ClampInt@{ClampInt}}
+\index{ClampInt@{ClampInt}!parser.FunctionsGame@{parser.FunctionsGame}}
+\doxysubsubsection{\texorpdfstring{ClampInt()}{ClampInt()}}
+{\footnotesize\ttfamily \label{classparser_1_1_functions_game_aef9ee395bd579c1d6bb39faaf6e35e65} 
+int parser.\+Functions\+Game.\+Clamp\+Int (\begin{DoxyParamCaption}\item[{int}]{min}{, }\item[{int}]{max}{, }\item[{int}]{value}{}\end{DoxyParamCaption})}
+
+
+
+funcao clamp. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em min} & valor minimo.\\
+\hline
+{\em max} & valor maximo.\\
+\hline
+{\em value} & valor currente.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_functions_game_a86e865f88b5496313858b8cb45337744}\index{parser.FunctionsGame@{parser.FunctionsGame}!GetTextRandom@{GetTextRandom}}
+\index{GetTextRandom@{GetTextRandom}!parser.FunctionsGame@{parser.FunctionsGame}}
+\doxysubsubsection{\texorpdfstring{GetTextRandom()}{GetTextRandom()}}
+{\footnotesize\ttfamily \label{classparser_1_1_functions_game_a86e865f88b5496313858b8cb45337744} 
+string parser.\+Functions\+Game.\+Get\+Text\+Random (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_functions_game_a61e8ba886e649ce57bc8ca6c08d0ee81}\index{parser.FunctionsGame@{parser.FunctionsGame}!ParseDoubleIntToString@{ParseDoubleIntToString}}
+\index{ParseDoubleIntToString@{ParseDoubleIntToString}!parser.FunctionsGame@{parser.FunctionsGame}}
+\doxysubsubsection{\texorpdfstring{ParseDoubleIntToString()}{ParseDoubleIntToString()}}
+{\footnotesize\ttfamily \label{classparser_1_1_functions_game_a61e8ba886e649ce57bc8ca6c08d0ee81} 
+string parser.\+Functions\+Game.\+Parse\+Double\+Int\+To\+String (\begin{DoxyParamCaption}\item[{double}]{numero}{}\end{DoxyParamCaption})}
+
+
+
+converte um numero para um texto string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em numero} & numero ponto-\/flutuante a ser convertido.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna um texto string representando o numero.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_functions_game_a1c9b1eecaed6b8ee31c259460e073525}\index{parser.FunctionsGame@{parser.FunctionsGame}!ParseFromIntToString@{ParseFromIntToString}}
+\index{ParseFromIntToString@{ParseFromIntToString}!parser.FunctionsGame@{parser.FunctionsGame}}
+\doxysubsubsection{\texorpdfstring{ParseFromIntToString()}{ParseFromIntToString()}}
+{\footnotesize\ttfamily \label{classparser_1_1_functions_game_a1c9b1eecaed6b8ee31c259460e073525} 
+string parser.\+Functions\+Game.\+Parse\+From\+Int\+To\+String (\begin{DoxyParamCaption}\item[{int}]{numero}{}\end{DoxyParamCaption})}
+
+
+
+converte um numero para um texto string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em numero} & numero a ser convertido.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna um texto string do numero.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_functions_game_a242c86ccfb2c6180c8d13e593fee775a}\index{parser.FunctionsGame@{parser.FunctionsGame}!ParseToDouble@{ParseToDouble}}
+\index{ParseToDouble@{ParseToDouble}!parser.FunctionsGame@{parser.FunctionsGame}}
+\doxysubsubsection{\texorpdfstring{ParseToDouble()}{ParseToDouble()}}
+{\footnotesize\ttfamily \label{classparser_1_1_functions_game_a242c86ccfb2c6180c8d13e593fee775a} 
+double parser.\+Functions\+Game.\+Parse\+To\+Double (\begin{DoxyParamCaption}\item[{int}]{numero}{}\end{DoxyParamCaption})}
+
+
+
+funcao que converte um int para um double. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em numero} & numero int.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_functions_game_ace4eb311791b225e11743c03004baa14}\index{parser.FunctionsGame@{parser.FunctionsGame}!ParseToInt@{ParseToInt}}
+\index{ParseToInt@{ParseToInt}!parser.FunctionsGame@{parser.FunctionsGame}}
+\doxysubsubsection{\texorpdfstring{ParseToInt()}{ParseToInt()}}
+{\footnotesize\ttfamily \label{classparser_1_1_functions_game_ace4eb311791b225e11743c03004baa14} 
+int parser.\+Functions\+Game.\+Parse\+To\+Int (\begin{DoxyParamCaption}\item[{double}]{numero}{}\end{DoxyParamCaption})}
+
+
+
+funcao de converte um double para um int. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor} & numero double.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_functions_game_ae30d3880da7b85b63917ac8ac8ce3658}\index{parser.FunctionsGame@{parser.FunctionsGame}!RandomDistributionNormal@{RandomDistributionNormal}}
+\index{RandomDistributionNormal@{RandomDistributionNormal}!parser.FunctionsGame@{parser.FunctionsGame}}
+\doxysubsubsection{\texorpdfstring{RandomDistributionNormal()}{RandomDistributionNormal()}}
+{\footnotesize\ttfamily \label{classparser_1_1_functions_game_ae30d3880da7b85b63917ac8ac8ce3658} 
+double parser.\+Functions\+Game.\+Random\+Distribution\+Normal (\begin{DoxyParamCaption}\item[{double}]{media}{, }\item[{double}]{variancia}{}\end{DoxyParamCaption})}
+
+
+
+retorna um numero randomico, para uma distribuicao normal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em media} & media dos valores da distribuicao normal.\\
+\hline
+{\em variancia} & variancia da distribuicao normal.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_functions_game_a673b592347233bb4171e23e95b1a10e7}\index{parser.FunctionsGame@{parser.FunctionsGame}!RandomDouble@{RandomDouble}}
+\index{RandomDouble@{RandomDouble}!parser.FunctionsGame@{parser.FunctionsGame}}
+\doxysubsubsection{\texorpdfstring{RandomDouble()}{RandomDouble()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_functions_game_a673b592347233bb4171e23e95b1a10e7} 
+double parser.\+Functions\+Game.\+Random\+Double (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+retorna um numero ponto-\/flutuante entre 0..1; 
+
+\begin{DoxyReturn}{Returns}
+retornao um numero entre 0..1.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_functions_game_a4023babe4529869f18df0d0d58103721}\index{parser.FunctionsGame@{parser.FunctionsGame}!RandomDouble@{RandomDouble}}
+\index{RandomDouble@{RandomDouble}!parser.FunctionsGame@{parser.FunctionsGame}}
+\doxysubsubsection{\texorpdfstring{RandomDouble()}{RandomDouble()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_functions_game_a4023babe4529869f18df0d0d58103721} 
+double parser.\+Functions\+Game.\+Random\+Double (\begin{DoxyParamCaption}\item[{double}]{init}{, }\item[{double}]{end}{}\end{DoxyParamCaption})}
+
+
+
+retorna um numero ponto-\/flutuante entre \mbox{[}init\mbox{]}..\mbox{[}end\mbox{]}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em init} & valor minimo.\\
+\hline
+{\em end} & valor maximo.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna um numero double na faixa dos parametros.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_functions_game_a05dec72d70980043967e24c653b992be}\index{parser.FunctionsGame@{parser.FunctionsGame}!RandomInt@{RandomInt}}
+\index{RandomInt@{RandomInt}!parser.FunctionsGame@{parser.FunctionsGame}}
+\doxysubsubsection{\texorpdfstring{RandomInt()}{RandomInt()}}
+{\footnotesize\ttfamily \label{classparser_1_1_functions_game_a05dec72d70980043967e24c653b992be} 
+int parser.\+Functions\+Game.\+Random\+Int (\begin{DoxyParamCaption}\item[{int}]{init}{, }\item[{int}]{end}{}\end{DoxyParamCaption})}
+
+
+
+retorna um numero randomico na faixa dos parametros init, e end. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em init} & menor numero a randomizar.\\
+\hline
+{\em end} & maior numero a randomizar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna um inteiro entre \mbox{[}init\mbox{]} e \mbox{[}end\mbox{]}.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/\+LIBRARIES/\+Game Support/\+Library\+Games/\mbox{\hyperlink{_game_library_8cs}{Game\+Library.\+cs}}\end{DoxyCompactItemize}

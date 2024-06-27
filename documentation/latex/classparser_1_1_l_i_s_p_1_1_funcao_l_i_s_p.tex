@@ -1,0 +1,465 @@
+\doxysection{parser.\+LISP.\+Funcao\+LISP Class Reference}
+\hypertarget{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p}{}\label{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p}\index{parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}}
+
+
+Uma função \doxylink{namespaceparser_1_1_l_i_s_p}{LISP} contem um nome, um conjuntos de parâmetros, e um corpo (onde estão o escopo de código da função).  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+delegate \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a6c45adfee59ee94dcefbee74b7d28547}{Comando}} (\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} lista\+Comando, List$<$ \mbox{\hyperlink{structparser_1_1_l_i_s_p_1_1_dados_do_parametro}{Dados\+Do\+Parametro}} $>$ \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_ad09efc33b990f00dad56e276c87bdae7}{parametros}})
+\begin{DoxyCompactList}\small\item\em protótipo de função para chamadas a algoritmos de instruções lisp, acessada pelo nome da função. \end{DoxyCompactList}\item 
+delegate object \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_ae373142fd72c87862de95bee33deebdf}{Operacao\+Matematica\+Generica}} (object p1, object p2)
+\begin{DoxyCompactList}\small\item\em protótipo de função para operações matemáticas com parâmetros genéricos. \end{DoxyCompactList}\item 
+delegate bool \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a4ffe974733f7aefac712d865737348c7}{Comapracoes\+Generica}} (object p1, object p2)
+\item 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_af9f22e63fe86db9f5cb77e042b4dafed}{Funcao\+LISP}} ()
+\item 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_aa4068ecc20e1ba2d2613d28a18807e83}{Funcao\+LISP}} (\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} lista\+Funcao)
+\begin{DoxyCompactList}\small\item\em constroi uma função lisp, a partir de uma lista lisp contendo nome, parâmetros, um conjunto de parâmetros, e um retorno da função (na forma de uma lista lisp). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a2e023dfd248b02255c06b2e93e3cc2cd}{Funcao\+LISP}} (string \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a99b3d8bec0c25a8f9fb8b5633044a9e9}{texto\+Funcao}})
+\item 
+void \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a71ea83d189e0509c0b86bbc473551dfd}{Init\+Comandos\+LISP}} ()
+\begin{DoxyCompactList}\small\item\em carrega as instruções lisp, com um padrâo de projeto Command\+: permite uma expansão de instruções fácil de se fazer\+: \doxylink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a6bc25fd6faba47d86ed905fc480b14f2}{Add\+Comando(string nome\+Comando, Comando funcao\+Comando)}. criando um método de acordo com o protótipo de função \mbox{[}Comando\mbox{]},e um nome para o novo comando lisp. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a14bb4519222bab1f4c70b2593b1ab2d3}{Is\+Basic\+Function}} (string name\+Function)
+\begin{DoxyCompactList}\small\item\em verifica se é uma função predefinida. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a78c3a1319baaa2eb3645948fd5f1c2c4}{Avalia\+Funcao}} (\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} lst\+Chamada\+De\+Funcao)
+\begin{DoxyCompactList}\small\item\em avalia uma função pré-\/definida ou armazanada no repositório. avalia textos como\+: (foo 5 5). Os parâmetros neste exemplo é\+: (5 5), extraídos dos parãmetros de entrada. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{structparser_1_1_l_i_s_p_1_1_dados_do_parametro}{Dados\+Do\+Parametro}} $>$ \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a7622df02990fdd174248532720471904}{Obtem\+Parametros\+De\+Uma\+Chamada\+De\+Funcao}} (\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} lst\+Chamada)
+\begin{DoxyCompactList}\small\item\em obtém parâmetros, analisando uma lista contendo valoroes de uma chamada de uma função lisp como (foo 1 5), os valores dos parâmetros a serem obtidos são \mbox{[}1\mbox{]} e \mbox{[}5\mbox{]}, e os nomes vem da definição da função\+: (foo(x y)(+ x y)) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a6bc25fd6faba47d86ed905fc480b14f2}{Add\+Comando}} (string nome\+Comando, \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a6c45adfee59ee94dcefbee74b7d28547}{Comando}} funcao\+Comando)
+\begin{DoxyCompactList}\small\item\em adiciona um comando \doxylink{namespaceparser_1_1_l_i_s_p}{LISP}, acionado por um nome. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_add88d9d867c8485a5445c3f40bb3a491}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a9ebe3211cf06833676f49f2a69d19339}{Get\+Name}} (\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} lista)
+\begin{DoxyCompactList}\small\item\em retorna o nome da lista. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a6102bcceeaf9015c7e6b06affe93fa31}{Is\+Lista\+Lisp}} (\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_atomo}{Atomo}} lista)
+\item 
+static bool \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a5f77fc7569d3935e82b0af7313a2d95b}{Is\+True}} (\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} lista)
+\item 
+static bool \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a7499b43783f6de44bfe19d6611dbfe16}{Is\+NILL}} (\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} lista)
+\item 
+static \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_ac7908ccdec87af7724abf3886989c351}{Cadxxxr}} (\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} lista\+Funcao, List$<$ \mbox{\hyperlink{structparser_1_1_l_i_s_p_1_1_dados_do_parametro}{Dados\+Do\+Parametro}} $>$ parametro)
+\begin{DoxyCompactList}\small\item\em esta função não é predefinida, é chamada quando se verifica se uma função lisp está no repositório de funções. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a52a836a15dcfe3eccefb94ec380767c9}{De\+Fun}} (\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} lista\+Comando, List$<$ \mbox{\hyperlink{structparser_1_1_l_i_s_p_1_1_dados_do_parametro}{Dados\+Do\+Parametro}} $>$ parametros\+Da\+Funcao)
+\begin{DoxyCompactList}\small\item\em comando defun, define uma função lisp, com nome, e corpo da função (conjunto de instruções). Para acessar os parâmetros da função, é preciso primeiro avaliar a função após o registro da função. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a32789e4044f90db5b1e076e492af9965}{Car}} (\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} lista\+Comando, List$<$ \mbox{\hyperlink{structparser_1_1_l_i_s_p_1_1_dados_do_parametro}{Dados\+Do\+Parametro}} $>$ parametro)
+\item 
+static \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_ade16a4ae07ed73b62f3e964cb861e6ce}{Cdr}} (\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} lista, List$<$ \mbox{\hyperlink{structparser_1_1_l_i_s_p_1_1_dados_do_parametro}{Dados\+Do\+Parametro}} $>$ parametro)
+\begin{DoxyCompactList}\small\item\em função clássica Cdr (Obtém a lista cauda). \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a24affbf945001f8efc9e9bec0a67882c}{Is\+Atomo}} (\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} lista)
+\item 
+static bool \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_ab7a2db2f56f5f313d2306db1fb6b462e}{Is\+Atomo}} (string nome\+Atomo)
+\item 
+static object \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_aa9769e22de40f7e7c797f7e5a9b602a5}{Adicao\+Generica}} (object p1, object p2)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a2766cc5537aecd0cca8f89cab0c990b9}{nome\+Funcao}} = null
+\begin{DoxyCompactList}\small\item\em nome da função lisp. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a48fe738679a84e0c469bcc1479f1a759}{definicao\+Da\+Funcao}} = null
+\begin{DoxyCompactList}\small\item\em conjunto de instruções que compõem a função lisp; \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_ad09efc33b990f00dad56e276c87bdae7}{parametros}}
+\begin{DoxyCompactList}\small\item\em parâmetros de chamada da função da função lisp; \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a99b3d8bec0c25a8f9fb8b5633044a9e9}{texto\+Funcao}} = null
+\begin{DoxyCompactList}\small\item\em texto contendo a definição da função lisp. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static Dictionary$<$ string, \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a6c45adfee59ee94dcefbee74b7d28547}{Comando}} $>$ \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a8c1237e830183a0c45e2c1133395d76a}{Comandos\+LISP}} = new Dictionary$<$string, \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a6c45adfee59ee94dcefbee74b7d28547}{Comando}}$>$()
+\begin{DoxyCompactList}\small\item\em contém um mapa de \mbox{[}nome comando\mbox{]}= \mbox{[}funcao comando\mbox{]}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a3f7400610a05d6502b80bf231baf19b2}{NILL}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em lista clássica para retorno NILL (Vazio, ou Falso). \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a4d37dcb07ba35536117243c6cda542d3}{T}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em lista clássica para retorno T (verdadeiro). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Uma função \doxylink{namespaceparser_1_1_l_i_s_p}{LISP} contem um nome, um conjuntos de parâmetros, e um corpo (onde estão o escopo de código da função). 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_af9f22e63fe86db9f5cb77e042b4dafed}\index{parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}!FuncaoLISP@{FuncaoLISP}}
+\index{FuncaoLISP@{FuncaoLISP}!parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}}
+\doxysubsubsection{\texorpdfstring{FuncaoLISP()}{FuncaoLISP()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_af9f22e63fe86db9f5cb77e042b4dafed} 
+parser.\+LISP.\+Funcao\+LISP.\+Funcao\+LISP (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_aa4068ecc20e1ba2d2613d28a18807e83}\index{parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}!FuncaoLISP@{FuncaoLISP}}
+\index{FuncaoLISP@{FuncaoLISP}!parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}}
+\doxysubsubsection{\texorpdfstring{FuncaoLISP()}{FuncaoLISP()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_aa4068ecc20e1ba2d2613d28a18807e83} 
+parser.\+LISP.\+Funcao\+LISP.\+Funcao\+LISP (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}}}]{lista\+Funcao}{}\end{DoxyParamCaption})}
+
+
+
+constroi uma função lisp, a partir de uma lista lisp contendo nome, parâmetros, um conjunto de parâmetros, e um retorno da função (na forma de uma lista lisp). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst\+Entrada} & lista contendo o nome, parâmetros e corpo da função.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a2e023dfd248b02255c06b2e93e3cc2cd}\index{parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}!FuncaoLISP@{FuncaoLISP}}
+\index{FuncaoLISP@{FuncaoLISP}!parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}}
+\doxysubsubsection{\texorpdfstring{FuncaoLISP()}{FuncaoLISP()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a2e023dfd248b02255c06b2e93e3cc2cd} 
+parser.\+LISP.\+Funcao\+LISP.\+Funcao\+LISP (\begin{DoxyParamCaption}\item[{string}]{texto\+Funcao}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a6bc25fd6faba47d86ed905fc480b14f2}\index{parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}!AddComando@{AddComando}}
+\index{AddComando@{AddComando}!parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}}
+\doxysubsubsection{\texorpdfstring{AddComando()}{AddComando()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a6bc25fd6faba47d86ed905fc480b14f2} 
+void parser.\+LISP.\+Funcao\+LISP.\+Add\+Comando (\begin{DoxyParamCaption}\item[{string}]{nome\+Comando}{, }\item[{\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a6c45adfee59ee94dcefbee74b7d28547}{Comando}}}]{funcao\+Comando}{}\end{DoxyParamCaption})}
+
+
+
+adiciona um comando \doxylink{namespaceparser_1_1_l_i_s_p}{LISP}, acionado por um nome. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Comando} & nome chave para chamar o comando.\\
+\hline
+{\em funcao\+Comando} & função que implementa o comando..\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_aa9769e22de40f7e7c797f7e5a9b602a5}\index{parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}!AdicaoGenerica@{AdicaoGenerica}}
+\index{AdicaoGenerica@{AdicaoGenerica}!parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}}
+\doxysubsubsection{\texorpdfstring{AdicaoGenerica()}{AdicaoGenerica()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_aa9769e22de40f7e7c797f7e5a9b602a5} 
+static object parser.\+LISP.\+Funcao\+LISP.\+Adicao\+Generica (\begin{DoxyParamCaption}\item[{object}]{p1}{, }\item[{object}]{p2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a78c3a1319baaa2eb3645948fd5f1c2c4}\index{parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}!AvaliaFuncao@{AvaliaFuncao}}
+\index{AvaliaFuncao@{AvaliaFuncao}!parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}}
+\doxysubsubsection{\texorpdfstring{AvaliaFuncao()}{AvaliaFuncao()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a78c3a1319baaa2eb3645948fd5f1c2c4} 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} parser.\+LISP.\+Funcao\+LISP.\+Avalia\+Funcao (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}}}]{lst\+Chamada\+De\+Funcao}{}\end{DoxyParamCaption})}
+
+
+
+avalia uma função pré-\/definida ou armazanada no repositório. avalia textos como\+: (foo 5 5). Os parâmetros neste exemplo é\+: (5 5), extraídos dos parãmetros de entrada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst\+Chamada\+De\+Funcao} & lista contendo a chamada da função a ser avaliada, como foo(4 4).\\
+\hline
+{\em parametros} & parâmetros de entrada para a função.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna uma lista lisp cujos elementos são os resultados da função.
+\end{DoxyReturn}
+lista dos parâmetros da função. A diferença é que uma chamada como foo(-\/ x 3) não tem corpo de função, é preciso compor o corpo a partir do repositório. Como a lista a ser avaliada é foo(-\/x 3), avalia os parâmetros de (-\/ x 3).
+
+percorre todas instruções lisp da função (uma função lisp pode ter várias instruções, mas o resultado vem da última instrução avaliada.\Hypertarget{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_ac7908ccdec87af7724abf3886989c351}\index{parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}!Cadxxxr@{Cadxxxr}}
+\index{Cadxxxr@{Cadxxxr}!parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}}
+\doxysubsubsection{\texorpdfstring{Cadxxxr()}{Cadxxxr()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_ac7908ccdec87af7724abf3886989c351} 
+static \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} parser.\+LISP.\+Funcao\+LISP.\+Cadxxxr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}}}]{lista\+Funcao}{, }\item[{List$<$ \mbox{\hyperlink{structparser_1_1_l_i_s_p_1_1_dados_do_parametro}{Dados\+Do\+Parametro}} $>$}]{parametro}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+esta função não é predefinida, é chamada quando se verifica se uma função lisp está no repositório de funções. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista\+Comando} & lista contendo os tokens do comando.\\
+\hline
+{\em parametro} & não utilizado.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a32789e4044f90db5b1e076e492af9965}\index{parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}!Car@{Car}}
+\index{Car@{Car}!parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}}
+\doxysubsubsection{\texorpdfstring{Car()}{Car()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a32789e4044f90db5b1e076e492af9965} 
+static \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} parser.\+LISP.\+Funcao\+LISP.\+Car (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}}}]{lista\+Comando}{, }\item[{List$<$ \mbox{\hyperlink{structparser_1_1_l_i_s_p_1_1_dados_do_parametro}{Dados\+Do\+Parametro}} $>$}]{parametro}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+função clássica Car (Obtém o primeiro elemento, ou primeira lista).
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista\+Entrada} & lista de entrada.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_ade16a4ae07ed73b62f3e964cb861e6ce}\index{parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}!Cdr@{Cdr}}
+\index{Cdr@{Cdr}!parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}}
+\doxysubsubsection{\texorpdfstring{Cdr()}{Cdr()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_ade16a4ae07ed73b62f3e964cb861e6ce} 
+static \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} parser.\+LISP.\+Funcao\+LISP.\+Cdr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}}}]{lista}{, }\item[{List$<$ \mbox{\hyperlink{structparser_1_1_l_i_s_p_1_1_dados_do_parametro}{Dados\+Do\+Parametro}} $>$}]{parametro}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+função clássica Cdr (Obtém a lista cauda). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista\+Entrada} & lista de entrada.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a6c45adfee59ee94dcefbee74b7d28547}\index{parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}!Comando@{Comando}}
+\index{Comando@{Comando}!parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}}
+\doxysubsubsection{\texorpdfstring{Comando()}{Comando()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a6c45adfee59ee94dcefbee74b7d28547} 
+delegate \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} parser.\+LISP.\+Funcao\+LISP.\+Comando (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}}}]{lista\+Comando}{, }\item[{List$<$ \mbox{\hyperlink{structparser_1_1_l_i_s_p_1_1_dados_do_parametro}{Dados\+Do\+Parametro}} $>$}]{parametros}{}\end{DoxyParamCaption})}
+
+
+
+protótipo de função para chamadas a algoritmos de instruções lisp, acessada pelo nome da função. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista\+Comando} & lista contendo o nome da instrução lisp.\\
+\hline
+{\em parametros} & parâmetros para a função lisp, se necessário.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna uma lista resultante do processamento da função lisp.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a4ffe974733f7aefac712d865737348c7}\index{parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}!ComapracoesGenerica@{ComapracoesGenerica}}
+\index{ComapracoesGenerica@{ComapracoesGenerica}!parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}}
+\doxysubsubsection{\texorpdfstring{ComapracoesGenerica()}{ComapracoesGenerica()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a4ffe974733f7aefac712d865737348c7} 
+delegate bool parser.\+LISP.\+Funcao\+LISP.\+Comapracoes\+Generica (\begin{DoxyParamCaption}\item[{object}]{p1}{, }\item[{object}]{p2}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a52a836a15dcfe3eccefb94ec380767c9}\index{parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}!DeFun@{DeFun}}
+\index{DeFun@{DeFun}!parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}}
+\doxysubsubsection{\texorpdfstring{DeFun()}{DeFun()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a52a836a15dcfe3eccefb94ec380767c9} 
+static \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} parser.\+LISP.\+Funcao\+LISP.\+De\+Fun (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}}}]{lista\+Comando}{, }\item[{List$<$ \mbox{\hyperlink{structparser_1_1_l_i_s_p_1_1_dados_do_parametro}{Dados\+Do\+Parametro}} $>$}]{parametros\+Da\+Funcao}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+comando defun, define uma função lisp, com nome, e corpo da função (conjunto de instruções). Para acessar os parâmetros da função, é preciso primeiro avaliar a função após o registro da função. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista\+Comando} & lista contendo os parãmetros e corpo da função.\\
+\hline
+{\em parametros\+Da\+Funcao} & parâmetros, não utilizado, mas para padronizar, junto com outras funções lisp pré-\/definidas.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a9ebe3211cf06833676f49f2a69d19339}\index{parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}!GetName@{GetName}}
+\index{GetName@{GetName}!parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}}
+\doxysubsubsection{\texorpdfstring{GetName()}{GetName()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a9ebe3211cf06833676f49f2a69d19339} 
+static string parser.\+LISP.\+Funcao\+LISP.\+Get\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}}}]{lista}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+retorna o nome da lista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista} & lista com o nome a retirar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna o nome da lista.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a71ea83d189e0509c0b86bbc473551dfd}\index{parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}!InitComandosLISP@{InitComandosLISP}}
+\index{InitComandosLISP@{InitComandosLISP}!parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}}
+\doxysubsubsection{\texorpdfstring{InitComandosLISP()}{InitComandosLISP()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a71ea83d189e0509c0b86bbc473551dfd} 
+void parser.\+LISP.\+Funcao\+LISP.\+Init\+Comandos\+LISP (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+carrega as instruções lisp, com um padrâo de projeto Command\+: permite uma expansão de instruções fácil de se fazer\+: \doxylink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a6bc25fd6faba47d86ed905fc480b14f2}{Add\+Comando(string nome\+Comando, Comando funcao\+Comando)}. criando um método de acordo com o protótipo de função \mbox{[}Comando\mbox{]},e um nome para o novo comando lisp. 
+
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a24affbf945001f8efc9e9bec0a67882c}\index{parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}!IsAtomo@{IsAtomo}}
+\index{IsAtomo@{IsAtomo}!parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}}
+\doxysubsubsection{\texorpdfstring{IsAtomo()}{IsAtomo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a24affbf945001f8efc9e9bec0a67882c} 
+static bool parser.\+LISP.\+Funcao\+LISP.\+Is\+Atomo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}}}]{lista}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_ab7a2db2f56f5f313d2306db1fb6b462e}\index{parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}!IsAtomo@{IsAtomo}}
+\index{IsAtomo@{IsAtomo}!parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}}
+\doxysubsubsection{\texorpdfstring{IsAtomo()}{IsAtomo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_ab7a2db2f56f5f313d2306db1fb6b462e} 
+static bool parser.\+LISP.\+Funcao\+LISP.\+Is\+Atomo (\begin{DoxyParamCaption}\item[{string}]{nome\+Atomo}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a14bb4519222bab1f4c70b2593b1ab2d3}\index{parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}!IsBasicFunction@{IsBasicFunction}}
+\index{IsBasicFunction@{IsBasicFunction}!parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}}
+\doxysubsubsection{\texorpdfstring{IsBasicFunction()}{IsBasicFunction()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a14bb4519222bab1f4c70b2593b1ab2d3} 
+bool parser.\+LISP.\+Funcao\+LISP.\+Is\+Basic\+Function (\begin{DoxyParamCaption}\item[{string}]{name\+Function}{}\end{DoxyParamCaption})}
+
+
+
+verifica se é uma função predefinida. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+Function} & nome da função a ser verificada.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna \mbox{[}true\mbox{]} se a função com nome da entrada é uma função predifinida.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a6102bcceeaf9015c7e6b06affe93fa31}\index{parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}!IsListaLisp@{IsListaLisp}}
+\index{IsListaLisp@{IsListaLisp}!parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}}
+\doxysubsubsection{\texorpdfstring{IsListaLisp()}{IsListaLisp()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a6102bcceeaf9015c7e6b06affe93fa31} 
+static bool parser.\+LISP.\+Funcao\+LISP.\+Is\+Lista\+Lisp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_atomo}{Atomo}}}]{lista}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a7499b43783f6de44bfe19d6611dbfe16}\index{parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}!IsNILL@{IsNILL}}
+\index{IsNILL@{IsNILL}!parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}}
+\doxysubsubsection{\texorpdfstring{IsNILL()}{IsNILL()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a7499b43783f6de44bfe19d6611dbfe16} 
+static bool parser.\+LISP.\+Funcao\+LISP.\+Is\+NILL (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}}}]{lista}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a5f77fc7569d3935e82b0af7313a2d95b}\index{parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}!IsTrue@{IsTrue}}
+\index{IsTrue@{IsTrue}!parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}}
+\doxysubsubsection{\texorpdfstring{IsTrue()}{IsTrue()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a5f77fc7569d3935e82b0af7313a2d95b} 
+static bool parser.\+LISP.\+Funcao\+LISP.\+Is\+True (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}}}]{lista}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a7622df02990fdd174248532720471904}\index{parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}!ObtemParametrosDeUmaChamadaDeFuncao@{ObtemParametrosDeUmaChamadaDeFuncao}}
+\index{ObtemParametrosDeUmaChamadaDeFuncao@{ObtemParametrosDeUmaChamadaDeFuncao}!parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}}
+\doxysubsubsection{\texorpdfstring{ObtemParametrosDeUmaChamadaDeFuncao()}{ObtemParametrosDeUmaChamadaDeFuncao()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a7622df02990fdd174248532720471904} 
+List$<$ \mbox{\hyperlink{structparser_1_1_l_i_s_p_1_1_dados_do_parametro}{Dados\+Do\+Parametro}} $>$ parser.\+LISP.\+Funcao\+LISP.\+Obtem\+Parametros\+De\+Uma\+Chamada\+De\+Funcao (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}}}]{lst\+Chamada}{}\end{DoxyParamCaption})}
+
+
+
+obtém parâmetros, analisando uma lista contendo valoroes de uma chamada de uma função lisp como (foo 1 5), os valores dos parâmetros a serem obtidos são \mbox{[}1\mbox{]} e \mbox{[}5\mbox{]}, e os nomes vem da definição da função\+: (foo(x y)(+ x y)) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst\+Chamada} & lista contendo os parâmetros da função, como (foo 5 5), ou foo( -\/(3 1) (fatorial(3)).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna os parâmetros extraídos da chamada da função e da lista de definição de parâmetros de um
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_ae373142fd72c87862de95bee33deebdf}\index{parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}!OperacaoMatematicaGenerica@{OperacaoMatematicaGenerica}}
+\index{OperacaoMatematicaGenerica@{OperacaoMatematicaGenerica}!parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}}
+\doxysubsubsection{\texorpdfstring{OperacaoMatematicaGenerica()}{OperacaoMatematicaGenerica()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_ae373142fd72c87862de95bee33deebdf} 
+delegate object parser.\+LISP.\+Funcao\+LISP.\+Operacao\+Matematica\+Generica (\begin{DoxyParamCaption}\item[{object}]{p1}{, }\item[{object}]{p2}{}\end{DoxyParamCaption})}
+
+
+
+protótipo de função para operações matemáticas com parâmetros genéricos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & operando 1 da operação.\\
+\hline
+{\em p2} & operando 2 da operação.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_add88d9d867c8485a5445c3f40bb3a491}\index{parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}!ToString@{ToString}}
+\index{ToString@{ToString}!parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_add88d9d867c8485a5445c3f40bb3a491} 
+override string parser.\+LISP.\+Funcao\+LISP.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a8c1237e830183a0c45e2c1133395d76a}\index{parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}!ComandosLISP@{ComandosLISP}}
+\index{ComandosLISP@{ComandosLISP}!parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}}
+\doxysubsubsection{\texorpdfstring{ComandosLISP}{ComandosLISP}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a8c1237e830183a0c45e2c1133395d76a} 
+Dictionary$<$string, \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a6c45adfee59ee94dcefbee74b7d28547}{Comando}}$>$ parser.\+LISP.\+Funcao\+LISP.\+Comandos\+LISP = new Dictionary$<$string, \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a6c45adfee59ee94dcefbee74b7d28547}{Comando}}$>$()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+contém um mapa de \mbox{[}nome comando\mbox{]}= \mbox{[}funcao comando\mbox{]}. 
+
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a48fe738679a84e0c469bcc1479f1a759}\index{parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}!definicaoDaFuncao@{definicaoDaFuncao}}
+\index{definicaoDaFuncao@{definicaoDaFuncao}!parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}}
+\doxysubsubsection{\texorpdfstring{definicaoDaFuncao}{definicaoDaFuncao}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a48fe738679a84e0c469bcc1479f1a759} 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} parser.\+LISP.\+Funcao\+LISP.\+definicao\+Da\+Funcao = null}
+
+
+
+conjunto de instruções que compõem a função lisp; 
+
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a2766cc5537aecd0cca8f89cab0c990b9}\index{parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}!nomeFuncao@{nomeFuncao}}
+\index{nomeFuncao@{nomeFuncao}!parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}}
+\doxysubsubsection{\texorpdfstring{nomeFuncao}{nomeFuncao}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a2766cc5537aecd0cca8f89cab0c990b9} 
+string parser.\+LISP.\+Funcao\+LISP.\+nome\+Funcao = null}
+
+
+
+nome da função lisp. 
+
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_ad09efc33b990f00dad56e276c87bdae7}\index{parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}!parametros@{parametros}}
+\index{parametros@{parametros}!parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}}
+\doxysubsubsection{\texorpdfstring{parametros}{parametros}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_ad09efc33b990f00dad56e276c87bdae7} 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} parser.\+LISP.\+Funcao\+LISP.\+parametros}
+
+
+
+parâmetros de chamada da função da função lisp; 
+
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a99b3d8bec0c25a8f9fb8b5633044a9e9}\index{parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}!textoFuncao@{textoFuncao}}
+\index{textoFuncao@{textoFuncao}!parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}}
+\doxysubsubsection{\texorpdfstring{textoFuncao}{textoFuncao}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a99b3d8bec0c25a8f9fb8b5633044a9e9} 
+string parser.\+LISP.\+Funcao\+LISP.\+texto\+Funcao = null}
+
+
+
+texto contendo a definição da função lisp. 
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a3f7400610a05d6502b80bf231baf19b2}\index{parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}!NILL@{NILL}}
+\index{NILL@{NILL}!parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}}
+\doxysubsubsection{\texorpdfstring{NILL}{NILL}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a3f7400610a05d6502b80bf231baf19b2} 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} parser.\+LISP.\+Funcao\+LISP.\+NILL\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+lista clássica para retorno NILL (Vazio, ou Falso). 
+
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a4d37dcb07ba35536117243c6cda542d3}\index{parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}!T@{T}}
+\index{T@{T}!parser.LISP.FuncaoLISP@{parser.LISP.FuncaoLISP}}
+\doxysubsubsection{\texorpdfstring{T}{T}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_funcao_l_i_s_p_a4d37dcb07ba35536117243c6cda542d3} 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} parser.\+LISP.\+Funcao\+LISP.\+T\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+lista clássica para retorno T (verdadeiro). 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/componentes\+De\+Interpretadores\+ECompiladores/\+LISP/\mbox{\hyperlink{_funcao_l_i_s_p_01utils_8cs}{Funcao\+LISP utils.\+cs}}\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/componentes\+De\+Interpretadores\+ECompiladores/\+LISP/\mbox{\hyperlink{_funcao_l_i_s_p_8cs}{Funcao\+LISP.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,93 @@
+\doxysection{Modulos.\+Library Class Reference}
+\hypertarget{class_modulos_1_1_library}{}\label{class_modulos_1_1_library}\index{Modulos.Library@{Modulos.Library}}
+
+
+classe de gerenciamento de classes importadas, as bibliotecas de classes.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_modulos_1_1_library_add8f574aca8907947750f05fb4d90c4d}{Library}} ()
+\begin{DoxyCompactList}\small\item\em construtor vazio. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_modulos_1_1_library_a8034ac78e9f4fc6e05fa878922122727}{Import\+Libray\+From\+Assembly}} (string path)
+\begin{DoxyCompactList}\small\item\em importa todas classes da linguagem base, de um arquivo .exe, ou .dll. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_modulos_1_1_library_aba87fbd73cd6dcf863e02bbb635f3220}{Import\+Libray\+From\+Assembly}} (string path, string\mbox{[}$\,$\mbox{]} names\+Library)
+\begin{DoxyCompactList}\small\item\em importa classes da linguagem base, de um arquivo .exe ou .dll. Libraries devem estar contida numa classe, ou conjunto de classe definidas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ Method\+Info $>$ \mbox{\hyperlink{class_modulos_1_1_library_a12e96bdf1aa907bf7904291c22c37344}{metodos\+Bibliotecas}} = new List$<$Method\+Info$>$()
+\begin{DoxyCompactList}\small\item\em informações de metodos importados. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+classe de gerenciamento de classes importadas, as bibliotecas de classes. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_modulos_1_1_library_add8f574aca8907947750f05fb4d90c4d}\index{Modulos.Library@{Modulos.Library}!Library@{Library}}
+\index{Library@{Library}!Modulos.Library@{Modulos.Library}}
+\doxysubsubsection{\texorpdfstring{Library()}{Library()}}
+{\footnotesize\ttfamily \label{class_modulos_1_1_library_add8f574aca8907947750f05fb4d90c4d} 
+Modulos.\+Library.\+Library (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+construtor vazio. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_modulos_1_1_library_a8034ac78e9f4fc6e05fa878922122727}\index{Modulos.Library@{Modulos.Library}!ImportLibrayFromAssembly@{ImportLibrayFromAssembly}}
+\index{ImportLibrayFromAssembly@{ImportLibrayFromAssembly}!Modulos.Library@{Modulos.Library}}
+\doxysubsubsection{\texorpdfstring{ImportLibrayFromAssembly()}{ImportLibrayFromAssembly()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_modulos_1_1_library_a8034ac78e9f4fc6e05fa878922122727} 
+static void Modulos.\+Library.\+Import\+Libray\+From\+Assembly (\begin{DoxyParamCaption}\item[{string}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+importa todas classes da linguagem base, de um arquivo .exe, ou .dll. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & path de arquivo.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_modulos_1_1_library_aba87fbd73cd6dcf863e02bbb635f3220}\index{Modulos.Library@{Modulos.Library}!ImportLibrayFromAssembly@{ImportLibrayFromAssembly}}
+\index{ImportLibrayFromAssembly@{ImportLibrayFromAssembly}!Modulos.Library@{Modulos.Library}}
+\doxysubsubsection{\texorpdfstring{ImportLibrayFromAssembly()}{ImportLibrayFromAssembly()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_modulos_1_1_library_aba87fbd73cd6dcf863e02bbb635f3220} 
+static void Modulos.\+Library.\+Import\+Libray\+From\+Assembly (\begin{DoxyParamCaption}\item[{string}]{path}{, }\item[{string\mbox{[}$\,$\mbox{]}}]{names\+Library}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+importa classes da linguagem base, de um arquivo .exe ou .dll. Libraries devem estar contida numa classe, ou conjunto de classe definidas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & path do arquivo Assembly, .exe ou .dll, que contem a library.\\
+\hline
+{\em names\+Library} & nomes de classes da library.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_modulos_1_1_library_a12e96bdf1aa907bf7904291c22c37344}\index{Modulos.Library@{Modulos.Library}!metodosBibliotecas@{metodosBibliotecas}}
+\index{metodosBibliotecas@{metodosBibliotecas}!Modulos.Library@{Modulos.Library}}
+\doxysubsubsection{\texorpdfstring{metodosBibliotecas}{metodosBibliotecas}}
+{\footnotesize\ttfamily \label{class_modulos_1_1_library_a12e96bdf1aa907bf7904291c22c37344} 
+List$<$Method\+Info$>$ Modulos.\+Library.\+metodos\+Bibliotecas = new List$<$Method\+Info$>$()}
+
+
+
+informações de metodos importados. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/\+LIBRARIES/\mbox{\hyperlink{_library_8cs}{Library.\+cs}}\end{DoxyCompactItemize}

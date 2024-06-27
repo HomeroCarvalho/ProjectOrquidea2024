@@ -1,0 +1,415 @@
+\doxysection{parser.\+Classificador.\+Tabela\+Hash Class Reference}
+\hypertarget{classparser_1_1_classificador_1_1_tabela_hash}{}\label{classparser_1_1_classificador_1_1_tabela_hash}\index{parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}}
+
+
+tabela hash de procura de tipos de tokens.  
+
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classparser_1_1_classificador_1_1_tabela_hash_1_1_row_hash_table}{Row\+Hash\+Table}}
+\begin{DoxyCompactList}\small\item\em entrada para uma linha de elementos com mesmo numero hash. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparser_1_1_classificador_1_1_tabela_hash_a4eed3cc140d7da4b927e6b004d042ff1}{Tabela\+Hash}} (string code)
+\begin{DoxyCompactList}\small\item\em construtor. inicio do processamento otimizado de classificação de tokens. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_classificador_1_1_tabela_hash_a5baad72a1db458ced381620819f50fd2}{Remove\+Classe\+Na\+Tabela\+Hash}} (string nome\+Classe)
+\begin{DoxyCompactList}\small\item\em remove uma classe da tabela\+Hash. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_classificador_1_1_tabela_hash_afdf4d963a309657ff28bd06413fc87d4}{Get\+Class\+Token}} (string token, string possible\+Class)
+\begin{DoxyCompactList}\small\item\em verifica se o token pertence a classe parametro. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_classificador_1_1_tabela_hash_a40fdfe11ae6e5d44ab596e6bffafe17a}{is\+Nome\+Classe}} (string token)
+\begin{DoxyCompactList}\small\item\em retorna true se eh nome de classe. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_classificador_1_1_tabela_hash_ac653ad406d0ffe232ecd26486d2eba38}{is\+Nome\+Objeto}} (string token)
+\begin{DoxyCompactList}\small\item\em retorna true se eh nome de objeto. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_classificador_1_1_tabela_hash_a7f45ba19bf4eb4ad37df0d816572243a}{is\+Nome\+Funcao}} (string token)
+\begin{DoxyCompactList}\small\item\em retorna true se eh nome de funcao. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_classificador_1_1_tabela_hash_a2b1f008ce9ce4b0d21295ebf2717b20d}{is\+Nome\+Propriedade}} (string token)
+\begin{DoxyCompactList}\small\item\em retorna true se eh nome de propriedade (variavel de classe). \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_classificador_1_1_tabela_hash_a88c9b7bb5a70f73db37835bfacfa0d2c}{is\+Nome\+Operador}} (string token)
+\begin{DoxyCompactList}\small\item\em retorna true se o token eh nome de um operador. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_classificador_1_1_tabela_hash_a7f38ff29dd5f9a3b3520c203ff911e42}{is\+Nome\+Termo\+Chave}} (string token)
+\begin{DoxyCompactList}\small\item\em retorna true se o token eh nome de uma palavra reservada da linguagem. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_classificador_1_1_tabela_hash_a604e26dd11f04a7d2aec4f3f3bce76aa}{is\+Numero}} (string token)
+\begin{DoxyCompactList}\small\item\em retorna true se eh numero. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_classificador_1_1_tabela_hash_abfd3f65f7b9004c2c2cd53f9f2395198}{is\+Literal}} (string token)
+\begin{DoxyCompactList}\small\item\em retorna true se é literal. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_classificador_1_1_tabela_hash_a48150591ec4b9b55b514811968135ff1}{is\+Operador\+Termo\+Chave}} (string token)
+\begin{DoxyCompactList}\small\item\em retorna true se o token eh operador estrutural da linguagem. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_classificador_1_1_tabela_hash_a68cd9af8b340dd5edc84eeafb6dcc892}{Write\+Token}} (string token)
+\begin{DoxyCompactList}\small\item\em registra tokens na tabela hash. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_classificador_1_1_tabela_hash_a2a7195ba42fc24c3d81a956da1a96efc}{Remove\+Token}} (string token)
+\begin{DoxyCompactList}\small\item\em remove um token da tabela hash. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_element_token}{Element\+Token}} $>$ \mbox{\hyperlink{classparser_1_1_classificador_1_1_tabela_hash_a88ded32672991093bf0ac4d2e0b84b4d}{Read\+Token}} (string token)
+\begin{DoxyCompactList}\small\item\em le dados de token, na tabela hash. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classparser_1_1_classificador_1_1_tabela_hash_aaf76db41938b37999e9cf356daa100f3}{Hash\+Number}} (string token)
+\begin{DoxyCompactList}\small\item\em retorna um valor de hash para procura de tipos de tokens, na tabela hash. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classparser_1_1_classificador_1_1_tabela_hash}{Tabela\+Hash}} \mbox{\hyperlink{classparser_1_1_classificador_1_1_tabela_hash_adf379cd944c5bad9e8130524879e3c71}{Instance}} (string code)
+\begin{DoxyCompactList}\small\item\em objeto unico de Tabela Hash. Tabela Hash é um objeto unico no codigo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparser_1_1_classificador}{Classificador}} \mbox{\hyperlink{classparser_1_1_classificador_1_1_tabela_hash_a168ddec89c6b821a41f4cb0311632475}{classificador}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classparser_1_1_classificador_1_1_tabela_hash_a3882464340c709bb167b4c3b63778db8}{is\+Reset}} = true
+\begin{DoxyCompactList}\small\item\em se \mbox{[}true\mbox{]} reconstroi a tabela hash. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classparser_1_1_classificador_1_1_tabela_hash_ae142e73b9862cb325e97d2f6ac44389e}{is\+Remove\+CLass\+Repeat}} = false
+\begin{DoxyCompactList}\small\item\em se true, remove classes vindo de outros cenarios, quando executar varios cenarios de testes. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classparser_1_1_classificador_1_1_tabela_hash}{Tabela\+Hash}} \mbox{\hyperlink{classparser_1_1_classificador_1_1_tabela_hash_af3192dc32a9e85d9ef263b5715849d0b}{Instance\+Withou\+Code}}
+\begin{DoxyCompactList}\small\item\em instancia da tabela codigo. utiliza-\/se quando o codigo foi carregado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+tabela hash de procura de tipos de tokens. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classparser_1_1_classificador_1_1_tabela_hash_a4eed3cc140d7da4b927e6b004d042ff1}\index{parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}!TabelaHash@{TabelaHash}}
+\index{TabelaHash@{TabelaHash}!parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}}
+\doxysubsubsection{\texorpdfstring{TabelaHash()}{TabelaHash()}}
+{\footnotesize\ttfamily \label{classparser_1_1_classificador_1_1_tabela_hash_a4eed3cc140d7da4b927e6b004d042ff1} 
+parser.\+Classificador.\+Tabela\+Hash.\+Tabela\+Hash (\begin{DoxyParamCaption}\item[{string}]{code}{}\end{DoxyParamCaption})}
+
+
+
+construtor. inicio do processamento otimizado de classificação de tokens. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & código do programa VM.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_classificador_1_1_tabela_hash_afdf4d963a309657ff28bd06413fc87d4}\index{parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}!GetClassToken@{GetClassToken}}
+\index{GetClassToken@{GetClassToken}!parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}}
+\doxysubsubsection{\texorpdfstring{GetClassToken()}{GetClassToken()}}
+{\footnotesize\ttfamily \label{classparser_1_1_classificador_1_1_tabela_hash_afdf4d963a309657ff28bd06413fc87d4} 
+bool parser.\+Classificador.\+Tabela\+Hash.\+Get\+Class\+Token (\begin{DoxyParamCaption}\item[{string}]{token}{, }\item[{string}]{possible\+Class}{}\end{DoxyParamCaption})}
+
+
+
+verifica se o token pertence a classe parametro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & token a verificar.\\
+\hline
+{\em possible\+Class} & possivel class a qual o token pertence, ou não.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna \mbox{[}true\mbox{]} se o token pertence a classe parametro, outro caso \mbox{[}false\mbox{]}.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_classificador_1_1_tabela_hash_aaf76db41938b37999e9cf356daa100f3}\index{parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}!HashNumber@{HashNumber}}
+\index{HashNumber@{HashNumber}!parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}}
+\doxysubsubsection{\texorpdfstring{HashNumber()}{HashNumber()}}
+{\footnotesize\ttfamily \label{classparser_1_1_classificador_1_1_tabela_hash_aaf76db41938b37999e9cf356daa100f3} 
+int parser.\+Classificador.\+Tabela\+Hash.\+Hash\+Number (\begin{DoxyParamCaption}\item[{string}]{token}{}\end{DoxyParamCaption})}
+
+
+
+retorna um valor de hash para procura de tipos de tokens, na tabela hash. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & token para o valor hash.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_classificador_1_1_tabela_hash_adf379cd944c5bad9e8130524879e3c71}\index{parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}!Instance@{Instance}}
+\index{Instance@{Instance}!parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily \label{classparser_1_1_classificador_1_1_tabela_hash_adf379cd944c5bad9e8130524879e3c71} 
+static \mbox{\hyperlink{classparser_1_1_classificador_1_1_tabela_hash}{Tabela\+Hash}} parser.\+Classificador.\+Tabela\+Hash.\+Instance (\begin{DoxyParamCaption}\item[{string}]{code}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+objeto unico de Tabela Hash. Tabela Hash é um objeto unico no codigo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & trecho de codigo\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_classificador_1_1_tabela_hash_abfd3f65f7b9004c2c2cd53f9f2395198}\index{parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}!isLiteral@{isLiteral}}
+\index{isLiteral@{isLiteral}!parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}}
+\doxysubsubsection{\texorpdfstring{isLiteral()}{isLiteral()}}
+{\footnotesize\ttfamily \label{classparser_1_1_classificador_1_1_tabela_hash_abfd3f65f7b9004c2c2cd53f9f2395198} 
+bool parser.\+Classificador.\+Tabela\+Hash.\+is\+Literal (\begin{DoxyParamCaption}\item[{string}]{token}{}\end{DoxyParamCaption})}
+
+
+
+retorna true se é literal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & token a verificar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_classificador_1_1_tabela_hash_a40fdfe11ae6e5d44ab596e6bffafe17a}\index{parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}!isNomeClasse@{isNomeClasse}}
+\index{isNomeClasse@{isNomeClasse}!parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}}
+\doxysubsubsection{\texorpdfstring{isNomeClasse()}{isNomeClasse()}}
+{\footnotesize\ttfamily \label{classparser_1_1_classificador_1_1_tabela_hash_a40fdfe11ae6e5d44ab596e6bffafe17a} 
+bool parser.\+Classificador.\+Tabela\+Hash.\+is\+Nome\+Classe (\begin{DoxyParamCaption}\item[{string}]{token}{}\end{DoxyParamCaption})}
+
+
+
+retorna true se eh nome de classe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & token a verificar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_classificador_1_1_tabela_hash_a7f45ba19bf4eb4ad37df0d816572243a}\index{parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}!isNomeFuncao@{isNomeFuncao}}
+\index{isNomeFuncao@{isNomeFuncao}!parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}}
+\doxysubsubsection{\texorpdfstring{isNomeFuncao()}{isNomeFuncao()}}
+{\footnotesize\ttfamily \label{classparser_1_1_classificador_1_1_tabela_hash_a7f45ba19bf4eb4ad37df0d816572243a} 
+bool parser.\+Classificador.\+Tabela\+Hash.\+is\+Nome\+Funcao (\begin{DoxyParamCaption}\item[{string}]{token}{}\end{DoxyParamCaption})}
+
+
+
+retorna true se eh nome de funcao. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & token a verificar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_classificador_1_1_tabela_hash_ac653ad406d0ffe232ecd26486d2eba38}\index{parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}!isNomeObjeto@{isNomeObjeto}}
+\index{isNomeObjeto@{isNomeObjeto}!parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}}
+\doxysubsubsection{\texorpdfstring{isNomeObjeto()}{isNomeObjeto()}}
+{\footnotesize\ttfamily \label{classparser_1_1_classificador_1_1_tabela_hash_ac653ad406d0ffe232ecd26486d2eba38} 
+bool parser.\+Classificador.\+Tabela\+Hash.\+is\+Nome\+Objeto (\begin{DoxyParamCaption}\item[{string}]{token}{}\end{DoxyParamCaption})}
+
+
+
+retorna true se eh nome de objeto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & token a verificar\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_classificador_1_1_tabela_hash_a88c9b7bb5a70f73db37835bfacfa0d2c}\index{parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}!isNomeOperador@{isNomeOperador}}
+\index{isNomeOperador@{isNomeOperador}!parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}}
+\doxysubsubsection{\texorpdfstring{isNomeOperador()}{isNomeOperador()}}
+{\footnotesize\ttfamily \label{classparser_1_1_classificador_1_1_tabela_hash_a88c9b7bb5a70f73db37835bfacfa0d2c} 
+bool parser.\+Classificador.\+Tabela\+Hash.\+is\+Nome\+Operador (\begin{DoxyParamCaption}\item[{string}]{token}{}\end{DoxyParamCaption})}
+
+
+
+retorna true se o token eh nome de um operador. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & token a verificar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_classificador_1_1_tabela_hash_a2b1f008ce9ce4b0d21295ebf2717b20d}\index{parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}!isNomePropriedade@{isNomePropriedade}}
+\index{isNomePropriedade@{isNomePropriedade}!parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}}
+\doxysubsubsection{\texorpdfstring{isNomePropriedade()}{isNomePropriedade()}}
+{\footnotesize\ttfamily \label{classparser_1_1_classificador_1_1_tabela_hash_a2b1f008ce9ce4b0d21295ebf2717b20d} 
+bool parser.\+Classificador.\+Tabela\+Hash.\+is\+Nome\+Propriedade (\begin{DoxyParamCaption}\item[{string}]{token}{}\end{DoxyParamCaption})}
+
+
+
+retorna true se eh nome de propriedade (variavel de classe). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & token a verificar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_classificador_1_1_tabela_hash_a7f38ff29dd5f9a3b3520c203ff911e42}\index{parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}!isNomeTermoChave@{isNomeTermoChave}}
+\index{isNomeTermoChave@{isNomeTermoChave}!parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}}
+\doxysubsubsection{\texorpdfstring{isNomeTermoChave()}{isNomeTermoChave()}}
+{\footnotesize\ttfamily \label{classparser_1_1_classificador_1_1_tabela_hash_a7f38ff29dd5f9a3b3520c203ff911e42} 
+bool parser.\+Classificador.\+Tabela\+Hash.\+is\+Nome\+Termo\+Chave (\begin{DoxyParamCaption}\item[{string}]{token}{}\end{DoxyParamCaption})}
+
+
+
+retorna true se o token eh nome de uma palavra reservada da linguagem. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_classificador_1_1_tabela_hash_a604e26dd11f04a7d2aec4f3f3bce76aa}\index{parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}!isNumero@{isNumero}}
+\index{isNumero@{isNumero}!parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}}
+\doxysubsubsection{\texorpdfstring{isNumero()}{isNumero()}}
+{\footnotesize\ttfamily \label{classparser_1_1_classificador_1_1_tabela_hash_a604e26dd11f04a7d2aec4f3f3bce76aa} 
+bool parser.\+Classificador.\+Tabela\+Hash.\+is\+Numero (\begin{DoxyParamCaption}\item[{string}]{token}{}\end{DoxyParamCaption})}
+
+
+
+retorna true se eh numero. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & token a verificar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_classificador_1_1_tabela_hash_a48150591ec4b9b55b514811968135ff1}\index{parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}!isOperadorTermoChave@{isOperadorTermoChave}}
+\index{isOperadorTermoChave@{isOperadorTermoChave}!parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}}
+\doxysubsubsection{\texorpdfstring{isOperadorTermoChave()}{isOperadorTermoChave()}}
+{\footnotesize\ttfamily \label{classparser_1_1_classificador_1_1_tabela_hash_a48150591ec4b9b55b514811968135ff1} 
+bool parser.\+Classificador.\+Tabela\+Hash.\+is\+Operador\+Termo\+Chave (\begin{DoxyParamCaption}\item[{string}]{token}{}\end{DoxyParamCaption})}
+
+
+
+retorna true se o token eh operador estrutural da linguagem. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & token a verificar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_classificador_1_1_tabela_hash_a88ded32672991093bf0ac4d2e0b84b4d}\index{parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}!ReadToken@{ReadToken}}
+\index{ReadToken@{ReadToken}!parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}}
+\doxysubsubsection{\texorpdfstring{ReadToken()}{ReadToken()}}
+{\footnotesize\ttfamily \label{classparser_1_1_classificador_1_1_tabela_hash_a88ded32672991093bf0ac4d2e0b84b4d} 
+List$<$ \mbox{\hyperlink{classparser_1_1_element_token}{Element\+Token}} $>$ parser.\+Classificador.\+Tabela\+Hash.\+Read\+Token (\begin{DoxyParamCaption}\item[{string}]{token}{}\end{DoxyParamCaption})}
+
+
+
+le dados de token, na tabela hash. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & tokens a verificar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_classificador_1_1_tabela_hash_a5baad72a1db458ced381620819f50fd2}\index{parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}!RemoveClasseNaTabelaHash@{RemoveClasseNaTabelaHash}}
+\index{RemoveClasseNaTabelaHash@{RemoveClasseNaTabelaHash}!parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}}
+\doxysubsubsection{\texorpdfstring{RemoveClasseNaTabelaHash()}{RemoveClasseNaTabelaHash()}}
+{\footnotesize\ttfamily \label{classparser_1_1_classificador_1_1_tabela_hash_a5baad72a1db458ced381620819f50fd2} 
+bool parser.\+Classificador.\+Tabela\+Hash.\+Remove\+Classe\+Na\+Tabela\+Hash (\begin{DoxyParamCaption}\item[{string}]{nome\+Classe}{}\end{DoxyParamCaption})}
+
+
+
+remove uma classe da tabela\+Hash. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Classe} & nome da tabela\+Hash.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_classificador_1_1_tabela_hash_a2a7195ba42fc24c3d81a956da1a96efc}\index{parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}!RemoveToken@{RemoveToken}}
+\index{RemoveToken@{RemoveToken}!parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}}
+\doxysubsubsection{\texorpdfstring{RemoveToken()}{RemoveToken()}}
+{\footnotesize\ttfamily \label{classparser_1_1_classificador_1_1_tabela_hash_a2a7195ba42fc24c3d81a956da1a96efc} 
+void parser.\+Classificador.\+Tabela\+Hash.\+Remove\+Token (\begin{DoxyParamCaption}\item[{string}]{token}{}\end{DoxyParamCaption})}
+
+
+
+remove um token da tabela hash. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & nome do token a remover.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_classificador_1_1_tabela_hash_a68cd9af8b340dd5edc84eeafb6dcc892}\index{parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}!WriteToken@{WriteToken}}
+\index{WriteToken@{WriteToken}!parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}}
+\doxysubsubsection{\texorpdfstring{WriteToken()}{WriteToken()}}
+{\footnotesize\ttfamily \label{classparser_1_1_classificador_1_1_tabela_hash_a68cd9af8b340dd5edc84eeafb6dcc892} 
+void parser.\+Classificador.\+Tabela\+Hash.\+Write\+Token (\begin{DoxyParamCaption}\item[{string}]{token}{}\end{DoxyParamCaption})}
+
+
+
+registra tokens na tabela hash. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & token a ser registrado\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classparser_1_1_classificador_1_1_tabela_hash_a168ddec89c6b821a41f4cb0311632475}\index{parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}!classificador@{classificador}}
+\index{classificador@{classificador}!parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}}
+\doxysubsubsection{\texorpdfstring{classificador}{classificador}}
+{\footnotesize\ttfamily \label{classparser_1_1_classificador_1_1_tabela_hash_a168ddec89c6b821a41f4cb0311632475} 
+\mbox{\hyperlink{classparser_1_1_classificador}{Classificador}} parser.\+Classificador.\+Tabela\+Hash.\+classificador}
+
+\Hypertarget{classparser_1_1_classificador_1_1_tabela_hash_af3192dc32a9e85d9ef263b5715849d0b}\index{parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}!InstanceWithouCode@{InstanceWithouCode}}
+\index{InstanceWithouCode@{InstanceWithouCode}!parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}}
+\doxysubsubsection{\texorpdfstring{InstanceWithouCode}{InstanceWithouCode}}
+{\footnotesize\ttfamily \label{classparser_1_1_classificador_1_1_tabela_hash_af3192dc32a9e85d9ef263b5715849d0b} 
+\mbox{\hyperlink{classparser_1_1_classificador_1_1_tabela_hash}{Tabela\+Hash}} parser.\+Classificador.\+Tabela\+Hash.\+Instance\+Withou\+Code\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+instancia da tabela codigo. utiliza-\/se quando o codigo foi carregado. 
+
+\Hypertarget{classparser_1_1_classificador_1_1_tabela_hash_ae142e73b9862cb325e97d2f6ac44389e}\index{parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}!isRemoveCLassRepeat@{isRemoveCLassRepeat}}
+\index{isRemoveCLassRepeat@{isRemoveCLassRepeat}!parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}}
+\doxysubsubsection{\texorpdfstring{isRemoveCLassRepeat}{isRemoveCLassRepeat}}
+{\footnotesize\ttfamily \label{classparser_1_1_classificador_1_1_tabela_hash_ae142e73b9862cb325e97d2f6ac44389e} 
+bool parser.\+Classificador.\+Tabela\+Hash.\+is\+Remove\+CLass\+Repeat = false\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+se true, remove classes vindo de outros cenarios, quando executar varios cenarios de testes. 
+
+\Hypertarget{classparser_1_1_classificador_1_1_tabela_hash_a3882464340c709bb167b4c3b63778db8}\index{parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}!isReset@{isReset}}
+\index{isReset@{isReset}!parser.Classificador.TabelaHash@{parser.Classificador.TabelaHash}}
+\doxysubsubsection{\texorpdfstring{isReset}{isReset}}
+{\footnotesize\ttfamily \label{classparser_1_1_classificador_1_1_tabela_hash_a3882464340c709bb167b4c3b63778db8} 
+bool parser.\+Classificador.\+Tabela\+Hash.\+is\+Reset = true\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+se \mbox{[}true\mbox{]} reconstroi a tabela hash. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/componentes\+De\+Interpretadores\+ECompiladores/\+PROGRAMACAO ORIENTADA A OBJETOS/\mbox{\hyperlink{_classificador_8cs}{Classificador.\+cs}}\end{DoxyCompactItemize}

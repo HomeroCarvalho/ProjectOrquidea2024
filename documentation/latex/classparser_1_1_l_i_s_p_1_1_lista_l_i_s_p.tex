@@ -1,0 +1,397 @@
+\doxysection{parser.\+LISP.\+Lista\+LISP Class Reference}
+\hypertarget{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{}\label{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}\index{parser.LISP.ListaLISP@{parser.LISP.ListaLISP}}
+Inheritance diagram for parser.\+LISP.\+Lista\+LISP\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a02b6fadd71a478f7f8df92415328e07f}{Get\+Next\+List}} ()
+\begin{DoxyCompactList}\small\item\em Obtém a próxima lista da lista que chamou o método. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a32aa41a2e527f81fd7189f3b3f3d71b7}{Get\+Current\+List}} ()
+\begin{DoxyCompactList}\small\item\em obtém a lista atual,dentro da estrutura de uma lista parâmetro. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a31415e7a581832d398bbe4bcc37dd438}{Get\+Enesima\+Lista}} (int n\+Element)
+\begin{DoxyCompactList}\small\item\em obtém a enésima lista, da lista que chamou o método. A contagem de listas começa em 1, e não 0, normalmente para índices. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_aa9ffb7bb6998e28fc65fc74e157f69be}{Get\+All\+Lists\+Until\+Final\+List}} (int index\+Initial)
+\begin{DoxyCompactList}\small\item\em obtém o restante da lista, indo do indice \mbox{[}index\+Inicial-\/1\mbox{]} até o final das proximas listas. O contador de índices começa em 1. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_atomo}{Atomo}} \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_ae175d4aae9d9b58292259799b4507e88}{Get\+Current\+Atom}} ()
+\item 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a95fe85611d033bbc688aae0ab0a3cb8d}{First\+Member\+List}} ()
+\begin{DoxyCompactList}\small\item\em retorna a 1a. instrução lisp de uma função lisp. (representado como uma lista lisp, contendo nome, lista de parâmetros, e corpo da função). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a7f3634daa5e68f7e47dc71dcf7ea6c67}{Second\+Member\+List}} ()
+\begin{DoxyCompactList}\small\item\em retorna a 2a. instrução lisp de uma função lisp. (representado como uma lista lisp, contendo nome, lista de parâmetros, e corpo da função). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a3760848f820bc7995a9baf45b0c77085}{Third\+Member\+List}} ()
+\begin{DoxyCompactList}\small\item\em retorna a 3a. instrução lisp de uma função lisp. (representado como uma lista lisp, contendo nome, lista de parâmetros, e corpo da função). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_ad155942d15a4399308f23171e7434c55}{Lista\+LISP}} (string texto\+Lista)
+\item 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a10ebda0ef86a1ac7c0655a28ea1c8759}{Lista\+LISP}} ()
+\item 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a09b00554c0305be215079e015f7065ed}{Lista\+LISP}} (\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} lista)
+\item 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a4dcf44a8b095ad36f8b8ae35b694e107}{Lista\+LISP}} (\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_atomo}{Atomo}} elemento)
+\item 
+string \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_ac9e8e18a4a017206889c4abe4062a739}{Escreve\+Lista}} ()
+\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_abd8cf410d4c7f6e7484ee2dcd0523fd5}{Get\+Elements\+Head}} ()
+\begin{DoxyCompactList}\small\item\em retorna os elementos ou elemento do primeiro elemento de uma lista lisp. \end{DoxyCompactList}\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a1cc47cd18994a0e55a26212b81363bbf}{Get\+ELements\+Tail}} ()
+\begin{DoxyCompactList}\small\item\em retorna os elementos da cauda de uma lista lisp. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a0fb851f729dd6105662107ae92c5b484}{car}} ()
+\begin{DoxyCompactList}\small\item\em retorna o primeiro elemento de uma lista, se for um atomo ou uma lista lisp, numa lista própria. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_ac25dd4b0291916382ca4924bb600ba22}{cdr}} ()
+\begin{DoxyCompactList}\small\item\em retorna a lista cauda de uma lista, retirando o primeiro elemento da lista, numa lista cópia. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a4a56d74f68cadb6bad9ca9f561b7b5e6}{Constroi\+Lista}} (params string\mbox{[}$\,$\mbox{]} elementos)
+\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a87373bc4fcf075b3762e50fc9e681d3c}{Get\+All\+Elements}} ()
+\item 
+void \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a9884be5b2b62b0d01499c8287bbfc292}{Insert\+Elements\+Tail}} (List$<$ string $>$ elementos)
+\item 
+void \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a3a6ddb2a567601d1564f312e720fbfda}{Insert\+Elements\+Head}} (List$<$ string $>$ elementos)
+\item 
+override string \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a124b393bf02fbc4a8627c962074feeac}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_atomo}{parser.\+LISP.\+Atomo}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_atomo_a87dea144481edb8220266bc153db11f8}{Atomo}} (string name, string value)
+\item 
+override string \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_atomo_a8e87d104f38322cc012ff0d85c578060}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_ad61acd5fa057726cb5938433684f8534}{Get\+Lista}} (string textolista)
+\item 
+static bool \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a14f326adfeacee619bf94c6a7ea4c6ba}{Is\+Number}} (string token)
+\item 
+static List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_af7b194c730fc0633b4bbece571ddefd5}{Get\+Tokens\+LISP}} (string texto\+Lisp)
+\begin{DoxyCompactList}\small\item\em obtém tokens, com termos-\/chave da linguagem \doxylink{namespaceparser_1_1_l_i_s_p}{LISP}. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_ac8cbe90d6429e447e055676dc8f05929}{Write\+Lista\+LISP}} (\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} uma\+Lista\+Lisp, int level, bool escreve\+Na\+Tela)
+\begin{DoxyCompactList}\small\item\em escreve na tela os elementos de uma lista lisp, se os elementos forem listas lisp. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_ad55251d993355f716b773713ba783e3d}{is\+Quoted}} = false
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_atomo}{Atomo}} $>$ \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_ae5a40051722fff3f1917e00a2903102b}{Listas}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em próximas lista guarda os dados inclusive da currente lista, e também das próximas listas (listas ou atomos). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_atomo}{parser.\+LISP.\+Atomo}}}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_atomo_a13e574a854efacd06cb6f32c2bcb521d}{valor}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_atomo_ae35b79aa00de824d59d5a16a01c53516}{nome}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_ad155942d15a4399308f23171e7434c55}\index{parser.LISP.ListaLISP@{parser.LISP.ListaLISP}!ListaLISP@{ListaLISP}}
+\index{ListaLISP@{ListaLISP}!parser.LISP.ListaLISP@{parser.LISP.ListaLISP}}
+\doxysubsubsection{\texorpdfstring{ListaLISP()}{ListaLISP()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_ad155942d15a4399308f23171e7434c55} 
+parser.\+LISP.\+Lista\+LISP.\+Lista\+LISP (\begin{DoxyParamCaption}\item[{string}]{texto\+Lista}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a10ebda0ef86a1ac7c0655a28ea1c8759}\index{parser.LISP.ListaLISP@{parser.LISP.ListaLISP}!ListaLISP@{ListaLISP}}
+\index{ListaLISP@{ListaLISP}!parser.LISP.ListaLISP@{parser.LISP.ListaLISP}}
+\doxysubsubsection{\texorpdfstring{ListaLISP()}{ListaLISP()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a10ebda0ef86a1ac7c0655a28ea1c8759} 
+parser.\+LISP.\+Lista\+LISP.\+Lista\+LISP (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a09b00554c0305be215079e015f7065ed}\index{parser.LISP.ListaLISP@{parser.LISP.ListaLISP}!ListaLISP@{ListaLISP}}
+\index{ListaLISP@{ListaLISP}!parser.LISP.ListaLISP@{parser.LISP.ListaLISP}}
+\doxysubsubsection{\texorpdfstring{ListaLISP()}{ListaLISP()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a09b00554c0305be215079e015f7065ed} 
+parser.\+LISP.\+Lista\+LISP.\+Lista\+LISP (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}}}]{lista}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a4dcf44a8b095ad36f8b8ae35b694e107}\index{parser.LISP.ListaLISP@{parser.LISP.ListaLISP}!ListaLISP@{ListaLISP}}
+\index{ListaLISP@{ListaLISP}!parser.LISP.ListaLISP@{parser.LISP.ListaLISP}}
+\doxysubsubsection{\texorpdfstring{ListaLISP()}{ListaLISP()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a4dcf44a8b095ad36f8b8ae35b694e107} 
+parser.\+LISP.\+Lista\+LISP.\+Lista\+LISP (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_atomo}{Atomo}}}]{elemento}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a0fb851f729dd6105662107ae92c5b484}\index{parser.LISP.ListaLISP@{parser.LISP.ListaLISP}!car@{car}}
+\index{car@{car}!parser.LISP.ListaLISP@{parser.LISP.ListaLISP}}
+\doxysubsubsection{\texorpdfstring{car()}{car()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a0fb851f729dd6105662107ae92c5b484} 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} parser.\+LISP.\+Lista\+LISP.\+car (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+retorna o primeiro elemento de uma lista, se for um atomo ou uma lista lisp, numa lista própria. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_ac25dd4b0291916382ca4924bb600ba22}\index{parser.LISP.ListaLISP@{parser.LISP.ListaLISP}!cdr@{cdr}}
+\index{cdr@{cdr}!parser.LISP.ListaLISP@{parser.LISP.ListaLISP}}
+\doxysubsubsection{\texorpdfstring{cdr()}{cdr()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_ac25dd4b0291916382ca4924bb600ba22} 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} parser.\+LISP.\+Lista\+LISP.\+cdr (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+retorna a lista cauda de uma lista, retirando o primeiro elemento da lista, numa lista cópia. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a4a56d74f68cadb6bad9ca9f561b7b5e6}\index{parser.LISP.ListaLISP@{parser.LISP.ListaLISP}!ConstroiLista@{ConstroiLista}}
+\index{ConstroiLista@{ConstroiLista}!parser.LISP.ListaLISP@{parser.LISP.ListaLISP}}
+\doxysubsubsection{\texorpdfstring{ConstroiLista()}{ConstroiLista()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a4a56d74f68cadb6bad9ca9f561b7b5e6} 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} parser.\+LISP.\+Lista\+LISP.\+Constroi\+Lista (\begin{DoxyParamCaption}\item[{params string\mbox{[}$\,$\mbox{]}}]{elementos}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_ac9e8e18a4a017206889c4abe4062a739}\index{parser.LISP.ListaLISP@{parser.LISP.ListaLISP}!EscreveLista@{EscreveLista}}
+\index{EscreveLista@{EscreveLista}!parser.LISP.ListaLISP@{parser.LISP.ListaLISP}}
+\doxysubsubsection{\texorpdfstring{EscreveLista()}{EscreveLista()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_ac9e8e18a4a017206889c4abe4062a739} 
+string parser.\+LISP.\+Lista\+LISP.\+Escreve\+Lista (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a95fe85611d033bbc688aae0ab0a3cb8d}\index{parser.LISP.ListaLISP@{parser.LISP.ListaLISP}!FirstMemberList@{FirstMemberList}}
+\index{FirstMemberList@{FirstMemberList}!parser.LISP.ListaLISP@{parser.LISP.ListaLISP}}
+\doxysubsubsection{\texorpdfstring{FirstMemberList()}{FirstMemberList()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a95fe85611d033bbc688aae0ab0a3cb8d} 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} parser.\+LISP.\+Lista\+LISP.\+First\+Member\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+retorna a 1a. instrução lisp de uma função lisp. (representado como uma lista lisp, contendo nome, lista de parâmetros, e corpo da função). 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a87373bc4fcf075b3762e50fc9e681d3c}\index{parser.LISP.ListaLISP@{parser.LISP.ListaLISP}!GetAllElements@{GetAllElements}}
+\index{GetAllElements@{GetAllElements}!parser.LISP.ListaLISP@{parser.LISP.ListaLISP}}
+\doxysubsubsection{\texorpdfstring{GetAllElements()}{GetAllElements()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a87373bc4fcf075b3762e50fc9e681d3c} 
+List$<$ string $>$ parser.\+LISP.\+Lista\+LISP.\+Get\+All\+Elements (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_aa9ffb7bb6998e28fc65fc74e157f69be}\index{parser.LISP.ListaLISP@{parser.LISP.ListaLISP}!GetAllListsUntilFinalList@{GetAllListsUntilFinalList}}
+\index{GetAllListsUntilFinalList@{GetAllListsUntilFinalList}!parser.LISP.ListaLISP@{parser.LISP.ListaLISP}}
+\doxysubsubsection{\texorpdfstring{GetAllListsUntilFinalList()}{GetAllListsUntilFinalList()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_aa9ffb7bb6998e28fc65fc74e157f69be} 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} parser.\+LISP.\+Lista\+LISP.\+Get\+All\+Lists\+Until\+Final\+List (\begin{DoxyParamCaption}\item[{int}]{index\+Initial}{}\end{DoxyParamCaption})}
+
+
+
+obtém o restante da lista, indo do indice \mbox{[}index\+Inicial-\/1\mbox{]} até o final das proximas listas. O contador de índices começa em 1. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index\+Initial} & indice inicial a calcular.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_ae175d4aae9d9b58292259799b4507e88}\index{parser.LISP.ListaLISP@{parser.LISP.ListaLISP}!GetCurrentAtom@{GetCurrentAtom}}
+\index{GetCurrentAtom@{GetCurrentAtom}!parser.LISP.ListaLISP@{parser.LISP.ListaLISP}}
+\doxysubsubsection{\texorpdfstring{GetCurrentAtom()}{GetCurrentAtom()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_ae175d4aae9d9b58292259799b4507e88} 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_atomo}{Atomo}} parser.\+LISP.\+Lista\+LISP.\+Get\+Current\+Atom (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a32aa41a2e527f81fd7189f3b3f3d71b7}\index{parser.LISP.ListaLISP@{parser.LISP.ListaLISP}!GetCurrentList@{GetCurrentList}}
+\index{GetCurrentList@{GetCurrentList}!parser.LISP.ListaLISP@{parser.LISP.ListaLISP}}
+\doxysubsubsection{\texorpdfstring{GetCurrentList()}{GetCurrentList()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a32aa41a2e527f81fd7189f3b3f3d71b7} 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} parser.\+LISP.\+Lista\+LISP.\+Get\+Current\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+obtém a lista atual,dentro da estrutura de uma lista parâmetro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista} & lista parâmetro.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_abd8cf410d4c7f6e7484ee2dcd0523fd5}\index{parser.LISP.ListaLISP@{parser.LISP.ListaLISP}!GetElementsHead@{GetElementsHead}}
+\index{GetElementsHead@{GetElementsHead}!parser.LISP.ListaLISP@{parser.LISP.ListaLISP}}
+\doxysubsubsection{\texorpdfstring{GetElementsHead()}{GetElementsHead()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_abd8cf410d4c7f6e7484ee2dcd0523fd5} 
+List$<$ string $>$ parser.\+LISP.\+Lista\+LISP.\+Get\+Elements\+Head (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+retorna os elementos ou elemento do primeiro elemento de uma lista lisp. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a1cc47cd18994a0e55a26212b81363bbf}\index{parser.LISP.ListaLISP@{parser.LISP.ListaLISP}!GetELementsTail@{GetELementsTail}}
+\index{GetELementsTail@{GetELementsTail}!parser.LISP.ListaLISP@{parser.LISP.ListaLISP}}
+\doxysubsubsection{\texorpdfstring{GetELementsTail()}{GetELementsTail()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a1cc47cd18994a0e55a26212b81363bbf} 
+List$<$ string $>$ parser.\+LISP.\+Lista\+LISP.\+Get\+ELements\+Tail (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+retorna os elementos da cauda de uma lista lisp. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a31415e7a581832d398bbe4bcc37dd438}\index{parser.LISP.ListaLISP@{parser.LISP.ListaLISP}!GetEnesimaLista@{GetEnesimaLista}}
+\index{GetEnesimaLista@{GetEnesimaLista}!parser.LISP.ListaLISP@{parser.LISP.ListaLISP}}
+\doxysubsubsection{\texorpdfstring{GetEnesimaLista()}{GetEnesimaLista()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a31415e7a581832d398bbe4bcc37dd438} 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} parser.\+LISP.\+Lista\+LISP.\+Get\+Enesima\+Lista (\begin{DoxyParamCaption}\item[{int}]{n\+Element}{}\end{DoxyParamCaption})}
+
+
+
+obtém a enésima lista, da lista que chamou o método. A contagem de listas começa em 1, e não 0, normalmente para índices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n\+Element} & número da enésima lista./param\texorpdfstring{$>$}{>} \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_ad61acd5fa057726cb5938433684f8534}\index{parser.LISP.ListaLISP@{parser.LISP.ListaLISP}!GetLista@{GetLista}}
+\index{GetLista@{GetLista}!parser.LISP.ListaLISP@{parser.LISP.ListaLISP}}
+\doxysubsubsection{\texorpdfstring{GetLista()}{GetLista()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_ad61acd5fa057726cb5938433684f8534} 
+static \mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} parser.\+LISP.\+Lista\+LISP.\+Get\+Lista (\begin{DoxyParamCaption}\item[{string}]{textolista}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+aplica o operador quote para a próxima lista.\Hypertarget{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a02b6fadd71a478f7f8df92415328e07f}\index{parser.LISP.ListaLISP@{parser.LISP.ListaLISP}!GetNextList@{GetNextList}}
+\index{GetNextList@{GetNextList}!parser.LISP.ListaLISP@{parser.LISP.ListaLISP}}
+\doxysubsubsection{\texorpdfstring{GetNextList()}{GetNextList()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a02b6fadd71a478f7f8df92415328e07f} 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} parser.\+LISP.\+Lista\+LISP.\+Get\+Next\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Obtém a próxima lista da lista que chamou o método. 
+
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_af7b194c730fc0633b4bbece571ddefd5}\index{parser.LISP.ListaLISP@{parser.LISP.ListaLISP}!GetTokensLISP@{GetTokensLISP}}
+\index{GetTokensLISP@{GetTokensLISP}!parser.LISP.ListaLISP@{parser.LISP.ListaLISP}}
+\doxysubsubsection{\texorpdfstring{GetTokensLISP()}{GetTokensLISP()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_af7b194c730fc0633b4bbece571ddefd5} 
+static List$<$ string $>$ parser.\+LISP.\+Lista\+LISP.\+Get\+Tokens\+LISP (\begin{DoxyParamCaption}\item[{string}]{texto\+Lisp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+obtém tokens, com termos-\/chave da linguagem \doxylink{namespaceparser_1_1_l_i_s_p}{LISP}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texto\+Lisp} & texto com tokens\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna uma lista de tokens, a partir de termos-\/chave da linguagem \doxylink{namespaceparser_1_1_l_i_s_p}{LISP}.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a3a6ddb2a567601d1564f312e720fbfda}\index{parser.LISP.ListaLISP@{parser.LISP.ListaLISP}!InsertElementsHead@{InsertElementsHead}}
+\index{InsertElementsHead@{InsertElementsHead}!parser.LISP.ListaLISP@{parser.LISP.ListaLISP}}
+\doxysubsubsection{\texorpdfstring{InsertElementsHead()}{InsertElementsHead()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a3a6ddb2a567601d1564f312e720fbfda} 
+void parser.\+LISP.\+Lista\+LISP.\+Insert\+Elements\+Head (\begin{DoxyParamCaption}\item[{List$<$ string $>$}]{elementos}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a9884be5b2b62b0d01499c8287bbfc292}\index{parser.LISP.ListaLISP@{parser.LISP.ListaLISP}!InsertElementsTail@{InsertElementsTail}}
+\index{InsertElementsTail@{InsertElementsTail}!parser.LISP.ListaLISP@{parser.LISP.ListaLISP}}
+\doxysubsubsection{\texorpdfstring{InsertElementsTail()}{InsertElementsTail()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a9884be5b2b62b0d01499c8287bbfc292} 
+void parser.\+LISP.\+Lista\+LISP.\+Insert\+Elements\+Tail (\begin{DoxyParamCaption}\item[{List$<$ string $>$}]{elementos}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a14f326adfeacee619bf94c6a7ea4c6ba}\index{parser.LISP.ListaLISP@{parser.LISP.ListaLISP}!IsNumber@{IsNumber}}
+\index{IsNumber@{IsNumber}!parser.LISP.ListaLISP@{parser.LISP.ListaLISP}}
+\doxysubsubsection{\texorpdfstring{IsNumber()}{IsNumber()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a14f326adfeacee619bf94c6a7ea4c6ba} 
+static bool parser.\+LISP.\+Lista\+LISP.\+Is\+Number (\begin{DoxyParamCaption}\item[{string}]{token}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a7f3634daa5e68f7e47dc71dcf7ea6c67}\index{parser.LISP.ListaLISP@{parser.LISP.ListaLISP}!SecondMemberList@{SecondMemberList}}
+\index{SecondMemberList@{SecondMemberList}!parser.LISP.ListaLISP@{parser.LISP.ListaLISP}}
+\doxysubsubsection{\texorpdfstring{SecondMemberList()}{SecondMemberList()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a7f3634daa5e68f7e47dc71dcf7ea6c67} 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} parser.\+LISP.\+Lista\+LISP.\+Second\+Member\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+retorna a 2a. instrução lisp de uma função lisp. (representado como uma lista lisp, contendo nome, lista de parâmetros, e corpo da função). 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+pula o nome da lista (1o. elemento), a lista de parâmetros (2o. elemento), 1o. elemento do corpo da lista (3o. elemento), chegando ao 2o. elemento do corpo da lista (3o. elemento).\Hypertarget{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a3760848f820bc7995a9baf45b0c77085}\index{parser.LISP.ListaLISP@{parser.LISP.ListaLISP}!ThirdMemberList@{ThirdMemberList}}
+\index{ThirdMemberList@{ThirdMemberList}!parser.LISP.ListaLISP@{parser.LISP.ListaLISP}}
+\doxysubsubsection{\texorpdfstring{ThirdMemberList()}{ThirdMemberList()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a3760848f820bc7995a9baf45b0c77085} 
+\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}} parser.\+LISP.\+Lista\+LISP.\+Third\+Member\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+retorna a 3a. instrução lisp de uma função lisp. (representado como uma lista lisp, contendo nome, lista de parâmetros, e corpo da função). 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+pula o nome da lista (1o. elemento), a lista de parâmetros (2o. elemento), 1o. elemento do corpo da lista (3o. elemento), 2o. elemento do corpo da lista (4o. elemento), chegando ao 3o. elemento do corpo da lista (5o. elemento).\Hypertarget{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a124b393bf02fbc4a8627c962074feeac}\index{parser.LISP.ListaLISP@{parser.LISP.ListaLISP}!ToString@{ToString}}
+\index{ToString@{ToString}!parser.LISP.ListaLISP@{parser.LISP.ListaLISP}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_a124b393bf02fbc4a8627c962074feeac} 
+override string parser.\+LISP.\+Lista\+LISP.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_ac8cbe90d6429e447e055676dc8f05929}\index{parser.LISP.ListaLISP@{parser.LISP.ListaLISP}!WriteListaLISP@{WriteListaLISP}}
+\index{WriteListaLISP@{WriteListaLISP}!parser.LISP.ListaLISP@{parser.LISP.ListaLISP}}
+\doxysubsubsection{\texorpdfstring{WriteListaLISP()}{WriteListaLISP()}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_ac8cbe90d6429e447e055676dc8f05929} 
+static string parser.\+LISP.\+Lista\+LISP.\+Write\+Lista\+LISP (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p}{Lista\+LISP}}}]{uma\+Lista\+Lisp}{, }\item[{int}]{level}{, }\item[{bool}]{escreve\+Na\+Tela}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+escreve na tela os elementos de uma lista lisp, se os elementos forem listas lisp. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uma\+Lista\+Lisp} & lista lisp a ser escrita na tela.\\
+\hline
+{\em level} & escreve a lista apenas no nivel de recursão do método.\\
+\hline
+{\em escreve\+Na\+Tela} & escreve na tela o texto resultante, se \mbox{[}true\mbox{]}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_ad55251d993355f716b773713ba783e3d}\index{parser.LISP.ListaLISP@{parser.LISP.ListaLISP}!isQuoted@{isQuoted}}
+\index{isQuoted@{isQuoted}!parser.LISP.ListaLISP@{parser.LISP.ListaLISP}}
+\doxysubsubsection{\texorpdfstring{isQuoted}{isQuoted}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_ad55251d993355f716b773713ba783e3d} 
+bool parser.\+LISP.\+Lista\+LISP.\+is\+Quoted = false}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_ae5a40051722fff3f1917e00a2903102b}\index{parser.LISP.ListaLISP@{parser.LISP.ListaLISP}!Listas@{Listas}}
+\index{Listas@{Listas}!parser.LISP.ListaLISP@{parser.LISP.ListaLISP}}
+\doxysubsubsection{\texorpdfstring{Listas}{Listas}}
+{\footnotesize\ttfamily \label{classparser_1_1_l_i_s_p_1_1_lista_l_i_s_p_ae5a40051722fff3f1917e00a2903102b} 
+List$<$\mbox{\hyperlink{classparser_1_1_l_i_s_p_1_1_atomo}{Atomo}}$>$ parser.\+LISP.\+Lista\+LISP.\+Listas\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+próximas lista guarda os dados inclusive da currente lista, e também das próximas listas (listas ou atomos). 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/componentes\+De\+Interpretadores\+ECompiladores/\+LISP/\mbox{\hyperlink{_l_i_s_p___utils_8cs}{LISP\+\_\+\+Utils.\+cs}}\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/componentes\+De\+Interpretadores\+ECompiladores/\+LISP/\mbox{\hyperlink{_lista_l_i_s_p_8cs}{Lista\+LISP.\+cs}}\end{DoxyCompactItemize}

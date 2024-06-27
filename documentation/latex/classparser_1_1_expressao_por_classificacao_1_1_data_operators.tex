@@ -1,0 +1,139 @@
+\doxysection{parser.\+Expressao\+Por\+Classificacao.\+Data\+Operators Class Reference}
+\hypertarget{classparser_1_1_expressao_por_classificacao_1_1_data_operators}{}\label{classparser_1_1_expressao_por_classificacao_1_1_data_operators}\index{parser.ExpressaoPorClassificacao.DataOperators@{parser.ExpressaoPorClassificacao.DataOperators}}
+
+
+classe para processamento de operadores em uma expressao.  
+
+
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classparser_1_1_expressao_por_classificacao_1_1_data_operators_ab2b5f3bad360b9cfe3330054c82b7e18}{tipo\+Com\+Operandos}} \{ \mbox{\hyperlink{classparser_1_1_expressao_por_classificacao_1_1_data_operators_ab2b5f3bad360b9cfe3330054c82b7e18a9d7183f16acce70658f686ae7f1a4d20}{binary}}
+, \mbox{\hyperlink{classparser_1_1_expressao_por_classificacao_1_1_data_operators_ab2b5f3bad360b9cfe3330054c82b7e18a94a69b2994dec7f49a12bb036c3d2ac8}{unary}}
+, \mbox{\hyperlink{classparser_1_1_expressao_por_classificacao_1_1_data_operators_ab2b5f3bad360b9cfe3330054c82b7e18a981ee71939f43d7a1962baf72b47cd12}{binary\+And\+Unary}}
+, \mbox{\hyperlink{classparser_1_1_expressao_por_classificacao_1_1_data_operators_ab2b5f3bad360b9cfe3330054c82b7e18a334c4a4c42fdb79d7ebc3e73b517e6f8}{none}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparser_1_1_expressao_por_classificacao_1_1_data_operators_ab0a802a32e4f741ae825c087eb3c8cc1}{Data\+Operators}} (string \mbox{\hyperlink{classparser_1_1_expressao_por_classificacao_1_1_data_operators_a70eb95f0cd5b2306a567ac139d6df443}{name\+Operator}}, int \mbox{\hyperlink{classparser_1_1_expressao_por_classificacao_1_1_data_operators_aee8769a258125094b87638ce77a84de4}{index\+In\+List\+Of\+Expressions}}, \mbox{\hyperlink{classparser_1_1_expressao_por_classificacao_1_1_data_operators_ab2b5f3bad360b9cfe3330054c82b7e18}{tipo\+Com\+Operandos}} type\+Operator)
+\begin{DoxyCompactList}\small\item\em construtor. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{classparser_1_1_expressao_por_classificacao_1_1_data_operators_adc17d1e3af05df147509ecba7e699ed4}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classparser_1_1_expressao_por_classificacao_1_1_data_operators_a459f506088a92eed6c970cb3831c4c9a}{Update\+Index}} (List$<$ \mbox{\hyperlink{classparser_1_1_expressao_por_classificacao_1_1_data_operators}{Data\+Operators}} $>$ datas)
+\begin{DoxyCompactList}\small\item\em atualiza a lista de operadores, ante a insercao de um operador na lista de expressoes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classparser_1_1_expressao_por_classificacao_1_1_data_operators_a70eb95f0cd5b2306a567ac139d6df443}{name\+Operator}}
+\item 
+int \mbox{\hyperlink{classparser_1_1_expressao_por_classificacao_1_1_data_operators_aee8769a258125094b87638ce77a84de4}{index\+In\+List\+Of\+Expressions}}
+\item 
+\mbox{\hyperlink{classparser_1_1_expressao_por_classificacao_1_1_data_operators_ab2b5f3bad360b9cfe3330054c82b7e18}{tipo\+Com\+Operandos}} \mbox{\hyperlink{classparser_1_1_expressao_por_classificacao_1_1_data_operators_a6589fafe3fdbae2803a2106e18701beb}{tipo}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+classe para processamento de operadores em uma expressao. 
+
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{classparser_1_1_expressao_por_classificacao_1_1_data_operators_ab2b5f3bad360b9cfe3330054c82b7e18}\index{parser.ExpressaoPorClassificacao.DataOperators@{parser.ExpressaoPorClassificacao.DataOperators}!tipoComOperandos@{tipoComOperandos}}
+\index{tipoComOperandos@{tipoComOperandos}!parser.ExpressaoPorClassificacao.DataOperators@{parser.ExpressaoPorClassificacao.DataOperators}}
+\doxysubsubsection{\texorpdfstring{tipoComOperandos}{tipoComOperandos}}
+{\footnotesize\ttfamily \label{classparser_1_1_expressao_por_classificacao_1_1_data_operators_ab2b5f3bad360b9cfe3330054c82b7e18} 
+enum \mbox{\hyperlink{classparser_1_1_expressao_por_classificacao_1_1_data_operators_ab2b5f3bad360b9cfe3330054c82b7e18}{parser.\+Expressao\+Por\+Classificacao.\+Data\+Operators.\+tipo\+Com\+Operandos}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{binary@{binary}!parser.ExpressaoPorClassificacao.DataOperators@{parser.ExpressaoPorClassificacao.DataOperators}}\index{parser.ExpressaoPorClassificacao.DataOperators@{parser.ExpressaoPorClassificacao.DataOperators}!binary@{binary}}}\Hypertarget{classparser_1_1_expressao_por_classificacao_1_1_data_operators_ab2b5f3bad360b9cfe3330054c82b7e18a9d7183f16acce70658f686ae7f1a4d20}\label{classparser_1_1_expressao_por_classificacao_1_1_data_operators_ab2b5f3bad360b9cfe3330054c82b7e18} 
+binary&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{unary@{unary}!parser.ExpressaoPorClassificacao.DataOperators@{parser.ExpressaoPorClassificacao.DataOperators}}\index{parser.ExpressaoPorClassificacao.DataOperators@{parser.ExpressaoPorClassificacao.DataOperators}!unary@{unary}}}\Hypertarget{classparser_1_1_expressao_por_classificacao_1_1_data_operators_ab2b5f3bad360b9cfe3330054c82b7e18a94a69b2994dec7f49a12bb036c3d2ac8}\label{classparser_1_1_expressao_por_classificacao_1_1_data_operators_ab2b5f3bad360b9cfe3330054c82b7e18} 
+unary&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{binaryAndUnary@{binaryAndUnary}!parser.ExpressaoPorClassificacao.DataOperators@{parser.ExpressaoPorClassificacao.DataOperators}}\index{parser.ExpressaoPorClassificacao.DataOperators@{parser.ExpressaoPorClassificacao.DataOperators}!binaryAndUnary@{binaryAndUnary}}}\Hypertarget{classparser_1_1_expressao_por_classificacao_1_1_data_operators_ab2b5f3bad360b9cfe3330054c82b7e18a981ee71939f43d7a1962baf72b47cd12}\label{classparser_1_1_expressao_por_classificacao_1_1_data_operators_ab2b5f3bad360b9cfe3330054c82b7e18} 
+binary\+And\+Unary&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{none@{none}!parser.ExpressaoPorClassificacao.DataOperators@{parser.ExpressaoPorClassificacao.DataOperators}}\index{parser.ExpressaoPorClassificacao.DataOperators@{parser.ExpressaoPorClassificacao.DataOperators}!none@{none}}}\Hypertarget{classparser_1_1_expressao_por_classificacao_1_1_data_operators_ab2b5f3bad360b9cfe3330054c82b7e18a334c4a4c42fdb79d7ebc3e73b517e6f8}\label{classparser_1_1_expressao_por_classificacao_1_1_data_operators_ab2b5f3bad360b9cfe3330054c82b7e18} 
+none&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classparser_1_1_expressao_por_classificacao_1_1_data_operators_ab0a802a32e4f741ae825c087eb3c8cc1}\index{parser.ExpressaoPorClassificacao.DataOperators@{parser.ExpressaoPorClassificacao.DataOperators}!DataOperators@{DataOperators}}
+\index{DataOperators@{DataOperators}!parser.ExpressaoPorClassificacao.DataOperators@{parser.ExpressaoPorClassificacao.DataOperators}}
+\doxysubsubsection{\texorpdfstring{DataOperators()}{DataOperators()}}
+{\footnotesize\ttfamily \label{classparser_1_1_expressao_por_classificacao_1_1_data_operators_ab0a802a32e4f741ae825c087eb3c8cc1} 
+parser.\+Expressao\+Por\+Classificacao.\+Data\+Operators.\+Data\+Operators (\begin{DoxyParamCaption}\item[{string}]{name\+Operator}{, }\item[{int}]{index\+In\+List\+Of\+Expressions}{, }\item[{\mbox{\hyperlink{classparser_1_1_expressao_por_classificacao_1_1_data_operators_ab2b5f3bad360b9cfe3330054c82b7e18}{tipo\+Com\+Operandos}}}]{type\+Operator}{}\end{DoxyParamCaption})}
+
+
+
+construtor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+Operator} & nome do operador.\\
+\hline
+{\em index\+In\+List\+Of\+Expressions} & indice do token, com relacao a lista de expressoes extraidas.\\
+\hline
+{\em type\+Operator} & tipo do operador\+: binario, unario binario\+EUnario.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_expressao_por_classificacao_1_1_data_operators_adc17d1e3af05df147509ecba7e699ed4}\index{parser.ExpressaoPorClassificacao.DataOperators@{parser.ExpressaoPorClassificacao.DataOperators}!ToString@{ToString}}
+\index{ToString@{ToString}!parser.ExpressaoPorClassificacao.DataOperators@{parser.ExpressaoPorClassificacao.DataOperators}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily \label{classparser_1_1_expressao_por_classificacao_1_1_data_operators_adc17d1e3af05df147509ecba7e699ed4} 
+override string parser.\+Expressao\+Por\+Classificacao.\+Data\+Operators.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_expressao_por_classificacao_1_1_data_operators_a459f506088a92eed6c970cb3831c4c9a}\index{parser.ExpressaoPorClassificacao.DataOperators@{parser.ExpressaoPorClassificacao.DataOperators}!UpdateIndex@{UpdateIndex}}
+\index{UpdateIndex@{UpdateIndex}!parser.ExpressaoPorClassificacao.DataOperators@{parser.ExpressaoPorClassificacao.DataOperators}}
+\doxysubsubsection{\texorpdfstring{UpdateIndex()}{UpdateIndex()}}
+{\footnotesize\ttfamily \label{classparser_1_1_expressao_por_classificacao_1_1_data_operators_a459f506088a92eed6c970cb3831c4c9a} 
+static void parser.\+Expressao\+Por\+Classificacao.\+Data\+Operators.\+Update\+Index (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classparser_1_1_expressao_por_classificacao_1_1_data_operators}{Data\+Operators}} $>$}]{datas}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+atualiza a lista de operadores, ante a insercao de um operador na lista de expressoes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em datas} & lista de dados contendo operadores.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classparser_1_1_expressao_por_classificacao_1_1_data_operators_aee8769a258125094b87638ce77a84de4}\index{parser.ExpressaoPorClassificacao.DataOperators@{parser.ExpressaoPorClassificacao.DataOperators}!indexInListOfExpressions@{indexInListOfExpressions}}
+\index{indexInListOfExpressions@{indexInListOfExpressions}!parser.ExpressaoPorClassificacao.DataOperators@{parser.ExpressaoPorClassificacao.DataOperators}}
+\doxysubsubsection{\texorpdfstring{indexInListOfExpressions}{indexInListOfExpressions}}
+{\footnotesize\ttfamily \label{classparser_1_1_expressao_por_classificacao_1_1_data_operators_aee8769a258125094b87638ce77a84de4} 
+int parser.\+Expressao\+Por\+Classificacao.\+Data\+Operators.\+index\+In\+List\+Of\+Expressions}
+
+\Hypertarget{classparser_1_1_expressao_por_classificacao_1_1_data_operators_a70eb95f0cd5b2306a567ac139d6df443}\index{parser.ExpressaoPorClassificacao.DataOperators@{parser.ExpressaoPorClassificacao.DataOperators}!nameOperator@{nameOperator}}
+\index{nameOperator@{nameOperator}!parser.ExpressaoPorClassificacao.DataOperators@{parser.ExpressaoPorClassificacao.DataOperators}}
+\doxysubsubsection{\texorpdfstring{nameOperator}{nameOperator}}
+{\footnotesize\ttfamily \label{classparser_1_1_expressao_por_classificacao_1_1_data_operators_a70eb95f0cd5b2306a567ac139d6df443} 
+string parser.\+Expressao\+Por\+Classificacao.\+Data\+Operators.\+name\+Operator}
+
+\Hypertarget{classparser_1_1_expressao_por_classificacao_1_1_data_operators_a6589fafe3fdbae2803a2106e18701beb}\index{parser.ExpressaoPorClassificacao.DataOperators@{parser.ExpressaoPorClassificacao.DataOperators}!tipo@{tipo}}
+\index{tipo@{tipo}!parser.ExpressaoPorClassificacao.DataOperators@{parser.ExpressaoPorClassificacao.DataOperators}}
+\doxysubsubsection{\texorpdfstring{tipo}{tipo}}
+{\footnotesize\ttfamily \label{classparser_1_1_expressao_por_classificacao_1_1_data_operators_a6589fafe3fdbae2803a2106e18701beb} 
+\mbox{\hyperlink{classparser_1_1_expressao_por_classificacao_1_1_data_operators_ab2b5f3bad360b9cfe3330054c82b7e18}{tipo\+Com\+Operandos}} parser.\+Expressao\+Por\+Classificacao.\+Data\+Operators.\+tipo}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/componentes\+De\+Interpretadores\+ECompiladores/\+PROGRAMACAO ORIENTADA A OBJETOS/\mbox{\hyperlink{_expressao_por_classificacao_8cs}{Expressao\+Por\+Classificacao.\+cs}}\end{DoxyCompactItemize}

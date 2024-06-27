@@ -1,0 +1,145 @@
+\doxysection{parser.\+Expression\+Base Class Reference}
+\hypertarget{classparser_1_1_expression_base}{}\label{classparser_1_1_expression_base}\index{parser.ExpressionBase@{parser.ExpressionBase}}
+
+
+classe de expressao disponibilizada como libray, e importada na instanciacao da linguagem orquidea.  
+
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classparser_1_1_expression_base_1_1_testes}{Testes}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparser_1_1_expression_base_a21b370d1f365653ccf2de1c297972a27}{Expression\+Base}} ()
+\item 
+void \mbox{\hyperlink{classparser_1_1_expression_base_a5c320a4a743f87684d5f0ac8080367bd}{Set\+Expresion}} (\mbox{\hyperlink{classparser_1_1_expressao_chamada_de_metodo}{Expressao\+Chamada\+De\+Metodo}} exprss)
+\begin{DoxyCompactList}\small\item\em seta uma chamada de metodo, para a expressao base. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_expression_base_ab4a2a3ea3f5516451cdb43dbc68f1265}{Expression\+Base}} (string \mbox{\hyperlink{classparser_1_1_expression_base_afe2081d5be6fe5c2b890eac211643861}{codigo}})
+\begin{DoxyCompactList}\small\item\em construtor. \end{DoxyCompactList}\item 
+object \mbox{\hyperlink{classparser_1_1_expression_base_ae10a6052b3a9c1a54a90ae27f6991d80}{Run}} ()
+\begin{DoxyCompactList}\small\item\em faz a avaliacao da expressao. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_expression_base_a49ca20d6af2f4cfe8a5bd4b7eeffcd04}{Compile}} (string \mbox{\hyperlink{classparser_1_1_expression_base_afe2081d5be6fe5c2b890eac211643861}{codigo}})
+\begin{DoxyCompactList}\small\item\em compila a expressao. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} \mbox{\hyperlink{classparser_1_1_expression_base_ad7590af71e647fbe6d7fef2c1d90dfce}{expressao}}
+\begin{DoxyCompactList}\small\item\em expressao wrapped. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classparser_1_1_expression_base_afe2081d5be6fe5c2b890eac211643861}{codigo}}
+\begin{DoxyCompactList}\small\item\em codigo da expressao. \end{DoxyCompactList}\item 
+object \mbox{\hyperlink{classparser_1_1_expression_base_a856f060f883b6434130d1b4764bf47fa}{result}}
+\begin{DoxyCompactList}\small\item\em valor obtido ao executar a expressao. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+classe de expressao disponibilizada como libray, e importada na instanciacao da linguagem orquidea. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classparser_1_1_expression_base_a21b370d1f365653ccf2de1c297972a27}\index{parser.ExpressionBase@{parser.ExpressionBase}!ExpressionBase@{ExpressionBase}}
+\index{ExpressionBase@{ExpressionBase}!parser.ExpressionBase@{parser.ExpressionBase}}
+\doxysubsubsection{\texorpdfstring{ExpressionBase()}{ExpressionBase()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_expression_base_a21b370d1f365653ccf2de1c297972a27} 
+parser.\+Expression\+Base.\+Expression\+Base (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_expression_base_ab4a2a3ea3f5516451cdb43dbc68f1265}\index{parser.ExpressionBase@{parser.ExpressionBase}!ExpressionBase@{ExpressionBase}}
+\index{ExpressionBase@{ExpressionBase}!parser.ExpressionBase@{parser.ExpressionBase}}
+\doxysubsubsection{\texorpdfstring{ExpressionBase()}{ExpressionBase()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_expression_base_ab4a2a3ea3f5516451cdb43dbc68f1265} 
+parser.\+Expression\+Base.\+Expression\+Base (\begin{DoxyParamCaption}\item[{string}]{codigo}{}\end{DoxyParamCaption})}
+
+
+
+construtor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em codigo} & codigo de expressao.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_expression_base_a49ca20d6af2f4cfe8a5bd4b7eeffcd04}\index{parser.ExpressionBase@{parser.ExpressionBase}!Compile@{Compile}}
+\index{Compile@{Compile}!parser.ExpressionBase@{parser.ExpressionBase}}
+\doxysubsubsection{\texorpdfstring{Compile()}{Compile()}}
+{\footnotesize\ttfamily \label{classparser_1_1_expression_base_a49ca20d6af2f4cfe8a5bd4b7eeffcd04} 
+void parser.\+Expression\+Base.\+Compile (\begin{DoxyParamCaption}\item[{string}]{codigo}{}\end{DoxyParamCaption})}
+
+
+
+compila a expressao. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em codigo} & codigo contendo os tokens da expressao.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_expression_base_ae10a6052b3a9c1a54a90ae27f6991d80}\index{parser.ExpressionBase@{parser.ExpressionBase}!Run@{Run}}
+\index{Run@{Run}!parser.ExpressionBase@{parser.ExpressionBase}}
+\doxysubsubsection{\texorpdfstring{Run()}{Run()}}
+{\footnotesize\ttfamily \label{classparser_1_1_expression_base_ae10a6052b3a9c1a54a90ae27f6991d80} 
+object parser.\+Expression\+Base.\+Run (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+faz a avaliacao da expressao. 
+
+\begin{DoxyReturn}{Returns}
+retorna o valor da expressao avaliada.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_expression_base_a5c320a4a743f87684d5f0ac8080367bd}\index{parser.ExpressionBase@{parser.ExpressionBase}!SetExpresion@{SetExpresion}}
+\index{SetExpresion@{SetExpresion}!parser.ExpressionBase@{parser.ExpressionBase}}
+\doxysubsubsection{\texorpdfstring{SetExpresion()}{SetExpresion()}}
+{\footnotesize\ttfamily \label{classparser_1_1_expression_base_a5c320a4a743f87684d5f0ac8080367bd} 
+void parser.\+Expression\+Base.\+Set\+Expresion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_expressao_chamada_de_metodo}{Expressao\+Chamada\+De\+Metodo}}}]{exprss}{}\end{DoxyParamCaption})}
+
+
+
+seta uma chamada de metodo, para a expressao base. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em exprss} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classparser_1_1_expression_base_afe2081d5be6fe5c2b890eac211643861}\index{parser.ExpressionBase@{parser.ExpressionBase}!codigo@{codigo}}
+\index{codigo@{codigo}!parser.ExpressionBase@{parser.ExpressionBase}}
+\doxysubsubsection{\texorpdfstring{codigo}{codigo}}
+{\footnotesize\ttfamily \label{classparser_1_1_expression_base_afe2081d5be6fe5c2b890eac211643861} 
+string parser.\+Expression\+Base.\+codigo}
+
+
+
+codigo da expressao. 
+
+\Hypertarget{classparser_1_1_expression_base_ad7590af71e647fbe6d7fef2c1d90dfce}\index{parser.ExpressionBase@{parser.ExpressionBase}!expressao@{expressao}}
+\index{expressao@{expressao}!parser.ExpressionBase@{parser.ExpressionBase}}
+\doxysubsubsection{\texorpdfstring{expressao}{expressao}}
+{\footnotesize\ttfamily \label{classparser_1_1_expression_base_ad7590af71e647fbe6d7fef2c1d90dfce} 
+\mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} parser.\+Expression\+Base.\+expressao}
+
+
+
+expressao wrapped. 
+
+\Hypertarget{classparser_1_1_expression_base_a856f060f883b6434130d1b4764bf47fa}\index{parser.ExpressionBase@{parser.ExpressionBase}!result@{result}}
+\index{result@{result}!parser.ExpressionBase@{parser.ExpressionBase}}
+\doxysubsubsection{\texorpdfstring{result}{result}}
+{\footnotesize\ttfamily \label{classparser_1_1_expression_base_a856f060f883b6434130d1b4764bf47fa} 
+object parser.\+Expression\+Base.\+result}
+
+
+
+valor obtido ao executar a expressao. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/\+LIBRARIES/\+Game Support/\+Library\+Games/\mbox{\hyperlink{_expression_base_8cs}{Expression\+Base.\+cs}}\end{DoxyCompactItemize}

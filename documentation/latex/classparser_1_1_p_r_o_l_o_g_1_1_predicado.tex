@@ -1,0 +1,227 @@
+\doxysection{parser.\+PROLOG.\+Predicado Class Reference}
+\hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{}\label{classparser_1_1_p_r_o_l_o_g_1_1_predicado}\index{parser.PROLOG.Predicado@{parser.PROLOG.Predicado}}
+Inheritance diagram for parser.\+PROLOG.\+Predicado\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.752739cm]{classparser_1_1_p_r_o_l_o_g_1_1_predicado}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_acee6b6c485bd11bb9dbde699798e60b3}{Predicado}} (string texto\+Predicado)
+\item 
+\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a36ab0139e87b2aedba33b5884815df13}{Predicado}} ()
+\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a4cb82fe4110ab8f3e546ded1d8326c69}{Get\+Atomos}} ()
+\item 
+\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}} \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a46b36e3b54d90ba774dbe73c0f8f830d}{Clone}} ()
+\item 
+bool \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a01f8a4643d86f14dae814f307313ece5}{Match}} (\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}} predicado\+Para\+Match)
+\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_af32343003233569281897499f99d22f9}{Retira\+Variaveis}} ()
+\begin{DoxyCompactList}\small\item\em retira as variáveis do predicado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a4c061fd56cdf998e5ca658e0af071dca}{Set\+Variavel}} (string nome\+Da\+Variavel, string valor\+Da\+Variavel)
+\item 
+void \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a4895c4a61efe97762435b70d09b84af0}{Set\+Variavel}} (string valor\+Da\+Variavel, int index\+Variavel)
+\item 
+bool \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_aa621b65b56d2e3161c2773c2127c49f5}{Equals\+Predicado}} (\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}} p1)
+\item 
+override string \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a5ba783dbc46f11dab231d9a74b46a6c7}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}} \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_aaca0a96eb5c05b2c740ce35ad661171e}{Set\+Predicado}} (string nome, params string\mbox{[}$\,$\mbox{]} atomos)
+\item 
+static bool \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_acb6e7227968434f9e2ef001af76d5692}{Is\+Variavel\+Anonima}} (string variavel)
+\item 
+static \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}} \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a271545c87b0cf6e059eca277dead4c3b}{Get\+Predicado}} (string texto)
+\begin{DoxyCompactList}\small\item\em obtém um \doxylink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado} a partir de uma linha de texto.\+O \doxylink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado} não é adicionado à base de conhecimento. \end{DoxyCompactList}\item 
+static List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a44252b61033da67ec9f0b06c37b249d3}{Extrai\+De\+Texto\+Um\+Predicado}} (string texto)
+\begin{DoxyCompactList}\small\item\em Obtém tokens a partir de um texto, a partir de termos-\/chave da linguagem Prolog. Utiliza a classe Parser\+Universal, através da classe \doxylink{classparser_1_1_tokens}{Tokens}. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a68c301e9e6686a14b6c169645c543527}{Adiciona\+Predicados}} (params string\mbox{[}$\,$\mbox{]} textos\+Predicados)
+\begin{DoxyCompactList}\small\item\em adiciona uma lista de predicados, na forma de textos, para a base de conhecimento. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a0699dce7242deb2c8ddb2bd38bcd60d9}{Adiciona\+Um\+Predicado}} (string texto)
+\begin{DoxyCompactList}\small\item\em adiciona um \doxylink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado} para a base de conhecimento, a partir da linha de texto contendo o \doxylink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a7bac692b3dd9731af02c909244766448}{Is\+Variavel}} (string atomo)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a2e64916e6e6079f57bac935e3c0959a6}{Nome}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_predicado_acee6b6c485bd11bb9dbde699798e60b3}\index{parser.PROLOG.Predicado@{parser.PROLOG.Predicado}!Predicado@{Predicado}}
+\index{Predicado@{Predicado}!parser.PROLOG.Predicado@{parser.PROLOG.Predicado}}
+\doxysubsubsection{\texorpdfstring{Predicado()}{Predicado()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_predicado_acee6b6c485bd11bb9dbde699798e60b3} 
+parser.\+PROLOG.\+Predicado.\+Predicado (\begin{DoxyParamCaption}\item[{string}]{texto\+Predicado}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a36ab0139e87b2aedba33b5884815df13}\index{parser.PROLOG.Predicado@{parser.PROLOG.Predicado}!Predicado@{Predicado}}
+\index{Predicado@{Predicado}!parser.PROLOG.Predicado@{parser.PROLOG.Predicado}}
+\doxysubsubsection{\texorpdfstring{Predicado()}{Predicado()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a36ab0139e87b2aedba33b5884815df13} 
+parser.\+PROLOG.\+Predicado.\+Predicado (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a68c301e9e6686a14b6c169645c543527}\index{parser.PROLOG.Predicado@{parser.PROLOG.Predicado}!AdicionaPredicados@{AdicionaPredicados}}
+\index{AdicionaPredicados@{AdicionaPredicados}!parser.PROLOG.Predicado@{parser.PROLOG.Predicado}}
+\doxysubsubsection{\texorpdfstring{AdicionaPredicados()}{AdicionaPredicados()}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a68c301e9e6686a14b6c169645c543527} 
+static void parser.\+PROLOG.\+Predicado.\+Adiciona\+Predicados (\begin{DoxyParamCaption}\item[{params string\mbox{[}$\,$\mbox{]}}]{textos\+Predicados}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+adiciona uma lista de predicados, na forma de textos, para a base de conhecimento. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em textos\+Predicados} & linhas de texto descrevendo os Predicados.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a0699dce7242deb2c8ddb2bd38bcd60d9}\index{parser.PROLOG.Predicado@{parser.PROLOG.Predicado}!AdicionaUmPredicado@{AdicionaUmPredicado}}
+\index{AdicionaUmPredicado@{AdicionaUmPredicado}!parser.PROLOG.Predicado@{parser.PROLOG.Predicado}}
+\doxysubsubsection{\texorpdfstring{AdicionaUmPredicado()}{AdicionaUmPredicado()}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a0699dce7242deb2c8ddb2bd38bcd60d9} 
+static bool parser.\+PROLOG.\+Predicado.\+Adiciona\+Um\+Predicado (\begin{DoxyParamCaption}\item[{string}]{texto}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+adiciona um \doxylink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado} para a base de conhecimento, a partir da linha de texto contendo o \doxylink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texto} & linha de texto descrevendo o \doxylink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}true\mbox{]} se a adição foi realizada, \mbox{[}false\mbox{]} se ocorreu algum problema.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a46b36e3b54d90ba774dbe73c0f8f830d}\index{parser.PROLOG.Predicado@{parser.PROLOG.Predicado}!Clone@{Clone}}
+\index{Clone@{Clone}!parser.PROLOG.Predicado@{parser.PROLOG.Predicado}}
+\doxysubsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a46b36e3b54d90ba774dbe73c0f8f830d} 
+\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}} parser.\+PROLOG.\+Predicado.\+Clone (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_predicado_aa621b65b56d2e3161c2773c2127c49f5}\index{parser.PROLOG.Predicado@{parser.PROLOG.Predicado}!EqualsPredicado@{EqualsPredicado}}
+\index{EqualsPredicado@{EqualsPredicado}!parser.PROLOG.Predicado@{parser.PROLOG.Predicado}}
+\doxysubsubsection{\texorpdfstring{EqualsPredicado()}{EqualsPredicado()}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_predicado_aa621b65b56d2e3161c2773c2127c49f5} 
+bool parser.\+PROLOG.\+Predicado.\+Equals\+Predicado (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}}}]{p1}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a44252b61033da67ec9f0b06c37b249d3}\index{parser.PROLOG.Predicado@{parser.PROLOG.Predicado}!ExtraiDeTextoUmPredicado@{ExtraiDeTextoUmPredicado}}
+\index{ExtraiDeTextoUmPredicado@{ExtraiDeTextoUmPredicado}!parser.PROLOG.Predicado@{parser.PROLOG.Predicado}}
+\doxysubsubsection{\texorpdfstring{ExtraiDeTextoUmPredicado()}{ExtraiDeTextoUmPredicado()}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a44252b61033da67ec9f0b06c37b249d3} 
+static List$<$ string $>$ parser.\+PROLOG.\+Predicado.\+Extrai\+De\+Texto\+Um\+Predicado (\begin{DoxyParamCaption}\item[{string}]{texto}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Obtém tokens a partir de um texto, a partir de termos-\/chave da linguagem Prolog. Utiliza a classe Parser\+Universal, através da classe \doxylink{classparser_1_1_tokens}{Tokens}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texto} & texto a ter retirado os tokens.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna uma lista com tokens da linguagem Prolog.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a4cb82fe4110ab8f3e546ded1d8326c69}\index{parser.PROLOG.Predicado@{parser.PROLOG.Predicado}!GetAtomos@{GetAtomos}}
+\index{GetAtomos@{GetAtomos}!parser.PROLOG.Predicado@{parser.PROLOG.Predicado}}
+\doxysubsubsection{\texorpdfstring{GetAtomos()}{GetAtomos()}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a4cb82fe4110ab8f3e546ded1d8326c69} 
+List$<$ string $>$ parser.\+PROLOG.\+Predicado.\+Get\+Atomos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a271545c87b0cf6e059eca277dead4c3b}\index{parser.PROLOG.Predicado@{parser.PROLOG.Predicado}!GetPredicado@{GetPredicado}}
+\index{GetPredicado@{GetPredicado}!parser.PROLOG.Predicado@{parser.PROLOG.Predicado}}
+\doxysubsubsection{\texorpdfstring{GetPredicado()}{GetPredicado()}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a271545c87b0cf6e059eca277dead4c3b} 
+static \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}} parser.\+PROLOG.\+Predicado.\+Get\+Predicado (\begin{DoxyParamCaption}\item[{string}]{texto}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+obtém um \doxylink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado} a partir de uma linha de texto.\+O \doxylink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado} não é adicionado à base de conhecimento. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texto} & linha de texto descrevendo o \doxylink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna um objeto \doxylink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}, a partir da linha de texto.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a7bac692b3dd9731af02c909244766448}\index{parser.PROLOG.Predicado@{parser.PROLOG.Predicado}!IsVariavel@{IsVariavel}}
+\index{IsVariavel@{IsVariavel}!parser.PROLOG.Predicado@{parser.PROLOG.Predicado}}
+\doxysubsubsection{\texorpdfstring{IsVariavel()}{IsVariavel()}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a7bac692b3dd9731af02c909244766448} 
+static bool parser.\+PROLOG.\+Predicado.\+Is\+Variavel (\begin{DoxyParamCaption}\item[{string}]{atomo}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_predicado_acb6e7227968434f9e2ef001af76d5692}\index{parser.PROLOG.Predicado@{parser.PROLOG.Predicado}!IsVariavelAnonima@{IsVariavelAnonima}}
+\index{IsVariavelAnonima@{IsVariavelAnonima}!parser.PROLOG.Predicado@{parser.PROLOG.Predicado}}
+\doxysubsubsection{\texorpdfstring{IsVariavelAnonima()}{IsVariavelAnonima()}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_predicado_acb6e7227968434f9e2ef001af76d5692} 
+static bool parser.\+PROLOG.\+Predicado.\+Is\+Variavel\+Anonima (\begin{DoxyParamCaption}\item[{string}]{variavel}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a01f8a4643d86f14dae814f307313ece5}\index{parser.PROLOG.Predicado@{parser.PROLOG.Predicado}!Match@{Match}}
+\index{Match@{Match}!parser.PROLOG.Predicado@{parser.PROLOG.Predicado}}
+\doxysubsubsection{\texorpdfstring{Match()}{Match()}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a01f8a4643d86f14dae814f307313ece5} 
+bool parser.\+PROLOG.\+Predicado.\+Match (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}}}]{predicado\+Para\+Match}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_predicado_af32343003233569281897499f99d22f9}\index{parser.PROLOG.Predicado@{parser.PROLOG.Predicado}!RetiraVariaveis@{RetiraVariaveis}}
+\index{RetiraVariaveis@{RetiraVariaveis}!parser.PROLOG.Predicado@{parser.PROLOG.Predicado}}
+\doxysubsubsection{\texorpdfstring{RetiraVariaveis()}{RetiraVariaveis()}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_predicado_af32343003233569281897499f99d22f9} 
+List$<$ string $>$ parser.\+PROLOG.\+Predicado.\+Retira\+Variaveis (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+retira as variáveis do predicado. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_predicado_aaca0a96eb5c05b2c740ce35ad661171e}\index{parser.PROLOG.Predicado@{parser.PROLOG.Predicado}!SetPredicado@{SetPredicado}}
+\index{SetPredicado@{SetPredicado}!parser.PROLOG.Predicado@{parser.PROLOG.Predicado}}
+\doxysubsubsection{\texorpdfstring{SetPredicado()}{SetPredicado()}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_predicado_aaca0a96eb5c05b2c740ce35ad661171e} 
+static \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}} parser.\+PROLOG.\+Predicado.\+Set\+Predicado (\begin{DoxyParamCaption}\item[{string}]{nome}{, }\item[{params string\mbox{[}$\,$\mbox{]}}]{atomos}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a4c061fd56cdf998e5ca658e0af071dca}\index{parser.PROLOG.Predicado@{parser.PROLOG.Predicado}!SetVariavel@{SetVariavel}}
+\index{SetVariavel@{SetVariavel}!parser.PROLOG.Predicado@{parser.PROLOG.Predicado}}
+\doxysubsubsection{\texorpdfstring{SetVariavel()}{SetVariavel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a4c061fd56cdf998e5ca658e0af071dca} 
+void parser.\+PROLOG.\+Predicado.\+Set\+Variavel (\begin{DoxyParamCaption}\item[{string}]{nome\+Da\+Variavel}{, }\item[{string}]{valor\+Da\+Variavel}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a4895c4a61efe97762435b70d09b84af0}\index{parser.PROLOG.Predicado@{parser.PROLOG.Predicado}!SetVariavel@{SetVariavel}}
+\index{SetVariavel@{SetVariavel}!parser.PROLOG.Predicado@{parser.PROLOG.Predicado}}
+\doxysubsubsection{\texorpdfstring{SetVariavel()}{SetVariavel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a4895c4a61efe97762435b70d09b84af0} 
+void parser.\+PROLOG.\+Predicado.\+Set\+Variavel (\begin{DoxyParamCaption}\item[{string}]{valor\+Da\+Variavel}{, }\item[{int}]{index\+Variavel}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a5ba783dbc46f11dab231d9a74b46a6c7}\index{parser.PROLOG.Predicado@{parser.PROLOG.Predicado}!ToString@{ToString}}
+\index{ToString@{ToString}!parser.PROLOG.Predicado@{parser.PROLOG.Predicado}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a5ba783dbc46f11dab231d9a74b46a6c7} 
+override string parser.\+PROLOG.\+Predicado.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a2e64916e6e6079f57bac935e3c0959a6}\index{parser.PROLOG.Predicado@{parser.PROLOG.Predicado}!Nome@{Nome}}
+\index{Nome@{Nome}!parser.PROLOG.Predicado@{parser.PROLOG.Predicado}}
+\doxysubsubsection{\texorpdfstring{Nome}{Nome}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a2e64916e6e6079f57bac935e3c0959a6} 
+string parser.\+PROLOG.\+Predicado.\+Nome\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+MÓ\+DULO PREDICADO FUNCIONALIDADES EXPORTADOS\+: 1-\/ PREDICADO()\+: CONSTRÓI UM PREDICADO SEM VALORES. 2-\/ CONSTRUTOR PREDICADO(\+TEXTO)\+: CONSTRÓI UM PREDICADO A PARTIR DE UM TEXTO. 3-\/ CONSTRUTOR PREDICADO(\+PREDICADO)\+: CONSTRÓI UM PREDICADO A PARTIR DE UM PREDICADO DE ENTRADA. 4-\/ ADICIONA\+\_\+\+PREDICADOS(\+TEXTO\mbox{[}$\,$\mbox{]})\+: RETIRA PREDICADOS DE UM VETOR DE TEXTOS, E OS ADICIONA À BASE DE CONHECIMENTO. 5-\/ ADICIONA\+\_\+\+UM\+\_\+\+PREDICADO(\+TEXTO)\+: CONSTRÓI UM PREDICADO E O ADICIONA À BASE DE CONHECIMENTO. 6-\/ SET\+\_\+\+PREDICADO()\+: RETORNA UM PREDICADO A PARTIR DE UM TEXTO NOME E UM VETOR DE TEXTOS Á\+TOMOS. 7-\/ GET\+\_\+\+PREDICADO(\+TEXTO)\+: RETORNA UM PREDICADO A PARTIR DE UM TEXTO DE ENTRADA. 8-\/ GETATOMOS()\+: RETORNA O CONJUNTO DE Á\+TOMOS DO PREDICADO.(UM Á\+TOMO É A MENOR PARTE DE UMA ESTRUTURA \doxylink{namespaceparser_1_1_p_r_o_l_o_g}{PROLOG}. PODE SER UMA VARIÁ\+VEL OU VALOR. 9-\/ MATCH(\+PREDICADO)\+: VERIFICA SE O PREDICADO DE ENTRADA COMBINA COM O PREDICADO QUE CHAMOU O MÉ\+TODO. (COMBINAR É VERIFICAR SE TEM O MESMO NOME, E MESMOS Á\+TOMOS QUE NÃO SÃO VARIÁ\+VEIS). 10-\/ IS\+\_\+\+VARIAVEL\+\_\+\+ANONIMA(\+TEXTO)\+: VERIFICA SE O TEXTO DE ENTRADA É UMA VARIÁ\+VEL ANÔ\+NIMA. 11-\/ RETIRA\+\_\+\+VARIAVEIS\+: RETORNA UMA LISTA DAS VARIÁ\+VEIS CONTIDAS NO PREDICADO. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/componentes\+De\+Interpretadores\+ECompiladores/\+PROLOG/\mbox{\hyperlink{_predicado_8cs}{Predicado.\+cs}}\end{DoxyCompactItemize}

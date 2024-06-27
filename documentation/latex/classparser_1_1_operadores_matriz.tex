@@ -1,0 +1,153 @@
+\doxysection{parser.\+Operadores\+Matriz Class Reference}
+\hypertarget{classparser_1_1_operadores_matriz}{}\label{classparser_1_1_operadores_matriz}\index{parser.OperadoresMatriz@{parser.OperadoresMatriz}}
+Inheritance diagram for parser.\+Operadores\+Matriz\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classparser_1_1_operadores_matriz}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparser_1_1_operadores_matriz_af0ace602b2b6b5707adb73416f4cd8d2}{Operadores\+Matriz}} ()
+\item 
+float \mbox{\hyperlink{classparser_1_1_operadores_matriz_a762cf85f0b4e45aa249e736ca5bcdc3f}{Get\+Element}} (int lin, int col)
+\item 
+void \mbox{\hyperlink{classparser_1_1_operadores_matriz_a5a086e373004ccd0ec9673ff065b1ac7}{Set\+Element}} (int lin, int col, object valor)
+\item 
+object \mbox{\hyperlink{classparser_1_1_operadores_matriz_ad574486e9d9355a62b09d293710614fd}{Maior}} (\mbox{\hyperlink{classparser_1_1_matriz}{Matriz}} m1, \mbox{\hyperlink{classparser_1_1_matriz}{Matriz}} m2)
+\item 
+object \mbox{\hyperlink{classparser_1_1_operadores_matriz_aab35d36112adad9c0d34b1d444f7d88a}{Maior\+Ou\+Igual}} (\mbox{\hyperlink{classparser_1_1_matriz}{Matriz}} m1, \mbox{\hyperlink{classparser_1_1_matriz}{Matriz}} m2)
+\item 
+object \mbox{\hyperlink{classparser_1_1_operadores_matriz_a07d258c5c6a4e2c59e0dc2e0f184d2f4}{Menor}} (\mbox{\hyperlink{classparser_1_1_matriz}{Matriz}} m1, \mbox{\hyperlink{classparser_1_1_matriz}{Matriz}} m2)
+\item 
+object \mbox{\hyperlink{classparser_1_1_operadores_matriz_a470f86aa72d391dae1236472c9e6a394}{Menor\+Ou\+Igual}} (\mbox{\hyperlink{classparser_1_1_matriz}{Matriz}} m1, \mbox{\hyperlink{classparser_1_1_matriz}{Matriz}} m2)
+\item 
+object \mbox{\hyperlink{classparser_1_1_operadores_matriz_a149793b1ea52258970aaa52549ce6891}{Comparacao\+Igual}} (\mbox{\hyperlink{classparser_1_1_matriz}{Matriz}} m1, \mbox{\hyperlink{classparser_1_1_matriz}{Matriz}} m2)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classparser_1_1_operadores_implementacao}{parser.\+Operadores\+Implementacao}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparser_1_1_operadores_implementacao_a9b7bccfd8d82e767421c8a1fcc0662e3}{Operadores\+Implementacao}} (string name\+Assembly, string name\+Class\+With\+Operators)
+\begin{DoxyCompactList}\small\item\em obtem o assembly que contem os tipos com metodos de operadores. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_operadores_implementacao_ad4213c879983bd8ab2adfa326457bba5}{Operadores\+Implementacao}} ()
+\item 
+\mbox{\hyperlink{classparser_1_1_operador}{Operador}} \mbox{\hyperlink{classparser_1_1_operadores_implementacao_a7289f4c4f487beb377feedda3a746caa}{Get\+Operator\+Com\+Metodo\+Importado}} (string name\+Class\+Operator, string class\+Operadores, string name\+Method\+Impl, string name\+Operator\+In\+Orquidea, int prioridade)
+\begin{DoxyCompactList}\small\item\em constroi um operador a partir da metodos importados da classe base. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_operadores_implementacao_a7350936c8cc4c409957d83d6f46510b3}{Get\+Operators}} ()
+\begin{DoxyCompactList}\small\item\em metodo principal\+: obtem os metodos implementadores, e instancia os operadores orquidea. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_metodo}{Metodo}} $>$ \mbox{\hyperlink{classparser_1_1_operadores_implementacao_ac0524f3d7b123568543f15fe3479cefc}{Get\+Implementacao}} (string classe\+Operador)
+\begin{DoxyCompactList}\small\item\em obtem a implementação do operador, de função importada da classe base. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_operadores_implementacao_af6b1eafae18e41eaaf677bd5931c0180}{Adiciona\+Operador\+Nativo}} (string nome\+Operador, Method\+Info um\+Metodo\+Impl, int prioridade, string classe\+Do\+Operador)
+\begin{DoxyCompactList}\small\item\em permite a extensão de operadores, com importação da função que executa o operador, atraves de reflexão. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classparser_1_1_matriz}{Matriz}} \mbox{\hyperlink{classparser_1_1_operadores_matriz_adda15271bdde14946d1509a6d639ca15}{Get\+Matriz}} (\mbox{\hyperlink{classparser_1_1_matriz}{Matriz}} M)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparser_1_1_matriz}{Matriz}} \mbox{\hyperlink{classparser_1_1_operadores_matriz_ab5a3b4d9d343813352d67a7b724b1d34}{mt\+Main}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classparser_1_1_operadores_implementacao}{parser.\+Operadores\+Implementacao}}}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classparser_1_1_operadores_implementacao_a679098d65d8ed73a903f406ae69dfb8d}{nome}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classparser_1_1_operadores_implementacao}{parser.\+Operadores\+Implementacao}}}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \mbox{\hyperlink{classparser_1_1_metodo}{Metodo}} $>$ \mbox{\hyperlink{classparser_1_1_operadores_implementacao_ae1d03e4b30debbbe58f05580761f85a3}{funcao\+Impl\+Operadores}} = new List$<$\mbox{\hyperlink{classparser_1_1_metodo}{Metodo}}$>$()
+\item 
+static List$<$ Method\+Info $>$ \mbox{\hyperlink{classparser_1_1_operadores_implementacao_a503a2b224030e820a6e67cf53caf281a}{metodos\+Impl}} = new List$<$Method\+Info$>$()
+\item 
+static List$<$ \mbox{\hyperlink{classparser_1_1_operador}{Operador}} $>$ \mbox{\hyperlink{classparser_1_1_operadores_implementacao_a0fc06d12ec7a2115fbd9f6e924863a77}{operadores\+Int}} = new List$<$\mbox{\hyperlink{classparser_1_1_operador}{Operador}}$>$()
+\item 
+static List$<$ \mbox{\hyperlink{classparser_1_1_operador}{Operador}} $>$ \mbox{\hyperlink{classparser_1_1_operadores_implementacao_a7c2d56c23ecb394cbaaa1915b62ba60d}{operadores\+Double}} = new List$<$\mbox{\hyperlink{classparser_1_1_operador}{Operador}}$>$()
+\item 
+static List$<$ \mbox{\hyperlink{classparser_1_1_operador}{Operador}} $>$ \mbox{\hyperlink{classparser_1_1_operadores_implementacao_a604a0014ed3b31147aed2d22c42390ed}{operadores\+Float}} = new List$<$\mbox{\hyperlink{classparser_1_1_operador}{Operador}}$>$()
+\item 
+static List$<$ \mbox{\hyperlink{classparser_1_1_operador}{Operador}} $>$ \mbox{\hyperlink{classparser_1_1_operadores_implementacao_a8543db7fa33c9d1f5d5d71fa3a1030ce}{operadores\+String}} = new List$<$\mbox{\hyperlink{classparser_1_1_operador}{Operador}}$>$()
+\item 
+static List$<$ \mbox{\hyperlink{classparser_1_1_operador}{Operador}} $>$ \mbox{\hyperlink{classparser_1_1_operadores_implementacao_ae3e885563b67d168e4a6c0c450566b3b}{operadores\+Char}} = new List$<$\mbox{\hyperlink{classparser_1_1_operador}{Operador}}$>$()
+\item 
+static List$<$ \mbox{\hyperlink{classparser_1_1_operador}{Operador}} $>$ \mbox{\hyperlink{classparser_1_1_operadores_implementacao_a7b6b0bc94927c0789e6af88fd6b0b840}{operadores\+Boolean}} = new List$<$\mbox{\hyperlink{classparser_1_1_operador}{Operador}}$>$()
+\item 
+static List$<$ \mbox{\hyperlink{classparser_1_1_operador}{Operador}} $>$ \mbox{\hyperlink{classparser_1_1_operadores_implementacao_a76fd1bf1cb463efb65acb97b3ef6be04}{operadores\+Matriz}} = new List$<$\mbox{\hyperlink{classparser_1_1_operador}{Operador}}$>$()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classparser_1_1_operadores_matriz_af0ace602b2b6b5707adb73416f4cd8d2}\index{parser.OperadoresMatriz@{parser.OperadoresMatriz}!OperadoresMatriz@{OperadoresMatriz}}
+\index{OperadoresMatriz@{OperadoresMatriz}!parser.OperadoresMatriz@{parser.OperadoresMatriz}}
+\doxysubsubsection{\texorpdfstring{OperadoresMatriz()}{OperadoresMatriz()}}
+{\footnotesize\ttfamily \label{classparser_1_1_operadores_matriz_af0ace602b2b6b5707adb73416f4cd8d2} 
+parser.\+Operadores\+Matriz.\+Operadores\+Matriz (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_operadores_matriz_a149793b1ea52258970aaa52549ce6891}\index{parser.OperadoresMatriz@{parser.OperadoresMatriz}!ComparacaoIgual@{ComparacaoIgual}}
+\index{ComparacaoIgual@{ComparacaoIgual}!parser.OperadoresMatriz@{parser.OperadoresMatriz}}
+\doxysubsubsection{\texorpdfstring{ComparacaoIgual()}{ComparacaoIgual()}}
+{\footnotesize\ttfamily \label{classparser_1_1_operadores_matriz_a149793b1ea52258970aaa52549ce6891} 
+object parser.\+Operadores\+Matriz.\+Comparacao\+Igual (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_matriz}{Matriz}}}]{m1}{, }\item[{\mbox{\hyperlink{classparser_1_1_matriz}{Matriz}}}]{m2}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_operadores_matriz_a762cf85f0b4e45aa249e736ca5bcdc3f}\index{parser.OperadoresMatriz@{parser.OperadoresMatriz}!GetElement@{GetElement}}
+\index{GetElement@{GetElement}!parser.OperadoresMatriz@{parser.OperadoresMatriz}}
+\doxysubsubsection{\texorpdfstring{GetElement()}{GetElement()}}
+{\footnotesize\ttfamily \label{classparser_1_1_operadores_matriz_a762cf85f0b4e45aa249e736ca5bcdc3f} 
+float parser.\+Operadores\+Matriz.\+Get\+Element (\begin{DoxyParamCaption}\item[{int}]{lin}{, }\item[{int}]{col}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_operadores_matriz_adda15271bdde14946d1509a6d639ca15}\index{parser.OperadoresMatriz@{parser.OperadoresMatriz}!GetMatriz@{GetMatriz}}
+\index{GetMatriz@{GetMatriz}!parser.OperadoresMatriz@{parser.OperadoresMatriz}}
+\doxysubsubsection{\texorpdfstring{GetMatriz()}{GetMatriz()}}
+{\footnotesize\ttfamily \label{classparser_1_1_operadores_matriz_adda15271bdde14946d1509a6d639ca15} 
+static \mbox{\hyperlink{classparser_1_1_matriz}{Matriz}} parser.\+Operadores\+Matriz.\+Get\+Matriz (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_matriz}{Matriz}}}]{M}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_operadores_matriz_ad574486e9d9355a62b09d293710614fd}\index{parser.OperadoresMatriz@{parser.OperadoresMatriz}!Maior@{Maior}}
+\index{Maior@{Maior}!parser.OperadoresMatriz@{parser.OperadoresMatriz}}
+\doxysubsubsection{\texorpdfstring{Maior()}{Maior()}}
+{\footnotesize\ttfamily \label{classparser_1_1_operadores_matriz_ad574486e9d9355a62b09d293710614fd} 
+object parser.\+Operadores\+Matriz.\+Maior (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_matriz}{Matriz}}}]{m1}{, }\item[{\mbox{\hyperlink{classparser_1_1_matriz}{Matriz}}}]{m2}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_operadores_matriz_aab35d36112adad9c0d34b1d444f7d88a}\index{parser.OperadoresMatriz@{parser.OperadoresMatriz}!MaiorOuIgual@{MaiorOuIgual}}
+\index{MaiorOuIgual@{MaiorOuIgual}!parser.OperadoresMatriz@{parser.OperadoresMatriz}}
+\doxysubsubsection{\texorpdfstring{MaiorOuIgual()}{MaiorOuIgual()}}
+{\footnotesize\ttfamily \label{classparser_1_1_operadores_matriz_aab35d36112adad9c0d34b1d444f7d88a} 
+object parser.\+Operadores\+Matriz.\+Maior\+Ou\+Igual (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_matriz}{Matriz}}}]{m1}{, }\item[{\mbox{\hyperlink{classparser_1_1_matriz}{Matriz}}}]{m2}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_operadores_matriz_a07d258c5c6a4e2c59e0dc2e0f184d2f4}\index{parser.OperadoresMatriz@{parser.OperadoresMatriz}!Menor@{Menor}}
+\index{Menor@{Menor}!parser.OperadoresMatriz@{parser.OperadoresMatriz}}
+\doxysubsubsection{\texorpdfstring{Menor()}{Menor()}}
+{\footnotesize\ttfamily \label{classparser_1_1_operadores_matriz_a07d258c5c6a4e2c59e0dc2e0f184d2f4} 
+object parser.\+Operadores\+Matriz.\+Menor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_matriz}{Matriz}}}]{m1}{, }\item[{\mbox{\hyperlink{classparser_1_1_matriz}{Matriz}}}]{m2}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_operadores_matriz_a470f86aa72d391dae1236472c9e6a394}\index{parser.OperadoresMatriz@{parser.OperadoresMatriz}!MenorOuIgual@{MenorOuIgual}}
+\index{MenorOuIgual@{MenorOuIgual}!parser.OperadoresMatriz@{parser.OperadoresMatriz}}
+\doxysubsubsection{\texorpdfstring{MenorOuIgual()}{MenorOuIgual()}}
+{\footnotesize\ttfamily \label{classparser_1_1_operadores_matriz_a470f86aa72d391dae1236472c9e6a394} 
+object parser.\+Operadores\+Matriz.\+Menor\+Ou\+Igual (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_matriz}{Matriz}}}]{m1}{, }\item[{\mbox{\hyperlink{classparser_1_1_matriz}{Matriz}}}]{m2}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_operadores_matriz_a5a086e373004ccd0ec9673ff065b1ac7}\index{parser.OperadoresMatriz@{parser.OperadoresMatriz}!SetElement@{SetElement}}
+\index{SetElement@{SetElement}!parser.OperadoresMatriz@{parser.OperadoresMatriz}}
+\doxysubsubsection{\texorpdfstring{SetElement()}{SetElement()}}
+{\footnotesize\ttfamily \label{classparser_1_1_operadores_matriz_a5a086e373004ccd0ec9673ff065b1ac7} 
+void parser.\+Operadores\+Matriz.\+Set\+Element (\begin{DoxyParamCaption}\item[{int}]{lin}{, }\item[{int}]{col}{, }\item[{object}]{valor}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classparser_1_1_operadores_matriz_ab5a3b4d9d343813352d67a7b724b1d34}\index{parser.OperadoresMatriz@{parser.OperadoresMatriz}!mtMain@{mtMain}}
+\index{mtMain@{mtMain}!parser.OperadoresMatriz@{parser.OperadoresMatriz}}
+\doxysubsubsection{\texorpdfstring{mtMain}{mtMain}}
+{\footnotesize\ttfamily \label{classparser_1_1_operadores_matriz_ab5a3b4d9d343813352d67a7b724b1d34} 
+\mbox{\hyperlink{classparser_1_1_matriz}{Matriz}} parser.\+Operadores\+Matriz.\+mt\+Main}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/componentes\+De\+Interpretadores\+ECompiladores/\+PROGRAMACAO ORIENTADA A OBJETOS/\mbox{\hyperlink{_operadores_nativos_8cs}{Operadores\+Nativos.\+cs}}\end{DoxyCompactItemize}

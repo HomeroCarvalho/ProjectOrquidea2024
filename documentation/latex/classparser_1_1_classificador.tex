@@ -1,0 +1,307 @@
+\doxysection{parser.\+Classificador Class Reference}
+\hypertarget{classparser_1_1_classificador}{}\label{classparser_1_1_classificador}\index{parser.Classificador@{parser.Classificador}}
+
+
+classe que classifica tokens.  
+
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classparser_1_1_classificador_1_1_tabela_hash}{Tabela\+Hash}}
+\begin{DoxyCompactList}\small\item\em tabela hash de procura de tipos de tokens. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classparser_1_1_classificador_1_1_testes}{Testes}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classparser_1_1_classificador_a3291f4e79071230b4e957d5b667156bc}{Get\+Class\+To\+Remove}} ()
+\begin{DoxyCompactList}\small\item\em obtem classes a remover do classificador. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_classificador_a2500e00cd337b8868d8e36302188bccb}{Load\+Code\+From\+Headers}} (string code)
+\begin{DoxyCompactList}\small\item\em processamento de nomes de classes, metodos, propriedades, operadores. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_classificador_af53f5c98f1a6d9d7fa086de98d4b5c6a}{Load\+Code\+From\+Headers}} (List$<$ string $>$ tokens)
+\begin{DoxyCompactList}\small\item\em processamento de nomes de classes, metodos, propriedades, operadores. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_element_token}{Element\+Token}} $>$ \mbox{\hyperlink{classparser_1_1_classificador_a4b86be05082ceea1af9e2c1c9873e396}{Get\+Data\+Token}} (string token)
+\begin{DoxyCompactList}\small\item\em obtem dados do token parametro. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfd}{Element\+Token.\+type\+Token}} \mbox{\hyperlink{classparser_1_1_classificador_a6d1b3ce347ed0b0c6373bf7634b4e689}{Get\+Type\+Token}} (string token)
+\begin{DoxyCompactList}\small\item\em retorna o tipo de token vindo da classificação. se um token nao for nome de classe, nome de metodo, nome de propriedade, ou nome de operador, entao é um nome de objeto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_classificador_afba202f5f37f4ad5a03379fd7fb8b29a}{Print\+Results}} ()
+\begin{DoxyCompactList}\small\item\em resumo no terminal dos tokens das classes no classificador. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classparser_1_1_classificador}{Classificador}} \mbox{\hyperlink{classparser_1_1_classificador_a7eb5f25c1f88eb89c7e1b640a8aa8f64}{Instance}} ()
+\begin{DoxyCompactList}\small\item\em singleton do classificador. o classificador é um objeto único no código. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classparser_1_1_classificador_a0bd0ef53ec0806e49b273896018b08ec}{is\+Literal}} (string token)
+\begin{DoxyCompactList}\small\item\em verifica se um token é uma literal (constante de texto). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_classificador_ab7137f9391011567cf2c19fa4d9aa131}{nomes\+De\+Classes}} = new List$<$string$>$()
+\begin{DoxyCompactList}\small\item\em lista de nomes de classes verificadas. \end{DoxyCompactList}\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_classificador_a7a2eaa6527d16bb58bfbe1479e6f61c8}{nomes\+De\+Funcoes}} = new List$<$string$>$()
+\begin{DoxyCompactList}\small\item\em lista de nomes de metodos verificados. \end{DoxyCompactList}\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_classificador_af6971feb8626e907b9cd7fe7cd224885}{nomes\+De\+Propriedades}} = new List$<$string$>$()
+\begin{DoxyCompactList}\small\item\em lista de nomes de propriedades verificados. \end{DoxyCompactList}\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_classificador_aefdcdfbf93b529c55a47d8c23104c3f6}{nomes\+De\+Objetos}} = new List$<$string$>$()
+\begin{DoxyCompactList}\small\item\em lista de nomes de objetos. \end{DoxyCompactList}\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_classificador_a8a6993c4add270a21a0402ae7787fa6d}{nomes\+De\+Operadores}} = new List$<$string$>$()
+\begin{DoxyCompactList}\small\item\em lista de nomes de operadores. \end{DoxyCompactList}\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_classificador_a6db1db19013170f9289141af15c2a493}{nomes\+De\+Termos\+Chave}} = new List$<$string$>$()
+\begin{DoxyCompactList}\small\item\em lista de nomes de termos-\/chave. \end{DoxyCompactList}\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_classificador_a89dee230d733cb19e4d43139ed57d58e}{nomes\+Operadores\+Termos\+Chave}} = new List$<$string$>$()
+\begin{DoxyCompactList}\small\item\em lista de nomes de operadores, contidos em classes orquidea, classes importados. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_element_token}{Element\+Token}} $>$ \mbox{\hyperlink{classparser_1_1_classificador_a05eee7d86e005e4f98ba3d6ea9b377ae}{elementos}} = new List$<$\mbox{\hyperlink{classparser_1_1_element_token}{Element\+Token}}$>$()
+\begin{DoxyCompactList}\small\item\em lista de elementos de tokens, contendo dados como nomes de\+: tipos, classes, metodos, propriedades, operadores, objetos. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_element_token}{Element\+Token}} $>$ \mbox{\hyperlink{classparser_1_1_classificador_a011ded0151f4c9f7b839da494218024a}{elementos\+Linguagem\+Orquidea}} = new List$<$\mbox{\hyperlink{classparser_1_1_element_token}{Element\+Token}}$>$()
+\begin{DoxyCompactList}\small\item\em lista de elementos de tokens de classes orquidea. \end{DoxyCompactList}\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_classificador_a52c4797c6aed1454cec8260d04f4f67a}{classes\+ARemover}} = new List$<$string$>$()
+\begin{DoxyCompactList}\small\item\em lista de nomes de classes a remover, ante a novo processamento de header; \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classparser_1_1_classificador_a4a659c95adcd195933c4cdd642f3210a}{is\+Load\+CLass\+Orquidea}} = true
+\begin{DoxyCompactList}\small\item\em se true, classes orquidea já foram processados. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+classe que classifica tokens. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_classificador_a3291f4e79071230b4e957d5b667156bc}\index{parser.Classificador@{parser.Classificador}!GetClassToRemove@{GetClassToRemove}}
+\index{GetClassToRemove@{GetClassToRemove}!parser.Classificador@{parser.Classificador}}
+\doxysubsubsection{\texorpdfstring{GetClassToRemove()}{GetClassToRemove()}}
+{\footnotesize\ttfamily \label{classparser_1_1_classificador_a3291f4e79071230b4e957d5b667156bc} 
+void parser.\+Classificador.\+Get\+Class\+To\+Remove (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+obtem classes a remover do classificador. 
+
+\Hypertarget{classparser_1_1_classificador_a4b86be05082ceea1af9e2c1c9873e396}\index{parser.Classificador@{parser.Classificador}!GetDataToken@{GetDataToken}}
+\index{GetDataToken@{GetDataToken}!parser.Classificador@{parser.Classificador}}
+\doxysubsubsection{\texorpdfstring{GetDataToken()}{GetDataToken()}}
+{\footnotesize\ttfamily \label{classparser_1_1_classificador_a4b86be05082ceea1af9e2c1c9873e396} 
+List$<$ \mbox{\hyperlink{classparser_1_1_element_token}{Element\+Token}} $>$ parser.\+Classificador.\+Get\+Data\+Token (\begin{DoxyParamCaption}\item[{string}]{token}{}\end{DoxyParamCaption})}
+
+
+
+obtem dados do token parametro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & token a analisar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_classificador_a6d1b3ce347ed0b0c6373bf7634b4e689}\index{parser.Classificador@{parser.Classificador}!GetTypeToken@{GetTypeToken}}
+\index{GetTypeToken@{GetTypeToken}!parser.Classificador@{parser.Classificador}}
+\doxysubsubsection{\texorpdfstring{GetTypeToken()}{GetTypeToken()}}
+{\footnotesize\ttfamily \label{classparser_1_1_classificador_a6d1b3ce347ed0b0c6373bf7634b4e689} 
+\mbox{\hyperlink{classparser_1_1_element_token_a215ad7fbbd42a0ea6978dae9e6523bfd}{Element\+Token.\+type\+Token}} parser.\+Classificador.\+Get\+Type\+Token (\begin{DoxyParamCaption}\item[{string}]{token}{}\end{DoxyParamCaption})}
+
+
+
+retorna o tipo de token vindo da classificação. se um token nao for nome de classe, nome de metodo, nome de propriedade, ou nome de operador, entao é um nome de objeto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & token a obter classficacao.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna o tipo do token, ou nao-\/classificado, se o token for null, ou os elementos nao foram retirados.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_classificador_a7eb5f25c1f88eb89c7e1b640a8aa8f64}\index{parser.Classificador@{parser.Classificador}!Instance@{Instance}}
+\index{Instance@{Instance}!parser.Classificador@{parser.Classificador}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily \label{classparser_1_1_classificador_a7eb5f25c1f88eb89c7e1b640a8aa8f64} 
+static \mbox{\hyperlink{classparser_1_1_classificador}{Classificador}} parser.\+Classificador.\+Instance (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+singleton do classificador. o classificador é um objeto único no código. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_classificador_a0bd0ef53ec0806e49b273896018b08ec}\index{parser.Classificador@{parser.Classificador}!isLiteral@{isLiteral}}
+\index{isLiteral@{isLiteral}!parser.Classificador@{parser.Classificador}}
+\doxysubsubsection{\texorpdfstring{isLiteral()}{isLiteral()}}
+{\footnotesize\ttfamily \label{classparser_1_1_classificador_a0bd0ef53ec0806e49b273896018b08ec} 
+static bool parser.\+Classificador.\+is\+Literal (\begin{DoxyParamCaption}\item[{string}]{token}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+verifica se um token é uma literal (constante de texto). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & token a verificar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}true\mbox{]} se o token é uma literal.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_classificador_af53f5c98f1a6d9d7fa086de98d4b5c6a}\index{parser.Classificador@{parser.Classificador}!LoadCodeFromHeaders@{LoadCodeFromHeaders}}
+\index{LoadCodeFromHeaders@{LoadCodeFromHeaders}!parser.Classificador@{parser.Classificador}}
+\doxysubsubsection{\texorpdfstring{LoadCodeFromHeaders()}{LoadCodeFromHeaders()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_classificador_af53f5c98f1a6d9d7fa086de98d4b5c6a} 
+void parser.\+Classificador.\+Load\+Code\+From\+Headers (\begin{DoxyParamCaption}\item[{List$<$ string $>$}]{tokens}{}\end{DoxyParamCaption})}
+
+
+
+processamento de nomes de classes, metodos, propriedades, operadores. 
+
+1-\/ nao le classes orquidea base, se ja estão nos elementos do classificador. se não estão, faz o processamento. 2-\/ remove classes de mesmo nome, anteriores, armazenada nos elementos do classificador. 3-\/ le a classes dos headers vindo do cenario de teste currente, e dá processamento, armazenando no classificador.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tokens} & lista de tokens contendo definicoes de classes.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_classificador_a2500e00cd337b8868d8e36302188bccb}\index{parser.Classificador@{parser.Classificador}!LoadCodeFromHeaders@{LoadCodeFromHeaders}}
+\index{LoadCodeFromHeaders@{LoadCodeFromHeaders}!parser.Classificador@{parser.Classificador}}
+\doxysubsubsection{\texorpdfstring{LoadCodeFromHeaders()}{LoadCodeFromHeaders()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_classificador_a2500e00cd337b8868d8e36302188bccb} 
+void parser.\+Classificador.\+Load\+Code\+From\+Headers (\begin{DoxyParamCaption}\item[{string}]{code}{}\end{DoxyParamCaption})}
+
+
+
+processamento de nomes de classes, metodos, propriedades, operadores. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & texto contendo definicoes de classes.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_classificador_afba202f5f37f4ad5a03379fd7fb8b29a}\index{parser.Classificador@{parser.Classificador}!PrintResults@{PrintResults}}
+\index{PrintResults@{PrintResults}!parser.Classificador@{parser.Classificador}}
+\doxysubsubsection{\texorpdfstring{PrintResults()}{PrintResults()}}
+{\footnotesize\ttfamily \label{classparser_1_1_classificador_afba202f5f37f4ad5a03379fd7fb8b29a} 
+void parser.\+Classificador.\+Print\+Results (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+resumo no terminal dos tokens das classes no classificador. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classparser_1_1_classificador_a52c4797c6aed1454cec8260d04f4f67a}\index{parser.Classificador@{parser.Classificador}!classesARemover@{classesARemover}}
+\index{classesARemover@{classesARemover}!parser.Classificador@{parser.Classificador}}
+\doxysubsubsection{\texorpdfstring{classesARemover}{classesARemover}}
+{\footnotesize\ttfamily \label{classparser_1_1_classificador_a52c4797c6aed1454cec8260d04f4f67a} 
+List$<$string$>$ parser.\+Classificador.\+classes\+ARemover = new List$<$string$>$()}
+
+
+
+lista de nomes de classes a remover, ante a novo processamento de header; 
+
+\Hypertarget{classparser_1_1_classificador_a05eee7d86e005e4f98ba3d6ea9b377ae}\index{parser.Classificador@{parser.Classificador}!elementos@{elementos}}
+\index{elementos@{elementos}!parser.Classificador@{parser.Classificador}}
+\doxysubsubsection{\texorpdfstring{elementos}{elementos}}
+{\footnotesize\ttfamily \label{classparser_1_1_classificador_a05eee7d86e005e4f98ba3d6ea9b377ae} 
+List$<$\mbox{\hyperlink{classparser_1_1_element_token}{Element\+Token}}$>$ parser.\+Classificador.\+elementos = new List$<$\mbox{\hyperlink{classparser_1_1_element_token}{Element\+Token}}$>$()}
+
+
+
+lista de elementos de tokens, contendo dados como nomes de\+: tipos, classes, metodos, propriedades, operadores, objetos. 
+
+\Hypertarget{classparser_1_1_classificador_a011ded0151f4c9f7b839da494218024a}\index{parser.Classificador@{parser.Classificador}!elementosLinguagemOrquidea@{elementosLinguagemOrquidea}}
+\index{elementosLinguagemOrquidea@{elementosLinguagemOrquidea}!parser.Classificador@{parser.Classificador}}
+\doxysubsubsection{\texorpdfstring{elementosLinguagemOrquidea}{elementosLinguagemOrquidea}}
+{\footnotesize\ttfamily \label{classparser_1_1_classificador_a011ded0151f4c9f7b839da494218024a} 
+List$<$\mbox{\hyperlink{classparser_1_1_element_token}{Element\+Token}}$>$ parser.\+Classificador.\+elementos\+Linguagem\+Orquidea = new List$<$\mbox{\hyperlink{classparser_1_1_element_token}{Element\+Token}}$>$()}
+
+
+
+lista de elementos de tokens de classes orquidea. 
+
+\Hypertarget{classparser_1_1_classificador_a4a659c95adcd195933c4cdd642f3210a}\index{parser.Classificador@{parser.Classificador}!isLoadCLassOrquidea@{isLoadCLassOrquidea}}
+\index{isLoadCLassOrquidea@{isLoadCLassOrquidea}!parser.Classificador@{parser.Classificador}}
+\doxysubsubsection{\texorpdfstring{isLoadCLassOrquidea}{isLoadCLassOrquidea}}
+{\footnotesize\ttfamily \label{classparser_1_1_classificador_a4a659c95adcd195933c4cdd642f3210a} 
+bool parser.\+Classificador.\+is\+Load\+CLass\+Orquidea = true\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+se true, classes orquidea já foram processados. 
+
+\Hypertarget{classparser_1_1_classificador_ab7137f9391011567cf2c19fa4d9aa131}\index{parser.Classificador@{parser.Classificador}!nomesDeClasses@{nomesDeClasses}}
+\index{nomesDeClasses@{nomesDeClasses}!parser.Classificador@{parser.Classificador}}
+\doxysubsubsection{\texorpdfstring{nomesDeClasses}{nomesDeClasses}}
+{\footnotesize\ttfamily \label{classparser_1_1_classificador_ab7137f9391011567cf2c19fa4d9aa131} 
+List$<$string$>$ parser.\+Classificador.\+nomes\+De\+Classes = new List$<$string$>$()}
+
+
+
+lista de nomes de classes verificadas. 
+
+\Hypertarget{classparser_1_1_classificador_a7a2eaa6527d16bb58bfbe1479e6f61c8}\index{parser.Classificador@{parser.Classificador}!nomesDeFuncoes@{nomesDeFuncoes}}
+\index{nomesDeFuncoes@{nomesDeFuncoes}!parser.Classificador@{parser.Classificador}}
+\doxysubsubsection{\texorpdfstring{nomesDeFuncoes}{nomesDeFuncoes}}
+{\footnotesize\ttfamily \label{classparser_1_1_classificador_a7a2eaa6527d16bb58bfbe1479e6f61c8} 
+List$<$string$>$ parser.\+Classificador.\+nomes\+De\+Funcoes = new List$<$string$>$()}
+
+
+
+lista de nomes de metodos verificados. 
+
+\Hypertarget{classparser_1_1_classificador_aefdcdfbf93b529c55a47d8c23104c3f6}\index{parser.Classificador@{parser.Classificador}!nomesDeObjetos@{nomesDeObjetos}}
+\index{nomesDeObjetos@{nomesDeObjetos}!parser.Classificador@{parser.Classificador}}
+\doxysubsubsection{\texorpdfstring{nomesDeObjetos}{nomesDeObjetos}}
+{\footnotesize\ttfamily \label{classparser_1_1_classificador_aefdcdfbf93b529c55a47d8c23104c3f6} 
+List$<$string$>$ parser.\+Classificador.\+nomes\+De\+Objetos = new List$<$string$>$()}
+
+
+
+lista de nomes de objetos. 
+
+\Hypertarget{classparser_1_1_classificador_a8a6993c4add270a21a0402ae7787fa6d}\index{parser.Classificador@{parser.Classificador}!nomesDeOperadores@{nomesDeOperadores}}
+\index{nomesDeOperadores@{nomesDeOperadores}!parser.Classificador@{parser.Classificador}}
+\doxysubsubsection{\texorpdfstring{nomesDeOperadores}{nomesDeOperadores}}
+{\footnotesize\ttfamily \label{classparser_1_1_classificador_a8a6993c4add270a21a0402ae7787fa6d} 
+List$<$string$>$ parser.\+Classificador.\+nomes\+De\+Operadores = new List$<$string$>$()}
+
+
+
+lista de nomes de operadores. 
+
+\Hypertarget{classparser_1_1_classificador_af6971feb8626e907b9cd7fe7cd224885}\index{parser.Classificador@{parser.Classificador}!nomesDePropriedades@{nomesDePropriedades}}
+\index{nomesDePropriedades@{nomesDePropriedades}!parser.Classificador@{parser.Classificador}}
+\doxysubsubsection{\texorpdfstring{nomesDePropriedades}{nomesDePropriedades}}
+{\footnotesize\ttfamily \label{classparser_1_1_classificador_af6971feb8626e907b9cd7fe7cd224885} 
+List$<$string$>$ parser.\+Classificador.\+nomes\+De\+Propriedades = new List$<$string$>$()}
+
+
+
+lista de nomes de propriedades verificados. 
+
+\Hypertarget{classparser_1_1_classificador_a6db1db19013170f9289141af15c2a493}\index{parser.Classificador@{parser.Classificador}!nomesDeTermosChave@{nomesDeTermosChave}}
+\index{nomesDeTermosChave@{nomesDeTermosChave}!parser.Classificador@{parser.Classificador}}
+\doxysubsubsection{\texorpdfstring{nomesDeTermosChave}{nomesDeTermosChave}}
+{\footnotesize\ttfamily \label{classparser_1_1_classificador_a6db1db19013170f9289141af15c2a493} 
+List$<$string$>$ parser.\+Classificador.\+nomes\+De\+Termos\+Chave = new List$<$string$>$()}
+
+
+
+lista de nomes de termos-\/chave. 
+
+\Hypertarget{classparser_1_1_classificador_a89dee230d733cb19e4d43139ed57d58e}\index{parser.Classificador@{parser.Classificador}!nomesOperadoresTermosChave@{nomesOperadoresTermosChave}}
+\index{nomesOperadoresTermosChave@{nomesOperadoresTermosChave}!parser.Classificador@{parser.Classificador}}
+\doxysubsubsection{\texorpdfstring{nomesOperadoresTermosChave}{nomesOperadoresTermosChave}}
+{\footnotesize\ttfamily \label{classparser_1_1_classificador_a89dee230d733cb19e4d43139ed57d58e} 
+List$<$string$>$ parser.\+Classificador.\+nomes\+Operadores\+Termos\+Chave = new List$<$string$>$()}
+
+
+
+lista de nomes de operadores, contidos em classes orquidea, classes importados. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/componentes\+De\+Interpretadores\+ECompiladores/\+PROGRAMACAO ORIENTADA A OBJETOS/\mbox{\hyperlink{_classificador_8cs}{Classificador.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,254 @@
+\doxysection{parser.\+Programa\+Em\+VM Class Reference}
+\hypertarget{classparser_1_1_programa_em_v_m}{}\label{classparser_1_1_programa_em_v_m}\index{parser.ProgramaEmVM@{parser.ProgramaEmVM}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+delegate object \mbox{\hyperlink{classparser_1_1_programa_em_v_m_a6afa1b84a56973c7c93b82967e330507}{Handler\+Instrucao}} (\mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} uma\+Instrucao, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\item 
+void \mbox{\hyperlink{classparser_1_1_programa_em_v_m_a30a23612d6073bbcefe9c49b5434c2f8}{Run}} (\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\item 
+\mbox{\hyperlink{classparser_1_1_programa_em_v_m_abc0b47c1fac52320697a3e7a9339da57}{Programa\+Em\+VM}} (List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ instrucoes\+Programa)
+\begin{DoxyCompactList}\small\item\em inicializa uma instancia do programa virtual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+object \mbox{\hyperlink{classparser_1_1_programa_em_v_m_acc027d044e59da5be3314039d3ecb241}{last\+Return}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ int $>$ \mbox{\hyperlink{classparser_1_1_programa_em_v_m_af3b9b397edc07d250f9312134bc2cf3f}{codes\+Instructions}}
+\begin{DoxyCompactList}\small\item\em lista de tags das instruções a ser executadas. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classparser_1_1_programa_em_v_m_a0b8754f14f779620431870d8525c8345}{code\+While}} = 0
+\item 
+static int \mbox{\hyperlink{classparser_1_1_programa_em_v_m_a6b524239cd6e021e902e884e2d34d5d9}{code\+If\+Else}} = 7
+\item 
+static int \mbox{\hyperlink{classparser_1_1_programa_em_v_m_a247078aa2a6a96eb1eb41e7a1e4a4a59}{code\+For}} = 3
+\item 
+static int \mbox{\hyperlink{classparser_1_1_programa_em_v_m_aefa749854861a604b35cdb2e68293235}{code\+Atribution}} = 4
+\item 
+static int \mbox{\hyperlink{classparser_1_1_programa_em_v_m_ad6d6e7489949443f6c507180c8aecbf4}{code\+Caller\+Function}} = 5
+\item 
+static int \mbox{\hyperlink{classparser_1_1_programa_em_v_m_a4a4da32aba8e1a3d59d6918af1f44069}{code\+Return}} = 2
+\item 
+static int \mbox{\hyperlink{classparser_1_1_programa_em_v_m_a3ee86e786f06719add1bfc53cae47ec3}{code\+Block}} = 6
+\item 
+static int \mbox{\hyperlink{classparser_1_1_programa_em_v_m_af0dd485e16a67b4317bd445f9449698f}{code\+Break}} = 9
+\item 
+static int \mbox{\hyperlink{classparser_1_1_programa_em_v_m_ac2f4c1f866571c8a637395b28c5a36c1}{code\+Continue}} = 10
+\item 
+static int \mbox{\hyperlink{classparser_1_1_programa_em_v_m_aeae995f657a66587534deea0a7d920dd}{code\+Definition\+Function}} = 11
+\item 
+static int \mbox{\hyperlink{classparser_1_1_programa_em_v_m_a3c9f38a435b503503af5edc0eab43322}{code\+Get\+Objeto}} = 14
+\item 
+static int \mbox{\hyperlink{classparser_1_1_programa_em_v_m_a6c279452e1be361538edeeb84f721232}{code\+Set\+Objeto}} = 16
+\item 
+static int \mbox{\hyperlink{classparser_1_1_programa_em_v_m_a7472cd5b45a94c512a87f1ea4d4f5caf}{code\+Operador\+Binario}} = 17
+\item 
+static int \mbox{\hyperlink{classparser_1_1_programa_em_v_m_a0be7fedbaf0ef74b823a62b93e4bc016}{code\+Operador\+Unario}} = 18
+\item 
+static int \mbox{\hyperlink{classparser_1_1_programa_em_v_m_ae81d942701fc550629d623d5b3106b20}{code\+Cases\+Of\+Use}} = 19
+\item 
+static int \mbox{\hyperlink{classparser_1_1_programa_em_v_m_af01eca6db77f58bf3828fba690c330f3}{code\+Create\+Object}} = 20
+\item 
+static int \mbox{\hyperlink{classparser_1_1_programa_em_v_m_a45c21482bd03aecce8d1486dcc6c4e13}{code\+Importer}} = 22
+\item 
+static int \mbox{\hyperlink{classparser_1_1_programa_em_v_m_a534526d52492857c77db4f4c2a3d14b5}{code\+Caller\+Method}} = 25
+\item 
+static int \mbox{\hyperlink{classparser_1_1_programa_em_v_m_ab5c5db5b71536317802b8e0bc3562e27}{code\+Expression\+Valid}} = 26
+\item 
+static int \mbox{\hyperlink{classparser_1_1_programa_em_v_m_a63ff9551aa923e907153fafc8e992427}{code\+Constructor\+Up}} = 27
+\item 
+static int \mbox{\hyperlink{classparser_1_1_programa_em_v_m_a8849d17f6dcbf0641c238a673d29fa74}{code\+Aspectos}} = 28
+\item 
+static int \mbox{\hyperlink{classparser_1_1_programa_em_v_m_aef78fddfc0189f6c49b093f5f31871aa}{code\+Rise\+Error}} = 29
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classparser_1_1_programa_em_v_m_abc0b47c1fac52320697a3e7a9339da57}\index{parser.ProgramaEmVM@{parser.ProgramaEmVM}!ProgramaEmVM@{ProgramaEmVM}}
+\index{ProgramaEmVM@{ProgramaEmVM}!parser.ProgramaEmVM@{parser.ProgramaEmVM}}
+\doxysubsubsection{\texorpdfstring{ProgramaEmVM()}{ProgramaEmVM()}}
+{\footnotesize\ttfamily \label{classparser_1_1_programa_em_v_m_abc0b47c1fac52320697a3e7a9339da57} 
+parser.\+Programa\+Em\+VM.\+Programa\+Em\+VM (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$}]{instrucoes\+Programa}{}\end{DoxyParamCaption})}
+
+
+
+inicializa uma instancia do programa virtual. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em instrucoes\+Programa} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_programa_em_v_m_a6afa1b84a56973c7c93b82967e330507}\index{parser.ProgramaEmVM@{parser.ProgramaEmVM}!HandlerInstrucao@{HandlerInstrucao}}
+\index{HandlerInstrucao@{HandlerInstrucao}!parser.ProgramaEmVM@{parser.ProgramaEmVM}}
+\doxysubsubsection{\texorpdfstring{HandlerInstrucao()}{HandlerInstrucao()}}
+{\footnotesize\ttfamily \label{classparser_1_1_programa_em_v_m_a6afa1b84a56973c7c93b82967e330507} 
+delegate object parser.\+Programa\+Em\+VM.\+Handler\+Instrucao (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}}}]{uma\+Instrucao}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_programa_em_v_m_a30a23612d6073bbcefe9c49b5434c2f8}\index{parser.ProgramaEmVM@{parser.ProgramaEmVM}!Run@{Run}}
+\index{Run@{Run}!parser.ProgramaEmVM@{parser.ProgramaEmVM}}
+\doxysubsubsection{\texorpdfstring{Run()}{Run()}}
+{\footnotesize\ttfamily \label{classparser_1_1_programa_em_v_m_a30a23612d6073bbcefe9c49b5434c2f8} 
+void parser.\+Programa\+Em\+VM.\+Run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classparser_1_1_programa_em_v_m_a8849d17f6dcbf0641c238a673d29fa74}\index{parser.ProgramaEmVM@{parser.ProgramaEmVM}!codeAspectos@{codeAspectos}}
+\index{codeAspectos@{codeAspectos}!parser.ProgramaEmVM@{parser.ProgramaEmVM}}
+\doxysubsubsection{\texorpdfstring{codeAspectos}{codeAspectos}}
+{\footnotesize\ttfamily \label{classparser_1_1_programa_em_v_m_a8849d17f6dcbf0641c238a673d29fa74} 
+int parser.\+Programa\+Em\+VM.\+code\+Aspectos = 28\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_programa_em_v_m_aefa749854861a604b35cdb2e68293235}\index{parser.ProgramaEmVM@{parser.ProgramaEmVM}!codeAtribution@{codeAtribution}}
+\index{codeAtribution@{codeAtribution}!parser.ProgramaEmVM@{parser.ProgramaEmVM}}
+\doxysubsubsection{\texorpdfstring{codeAtribution}{codeAtribution}}
+{\footnotesize\ttfamily \label{classparser_1_1_programa_em_v_m_aefa749854861a604b35cdb2e68293235} 
+int parser.\+Programa\+Em\+VM.\+code\+Atribution = 4\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_programa_em_v_m_a3ee86e786f06719add1bfc53cae47ec3}\index{parser.ProgramaEmVM@{parser.ProgramaEmVM}!codeBlock@{codeBlock}}
+\index{codeBlock@{codeBlock}!parser.ProgramaEmVM@{parser.ProgramaEmVM}}
+\doxysubsubsection{\texorpdfstring{codeBlock}{codeBlock}}
+{\footnotesize\ttfamily \label{classparser_1_1_programa_em_v_m_a3ee86e786f06719add1bfc53cae47ec3} 
+int parser.\+Programa\+Em\+VM.\+code\+Block = 6\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_programa_em_v_m_af0dd485e16a67b4317bd445f9449698f}\index{parser.ProgramaEmVM@{parser.ProgramaEmVM}!codeBreak@{codeBreak}}
+\index{codeBreak@{codeBreak}!parser.ProgramaEmVM@{parser.ProgramaEmVM}}
+\doxysubsubsection{\texorpdfstring{codeBreak}{codeBreak}}
+{\footnotesize\ttfamily \label{classparser_1_1_programa_em_v_m_af0dd485e16a67b4317bd445f9449698f} 
+int parser.\+Programa\+Em\+VM.\+code\+Break = 9\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_programa_em_v_m_ad6d6e7489949443f6c507180c8aecbf4}\index{parser.ProgramaEmVM@{parser.ProgramaEmVM}!codeCallerFunction@{codeCallerFunction}}
+\index{codeCallerFunction@{codeCallerFunction}!parser.ProgramaEmVM@{parser.ProgramaEmVM}}
+\doxysubsubsection{\texorpdfstring{codeCallerFunction}{codeCallerFunction}}
+{\footnotesize\ttfamily \label{classparser_1_1_programa_em_v_m_ad6d6e7489949443f6c507180c8aecbf4} 
+int parser.\+Programa\+Em\+VM.\+code\+Caller\+Function = 5\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_programa_em_v_m_a534526d52492857c77db4f4c2a3d14b5}\index{parser.ProgramaEmVM@{parser.ProgramaEmVM}!codeCallerMethod@{codeCallerMethod}}
+\index{codeCallerMethod@{codeCallerMethod}!parser.ProgramaEmVM@{parser.ProgramaEmVM}}
+\doxysubsubsection{\texorpdfstring{codeCallerMethod}{codeCallerMethod}}
+{\footnotesize\ttfamily \label{classparser_1_1_programa_em_v_m_a534526d52492857c77db4f4c2a3d14b5} 
+int parser.\+Programa\+Em\+VM.\+code\+Caller\+Method = 25\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_programa_em_v_m_ae81d942701fc550629d623d5b3106b20}\index{parser.ProgramaEmVM@{parser.ProgramaEmVM}!codeCasesOfUse@{codeCasesOfUse}}
+\index{codeCasesOfUse@{codeCasesOfUse}!parser.ProgramaEmVM@{parser.ProgramaEmVM}}
+\doxysubsubsection{\texorpdfstring{codeCasesOfUse}{codeCasesOfUse}}
+{\footnotesize\ttfamily \label{classparser_1_1_programa_em_v_m_ae81d942701fc550629d623d5b3106b20} 
+int parser.\+Programa\+Em\+VM.\+code\+Cases\+Of\+Use = 19\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_programa_em_v_m_a63ff9551aa923e907153fafc8e992427}\index{parser.ProgramaEmVM@{parser.ProgramaEmVM}!codeConstructorUp@{codeConstructorUp}}
+\index{codeConstructorUp@{codeConstructorUp}!parser.ProgramaEmVM@{parser.ProgramaEmVM}}
+\doxysubsubsection{\texorpdfstring{codeConstructorUp}{codeConstructorUp}}
+{\footnotesize\ttfamily \label{classparser_1_1_programa_em_v_m_a63ff9551aa923e907153fafc8e992427} 
+int parser.\+Programa\+Em\+VM.\+code\+Constructor\+Up = 27\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_programa_em_v_m_ac2f4c1f866571c8a637395b28c5a36c1}\index{parser.ProgramaEmVM@{parser.ProgramaEmVM}!codeContinue@{codeContinue}}
+\index{codeContinue@{codeContinue}!parser.ProgramaEmVM@{parser.ProgramaEmVM}}
+\doxysubsubsection{\texorpdfstring{codeContinue}{codeContinue}}
+{\footnotesize\ttfamily \label{classparser_1_1_programa_em_v_m_ac2f4c1f866571c8a637395b28c5a36c1} 
+int parser.\+Programa\+Em\+VM.\+code\+Continue = 10\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_programa_em_v_m_af01eca6db77f58bf3828fba690c330f3}\index{parser.ProgramaEmVM@{parser.ProgramaEmVM}!codeCreateObject@{codeCreateObject}}
+\index{codeCreateObject@{codeCreateObject}!parser.ProgramaEmVM@{parser.ProgramaEmVM}}
+\doxysubsubsection{\texorpdfstring{codeCreateObject}{codeCreateObject}}
+{\footnotesize\ttfamily \label{classparser_1_1_programa_em_v_m_af01eca6db77f58bf3828fba690c330f3} 
+int parser.\+Programa\+Em\+VM.\+code\+Create\+Object = 20\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_programa_em_v_m_aeae995f657a66587534deea0a7d920dd}\index{parser.ProgramaEmVM@{parser.ProgramaEmVM}!codeDefinitionFunction@{codeDefinitionFunction}}
+\index{codeDefinitionFunction@{codeDefinitionFunction}!parser.ProgramaEmVM@{parser.ProgramaEmVM}}
+\doxysubsubsection{\texorpdfstring{codeDefinitionFunction}{codeDefinitionFunction}}
+{\footnotesize\ttfamily \label{classparser_1_1_programa_em_v_m_aeae995f657a66587534deea0a7d920dd} 
+int parser.\+Programa\+Em\+VM.\+code\+Definition\+Function = 11\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_programa_em_v_m_ab5c5db5b71536317802b8e0bc3562e27}\index{parser.ProgramaEmVM@{parser.ProgramaEmVM}!codeExpressionValid@{codeExpressionValid}}
+\index{codeExpressionValid@{codeExpressionValid}!parser.ProgramaEmVM@{parser.ProgramaEmVM}}
+\doxysubsubsection{\texorpdfstring{codeExpressionValid}{codeExpressionValid}}
+{\footnotesize\ttfamily \label{classparser_1_1_programa_em_v_m_ab5c5db5b71536317802b8e0bc3562e27} 
+int parser.\+Programa\+Em\+VM.\+code\+Expression\+Valid = 26\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_programa_em_v_m_a247078aa2a6a96eb1eb41e7a1e4a4a59}\index{parser.ProgramaEmVM@{parser.ProgramaEmVM}!codeFor@{codeFor}}
+\index{codeFor@{codeFor}!parser.ProgramaEmVM@{parser.ProgramaEmVM}}
+\doxysubsubsection{\texorpdfstring{codeFor}{codeFor}}
+{\footnotesize\ttfamily \label{classparser_1_1_programa_em_v_m_a247078aa2a6a96eb1eb41e7a1e4a4a59} 
+int parser.\+Programa\+Em\+VM.\+code\+For = 3\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_programa_em_v_m_a3c9f38a435b503503af5edc0eab43322}\index{parser.ProgramaEmVM@{parser.ProgramaEmVM}!codeGetObjeto@{codeGetObjeto}}
+\index{codeGetObjeto@{codeGetObjeto}!parser.ProgramaEmVM@{parser.ProgramaEmVM}}
+\doxysubsubsection{\texorpdfstring{codeGetObjeto}{codeGetObjeto}}
+{\footnotesize\ttfamily \label{classparser_1_1_programa_em_v_m_a3c9f38a435b503503af5edc0eab43322} 
+int parser.\+Programa\+Em\+VM.\+code\+Get\+Objeto = 14\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_programa_em_v_m_a6b524239cd6e021e902e884e2d34d5d9}\index{parser.ProgramaEmVM@{parser.ProgramaEmVM}!codeIfElse@{codeIfElse}}
+\index{codeIfElse@{codeIfElse}!parser.ProgramaEmVM@{parser.ProgramaEmVM}}
+\doxysubsubsection{\texorpdfstring{codeIfElse}{codeIfElse}}
+{\footnotesize\ttfamily \label{classparser_1_1_programa_em_v_m_a6b524239cd6e021e902e884e2d34d5d9} 
+int parser.\+Programa\+Em\+VM.\+code\+If\+Else = 7\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_programa_em_v_m_a45c21482bd03aecce8d1486dcc6c4e13}\index{parser.ProgramaEmVM@{parser.ProgramaEmVM}!codeImporter@{codeImporter}}
+\index{codeImporter@{codeImporter}!parser.ProgramaEmVM@{parser.ProgramaEmVM}}
+\doxysubsubsection{\texorpdfstring{codeImporter}{codeImporter}}
+{\footnotesize\ttfamily \label{classparser_1_1_programa_em_v_m_a45c21482bd03aecce8d1486dcc6c4e13} 
+int parser.\+Programa\+Em\+VM.\+code\+Importer = 22\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_programa_em_v_m_a7472cd5b45a94c512a87f1ea4d4f5caf}\index{parser.ProgramaEmVM@{parser.ProgramaEmVM}!codeOperadorBinario@{codeOperadorBinario}}
+\index{codeOperadorBinario@{codeOperadorBinario}!parser.ProgramaEmVM@{parser.ProgramaEmVM}}
+\doxysubsubsection{\texorpdfstring{codeOperadorBinario}{codeOperadorBinario}}
+{\footnotesize\ttfamily \label{classparser_1_1_programa_em_v_m_a7472cd5b45a94c512a87f1ea4d4f5caf} 
+int parser.\+Programa\+Em\+VM.\+code\+Operador\+Binario = 17\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_programa_em_v_m_a0be7fedbaf0ef74b823a62b93e4bc016}\index{parser.ProgramaEmVM@{parser.ProgramaEmVM}!codeOperadorUnario@{codeOperadorUnario}}
+\index{codeOperadorUnario@{codeOperadorUnario}!parser.ProgramaEmVM@{parser.ProgramaEmVM}}
+\doxysubsubsection{\texorpdfstring{codeOperadorUnario}{codeOperadorUnario}}
+{\footnotesize\ttfamily \label{classparser_1_1_programa_em_v_m_a0be7fedbaf0ef74b823a62b93e4bc016} 
+int parser.\+Programa\+Em\+VM.\+code\+Operador\+Unario = 18\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_programa_em_v_m_a4a4da32aba8e1a3d59d6918af1f44069}\index{parser.ProgramaEmVM@{parser.ProgramaEmVM}!codeReturn@{codeReturn}}
+\index{codeReturn@{codeReturn}!parser.ProgramaEmVM@{parser.ProgramaEmVM}}
+\doxysubsubsection{\texorpdfstring{codeReturn}{codeReturn}}
+{\footnotesize\ttfamily \label{classparser_1_1_programa_em_v_m_a4a4da32aba8e1a3d59d6918af1f44069} 
+int parser.\+Programa\+Em\+VM.\+code\+Return = 2\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_programa_em_v_m_aef78fddfc0189f6c49b093f5f31871aa}\index{parser.ProgramaEmVM@{parser.ProgramaEmVM}!codeRiseError@{codeRiseError}}
+\index{codeRiseError@{codeRiseError}!parser.ProgramaEmVM@{parser.ProgramaEmVM}}
+\doxysubsubsection{\texorpdfstring{codeRiseError}{codeRiseError}}
+{\footnotesize\ttfamily \label{classparser_1_1_programa_em_v_m_aef78fddfc0189f6c49b093f5f31871aa} 
+int parser.\+Programa\+Em\+VM.\+code\+Rise\+Error = 29\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_programa_em_v_m_a6c279452e1be361538edeeb84f721232}\index{parser.ProgramaEmVM@{parser.ProgramaEmVM}!codeSetObjeto@{codeSetObjeto}}
+\index{codeSetObjeto@{codeSetObjeto}!parser.ProgramaEmVM@{parser.ProgramaEmVM}}
+\doxysubsubsection{\texorpdfstring{codeSetObjeto}{codeSetObjeto}}
+{\footnotesize\ttfamily \label{classparser_1_1_programa_em_v_m_a6c279452e1be361538edeeb84f721232} 
+int parser.\+Programa\+Em\+VM.\+code\+Set\+Objeto = 16\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_programa_em_v_m_af3b9b397edc07d250f9312134bc2cf3f}\index{parser.ProgramaEmVM@{parser.ProgramaEmVM}!codesInstructions@{codesInstructions}}
+\index{codesInstructions@{codesInstructions}!parser.ProgramaEmVM@{parser.ProgramaEmVM}}
+\doxysubsubsection{\texorpdfstring{codesInstructions}{codesInstructions}}
+{\footnotesize\ttfamily \label{classparser_1_1_programa_em_v_m_af3b9b397edc07d250f9312134bc2cf3f} 
+List$<$int$>$ parser.\+Programa\+Em\+VM.\+codes\+Instructions\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+lista de tags das instruções a ser executadas. 
+
+\Hypertarget{classparser_1_1_programa_em_v_m_a0b8754f14f779620431870d8525c8345}\index{parser.ProgramaEmVM@{parser.ProgramaEmVM}!codeWhile@{codeWhile}}
+\index{codeWhile@{codeWhile}!parser.ProgramaEmVM@{parser.ProgramaEmVM}}
+\doxysubsubsection{\texorpdfstring{codeWhile}{codeWhile}}
+{\footnotesize\ttfamily \label{classparser_1_1_programa_em_v_m_a0b8754f14f779620431870d8525c8345} 
+int parser.\+Programa\+Em\+VM.\+code\+While = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_programa_em_v_m_acc027d044e59da5be3314039d3ecb241}\index{parser.ProgramaEmVM@{parser.ProgramaEmVM}!lastReturn@{lastReturn}}
+\index{lastReturn@{lastReturn}!parser.ProgramaEmVM@{parser.ProgramaEmVM}}
+\doxysubsubsection{\texorpdfstring{lastReturn}{lastReturn}}
+{\footnotesize\ttfamily \label{classparser_1_1_programa_em_v_m_acc027d044e59da5be3314039d3ecb241} 
+object parser.\+Programa\+Em\+VM.\+last\+Return}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/\+Maquina\+Virtual/\mbox{\hyperlink{_processamento_instrucoes_8cs}{Processamento\+Instrucoes.\+cs}}\end{DoxyCompactItemize}

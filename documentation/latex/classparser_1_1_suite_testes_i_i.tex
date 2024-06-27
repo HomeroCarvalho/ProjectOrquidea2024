@@ -1,0 +1,161 @@
+\doxysection{parser.\+Suite\+Testes\+II Class Reference}
+\hypertarget{classparser_1_1_suite_testes_i_i}{}\label{classparser_1_1_suite_testes_i_i}\index{parser.SuiteTestesII@{parser.SuiteTestesII}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+delegate bool \mbox{\hyperlink{classparser_1_1_suite_testes_i_i_a5d8b6c7fe0770651f48dc5ad9c4f30e4}{Assertion}} (params object\mbox{[}$\,$\mbox{]} args)
+\begin{DoxyCompactList}\small\item\em prototipo de funcao que verifica se o esperado é ou não como o resultado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classparser_1_1_suite_testes_i_i_ad56b915722e903429106e0e9278a0d80}{Validation}} (params bool\mbox{[}$\,$\mbox{]} conditions)
+\begin{DoxyCompactList}\small\item\em verifica se as condicoes de validacao do teste resultou em teste passou/nao passou. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classparser_1_1_suite_testes_i_i_a6ebdd2a3de69755875f755431bf2dd0e}{Assertion\+Is\+True}} (\mbox{\hyperlink{classparser_1_1_suite_testes_i_i_a5d8b6c7fe0770651f48dc5ad9c4f30e4}{Assertion}} funcao\+Assercao)
+\begin{DoxyCompactList}\small\item\em metodo que faz a comparacao do esperado com o resultado, e grava no arquivo logg o resultado. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classparser_1_1_suite_testes_i_i_a9f61fdb796bcc15456319873b6be0f05}{Constructor\+Test}} (string classe\+Em\+Teste, string metodo\+Em\+Teste, \mbox{\hyperlink{classparser_1_1_suite_testes_i_i_a5d8b6c7fe0770651f48dc5ad9c4f30e4}{Assertion}} function\+Validation, params object\mbox{[}$\,$\mbox{]} parametros\+Do\+Metodo\+Teste)
+\begin{DoxyCompactList}\small\item\em funcao de teste, mas sem objeto caller. Precisa de um construtor vazio, e que não faça nada. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classparser_1_1_suite_testes_i_i_a87cf1b62c151442cc642d6ee6e21c5af}{Method\+Test}} (object caller, string nome\+Metodo\+Teste, \mbox{\hyperlink{classparser_1_1_suite_testes_i_i_a5d8b6c7fe0770651f48dc5ad9c4f30e4}{Assertion}} function\+Validation, params object\mbox{[}$\,$\mbox{]} parametros\+Do\+Metodo\+Teste)
+\begin{DoxyCompactList}\small\item\em executa uma um metodo teste, e retorna o resultado em \mbox{[}\doxylink{classparser_1_1_suite_testes_i_i_aa460a536a507c2281dd7396917174d56}{Suite\+Testes\+II.\+result}\mbox{]}. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classparser_1_1_suite_testes_i_i_a3ad9c175fa14054ba4607ee4b1a041f0}{Method\+Test}} (string nome\+Classe\+Teste, string nome\+Metodo\+Teste, \mbox{\hyperlink{classparser_1_1_suite_testes_i_i_a5d8b6c7fe0770651f48dc5ad9c4f30e4}{Assertion}} function\+Validation, params object\mbox{[}$\,$\mbox{]} parametros\+Do\+Metodo\+Teste)
+\begin{DoxyCompactList}\small\item\em metodo teste sem objeto caller, instanciado dentro do metodo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static object \mbox{\hyperlink{classparser_1_1_suite_testes_i_i_aa460a536a507c2281dd7396917174d56}{result}}
+\begin{DoxyCompactList}\small\item\em guarda o resultado de um teste. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_suite_testes_i_i_a5d8b6c7fe0770651f48dc5ad9c4f30e4}\index{parser.SuiteTestesII@{parser.SuiteTestesII}!Assertion@{Assertion}}
+\index{Assertion@{Assertion}!parser.SuiteTestesII@{parser.SuiteTestesII}}
+\doxysubsubsection{\texorpdfstring{Assertion()}{Assertion()}}
+{\footnotesize\ttfamily \label{classparser_1_1_suite_testes_i_i_a5d8b6c7fe0770651f48dc5ad9c4f30e4} 
+delegate bool parser.\+Suite\+Testes\+II.\+Assertion (\begin{DoxyParamCaption}\item[{params object\mbox{[}$\,$\mbox{]}}]{args}{}\end{DoxyParamCaption})}
+
+
+
+prototipo de funcao que verifica se o esperado é ou não como o resultado. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_suite_testes_i_i_a6ebdd2a3de69755875f755431bf2dd0e}\index{parser.SuiteTestesII@{parser.SuiteTestesII}!AssertionIsTrue@{AssertionIsTrue}}
+\index{AssertionIsTrue@{AssertionIsTrue}!parser.SuiteTestesII@{parser.SuiteTestesII}}
+\doxysubsubsection{\texorpdfstring{AssertionIsTrue()}{AssertionIsTrue()}}
+{\footnotesize\ttfamily \label{classparser_1_1_suite_testes_i_i_a6ebdd2a3de69755875f755431bf2dd0e} 
+static bool parser.\+Suite\+Testes\+II.\+Assertion\+Is\+True (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_suite_testes_i_i_a5d8b6c7fe0770651f48dc5ad9c4f30e4}{Assertion}}}]{funcao\+Assercao}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+metodo que faz a comparacao do esperado com o resultado, e grava no arquivo logg o resultado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em funcao\+Assercao} & funcao que faz a comparacao.\\
+\hline
+{\em caption} & texto info a mais para colocar no arquivo logg.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return true se o teste passou, false se o teste nao passou, ou falhou na comparacao lançando uma exceção.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_suite_testes_i_i_a9f61fdb796bcc15456319873b6be0f05}\index{parser.SuiteTestesII@{parser.SuiteTestesII}!ConstructorTest@{ConstructorTest}}
+\index{ConstructorTest@{ConstructorTest}!parser.SuiteTestesII@{parser.SuiteTestesII}}
+\doxysubsubsection{\texorpdfstring{ConstructorTest()}{ConstructorTest()}}
+{\footnotesize\ttfamily \label{classparser_1_1_suite_testes_i_i_a9f61fdb796bcc15456319873b6be0f05} 
+static void parser.\+Suite\+Testes\+II.\+Constructor\+Test (\begin{DoxyParamCaption}\item[{string}]{classe\+Em\+Teste}{, }\item[{string}]{metodo\+Em\+Teste}{, }\item[{\mbox{\hyperlink{classparser_1_1_suite_testes_i_i_a5d8b6c7fe0770651f48dc5ad9c4f30e4}{Assertion}}}]{function\+Validation}{, }\item[{params object\mbox{[}$\,$\mbox{]}}]{parametros\+Do\+Metodo\+Teste}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+funcao de teste, mas sem objeto caller. Precisa de um construtor vazio, e que não faça nada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em classe\+Em\+Teste} & classe do metodo e do objeto caller.\\
+\hline
+{\em metodo\+Em\+Teste} & nome do metodo do teste.\\
+\hline
+{\em parametros\+Do\+Metodo\+Teste} & parametros do metodo do teste.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_suite_testes_i_i_a87cf1b62c151442cc642d6ee6e21c5af}\index{parser.SuiteTestesII@{parser.SuiteTestesII}!MethodTest@{MethodTest}}
+\index{MethodTest@{MethodTest}!parser.SuiteTestesII@{parser.SuiteTestesII}}
+\doxysubsubsection{\texorpdfstring{MethodTest()}{MethodTest()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_suite_testes_i_i_a87cf1b62c151442cc642d6ee6e21c5af} 
+static void parser.\+Suite\+Testes\+II.\+Method\+Test (\begin{DoxyParamCaption}\item[{object}]{caller}{, }\item[{string}]{nome\+Metodo\+Teste}{, }\item[{\mbox{\hyperlink{classparser_1_1_suite_testes_i_i_a5d8b6c7fe0770651f48dc5ad9c4f30e4}{Assertion}}}]{function\+Validation}{, }\item[{params object\mbox{[}$\,$\mbox{]}}]{parametros\+Do\+Metodo\+Teste}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+executa uma um metodo teste, e retorna o resultado em \mbox{[}\doxylink{classparser_1_1_suite_testes_i_i_aa460a536a507c2281dd7396917174d56}{Suite\+Testes\+II.\+result}\mbox{]}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em caller} & objeto que chamou o metodo teste.\\
+\hline
+{\em nome\+Metodo\+Teste} & nome do metodo a testar.\\
+\hline
+{\em parametros\+Do\+Metodo\+Teste} & lista de parametros variavel do metodo teste.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_suite_testes_i_i_a3ad9c175fa14054ba4607ee4b1a041f0}\index{parser.SuiteTestesII@{parser.SuiteTestesII}!MethodTest@{MethodTest}}
+\index{MethodTest@{MethodTest}!parser.SuiteTestesII@{parser.SuiteTestesII}}
+\doxysubsubsection{\texorpdfstring{MethodTest()}{MethodTest()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_suite_testes_i_i_a3ad9c175fa14054ba4607ee4b1a041f0} 
+static void parser.\+Suite\+Testes\+II.\+Method\+Test (\begin{DoxyParamCaption}\item[{string}]{nome\+Classe\+Teste}{, }\item[{string}]{nome\+Metodo\+Teste}{, }\item[{\mbox{\hyperlink{classparser_1_1_suite_testes_i_i_a5d8b6c7fe0770651f48dc5ad9c4f30e4}{Assertion}}}]{function\+Validation}{, }\item[{params object\mbox{[}$\,$\mbox{]}}]{parametros\+Do\+Metodo\+Teste}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+metodo teste sem objeto caller, instanciado dentro do metodo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Classe\+Teste} & nome COMPLETO da classe do metodo do teste.\\
+\hline
+{\em nome\+Metodo\+Teste} & nome do metodo do teste.\\
+\hline
+{\em function\+Validation} & funcao de validacao.\\
+\hline
+{\em parametros\+Do\+Metodo\+Teste} & parametros do metodo do teste.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classparser_1_1_suite_testes_i_i_ad56b915722e903429106e0e9278a0d80}\index{parser.SuiteTestesII@{parser.SuiteTestesII}!Validation@{Validation}}
+\index{Validation@{Validation}!parser.SuiteTestesII@{parser.SuiteTestesII}}
+\doxysubsubsection{\texorpdfstring{Validation()}{Validation()}}
+{\footnotesize\ttfamily \label{classparser_1_1_suite_testes_i_i_ad56b915722e903429106e0e9278a0d80} 
+static bool parser.\+Suite\+Testes\+II.\+Validation (\begin{DoxyParamCaption}\item[{params bool\mbox{[}$\,$\mbox{]}}]{conditions}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+verifica se as condicoes de validacao do teste resultou em teste passou/nao passou. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conditions} & lista de condicoes.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classparser_1_1_suite_testes_i_i_aa460a536a507c2281dd7396917174d56}\index{parser.SuiteTestesII@{parser.SuiteTestesII}!result@{result}}
+\index{result@{result}!parser.SuiteTestesII@{parser.SuiteTestesII}}
+\doxysubsubsection{\texorpdfstring{result}{result}}
+{\footnotesize\ttfamily \label{classparser_1_1_suite_testes_i_i_aa460a536a507c2281dd7396917174d56} 
+object parser.\+Suite\+Testes\+II.\+result\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+guarda o resultado de um teste. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/testes/\mbox{\hyperlink{_suite_classe_testes_8cs}{Suite\+Classe\+Testes.\+cs}}\end{DoxyCompactItemize}

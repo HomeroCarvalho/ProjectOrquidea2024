@@ -1,0 +1,83 @@
+\doxysection{parser.\+PROLOG.\+Tree\+List\+Prolog Class Reference}
+\hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_tree_list_prolog}{}\label{classparser_1_1_p_r_o_l_o_g_1_1_tree_list_prolog}\index{parser.PROLOG.TreeListProlog@{parser.PROLOG.TreeListProlog}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_node}{Node}} \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_tree_list_prolog_a0cea0ad3551f4f000a7438156937225f}{Insert}} (string a\+Key, \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_node}{Node}} no)
+\begin{DoxyCompactList}\small\item\em insere o nó folha com conteúdo à esquerda do novo nó à direita, conforme especificações da Lista em Prolog. \end{DoxyCompactList}\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_tree_list_prolog_a3274d66da1aa488878f0eaac91ea22f7}{Pos\+Order}} (\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_node}{Node}} no)
+\begin{DoxyCompactList}\small\item\em caminha pela árvore, guardando os valores de cada nó numa ordem pós-\/ordem. \end{DoxyCompactList}\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_tree_list_prolog_a4fd0e27fbd615999db008a7cbf01f137}{In\+Order}} (\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_node}{Node}} no)
+\begin{DoxyCompactList}\small\item\em caminha pela árvore, guardando valores de cada nó numa ordem em in-\/order. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_node}{Node}} \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_tree_list_prolog_a6a3e940c56b0399ebcb380ff4ee1e7b5}{root}} = new \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_node}{Node}}("{}"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_tree_list_prolog_a4fd0e27fbd615999db008a7cbf01f137}\index{parser.PROLOG.TreeListProlog@{parser.PROLOG.TreeListProlog}!InOrder@{InOrder}}
+\index{InOrder@{InOrder}!parser.PROLOG.TreeListProlog@{parser.PROLOG.TreeListProlog}}
+\doxysubsubsection{\texorpdfstring{InOrder()}{InOrder()}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_tree_list_prolog_a4fd0e27fbd615999db008a7cbf01f137} 
+List$<$ string $>$ parser.\+PROLOG.\+Tree\+List\+Prolog.\+In\+Order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_node}{Node}}}]{no}{}\end{DoxyParamCaption})}
+
+
+
+caminha pela árvore, guardando valores de cada nó numa ordem em in-\/order. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & nó currente\texorpdfstring{$<$}{<}/param\+: \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_tree_list_prolog_a0cea0ad3551f4f000a7438156937225f}\index{parser.PROLOG.TreeListProlog@{parser.PROLOG.TreeListProlog}!Insert@{Insert}}
+\index{Insert@{Insert}!parser.PROLOG.TreeListProlog@{parser.PROLOG.TreeListProlog}}
+\doxysubsubsection{\texorpdfstring{Insert()}{Insert()}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_tree_list_prolog_a0cea0ad3551f4f000a7438156937225f} 
+\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_node}{Node}} parser.\+PROLOG.\+Tree\+List\+Prolog.\+Insert (\begin{DoxyParamCaption}\item[{string}]{a\+Key}{, }\item[{\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_node}{Node}}}]{no}{}\end{DoxyParamCaption})}
+
+
+
+insere o nó folha com conteúdo à esquerda do novo nó à direita, conforme especificações da Lista em Prolog. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a\+Key} & conteúdo do novo nó à esquerda.\\
+\hline
+{\em no} & nó raiz, para inserir o novo nó à direita e deste nó à direita, inserir um nó a esquerda.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_tree_list_prolog_a3274d66da1aa488878f0eaac91ea22f7}\index{parser.PROLOG.TreeListProlog@{parser.PROLOG.TreeListProlog}!PosOrder@{PosOrder}}
+\index{PosOrder@{PosOrder}!parser.PROLOG.TreeListProlog@{parser.PROLOG.TreeListProlog}}
+\doxysubsubsection{\texorpdfstring{PosOrder()}{PosOrder()}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_tree_list_prolog_a3274d66da1aa488878f0eaac91ea22f7} 
+List$<$ string $>$ parser.\+PROLOG.\+Tree\+List\+Prolog.\+Pos\+Order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_node}{Node}}}]{no}{}\end{DoxyParamCaption})}
+
+
+
+caminha pela árvore, guardando os valores de cada nó numa ordem pós-\/ordem. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & nó currente.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_tree_list_prolog_a6a3e940c56b0399ebcb380ff4ee1e7b5}\index{parser.PROLOG.TreeListProlog@{parser.PROLOG.TreeListProlog}!root@{root}}
+\index{root@{root}!parser.PROLOG.TreeListProlog@{parser.PROLOG.TreeListProlog}}
+\doxysubsubsection{\texorpdfstring{root}{root}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_tree_list_prolog_a6a3e940c56b0399ebcb380ff4ee1e7b5} 
+\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_node}{Node}} parser.\+PROLOG.\+Tree\+List\+Prolog.\+root = new \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_node}{Node}}("{}"{})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/componentes\+De\+Interpretadores\+ECompiladores/\+PROLOG/\mbox{\hyperlink{_lista_prolog_8cs}{Lista\+Prolog.\+cs}}\end{DoxyCompactItemize}

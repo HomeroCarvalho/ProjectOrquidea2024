@@ -1,0 +1,90 @@
+\doxysection{parser.\+Tokens Class Reference}
+\hypertarget{classparser_1_1_tokens}{}\label{classparser_1_1_tokens}\index{parser.Tokens@{parser.Tokens}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classparser_1_1_tokens_1_1_compara_producoes_pela_maquina_de_estados}{Compara\+Producoes\+Pela\+Maquina\+De\+Estados}}
+\begin{DoxyCompactList}\small\item\em ordena produções decrecentemente pela lista maquina de estados associada à produção. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classparser_1_1_tokens_1_1_testes}{Testes}}
+\item 
+struct \mbox{\hyperlink{structparser_1_1_tokens_1_1_tokens_e_posicao}{Tokens\+EPosicao}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparser_1_1_tokens_ab7745cf69b973a646d00e5ddde25b00c}{Tokens}} (List$<$ string $>$ \+\_\+codigo)
+\begin{DoxyCompactList}\small\item\em construtor, aceita uma linguagem para processamentos, e um trecho de codigo a ser analizado. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_tokens_aec0ce612c8de442b4c34a109b5eb5cca}{Tokens}} (string codigo)
+\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_producao}{Producao}} $>$ \mbox{\hyperlink{classparser_1_1_tokens_aa41a29e43b167d6b76105d20f758dba1}{Get\+Producoes}} (List$<$ string $>$ tokens, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_tokens_ae4d3856722d9b9f2baf2edefab90373f}{Get\+Tokens}} ()
+\begin{DoxyCompactList}\small\item\em obtem todos tokens do trecho de codigo fornecido no trecho de codigo do construtor. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{classparser_1_1_tokens_a721c002a856116c0111c5e28b98038fb}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_tokens_af2ec2260b7b3b6579bc798647b02471e}{Msg\+Erros}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classparser_1_1_tokens_ab7745cf69b973a646d00e5ddde25b00c}\index{parser.Tokens@{parser.Tokens}!Tokens@{Tokens}}
+\index{Tokens@{Tokens}!parser.Tokens@{parser.Tokens}}
+\doxysubsubsection{\texorpdfstring{Tokens()}{Tokens()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_tokens_ab7745cf69b973a646d00e5ddde25b00c} 
+parser.\+Tokens.\+Tokens (\begin{DoxyParamCaption}\item[{List$<$ string $>$}]{\+\_\+codigo}{}\end{DoxyParamCaption})}
+
+
+
+construtor, aceita uma linguagem para processamentos, e um trecho de codigo a ser analizado. 
+
+\Hypertarget{classparser_1_1_tokens_aec0ce612c8de442b4c34a109b5eb5cca}\index{parser.Tokens@{parser.Tokens}!Tokens@{Tokens}}
+\index{Tokens@{Tokens}!parser.Tokens@{parser.Tokens}}
+\doxysubsubsection{\texorpdfstring{Tokens()}{Tokens()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_tokens_aec0ce612c8de442b4c34a109b5eb5cca} 
+parser.\+Tokens.\+Tokens (\begin{DoxyParamCaption}\item[{string}]{codigo}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_tokens_aa41a29e43b167d6b76105d20f758dba1}\index{parser.Tokens@{parser.Tokens}!GetProducoes@{GetProducoes}}
+\index{GetProducoes@{GetProducoes}!parser.Tokens@{parser.Tokens}}
+\doxysubsubsection{\texorpdfstring{GetProducoes()}{GetProducoes()}}
+{\footnotesize\ttfamily \label{classparser_1_1_tokens_aa41a29e43b167d6b76105d20f758dba1} 
+List$<$ \mbox{\hyperlink{classparser_1_1_producao}{Producao}} $>$ parser.\+Tokens.\+Get\+Producoes (\begin{DoxyParamCaption}\item[{List$<$ string $>$}]{tokens}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_tokens_ae4d3856722d9b9f2baf2edefab90373f}\index{parser.Tokens@{parser.Tokens}!GetTokens@{GetTokens}}
+\index{GetTokens@{GetTokens}!parser.Tokens@{parser.Tokens}}
+\doxysubsubsection{\texorpdfstring{GetTokens()}{GetTokens()}}
+{\footnotesize\ttfamily \label{classparser_1_1_tokens_ae4d3856722d9b9f2baf2edefab90373f} 
+List$<$ string $>$ parser.\+Tokens.\+Get\+Tokens (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+obtem todos tokens do trecho de codigo fornecido no trecho de codigo do construtor. 
+
+\begin{DoxyReturn}{Returns}
+retorna uma lista de tokens identificados no trecho de codigo fornecido no construtor.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_tokens_a721c002a856116c0111c5e28b98038fb}\index{parser.Tokens@{parser.Tokens}!ToString@{ToString}}
+\index{ToString@{ToString}!parser.Tokens@{parser.Tokens}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily \label{classparser_1_1_tokens_a721c002a856116c0111c5e28b98038fb} 
+override string parser.\+Tokens.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{classparser_1_1_tokens_af2ec2260b7b3b6579bc798647b02471e}\index{parser.Tokens@{parser.Tokens}!MsgErros@{MsgErros}}
+\index{MsgErros@{MsgErros}!parser.Tokens@{parser.Tokens}}
+\doxysubsubsection{\texorpdfstring{MsgErros}{MsgErros}}
+{\footnotesize\ttfamily \label{classparser_1_1_tokens_af2ec2260b7b3b6579bc798647b02471e} 
+List$<$string$>$ parser.\+Tokens.\+Msg\+Erros\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/componentes\+De\+Interpretadores\+ECompiladores/\+PROGRAMACAO ORIENTADA A OBJETOS/\mbox{\hyperlink{_tokens_8cs}{Tokens.\+cs}}\end{DoxyCompactItemize}

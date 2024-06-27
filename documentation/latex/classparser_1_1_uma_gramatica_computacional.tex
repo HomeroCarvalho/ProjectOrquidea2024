@@ -1,0 +1,501 @@
+\doxysection{parser.\+Uma\+Gramatica\+Computacional Class Reference}
+\hypertarget{classparser_1_1_uma_gramatica_computacional}{}\label{classparser_1_1_uma_gramatica_computacional}\index{parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}}
+
+
+\doxylink{classparser_1_1_classe}{Classe} para uma definicao de linguagem a mais generica possivel, carregada via aruivo.\+XML.  
+
+
+Inheritance diagram for parser.\+Uma\+Gramatica\+Computacional\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classparser_1_1_uma_gramatica_computacional}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_producao}{Producao}} $>$ \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_a85916e1dc4830f6c83e6c6644af24c6c}{Get\+Producoes}} ()
+\begin{DoxyCompactList}\small\item\em retorna uma lista de todas produções da linguagem. \end{DoxyCompactList}\item 
+virtual List$<$ \mbox{\hyperlink{classparser_1_1_operador}{Operador}} $>$ \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_a1286a172b35abbd89516e5b7934914e5}{Get\+Operadores}} ()
+\begin{DoxyCompactList}\small\item\em retorna uma lista de todos operadores da linguagem. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_a07b663dbf4d722eefe3f714d4c1c303f}{inicializa\+Producoes\+Da\+Linguagem}} ()
+\begin{DoxyCompactList}\small\item\em carrega as producoes da linguagem via um arquivo .XML. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_a5b8d586016bf5e7bbf1d062169dfdf72}{Uma\+Gramatica\+Computacional}} ()
+\begin{DoxyCompactList}\small\item\em inicializa a linguagem\+: definições em \mbox{[}producoes\mbox{]}, carregada por um arquivo .XML A ideia eh separar o front end do compilador do back end. Isto permite uma possibilidade de modificar a linguagem de forma mais facil, com o arquivo de definicao cobrindo tambem a maquina virtual (VM), permitindo o compilador e a execucao do programa compilado mais faceis de ser modificado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_ab76e8b871e115eecc81b044979a28826}{Remove\+Termo\+Chave}} (string termo\+Chave\+AExcluir)
+\begin{DoxyCompactList}\small\item\em remove um termo-\/chave de nome parametro. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_producao}{Producao}} \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_aca8f8ca5fc5fffd1d29ad2b9f22f2edf}{Localiza\+Producao\+Pelo\+Tipo}} (string tipo, \mbox{\hyperlink{classparser_1_1_producao}{Producao}} prod)
+\begin{DoxyCompactList}\small\item\em obtém uma produção ou produções pelo seu tipo. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_producao}{Producao}} $>$ \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_a59131f3d4c0e108c30ca6675a59d3a53}{Localiza\+Producoes\+Por\+Termo\+Chave}} (string termo\+Chave\+Procura)
+\begin{DoxyCompactList}\small\item\em localiza as produções com primeiro termo chave igual a \mbox{[}primeiro\+Termo\+Chave\mbox{]} \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_producao}{Producao}} $>$ \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_aca4a82073f27f8d975652a6b69972d53}{Localiza\+Producoes\+Pelo\+Nome}} (string nome, \mbox{\hyperlink{classparser_1_1_producao}{Producao}} prod)
+\begin{DoxyCompactList}\small\item\em localiza uma produção pelo nome. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_a0afc081354a390265749a3cac286d528}{adiciona\+Producao}} (\mbox{\hyperlink{classparser_1_1_producao}{Producao}} novaproducao)
+\begin{DoxyCompactList}\small\item\em adiciona uma producao para a sintaxe da linguagem. \end{DoxyCompactList}\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_aebbc129b5af61dd78ab0bac3bf407911}{Get\+Todos\+Termos\+Chave}} ()
+\begin{DoxyCompactList}\small\item\em retorna todos os termos chave de todas produções da linguagem currente, inclusive de todos operadores registrados na linguagem currente. \end{DoxyCompactList}\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_a05e2e5b5f2803ef9ec4ae825bb720f5b}{Get\+Operadores\+Bloco}} ()
+\begin{DoxyCompactList}\small\item\em retorna uma lista de operadores de bloco. \end{DoxyCompactList}\item 
+List$<$ string\mbox{[}$\,$\mbox{]}$>$ \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_a9126e452621eeff94a2be9649ae466dc}{Get\+Todos\+Operadores\+Duplos}} ()
+\begin{DoxyCompactList}\small\item\em obtém todos operadores duplos (exemplo\+: \mbox{[}(\mbox{]} e \mbox{[})\mbox{]} ).São operadores que aparecem com dois tokens. \end{DoxyCompactList}\item 
+virtual List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_a8a118cfe204476d294b27714196a39a1}{Get\+Todos\+Operadores}} ()
+\begin{DoxyCompactList}\small\item\em retorna todos operadores presentes na linguagem, inclusive de classe herdeiras. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_a70729aab378215ec5be2fcd39ba4cceb}{Verifica\+Se\+Eh\+Operador\+Duplo}} (string token)
+\begin{DoxyCompactList}\small\item\em verifica se uma palavra é um operador-\/duplo, um tipo especial de operador que aparece duas vezes para complitude. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_a2d2ed550d569f37d5d8aea21c5d3edea}{Verifica\+Se\+Eh\+Operador\+Binario}} (string token)
+\begin{DoxyCompactList}\small\item\em verifica se uma palavra é um operador binário. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_a6dd14854ba621b0014c8bc41a35594dc}{Verifica\+Se\+Eh\+Operador\+Unario}} (string token)
+\begin{DoxyCompactList}\small\item\em verifica se uma palavra é um operador unário. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_a329fc4a171db7d34a6295d51bf787bdb}{Verifica\+Se\+Eh\+Operador}} (string token)
+\begin{DoxyCompactList}\small\item\em verifica se a palavra é um operador. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_a9e2867d0a57b7aaaf864bfe838da807d}{Is\+Numero}} (string token)
+\begin{DoxyCompactList}\small\item\em verifica se uma palavra é um número\+: int, float, ou double. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_a454f3fc2ac3d05a66eca7c7b99d73796}{Verifica\+Se\+EString}} (string token)
+\begin{DoxyCompactList}\small\item\em verifica se um token é uma literal, constante string. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_ad938bbd5a0e846e84abcfff2b9e483f5}{Verifica\+Se\+Eh\+Int}} (string token)
+\begin{DoxyCompactList}\small\item\em verifica se um token é de um numero inteiro. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_af106f059ae5a46e1d3118c2bd8932584}{Verifica\+Se\+Eh\+Float}} (string token)
+\begin{DoxyCompactList}\small\item\em verifica se um token é um texto de numero ponto-\/flutuante float. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_ab377f086712e1820d1961276e72f5680}{is\+Termo\+Chave}} (string token)
+\begin{DoxyCompactList}\small\item\em retorna true se o token parametro é um termo-\/chave da linguagem. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_ab9dd9225f886823730bbded01b1c8bda}{Is\+ID}} (string token)
+\begin{DoxyCompactList}\small\item\em Verifica se o token é um ID ou número. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_a26678b94e3e2c5ed0a3d43ed279d205b}{Registra\+Operador}} (\mbox{\hyperlink{classparser_1_1_operador}{Operador}} operador)
+\begin{DoxyCompactList}\small\item\em adiciona um operador para a lista de operadores. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \mbox{\hyperlink{classparser_1_1_operador}{Operador}} $>$ \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_a47dacfaf290f6d78228db3f3cdbdce66}{operadores}} = new List$<$\mbox{\hyperlink{classparser_1_1_operador}{Operador}}$>$()
+\begin{DoxyCompactList}\small\item\em lista de todos operadores da linguagem. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \mbox{\hyperlink{classparser_1_1_producao}{Producao}} $>$ \mbox{\hyperlink{classparser_1_1_uma_gramatica_computacional_aff869c0703848ff36fa5b71cfd1b26d1}{producoes}} = new List$<$\mbox{\hyperlink{classparser_1_1_producao}{Producao}}$>$()
+\begin{DoxyCompactList}\small\item\em lista das produções da linguagem. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{classparser_1_1_classe}{Classe} para uma definicao de linguagem a mais generica possivel, carregada via aruivo.\+XML. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classparser_1_1_uma_gramatica_computacional_a5b8d586016bf5e7bbf1d062169dfdf72}\index{parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}!UmaGramaticaComputacional@{UmaGramaticaComputacional}}
+\index{UmaGramaticaComputacional@{UmaGramaticaComputacional}!parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}}
+\doxysubsubsection{\texorpdfstring{UmaGramaticaComputacional()}{UmaGramaticaComputacional()}}
+{\footnotesize\ttfamily \label{classparser_1_1_uma_gramatica_computacional_a5b8d586016bf5e7bbf1d062169dfdf72} 
+parser.\+Uma\+Gramatica\+Computacional.\+Uma\+Gramatica\+Computacional (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+inicializa a linguagem\+: definições em \mbox{[}producoes\mbox{]}, carregada por um arquivo .XML A ideia eh separar o front end do compilador do back end. Isto permite uma possibilidade de modificar a linguagem de forma mais facil, com o arquivo de definicao cobrindo tambem a maquina virtual (VM), permitindo o compilador e a execucao do programa compilado mais faceis de ser modificado. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_uma_gramatica_computacional_a0afc081354a390265749a3cac286d528}\index{parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}!adicionaProducao@{adicionaProducao}}
+\index{adicionaProducao@{adicionaProducao}!parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}}
+\doxysubsubsection{\texorpdfstring{adicionaProducao()}{adicionaProducao()}}
+{\footnotesize\ttfamily \label{classparser_1_1_uma_gramatica_computacional_a0afc081354a390265749a3cac286d528} 
+void parser.\+Uma\+Gramatica\+Computacional.\+adiciona\+Producao (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_producao}{Producao}}}]{novaproducao}{}\end{DoxyParamCaption})}
+
+
+
+adiciona uma producao para a sintaxe da linguagem. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em novaproducao} & nova produção, extendendo a linguagem.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_uma_gramatica_computacional_a1286a172b35abbd89516e5b7934914e5}\index{parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}!GetOperadores@{GetOperadores}}
+\index{GetOperadores@{GetOperadores}!parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}}
+\doxysubsubsection{\texorpdfstring{GetOperadores()}{GetOperadores()}}
+{\footnotesize\ttfamily \label{classparser_1_1_uma_gramatica_computacional_a1286a172b35abbd89516e5b7934914e5} 
+virtual List$<$ \mbox{\hyperlink{classparser_1_1_operador}{Operador}} $>$ parser.\+Uma\+Gramatica\+Computacional.\+Get\+Operadores (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+retorna uma lista de todos operadores da linguagem. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classparser_1_1_linguagem_orquidea_ad6b019b1a5026bc0b4d9e4d67b349619}{parser.\+Linguagem\+Orquidea}}.
+
+\Hypertarget{classparser_1_1_uma_gramatica_computacional_a05e2e5b5f2803ef9ec4ae825bb720f5b}\index{parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}!GetOperadoresBloco@{GetOperadoresBloco}}
+\index{GetOperadoresBloco@{GetOperadoresBloco}!parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}}
+\doxysubsubsection{\texorpdfstring{GetOperadoresBloco()}{GetOperadoresBloco()}}
+{\footnotesize\ttfamily \label{classparser_1_1_uma_gramatica_computacional_a05e2e5b5f2803ef9ec4ae825bb720f5b} 
+List$<$ string $>$ parser.\+Uma\+Gramatica\+Computacional.\+Get\+Operadores\+Bloco (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+retorna uma lista de operadores de bloco. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_uma_gramatica_computacional_a85916e1dc4830f6c83e6c6644af24c6c}\index{parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}!GetProducoes@{GetProducoes}}
+\index{GetProducoes@{GetProducoes}!parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}}
+\doxysubsubsection{\texorpdfstring{GetProducoes()}{GetProducoes()}}
+{\footnotesize\ttfamily \label{classparser_1_1_uma_gramatica_computacional_a85916e1dc4830f6c83e6c6644af24c6c} 
+List$<$ \mbox{\hyperlink{classparser_1_1_producao}{Producao}} $>$ parser.\+Uma\+Gramatica\+Computacional.\+Get\+Producoes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+retorna uma lista de todas produções da linguagem. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_uma_gramatica_computacional_a8a118cfe204476d294b27714196a39a1}\index{parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}!GetTodosOperadores@{GetTodosOperadores}}
+\index{GetTodosOperadores@{GetTodosOperadores}!parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}}
+\doxysubsubsection{\texorpdfstring{GetTodosOperadores()}{GetTodosOperadores()}}
+{\footnotesize\ttfamily \label{classparser_1_1_uma_gramatica_computacional_a8a118cfe204476d294b27714196a39a1} 
+virtual List$<$ string $>$ parser.\+Uma\+Gramatica\+Computacional.\+Get\+Todos\+Operadores (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+retorna todos operadores presentes na linguagem, inclusive de classe herdeiras. 
+
+\begin{DoxyReturn}{Returns}
+lista de operadores genéricos registrados.
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classparser_1_1_linguagem_orquidea_a0c716ca2e1a3e5a2fb9530b1cc246e6d}{parser.\+Linguagem\+Orquidea}}.
+
+\Hypertarget{classparser_1_1_uma_gramatica_computacional_a9126e452621eeff94a2be9649ae466dc}\index{parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}!GetTodosOperadoresDuplos@{GetTodosOperadoresDuplos}}
+\index{GetTodosOperadoresDuplos@{GetTodosOperadoresDuplos}!parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}}
+\doxysubsubsection{\texorpdfstring{GetTodosOperadoresDuplos()}{GetTodosOperadoresDuplos()}}
+{\footnotesize\ttfamily \label{classparser_1_1_uma_gramatica_computacional_a9126e452621eeff94a2be9649ae466dc} 
+List$<$ string\mbox{[}$\,$\mbox{]}$>$ parser.\+Uma\+Gramatica\+Computacional.\+Get\+Todos\+Operadores\+Duplos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+obtém todos operadores duplos (exemplo\+: \mbox{[}(\mbox{]} e \mbox{[})\mbox{]} ).São operadores que aparecem com dois tokens. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_uma_gramatica_computacional_aebbc129b5af61dd78ab0bac3bf407911}\index{parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}!GetTodosTermosChave@{GetTodosTermosChave}}
+\index{GetTodosTermosChave@{GetTodosTermosChave}!parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}}
+\doxysubsubsection{\texorpdfstring{GetTodosTermosChave()}{GetTodosTermosChave()}}
+{\footnotesize\ttfamily \label{classparser_1_1_uma_gramatica_computacional_aebbc129b5af61dd78ab0bac3bf407911} 
+List$<$ string $>$ parser.\+Uma\+Gramatica\+Computacional.\+Get\+Todos\+Termos\+Chave (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+retorna todos os termos chave de todas produções da linguagem currente, inclusive de todos operadores registrados na linguagem currente. 
+
+\begin{DoxyReturn}{Returns}
+todos os termos chave da presente linguagem.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_uma_gramatica_computacional_a07b663dbf4d722eefe3f714d4c1c303f}\index{parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}!inicializaProducoesDaLinguagem@{inicializaProducoesDaLinguagem}}
+\index{inicializaProducoesDaLinguagem@{inicializaProducoesDaLinguagem}!parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}}
+\doxysubsubsection{\texorpdfstring{inicializaProducoesDaLinguagem()}{inicializaProducoesDaLinguagem()}}
+{\footnotesize\ttfamily \label{classparser_1_1_uma_gramatica_computacional_a07b663dbf4d722eefe3f714d4c1c303f} 
+void parser.\+Uma\+Gramatica\+Computacional.\+inicializa\+Producoes\+Da\+Linguagem (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+carrega as producoes da linguagem via um arquivo .XML. 
+
+\Hypertarget{classparser_1_1_uma_gramatica_computacional_ab9dd9225f886823730bbded01b1c8bda}\index{parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}!IsID@{IsID}}
+\index{IsID@{IsID}!parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}}
+\doxysubsubsection{\texorpdfstring{IsID()}{IsID()}}
+{\footnotesize\ttfamily \label{classparser_1_1_uma_gramatica_computacional_ab9dd9225f886823730bbded01b1c8bda} 
+bool parser.\+Uma\+Gramatica\+Computacional.\+Is\+ID (\begin{DoxyParamCaption}\item[{string}]{token}{}\end{DoxyParamCaption})}
+
+
+
+Verifica se o token é um ID ou número. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & palavra a ser investigada.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna \mbox{[}true\mbox{]} se a palavra for um ID, \mbox{[}true\mbox{]} se a palavra for um número, ou \mbox{[}false\mbox{]} se a palavra for reservada (contendo termos-\/chave, e não é um número).
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_uma_gramatica_computacional_a9e2867d0a57b7aaaf864bfe838da807d}\index{parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}!IsNumero@{IsNumero}}
+\index{IsNumero@{IsNumero}!parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}}
+\doxysubsubsection{\texorpdfstring{IsNumero()}{IsNumero()}}
+{\footnotesize\ttfamily \label{classparser_1_1_uma_gramatica_computacional_a9e2867d0a57b7aaaf864bfe838da807d} 
+bool parser.\+Uma\+Gramatica\+Computacional.\+Is\+Numero (\begin{DoxyParamCaption}\item[{string}]{token}{}\end{DoxyParamCaption})}
+
+
+
+verifica se uma palavra é um número\+: int, float, ou double. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & palavra a ser investigada se é número.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}true\mbox{]} se o token e numero, \mbox{[}false\mbox{]} se nao.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_uma_gramatica_computacional_ab377f086712e1820d1961276e72f5680}\index{parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}!isTermoChave@{isTermoChave}}
+\index{isTermoChave@{isTermoChave}!parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}}
+\doxysubsubsection{\texorpdfstring{isTermoChave()}{isTermoChave()}}
+{\footnotesize\ttfamily \label{classparser_1_1_uma_gramatica_computacional_ab377f086712e1820d1961276e72f5680} 
+bool parser.\+Uma\+Gramatica\+Computacional.\+is\+Termo\+Chave (\begin{DoxyParamCaption}\item[{string}]{token}{}\end{DoxyParamCaption})}
+
+
+
+retorna true se o token parametro é um termo-\/chave da linguagem. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & token a verificar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_uma_gramatica_computacional_aca8f8ca5fc5fffd1d29ad2b9f22f2edf}\index{parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}!LocalizaProducaoPeloTipo@{LocalizaProducaoPeloTipo}}
+\index{LocalizaProducaoPeloTipo@{LocalizaProducaoPeloTipo}!parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}}
+\doxysubsubsection{\texorpdfstring{LocalizaProducaoPeloTipo()}{LocalizaProducaoPeloTipo()}}
+{\footnotesize\ttfamily \label{classparser_1_1_uma_gramatica_computacional_aca8f8ca5fc5fffd1d29ad2b9f22f2edf} 
+\mbox{\hyperlink{classparser_1_1_producao}{Producao}} parser.\+Uma\+Gramatica\+Computacional.\+Localiza\+Producao\+Pelo\+Tipo (\begin{DoxyParamCaption}\item[{string}]{tipo}{, }\item[{\mbox{\hyperlink{classparser_1_1_producao}{Producao}}}]{prod}{}\end{DoxyParamCaption})}
+
+
+
+obtém uma produção ou produções pelo seu tipo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tipo} & tipo de produção.\\
+\hline
+{\em prod} & produção a ser excluída.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna um vetor contendo todas produções cujo tipo de produção é igual a \mbox{[}tipo\mbox{]}.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_uma_gramatica_computacional_aca4a82073f27f8d975652a6b69972d53}\index{parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}!LocalizaProducoesPeloNome@{LocalizaProducoesPeloNome}}
+\index{LocalizaProducoesPeloNome@{LocalizaProducoesPeloNome}!parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}}
+\doxysubsubsection{\texorpdfstring{LocalizaProducoesPeloNome()}{LocalizaProducoesPeloNome()}}
+{\footnotesize\ttfamily \label{classparser_1_1_uma_gramatica_computacional_aca4a82073f27f8d975652a6b69972d53} 
+List$<$ \mbox{\hyperlink{classparser_1_1_producao}{Producao}} $>$ parser.\+Uma\+Gramatica\+Computacional.\+Localiza\+Producoes\+Pelo\+Nome (\begin{DoxyParamCaption}\item[{string}]{nome}{, }\item[{\mbox{\hyperlink{classparser_1_1_producao}{Producao}}}]{prod}{}\end{DoxyParamCaption})}
+
+
+
+localiza uma produção pelo nome. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_uma_gramatica_computacional_a59131f3d4c0e108c30ca6675a59d3a53}\index{parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}!LocalizaProducoesPorTermoChave@{LocalizaProducoesPorTermoChave}}
+\index{LocalizaProducoesPorTermoChave@{LocalizaProducoesPorTermoChave}!parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}}
+\doxysubsubsection{\texorpdfstring{LocalizaProducoesPorTermoChave()}{LocalizaProducoesPorTermoChave()}}
+{\footnotesize\ttfamily \label{classparser_1_1_uma_gramatica_computacional_a59131f3d4c0e108c30ca6675a59d3a53} 
+List$<$ \mbox{\hyperlink{classparser_1_1_producao}{Producao}} $>$ parser.\+Uma\+Gramatica\+Computacional.\+Localiza\+Producoes\+Por\+Termo\+Chave (\begin{DoxyParamCaption}\item[{string}]{termo\+Chave\+Procura}{}\end{DoxyParamCaption})}
+
+
+
+localiza as produções com primeiro termo chave igual a \mbox{[}primeiro\+Termo\+Chave\mbox{]} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em termo\+Chave\+Procura} & termo chave para a busca.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_uma_gramatica_computacional_a26678b94e3e2c5ed0a3d43ed279d205b}\index{parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}!RegistraOperador@{RegistraOperador}}
+\index{RegistraOperador@{RegistraOperador}!parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}}
+\doxysubsubsection{\texorpdfstring{RegistraOperador()}{RegistraOperador()}}
+{\footnotesize\ttfamily \label{classparser_1_1_uma_gramatica_computacional_a26678b94e3e2c5ed0a3d43ed279d205b} 
+static void parser.\+Uma\+Gramatica\+Computacional.\+Registra\+Operador (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_operador}{Operador}}}]{operador}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+adiciona um operador para a lista de operadores. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em operador} & operador a adicionar.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_uma_gramatica_computacional_ab76e8b871e115eecc81b044979a28826}\index{parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}!RemoveTermoChave@{RemoveTermoChave}}
+\index{RemoveTermoChave@{RemoveTermoChave}!parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}}
+\doxysubsubsection{\texorpdfstring{RemoveTermoChave()}{RemoveTermoChave()}}
+{\footnotesize\ttfamily \label{classparser_1_1_uma_gramatica_computacional_ab76e8b871e115eecc81b044979a28826} 
+void parser.\+Uma\+Gramatica\+Computacional.\+Remove\+Termo\+Chave (\begin{DoxyParamCaption}\item[{string}]{termo\+Chave\+AExcluir}{}\end{DoxyParamCaption})}
+
+
+
+remove um termo-\/chave de nome parametro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em termo\+Chave\+AExcluir} & nome do termo-\/chave.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_uma_gramatica_computacional_af106f059ae5a46e1d3118c2bd8932584}\index{parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}!VerificaSeEhFloat@{VerificaSeEhFloat}}
+\index{VerificaSeEhFloat@{VerificaSeEhFloat}!parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}}
+\doxysubsubsection{\texorpdfstring{VerificaSeEhFloat()}{VerificaSeEhFloat()}}
+{\footnotesize\ttfamily \label{classparser_1_1_uma_gramatica_computacional_af106f059ae5a46e1d3118c2bd8932584} 
+bool parser.\+Uma\+Gramatica\+Computacional.\+Verifica\+Se\+Eh\+Float (\begin{DoxyParamCaption}\item[{string}]{token}{}\end{DoxyParamCaption})}
+
+
+
+verifica se um token é um texto de numero ponto-\/flutuante float. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & token a verificar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna true se é um texto de 1 float.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_uma_gramatica_computacional_ad938bbd5a0e846e84abcfff2b9e483f5}\index{parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}!VerificaSeEhInt@{VerificaSeEhInt}}
+\index{VerificaSeEhInt@{VerificaSeEhInt}!parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}}
+\doxysubsubsection{\texorpdfstring{VerificaSeEhInt()}{VerificaSeEhInt()}}
+{\footnotesize\ttfamily \label{classparser_1_1_uma_gramatica_computacional_ad938bbd5a0e846e84abcfff2b9e483f5} 
+bool parser.\+Uma\+Gramatica\+Computacional.\+Verifica\+Se\+Eh\+Int (\begin{DoxyParamCaption}\item[{string}]{token}{}\end{DoxyParamCaption})}
+
+
+
+verifica se um token é de um numero inteiro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & token a verificar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna true se é um texto de numero inteiro.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_uma_gramatica_computacional_a329fc4a171db7d34a6295d51bf787bdb}\index{parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}!VerificaSeEhOperador@{VerificaSeEhOperador}}
+\index{VerificaSeEhOperador@{VerificaSeEhOperador}!parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}}
+\doxysubsubsection{\texorpdfstring{VerificaSeEhOperador()}{VerificaSeEhOperador()}}
+{\footnotesize\ttfamily \label{classparser_1_1_uma_gramatica_computacional_a329fc4a171db7d34a6295d51bf787bdb} 
+bool parser.\+Uma\+Gramatica\+Computacional.\+Verifica\+Se\+Eh\+Operador (\begin{DoxyParamCaption}\item[{string}]{token}{}\end{DoxyParamCaption})}
+
+
+
+verifica se a palavra é um operador. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & palavra a ser investigada.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna \mbox{[}true\mbox{]} se o \mbox{[}token\mbox{]} esta registrado como operador, \mbox{[}false\mbox{]} se não.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_uma_gramatica_computacional_a2d2ed550d569f37d5d8aea21c5d3edea}\index{parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}!VerificaSeEhOperadorBinario@{VerificaSeEhOperadorBinario}}
+\index{VerificaSeEhOperadorBinario@{VerificaSeEhOperadorBinario}!parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}}
+\doxysubsubsection{\texorpdfstring{VerificaSeEhOperadorBinario()}{VerificaSeEhOperadorBinario()}}
+{\footnotesize\ttfamily \label{classparser_1_1_uma_gramatica_computacional_a2d2ed550d569f37d5d8aea21c5d3edea} 
+bool parser.\+Uma\+Gramatica\+Computacional.\+Verifica\+Se\+Eh\+Operador\+Binario (\begin{DoxyParamCaption}\item[{string}]{token}{}\end{DoxyParamCaption})}
+
+
+
+verifica se uma palavra é um operador binário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & palavra a ser investigada.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}true\mbox{]} se a palavra investigada é um operador binário, \mbox{[}false\mbox{]} se não.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_uma_gramatica_computacional_a70729aab378215ec5be2fcd39ba4cceb}\index{parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}!VerificaSeEhOperadorDuplo@{VerificaSeEhOperadorDuplo}}
+\index{VerificaSeEhOperadorDuplo@{VerificaSeEhOperadorDuplo}!parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}}
+\doxysubsubsection{\texorpdfstring{VerificaSeEhOperadorDuplo()}{VerificaSeEhOperadorDuplo()}}
+{\footnotesize\ttfamily \label{classparser_1_1_uma_gramatica_computacional_a70729aab378215ec5be2fcd39ba4cceb} 
+bool parser.\+Uma\+Gramatica\+Computacional.\+Verifica\+Se\+Eh\+Operador\+Duplo (\begin{DoxyParamCaption}\item[{string}]{token}{}\end{DoxyParamCaption})}
+
+
+
+verifica se uma palavra é um operador-\/duplo, um tipo especial de operador que aparece duas vezes para complitude. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & palavra a ser investigada\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna true se o \mbox{[}token\mbox{]} é operador duplo, false se não.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_uma_gramatica_computacional_a6dd14854ba621b0014c8bc41a35594dc}\index{parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}!VerificaSeEhOperadorUnario@{VerificaSeEhOperadorUnario}}
+\index{VerificaSeEhOperadorUnario@{VerificaSeEhOperadorUnario}!parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}}
+\doxysubsubsection{\texorpdfstring{VerificaSeEhOperadorUnario()}{VerificaSeEhOperadorUnario()}}
+{\footnotesize\ttfamily \label{classparser_1_1_uma_gramatica_computacional_a6dd14854ba621b0014c8bc41a35594dc} 
+bool parser.\+Uma\+Gramatica\+Computacional.\+Verifica\+Se\+Eh\+Operador\+Unario (\begin{DoxyParamCaption}\item[{string}]{token}{}\end{DoxyParamCaption})}
+
+
+
+verifica se uma palavra é um operador unário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & palavra a ser investigada.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}true\mbox{]} se \mbox{[}token\mbox{]} é um operador unário, false se não.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_uma_gramatica_computacional_a454f3fc2ac3d05a66eca7c7b99d73796}\index{parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}!VerificaSeEString@{VerificaSeEString}}
+\index{VerificaSeEString@{VerificaSeEString}!parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}}
+\doxysubsubsection{\texorpdfstring{VerificaSeEString()}{VerificaSeEString()}}
+{\footnotesize\ttfamily \label{classparser_1_1_uma_gramatica_computacional_a454f3fc2ac3d05a66eca7c7b99d73796} 
+bool parser.\+Uma\+Gramatica\+Computacional.\+Verifica\+Se\+EString (\begin{DoxyParamCaption}\item[{string}]{token}{}\end{DoxyParamCaption})}
+
+
+
+verifica se um token é uma literal, constante string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & token a verificar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna true se é uma literal.
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classparser_1_1_uma_gramatica_computacional_a47dacfaf290f6d78228db3f3cdbdce66}\index{parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}!operadores@{operadores}}
+\index{operadores@{operadores}!parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}}
+\doxysubsubsection{\texorpdfstring{operadores}{operadores}}
+{\footnotesize\ttfamily \label{classparser_1_1_uma_gramatica_computacional_a47dacfaf290f6d78228db3f3cdbdce66} 
+List$<$\mbox{\hyperlink{classparser_1_1_operador}{Operador}}$>$ parser.\+Uma\+Gramatica\+Computacional.\+operadores = new List$<$\mbox{\hyperlink{classparser_1_1_operador}{Operador}}$>$()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+lista de todos operadores da linguagem. 
+
+\Hypertarget{classparser_1_1_uma_gramatica_computacional_aff869c0703848ff36fa5b71cfd1b26d1}\index{parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}!producoes@{producoes}}
+\index{producoes@{producoes}!parser.UmaGramaticaComputacional@{parser.UmaGramaticaComputacional}}
+\doxysubsubsection{\texorpdfstring{producoes}{producoes}}
+{\footnotesize\ttfamily \label{classparser_1_1_uma_gramatica_computacional_aff869c0703848ff36fa5b71cfd1b26d1} 
+List$<$\mbox{\hyperlink{classparser_1_1_producao}{Producao}}$>$ parser.\+Uma\+Gramatica\+Computacional.\+producoes = new List$<$\mbox{\hyperlink{classparser_1_1_producao}{Producao}}$>$()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+lista das produções da linguagem. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/\+Gramatica\+Componentes/\mbox{\hyperlink{lng_uma_linguagem_computacional_8cs}{lng\+Uma\+Linguagem\+Computacional.\+cs}}\end{DoxyCompactItemize}

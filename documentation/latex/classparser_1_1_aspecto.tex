@@ -1,0 +1,227 @@
+\doxysection{parser.\+Aspecto Class Reference}
+\hypertarget{classparser_1_1_aspecto}{}\label{classparser_1_1_aspecto}\index{parser.Aspecto@{parser.Aspecto}}
+
+
+classe que implementa um processamento de \doxylink{classparser_1_1_aspecto}{Aspecto}.  
+
+
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classparser_1_1_aspecto_aadbc5bbee644718d00453ce05f895217}{Type\+Algoritm\+Insertion}} \{ \mbox{\hyperlink{classparser_1_1_aspecto_aadbc5bbee644718d00453ce05f895217a40ab71bcc2705c597aad9a50ffd8eaec}{By\+Object}}
+, \mbox{\hyperlink{classparser_1_1_aspecto_aadbc5bbee644718d00453ce05f895217a92a5ad699ef091bd13732599be313c2f}{By\+Calling\+Method}}
+ \}
+\begin{DoxyCompactList}\small\item\em tipos de algortimo da função de corte\+: objeto, ou metodo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+delegate bool \mbox{\hyperlink{classparser_1_1_aspecto_a34b8a0d0a6e841d3a9220b8606659825}{Insercao\+Algoritmo}} (\mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} instrucao, string nome\+Classe, string nome\+Metodo, string tipo\+Insercao, ref List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ instrucoes, int index\+Insercao, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\item 
+\mbox{\hyperlink{classparser_1_1_aspecto_a1b92daea615ad2e5dca4d6c5d2d9bcf0}{Aspecto}} (string name\+Aspect, string nome\+Tipo\+Do\+Objeto, string nome\+Metodo, List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$ instrucoes\+Do\+Corte, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo, \mbox{\hyperlink{classparser_1_1_aspecto_aadbc5bbee644718d00453ce05f895217}{Type\+Algoritm\+Insertion}} tipo\+Algoritmo, string tipo\+Insercao)
+\begin{DoxyCompactList}\small\item\em construtor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_aspecto_a41ba89322588c2dbe91f8880ccac30b4}{Aspecto}} (string name\+Aspect, string nome\+Tipo\+Do\+Objeto, string nome\+Metodo, \mbox{\hyperlink{classparser_1_1_metodo}{Metodo}} function\+Cutter, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo, \mbox{\hyperlink{classparser_1_1_aspecto_aadbc5bbee644718d00453ce05f895217}{Type\+Algoritm\+Insertion}} tipo\+Algoritmo, string tipo\+Insercao)
+\begin{DoxyCompactList}\small\item\em construtor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_aspecto_aa01c214d2e467e6f4c720b9cd915f26e}{Analise\+Aspecto}} (\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em analise de aspectos. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} \mbox{\hyperlink{classparser_1_1_aspecto_a54352f2a9f58d39a4120b070b23d139b}{Build\+Calling\+Method\+Cut}} (\mbox{\hyperlink{classparser_1_1_expressao_objeto}{Expressao\+Objeto}} instancia\+Objeto)
+\begin{DoxyCompactList}\small\item\em constroi e compila a instrucao que implementa a chamada da funcao de corte!, para o caso de monitoracao de um objeto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} \mbox{\hyperlink{classparser_1_1_aspecto_a02ef89b5b45294282be3bc2de4b73c10}{Build\+Calling\+Method\+Cut\+\_\+\+Calling\+Method}} (\mbox{\hyperlink{classparser_1_1_expressao_objeto}{Expressao\+Objeto}} instancia\+Objeto, string nome\+Metodo)
+\begin{DoxyCompactList}\small\item\em constroi e compila a instrucao que implementa a chamada da funcao de corte!, para o caso de monitoracao de um objeto, E um metodo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_aspecto_a215505e92e10113f805dc9ac6e05ddbc}{tipo\+De\+Insercao}} = new List$<$string$>$()\{"{}before"{}, "{}after"{}, "{}all"{} \}
+\begin{DoxyCompactList}\small\item\em tipos de inserção da função de corte. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classparser_1_1_aspecto_ad5be580a6216477ea663db8bb41fb707}{nome\+Aspecto}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em nome id do aspecto. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classparser_1_1_aspecto_a6128c7bb682d9dcad2147f07c076f704}{nome\+Tipo\+Doobjeto}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em nome do tipo do objeto interceptado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+classe que implementa um processamento de \doxylink{classparser_1_1_aspecto}{Aspecto}. 
+
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{classparser_1_1_aspecto_aadbc5bbee644718d00453ce05f895217}\index{parser.Aspecto@{parser.Aspecto}!TypeAlgoritmInsertion@{TypeAlgoritmInsertion}}
+\index{TypeAlgoritmInsertion@{TypeAlgoritmInsertion}!parser.Aspecto@{parser.Aspecto}}
+\doxysubsubsection{\texorpdfstring{TypeAlgoritmInsertion}{TypeAlgoritmInsertion}}
+{\footnotesize\ttfamily \label{classparser_1_1_aspecto_aadbc5bbee644718d00453ce05f895217} 
+enum \mbox{\hyperlink{classparser_1_1_aspecto_aadbc5bbee644718d00453ce05f895217}{parser.\+Aspecto.\+Type\+Algoritm\+Insertion}}}
+
+
+
+tipos de algortimo da função de corte\+: objeto, ou metodo. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ByObject@{ByObject}!parser.Aspecto@{parser.Aspecto}}\index{parser.Aspecto@{parser.Aspecto}!ByObject@{ByObject}}}\Hypertarget{classparser_1_1_aspecto_aadbc5bbee644718d00453ce05f895217a40ab71bcc2705c597aad9a50ffd8eaec}\label{classparser_1_1_aspecto_aadbc5bbee644718d00453ce05f895217} 
+By\+Object&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ByCallingMethod@{ByCallingMethod}!parser.Aspecto@{parser.Aspecto}}\index{parser.Aspecto@{parser.Aspecto}!ByCallingMethod@{ByCallingMethod}}}\Hypertarget{classparser_1_1_aspecto_aadbc5bbee644718d00453ce05f895217a92a5ad699ef091bd13732599be313c2f}\label{classparser_1_1_aspecto_aadbc5bbee644718d00453ce05f895217} 
+By\+Calling\+Method&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classparser_1_1_aspecto_a1b92daea615ad2e5dca4d6c5d2d9bcf0}\index{parser.Aspecto@{parser.Aspecto}!Aspecto@{Aspecto}}
+\index{Aspecto@{Aspecto}!parser.Aspecto@{parser.Aspecto}}
+\doxysubsubsection{\texorpdfstring{Aspecto()}{Aspecto()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_aspecto_a1b92daea615ad2e5dca4d6c5d2d9bcf0} 
+parser.\+Aspecto.\+Aspecto (\begin{DoxyParamCaption}\item[{string}]{name\+Aspect}{, }\item[{string}]{nome\+Tipo\+Do\+Objeto}{, }\item[{string}]{nome\+Metodo}{, }\item[{List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$}]{instrucoes\+Do\+Corte}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{, }\item[{\mbox{\hyperlink{classparser_1_1_aspecto_aadbc5bbee644718d00453ce05f895217}{Type\+Algoritm\+Insertion}}}]{tipo\+Algoritmo}{, }\item[{string}]{tipo\+Insercao}{}\end{DoxyParamCaption})}
+
+
+
+construtor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+Aspect} & nome do aspecto.\\
+\hline
+{\em nome\+Tipo\+Do\+Objeto} & nome do tipo do objeto interceptado.\\
+\hline
+{\em nome\+Metodo} & ou nome do metodo interceptado.\\
+\hline
+{\em instrucoes\+Do\+Corte} & lista de instruções executados quando a função de corte é acionada.\\
+\hline
+{\em escopo} & contexto onde o aspecto está.\\
+\hline
+{\em tipo\+Algoritmo} & tipo do algoritmo aspecto\+: objeto, metodo.\\
+\hline
+{\em tipo\+Insercao} & tipo de inserção\+: antes, depois, ou antes e depois da interceptação.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_aspecto_a41ba89322588c2dbe91f8880ccac30b4}\index{parser.Aspecto@{parser.Aspecto}!Aspecto@{Aspecto}}
+\index{Aspecto@{Aspecto}!parser.Aspecto@{parser.Aspecto}}
+\doxysubsubsection{\texorpdfstring{Aspecto()}{Aspecto()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_aspecto_a41ba89322588c2dbe91f8880ccac30b4} 
+parser.\+Aspecto.\+Aspecto (\begin{DoxyParamCaption}\item[{string}]{name\+Aspect}{, }\item[{string}]{nome\+Tipo\+Do\+Objeto}{, }\item[{string}]{nome\+Metodo}{, }\item[{\mbox{\hyperlink{classparser_1_1_metodo}{Metodo}}}]{function\+Cutter}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{, }\item[{\mbox{\hyperlink{classparser_1_1_aspecto_aadbc5bbee644718d00453ce05f895217}{Type\+Algoritm\+Insertion}}}]{tipo\+Algoritmo}{, }\item[{string}]{tipo\+Insercao}{}\end{DoxyParamCaption})}
+
+
+
+construtor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+Aspect} & nome do aspecto.\\
+\hline
+{\em nome\+Tipo\+Do\+Objeto} & nome do tipo do objeto a interceptar.\\
+\hline
+{\em nome\+Metodo} & ou nome do metodo a interceptar.\\
+\hline
+{\em function\+Cutter} & metodo executado quando a função corte é acionada.\\
+\hline
+{\em escopo} & contexto onde o aspecto está.\\
+\hline
+{\em tipo\+Algoritmo} & tipo de algoritmo\+: objeto, metodo.\\
+\hline
+{\em tipo\+Insercao} & tipo de inserção da função de corte\+: antes, depois, ou antes e depois, do objeto, metodo for identificado.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_aspecto_aa01c214d2e467e6f4c720b9cd915f26e}\index{parser.Aspecto@{parser.Aspecto}!AnaliseAspecto@{AnaliseAspecto}}
+\index{AnaliseAspecto@{AnaliseAspecto}!parser.Aspecto@{parser.Aspecto}}
+\doxysubsubsection{\texorpdfstring{AnaliseAspecto()}{AnaliseAspecto()}}
+{\footnotesize\ttfamily \label{classparser_1_1_aspecto_aa01c214d2e467e6f4c720b9cd915f26e} 
+void parser.\+Aspecto.\+Analise\+Aspecto (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})}
+
+
+
+analise de aspectos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em escopo} & contexto onde o aspecto está.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_aspecto_a54352f2a9f58d39a4120b070b23d139b}\index{parser.Aspecto@{parser.Aspecto}!BuildCallingMethodCut@{BuildCallingMethodCut}}
+\index{BuildCallingMethodCut@{BuildCallingMethodCut}!parser.Aspecto@{parser.Aspecto}}
+\doxysubsubsection{\texorpdfstring{BuildCallingMethodCut()}{BuildCallingMethodCut()}}
+{\footnotesize\ttfamily \label{classparser_1_1_aspecto_a54352f2a9f58d39a4120b070b23d139b} 
+\mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} parser.\+Aspecto.\+Build\+Calling\+Method\+Cut (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_expressao_objeto}{Expressao\+Objeto}}}]{instancia\+Objeto}{}\end{DoxyParamCaption})}
+
+
+
+constroi e compila a instrucao que implementa a chamada da funcao de corte!, para o caso de monitoracao de um objeto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em instancia\+Objeto} & expressao objeto a interceptar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_aspecto_a02ef89b5b45294282be3bc2de4b73c10}\index{parser.Aspecto@{parser.Aspecto}!BuildCallingMethodCut\_CallingMethod@{BuildCallingMethodCut\_CallingMethod}}
+\index{BuildCallingMethodCut\_CallingMethod@{BuildCallingMethodCut\_CallingMethod}!parser.Aspecto@{parser.Aspecto}}
+\doxysubsubsection{\texorpdfstring{BuildCallingMethodCut\_CallingMethod()}{BuildCallingMethodCut\_CallingMethod()}}
+{\footnotesize\ttfamily \label{classparser_1_1_aspecto_a02ef89b5b45294282be3bc2de4b73c10} 
+\mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} parser.\+Aspecto.\+Build\+Calling\+Method\+Cut\+\_\+\+Calling\+Method (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_expressao_objeto}{Expressao\+Objeto}}}]{instancia\+Objeto}{, }\item[{string}]{nome\+Metodo}{}\end{DoxyParamCaption})}
+
+
+
+constroi e compila a instrucao que implementa a chamada da funcao de corte!, para o caso de monitoracao de um objeto, E um metodo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em instancia\+Objeto} & expressao objeto a interceptar.\\
+\hline
+{\em nome\+Metodo} & nome do metodo a interceptar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_aspecto_a34b8a0d0a6e841d3a9220b8606659825}\index{parser.Aspecto@{parser.Aspecto}!InsercaoAlgoritmo@{InsercaoAlgoritmo}}
+\index{InsercaoAlgoritmo@{InsercaoAlgoritmo}!parser.Aspecto@{parser.Aspecto}}
+\doxysubsubsection{\texorpdfstring{InsercaoAlgoritmo()}{InsercaoAlgoritmo()}}
+{\footnotesize\ttfamily \label{classparser_1_1_aspecto_a34b8a0d0a6e841d3a9220b8606659825} 
+delegate bool parser.\+Aspecto.\+Insercao\+Algoritmo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}}}]{instrucao}{, }\item[{string}]{nome\+Classe}{, }\item[{string}]{nome\+Metodo}{, }\item[{string}]{tipo\+Insercao}{, }\item[{ref List$<$ \mbox{\hyperlink{classparser_1_1_instrucao}{Instrucao}} $>$}]{instrucoes}{, }\item[{int}]{index\+Insercao}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classparser_1_1_aspecto_a215505e92e10113f805dc9ac6e05ddbc}\index{parser.Aspecto@{parser.Aspecto}!tipoDeInsercao@{tipoDeInsercao}}
+\index{tipoDeInsercao@{tipoDeInsercao}!parser.Aspecto@{parser.Aspecto}}
+\doxysubsubsection{\texorpdfstring{tipoDeInsercao}{tipoDeInsercao}}
+{\footnotesize\ttfamily \label{classparser_1_1_aspecto_a215505e92e10113f805dc9ac6e05ddbc} 
+List$<$string$>$ parser.\+Aspecto.\+tipo\+De\+Insercao = new List$<$string$>$()\{"{}before"{}, "{}after"{}, "{}all"{} \}}
+
+
+
+tipos de inserção da função de corte. 
+
+algoritmo\+: 1 -\/ Faz uma analise, procurando tipo de objeto ou nome de metodo presente em cada expressao de cada classe orquidea. Classes importadas não é possível implementar o asprecto, justamente porque não tem instruções orquidea, mas código importado da linguagem base. 2-\/ encontrando um tipo de objeto ou chamada de metodo, calcula e compila uma chamada de instrucao de chamada do funcao "{}\+Cut"{}. 3-\/ ao inserir a chamada da funcao cut, está completo a compilação do aspecto, inserido nas classes da linguagem orquidea. 1-\/ as classes precisam já estar compiladas. 2-\/ é preciso criar e compilar uma chamada "{}\mbox{[}nome\+Aspecto\mbox{]}\+Cut"{}, para ser invocado que implementa o aspecto. 2.\+1-\/ uma constacao é que a funcao "{}\+Cut"{} é codificado com instruções da linguagem orquidea. se a funcao corte possuir um parâmetro, o objeto a ser monitorado, não será preciso de um nome alias para o objeto, dentro da função de corte. 
+
+\doxysubsection{Property Documentation}
+\Hypertarget{classparser_1_1_aspecto_ad5be580a6216477ea663db8bb41fb707}\index{parser.Aspecto@{parser.Aspecto}!nomeAspecto@{nomeAspecto}}
+\index{nomeAspecto@{nomeAspecto}!parser.Aspecto@{parser.Aspecto}}
+\doxysubsubsection{\texorpdfstring{nomeAspecto}{nomeAspecto}}
+{\footnotesize\ttfamily \label{classparser_1_1_aspecto_ad5be580a6216477ea663db8bb41fb707} 
+string parser.\+Aspecto.\+nome\+Aspecto\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+nome id do aspecto. 
+
+\Hypertarget{classparser_1_1_aspecto_a6128c7bb682d9dcad2147f07c076f704}\index{parser.Aspecto@{parser.Aspecto}!nomeTipoDoobjeto@{nomeTipoDoobjeto}}
+\index{nomeTipoDoobjeto@{nomeTipoDoobjeto}!parser.Aspecto@{parser.Aspecto}}
+\doxysubsubsection{\texorpdfstring{nomeTipoDoobjeto}{nomeTipoDoobjeto}}
+{\footnotesize\ttfamily \label{classparser_1_1_aspecto_a6128c7bb682d9dcad2147f07c076f704} 
+string parser.\+Aspecto.\+nome\+Tipo\+Doobjeto\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+nome do tipo do objeto interceptado. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/componentes\+De\+Interpretadores\+ECompiladores/\+PROGRAMACAO ORIENTADA A ASPECTOS/\mbox{\hyperlink{_aspecto_8cs}{Aspecto.\+cs}}\end{DoxyCompactItemize}

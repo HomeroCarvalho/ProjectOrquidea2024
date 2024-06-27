@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectOrquidea2024", "ProjectOrquidea2024.csproj", "{32C51D1F-8315-4A80-9AB0-E0DFC7ED17F2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32C51D1F-8315-4A80-9AB0-E0DFC7ED17F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32C51D1F-8315-4A80-9AB0-E0DFC7ED17F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32C51D1F-8315-4A80-9AB0-E0DFC7ED17F2}.Debug|x86.ActiveCfg = Debug|x86
+		{32C51D1F-8315-4A80-9AB0-E0DFC7ED17F2}.Debug|x86.Build.0 = Debug|x86
+		{32C51D1F-8315-4A80-9AB0-E0DFC7ED17F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32C51D1F-8315-4A80-9AB0-E0DFC7ED17F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32C51D1F-8315-4A80-9AB0-E0DFC7ED17F2}.Release|x86.ActiveCfg = Release|x86
+		{32C51D1F-8315-4A80-9AB0-E0DFC7ED17F2}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F0A75A4-BA77-4E71-97CF-E92CA3CC4AFE}
+	EndGlobalSection
+EndGlobal

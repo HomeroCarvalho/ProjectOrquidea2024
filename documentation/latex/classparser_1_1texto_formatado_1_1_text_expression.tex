@@ -1,0 +1,218 @@
+\doxysection{parser.\+texto\+Formatado.\+Text\+Expression Class Reference}
+\hypertarget{classparser_1_1texto_formatado_1_1_text_expression}{}\label{classparser_1_1texto_formatado_1_1_text_expression}\index{parser.textoFormatado.TextExpression@{parser.textoFormatado.TextExpression}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classparser_1_1texto_formatado_1_1_text_expression_1_1_comparer_ocorrencias}{Comparer\+Ocorrencias}}
+\item 
+class \mbox{\hyperlink{classparser_1_1texto_formatado_1_1_text_expression_1_1_ocorrencia}{Ocorrencia}}
+\item 
+class \mbox{\hyperlink{classparser_1_1texto_formatado_1_1_text_expression_1_1_testes}{Testes}}
+\item 
+class \mbox{\hyperlink{classparser_1_1texto_formatado_1_1_text_expression_1_1token_resumed}{token\+Resumed}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparser_1_1texto_formatado_1_1_text_expression_ab14f36c615e4d20854e38aa416b0a307}{Text\+Expression}} ()
+\item 
+string \mbox{\hyperlink{classparser_1_1texto_formatado_1_1_text_expression_a4594a826fbe36b12d293d475d04778b9}{Match}} (string pattern\+Resumed, string input, string opcional)
+\begin{DoxyCompactList}\small\item\em encontra no \mbox{[}texto\+Para\+Match\mbox{]}, o padrão \mbox{[}texto\+Resumido\mbox{]}, com texto opcional, que pode aparecer ou não. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classparser_1_1texto_formatado_1_1_text_expression_a90b7c2c9e29fb239c121ea3f945b3e4f}{Forma\+Pattern\+Resumed}} (string input1)
+\item 
+string \mbox{\hyperlink{classparser_1_1texto_formatado_1_1_text_expression_a8f1d8158a8f83eeb29bd71be54e22959}{Forma\+Patter\+Resumed\+For\+Operators}} (string input)
+\begin{DoxyCompactList}\small\item\em forma um pattern resumed com todos operadores presentes. "{}a.\+metodo\+A(x)+ b.\+metodo\+B(a,b)+ c.\+metodo\+C(1,5) ===$>$ a.\+metodo\+A()+ b.\+metodoe\+B()+ c.\+metodo\+C() ==$>$ exprss + exprss + exprss"{}; \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classparser_1_1texto_formatado_1_1_text_expression_a5c3ae458fa9a56e3e2f402e394a69cb6}{Forma\+Expressao\+Regular\+Generica}} (string pattern\+Resume, params string\mbox{[}$\,$\mbox{]} opcional)
+\begin{DoxyCompactList}\small\item\em forma textos de procura por expressao regex, a partir de um parttern resumido, contendo tokens como "{}id"{},"{}exprss"{},"{}number"{}, parenteses... \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ string $>$ \mbox{\hyperlink{classparser_1_1texto_formatado_1_1_text_expression_a089632a9bd056e0f4b593af7e9becc8b}{Get\+Todos\+Termos\+Chaves\+Iniciais}} ()
+\item 
+static bool \mbox{\hyperlink{classparser_1_1texto_formatado_1_1_text_expression_a632a7d07daa2aaf9031971fb8ab00cd0}{Is\+ID}} (string exprss\+ID)
+\begin{DoxyCompactList}\small\item\em verifica se a expressao nao eh um ID. um ID não contem caracteres como parenteses, colchetes, virgula, ponto-\/e-\/virgula, nomes de operadores. \end{DoxyCompactList}\item 
+static List$<$ \mbox{\hyperlink{classparser_1_1texto_formatado_1_1_text_expression_1_1_ocorrencia}{Ocorrencia}} $>$ \mbox{\hyperlink{classparser_1_1texto_formatado_1_1_text_expression_a61f0383936b81e74d14ff66c701d2810}{Get\+Ocurrences\+Operators}} (string path\+Resume, string input)
+\item 
+static List$<$ \mbox{\hyperlink{classparser_1_1texto_formatado_1_1_text_expression_1_1_ocorrencia}{Ocorrencia}} $>$ \mbox{\hyperlink{classparser_1_1texto_formatado_1_1_text_expression_aa40c4469de6db7a95ade2303ed7b7962}{Get\+Ocurrences\+Group}} (string path\+Resume, string input, params string\mbox{[}$\,$\mbox{]} name\+Group)
+\begin{DoxyCompactList}\small\item\em obtem todas ocorrencias de um grupo presente num texto pesquisado por uma regex. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classparser_1_1texto_formatado_1_1_text_expression_af1b0dbbdfbe2083f16a00c79fe52fa19}{Get\+Groups\+Search}} (string pattern\+Resume, string input)
+\begin{DoxyCompactList}\small\item\em tenta encontrar textos que match com o texto padrão. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{classparser_1_1texto_formatado_1_1_text_expression_aaf45b67aac242075a3600de5927c6f39}{ID}}
+\item 
+static string \mbox{\hyperlink{classparser_1_1texto_formatado_1_1_text_expression_a2594d7d87272571c1a2cb1f8a4a22957}{EXPRESS}}
+\item 
+static string \mbox{\hyperlink{classparser_1_1texto_formatado_1_1_text_expression_a47e31c774888366c4ad5cbc14fb5ebe3}{number}}
+\item 
+static string \mbox{\hyperlink{classparser_1_1texto_formatado_1_1_text_expression_a0fb93f44e5fd3312d13b96896fa4dcc5}{literal}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classparser_1_1texto_formatado_1_1_text_expression_ab14f36c615e4d20854e38aa416b0a307}\index{parser.textoFormatado.TextExpression@{parser.textoFormatado.TextExpression}!TextExpression@{TextExpression}}
+\index{TextExpression@{TextExpression}!parser.textoFormatado.TextExpression@{parser.textoFormatado.TextExpression}}
+\doxysubsubsection{\texorpdfstring{TextExpression()}{TextExpression()}}
+{\footnotesize\ttfamily \label{classparser_1_1texto_formatado_1_1_text_expression_ab14f36c615e4d20854e38aa416b0a307} 
+parser.\+texto\+Formatado.\+Text\+Expression.\+Text\+Expression (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1texto_formatado_1_1_text_expression_a5c3ae458fa9a56e3e2f402e394a69cb6}\index{parser.textoFormatado.TextExpression@{parser.textoFormatado.TextExpression}!FormaExpressaoRegularGenerica@{FormaExpressaoRegularGenerica}}
+\index{FormaExpressaoRegularGenerica@{FormaExpressaoRegularGenerica}!parser.textoFormatado.TextExpression@{parser.textoFormatado.TextExpression}}
+\doxysubsubsection{\texorpdfstring{FormaExpressaoRegularGenerica()}{FormaExpressaoRegularGenerica()}}
+{\footnotesize\ttfamily \label{classparser_1_1texto_formatado_1_1_text_expression_a5c3ae458fa9a56e3e2f402e394a69cb6} 
+string parser.\+texto\+Formatado.\+Text\+Expression.\+Forma\+Expressao\+Regular\+Generica (\begin{DoxyParamCaption}\item[{string}]{pattern\+Resume}{, }\item[{params string\mbox{[}$\,$\mbox{]}}]{opcional}{}\end{DoxyParamCaption})}
+
+
+
+forma textos de procura por expressao regex, a partir de um parttern resumido, contendo tokens como "{}id"{},"{}exprss"{},"{}number"{}, parenteses... 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pattern\+Resume} & texto contendo nomes como id, expss, (, ), etc...eex\+: "{}id.\+id()"{}\\
+\hline
+{\em opcional} & opcional do texto formatado, podendo aparecer ou não.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna um texto de procura por expressoes regex.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1texto_formatado_1_1_text_expression_a90b7c2c9e29fb239c121ea3f945b3e4f}\index{parser.textoFormatado.TextExpression@{parser.textoFormatado.TextExpression}!FormaPatternResumed@{FormaPatternResumed}}
+\index{FormaPatternResumed@{FormaPatternResumed}!parser.textoFormatado.TextExpression@{parser.textoFormatado.TextExpression}}
+\doxysubsubsection{\texorpdfstring{FormaPatternResumed()}{FormaPatternResumed()}}
+{\footnotesize\ttfamily \label{classparser_1_1texto_formatado_1_1_text_expression_a90b7c2c9e29fb239c121ea3f945b3e4f} 
+string parser.\+texto\+Formatado.\+Text\+Expression.\+Forma\+Pattern\+Resumed (\begin{DoxyParamCaption}\item[{string}]{input1}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1texto_formatado_1_1_text_expression_a8f1d8158a8f83eeb29bd71be54e22959}\index{parser.textoFormatado.TextExpression@{parser.textoFormatado.TextExpression}!FormaPatterResumedForOperators@{FormaPatterResumedForOperators}}
+\index{FormaPatterResumedForOperators@{FormaPatterResumedForOperators}!parser.textoFormatado.TextExpression@{parser.textoFormatado.TextExpression}}
+\doxysubsubsection{\texorpdfstring{FormaPatterResumedForOperators()}{FormaPatterResumedForOperators()}}
+{\footnotesize\ttfamily \label{classparser_1_1texto_formatado_1_1_text_expression_a8f1d8158a8f83eeb29bd71be54e22959} 
+string parser.\+texto\+Formatado.\+Text\+Expression.\+Forma\+Patter\+Resumed\+For\+Operators (\begin{DoxyParamCaption}\item[{string}]{input}{}\end{DoxyParamCaption})}
+
+
+
+forma um pattern resumed com todos operadores presentes. "{}a.\+metodo\+A(x)+ b.\+metodo\+B(a,b)+ c.\+metodo\+C(1,5) ===$>$ a.\+metodo\+A()+ b.\+metodoe\+B()+ c.\+metodo\+C() ==$>$ exprss + exprss + exprss"{}; 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & o texto a ser parseado por expressoes regex.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1texto_formatado_1_1_text_expression_af1b0dbbdfbe2083f16a00c79fe52fa19}\index{parser.textoFormatado.TextExpression@{parser.textoFormatado.TextExpression}!GetGroupsSearch@{GetGroupsSearch}}
+\index{GetGroupsSearch@{GetGroupsSearch}!parser.textoFormatado.TextExpression@{parser.textoFormatado.TextExpression}}
+\doxysubsubsection{\texorpdfstring{GetGroupsSearch()}{GetGroupsSearch()}}
+{\footnotesize\ttfamily \label{classparser_1_1texto_formatado_1_1_text_expression_af1b0dbbdfbe2083f16a00c79fe52fa19} 
+static void parser.\+texto\+Formatado.\+Text\+Expression.\+Get\+Groups\+Search (\begin{DoxyParamCaption}\item[{string}]{pattern\+Resume}{, }\item[{string}]{input}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+tenta encontrar textos que match com o texto padrão. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text\+Pattern} & pattern text.\\
+\hline
+{\em input} & text to search.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1texto_formatado_1_1_text_expression_aa40c4469de6db7a95ade2303ed7b7962}\index{parser.textoFormatado.TextExpression@{parser.textoFormatado.TextExpression}!GetOcurrencesGroup@{GetOcurrencesGroup}}
+\index{GetOcurrencesGroup@{GetOcurrencesGroup}!parser.textoFormatado.TextExpression@{parser.textoFormatado.TextExpression}}
+\doxysubsubsection{\texorpdfstring{GetOcurrencesGroup()}{GetOcurrencesGroup()}}
+{\footnotesize\ttfamily \label{classparser_1_1texto_formatado_1_1_text_expression_aa40c4469de6db7a95ade2303ed7b7962} 
+static List$<$ \mbox{\hyperlink{classparser_1_1texto_formatado_1_1_text_expression_1_1_ocorrencia}{Ocorrencia}} $>$ parser.\+texto\+Formatado.\+Text\+Expression.\+Get\+Ocurrences\+Group (\begin{DoxyParamCaption}\item[{string}]{path\+Resume}{, }\item[{string}]{input}{, }\item[{params string\mbox{[}$\,$\mbox{]}}]{name\+Group}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+obtem todas ocorrencias de um grupo presente num texto pesquisado por uma regex. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path\+Resume} & codigo resumido, como\+: "{}id = id + id"{}.\\
+\hline
+{\em input} & texto a ser compilado.\\
+\hline
+{\em name\+Group} & nome do grupo.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1texto_formatado_1_1_text_expression_a61f0383936b81e74d14ff66c701d2810}\index{parser.textoFormatado.TextExpression@{parser.textoFormatado.TextExpression}!GetOcurrencesOperators@{GetOcurrencesOperators}}
+\index{GetOcurrencesOperators@{GetOcurrencesOperators}!parser.textoFormatado.TextExpression@{parser.textoFormatado.TextExpression}}
+\doxysubsubsection{\texorpdfstring{GetOcurrencesOperators()}{GetOcurrencesOperators()}}
+{\footnotesize\ttfamily \label{classparser_1_1texto_formatado_1_1_text_expression_a61f0383936b81e74d14ff66c701d2810} 
+static List$<$ \mbox{\hyperlink{classparser_1_1texto_formatado_1_1_text_expression_1_1_ocorrencia}{Ocorrencia}} $>$ parser.\+texto\+Formatado.\+Text\+Expression.\+Get\+Ocurrences\+Operators (\begin{DoxyParamCaption}\item[{string}]{path\+Resume}{, }\item[{string}]{input}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1texto_formatado_1_1_text_expression_a089632a9bd056e0f4b593af7e9becc8b}\index{parser.textoFormatado.TextExpression@{parser.textoFormatado.TextExpression}!GetTodosTermosChavesIniciais@{GetTodosTermosChavesIniciais}}
+\index{GetTodosTermosChavesIniciais@{GetTodosTermosChavesIniciais}!parser.textoFormatado.TextExpression@{parser.textoFormatado.TextExpression}}
+\doxysubsubsection{\texorpdfstring{GetTodosTermosChavesIniciais()}{GetTodosTermosChavesIniciais()}}
+{\footnotesize\ttfamily \label{classparser_1_1texto_formatado_1_1_text_expression_a089632a9bd056e0f4b593af7e9becc8b} 
+static List$<$ string $>$ parser.\+texto\+Formatado.\+Text\+Expression.\+Get\+Todos\+Termos\+Chaves\+Iniciais (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1texto_formatado_1_1_text_expression_a632a7d07daa2aaf9031971fb8ab00cd0}\index{parser.textoFormatado.TextExpression@{parser.textoFormatado.TextExpression}!IsID@{IsID}}
+\index{IsID@{IsID}!parser.textoFormatado.TextExpression@{parser.textoFormatado.TextExpression}}
+\doxysubsubsection{\texorpdfstring{IsID()}{IsID()}}
+{\footnotesize\ttfamily \label{classparser_1_1texto_formatado_1_1_text_expression_a632a7d07daa2aaf9031971fb8ab00cd0} 
+static bool parser.\+texto\+Formatado.\+Text\+Expression.\+Is\+ID (\begin{DoxyParamCaption}\item[{string}]{exprss\+ID}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+verifica se a expressao nao eh um ID. um ID não contem caracteres como parenteses, colchetes, virgula, ponto-\/e-\/virgula, nomes de operadores. 
+
+\Hypertarget{classparser_1_1texto_formatado_1_1_text_expression_a4594a826fbe36b12d293d475d04778b9}\index{parser.textoFormatado.TextExpression@{parser.textoFormatado.TextExpression}!Match@{Match}}
+\index{Match@{Match}!parser.textoFormatado.TextExpression@{parser.textoFormatado.TextExpression}}
+\doxysubsubsection{\texorpdfstring{Match()}{Match()}}
+{\footnotesize\ttfamily \label{classparser_1_1texto_formatado_1_1_text_expression_a4594a826fbe36b12d293d475d04778b9} 
+string parser.\+texto\+Formatado.\+Text\+Expression.\+Match (\begin{DoxyParamCaption}\item[{string}]{pattern\+Resumed}{, }\item[{string}]{input}{, }\item[{string}]{opcional}{}\end{DoxyParamCaption})}
+
+
+
+encontra no \mbox{[}texto\+Para\+Match\mbox{]}, o padrão \mbox{[}texto\+Resumido\mbox{]}, com texto opcional, que pode aparecer ou não. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pattern\+Resumed} & texto formatado, como\+: "{}id id ;"{}, "{}id id ( )"{}.\\
+\hline
+{\em input} & texto a reconher o match.\\
+\hline
+{\em opcional} & texto com tokens de uma opção, que pode aparecer ou não.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classparser_1_1texto_formatado_1_1_text_expression_a2594d7d87272571c1a2cb1f8a4a22957}\index{parser.textoFormatado.TextExpression@{parser.textoFormatado.TextExpression}!EXPRESS@{EXPRESS}}
+\index{EXPRESS@{EXPRESS}!parser.textoFormatado.TextExpression@{parser.textoFormatado.TextExpression}}
+\doxysubsubsection{\texorpdfstring{EXPRESS}{EXPRESS}}
+{\footnotesize\ttfamily \label{classparser_1_1texto_formatado_1_1_text_expression_a2594d7d87272571c1a2cb1f8a4a22957} 
+string parser.\+texto\+Formatado.\+Text\+Expression.\+EXPRESS\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1texto_formatado_1_1_text_expression_aaf45b67aac242075a3600de5927c6f39}\index{parser.textoFormatado.TextExpression@{parser.textoFormatado.TextExpression}!ID@{ID}}
+\index{ID@{ID}!parser.textoFormatado.TextExpression@{parser.textoFormatado.TextExpression}}
+\doxysubsubsection{\texorpdfstring{ID}{ID}}
+{\footnotesize\ttfamily \label{classparser_1_1texto_formatado_1_1_text_expression_aaf45b67aac242075a3600de5927c6f39} 
+string parser.\+texto\+Formatado.\+Text\+Expression.\+ID\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1texto_formatado_1_1_text_expression_a0fb93f44e5fd3312d13b96896fa4dcc5}\index{parser.textoFormatado.TextExpression@{parser.textoFormatado.TextExpression}!literal@{literal}}
+\index{literal@{literal}!parser.textoFormatado.TextExpression@{parser.textoFormatado.TextExpression}}
+\doxysubsubsection{\texorpdfstring{literal}{literal}}
+{\footnotesize\ttfamily \label{classparser_1_1texto_formatado_1_1_text_expression_a0fb93f44e5fd3312d13b96896fa4dcc5} 
+string parser.\+texto\+Formatado.\+Text\+Expression.\+literal\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1texto_formatado_1_1_text_expression_a47e31c774888366c4ad5cbc14fb5ebe3}\index{parser.textoFormatado.TextExpression@{parser.textoFormatado.TextExpression}!number@{number}}
+\index{number@{number}!parser.textoFormatado.TextExpression@{parser.textoFormatado.TextExpression}}
+\doxysubsubsection{\texorpdfstring{number}{number}}
+{\footnotesize\ttfamily \label{classparser_1_1texto_formatado_1_1_text_expression_a47e31c774888366c4ad5cbc14fb5ebe3} 
+string parser.\+texto\+Formatado.\+Text\+Expression.\+number\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/componentes\+De\+Interpretadores\+ECompiladores/\+PROGRAMACAO ORIENTADA A OBJETOS/classes de Apoio/\mbox{\hyperlink{_text_expression_8cs}{Text\+Expression.\+cs}}\end{DoxyCompactItemize}

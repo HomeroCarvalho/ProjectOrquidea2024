@@ -1,0 +1,165 @@
+\doxysection{parser.\+PROLOG.\+Comandos\+Prolog Class Reference}
+\hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_comandos_prolog}{}\label{classparser_1_1_p_r_o_l_o_g_1_1_comandos_prolog}\index{parser.PROLOG.ComandosProlog@{parser.PROLOG.ComandosProlog}}
+Inheritance diagram for parser.\+PROLOG.\+Comandos\+Prolog\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classparser_1_1_p_r_o_l_o_g_1_1_comandos_prolog}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+delegate bool \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_comandos_prolog_a10883fc2a6098ec4641bb6efb4627141}{Comando}} (\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}} predicado\+Entrada)
+\item 
+void \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_comandos_prolog_a1c4552e1519086fb8c13c8fe926bab09}{Adiciona\+Funcionalidade}} (string predicativo\+Comando, \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_comandos_prolog_a10883fc2a6098ec4641bb6efb4627141}{Comando}} comando)
+\begin{DoxyCompactList}\small\item\em torna a linguagem Prolog extendível, adicionando novos predicados comando. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}} \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_comandos_prolog_a785b667b5272444bbaa4d255dcfdf59e}{Get\+Predicado\+Verdadeiro\+Falso}} (bool valor\+Predicado)
+\item 
+bool \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_comandos_prolog_a5422316aa654064837b618761abe6150}{Is\+Comando}} (\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}} pred)
+\item 
+bool \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_comandos_prolog_a94f1bd93d53016e7eb57f4ccd08cc5dc}{Executa\+Comando}} (\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}} predicado)
+\begin{DoxyCompactList}\small\item\em executa o comando associado ao predicado na linha de texto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{parser.\+PROLOG.\+Predicado}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_acee6b6c485bd11bb9dbde699798e60b3}{Predicado}} (string texto\+Predicado)
+\item 
+\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a36ab0139e87b2aedba33b5884815df13}{Predicado}} ()
+\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a4cb82fe4110ab8f3e546ded1d8326c69}{Get\+Atomos}} ()
+\item 
+\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}} \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a46b36e3b54d90ba774dbe73c0f8f830d}{Clone}} ()
+\item 
+bool \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a01f8a4643d86f14dae814f307313ece5}{Match}} (\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}} predicado\+Para\+Match)
+\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_af32343003233569281897499f99d22f9}{Retira\+Variaveis}} ()
+\begin{DoxyCompactList}\small\item\em retira as variáveis do predicado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a4c061fd56cdf998e5ca658e0af071dca}{Set\+Variavel}} (string nome\+Da\+Variavel, string valor\+Da\+Variavel)
+\item 
+void \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a4895c4a61efe97762435b70d09b84af0}{Set\+Variavel}} (string valor\+Da\+Variavel, int index\+Variavel)
+\item 
+bool \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_aa621b65b56d2e3161c2773c2127c49f5}{Equals\+Predicado}} (\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}} p1)
+\item 
+override string \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a5ba783dbc46f11dab231d9a74b46a6c7}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_comandos_prolog}{Comandos\+Prolog}} \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_comandos_prolog_aef12efc200a71d9972f2329723e01360}{Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{parser.\+PROLOG.\+Predicado}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}} \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_aaca0a96eb5c05b2c740ce35ad661171e}{Set\+Predicado}} (string nome, params string\mbox{[}$\,$\mbox{]} atomos)
+\item 
+static bool \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_acb6e7227968434f9e2ef001af76d5692}{Is\+Variavel\+Anonima}} (string variavel)
+\item 
+static \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}} \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a271545c87b0cf6e059eca277dead4c3b}{Get\+Predicado}} (string texto)
+\begin{DoxyCompactList}\small\item\em obtém um \doxylink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado} a partir de uma linha de texto.\+O \doxylink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado} não é adicionado à base de conhecimento. \end{DoxyCompactList}\item 
+static List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a44252b61033da67ec9f0b06c37b249d3}{Extrai\+De\+Texto\+Um\+Predicado}} (string texto)
+\begin{DoxyCompactList}\small\item\em Obtém tokens a partir de um texto, a partir de termos-\/chave da linguagem Prolog. Utiliza a classe Parser\+Universal, através da classe \doxylink{classparser_1_1_tokens}{Tokens}. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a68c301e9e6686a14b6c169645c543527}{Adiciona\+Predicados}} (params string\mbox{[}$\,$\mbox{]} textos\+Predicados)
+\begin{DoxyCompactList}\small\item\em adiciona uma lista de predicados, na forma de textos, para a base de conhecimento. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a0699dce7242deb2c8ddb2bd38bcd60d9}{Adiciona\+Um\+Predicado}} (string texto)
+\begin{DoxyCompactList}\small\item\em adiciona um \doxylink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado} para a base de conhecimento, a partir da linha de texto contendo o \doxylink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a7bac692b3dd9731af02c909244766448}{Is\+Variavel}} (string atomo)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}} \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_comandos_prolog_a815fff0944c90b3ad799b8c6804d5912}{Predicado\+Linguagem}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_comandos_prolog_a10883fc2a6098ec4641bb6efb4627141}{Comando}} \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_comandos_prolog_a1587e9759c3880f137846dedd0c13960}{Funcionalidade}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+static Dictionary$<$ string, \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_comandos_prolog_a10883fc2a6098ec4641bb6efb4627141}{Comando}} $>$ \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_comandos_prolog_a93a24986752ccb6f3419f5438b4f2c55}{Predicativos\+Comando}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{parser.\+PROLOG.\+Predicado}}}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a2e64916e6e6079f57bac935e3c0959a6}{Nome}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_comandos_prolog_a1c4552e1519086fb8c13c8fe926bab09}\index{parser.PROLOG.ComandosProlog@{parser.PROLOG.ComandosProlog}!AdicionaFuncionalidade@{AdicionaFuncionalidade}}
+\index{AdicionaFuncionalidade@{AdicionaFuncionalidade}!parser.PROLOG.ComandosProlog@{parser.PROLOG.ComandosProlog}}
+\doxysubsubsection{\texorpdfstring{AdicionaFuncionalidade()}{AdicionaFuncionalidade()}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_comandos_prolog_a1c4552e1519086fb8c13c8fe926bab09} 
+void parser.\+PROLOG.\+Comandos\+Prolog.\+Adiciona\+Funcionalidade (\begin{DoxyParamCaption}\item[{string}]{predicativo\+Comando}{, }\item[{\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_comandos_prolog_a10883fc2a6098ec4641bb6efb4627141}{Comando}}}]{comando}{}\end{DoxyParamCaption})}
+
+
+
+torna a linguagem Prolog extendível, adicionando novos predicados comando. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em predicativo\+Comando} & nome do novo comando.\\
+\hline
+{\em comando} & função a ser chamada quando o comando é acionado.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_comandos_prolog_a10883fc2a6098ec4641bb6efb4627141}\index{parser.PROLOG.ComandosProlog@{parser.PROLOG.ComandosProlog}!Comando@{Comando}}
+\index{Comando@{Comando}!parser.PROLOG.ComandosProlog@{parser.PROLOG.ComandosProlog}}
+\doxysubsubsection{\texorpdfstring{Comando()}{Comando()}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_comandos_prolog_a10883fc2a6098ec4641bb6efb4627141} 
+delegate bool parser.\+PROLOG.\+Comandos\+Prolog.\+Comando (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}}}]{predicado\+Entrada}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_comandos_prolog_a94f1bd93d53016e7eb57f4ccd08cc5dc}\index{parser.PROLOG.ComandosProlog@{parser.PROLOG.ComandosProlog}!ExecutaComando@{ExecutaComando}}
+\index{ExecutaComando@{ExecutaComando}!parser.PROLOG.ComandosProlog@{parser.PROLOG.ComandosProlog}}
+\doxysubsubsection{\texorpdfstring{ExecutaComando()}{ExecutaComando()}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_comandos_prolog_a94f1bd93d53016e7eb57f4ccd08cc5dc} 
+bool parser.\+PROLOG.\+Comandos\+Prolog.\+Executa\+Comando (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}}}]{predicado}{}\end{DoxyParamCaption})}
+
+
+
+executa o comando associado ao predicado na linha de texto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parametros} & parâmetros para o comando.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_comandos_prolog_a785b667b5272444bbaa4d255dcfdf59e}\index{parser.PROLOG.ComandosProlog@{parser.PROLOG.ComandosProlog}!GetPredicadoVerdadeiroFalso@{GetPredicadoVerdadeiroFalso}}
+\index{GetPredicadoVerdadeiroFalso@{GetPredicadoVerdadeiroFalso}!parser.PROLOG.ComandosProlog@{parser.PROLOG.ComandosProlog}}
+\doxysubsubsection{\texorpdfstring{GetPredicadoVerdadeiroFalso()}{GetPredicadoVerdadeiroFalso()}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_comandos_prolog_a785b667b5272444bbaa4d255dcfdf59e} 
+\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}} parser.\+PROLOG.\+Comandos\+Prolog.\+Get\+Predicado\+Verdadeiro\+Falso (\begin{DoxyParamCaption}\item[{bool}]{valor\+Predicado}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_comandos_prolog_aef12efc200a71d9972f2329723e01360}\index{parser.PROLOG.ComandosProlog@{parser.PROLOG.ComandosProlog}!Instance@{Instance}}
+\index{Instance@{Instance}!parser.PROLOG.ComandosProlog@{parser.PROLOG.ComandosProlog}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_comandos_prolog_aef12efc200a71d9972f2329723e01360} 
+static \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_comandos_prolog}{Comandos\+Prolog}} parser.\+PROLOG.\+Comandos\+Prolog.\+Instance (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_comandos_prolog_a5422316aa654064837b618761abe6150}\index{parser.PROLOG.ComandosProlog@{parser.PROLOG.ComandosProlog}!IsComando@{IsComando}}
+\index{IsComando@{IsComando}!parser.PROLOG.ComandosProlog@{parser.PROLOG.ComandosProlog}}
+\doxysubsubsection{\texorpdfstring{IsComando()}{IsComando()}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_comandos_prolog_a5422316aa654064837b618761abe6150} 
+bool parser.\+PROLOG.\+Comandos\+Prolog.\+Is\+Comando (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}}}]{pred}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_comandos_prolog_a1587e9759c3880f137846dedd0c13960}\index{parser.PROLOG.ComandosProlog@{parser.PROLOG.ComandosProlog}!Funcionalidade@{Funcionalidade}}
+\index{Funcionalidade@{Funcionalidade}!parser.PROLOG.ComandosProlog@{parser.PROLOG.ComandosProlog}}
+\doxysubsubsection{\texorpdfstring{Funcionalidade}{Funcionalidade}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_comandos_prolog_a1587e9759c3880f137846dedd0c13960} 
+\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_comandos_prolog_a10883fc2a6098ec4641bb6efb4627141}{Comando}} parser.\+PROLOG.\+Comandos\+Prolog.\+Funcionalidade\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_comandos_prolog_a815fff0944c90b3ad799b8c6804d5912}\index{parser.PROLOG.ComandosProlog@{parser.PROLOG.ComandosProlog}!PredicadoLinguagem@{PredicadoLinguagem}}
+\index{PredicadoLinguagem@{PredicadoLinguagem}!parser.PROLOG.ComandosProlog@{parser.PROLOG.ComandosProlog}}
+\doxysubsubsection{\texorpdfstring{PredicadoLinguagem}{PredicadoLinguagem}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_comandos_prolog_a815fff0944c90b3ad799b8c6804d5912} 
+\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}} parser.\+PROLOG.\+Comandos\+Prolog.\+Predicado\+Linguagem\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_comandos_prolog_a93a24986752ccb6f3419f5438b4f2c55}\index{parser.PROLOG.ComandosProlog@{parser.PROLOG.ComandosProlog}!PredicativosComando@{PredicativosComando}}
+\index{PredicativosComando@{PredicativosComando}!parser.PROLOG.ComandosProlog@{parser.PROLOG.ComandosProlog}}
+\doxysubsubsection{\texorpdfstring{PredicativosComando}{PredicativosComando}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_comandos_prolog_a93a24986752ccb6f3419f5438b4f2c55} 
+Dictionary$<$string, \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_comandos_prolog_a10883fc2a6098ec4641bb6efb4627141}{Comando}}$>$ parser.\+PROLOG.\+Comandos\+Prolog.\+Predicativos\+Comando\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/componentes\+De\+Interpretadores\+ECompiladores/\+PROLOG/\mbox{\hyperlink{_comandos_prolog_8cs}{Comandos\+Prolog.\+cs}}\end{DoxyCompactItemize}

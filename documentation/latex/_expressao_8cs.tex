@@ -1,0 +1,36 @@
+\doxysection{F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/componentes\+De\+Interpretadores\+ECompiladores/\+PROGRAMACAO ORIENTADA A OBJETOS/\+Expressao.cs File Reference}
+\hypertarget{_expressao_8cs}{}\label{_expressao_8cs}\index{F:/BACUKPS/ProjetoOrquidea2024\_2/ProjectOrquidea2024/ProjectOrquidea2024/componentesDeInterpretadoresECompiladores/PROGRAMACAO ORIENTADA A OBJETOS/Expressao.cs@{F:/BACUKPS/ProjetoOrquidea2024\_2/ProjectOrquidea2024/ProjectOrquidea2024/componentesDeInterpretadoresECompiladores/PROGRAMACAO ORIENTADA A OBJETOS/Expressao.cs}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classparser_1_1_expressao_elemento}{parser.\+Expressao\+Elemento}}
+\begin{DoxyCompactList}\small\item\em expressao generica, conteudo de um simbolo. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classparser_1_1_expressao_entre_parenteses}{parser.\+Expressao\+Entre\+Parenteses}}
+\begin{DoxyCompactList}\small\item\em expressao contida entre parenteses, prioritariamente avalida antes de outras sub-\/expressoes. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classparser_1_1_expressao_numero}{parser.\+Expressao\+Numero}}
+\begin{DoxyCompactList}\small\item\em expressao contendo um numero, constante. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classparser_1_1_expressao_chamada_de_metodo}{parser.\+Expressao\+Chamada\+De\+Metodo}}
+\begin{DoxyCompactList}\small\item\em expressao para execução de funções ou métodos, p.\+ex.\+: a.\+metodo\+A(), b.\+metodo\+B(1,1), etc.. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classparser_1_1_expressao_propriedades_aninhadas}{parser.\+Expressao\+Propriedades\+Aninhadas}}
+\begin{DoxyCompactList}\small\item\em expressao para acesso a propriedades de objetos, p.\+ex.\+: a.\+propriedadeA, a.\+propriedade\+A.\+propriedadeB, etc.. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classparser_1_1_expressao_atribuicao}{parser.\+Expressao\+Atribuicao}}
+\begin{DoxyCompactList}\small\item\em expressao para operacoes de atribuicao. p.\+ex.\+: x=x+1, obj1.\+propriedade1= 1, etc... \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classparser_1_1_expressao_instanciacao}{parser.\+Expressao\+Instanciacao}}
+\begin{DoxyCompactList}\small\item\em expressao utilizado em \mbox{[}Expression\+Search\mbox{]}. inativado com advendo de \mbox{[}\doxylink{classparser_1_1_expressao_por_classificacao}{Expressao\+Por\+Classificacao}\mbox{]}, ou \mbox{[}\doxylink{classparser_1_1_expressao_grupos}{Expressao\+Grupos}\mbox{]} (LEGADO). \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classparser_1_1_expressao_objeto}{parser.\+Expressao\+Objeto}}
+\begin{DoxyCompactList}\small\item\em expressao formada por um objeto. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classparser_1_1_expressao_operador}{parser.\+Expressao\+Operador}}
+\begin{DoxyCompactList}\small\item\em expressao para processamento de sub-\/expressoes com operadores, ex.\+: a+b, x+1, etc.. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classparser_1_1_expressao_n_i_l_l}{parser.\+Expressao\+NILL}}
+\begin{DoxyCompactList}\small\item\em expressao para valores nulos resultante em operacoes, chamada de funcoes/metodos. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classparser_1_1_expressao_literal_text}{parser.\+Expressao\+Literal\+Text}}
+\begin{DoxyCompactList}\small\item\em expressao para constantes de texto, ex.\+: a="{}texto\+A"{}. "{}texto\+A"{} é uma expressao literal text. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classparser_1_1_expressao}{parser.\+Expressao}}
+\begin{DoxyCompactList}\small\item\em classe que instancia e processa expressoes. quase tudo no codigo eh expressao\+: chamadas de funcao, operações artimeticas, booleanas condicionais, propriedades aninhadas, etc... \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classparser_1_1_expressao_1_1_testes}{parser.\+Expressao.\+Testes}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespaceparser}{parser}}
+\end{DoxyCompactItemize}

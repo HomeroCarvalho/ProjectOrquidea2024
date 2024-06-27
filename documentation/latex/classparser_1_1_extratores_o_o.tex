@@ -1,0 +1,116 @@
+\doxysection{parser.\+Extratores\+OO Class Reference}
+\hypertarget{classparser_1_1_extratores_o_o}{}\label{classparser_1_1_extratores_o_o}\index{parser.ExtratoresOO@{parser.ExtratoresOO}}
+
+
+constroi a estrutura de uma classe ou interface, a partir de tokens vindo da compilação.  
+
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classparser_1_1_extratores_o_o_1_1_testes}{Testes}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparser_1_1_extratores_o_o_a80baa21279d81bff1200baeaa4cafee4}{Extratores\+OO}} (List$<$ string $>$ tokens\+Raw, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em constroi classes, interfaces, a partir de tokens. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_classe}{Classe}} \mbox{\hyperlink{classparser_1_1_extratores_o_o_aef7f477025a99e8f3ac672d3c2e0436d}{Extrai\+Uma\+Interface}} ()
+\begin{DoxyCompactList}\small\item\em extrai uma interface do codigo fonte texto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_classe}{Classe}} \mbox{\hyperlink{classparser_1_1_extratores_o_o_a18113643999843215d8294a4891ac423}{Extai\+Uma\+Classe}} (\mbox{\hyperlink{classparser_1_1_classe_a049d60daad500c8f49f644421c07d72c}{Classe.\+tipo\+Blue\+Print}} blue\+Print)
+\begin{DoxyCompactList}\small\item\em compila uma classe vindo do compilador. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classparser_1_1_extratores_o_o_a5801391aaec024ee55a9193857cd9a4a}{nome\+Classe}}
+\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_extratores_o_o_a8ffa7d22f205c2bd62490f1f12c95b21}{Msg\+Erros}}
+\begin{DoxyCompactList}\small\item\em lista de erros encontrados no codigo da classe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+constroi a estrutura de uma classe ou interface, a partir de tokens vindo da compilação. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classparser_1_1_extratores_o_o_a80baa21279d81bff1200baeaa4cafee4}\index{parser.ExtratoresOO@{parser.ExtratoresOO}!ExtratoresOO@{ExtratoresOO}}
+\index{ExtratoresOO@{ExtratoresOO}!parser.ExtratoresOO@{parser.ExtratoresOO}}
+\doxysubsubsection{\texorpdfstring{ExtratoresOO()}{ExtratoresOO()}}
+{\footnotesize\ttfamily \label{classparser_1_1_extratores_o_o_a80baa21279d81bff1200baeaa4cafee4} 
+parser.\+Extratores\+OO.\+Extratores\+OO (\begin{DoxyParamCaption}\item[{List$<$ string $>$}]{tokens\+Raw}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})}
+
+
+
+constroi classes, interfaces, a partir de tokens. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tokens\+Raw} & tokens da classe.\\
+\hline
+{\em escopo} & contexto onde a classe está.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_extratores_o_o_a18113643999843215d8294a4891ac423}\index{parser.ExtratoresOO@{parser.ExtratoresOO}!ExtaiUmaClasse@{ExtaiUmaClasse}}
+\index{ExtaiUmaClasse@{ExtaiUmaClasse}!parser.ExtratoresOO@{parser.ExtratoresOO}}
+\doxysubsubsection{\texorpdfstring{ExtaiUmaClasse()}{ExtaiUmaClasse()}}
+{\footnotesize\ttfamily \label{classparser_1_1_extratores_o_o_a18113643999843215d8294a4891ac423} 
+\mbox{\hyperlink{classparser_1_1_classe}{Classe}} parser.\+Extratores\+OO.\+Extai\+Uma\+Classe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_classe_a049d60daad500c8f49f644421c07d72c}{Classe.\+tipo\+Blue\+Print}}}]{blue\+Print}{}\end{DoxyParamCaption})}
+
+
+
+compila uma classe vindo do compilador. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em blue\+Print} & tipo\+: classe, interface.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Not\+Implemented\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classparser_1_1_extratores_o_o_aef7f477025a99e8f3ac672d3c2e0436d}\index{parser.ExtratoresOO@{parser.ExtratoresOO}!ExtraiUmaInterface@{ExtraiUmaInterface}}
+\index{ExtraiUmaInterface@{ExtraiUmaInterface}!parser.ExtratoresOO@{parser.ExtratoresOO}}
+\doxysubsubsection{\texorpdfstring{ExtraiUmaInterface()}{ExtraiUmaInterface()}}
+{\footnotesize\ttfamily \label{classparser_1_1_extratores_o_o_aef7f477025a99e8f3ac672d3c2e0436d} 
+\mbox{\hyperlink{classparser_1_1_classe}{Classe}} parser.\+Extratores\+OO.\+Extrai\+Uma\+Interface (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+extrai uma interface do codigo fonte texto. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classparser_1_1_extratores_o_o_a8ffa7d22f205c2bd62490f1f12c95b21}\index{parser.ExtratoresOO@{parser.ExtratoresOO}!MsgErros@{MsgErros}}
+\index{MsgErros@{MsgErros}!parser.ExtratoresOO@{parser.ExtratoresOO}}
+\doxysubsubsection{\texorpdfstring{MsgErros}{MsgErros}}
+{\footnotesize\ttfamily \label{classparser_1_1_extratores_o_o_a8ffa7d22f205c2bd62490f1f12c95b21} 
+List$<$string$>$ parser.\+Extratores\+OO.\+Msg\+Erros}
+
+
+
+lista de erros encontrados no codigo da classe. 
+
+\Hypertarget{classparser_1_1_extratores_o_o_a5801391aaec024ee55a9193857cd9a4a}\index{parser.ExtratoresOO@{parser.ExtratoresOO}!nomeClasse@{nomeClasse}}
+\index{nomeClasse@{nomeClasse}!parser.ExtratoresOO@{parser.ExtratoresOO}}
+\doxysubsubsection{\texorpdfstring{nomeClasse}{nomeClasse}}
+{\footnotesize\ttfamily \label{classparser_1_1_extratores_o_o_a5801391aaec024ee55a9193857cd9a4a} 
+string parser.\+Extratores\+OO.\+nome\+Classe}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/componentes\+De\+Interpretadores\+ECompiladores/\+PROGRAMACAO ORIENTADA A OBJETOS/classes de Apoio/\mbox{\hyperlink{_extratores_o_o_8cs}{Extratores\+OO.\+cs}}\end{DoxyCompactItemize}

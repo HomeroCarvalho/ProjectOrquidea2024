@@ -1,0 +1,653 @@
+\doxysection{parser.\+Tablela\+De\+Valores Class Reference}
+\hypertarget{classparser_1_1_tablela_de_valores}{}\label{classparser_1_1_tablela_de_valores}\index{parser.TablelaDeValores@{parser.TablelaDeValores}}
+
+
+classe que armazena os objetos, funcoes, operadores, para um dado contexto. funciona como o HEAP da linguagem.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_objeto}{Objeto}} $>$ \mbox{\hyperlink{classparser_1_1_tablela_de_valores_a767c9fc6457c3610f954c602b277fb2e}{get\+Objetos}} ()
+\begin{DoxyCompactList}\small\item\em retorna a lista de objetos registrados nesta tabela. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_tablela_de_valores}{Tablela\+De\+Valores}} \mbox{\hyperlink{classparser_1_1_tablela_de_valores_ab9fc149bd30252705373c65e87877210}{Clone}} ()
+\begin{DoxyCompactList}\small\item\em clona a tabela de valores. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_tablela_de_valores_a14902095b764f747dafbfa2f22084d3b}{Tablela\+De\+Valores}} (List$<$ string $>$ \+\_\+codigo)
+\begin{DoxyCompactList}\small\item\em construtor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_tablela_de_valores_a8c3b3dce728f7bc7f78c288a4b366a0a}{Adiciona\+Expressoes}} (\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo, params \mbox{\hyperlink{classparser_1_1_expressao}{Expressao}}\mbox{[}$\,$\mbox{]} expressoes\+AIncluir)
+\begin{DoxyCompactList}\small\item\em adiciona as expressoes formadas, para fins de otimização. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_tablela_de_valores_aa0e81f4313f7cd5cc35eefbb41b45b23}{Adiciona\+Objetos}} (\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo, params \mbox{\hyperlink{classparser_1_1_objeto}{Objeto}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classparser_1_1_tablela_de_valores_aec2e54cc8efcf230622e41a726ca83c4}{objetos}})
+\begin{DoxyCompactList}\small\item\em adiciona objetos para esta tabela. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_operador}{Operador}} $>$ \mbox{\hyperlink{classparser_1_1_tablela_de_valores_afaaf6290817c5298df39e698c5c0dc45}{Get\+Operadores}} ()
+\begin{DoxyCompactList}\small\item\em retorna uma lista de operadores registrados nesta tabela. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_objeto}{Objeto}} $>$ \mbox{\hyperlink{classparser_1_1_tablela_de_valores_a146e2b62e0137572da9291fe746b3fba}{Get\+Objetos}} ()
+\begin{DoxyCompactList}\small\item\em retorna a lista de todos objetos registrados nesta tabela. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_metodo}{Metodo}} $>$ \mbox{\hyperlink{classparser_1_1_tablela_de_valores_a881d97e5517419d182edabdf17e0121b}{Get\+Funcoes}} ()
+\begin{DoxyCompactList}\small\item\em retorna a lista de todas funções registradas nesta tabela. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_metodo}{Metodo}} \mbox{\hyperlink{classparser_1_1_tablela_de_valores_a9660839ca2272cdca3be6a99f75475c4}{Get\+Funcao}} (string nome\+Funcao, string classe\+Da\+Funcao, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em obtém a função nesta tabela de valores, e se não encontrar, obtém a função no repositorio de classes orquidea. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_metodo}{Metodo}} $>$ \mbox{\hyperlink{classparser_1_1_tablela_de_valores_ad621a5958eefc49e2bfa94b8b9a90fd1}{Get\+Funcao}} (string nome\+Funcao)
+\begin{DoxyCompactList}\small\item\em obtem funcoes com o nome parâmetro, não importando a classe em que a função foi definida. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_classe}{Classe}} $>$ \mbox{\hyperlink{classparser_1_1_tablela_de_valores_a36b3126a6ac30f69a154229f829d8e0d}{Get\+Classes}} ()
+\begin{DoxyCompactList}\small\item\em retorna a lista de classes registradas nesta tabela. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_classe}{Classe}} \mbox{\hyperlink{classparser_1_1_tablela_de_valores_a28c3ab7b8e31638662037772e7dc1b05}{Get\+Classe}} (string nome\+Da\+Classe, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em retorna a classe registrada nesta tabela. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_tablela_de_valores_ae4ad98f56b93a6e9ec03feaea86092e7}{Registra\+Classe}} (\mbox{\hyperlink{classparser_1_1_classe}{Classe}} uma\+Classe)
+\begin{DoxyCompactList}\small\item\em registra uma classe nesta tabela de valores. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_objeto}{Objeto}} \mbox{\hyperlink{classparser_1_1_tablela_de_valores_a14c4edd6793c3dc02be2c4ad18ab2631}{Get\+Objeto}} (string nome\+Objeto, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em obtem o objeto guardado na tabela de valores do escopo parametro. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_objeto}{Objeto}} \mbox{\hyperlink{classparser_1_1_tablela_de_valores_af29520a60e9a695c08e4c9cd07bf8abd}{Get\+Objeto}} (string nome\+Objeto, string tipo\+Do\+Objeto, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em obtem o objeto, pelo nome e tipo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_tablela_de_valores_ab364584a2349938073187f1ecc7a5e2e}{Registra\+Objeto}} (\mbox{\hyperlink{classparser_1_1_objeto}{Objeto}} objeto)
+\begin{DoxyCompactList}\small\item\em registra o objeto na tabela de valores currente. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_tablela_de_valores_a4f017128c1d53a06f6aa022b99bd8880}{Remove\+Objeto}} (string nome\+Objeto)
+\begin{DoxyCompactList}\small\item\em remove a ultima instancia do objeto com o nome de entrada. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_tablela_de_valores_a4133c4eee307510c10faa31997f4a71b}{Registra\+Funcao}} (\mbox{\hyperlink{classparser_1_1_metodo}{Metodo}} funcao)
+\begin{DoxyCompactList}\small\item\em registra uma funcao nesta tabela. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_tablela_de_valores_a419dd61b090b1fc9ff9b278e6f557f60}{Update\+Objeto}} (\mbox{\hyperlink{classparser_1_1_objeto}{Objeto}} objeto\+Atualizado)
+\begin{DoxyCompactList}\small\item\em atualiza um objeto de mesmo nome, com o objeto parâmetro, com valores atualizados. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_tablela_de_valores_acfa0af6bfbc63c7610fa9e94f1001ccd}{Update\+With\+Create\+Objeto}} (\mbox{\hyperlink{classparser_1_1_objeto}{Objeto}} objeto\+Atualizado)
+\begin{DoxyCompactList}\small\item\em atualiza um objeto. se não tiver no escopo, registra e atualiza. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_tablela_de_valores_a6938a741dd9c52cba68e033644d83438}{Valida\+Operador}} (string nome\+Operador, string tipo\+Do\+OPerador, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em retorna true se econtrar um operador registrado com\+: nome, tipo parametros. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_tablela_de_valores_a7b083e8937a2c74a726c2a836316eedd}{Is\+Classe}} (string nome\+Classe, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em retorna true se o nome de classe parametro é de uma classe registrada. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_tablela_de_valores_a82dc2ee6c91df8b363a4d4e31016c90b}{Add\+Objeto}} (string acessor, string nome, string tipo, object valor, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em adiciona um objeto na tabela de valores. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classparser_1_1_tablela_de_valores_a3ba7c8e8dc198c72507ba776a03af469}{Get\+Type\+Function}} (string nome\+Classe\+Da\+Funcao, string nome\+Funcao, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em retorna o tipo de retorno de uma funcao. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_objeto}{Objeto}} \mbox{\hyperlink{classparser_1_1_tablela_de_valores_aaec90faab0eb794002d2b25b8aaaa817}{Is\+Objeto\+Registrado}} (string nome\+Objeto, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em retorna o objeto com nome parametro, se estiver registrado nesta tabela. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_tablela_de_valores_a73cc43ff200829645a4bc85e5a7bfa1a}{Is\+Function}} (\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo, string name\+Funcion)
+\begin{DoxyCompactList}\small\item\em retorna true se a funcao de nome parametro, está registrada nesta tabela. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_metodo}{Metodo}} \mbox{\hyperlink{classparser_1_1_tablela_de_valores_a943eba36201da5c8493d7c51f74d3d94}{Is\+Function}} (string nome\+Funcao, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em verifica se um token é nome de uma função. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_tablela_de_valores_ad62d719a9588a30072ac36787bc3b5f2}{Valida\+Objeto}} (string nome\+Objeto, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em retorna true se o objeto de nome parametro está registrado. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_tablela_de_valores_acb7e40311e58cbb00aff0d9fa7327602}{Valida\+Tipo\+Objeto}} (string tipo\+Variavel, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em valida um objeto, se está registrado com o tipo parametro. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classparser_1_1_tablela_de_valores}{Tablela\+De\+Valores}} \mbox{\hyperlink{classparser_1_1_tablela_de_valores_a103fcbb5e8e80abd8cbdf62c25ed9b6a}{Clone}} (\mbox{\hyperlink{classparser_1_1_tablela_de_valores}{Tablela\+De\+Valores}} tabela)
+\begin{DoxyCompactList}\small\item\em clona a tabela de valores parametro.. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_metodo}{Metodo}} $>$ \mbox{\hyperlink{classparser_1_1_tablela_de_valores_acb0be8b138c92ce44d35050c16849127}{Funcoes}} = new List$<$\mbox{\hyperlink{classparser_1_1_metodo}{Metodo}}$>$()
+\begin{DoxyCompactList}\small\item\em contém as funções do escopo currente. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_objeto}{Objeto}} $>$ \mbox{\hyperlink{classparser_1_1_tablela_de_valores_aec2e54cc8efcf230622e41a726ca83c4}{objetos}} = new List$<$\mbox{\hyperlink{classparser_1_1_objeto}{Objeto}}$>$()
+\begin{DoxyCompactList}\small\item\em contém uma lista de objetos instanciados, em um escopo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} $>$ \mbox{\hyperlink{classparser_1_1_tablela_de_valores_af9b263babea80ff2ddb3ff25d1782323}{expressoes}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em contém as expressões validadas no escopo currente. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+classe que armazena os objetos, funcoes, operadores, para um dado contexto. funciona como o HEAP da linguagem. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classparser_1_1_tablela_de_valores_a14902095b764f747dafbfa2f22084d3b}\index{parser.TablelaDeValores@{parser.TablelaDeValores}!TablelaDeValores@{TablelaDeValores}}
+\index{TablelaDeValores@{TablelaDeValores}!parser.TablelaDeValores@{parser.TablelaDeValores}}
+\doxysubsubsection{\texorpdfstring{TablelaDeValores()}{TablelaDeValores()}}
+{\footnotesize\ttfamily \label{classparser_1_1_tablela_de_valores_a14902095b764f747dafbfa2f22084d3b} 
+parser.\+Tablela\+De\+Valores.\+Tablela\+De\+Valores (\begin{DoxyParamCaption}\item[{List$<$ string $>$}]{\+\_\+codigo}{}\end{DoxyParamCaption})}
+
+
+
+construtor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+codigo} & lista de linhas de codigo/tokens a compilar.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_tablela_de_valores_a82dc2ee6c91df8b363a4d4e31016c90b}\index{parser.TablelaDeValores@{parser.TablelaDeValores}!AddObjeto@{AddObjeto}}
+\index{AddObjeto@{AddObjeto}!parser.TablelaDeValores@{parser.TablelaDeValores}}
+\doxysubsubsection{\texorpdfstring{AddObjeto()}{AddObjeto()}}
+{\footnotesize\ttfamily \label{classparser_1_1_tablela_de_valores_a82dc2ee6c91df8b363a4d4e31016c90b} 
+void parser.\+Tablela\+De\+Valores.\+Add\+Objeto (\begin{DoxyParamCaption}\item[{string}]{acessor}{, }\item[{string}]{nome}{, }\item[{string}]{tipo}{, }\item[{object}]{valor}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})}
+
+
+
+adiciona um objeto na tabela de valores. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em acessor} & tipo de acessor\+: public, protected, private.\\
+\hline
+{\em nome} & nome do objeto.\\
+\hline
+{\em tipo} & classe do objeto.\\
+\hline
+{\em valor} & valor que o objeto guarda.\\
+\hline
+{\em escopo} & contexto onde o objeto está.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_tablela_de_valores_a8c3b3dce728f7bc7f78c288a4b366a0a}\index{parser.TablelaDeValores@{parser.TablelaDeValores}!AdicionaExpressoes@{AdicionaExpressoes}}
+\index{AdicionaExpressoes@{AdicionaExpressoes}!parser.TablelaDeValores@{parser.TablelaDeValores}}
+\doxysubsubsection{\texorpdfstring{AdicionaExpressoes()}{AdicionaExpressoes()}}
+{\footnotesize\ttfamily \label{classparser_1_1_tablela_de_valores_a8c3b3dce728f7bc7f78c288a4b366a0a} 
+void parser.\+Tablela\+De\+Valores.\+Adiciona\+Expressoes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{, }\item[{params \mbox{\hyperlink{classparser_1_1_expressao}{Expressao}}\mbox{[}$\,$\mbox{]}}]{expressoes\+AIncluir}{}\end{DoxyParamCaption})}
+
+
+
+adiciona as expressoes formadas, para fins de otimização. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em escopo} & escopo onde as expressoes estao.\\
+\hline
+{\em expressoes\+AIncluir} & expressoes a adicionar.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_tablela_de_valores_aa0e81f4313f7cd5cc35eefbb41b45b23}\index{parser.TablelaDeValores@{parser.TablelaDeValores}!AdicionaObjetos@{AdicionaObjetos}}
+\index{AdicionaObjetos@{AdicionaObjetos}!parser.TablelaDeValores@{parser.TablelaDeValores}}
+\doxysubsubsection{\texorpdfstring{AdicionaObjetos()}{AdicionaObjetos()}}
+{\footnotesize\ttfamily \label{classparser_1_1_tablela_de_valores_aa0e81f4313f7cd5cc35eefbb41b45b23} 
+void parser.\+Tablela\+De\+Valores.\+Adiciona\+Objetos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{, }\item[{params \mbox{\hyperlink{classparser_1_1_objeto}{Objeto}}\mbox{[}$\,$\mbox{]}}]{objetos}{}\end{DoxyParamCaption})}
+
+
+
+adiciona objetos para esta tabela. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em escopo} & contexto onde os objetos estão.\\
+\hline
+{\em objetos} & array de objetos a adicionar.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_tablela_de_valores_ab9fc149bd30252705373c65e87877210}\index{parser.TablelaDeValores@{parser.TablelaDeValores}!Clone@{Clone}}
+\index{Clone@{Clone}!parser.TablelaDeValores@{parser.TablelaDeValores}}
+\doxysubsubsection{\texorpdfstring{Clone()}{Clone()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_tablela_de_valores_ab9fc149bd30252705373c65e87877210} 
+\mbox{\hyperlink{classparser_1_1_tablela_de_valores}{Tablela\+De\+Valores}} parser.\+Tablela\+De\+Valores.\+Clone (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+clona a tabela de valores. 
+
+\begin{DoxyReturn}{Returns}
+retorna um clone desta tabela de valores.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_tablela_de_valores_a103fcbb5e8e80abd8cbdf62c25ed9b6a}\index{parser.TablelaDeValores@{parser.TablelaDeValores}!Clone@{Clone}}
+\index{Clone@{Clone}!parser.TablelaDeValores@{parser.TablelaDeValores}}
+\doxysubsubsection{\texorpdfstring{Clone()}{Clone()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_tablela_de_valores_a103fcbb5e8e80abd8cbdf62c25ed9b6a} 
+static \mbox{\hyperlink{classparser_1_1_tablela_de_valores}{Tablela\+De\+Valores}} parser.\+Tablela\+De\+Valores.\+Clone (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_tablela_de_valores}{Tablela\+De\+Valores}}}]{tabela}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+clona a tabela de valores parametro.. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tabela} & tabela a clonar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_tablela_de_valores_a28c3ab7b8e31638662037772e7dc1b05}\index{parser.TablelaDeValores@{parser.TablelaDeValores}!GetClasse@{GetClasse}}
+\index{GetClasse@{GetClasse}!parser.TablelaDeValores@{parser.TablelaDeValores}}
+\doxysubsubsection{\texorpdfstring{GetClasse()}{GetClasse()}}
+{\footnotesize\ttfamily \label{classparser_1_1_tablela_de_valores_a28c3ab7b8e31638662037772e7dc1b05} 
+\mbox{\hyperlink{classparser_1_1_classe}{Classe}} parser.\+Tablela\+De\+Valores.\+Get\+Classe (\begin{DoxyParamCaption}\item[{string}]{nome\+Da\+Classe}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})}
+
+
+
+retorna a classe registrada nesta tabela. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Da\+Classe} & nome da classe.\\
+\hline
+{\em escopo} & contexto onde a classe está.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_tablela_de_valores_a36b3126a6ac30f69a154229f829d8e0d}\index{parser.TablelaDeValores@{parser.TablelaDeValores}!GetClasses@{GetClasses}}
+\index{GetClasses@{GetClasses}!parser.TablelaDeValores@{parser.TablelaDeValores}}
+\doxysubsubsection{\texorpdfstring{GetClasses()}{GetClasses()}}
+{\footnotesize\ttfamily \label{classparser_1_1_tablela_de_valores_a36b3126a6ac30f69a154229f829d8e0d} 
+List$<$ \mbox{\hyperlink{classparser_1_1_classe}{Classe}} $>$ parser.\+Tablela\+De\+Valores.\+Get\+Classes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+retorna a lista de classes registradas nesta tabela. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_tablela_de_valores_ad621a5958eefc49e2bfa94b8b9a90fd1}\index{parser.TablelaDeValores@{parser.TablelaDeValores}!GetFuncao@{GetFuncao}}
+\index{GetFuncao@{GetFuncao}!parser.TablelaDeValores@{parser.TablelaDeValores}}
+\doxysubsubsection{\texorpdfstring{GetFuncao()}{GetFuncao()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_tablela_de_valores_ad621a5958eefc49e2bfa94b8b9a90fd1} 
+List$<$ \mbox{\hyperlink{classparser_1_1_metodo}{Metodo}} $>$ parser.\+Tablela\+De\+Valores.\+Get\+Funcao (\begin{DoxyParamCaption}\item[{string}]{nome\+Funcao}{}\end{DoxyParamCaption})}
+
+
+
+obtem funcoes com o nome parâmetro, não importando a classe em que a função foi definida. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Funcao} & none da funcao a obter.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_tablela_de_valores_a9660839ca2272cdca3be6a99f75475c4}\index{parser.TablelaDeValores@{parser.TablelaDeValores}!GetFuncao@{GetFuncao}}
+\index{GetFuncao@{GetFuncao}!parser.TablelaDeValores@{parser.TablelaDeValores}}
+\doxysubsubsection{\texorpdfstring{GetFuncao()}{GetFuncao()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_tablela_de_valores_a9660839ca2272cdca3be6a99f75475c4} 
+\mbox{\hyperlink{classparser_1_1_metodo}{Metodo}} parser.\+Tablela\+De\+Valores.\+Get\+Funcao (\begin{DoxyParamCaption}\item[{string}]{nome\+Funcao}{, }\item[{string}]{classe\+Da\+Funcao}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})}
+
+
+
+obtém a função nesta tabela de valores, e se não encontrar, obtém a função no repositorio de classes orquidea. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Funcao} & nome da funcao.\\
+\hline
+{\em classe\+Da\+Funcao} & nome da classe da funcao.\\
+\hline
+{\em escopo} & contexto onde a funcao está.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_tablela_de_valores_a881d97e5517419d182edabdf17e0121b}\index{parser.TablelaDeValores@{parser.TablelaDeValores}!GetFuncoes@{GetFuncoes}}
+\index{GetFuncoes@{GetFuncoes}!parser.TablelaDeValores@{parser.TablelaDeValores}}
+\doxysubsubsection{\texorpdfstring{GetFuncoes()}{GetFuncoes()}}
+{\footnotesize\ttfamily \label{classparser_1_1_tablela_de_valores_a881d97e5517419d182edabdf17e0121b} 
+List$<$ \mbox{\hyperlink{classparser_1_1_metodo}{Metodo}} $>$ parser.\+Tablela\+De\+Valores.\+Get\+Funcoes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+retorna a lista de todas funções registradas nesta tabela. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_tablela_de_valores_a14c4edd6793c3dc02be2c4ad18ab2631}\index{parser.TablelaDeValores@{parser.TablelaDeValores}!GetObjeto@{GetObjeto}}
+\index{GetObjeto@{GetObjeto}!parser.TablelaDeValores@{parser.TablelaDeValores}}
+\doxysubsubsection{\texorpdfstring{GetObjeto()}{GetObjeto()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_tablela_de_valores_a14c4edd6793c3dc02be2c4ad18ab2631} 
+\mbox{\hyperlink{classparser_1_1_objeto}{Objeto}} parser.\+Tablela\+De\+Valores.\+Get\+Objeto (\begin{DoxyParamCaption}\item[{string}]{nome\+Objeto}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})}
+
+
+
+obtem o objeto guardado na tabela de valores do escopo parametro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Objeto} & nome do objeto a obter.\\
+\hline
+{\em escopo} & contexto onde está a tabela de valores que contem o objeto.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_tablela_de_valores_af29520a60e9a695c08e4c9cd07bf8abd}\index{parser.TablelaDeValores@{parser.TablelaDeValores}!GetObjeto@{GetObjeto}}
+\index{GetObjeto@{GetObjeto}!parser.TablelaDeValores@{parser.TablelaDeValores}}
+\doxysubsubsection{\texorpdfstring{GetObjeto()}{GetObjeto()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_tablela_de_valores_af29520a60e9a695c08e4c9cd07bf8abd} 
+\mbox{\hyperlink{classparser_1_1_objeto}{Objeto}} parser.\+Tablela\+De\+Valores.\+Get\+Objeto (\begin{DoxyParamCaption}\item[{string}]{nome\+Objeto}{, }\item[{string}]{tipo\+Do\+Objeto}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})}
+
+
+
+obtem o objeto, pelo nome e tipo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Objeto} & nome do objeto.\\
+\hline
+{\em tipo\+Do\+Objeto} & classe do objeto.\\
+\hline
+{\em escopo} & contexto que contem a tabela de valores em que o objeto está.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_tablela_de_valores_a146e2b62e0137572da9291fe746b3fba}\index{parser.TablelaDeValores@{parser.TablelaDeValores}!GetObjetos@{GetObjetos}}
+\index{GetObjetos@{GetObjetos}!parser.TablelaDeValores@{parser.TablelaDeValores}}
+\doxysubsubsection{\texorpdfstring{GetObjetos()}{GetObjetos()}}
+{\footnotesize\ttfamily \label{classparser_1_1_tablela_de_valores_a146e2b62e0137572da9291fe746b3fba} 
+List$<$ \mbox{\hyperlink{classparser_1_1_objeto}{Objeto}} $>$ parser.\+Tablela\+De\+Valores.\+Get\+Objetos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+retorna a lista de todos objetos registrados nesta tabela. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_tablela_de_valores_a767c9fc6457c3610f954c602b277fb2e}\index{parser.TablelaDeValores@{parser.TablelaDeValores}!getObjetos@{getObjetos}}
+\index{getObjetos@{getObjetos}!parser.TablelaDeValores@{parser.TablelaDeValores}}
+\doxysubsubsection{\texorpdfstring{getObjetos()}{getObjetos()}}
+{\footnotesize\ttfamily \label{classparser_1_1_tablela_de_valores_a767c9fc6457c3610f954c602b277fb2e} 
+List$<$ \mbox{\hyperlink{classparser_1_1_objeto}{Objeto}} $>$ parser.\+Tablela\+De\+Valores.\+get\+Objetos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+retorna a lista de objetos registrados nesta tabela. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_tablela_de_valores_afaaf6290817c5298df39e698c5c0dc45}\index{parser.TablelaDeValores@{parser.TablelaDeValores}!GetOperadores@{GetOperadores}}
+\index{GetOperadores@{GetOperadores}!parser.TablelaDeValores@{parser.TablelaDeValores}}
+\doxysubsubsection{\texorpdfstring{GetOperadores()}{GetOperadores()}}
+{\footnotesize\ttfamily \label{classparser_1_1_tablela_de_valores_afaaf6290817c5298df39e698c5c0dc45} 
+List$<$ \mbox{\hyperlink{classparser_1_1_operador}{Operador}} $>$ parser.\+Tablela\+De\+Valores.\+Get\+Operadores (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+retorna uma lista de operadores registrados nesta tabela. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_tablela_de_valores_a3ba7c8e8dc198c72507ba776a03af469}\index{parser.TablelaDeValores@{parser.TablelaDeValores}!GetTypeFunction@{GetTypeFunction}}
+\index{GetTypeFunction@{GetTypeFunction}!parser.TablelaDeValores@{parser.TablelaDeValores}}
+\doxysubsubsection{\texorpdfstring{GetTypeFunction()}{GetTypeFunction()}}
+{\footnotesize\ttfamily \label{classparser_1_1_tablela_de_valores_a3ba7c8e8dc198c72507ba776a03af469} 
+string parser.\+Tablela\+De\+Valores.\+Get\+Type\+Function (\begin{DoxyParamCaption}\item[{string}]{nome\+Classe\+Da\+Funcao}{, }\item[{string}]{nome\+Funcao}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})}
+
+
+
+retorna o tipo de retorno de uma funcao. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Classe\+Da\+Funcao} & nome da classe da função.\\
+\hline
+{\em nome\+Funcao} & nome da função.\\
+\hline
+{\em escopo} & contexto onde a função está.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_tablela_de_valores_a7b083e8937a2c74a726c2a836316eedd}\index{parser.TablelaDeValores@{parser.TablelaDeValores}!IsClasse@{IsClasse}}
+\index{IsClasse@{IsClasse}!parser.TablelaDeValores@{parser.TablelaDeValores}}
+\doxysubsubsection{\texorpdfstring{IsClasse()}{IsClasse()}}
+{\footnotesize\ttfamily \label{classparser_1_1_tablela_de_valores_a7b083e8937a2c74a726c2a836316eedd} 
+bool parser.\+Tablela\+De\+Valores.\+Is\+Classe (\begin{DoxyParamCaption}\item[{string}]{nome\+Classe}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})}
+
+
+
+retorna true se o nome de classe parametro é de uma classe registrada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Classe} & nome da classe.\\
+\hline
+{\em escopo} & contexto onde a classe está.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_tablela_de_valores_a73cc43ff200829645a4bc85e5a7bfa1a}\index{parser.TablelaDeValores@{parser.TablelaDeValores}!IsFunction@{IsFunction}}
+\index{IsFunction@{IsFunction}!parser.TablelaDeValores@{parser.TablelaDeValores}}
+\doxysubsubsection{\texorpdfstring{IsFunction()}{IsFunction()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_tablela_de_valores_a73cc43ff200829645a4bc85e5a7bfa1a} 
+bool parser.\+Tablela\+De\+Valores.\+Is\+Function (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{, }\item[{string}]{name\+Funcion}{}\end{DoxyParamCaption})}
+
+
+
+retorna true se a funcao de nome parametro, está registrada nesta tabela. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em escopo} & contexto onde a funcao está.\\
+\hline
+{\em name\+Funcion} & nome da função.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_tablela_de_valores_a943eba36201da5c8493d7c51f74d3d94}\index{parser.TablelaDeValores@{parser.TablelaDeValores}!IsFunction@{IsFunction}}
+\index{IsFunction@{IsFunction}!parser.TablelaDeValores@{parser.TablelaDeValores}}
+\doxysubsubsection{\texorpdfstring{IsFunction()}{IsFunction()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_tablela_de_valores_a943eba36201da5c8493d7c51f74d3d94} 
+\mbox{\hyperlink{classparser_1_1_metodo}{Metodo}} parser.\+Tablela\+De\+Valores.\+Is\+Function (\begin{DoxyParamCaption}\item[{string}]{nome\+Funcao}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})}
+
+
+
+verifica se um token é nome de uma função. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Funcao} & nome da funcao.\\
+\hline
+{\em escopo} & contexto onde a funcao está.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_tablela_de_valores_aaec90faab0eb794002d2b25b8aaaa817}\index{parser.TablelaDeValores@{parser.TablelaDeValores}!IsObjetoRegistrado@{IsObjetoRegistrado}}
+\index{IsObjetoRegistrado@{IsObjetoRegistrado}!parser.TablelaDeValores@{parser.TablelaDeValores}}
+\doxysubsubsection{\texorpdfstring{IsObjetoRegistrado()}{IsObjetoRegistrado()}}
+{\footnotesize\ttfamily \label{classparser_1_1_tablela_de_valores_aaec90faab0eb794002d2b25b8aaaa817} 
+\mbox{\hyperlink{classparser_1_1_objeto}{Objeto}} parser.\+Tablela\+De\+Valores.\+Is\+Objeto\+Registrado (\begin{DoxyParamCaption}\item[{string}]{nome\+Objeto}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})}
+
+
+
+retorna o objeto com nome parametro, se estiver registrado nesta tabela. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Objeto} & nome do objeto.\\
+\hline
+{\em escopo} & contexto onde o objeto está.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_tablela_de_valores_ae4ad98f56b93a6e9ec03feaea86092e7}\index{parser.TablelaDeValores@{parser.TablelaDeValores}!RegistraClasse@{RegistraClasse}}
+\index{RegistraClasse@{RegistraClasse}!parser.TablelaDeValores@{parser.TablelaDeValores}}
+\doxysubsubsection{\texorpdfstring{RegistraClasse()}{RegistraClasse()}}
+{\footnotesize\ttfamily \label{classparser_1_1_tablela_de_valores_ae4ad98f56b93a6e9ec03feaea86092e7} 
+void parser.\+Tablela\+De\+Valores.\+Registra\+Classe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_classe}{Classe}}}]{uma\+Classe}{}\end{DoxyParamCaption})}
+
+
+
+registra uma classe nesta tabela de valores. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uma\+Classe} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_tablela_de_valores_a4133c4eee307510c10faa31997f4a71b}\index{parser.TablelaDeValores@{parser.TablelaDeValores}!RegistraFuncao@{RegistraFuncao}}
+\index{RegistraFuncao@{RegistraFuncao}!parser.TablelaDeValores@{parser.TablelaDeValores}}
+\doxysubsubsection{\texorpdfstring{RegistraFuncao()}{RegistraFuncao()}}
+{\footnotesize\ttfamily \label{classparser_1_1_tablela_de_valores_a4133c4eee307510c10faa31997f4a71b} 
+bool parser.\+Tablela\+De\+Valores.\+Registra\+Funcao (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_metodo}{Metodo}}}]{funcao}{}\end{DoxyParamCaption})}
+
+
+
+registra uma funcao nesta tabela. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em funcao} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_tablela_de_valores_ab364584a2349938073187f1ecc7a5e2e}\index{parser.TablelaDeValores@{parser.TablelaDeValores}!RegistraObjeto@{RegistraObjeto}}
+\index{RegistraObjeto@{RegistraObjeto}!parser.TablelaDeValores@{parser.TablelaDeValores}}
+\doxysubsubsection{\texorpdfstring{RegistraObjeto()}{RegistraObjeto()}}
+{\footnotesize\ttfamily \label{classparser_1_1_tablela_de_valores_ab364584a2349938073187f1ecc7a5e2e} 
+void parser.\+Tablela\+De\+Valores.\+Registra\+Objeto (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_objeto}{Objeto}}}]{objeto}{}\end{DoxyParamCaption})}
+
+
+
+registra o objeto na tabela de valores currente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em objeto} & objeto a ser guardado.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_tablela_de_valores_a4f017128c1d53a06f6aa022b99bd8880}\index{parser.TablelaDeValores@{parser.TablelaDeValores}!RemoveObjeto@{RemoveObjeto}}
+\index{RemoveObjeto@{RemoveObjeto}!parser.TablelaDeValores@{parser.TablelaDeValores}}
+\doxysubsubsection{\texorpdfstring{RemoveObjeto()}{RemoveObjeto()}}
+{\footnotesize\ttfamily \label{classparser_1_1_tablela_de_valores_a4f017128c1d53a06f6aa022b99bd8880} 
+void parser.\+Tablela\+De\+Valores.\+Remove\+Objeto (\begin{DoxyParamCaption}\item[{string}]{nome\+Objeto}{}\end{DoxyParamCaption})}
+
+
+
+remove a ultima instancia do objeto com o nome de entrada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Objeto} & nom do objeto a ser removido.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_tablela_de_valores_a419dd61b090b1fc9ff9b278e6f557f60}\index{parser.TablelaDeValores@{parser.TablelaDeValores}!UpdateObjeto@{UpdateObjeto}}
+\index{UpdateObjeto@{UpdateObjeto}!parser.TablelaDeValores@{parser.TablelaDeValores}}
+\doxysubsubsection{\texorpdfstring{UpdateObjeto()}{UpdateObjeto()}}
+{\footnotesize\ttfamily \label{classparser_1_1_tablela_de_valores_a419dd61b090b1fc9ff9b278e6f557f60} 
+void parser.\+Tablela\+De\+Valores.\+Update\+Objeto (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_objeto}{Objeto}}}]{objeto\+Atualizado}{}\end{DoxyParamCaption})}
+
+
+
+atualiza um objeto de mesmo nome, com o objeto parâmetro, com valores atualizados. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em objeto\+Atualizado} & objeto a ser atualizado.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_tablela_de_valores_acfa0af6bfbc63c7610fa9e94f1001ccd}\index{parser.TablelaDeValores@{parser.TablelaDeValores}!UpdateWithCreateObjeto@{UpdateWithCreateObjeto}}
+\index{UpdateWithCreateObjeto@{UpdateWithCreateObjeto}!parser.TablelaDeValores@{parser.TablelaDeValores}}
+\doxysubsubsection{\texorpdfstring{UpdateWithCreateObjeto()}{UpdateWithCreateObjeto()}}
+{\footnotesize\ttfamily \label{classparser_1_1_tablela_de_valores_acfa0af6bfbc63c7610fa9e94f1001ccd} 
+void parser.\+Tablela\+De\+Valores.\+Update\+With\+Create\+Objeto (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_objeto}{Objeto}}}]{objeto\+Atualizado}{}\end{DoxyParamCaption})}
+
+
+
+atualiza um objeto. se não tiver no escopo, registra e atualiza. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em objeto\+Atualizado} & objeto a ser registrado/atualizado.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_tablela_de_valores_ad62d719a9588a30072ac36787bc3b5f2}\index{parser.TablelaDeValores@{parser.TablelaDeValores}!ValidaObjeto@{ValidaObjeto}}
+\index{ValidaObjeto@{ValidaObjeto}!parser.TablelaDeValores@{parser.TablelaDeValores}}
+\doxysubsubsection{\texorpdfstring{ValidaObjeto()}{ValidaObjeto()}}
+{\footnotesize\ttfamily \label{classparser_1_1_tablela_de_valores_ad62d719a9588a30072ac36787bc3b5f2} 
+bool parser.\+Tablela\+De\+Valores.\+Valida\+Objeto (\begin{DoxyParamCaption}\item[{string}]{nome\+Objeto}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})}
+
+
+
+retorna true se o objeto de nome parametro está registrado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Objeto} & nome do objeto.\\
+\hline
+{\em escopo} & contexto onde o objeto está.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_tablela_de_valores_a6938a741dd9c52cba68e033644d83438}\index{parser.TablelaDeValores@{parser.TablelaDeValores}!ValidaOperador@{ValidaOperador}}
+\index{ValidaOperador@{ValidaOperador}!parser.TablelaDeValores@{parser.TablelaDeValores}}
+\doxysubsubsection{\texorpdfstring{ValidaOperador()}{ValidaOperador()}}
+{\footnotesize\ttfamily \label{classparser_1_1_tablela_de_valores_a6938a741dd9c52cba68e033644d83438} 
+bool parser.\+Tablela\+De\+Valores.\+Valida\+Operador (\begin{DoxyParamCaption}\item[{string}]{nome\+Operador}{, }\item[{string}]{tipo\+Do\+OPerador}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})}
+
+
+
+retorna true se econtrar um operador registrado com\+: nome, tipo parametros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Operador} & nome do operador.\\
+\hline
+{\em tipo\+Do\+OPerador} & tipo do operador.\\
+\hline
+{\em escopo} & contexto onde o operador está.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_tablela_de_valores_acb7e40311e58cbb00aff0d9fa7327602}\index{parser.TablelaDeValores@{parser.TablelaDeValores}!ValidaTipoObjeto@{ValidaTipoObjeto}}
+\index{ValidaTipoObjeto@{ValidaTipoObjeto}!parser.TablelaDeValores@{parser.TablelaDeValores}}
+\doxysubsubsection{\texorpdfstring{ValidaTipoObjeto()}{ValidaTipoObjeto()}}
+{\footnotesize\ttfamily \label{classparser_1_1_tablela_de_valores_acb7e40311e58cbb00aff0d9fa7327602} 
+bool parser.\+Tablela\+De\+Valores.\+Valida\+Tipo\+Objeto (\begin{DoxyParamCaption}\item[{string}]{tipo\+Variavel}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})}
+
+
+
+valida um objeto, se está registrado com o tipo parametro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tipo\+Variavel} & classe do objeto.\\
+\hline
+{\em escopo} & contexto onde o objeto está.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classparser_1_1_tablela_de_valores_acb0be8b138c92ce44d35050c16849127}\index{parser.TablelaDeValores@{parser.TablelaDeValores}!Funcoes@{Funcoes}}
+\index{Funcoes@{Funcoes}!parser.TablelaDeValores@{parser.TablelaDeValores}}
+\doxysubsubsection{\texorpdfstring{Funcoes}{Funcoes}}
+{\footnotesize\ttfamily \label{classparser_1_1_tablela_de_valores_acb0be8b138c92ce44d35050c16849127} 
+List$<$\mbox{\hyperlink{classparser_1_1_metodo}{Metodo}}$>$ parser.\+Tablela\+De\+Valores.\+Funcoes = new List$<$\mbox{\hyperlink{classparser_1_1_metodo}{Metodo}}$>$()}
+
+
+
+contém as funções do escopo currente. 
+
+\Hypertarget{classparser_1_1_tablela_de_valores_aec2e54cc8efcf230622e41a726ca83c4}\index{parser.TablelaDeValores@{parser.TablelaDeValores}!objetos@{objetos}}
+\index{objetos@{objetos}!parser.TablelaDeValores@{parser.TablelaDeValores}}
+\doxysubsubsection{\texorpdfstring{objetos}{objetos}}
+{\footnotesize\ttfamily \label{classparser_1_1_tablela_de_valores_aec2e54cc8efcf230622e41a726ca83c4} 
+List$<$\mbox{\hyperlink{classparser_1_1_objeto}{Objeto}}$>$ parser.\+Tablela\+De\+Valores.\+objetos = new List$<$\mbox{\hyperlink{classparser_1_1_objeto}{Objeto}}$>$()}
+
+
+
+contém uma lista de objetos instanciados, em um escopo. 
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{classparser_1_1_tablela_de_valores_af9b263babea80ff2ddb3ff25d1782323}\index{parser.TablelaDeValores@{parser.TablelaDeValores}!expressoes@{expressoes}}
+\index{expressoes@{expressoes}!parser.TablelaDeValores@{parser.TablelaDeValores}}
+\doxysubsubsection{\texorpdfstring{expressoes}{expressoes}}
+{\footnotesize\ttfamily \label{classparser_1_1_tablela_de_valores_af9b263babea80ff2ddb3ff25d1782323} 
+List$<$\mbox{\hyperlink{classparser_1_1_expressao}{Expressao}}$>$ parser.\+Tablela\+De\+Valores.\+expressoes\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+contém as expressões validadas no escopo currente. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/componentes\+De\+Interpretadores\+ECompiladores/\+PROGRAMACAO FUNCIONAL/\mbox{\hyperlink{_tabela_de_valores_8cs}{Tabela\+De\+Valores.\+cs}}\end{DoxyCompactItemize}

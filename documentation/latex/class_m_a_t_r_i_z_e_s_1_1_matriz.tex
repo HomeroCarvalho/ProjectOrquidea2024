@@ -1,0 +1,293 @@
+\doxysection{MATRIZES.\+Matriz Class Reference}
+\hypertarget{class_m_a_t_r_i_z_e_s_1_1_matriz}{}\label{class_m_a_t_r_i_z_e_s_1_1_matriz}\index{MATRIZES.Matriz@{MATRIZES.Matriz}}
+
+
+classe que encapsula o conceito matematico de matriz.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz_a4554c72b582a789ef6b3900f36701cf2}{Set\+Element}} (int lin, int col, double el)
+\item 
+double \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz_ac01e23cdd5dac82d4df4fef1b7bf81dd}{Get\+Element}} (int lin, int col)
+\item 
+\mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz_a36c3e3cffcd17de008df11ae6338feca}{Matriz}} (int lin, int col, params double\mbox{[}$\,$\mbox{]} elementos)
+\item 
+\mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz_a268d984748441a0c9b7540d03e6db02c}{Matriz}} (int lin, int col)
+\item 
+void \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz_a0620b4ff93cb22d9c3035106085c9dfa}{Init\+Device\+Matriz}} (int lin, int col)
+\item 
+void \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz_a50a1ff520640c5e52cf940adc221436b}{Init\+Device\+Matriz}} (\mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}} M)
+\item 
+\mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}} \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz_ad0efe29796eaa80383f6540e2a8172e3}{Clone}} ()
+\begin{DoxyCompactList}\small\item\em retorna uma copia da matriz que chamou o metodo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz_ab8a31e12e82a53a01a1e22be77963c91}{Preenche\+Matriz}} (double intervalo)
+\begin{DoxyCompactList}\small\item\em preenche a matriz com dados aleatorios. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz_a451feadffc882224fd2e21a46bcf2417}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em transforma uma matriz para uma representação em String. Sobrescreve o método \doxylink{class_m_a_t_r_i_z_e_s_1_1_matriz_a451feadffc882224fd2e21a46bcf2417}{To\+String()}, para que possa representar o objeto \doxylink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz} em operações de escrita em tela. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz_a16c1dd9e75dc88dfdb29a81ab620b30c}{Sort}} ()
+\begin{DoxyCompactList}\small\item\em ordena a matriz se lin=1 ou col=1. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}} \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz_a6afa28026df25dea281bb7d3cc5c05e5}{Identidade}} (int dim)
+\item 
+static \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}} \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz_af89bef0bf87a87b44d3a35bd0f89f1d8}{operator+}} (\mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}} A, \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}} B)
+\begin{DoxyCompactList}\small\item\em soma duas matrizes. Operador de adição. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}} \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz_aaedf05f079618198d435bf10df74a172}{operator-\/}} (\mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}} A, \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}} B)
+\begin{DoxyCompactList}\small\item\em subtrai duas matrizes. Operador de subtração. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}} \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz_af57da11ff42c9dbc45d7bf4e192f7c6f}{operator\texorpdfstring{$\ast$}{*}}} (\mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}} A, \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}} B)
+\begin{DoxyCompactList}\small\item\em MULTIPLICA DUAS \doxylink{namespace_m_a_t_r_i_z_e_s}{MATRIZES} \mbox{[}A\mbox{]} E \mbox{[}B\mbox{]}, DESDE QUE \mbox{[}A\mbox{]} E \mbox{[}B\mbox{]} OBEDECAM A REGRA\+: O NUMERO DE COLUNAS DE \mbox{[}A\mbox{]} DEVE SER IGUAL AO NUMERO DE COLUNAS DE \mbox{[}B\mbox{]}. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}} \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz_a41df825f6910ee6d66dcbce02559a04a}{operator\texorpdfstring{$\ast$}{*}}} (double d, \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}} B)
+\item 
+static \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1vetor2}{vetor2}} \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz_ae0efc6a820903773d9cdc91c32e566e4}{operator\texorpdfstring{$\ast$}{*}}} (\mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}} M, \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1vetor2}{vetor2}} v)
+\item 
+static \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}} \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz_a64c516307113950109381ea46f04d01e}{Matriz\+Inversa\+Nao\+Quadratica}} (\mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}} M)
+\item 
+static \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}} \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz_aa00be209f63c9da55c706adc1d10fdca}{Matriz\+Inversa}} (\mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}} A)
+\begin{DoxyCompactList}\small\item\em calcula a matriz inversa da matriz parametro. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}} \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz_a44dea98b774868ad3557bbcf15e740bd}{Matrix\+Inverse}} (\mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}} A)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz_abf1be9c3c822e79c3b478f1170ad129f}{qt\+Lin}}
+\item 
+int \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz_a779a5e6a71b824df52e0b4416c3c2d95}{qt\+Col}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+classe que encapsula o conceito matematico de matriz. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_m_a_t_r_i_z_e_s_1_1_matriz_a36c3e3cffcd17de008df11ae6338feca}\index{MATRIZES.Matriz@{MATRIZES.Matriz}!Matriz@{Matriz}}
+\index{Matriz@{Matriz}!MATRIZES.Matriz@{MATRIZES.Matriz}}
+\doxysubsubsection{\texorpdfstring{Matriz()}{Matriz()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_m_a_t_r_i_z_e_s_1_1_matriz_a36c3e3cffcd17de008df11ae6338feca} 
+MATRIZES.\+Matriz.\+Matriz (\begin{DoxyParamCaption}\item[{int}]{lin}{, }\item[{int}]{col}{, }\item[{params double\mbox{[}$\,$\mbox{]}}]{elementos}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_m_a_t_r_i_z_e_s_1_1_matriz_a268d984748441a0c9b7540d03e6db02c}\index{MATRIZES.Matriz@{MATRIZES.Matriz}!Matriz@{Matriz}}
+\index{Matriz@{Matriz}!MATRIZES.Matriz@{MATRIZES.Matriz}}
+\doxysubsubsection{\texorpdfstring{Matriz()}{Matriz()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_m_a_t_r_i_z_e_s_1_1_matriz_a268d984748441a0c9b7540d03e6db02c} 
+MATRIZES.\+Matriz.\+Matriz (\begin{DoxyParamCaption}\item[{int}]{lin}{, }\item[{int}]{col}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_m_a_t_r_i_z_e_s_1_1_matriz_ad0efe29796eaa80383f6540e2a8172e3}\index{MATRIZES.Matriz@{MATRIZES.Matriz}!Clone@{Clone}}
+\index{Clone@{Clone}!MATRIZES.Matriz@{MATRIZES.Matriz}}
+\doxysubsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily \label{class_m_a_t_r_i_z_e_s_1_1_matriz_ad0efe29796eaa80383f6540e2a8172e3} 
+\mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}} MATRIZES.\+Matriz.\+Clone (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+retorna uma copia da matriz que chamou o metodo. 
+
+\Hypertarget{class_m_a_t_r_i_z_e_s_1_1_matriz_ac01e23cdd5dac82d4df4fef1b7bf81dd}\index{MATRIZES.Matriz@{MATRIZES.Matriz}!GetElement@{GetElement}}
+\index{GetElement@{GetElement}!MATRIZES.Matriz@{MATRIZES.Matriz}}
+\doxysubsubsection{\texorpdfstring{GetElement()}{GetElement()}}
+{\footnotesize\ttfamily \label{class_m_a_t_r_i_z_e_s_1_1_matriz_ac01e23cdd5dac82d4df4fef1b7bf81dd} 
+double MATRIZES.\+Matriz.\+Get\+Element (\begin{DoxyParamCaption}\item[{int}]{lin}{, }\item[{int}]{col}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_m_a_t_r_i_z_e_s_1_1_matriz_a6afa28026df25dea281bb7d3cc5c05e5}\index{MATRIZES.Matriz@{MATRIZES.Matriz}!Identidade@{Identidade}}
+\index{Identidade@{Identidade}!MATRIZES.Matriz@{MATRIZES.Matriz}}
+\doxysubsubsection{\texorpdfstring{Identidade()}{Identidade()}}
+{\footnotesize\ttfamily \label{class_m_a_t_r_i_z_e_s_1_1_matriz_a6afa28026df25dea281bb7d3cc5c05e5} 
+static \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}} MATRIZES.\+Matriz.\+Identidade (\begin{DoxyParamCaption}\item[{int}]{dim}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_m_a_t_r_i_z_e_s_1_1_matriz_a0620b4ff93cb22d9c3035106085c9dfa}\index{MATRIZES.Matriz@{MATRIZES.Matriz}!InitDeviceMatriz@{InitDeviceMatriz}}
+\index{InitDeviceMatriz@{InitDeviceMatriz}!MATRIZES.Matriz@{MATRIZES.Matriz}}
+\doxysubsubsection{\texorpdfstring{InitDeviceMatriz()}{InitDeviceMatriz()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_m_a_t_r_i_z_e_s_1_1_matriz_a0620b4ff93cb22d9c3035106085c9dfa} 
+void MATRIZES.\+Matriz.\+Init\+Device\+Matriz (\begin{DoxyParamCaption}\item[{int}]{lin}{, }\item[{int}]{col}{}\end{DoxyParamCaption})}
+
+construtor basico para classes herdeiras. aceita o numero de linhas e colunas da matriz. 
+\begin{DoxyParams}{Parameters}
+{\em lin} & numero de linhas da matriz.\\
+\hline
+{\em col} & numero de colunas da matriz.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_m_a_t_r_i_z_e_s_1_1_matriz_a50a1ff520640c5e52cf940adc221436b}\index{MATRIZES.Matriz@{MATRIZES.Matriz}!InitDeviceMatriz@{InitDeviceMatriz}}
+\index{InitDeviceMatriz@{InitDeviceMatriz}!MATRIZES.Matriz@{MATRIZES.Matriz}}
+\doxysubsubsection{\texorpdfstring{InitDeviceMatriz()}{InitDeviceMatriz()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_m_a_t_r_i_z_e_s_1_1_matriz_a50a1ff520640c5e52cf940adc221436b} 
+void MATRIZES.\+Matriz.\+Init\+Device\+Matriz (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}}}]{M}{}\end{DoxyParamCaption})}
+
+metodo controle para construtores e clone. Copia para a matriz que chamou o metodo a matriz parametro. 
+\begin{DoxyParams}{Parameters}
+{\em M} & matriz parametro a ser copiada.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_m_a_t_r_i_z_e_s_1_1_matriz_a44dea98b774868ad3557bbcf15e740bd}\index{MATRIZES.Matriz@{MATRIZES.Matriz}!MatrixInverse@{MatrixInverse}}
+\index{MatrixInverse@{MatrixInverse}!MATRIZES.Matriz@{MATRIZES.Matriz}}
+\doxysubsubsection{\texorpdfstring{MatrixInverse()}{MatrixInverse()}}
+{\footnotesize\ttfamily \label{class_m_a_t_r_i_z_e_s_1_1_matriz_a44dea98b774868ad3557bbcf15e740bd} 
+static \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}} MATRIZES.\+Matriz.\+Matrix\+Inverse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}}}]{A}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_m_a_t_r_i_z_e_s_1_1_matriz_aa00be209f63c9da55c706adc1d10fdca}\index{MATRIZES.Matriz@{MATRIZES.Matriz}!MatrizInversa@{MatrizInversa}}
+\index{MatrizInversa@{MatrizInversa}!MATRIZES.Matriz@{MATRIZES.Matriz}}
+\doxysubsubsection{\texorpdfstring{MatrizInversa()}{MatrizInversa()}}
+{\footnotesize\ttfamily \label{class_m_a_t_r_i_z_e_s_1_1_matriz_aa00be209f63c9da55c706adc1d10fdca} 
+static \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}} MATRIZES.\+Matriz.\+Matriz\+Inversa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}}}]{A}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+calcula a matriz inversa da matriz parametro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & matriz a ter a inversa calculada.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_m_a_t_r_i_z_e_s_1_1_matriz_a64c516307113950109381ea46f04d01e}\index{MATRIZES.Matriz@{MATRIZES.Matriz}!MatrizInversaNaoQuadratica@{MatrizInversaNaoQuadratica}}
+\index{MatrizInversaNaoQuadratica@{MatrizInversaNaoQuadratica}!MATRIZES.Matriz@{MATRIZES.Matriz}}
+\doxysubsubsection{\texorpdfstring{MatrizInversaNaoQuadratica()}{MatrizInversaNaoQuadratica()}}
+{\footnotesize\ttfamily \label{class_m_a_t_r_i_z_e_s_1_1_matriz_a64c516307113950109381ea46f04d01e} 
+static \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}} MATRIZES.\+Matriz.\+Matriz\+Inversa\+Nao\+Quadratica (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}}}]{M}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+M\mbox{[}3,2\mbox{]}\texorpdfstring{$\ast$}{*}M(-\/1)\mbox{[}2,3\mbox{]} M\mbox{[}3,2\mbox{]} é conhecida\+: Aux\mbox{[}2,3\mbox{]}\texorpdfstring{$\ast$}{*}\+M\texorpdfstring{$\ast$}{*}M(-\/1)=Aux (Aux\texorpdfstring{$\ast$}{*}M)(-\/1)=M(-\/1)=(Aux\texorpdfstring{$\ast$}{*}M)(-\/1)\texorpdfstring{$\ast$}{*}\+Aux
+
+M\mbox{[}3,2\mbox{]}\texorpdfstring{$\ast$}{*}M(-\/1)\mbox{[}2,3\mbox{]} -\/-\/-\/\texorpdfstring{$>$}{>} M\mbox{[}3,2\mbox{]}=M(-\/1) M\mbox{[}2,3\mbox{]} é conhecida. M(-\/1)\texorpdfstring{$\ast$}{*}M\mbox{[}2,3\mbox{]}\texorpdfstring{$\ast$}{*}\+Aux\mbox{[}3,2\mbox{]}=Aux\mbox{[}3,2\mbox{]} M(-\/1)=Aux\texorpdfstring{$\ast$}{*}(M\texorpdfstring{$\ast$}{*}\+Aux)(-\/1)\Hypertarget{class_m_a_t_r_i_z_e_s_1_1_matriz_a41df825f6910ee6d66dcbce02559a04a}\index{MATRIZES.Matriz@{MATRIZES.Matriz}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!MATRIZES.Matriz@{MATRIZES.Matriz}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_m_a_t_r_i_z_e_s_1_1_matriz_a41df825f6910ee6d66dcbce02559a04a} 
+static \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}} MATRIZES.\+Matriz.\+operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}\item[{double}]{d}{, }\item[{\mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}}}]{B}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_m_a_t_r_i_z_e_s_1_1_matriz_af57da11ff42c9dbc45d7bf4e192f7c6f}\index{MATRIZES.Matriz@{MATRIZES.Matriz}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!MATRIZES.Matriz@{MATRIZES.Matriz}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_m_a_t_r_i_z_e_s_1_1_matriz_af57da11ff42c9dbc45d7bf4e192f7c6f} 
+static \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}} MATRIZES.\+Matriz.\+operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}}}]{A}{, }\item[{\mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}}}]{B}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+MULTIPLICA DUAS \doxylink{namespace_m_a_t_r_i_z_e_s}{MATRIZES} \mbox{[}A\mbox{]} E \mbox{[}B\mbox{]}, DESDE QUE \mbox{[}A\mbox{]} E \mbox{[}B\mbox{]} OBEDECAM A REGRA\+: O NUMERO DE COLUNAS DE \mbox{[}A\mbox{]} DEVE SER IGUAL AO NUMERO DE COLUNAS DE \mbox{[}B\mbox{]}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & MATRIZ MULTIPLICANDA \mbox{[}A\mbox{]}.\\
+\hline
+{\em B} & MATRIZ MULTIPLICANDA \mbox{[}B\mbox{]}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+RETORNA O PRODUTO DA MULTIPLICACAO DE \mbox{[}A\mbox{]} POR \mbox{[}B\mbox{]}.
+\end{DoxyReturn}
+\Hypertarget{class_m_a_t_r_i_z_e_s_1_1_matriz_ae0efc6a820903773d9cdc91c32e566e4}\index{MATRIZES.Matriz@{MATRIZES.Matriz}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!MATRIZES.Matriz@{MATRIZES.Matriz}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_m_a_t_r_i_z_e_s_1_1_matriz_ae0efc6a820903773d9cdc91c32e566e4} 
+static \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1vetor2}{vetor2}} MATRIZES.\+Matriz.\+operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}}}]{M}{, }\item[{\mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1vetor2}{vetor2}}}]{v}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_m_a_t_r_i_z_e_s_1_1_matriz_af89bef0bf87a87b44d3a35bd0f89f1d8}\index{MATRIZES.Matriz@{MATRIZES.Matriz}!operator+@{operator+}}
+\index{operator+@{operator+}!MATRIZES.Matriz@{MATRIZES.Matriz}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \label{class_m_a_t_r_i_z_e_s_1_1_matriz_af89bef0bf87a87b44d3a35bd0f89f1d8} 
+static \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}} MATRIZES.\+Matriz.\+operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}}}]{A}{, }\item[{\mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}}}]{B}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+soma duas matrizes. Operador de adição. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & \doxylink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz} Parametro.\\
+\hline
+{\em B} & \doxylink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz} Parametro.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna uma \doxylink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz} soma das matrizes \mbox{[}A\mbox{]} e \mbox{[}B\mbox{]}.
+\end{DoxyReturn}
+\Hypertarget{class_m_a_t_r_i_z_e_s_1_1_matriz_aaedf05f079618198d435bf10df74a172}\index{MATRIZES.Matriz@{MATRIZES.Matriz}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!MATRIZES.Matriz@{MATRIZES.Matriz}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \label{class_m_a_t_r_i_z_e_s_1_1_matriz_aaedf05f079618198d435bf10df74a172} 
+static \mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}} MATRIZES.\+Matriz.\+operator-\/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}}}]{A}{, }\item[{\mbox{\hyperlink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz}}}]{B}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+subtrai duas matrizes. Operador de subtração. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & \doxylink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz} Parametro.\\
+\hline
+{\em B} & \doxylink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz} Parametro.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna uma \doxylink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz} diferença entre as matrizes \mbox{[}A\mbox{]} e \mbox{[}B\mbox{]}.
+\end{DoxyReturn}
+\Hypertarget{class_m_a_t_r_i_z_e_s_1_1_matriz_ab8a31e12e82a53a01a1e22be77963c91}\index{MATRIZES.Matriz@{MATRIZES.Matriz}!PreencheMatriz@{PreencheMatriz}}
+\index{PreencheMatriz@{PreencheMatriz}!MATRIZES.Matriz@{MATRIZES.Matriz}}
+\doxysubsubsection{\texorpdfstring{PreencheMatriz()}{PreencheMatriz()}}
+{\footnotesize\ttfamily \label{class_m_a_t_r_i_z_e_s_1_1_matriz_ab8a31e12e82a53a01a1e22be77963c91} 
+void MATRIZES.\+Matriz.\+Preenche\+Matriz (\begin{DoxyParamCaption}\item[{double}]{intervalo}{}\end{DoxyParamCaption})}
+
+
+
+preenche a matriz com dados aleatorios. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em intervalo} & intervalo somada cumulativamente.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_m_a_t_r_i_z_e_s_1_1_matriz_a4554c72b582a789ef6b3900f36701cf2}\index{MATRIZES.Matriz@{MATRIZES.Matriz}!SetElement@{SetElement}}
+\index{SetElement@{SetElement}!MATRIZES.Matriz@{MATRIZES.Matriz}}
+\doxysubsubsection{\texorpdfstring{SetElement()}{SetElement()}}
+{\footnotesize\ttfamily \label{class_m_a_t_r_i_z_e_s_1_1_matriz_a4554c72b582a789ef6b3900f36701cf2} 
+void MATRIZES.\+Matriz.\+Set\+Element (\begin{DoxyParamCaption}\item[{int}]{lin}{, }\item[{int}]{col}{, }\item[{double}]{el}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_m_a_t_r_i_z_e_s_1_1_matriz_a16c1dd9e75dc88dfdb29a81ab620b30c}\index{MATRIZES.Matriz@{MATRIZES.Matriz}!Sort@{Sort}}
+\index{Sort@{Sort}!MATRIZES.Matriz@{MATRIZES.Matriz}}
+\doxysubsubsection{\texorpdfstring{Sort()}{Sort()}}
+{\footnotesize\ttfamily \label{class_m_a_t_r_i_z_e_s_1_1_matriz_a16c1dd9e75dc88dfdb29a81ab620b30c} 
+void MATRIZES.\+Matriz.\+Sort (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+ordena a matriz se lin=1 ou col=1. 
+
+\Hypertarget{class_m_a_t_r_i_z_e_s_1_1_matriz_a451feadffc882224fd2e21a46bcf2417}\index{MATRIZES.Matriz@{MATRIZES.Matriz}!ToString@{ToString}}
+\index{ToString@{ToString}!MATRIZES.Matriz@{MATRIZES.Matriz}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily \label{class_m_a_t_r_i_z_e_s_1_1_matriz_a451feadffc882224fd2e21a46bcf2417} 
+override string MATRIZES.\+Matriz.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+transforma uma matriz para uma representação em String. Sobrescreve o método \doxylink{class_m_a_t_r_i_z_e_s_1_1_matriz_a451feadffc882224fd2e21a46bcf2417}{To\+String()}, para que possa representar o objeto \doxylink{class_m_a_t_r_i_z_e_s_1_1_matriz}{Matriz} em operações de escrita em tela. 
+
+\begin{DoxyReturn}{Returns}
+retorna uma String representação da matriz.
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_m_a_t_r_i_z_e_s_1_1_matriz_a779a5e6a71b824df52e0b4416c3c2d95}\index{MATRIZES.Matriz@{MATRIZES.Matriz}!qtCol@{qtCol}}
+\index{qtCol@{qtCol}!MATRIZES.Matriz@{MATRIZES.Matriz}}
+\doxysubsubsection{\texorpdfstring{qtCol}{qtCol}}
+{\footnotesize\ttfamily \label{class_m_a_t_r_i_z_e_s_1_1_matriz_a779a5e6a71b824df52e0b4416c3c2d95} 
+int MATRIZES.\+Matriz.\+qt\+Col}
+
+\Hypertarget{class_m_a_t_r_i_z_e_s_1_1_matriz_abf1be9c3c822e79c3b478f1170ad129f}\index{MATRIZES.Matriz@{MATRIZES.Matriz}!qtLin@{qtLin}}
+\index{qtLin@{qtLin}!MATRIZES.Matriz@{MATRIZES.Matriz}}
+\doxysubsubsection{\texorpdfstring{qtLin}{qtLin}}
+{\footnotesize\ttfamily \label{class_m_a_t_r_i_z_e_s_1_1_matriz_abf1be9c3c822e79c3b478f1170ad129f} 
+int MATRIZES.\+Matriz.\+qt\+Lin}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/\+Util/\mbox{\hyperlink{u_m_a_t_r_i_z_8cs}{u\+MATRIZ.\+cs}}\end{DoxyCompactItemize}

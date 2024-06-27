@@ -1,0 +1,252 @@
+\doxysection{parser.\+Expressao\+Literal\+Text Class Reference}
+\hypertarget{classparser_1_1_expressao_literal_text}{}\label{classparser_1_1_expressao_literal_text}\index{parser.ExpressaoLiteralText@{parser.ExpressaoLiteralText}}
+
+
+expressao para constantes de texto, ex.\+: a="{}texto\+A"{}. "{}texto\+A"{} é uma expressao literal text.  
+
+
+Inheritance diagram for parser.\+Expressao\+Literal\+Text\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classparser_1_1_expressao_literal_text}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparser_1_1_expressao_literal_text_a293379f0e0774b168f1532776a99c428}{Expressao\+Literal\+Text}} (string \mbox{\hyperlink{classparser_1_1_expressao_literal_text_a341dd6e2d39c2e9b74ee6ec4b9c0cede}{literal\+Text}})
+\begin{DoxyCompactList}\small\item\em construtor. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{classparser_1_1_expressao_literal_text_a1e9bfbbce81c38fd5d3af5e8aac0c974}{Get\+Tipo\+Expressao}} ()
+\begin{DoxyCompactList}\small\item\em retorna o tipo da expressao (int, string, double, char, classes orquidea, classes importadas,etc... \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{classparser_1_1_expressao_literal_text_acc01963c8a48979967f842a818a254b4}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classparser_1_1_expressao}{parser.\+Expressao}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual object \mbox{\hyperlink{classparser_1_1_expressao_a518455e0fc24c9a8df31ff872493d8ee}{Get\+Elemento}} ()
+\begin{DoxyCompactList}\small\item\em retorna as sub-\/expressoes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_expressao_a439a398785f25da7dd47da4d258779f3}{Expressao}} ()
+\begin{DoxyCompactList}\small\item\em construtor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_expressao_af5b3ef081bf11d3ed4a5f46ec3bc7b17}{Expressao}} (string codigo\+Expressao, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em construtor de expressoes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_expressao_a1ed99b7bd1e1652209e405c1e99d75d1}{Expressao}} (string\mbox{[}$\,$\mbox{]} tokens\+Expressao, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em construtor de expressoes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} \mbox{\hyperlink{classparser_1_1_expressao_ae470b859839d05b7319d94fe27bce16b}{Clone}} ()
+\begin{DoxyCompactList}\small\item\em clona a expressao. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_expressao_a356c44b166961e4986f3c173024a56c5}{Pos\+Ordem\+Expressao}} ()
+\begin{DoxyCompactList}\small\item\em arruma a expressao para pos-\/ordem, para avaliação de valores da expressao. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{classparser_1_1_expressao_a1b7e9f7d2773932188dfa41c6792bc5c}{To\+String}} ()
+\item 
+\mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} \mbox{\hyperlink{classparser_1_1_expressao_ae608b045e56f5597d5667b02145d88bb}{Extrai\+Uma\+Expressao\+Sem\+Validar}} (List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_expressao_a13da90e26b28ac813017ec6ff5e33165}{tokens}}, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_expressao_aabebb5c5790be61ad18f117833012aba}{Convert}} ()
+\begin{DoxyCompactList}\small\item\em converte uma expressão para uma lista de tokens. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_expressao_a319ddaa3abadf4e88bf8ba700e6afd74}{Is\+Equals\+Expressions}} (\mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} expressao1, \mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} expressao2)
+\item 
+object \mbox{\hyperlink{classparser_1_1_expressao_a2dfbdd28ada2bc81ccb931f7b6d29adc}{Converte\+Para\+Numero}} (string str\+\_\+numero, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\item 
+bool \mbox{\hyperlink{classparser_1_1_expressao_a40fa3610b21e908f7e3b60717cca89a4}{Is\+Tipo\+Inteiro}} (string str\+\_\+numero)
+\item 
+bool \mbox{\hyperlink{classparser_1_1_expressao_a203e651f63e9a387a018aebf65fceaac}{Is\+Tipo\+Float}} (string str\+\_\+numero)
+\item 
+bool \mbox{\hyperlink{classparser_1_1_expressao_a84cdfd646cf684c95e7e38f42164ed3d}{Is\+Tipo\+Double}} (string str\+\_\+numero)
+\item 
+bool \mbox{\hyperlink{classparser_1_1_expressao_a151d494914b9365c0e11da15cd99571f}{Is\+Numero}} (string str\+\_\+numero)
+\item 
+bool \mbox{\hyperlink{classparser_1_1_expressao_acf913f066f0a3ff4447a78f334efce45}{Valida\+Expressoes\+Geral}} (List$<$ string $>$ token\+Da\+Expressao)
+\begin{DoxyCompactList}\small\item\em valida a colocação lógica sequencial de variáveis e operadores, e funções \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_expressao_afd475e203a96c70e8398e75d7f6998b0}{Is\+Expressao\+Aritimetico\+Unario}} (\mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} exprss, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\item 
+bool \mbox{\hyperlink{classparser_1_1_expressao_a7f1ff24e3c6c07fdd4367a724ddbbe83}{Is\+Expression\+Atibuicao}} (\mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} exprss)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classparser_1_1_expressao_literal_text_afe9160a8e110c354152e72bc78646c81}{is\+Constant\+Literal}} (string token)
+\begin{DoxyCompactList}\small\item\em verifica se um token é uma literal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{classparser_1_1_expressao}{parser.\+Expressao}}}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} $>$ \mbox{\hyperlink{classparser_1_1_expressao_a3ae1fdfbd8eb61d4f0c8b20c92c93e51}{Extrai\+Expressoes}} (List$<$ string $>$ tokens\+Das\+Sub\+Expressoes, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em extrai sub-\/expressoes, a partir de uma lista de tokens. utilizado muito em extração de lista de expressoes -\/ parametros. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classparser_1_1_expressao_aa562f1b10989337ad663adce4e288ccc}{Init\+Headers}} (string codigo\+Classes)
+\begin{DoxyCompactList}\small\item\em inicialia o sistema de headers\+: processamento de classes, sem validacao de objetos, operadores, propriedades, metodos,ect... \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classparser_1_1_expressao_a7e454ec57f146a2cefe9ef1b0f6c3ff8}{Init\+Headers}} (List$<$ string $>$ tokens\+Classes)
+\begin{DoxyCompactList}\small\item\em inicialia o sistema de headers\+: processamento de classes, sem validacao de objetos, operadores, propriedades, metodos,ect... \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classparser_1_1_expressao_afe1610a08490748d98e6add2c6d8c2df}{Valida\+Expressao\+Condicional}} (\mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} expressao)
+\begin{DoxyCompactList}\small\item\em valida uma expressao condicional. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classparser_1_1_expressao_literal_text_a341dd6e2d39c2e9b74ee6ec4b9c0cede}{literal\+Text}}
+\begin{DoxyCompactList}\small\item\em constante contendo a literal da expressao. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classparser_1_1_expressao}{parser.\+Expressao}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classparser_1_1_expressao_a7508c9c0548b31ec4fbcda85e77fc14f}{type\+Exprss}} = \mbox{\hyperlink{classparser_1_1_expressao_a04c9a703a4870380f573c260fbdc7a97}{Expressao.\+type\+EXPRESSAO}}
+\begin{DoxyCompactList}\small\item\em tipo da expressao. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classparser_1_1_expressao_ae09d30b4ec8b7858ed3cf856fb53a815}{index\+Token}}
+\begin{DoxyCompactList}\small\item\em indice do token currente no processamento da expressao. \end{DoxyCompactList}\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_expressao_a13da90e26b28ac813017ec6ff5e33165}{tokens}} = new List$<$string$>$()
+\begin{DoxyCompactList}\small\item\em lista de tokens que formam a expressao. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classparser_1_1_expressao_ab885f2c1542002681e4db3226bb8e8b5}{tipo\+Da\+Expressao}}
+\begin{DoxyCompactList}\small\item\em tipo da expressão\+: int, string, classe,... \end{DoxyCompactList}\item 
+Type \mbox{\hyperlink{classparser_1_1_expressao_aca4f31dbd13eec727f0ad06a105e52a2}{type\+Expression\+By\+Searcher\+Regex}}
+\begin{DoxyCompactList}\small\item\em utilizado para processamento por expressoes regex. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} $>$ \mbox{\hyperlink{classparser_1_1_expressao_a6da075631696e0f547a805193837e1d3}{Elementos}} = new List$<$\mbox{\hyperlink{classparser_1_1_expressao}{Expressao}}$>$()
+\begin{DoxyCompactList}\small\item\em partes da expressao. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_expressao_a6abfd9ef771beae173b109b9bc380d6c}{is\+Modify}} = true
+\begin{DoxyCompactList}\small\item\em determina se a expressao foi modificada com alguma avaliacao de expressao. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_expressao_a60dedadc7556c1ff41669d228d7c365f}{is\+Pos\+Ordem}} = false
+\begin{DoxyCompactList}\small\item\em determina se a expressao está em pos-\/ordem ou não. \end{DoxyCompactList}\item 
+object \mbox{\hyperlink{classparser_1_1_expressao_a569807aae6601c00278159900938ad2a}{old\+Value}}
+\begin{DoxyCompactList}\small\item\em valor apos um processamento em \mbox{[}Eval\mbox{]}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static new char \mbox{\hyperlink{classparser_1_1_expressao_literal_text_a888819ef59b116c6f2c83e8b1ad2da6a}{aspas}} = \textquotesingle{}\textbackslash{}u0022\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em caracter de literais constantes. \end{DoxyCompactList}\item 
+static char \mbox{\hyperlink{classparser_1_1_expressao_literal_text_aa4712f3df0fad07e5e6679e640fd1bd4}{single\+Quote}} = \textquotesingle{}\textbackslash{}\textquotesingle{}\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em caracter delimitador para char constantes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classparser_1_1_expressao}{parser.\+Expressao}}}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \mbox{\hyperlink{classparser_1_1_classe}{Classe}} $>$ \mbox{\hyperlink{classparser_1_1_expressao_afe94166301a4be5f3e9578a46488da2e}{classes\+Da\+Linguagem}} = null
+\begin{DoxyCompactList}\small\item\em lista de classes orquidea, na formacao de headers \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classparser_1_1_file_header}{File\+Header}} \mbox{\hyperlink{classparser_1_1_expressao_a2427e5928377aca476c70f97565145e2}{headers}} = null
+\begin{DoxyCompactList}\small\item\em contem nome de classes, com propriedades, metodos, operadores de cada classe, registrado. \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{classparser_1_1_expressao_a1fb63d4f73a2d100133450145fe9b2d5}{type\+ATRIBUICAO}} = 0
+\item 
+const int \mbox{\hyperlink{classparser_1_1_expressao_a8054373060997b797e69186c60535851}{type\+CHAMADA\+\_\+\+METODO}} = 1
+\item 
+const int \mbox{\hyperlink{classparser_1_1_expressao_a43213052d4995a0960475e62b9b30506}{type\+PROPRIEDADES\+\_\+\+ANINHADADAS}} = 2
+\item 
+const int \mbox{\hyperlink{classparser_1_1_expressao_a252709eda357f2f876f29506b2f7c22a}{type\+NUMERO}} = 3
+\item 
+const int \mbox{\hyperlink{classparser_1_1_expressao_afcb2b3a689aec007b7039c2408e74870}{type\+LITERAL}} = 4
+\item 
+const int \mbox{\hyperlink{classparser_1_1_expressao_a21082e025ffb742c4abdbff6d9e76a4f}{type\+ELEMENT}} = 5
+\item 
+const int \mbox{\hyperlink{classparser_1_1_expressao_a5daad279d9d79b6bb7b54ffbf25ecfb8}{type\+OBJETO}} = 6
+\item 
+const int \mbox{\hyperlink{classparser_1_1_expressao_a18c849ca3e9da9ec3ca3866c373233ab}{type\+OPERADOR}} = 7
+\item 
+const int \mbox{\hyperlink{classparser_1_1_expressao_ad9d5ecfa62f66bd6f1f3e5ef70498c54}{type\+ENTRE\+\_\+\+PARENTESES}} = 8
+\item 
+const int \mbox{\hyperlink{classparser_1_1_expressao_a9b97e04a1dcdc6df030017cc37e34ffd}{type\+NILL}} = 9
+\item 
+const int \mbox{\hyperlink{classparser_1_1_expressao_a5a8738b73fce38f330186a341b2120ef}{type\+INSTANCIACAO}} = 10
+\item 
+const int \mbox{\hyperlink{classparser_1_1_expressao_a04c9a703a4870380f573c260fbdc7a97}{type\+EXPRESSAO}} = 11
+\item 
+static char \mbox{\hyperlink{classparser_1_1_expressao_af85fc02bca6ab6ffbdc103473de6ec7e}{aspas}} = \textquotesingle{}\textbackslash{}u0022\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em caracter de literais constantes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{classparser_1_1_expressao}{parser.\+Expressao}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} \mbox{\hyperlink{classparser_1_1_expressao_aad29ae86226d59ebbb6c2562ad1697bd}{Instance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em retorna o singleton. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+expressao para constantes de texto, ex.\+: a="{}texto\+A"{}. "{}texto\+A"{} é uma expressao literal text. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classparser_1_1_expressao_literal_text_a293379f0e0774b168f1532776a99c428}\index{parser.ExpressaoLiteralText@{parser.ExpressaoLiteralText}!ExpressaoLiteralText@{ExpressaoLiteralText}}
+\index{ExpressaoLiteralText@{ExpressaoLiteralText}!parser.ExpressaoLiteralText@{parser.ExpressaoLiteralText}}
+\doxysubsubsection{\texorpdfstring{ExpressaoLiteralText()}{ExpressaoLiteralText()}}
+{\footnotesize\ttfamily \label{classparser_1_1_expressao_literal_text_a293379f0e0774b168f1532776a99c428} 
+parser.\+Expressao\+Literal\+Text.\+Expressao\+Literal\+Text (\begin{DoxyParamCaption}\item[{string}]{literal\+Text}{}\end{DoxyParamCaption})}
+
+
+
+construtor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em literal\+Text} & literal da expressao.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_expressao_literal_text_a1e9bfbbce81c38fd5d3af5e8aac0c974}\index{parser.ExpressaoLiteralText@{parser.ExpressaoLiteralText}!GetTipoExpressao@{GetTipoExpressao}}
+\index{GetTipoExpressao@{GetTipoExpressao}!parser.ExpressaoLiteralText@{parser.ExpressaoLiteralText}}
+\doxysubsubsection{\texorpdfstring{GetTipoExpressao()}{GetTipoExpressao()}}
+{\footnotesize\ttfamily \label{classparser_1_1_expressao_literal_text_a1e9bfbbce81c38fd5d3af5e8aac0c974} 
+override string parser.\+Expressao\+Literal\+Text.\+Get\+Tipo\+Expressao (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+retorna o tipo da expressao (int, string, double, char, classes orquidea, classes importadas,etc... 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classparser_1_1_expressao_a7faa511579ef1b4a243ddc04a941428e}{parser.\+Expressao}}.
+
+\Hypertarget{classparser_1_1_expressao_literal_text_afe9160a8e110c354152e72bc78646c81}\index{parser.ExpressaoLiteralText@{parser.ExpressaoLiteralText}!isConstantLiteral@{isConstantLiteral}}
+\index{isConstantLiteral@{isConstantLiteral}!parser.ExpressaoLiteralText@{parser.ExpressaoLiteralText}}
+\doxysubsubsection{\texorpdfstring{isConstantLiteral()}{isConstantLiteral()}}
+{\footnotesize\ttfamily \label{classparser_1_1_expressao_literal_text_afe9160a8e110c354152e72bc78646c81} 
+static bool parser.\+Expressao\+Literal\+Text.\+is\+Constant\+Literal (\begin{DoxyParamCaption}\item[{string}]{token}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+verifica se um token é uma literal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & token a verificar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}true\mbox{]} se o token é uma literal.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_expressao_literal_text_acc01963c8a48979967f842a818a254b4}\index{parser.ExpressaoLiteralText@{parser.ExpressaoLiteralText}!ToString@{ToString}}
+\index{ToString@{ToString}!parser.ExpressaoLiteralText@{parser.ExpressaoLiteralText}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily \label{classparser_1_1_expressao_literal_text_acc01963c8a48979967f842a818a254b4} 
+override string parser.\+Expressao\+Literal\+Text.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classparser_1_1_expressao_literal_text_a888819ef59b116c6f2c83e8b1ad2da6a}\index{parser.ExpressaoLiteralText@{parser.ExpressaoLiteralText}!aspas@{aspas}}
+\index{aspas@{aspas}!parser.ExpressaoLiteralText@{parser.ExpressaoLiteralText}}
+\doxysubsubsection{\texorpdfstring{aspas}{aspas}}
+{\footnotesize\ttfamily \label{classparser_1_1_expressao_literal_text_a888819ef59b116c6f2c83e8b1ad2da6a} 
+new char parser.\+Expressao\+Literal\+Text.\+aspas = \textquotesingle{}\textbackslash{}u0022\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+caracter de literais constantes. 
+
+\Hypertarget{classparser_1_1_expressao_literal_text_a341dd6e2d39c2e9b74ee6ec4b9c0cede}\index{parser.ExpressaoLiteralText@{parser.ExpressaoLiteralText}!literalText@{literalText}}
+\index{literalText@{literalText}!parser.ExpressaoLiteralText@{parser.ExpressaoLiteralText}}
+\doxysubsubsection{\texorpdfstring{literalText}{literalText}}
+{\footnotesize\ttfamily \label{classparser_1_1_expressao_literal_text_a341dd6e2d39c2e9b74ee6ec4b9c0cede} 
+string parser.\+Expressao\+Literal\+Text.\+literal\+Text}
+
+
+
+constante contendo a literal da expressao. 
+
+\Hypertarget{classparser_1_1_expressao_literal_text_aa4712f3df0fad07e5e6679e640fd1bd4}\index{parser.ExpressaoLiteralText@{parser.ExpressaoLiteralText}!singleQuote@{singleQuote}}
+\index{singleQuote@{singleQuote}!parser.ExpressaoLiteralText@{parser.ExpressaoLiteralText}}
+\doxysubsubsection{\texorpdfstring{singleQuote}{singleQuote}}
+{\footnotesize\ttfamily \label{classparser_1_1_expressao_literal_text_aa4712f3df0fad07e5e6679e640fd1bd4} 
+char parser.\+Expressao\+Literal\+Text.\+single\+Quote = \textquotesingle{}\textbackslash{}\textquotesingle{}\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+caracter delimitador para char constantes. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/componentes\+De\+Interpretadores\+ECompiladores/\+PROGRAMACAO ORIENTADA A OBJETOS/\mbox{\hyperlink{_expressao_8cs}{Expressao.\+cs}}\end{DoxyCompactItemize}

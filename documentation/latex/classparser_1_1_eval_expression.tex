@@ -1,0 +1,115 @@
+\doxysection{parser.\+Eval\+Expression Class Reference}
+\hypertarget{classparser_1_1_eval_expression}{}\label{classparser_1_1_eval_expression}\index{parser.EvalExpression@{parser.EvalExpression}}
+
+
+AVALIADOR de expressoes\+: expressoes aritmeticas, chamadas de metodo, atribuicoes, propriedades aninhadas, operadores binarios, unarios, condicionais, expressoes numero, literal, etc...  
+
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classparser_1_1_eval_expression_1_1_testes}{Testes}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+object \mbox{\hyperlink{classparser_1_1_eval_expression_ad0b14efe813e5cd45981bdfc3cb106f1}{Eval\+Pos\+Ordem}} (\mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} expss\+\_\+, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em avalia uma expressao. colaca em pos-\/ordem a expressao, se não já estiver. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classparser_1_1_eval_expression_a8c5f3b862514bc3767a33e0441780269}{Get\+Number}} (ref object numero, ref bool is\+Found\+ANumber, string str\+\_\+numero, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em obtem um numero a partir de um token \mbox{[}str\+\_\+numero\mbox{]}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classparser_1_1_eval_expression}{Eval\+Expression}} \mbox{\hyperlink{classparser_1_1_eval_expression_adec3c65f42591e45df9fa7dfcece1e12}{UM\+\_\+\+EVAL}} = new \mbox{\hyperlink{classparser_1_1_eval_expression}{Eval\+Expression}}()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+object \mbox{\hyperlink{classparser_1_1_eval_expression_a7f36141f5d23200675ca81fe5cbf1d70}{Eval}} (\mbox{\hyperlink{classparser_1_1_expressao}{Expressao}} expss, \mbox{\hyperlink{classparser_1_1_escopo}{Escopo}} escopo)
+\begin{DoxyCompactList}\small\item\em avaliador de expressoes em pos-\/ordem. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+AVALIADOR de expressoes\+: expressoes aritmeticas, chamadas de metodo, atribuicoes, propriedades aninhadas, operadores binarios, unarios, condicionais, expressoes numero, literal, etc... 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_eval_expression_a7f36141f5d23200675ca81fe5cbf1d70}\index{parser.EvalExpression@{parser.EvalExpression}!Eval@{Eval}}
+\index{Eval@{Eval}!parser.EvalExpression@{parser.EvalExpression}}
+\doxysubsubsection{\texorpdfstring{Eval()}{Eval()}}
+{\footnotesize\ttfamily \label{classparser_1_1_eval_expression_a7f36141f5d23200675ca81fe5cbf1d70} 
+object parser.\+Eval\+Expression.\+Eval (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_expressao}{Expressao}}}]{expss}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+avaliador de expressoes em pos-\/ordem. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expss} & expressao a avaliar.\\
+\hline
+{\em escopo} & contexto onde a expressao está.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+o objeto A RECEBER ATRIBUICAO é um WRAPPER DATA OBJECT.
+
+atualiza o valor do operando.\Hypertarget{classparser_1_1_eval_expression_ad0b14efe813e5cd45981bdfc3cb106f1}\index{parser.EvalExpression@{parser.EvalExpression}!EvalPosOrdem@{EvalPosOrdem}}
+\index{EvalPosOrdem@{EvalPosOrdem}!parser.EvalExpression@{parser.EvalExpression}}
+\doxysubsubsection{\texorpdfstring{EvalPosOrdem()}{EvalPosOrdem()}}
+{\footnotesize\ttfamily \label{classparser_1_1_eval_expression_ad0b14efe813e5cd45981bdfc3cb106f1} 
+object parser.\+Eval\+Expression.\+Eval\+Pos\+Ordem (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_expressao}{Expressao}}}]{expss\+\_\+}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})}
+
+
+
+avalia uma expressao. colaca em pos-\/ordem a expressao, se não já estiver. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expss\+\_\+} & expressao a ser avaliada.\\
+\hline
+{\em escopo} & contexto onde a expressão está. contem dados de objetos, funcoes, relacionados a expressao, também.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_eval_expression_a8c5f3b862514bc3767a33e0441780269}\index{parser.EvalExpression@{parser.EvalExpression}!GetNumber@{GetNumber}}
+\index{GetNumber@{GetNumber}!parser.EvalExpression@{parser.EvalExpression}}
+\doxysubsubsection{\texorpdfstring{GetNumber()}{GetNumber()}}
+{\footnotesize\ttfamily \label{classparser_1_1_eval_expression_a8c5f3b862514bc3767a33e0441780269} 
+static void parser.\+Eval\+Expression.\+Get\+Number (\begin{DoxyParamCaption}\item[{ref object}]{numero}{, }\item[{ref bool}]{is\+Found\+ANumber}{, }\item[{string}]{str\+\_\+numero}{, }\item[{\mbox{\hyperlink{classparser_1_1_escopo}{Escopo}}}]{escopo}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+obtem um numero a partir de um token \mbox{[}str\+\_\+numero\mbox{]}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em numero} & numero da conversao.\\
+\hline
+{\em is\+Found\+ANumber} & \mbox{[}true\mbox{]} se converteu o token para um numero\+: int, float, double.\\
+\hline
+{\em str\+\_\+numero} & token a ser convertido em numero.\\
+\hline
+{\em escopo} & contexto onde o numero está.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classparser_1_1_eval_expression_adec3c65f42591e45df9fa7dfcece1e12}\index{parser.EvalExpression@{parser.EvalExpression}!UM\_EVAL@{UM\_EVAL}}
+\index{UM\_EVAL@{UM\_EVAL}!parser.EvalExpression@{parser.EvalExpression}}
+\doxysubsubsection{\texorpdfstring{UM\_EVAL}{UM\_EVAL}}
+{\footnotesize\ttfamily \label{classparser_1_1_eval_expression_adec3c65f42591e45df9fa7dfcece1e12} 
+\mbox{\hyperlink{classparser_1_1_eval_expression}{Eval\+Expression}} parser.\+Eval\+Expression.\+UM\+\_\+\+EVAL = new \mbox{\hyperlink{classparser_1_1_eval_expression}{Eval\+Expression}}()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/componentes\+De\+Interpretadores\+ECompiladores/\+PROGRAMACAO FUNCIONAL/\mbox{\hyperlink{_eval_expression_8cs}{Eval\+Expression.\+cs}}\end{DoxyCompactItemize}

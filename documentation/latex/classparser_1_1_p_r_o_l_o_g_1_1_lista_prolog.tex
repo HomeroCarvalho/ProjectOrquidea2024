@@ -1,0 +1,265 @@
+\doxysection{parser.\+PROLOG.\+Lista\+Prolog Class Reference}
+\hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog}{}\label{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog}\index{parser.PROLOG.ListaProlog@{parser.PROLOG.ListaProlog}}
+Inheritance diagram for parser.\+PROLOG.\+Lista\+Prolog\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_aa3bee580551746c16c7927e2bb350c2c}{Lista\+Prolog}} (string texto\+Lista)
+\begin{DoxyCompactList}\small\item\em construtor. Retira de um texto predicado as especificações de uma lista. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_ad15dd183ce1516301dd11512e75b0991}{Reconstroi\+Regra}} (\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog}{Lista\+Prolog}} lista\+Predicado\+Base, List$<$ \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}} $>$ predicados\+Metas)
+\begin{DoxyCompactList}\small\item\em reconstroi as listas, acrescentando tags como\+: Head, Tail, Element, a partir das definições de lista em predicado base, colocando a especificações de lista nos predicados meta prontos para ser processados. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_aa33eb9ea800bd1fec6c8223fad6d1120}{Constroi\+Lista}} (string nome\+Lista, params string\mbox{[}$\,$\mbox{]} items)
+\begin{DoxyCompactList}\small\item\em constrói a lista com os elementos de entrada, numa árvore binária com elementos com valor à esquerda, e ligação com nós a direita. \end{DoxyCompactList}\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_ad87d720003def4ccfa157269120591aa}{Get\+All\+Elements}} ()
+\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_af1a09a2a7ff52308dc20f0cad7c7c236}{Get\+Elements\+Head}} ()
+\begin{DoxyCompactList}\small\item\em retorna os elementos da cabeça da lista. \end{DoxyCompactList}\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_a4542804fc8d774fa0439210616b218ef}{Get\+Elements\+Tail}} ()
+\begin{DoxyCompactList}\small\item\em retorna os elementos da cauda da lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog}{Lista\+Prolog}} \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_ad3041e989715800884b37cf1ead96f1a}{car}} ()
+\item 
+\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog}{Lista\+Prolog}} \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_a69c2c81f5e9f24ae40fe13e278e73c83}{cdr}} ()
+\item 
+override string \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_aacdde4fce04f821433665bfbd91dc77a}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{parser.\+PROLOG.\+Predicado}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_acee6b6c485bd11bb9dbde699798e60b3}{Predicado}} (string texto\+Predicado)
+\item 
+\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a36ab0139e87b2aedba33b5884815df13}{Predicado}} ()
+\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a4cb82fe4110ab8f3e546ded1d8326c69}{Get\+Atomos}} ()
+\item 
+\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}} \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a46b36e3b54d90ba774dbe73c0f8f830d}{Clone}} ()
+\item 
+bool \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a01f8a4643d86f14dae814f307313ece5}{Match}} (\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}} predicado\+Para\+Match)
+\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_af32343003233569281897499f99d22f9}{Retira\+Variaveis}} ()
+\begin{DoxyCompactList}\small\item\em retira as variáveis do predicado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a4c061fd56cdf998e5ca658e0af071dca}{Set\+Variavel}} (string nome\+Da\+Variavel, string valor\+Da\+Variavel)
+\item 
+void \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a4895c4a61efe97762435b70d09b84af0}{Set\+Variavel}} (string valor\+Da\+Variavel, int index\+Variavel)
+\item 
+bool \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_aa621b65b56d2e3161c2773c2127c49f5}{Equals\+Predicado}} (\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}} p1)
+\item 
+override string \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a5ba783dbc46f11dab231d9a74b46a6c7}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog}{Lista\+Prolog}} \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_abec9cbcfbf7c137e5b913988560593a6}{Aplica\+Uma\+Lista\+Funcao}} (\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog}{Lista\+Prolog}} lista\+Funcao, \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog}{Lista\+Prolog}} lista\+Variavel)
+\begin{DoxyCompactList}\small\item\em Aplica uma função (Get\+Head(),Get\+Tail(), Append(\+Head,\+Tail), Append(\+Tail,\+Head)) especificada numa lista funcao \mbox{[}lista\+Funcao\mbox{]}\+: F(\+X) a uma variável \mbox{[}lista\+Variavel\mbox{]}\+: (X). \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_a6c123dc25fff8e27c0d425dd4fc3de94}{Has\+List}} (\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}} p)
+\item 
+static bool \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_a8e57c88c536751ef51e32a4d6d70d45b}{Has\+List}} (string atomo\+Predicado)
+\item 
+static bool \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_aca96afb7070481c91a98b36cf6670c1b}{Is\+Member}} (string um\+Elemento, \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog}{Lista\+Prolog}} lista\+Entrada)
+\begin{DoxyCompactList}\small\item\em predicado para consultar se um elemento está numa lista. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{parser.\+PROLOG.\+Predicado}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}} \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_aaca0a96eb5c05b2c740ce35ad661171e}{Set\+Predicado}} (string nome, params string\mbox{[}$\,$\mbox{]} atomos)
+\item 
+static bool \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_acb6e7227968434f9e2ef001af76d5692}{Is\+Variavel\+Anonima}} (string variavel)
+\item 
+static \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}} \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a271545c87b0cf6e059eca277dead4c3b}{Get\+Predicado}} (string texto)
+\begin{DoxyCompactList}\small\item\em obtém um \doxylink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado} a partir de uma linha de texto.\+O \doxylink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado} não é adicionado à base de conhecimento. \end{DoxyCompactList}\item 
+static List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a44252b61033da67ec9f0b06c37b249d3}{Extrai\+De\+Texto\+Um\+Predicado}} (string texto)
+\begin{DoxyCompactList}\small\item\em Obtém tokens a partir de um texto, a partir de termos-\/chave da linguagem Prolog. Utiliza a classe Parser\+Universal, através da classe \doxylink{classparser_1_1_tokens}{Tokens}. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a68c301e9e6686a14b6c169645c543527}{Adiciona\+Predicados}} (params string\mbox{[}$\,$\mbox{]} textos\+Predicados)
+\begin{DoxyCompactList}\small\item\em adiciona uma lista de predicados, na forma de textos, para a base de conhecimento. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a0699dce7242deb2c8ddb2bd38bcd60d9}{Adiciona\+Um\+Predicado}} (string texto)
+\begin{DoxyCompactList}\small\item\em adiciona um \doxylink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado} para a base de conhecimento, a partir da linha de texto contendo o \doxylink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a7bac692b3dd9731af02c909244766448}{Is\+Variavel}} (string atomo)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ Dictionary$<$ string, string $>$ $>$ \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_a27030a6d14b64bbdf9a1932d6e057a06}{Partes\+Lista\+Variaveis}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em contém variáveis de especificação de lista, como \#0\#\+Head=X, em \mbox{[}X\texorpdfstring{$\vert$}{|}Y\mbox{]}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{parser.\+PROLOG.\+Predicado}}}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado_a2e64916e6e6079f57bac935e3c0959a6}{Nome}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_aa3bee580551746c16c7927e2bb350c2c}\index{parser.PROLOG.ListaProlog@{parser.PROLOG.ListaProlog}!ListaProlog@{ListaProlog}}
+\index{ListaProlog@{ListaProlog}!parser.PROLOG.ListaProlog@{parser.PROLOG.ListaProlog}}
+\doxysubsubsection{\texorpdfstring{ListaProlog()}{ListaProlog()}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_aa3bee580551746c16c7927e2bb350c2c} 
+parser.\+PROLOG.\+Lista\+Prolog.\+Lista\+Prolog (\begin{DoxyParamCaption}\item[{string}]{texto\+Lista}{}\end{DoxyParamCaption})}
+
+
+
+construtor. Retira de um texto predicado as especificações de uma lista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texto\+Lista} & texto com a descrição da lista.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_abec9cbcfbf7c137e5b913988560593a6}\index{parser.PROLOG.ListaProlog@{parser.PROLOG.ListaProlog}!AplicaUmaListaFuncao@{AplicaUmaListaFuncao}}
+\index{AplicaUmaListaFuncao@{AplicaUmaListaFuncao}!parser.PROLOG.ListaProlog@{parser.PROLOG.ListaProlog}}
+\doxysubsubsection{\texorpdfstring{AplicaUmaListaFuncao()}{AplicaUmaListaFuncao()}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_abec9cbcfbf7c137e5b913988560593a6} 
+static \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog}{Lista\+Prolog}} parser.\+PROLOG.\+Lista\+Prolog.\+Aplica\+Uma\+Lista\+Funcao (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog}{Lista\+Prolog}}}]{lista\+Funcao}{, }\item[{\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog}{Lista\+Prolog}}}]{lista\+Variavel}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Aplica uma função (Get\+Head(),Get\+Tail(), Append(\+Head,\+Tail), Append(\+Tail,\+Head)) especificada numa lista funcao \mbox{[}lista\+Funcao\mbox{]}\+: F(\+X) a uma variável \mbox{[}lista\+Variavel\mbox{]}\+: (X). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista\+Funcao} & lista molde, contém as especificações da função lista.\\
+\hline
+{\em lista\+Variavel} & lista contendo a variável a ser aplicada a lista função.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna um lista resultante de especificações como\+: Head(), Tail().
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_ad3041e989715800884b37cf1ead96f1a}\index{parser.PROLOG.ListaProlog@{parser.PROLOG.ListaProlog}!car@{car}}
+\index{car@{car}!parser.PROLOG.ListaProlog@{parser.PROLOG.ListaProlog}}
+\doxysubsubsection{\texorpdfstring{car()}{car()}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_ad3041e989715800884b37cf1ead96f1a} 
+\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog}{Lista\+Prolog}} parser.\+PROLOG.\+Lista\+Prolog.\+car (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_a69c2c81f5e9f24ae40fe13e278e73c83}\index{parser.PROLOG.ListaProlog@{parser.PROLOG.ListaProlog}!cdr@{cdr}}
+\index{cdr@{cdr}!parser.PROLOG.ListaProlog@{parser.PROLOG.ListaProlog}}
+\doxysubsubsection{\texorpdfstring{cdr()}{cdr()}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_a69c2c81f5e9f24ae40fe13e278e73c83} 
+\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog}{Lista\+Prolog}} parser.\+PROLOG.\+Lista\+Prolog.\+cdr (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_aa33eb9ea800bd1fec6c8223fad6d1120}\index{parser.PROLOG.ListaProlog@{parser.PROLOG.ListaProlog}!ConstroiLista@{ConstroiLista}}
+\index{ConstroiLista@{ConstroiLista}!parser.PROLOG.ListaProlog@{parser.PROLOG.ListaProlog}}
+\doxysubsubsection{\texorpdfstring{ConstroiLista()}{ConstroiLista()}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_aa33eb9ea800bd1fec6c8223fad6d1120} 
+void parser.\+PROLOG.\+Lista\+Prolog.\+Constroi\+Lista (\begin{DoxyParamCaption}\item[{string}]{nome\+Lista}{, }\item[{params string\mbox{[}$\,$\mbox{]}}]{items}{}\end{DoxyParamCaption})}
+
+
+
+constrói a lista com os elementos de entrada, numa árvore binária com elementos com valor à esquerda, e ligação com nós a direita. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Lista} & \\
+\hline
+{\em items} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_ad87d720003def4ccfa157269120591aa}\index{parser.PROLOG.ListaProlog@{parser.PROLOG.ListaProlog}!GetAllElements@{GetAllElements}}
+\index{GetAllElements@{GetAllElements}!parser.PROLOG.ListaProlog@{parser.PROLOG.ListaProlog}}
+\doxysubsubsection{\texorpdfstring{GetAllElements()}{GetAllElements()}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_ad87d720003def4ccfa157269120591aa} 
+List$<$ string $>$ parser.\+PROLOG.\+Lista\+Prolog.\+Get\+All\+Elements (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_af1a09a2a7ff52308dc20f0cad7c7c236}\index{parser.PROLOG.ListaProlog@{parser.PROLOG.ListaProlog}!GetElementsHead@{GetElementsHead}}
+\index{GetElementsHead@{GetElementsHead}!parser.PROLOG.ListaProlog@{parser.PROLOG.ListaProlog}}
+\doxysubsubsection{\texorpdfstring{GetElementsHead()}{GetElementsHead()}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_af1a09a2a7ff52308dc20f0cad7c7c236} 
+List$<$ string $>$ parser.\+PROLOG.\+Lista\+Prolog.\+Get\+Elements\+Head (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+retorna os elementos da cabeça da lista. 
+
+\begin{DoxyReturn}{Returns}
+retorna uma lista de textos, os elementos da cabeça da lista.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_a4542804fc8d774fa0439210616b218ef}\index{parser.PROLOG.ListaProlog@{parser.PROLOG.ListaProlog}!GetElementsTail@{GetElementsTail}}
+\index{GetElementsTail@{GetElementsTail}!parser.PROLOG.ListaProlog@{parser.PROLOG.ListaProlog}}
+\doxysubsubsection{\texorpdfstring{GetElementsTail()}{GetElementsTail()}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_a4542804fc8d774fa0439210616b218ef} 
+List$<$ string $>$ parser.\+PROLOG.\+Lista\+Prolog.\+Get\+Elements\+Tail (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+retorna os elementos da cauda da lista. 
+
+\begin{DoxyReturn}{Returns}
+retorna uma lista de textos, os elementos da cauda da lista.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_a6c123dc25fff8e27c0d425dd4fc3de94}\index{parser.PROLOG.ListaProlog@{parser.PROLOG.ListaProlog}!HasList@{HasList}}
+\index{HasList@{HasList}!parser.PROLOG.ListaProlog@{parser.PROLOG.ListaProlog}}
+\doxysubsubsection{\texorpdfstring{HasList()}{HasList()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_a6c123dc25fff8e27c0d425dd4fc3de94} 
+static bool parser.\+PROLOG.\+Lista\+Prolog.\+Has\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}}}]{p}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_a8e57c88c536751ef51e32a4d6d70d45b}\index{parser.PROLOG.ListaProlog@{parser.PROLOG.ListaProlog}!HasList@{HasList}}
+\index{HasList@{HasList}!parser.PROLOG.ListaProlog@{parser.PROLOG.ListaProlog}}
+\doxysubsubsection{\texorpdfstring{HasList()}{HasList()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_a8e57c88c536751ef51e32a4d6d70d45b} 
+static bool parser.\+PROLOG.\+Lista\+Prolog.\+Has\+List (\begin{DoxyParamCaption}\item[{string}]{atomo\+Predicado}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_aca96afb7070481c91a98b36cf6670c1b}\index{parser.PROLOG.ListaProlog@{parser.PROLOG.ListaProlog}!IsMember@{IsMember}}
+\index{IsMember@{IsMember}!parser.PROLOG.ListaProlog@{parser.PROLOG.ListaProlog}}
+\doxysubsubsection{\texorpdfstring{IsMember()}{IsMember()}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_aca96afb7070481c91a98b36cf6670c1b} 
+static bool parser.\+PROLOG.\+Lista\+Prolog.\+Is\+Member (\begin{DoxyParamCaption}\item[{string}]{um\+Elemento}{, }\item[{\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog}{Lista\+Prolog}}}]{lista\+Entrada}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+predicado para consultar se um elemento está numa lista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em um\+Elemento} & elemento a procurar.\\
+\hline
+{\em lista\+Entrada} & lista a ser consultada.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}true\mbox{]} se \mbox{[}um\+Elmento\mbox{]} é membro da lista \mbox{[}lista\+Entrada\mbox{]}. \mbox{[}false\mbox{]}, se não.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_ad15dd183ce1516301dd11512e75b0991}\index{parser.PROLOG.ListaProlog@{parser.PROLOG.ListaProlog}!ReconstroiRegra@{ReconstroiRegra}}
+\index{ReconstroiRegra@{ReconstroiRegra}!parser.PROLOG.ListaProlog@{parser.PROLOG.ListaProlog}}
+\doxysubsubsection{\texorpdfstring{ReconstroiRegra()}{ReconstroiRegra()}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_ad15dd183ce1516301dd11512e75b0991} 
+void parser.\+PROLOG.\+Lista\+Prolog.\+Reconstroi\+Regra (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog}{Lista\+Prolog}}}]{lista\+Predicado\+Base}{, }\item[{List$<$ \mbox{\hyperlink{classparser_1_1_p_r_o_l_o_g_1_1_predicado}{Predicado}} $>$}]{predicados\+Metas}{}\end{DoxyParamCaption})}
+
+
+
+reconstroi as listas, acrescentando tags como\+: Head, Tail, Element, a partir das definições de lista em predicado base, colocando a especificações de lista nos predicados meta prontos para ser processados. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista\+Predicado\+Base} & lista com as especificações a serem inseridas.\\
+\hline
+{\em predicados\+Metas} & predicados com elmentos de lista, a ser processada.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_aacdde4fce04f821433665bfbd91dc77a}\index{parser.PROLOG.ListaProlog@{parser.PROLOG.ListaProlog}!ToString@{ToString}}
+\index{ToString@{ToString}!parser.PROLOG.ListaProlog@{parser.PROLOG.ListaProlog}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_aacdde4fce04f821433665bfbd91dc77a} 
+override string parser.\+PROLOG.\+Lista\+Prolog.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_a27030a6d14b64bbdf9a1932d6e057a06}\index{parser.PROLOG.ListaProlog@{parser.PROLOG.ListaProlog}!PartesListaVariaveis@{PartesListaVariaveis}}
+\index{PartesListaVariaveis@{PartesListaVariaveis}!parser.PROLOG.ListaProlog@{parser.PROLOG.ListaProlog}}
+\doxysubsubsection{\texorpdfstring{PartesListaVariaveis}{PartesListaVariaveis}}
+{\footnotesize\ttfamily \label{classparser_1_1_p_r_o_l_o_g_1_1_lista_prolog_a27030a6d14b64bbdf9a1932d6e057a06} 
+List$<$Dictionary$<$string,string$>$ $>$ parser.\+PROLOG.\+Lista\+Prolog.\+Partes\+Lista\+Variaveis\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+contém variáveis de especificação de lista, como \#0\#\+Head=X, em \mbox{[}X\texorpdfstring{$\vert$}{|}Y\mbox{]}. 
+
+contém variáveis de especificação de lista, como X = \#0\#\+Head, em \mbox{[}X\texorpdfstring{$\vert$}{|}Y\mbox{]}. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/componentes\+De\+Interpretadores\+ECompiladores/\+PROLOG/\mbox{\hyperlink{_lista_prolog_8cs}{Lista\+Prolog.\+cs}}\end{DoxyCompactItemize}

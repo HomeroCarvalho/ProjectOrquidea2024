@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "PrrojectOrquidea2023": {
+      "commandName": "Project",
+      "hotReloadEnabled": true
+    }
+  }
+}

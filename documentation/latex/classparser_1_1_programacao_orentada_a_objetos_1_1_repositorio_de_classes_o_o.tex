@@ -1,0 +1,264 @@
+\doxysection{parser.\+Programacao\+Orentada\+AObjetos.\+Repositorio\+De\+Classes\+OO Class Reference}
+\hypertarget{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o}{}\label{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o}\index{parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO@{parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO}}
+
+
+Repositorio de classes de um programa Orquidea.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_classe}{Classe}} $>$ \mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o_a0985f6c37b92c7e980113fa2454f1d35}{Get\+Classes}} ()
+\begin{DoxyCompactList}\small\item\em retorna a lista de classes compiladas. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_classe}{Classe}} $>$ \mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o_ae734c87779a086a00a47927d4426ea75}{Get\+Interfaces}} ()
+\begin{DoxyCompactList}\small\item\em retorna a lista de interfaces. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o_a66e47474742cdd712a3f80af6fd1bb98}{is\+Operator}} (string name\+Class, string name\+Operator, string tipo)
+\begin{DoxyCompactList}\small\item\em retorna true se o nome de operador é de um operador. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o_a3b4e04ff8ec4aad6cde34f00c0ebf6f2}{Registra\+Uma\+Classe}} (\mbox{\hyperlink{classparser_1_1_classe}{Classe}} classe)
+\begin{DoxyCompactList}\small\item\em se o nome da classe não estiver em qualquer classe no reposiório, adiciona a classe de entrada ao repositório, . Se o nome da classe já estiver no repositorio, remove a classe que estava no repositorio, e adiciona a classe da entrada. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o_a2e72f843bfe98595acf2d6f42753ff0f}{Registra\+Uma\+Interface}} (\mbox{\hyperlink{classparser_1_1_classe}{Classe}} uma\+Interface)
+\begin{DoxyCompactList}\small\item\em registra no repositorio uma interface, compilada. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_classe}{Classe}} \mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o_a1b0dcd149e4e1461aaa1a8b257395e2f}{Get\+Classe}} (string nome\+Classe)
+\begin{DoxyCompactList}\small\item\em obtém uma classe no Repositório. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o_ad0d274904b28a11666fd34136fff28ea}{Remove\+Classe}} (string nome\+Classe)
+\begin{DoxyCompactList}\small\item\em remove uma classe do repositorio. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_classe}{Classe}} \mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o_a72e1c34d05241df0d3c75a02cb4ad784}{Get\+Interface}} (string nome\+Interface)
+\begin{DoxyCompactList}\small\item\em obtem uma interface compilada, armazenada no repositorio. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_classe}{Classe}} \mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o_a94d1e0a451f26e858716b65800595e62}{Obtem\+Uma\+Interface}} (string nome\+Interface)
+\begin{DoxyCompactList}\small\item\em obtém uma classe no Repositório, com o nome \mbox{[}nome\+Classe\mbox{]}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classparser_1_1_operador}{Operador}} \mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o_a5b4060b606e3c5b739d4d7e60a217aed}{Get\+Operador}} (string nome\+Operador, string tipo\+De\+Retorno)
+\begin{DoxyCompactList}\small\item\em obtem um operador, de uma classe. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o_af9deca9f7006f8d7cc5050be0f6bf82b}{Existe\+Classe}} (string nome\+Classe)
+\begin{DoxyCompactList}\small\item\em retorna true se a classe está armazenada no repositorio. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o}{Repositorio\+De\+Classes\+OO}} \mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o_ab05dcc69ee612b619193f499dc569d1d}{Instance}} ()
+\begin{DoxyCompactList}\small\item\em método de instanciação do Repositório, melhhor, ponto de acesso ao Repositório. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_classe}{Classe}} $>$ \mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o_a4bfa87bacda583e9f5e5045e8f67d4a4}{classes\+Registradas}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em constem as classes publicas do projeto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Repositorio de classes de um programa Orquidea. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o_af9deca9f7006f8d7cc5050be0f6bf82b}\index{parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO@{parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO}!ExisteClasse@{ExisteClasse}}
+\index{ExisteClasse@{ExisteClasse}!parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO@{parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO}}
+\doxysubsubsection{\texorpdfstring{ExisteClasse()}{ExisteClasse()}}
+{\footnotesize\ttfamily \label{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o_af9deca9f7006f8d7cc5050be0f6bf82b} 
+bool parser.\+Programacao\+Orentada\+AObjetos.\+Repositorio\+De\+Classes\+OO.\+Existe\+Classe (\begin{DoxyParamCaption}\item[{string}]{nome\+Classe}{}\end{DoxyParamCaption})}
+
+
+
+retorna true se a classe está armazenada no repositorio. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Classe} & nome da classe.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o_a1b0dcd149e4e1461aaa1a8b257395e2f}\index{parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO@{parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO}!GetClasse@{GetClasse}}
+\index{GetClasse@{GetClasse}!parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO@{parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO}}
+\doxysubsubsection{\texorpdfstring{GetClasse()}{GetClasse()}}
+{\footnotesize\ttfamily \label{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o_a1b0dcd149e4e1461aaa1a8b257395e2f} 
+\mbox{\hyperlink{classparser_1_1_classe}{Classe}} parser.\+Programacao\+Orentada\+AObjetos.\+Repositorio\+De\+Classes\+OO.\+Get\+Classe (\begin{DoxyParamCaption}\item[{string}]{nome\+Classe}{}\end{DoxyParamCaption})}
+
+
+
+obtém uma classe no Repositório. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Classe} & nome da classe.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o_a0985f6c37b92c7e980113fa2454f1d35}\index{parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO@{parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO}!GetClasses@{GetClasses}}
+\index{GetClasses@{GetClasses}!parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO@{parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO}}
+\doxysubsubsection{\texorpdfstring{GetClasses()}{GetClasses()}}
+{\footnotesize\ttfamily \label{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o_a0985f6c37b92c7e980113fa2454f1d35} 
+List$<$ \mbox{\hyperlink{classparser_1_1_classe}{Classe}} $>$ parser.\+Programacao\+Orentada\+AObjetos.\+Repositorio\+De\+Classes\+OO.\+Get\+Classes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+retorna a lista de classes compiladas. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o_a72e1c34d05241df0d3c75a02cb4ad784}\index{parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO@{parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO}!GetInterface@{GetInterface}}
+\index{GetInterface@{GetInterface}!parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO@{parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO}}
+\doxysubsubsection{\texorpdfstring{GetInterface()}{GetInterface()}}
+{\footnotesize\ttfamily \label{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o_a72e1c34d05241df0d3c75a02cb4ad784} 
+\mbox{\hyperlink{classparser_1_1_classe}{Classe}} parser.\+Programacao\+Orentada\+AObjetos.\+Repositorio\+De\+Classes\+OO.\+Get\+Interface (\begin{DoxyParamCaption}\item[{string}]{nome\+Interface}{}\end{DoxyParamCaption})}
+
+
+
+obtem uma interface compilada, armazenada no repositorio. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Interface} & nome da interface.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o_ae734c87779a086a00a47927d4426ea75}\index{parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO@{parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO}!GetInterfaces@{GetInterfaces}}
+\index{GetInterfaces@{GetInterfaces}!parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO@{parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO}}
+\doxysubsubsection{\texorpdfstring{GetInterfaces()}{GetInterfaces()}}
+{\footnotesize\ttfamily \label{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o_ae734c87779a086a00a47927d4426ea75} 
+List$<$ \mbox{\hyperlink{classparser_1_1_classe}{Classe}} $>$ parser.\+Programacao\+Orentada\+AObjetos.\+Repositorio\+De\+Classes\+OO.\+Get\+Interfaces (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+retorna a lista de interfaces. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o_a5b4060b606e3c5b739d4d7e60a217aed}\index{parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO@{parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO}!GetOperador@{GetOperador}}
+\index{GetOperador@{GetOperador}!parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO@{parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO}}
+\doxysubsubsection{\texorpdfstring{GetOperador()}{GetOperador()}}
+{\footnotesize\ttfamily \label{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o_a5b4060b606e3c5b739d4d7e60a217aed} 
+\mbox{\hyperlink{classparser_1_1_operador}{Operador}} parser.\+Programacao\+Orentada\+AObjetos.\+Repositorio\+De\+Classes\+OO.\+Get\+Operador (\begin{DoxyParamCaption}\item[{string}]{nome\+Operador}{, }\item[{string}]{tipo\+De\+Retorno}{}\end{DoxyParamCaption})}
+
+
+
+obtem um operador, de uma classe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Operador} & nome do operador.\\
+\hline
+{\em tipo\+De\+Retorno} & tipo de retorno do operador.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o_ab05dcc69ee612b619193f499dc569d1d}\index{parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO@{parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO}!Instance@{Instance}}
+\index{Instance@{Instance}!parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO@{parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily \label{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o_ab05dcc69ee612b619193f499dc569d1d} 
+static \mbox{\hyperlink{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o}{Repositorio\+De\+Classes\+OO}} parser.\+Programacao\+Orentada\+AObjetos.\+Repositorio\+De\+Classes\+OO.\+Instance (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+método de instanciação do Repositório, melhhor, ponto de acesso ao Repositório. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o_a66e47474742cdd712a3f80af6fd1bb98}\index{parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO@{parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO}!isOperator@{isOperator}}
+\index{isOperator@{isOperator}!parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO@{parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO}}
+\doxysubsubsection{\texorpdfstring{isOperator()}{isOperator()}}
+{\footnotesize\ttfamily \label{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o_a66e47474742cdd712a3f80af6fd1bb98} 
+bool parser.\+Programacao\+Orentada\+AObjetos.\+Repositorio\+De\+Classes\+OO.\+is\+Operator (\begin{DoxyParamCaption}\item[{string}]{name\+Class}{, }\item[{string}]{name\+Operator}{, }\item[{string}]{tipo}{}\end{DoxyParamCaption})}
+
+
+
+retorna true se o nome de operador é de um operador. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+Class} & nome da classe do operador.\\
+\hline
+{\em name\+Operator} & nome do operador.\\
+\hline
+{\em tipo} & tipo do operador.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o_a94d1e0a451f26e858716b65800595e62}\index{parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO@{parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO}!ObtemUmaInterface@{ObtemUmaInterface}}
+\index{ObtemUmaInterface@{ObtemUmaInterface}!parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO@{parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO}}
+\doxysubsubsection{\texorpdfstring{ObtemUmaInterface()}{ObtemUmaInterface()}}
+{\footnotesize\ttfamily \label{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o_a94d1e0a451f26e858716b65800595e62} 
+\mbox{\hyperlink{classparser_1_1_classe}{Classe}} parser.\+Programacao\+Orentada\+AObjetos.\+Repositorio\+De\+Classes\+OO.\+Obtem\+Uma\+Interface (\begin{DoxyParamCaption}\item[{string}]{nome\+Interface}{}\end{DoxyParamCaption})}
+
+
+
+obtém uma classe no Repositório, com o nome \mbox{[}nome\+Classe\mbox{]}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Interface} & nome da interface.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o_a3b4e04ff8ec4aad6cde34f00c0ebf6f2}\index{parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO@{parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO}!RegistraUmaClasse@{RegistraUmaClasse}}
+\index{RegistraUmaClasse@{RegistraUmaClasse}!parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO@{parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO}}
+\doxysubsubsection{\texorpdfstring{RegistraUmaClasse()}{RegistraUmaClasse()}}
+{\footnotesize\ttfamily \label{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o_a3b4e04ff8ec4aad6cde34f00c0ebf6f2} 
+bool parser.\+Programacao\+Orentada\+AObjetos.\+Repositorio\+De\+Classes\+OO.\+Registra\+Uma\+Classe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_classe}{Classe}}}]{classe}{}\end{DoxyParamCaption})}
+
+
+
+se o nome da classe não estiver em qualquer classe no reposiório, adiciona a classe de entrada ao repositório, . Se o nome da classe já estiver no repositorio, remove a classe que estava no repositorio, e adiciona a classe da entrada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em classe} & classe a ser registrada.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna \mbox{[}true\mbox{]} se a inserção foi sucedida, \mbox{[}false\mbox{]} se houver outra classe com mesmo nome da classe de entrada.
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o_a2e72f843bfe98595acf2d6f42753ff0f}\index{parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO@{parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO}!RegistraUmaInterface@{RegistraUmaInterface}}
+\index{RegistraUmaInterface@{RegistraUmaInterface}!parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO@{parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO}}
+\doxysubsubsection{\texorpdfstring{RegistraUmaInterface()}{RegistraUmaInterface()}}
+{\footnotesize\ttfamily \label{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o_a2e72f843bfe98595acf2d6f42753ff0f} 
+bool parser.\+Programacao\+Orentada\+AObjetos.\+Repositorio\+De\+Classes\+OO.\+Registra\+Uma\+Interface (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_classe}{Classe}}}]{uma\+Interface}{}\end{DoxyParamCaption})}
+
+
+
+registra no repositorio uma interface, compilada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uma\+Interface} & interface.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o_ad0d274904b28a11666fd34136fff28ea}\index{parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO@{parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO}!RemoveClasse@{RemoveClasse}}
+\index{RemoveClasse@{RemoveClasse}!parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO@{parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO}}
+\doxysubsubsection{\texorpdfstring{RemoveClasse()}{RemoveClasse()}}
+{\footnotesize\ttfamily \label{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o_ad0d274904b28a11666fd34136fff28ea} 
+void parser.\+Programacao\+Orentada\+AObjetos.\+Repositorio\+De\+Classes\+OO.\+Remove\+Classe (\begin{DoxyParamCaption}\item[{string}]{nome\+Classe}{}\end{DoxyParamCaption})}
+
+
+
+remove uma classe do repositorio. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Classe} & nome da classe a remover.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o_a4bfa87bacda583e9f5e5045e8f67d4a4}\index{parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO@{parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO}!classesRegistradas@{classesRegistradas}}
+\index{classesRegistradas@{classesRegistradas}!parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO@{parser.ProgramacaoOrentadaAObjetos.RepositorioDeClassesOO}}
+\doxysubsubsection{\texorpdfstring{classesRegistradas}{classesRegistradas}}
+{\footnotesize\ttfamily \label{classparser_1_1_programacao_orentada_a_objetos_1_1_repositorio_de_classes_o_o_a4bfa87bacda583e9f5e5045e8f67d4a4} 
+List$<$\mbox{\hyperlink{classparser_1_1_classe}{Classe}}$>$ parser.\+Programacao\+Orentada\+AObjetos.\+Repositorio\+De\+Classes\+OO.\+classes\+Registradas\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+constem as classes publicas do projeto. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/componentes\+De\+Interpretadores\+ECompiladores/\+PROGRAMACAO ORIENTADA A OBJETOS/classes de Apoio/\mbox{\hyperlink{_repositorio_de_classes_o_o_8cs}{Repositorio\+De\+Classes\+OO.\+cs}}\end{DoxyCompactItemize}

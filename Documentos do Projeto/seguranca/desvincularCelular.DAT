@@ -1,0 +1,28 @@
+Para **remover o aplicativo Vincular ao Celular** no **Windows 11**, siga as etapas abaixo:
+
+1. **Desvinculação no Dispositivo Móvel**:
+    - No seu dispositivo Android ou Surface Duo, siga estas etapas:
+        - Verifique se o seu dispositivo Android possui o aplicativo **Ligar ao Windows** (pré-instalado). Se sim:
+            - Acesse **Configurações > Dispositivos Conectados > Ligar ao Windows > Sobre Ligar ao Windows**.
+            - Clique na sua **conta Microsoft** e role para baixo até encontrar a opção **Remover conta**.
+        - Se o seu dispositivo tiver o **Ligar ao Windows** (baixado) em outros dispositivos Android selecionados:
+            - Abra o aplicativo **Ligar ao Windows** no dispositivo Android selecionado.
+            - Toque no ícone de configurações (canto superior direito).
+            - Encontre a **conta Microsoft** associada e toque em **Sair**.
+    2. **Desvinculação no Computador**:
+        - No seu computador, abra o navegador e acesse [esta página](https://account.microsoft.com/devices/android-ios).
+        - Faça login com a sua **conta Microsoft**.
+        - Você verá uma lista de todos os seus dispositivos conectados.
+        - Para cada dispositivo, selecione **Desvincular**.
+        - Feche e reabra o aplicativo **Vincular ao Celular** no computador para aplicar as alterações de desvinculação.
+
+Agora o dispositivo está desvinculado. Você ainda pode usar outros dispositivos vinculados com o **Vincular ao Celular**. Se desejar usar um dispositivo desvinculado com o **Vincular ao Celular** novamente no futuro, será necessário vinculá-lo novamente. Lembre-se de que essas etapas são específicas para o **Windows 11** e podem variar em outros sistemas operacionais.
+
+Origem: conversa com o Bing, 08/04/2024
+(1) Vincular ao Celular do Windows 11 agora funciona com o iPhone. https://www.terra.com.br/byte/vincular-ao-celular-do-windows-11-agora-funciona-com-o-iphone,45e02d0887b7dbc6f339073daf90d3ed7oogwjcg.html.
+(2) Como vincular celular Android ao Windows 10. https://olhardigital.com.br/2018/02/02/dicas-e-tutoriais/como-vincular-seu-celular-android-ou-ios-ao-windows-10/.
+(3) Vincular o celular ao Windows: veja 10 motivos para usar o recurso hoje mesmo. https://olhardigital.com.br/2022/09/01/dicas-e-tutoriais/vincular-o-celular-ao-windows-motivos/.
+(4) Desvincular um dispositivo no Vincular ao Celular. https://support.microsoft.com/pt-br/topic/desvincular-um-dispositivo-no-vincular-ao-celular-9382f770-b203-7e0e-c81e-18d4053cf4e5.
+(5) How To Uninstall Phone Link on Windows 11 (Your Phone). https://windowsloop.com/how-to-uninstall-your-phone-app-in-windows-11/.
+(6) Desassociar um dispositivo no Vínculo ao Telemóvel. https://support.microsoft.com/pt-pt/topic/desassociar-um-dispositivo-no-v%C3%ADnculo-ao-telem%C3%B3vel-9382f770-b203-7e0e-c81e-18d4053cf4e5.
+(7) undefined. https://account.microsoft.com/devices/android-ios.

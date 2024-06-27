@@ -1,0 +1,247 @@
+\doxysection{parser.\+Search\+By\+Regex\+Expression Class Reference}
+\hypertarget{classparser_1_1_search_by_regex_expression}{}\label{classparser_1_1_search_by_regex_expression}\index{parser.SearchByRegexExpression@{parser.SearchByRegexExpression}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classparser_1_1_search_by_regex_expression_1_1_data_parameter}{Data\+Parameter}}
+\item 
+class \mbox{\hyperlink{classparser_1_1_search_by_regex_expression_1_1_data_search}{Data\+Search}}
+\item 
+class \mbox{\hyperlink{classparser_1_1_search_by_regex_expression_1_1_group_data_parameters}{Group\+Data\+Parameters}}
+\item 
+class \mbox{\hyperlink{classparser_1_1_search_by_regex_expression_1_1_testes}{Testes}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparser_1_1_search_by_regex_expression_afa91912a0ac18623e002e86b9102cb6f}{Search\+By\+Regex\+Expression}} (string input\+In)
+\item 
+void \mbox{\hyperlink{classparser_1_1_search_by_regex_expression_a6748e88a052627b926222f960261b7e5}{Processing\+Pattern}} ()
+\item 
+override string \mbox{\hyperlink{classparser_1_1_search_by_regex_expression_ad18deb1c07d320bb93cd128035d347ac}{To\+String}} ()
+\item 
+string \mbox{\hyperlink{classparser_1_1_search_by_regex_expression_aef7861b754c7c1318f60fce69f851ba4}{Resume\+Input}} (\mbox{\hyperlink{classparser_1_1_search_by_regex_expression}{Search\+By\+Regex\+Expression}} search, string \+\_\+\+\_\+input)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{classparser_1_1_search_by_regex_expression_a69e5ed0d83d633787a6eddf09e63b6e4}{Formata\+Entrada}} (string \mbox{\hyperlink{classparser_1_1_search_by_regex_expression_a0092161ee0eb02f082a27da31b104665}{input}})
+\begin{DoxyCompactList}\small\item\em formata um texto de entrada, colocando espaçamento de 1 unidade, nos tokens do texto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ Text\+Expression.\+Ocorrencia $>$ \mbox{\hyperlink{classparser_1_1_search_by_regex_expression_a62cc05e0e4652fc210a07ba1dba7f764}{exprss}} = new List$<$Text\+Expression.\+Ocorrencia$>$()
+\begin{DoxyCompactList}\small\item\em parte burocrática de registro de ocorrências em texto regex, do pattern resumed\+: "{}exprss"{}. \end{DoxyCompactList}\item 
+List$<$ Text\+Expression.\+Ocorrencia $>$ \mbox{\hyperlink{classparser_1_1_search_by_regex_expression_a5f0846f6458883f0d5aaf324d1b1857d}{operators}} = new List$<$Text\+Expression.\+Ocorrencia$>$()
+\begin{DoxyCompactList}\small\item\em parte burocrática mas importante para registro de operadores, de expressões \doxylink{classparser_1_1_expressao_operador}{Expressao\+Operador}. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_search_by_regex_expression}{Search\+By\+Regex\+Expression}} $>$ \mbox{\hyperlink{classparser_1_1_search_by_regex_expression_abb1d7c2934f784775bb443faba306b09}{parametros}} = new List$<$\mbox{\hyperlink{classparser_1_1_search_by_regex_expression}{Search\+By\+Regex\+Expression}}$>$()
+\begin{DoxyCompactList}\small\item\em parte importante para a solução das expressões\+: parâmetros são a diferenciação de um texto regex completo, é preciso isolar o problema de parâmetros, criando uma lista para ele, e resolver a parte. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_search_by_regex_expression_1_1_group_data_parameters}{Group\+Data\+Parameters}} $>$ \mbox{\hyperlink{classparser_1_1_search_by_regex_expression_a2027ae1e89d488f4781adac1c29c2a8d}{grupos\+De\+Parametros}} = new List$<$\mbox{\hyperlink{classparser_1_1_search_by_regex_expression_1_1_group_data_parameters}{Group\+Data\+Parameters}}$>$()
+\begin{DoxyCompactList}\small\item\em grupo de parâmetros. Um grupo é um conjunto de parãmetros de uma chamada de método, que forma a única expressão que utiliza parâmetros. \end{DoxyCompactList}\item 
+List$<$ Text\+Expression.\+Ocorrencia $>$ \mbox{\hyperlink{classparser_1_1_search_by_regex_expression_a7a9cc4d4c99e43d47c76a56c1586ff82}{todas\+Ocorrencias}} = new List$<$Text\+Expression.\+Ocorrencia$>$()
+\item 
+string \mbox{\hyperlink{classparser_1_1_search_by_regex_expression_a0092161ee0eb02f082a27da31b104665}{input}}
+\begin{DoxyCompactList}\small\item\em texto de entrada, que sofre processamento de extração de parâmetros. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classparser_1_1_search_by_regex_expression_afa0c459285bab966a920298e56ec6f5f}{input\+Raw}}
+\begin{DoxyCompactList}\small\item\em texto de entrada, sem processamento de extração de parâmetros. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \mbox{\hyperlink{classparser_1_1_search_by_regex_expression_1_1_data_search}{Data\+Search}} $>$ \mbox{\hyperlink{classparser_1_1_search_by_regex_expression_a5cbcdf896359f564d156f0112094cebf}{searchers}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em lista de searchs com pattern code que diferencia tipos de expressões. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classparser_1_1_search_by_regex_expression_a9d344a0fddd90f3b05c2d23f4f9d1d5c}{pattern\+Resumed}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em pattern calculado automaticamente. \end{DoxyCompactList}\item 
+Type \mbox{\hyperlink{classparser_1_1_search_by_regex_expression_a4242af38fb5ac13275611228db3949a4}{Tipo\+Expressao}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em tipo de expressão associada ao search regex. economiza um bocado de código no processamento de expressoes, através de searchers. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_search_by_regex_expression}{Search\+By\+Regex\+Expression}} $>$ \mbox{\hyperlink{classparser_1_1_search_by_regex_expression_a5185f70fbc50320c8289ca20a8dc7ccb}{sub\+Expressoes\+Search}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em se uma expressão contém mais sub-\/expressões, como expressao operador, ou chamadas de metodo aninhada, ou propriedades aninhadas, é registrado nesta lista. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classparser_1_1_search_by_regex_expression}{Search\+By\+Regex\+Expression}} $>$ \mbox{\hyperlink{classparser_1_1_search_by_regex_expression_a5cec4588e9b6b9f5c1e7bb173d54263b}{ids}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em nome de objetos, numeros, literais texto, NILL, etc..., que tem um único token representativo. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classparser_1_1_search_by_regex_expression_a80be114baf5223543cdcf778871ea90d}{index\+Parameter}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+List$<$ string $>$ \mbox{\hyperlink{classparser_1_1_search_by_regex_expression_a1f3f84629a1277674156c23ab91fc67f}{tokens}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classparser_1_1_search_by_regex_expression_afa91912a0ac18623e002e86b9102cb6f}\index{parser.SearchByRegexExpression@{parser.SearchByRegexExpression}!SearchByRegexExpression@{SearchByRegexExpression}}
+\index{SearchByRegexExpression@{SearchByRegexExpression}!parser.SearchByRegexExpression@{parser.SearchByRegexExpression}}
+\doxysubsubsection{\texorpdfstring{SearchByRegexExpression()}{SearchByRegexExpression()}}
+{\footnotesize\ttfamily \label{classparser_1_1_search_by_regex_expression_afa91912a0ac18623e002e86b9102cb6f} 
+parser.\+Search\+By\+Regex\+Expression.\+Search\+By\+Regex\+Expression (\begin{DoxyParamCaption}\item[{string}]{input\+In}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classparser_1_1_search_by_regex_expression_a69e5ed0d83d633787a6eddf09e63b6e4}\index{parser.SearchByRegexExpression@{parser.SearchByRegexExpression}!FormataEntrada@{FormataEntrada}}
+\index{FormataEntrada@{FormataEntrada}!parser.SearchByRegexExpression@{parser.SearchByRegexExpression}}
+\doxysubsubsection{\texorpdfstring{FormataEntrada()}{FormataEntrada()}}
+{\footnotesize\ttfamily \label{classparser_1_1_search_by_regex_expression_a69e5ed0d83d633787a6eddf09e63b6e4} 
+static string parser.\+Search\+By\+Regex\+Expression.\+Formata\+Entrada (\begin{DoxyParamCaption}\item[{string}]{input}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+formata um texto de entrada, colocando espaçamento de 1 unidade, nos tokens do texto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & texto a ser formatado.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classparser_1_1_search_by_regex_expression_a6748e88a052627b926222f960261b7e5}\index{parser.SearchByRegexExpression@{parser.SearchByRegexExpression}!ProcessingPattern@{ProcessingPattern}}
+\index{ProcessingPattern@{ProcessingPattern}!parser.SearchByRegexExpression@{parser.SearchByRegexExpression}}
+\doxysubsubsection{\texorpdfstring{ProcessingPattern()}{ProcessingPattern()}}
+{\footnotesize\ttfamily \label{classparser_1_1_search_by_regex_expression_a6748e88a052627b926222f960261b7e5} 
+void parser.\+Search\+By\+Regex\+Expression.\+Processing\+Pattern (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+faz o processamento de parametros. acrescenta um grupo de parametros, para a sub-\/expressao currente.\Hypertarget{classparser_1_1_search_by_regex_expression_aef7861b754c7c1318f60fce69f851ba4}\index{parser.SearchByRegexExpression@{parser.SearchByRegexExpression}!ResumeInput@{ResumeInput}}
+\index{ResumeInput@{ResumeInput}!parser.SearchByRegexExpression@{parser.SearchByRegexExpression}}
+\doxysubsubsection{\texorpdfstring{ResumeInput()}{ResumeInput()}}
+{\footnotesize\ttfamily \label{classparser_1_1_search_by_regex_expression_aef7861b754c7c1318f60fce69f851ba4} 
+string parser.\+Search\+By\+Regex\+Expression.\+Resume\+Input (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classparser_1_1_search_by_regex_expression}{Search\+By\+Regex\+Expression}}}]{search}{, }\item[{string}]{\+\_\+\+\_\+input}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classparser_1_1_search_by_regex_expression_ad18deb1c07d320bb93cd128035d347ac}\index{parser.SearchByRegexExpression@{parser.SearchByRegexExpression}!ToString@{ToString}}
+\index{ToString@{ToString}!parser.SearchByRegexExpression@{parser.SearchByRegexExpression}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily \label{classparser_1_1_search_by_regex_expression_ad18deb1c07d320bb93cd128035d347ac} 
+override string parser.\+Search\+By\+Regex\+Expression.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classparser_1_1_search_by_regex_expression_a62cc05e0e4652fc210a07ba1dba7f764}\index{parser.SearchByRegexExpression@{parser.SearchByRegexExpression}!exprss@{exprss}}
+\index{exprss@{exprss}!parser.SearchByRegexExpression@{parser.SearchByRegexExpression}}
+\doxysubsubsection{\texorpdfstring{exprss}{exprss}}
+{\footnotesize\ttfamily \label{classparser_1_1_search_by_regex_expression_a62cc05e0e4652fc210a07ba1dba7f764} 
+List$<$Text\+Expression.\+Ocorrencia$>$ parser.\+Search\+By\+Regex\+Expression.\+exprss = new List$<$Text\+Expression.\+Ocorrencia$>$()}
+
+
+
+parte burocrática de registro de ocorrências em texto regex, do pattern resumed\+: "{}exprss"{}. 
+
+\Hypertarget{classparser_1_1_search_by_regex_expression_a2027ae1e89d488f4781adac1c29c2a8d}\index{parser.SearchByRegexExpression@{parser.SearchByRegexExpression}!gruposDeParametros@{gruposDeParametros}}
+\index{gruposDeParametros@{gruposDeParametros}!parser.SearchByRegexExpression@{parser.SearchByRegexExpression}}
+\doxysubsubsection{\texorpdfstring{gruposDeParametros}{gruposDeParametros}}
+{\footnotesize\ttfamily \label{classparser_1_1_search_by_regex_expression_a2027ae1e89d488f4781adac1c29c2a8d} 
+List$<$\mbox{\hyperlink{classparser_1_1_search_by_regex_expression_1_1_group_data_parameters}{Group\+Data\+Parameters}}$>$ parser.\+Search\+By\+Regex\+Expression.\+grupos\+De\+Parametros = new List$<$\mbox{\hyperlink{classparser_1_1_search_by_regex_expression_1_1_group_data_parameters}{Group\+Data\+Parameters}}$>$()}
+
+
+
+grupo de parâmetros. Um grupo é um conjunto de parãmetros de uma chamada de método, que forma a única expressão que utiliza parâmetros. 
+
+\Hypertarget{classparser_1_1_search_by_regex_expression_a0092161ee0eb02f082a27da31b104665}\index{parser.SearchByRegexExpression@{parser.SearchByRegexExpression}!input@{input}}
+\index{input@{input}!parser.SearchByRegexExpression@{parser.SearchByRegexExpression}}
+\doxysubsubsection{\texorpdfstring{input}{input}}
+{\footnotesize\ttfamily \label{classparser_1_1_search_by_regex_expression_a0092161ee0eb02f082a27da31b104665} 
+string parser.\+Search\+By\+Regex\+Expression.\+input}
+
+
+
+texto de entrada, que sofre processamento de extração de parâmetros. 
+
+\Hypertarget{classparser_1_1_search_by_regex_expression_afa0c459285bab966a920298e56ec6f5f}\index{parser.SearchByRegexExpression@{parser.SearchByRegexExpression}!inputRaw@{inputRaw}}
+\index{inputRaw@{inputRaw}!parser.SearchByRegexExpression@{parser.SearchByRegexExpression}}
+\doxysubsubsection{\texorpdfstring{inputRaw}{inputRaw}}
+{\footnotesize\ttfamily \label{classparser_1_1_search_by_regex_expression_afa0c459285bab966a920298e56ec6f5f} 
+string parser.\+Search\+By\+Regex\+Expression.\+input\+Raw}
+
+
+
+texto de entrada, sem processamento de extração de parâmetros. 
+
+\Hypertarget{classparser_1_1_search_by_regex_expression_a5f0846f6458883f0d5aaf324d1b1857d}\index{parser.SearchByRegexExpression@{parser.SearchByRegexExpression}!operators@{operators}}
+\index{operators@{operators}!parser.SearchByRegexExpression@{parser.SearchByRegexExpression}}
+\doxysubsubsection{\texorpdfstring{operators}{operators}}
+{\footnotesize\ttfamily \label{classparser_1_1_search_by_regex_expression_a5f0846f6458883f0d5aaf324d1b1857d} 
+List$<$Text\+Expression.\+Ocorrencia$>$ parser.\+Search\+By\+Regex\+Expression.\+operators = new List$<$Text\+Expression.\+Ocorrencia$>$()}
+
+
+
+parte burocrática mas importante para registro de operadores, de expressões \doxylink{classparser_1_1_expressao_operador}{Expressao\+Operador}. 
+
+\Hypertarget{classparser_1_1_search_by_regex_expression_abb1d7c2934f784775bb443faba306b09}\index{parser.SearchByRegexExpression@{parser.SearchByRegexExpression}!parametros@{parametros}}
+\index{parametros@{parametros}!parser.SearchByRegexExpression@{parser.SearchByRegexExpression}}
+\doxysubsubsection{\texorpdfstring{parametros}{parametros}}
+{\footnotesize\ttfamily \label{classparser_1_1_search_by_regex_expression_abb1d7c2934f784775bb443faba306b09} 
+List$<$\mbox{\hyperlink{classparser_1_1_search_by_regex_expression}{Search\+By\+Regex\+Expression}}$>$ parser.\+Search\+By\+Regex\+Expression.\+parametros = new List$<$\mbox{\hyperlink{classparser_1_1_search_by_regex_expression}{Search\+By\+Regex\+Expression}}$>$()}
+
+
+
+parte importante para a solução das expressões\+: parâmetros são a diferenciação de um texto regex completo, é preciso isolar o problema de parâmetros, criando uma lista para ele, e resolver a parte. 
+
+\Hypertarget{classparser_1_1_search_by_regex_expression_a7a9cc4d4c99e43d47c76a56c1586ff82}\index{parser.SearchByRegexExpression@{parser.SearchByRegexExpression}!todasOcorrencias@{todasOcorrencias}}
+\index{todasOcorrencias@{todasOcorrencias}!parser.SearchByRegexExpression@{parser.SearchByRegexExpression}}
+\doxysubsubsection{\texorpdfstring{todasOcorrencias}{todasOcorrencias}}
+{\footnotesize\ttfamily \label{classparser_1_1_search_by_regex_expression_a7a9cc4d4c99e43d47c76a56c1586ff82} 
+List$<$Text\+Expression.\+Ocorrencia$>$ parser.\+Search\+By\+Regex\+Expression.\+todas\+Ocorrencias = new List$<$Text\+Expression.\+Ocorrencia$>$()}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{classparser_1_1_search_by_regex_expression_a5cec4588e9b6b9f5c1e7bb173d54263b}\index{parser.SearchByRegexExpression@{parser.SearchByRegexExpression}!ids@{ids}}
+\index{ids@{ids}!parser.SearchByRegexExpression@{parser.SearchByRegexExpression}}
+\doxysubsubsection{\texorpdfstring{ids}{ids}}
+{\footnotesize\ttfamily \label{classparser_1_1_search_by_regex_expression_a5cec4588e9b6b9f5c1e7bb173d54263b} 
+List$<$\mbox{\hyperlink{classparser_1_1_search_by_regex_expression}{Search\+By\+Regex\+Expression}}$>$ parser.\+Search\+By\+Regex\+Expression.\+ids\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+nome de objetos, numeros, literais texto, NILL, etc..., que tem um único token representativo. 
+
+\Hypertarget{classparser_1_1_search_by_regex_expression_a80be114baf5223543cdcf778871ea90d}\index{parser.SearchByRegexExpression@{parser.SearchByRegexExpression}!indexParameter@{indexParameter}}
+\index{indexParameter@{indexParameter}!parser.SearchByRegexExpression@{parser.SearchByRegexExpression}}
+\doxysubsubsection{\texorpdfstring{indexParameter}{indexParameter}}
+{\footnotesize\ttfamily \label{classparser_1_1_search_by_regex_expression_a80be114baf5223543cdcf778871ea90d} 
+int parser.\+Search\+By\+Regex\+Expression.\+index\+Parameter\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{classparser_1_1_search_by_regex_expression_a9d344a0fddd90f3b05c2d23f4f9d1d5c}\index{parser.SearchByRegexExpression@{parser.SearchByRegexExpression}!patternResumed@{patternResumed}}
+\index{patternResumed@{patternResumed}!parser.SearchByRegexExpression@{parser.SearchByRegexExpression}}
+\doxysubsubsection{\texorpdfstring{patternResumed}{patternResumed}}
+{\footnotesize\ttfamily \label{classparser_1_1_search_by_regex_expression_a9d344a0fddd90f3b05c2d23f4f9d1d5c} 
+string parser.\+Search\+By\+Regex\+Expression.\+pattern\+Resumed\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+pattern calculado automaticamente. 
+
+\Hypertarget{classparser_1_1_search_by_regex_expression_a5cbcdf896359f564d156f0112094cebf}\index{parser.SearchByRegexExpression@{parser.SearchByRegexExpression}!searchers@{searchers}}
+\index{searchers@{searchers}!parser.SearchByRegexExpression@{parser.SearchByRegexExpression}}
+\doxysubsubsection{\texorpdfstring{searchers}{searchers}}
+{\footnotesize\ttfamily \label{classparser_1_1_search_by_regex_expression_a5cbcdf896359f564d156f0112094cebf} 
+List$<$\mbox{\hyperlink{classparser_1_1_search_by_regex_expression_1_1_data_search}{Data\+Search}}$>$ parser.\+Search\+By\+Regex\+Expression.\+searchers\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+lista de searchs com pattern code que diferencia tipos de expressões. 
+
+\Hypertarget{classparser_1_1_search_by_regex_expression_a5185f70fbc50320c8289ca20a8dc7ccb}\index{parser.SearchByRegexExpression@{parser.SearchByRegexExpression}!subExpressoesSearch@{subExpressoesSearch}}
+\index{subExpressoesSearch@{subExpressoesSearch}!parser.SearchByRegexExpression@{parser.SearchByRegexExpression}}
+\doxysubsubsection{\texorpdfstring{subExpressoesSearch}{subExpressoesSearch}}
+{\footnotesize\ttfamily \label{classparser_1_1_search_by_regex_expression_a5185f70fbc50320c8289ca20a8dc7ccb} 
+List$<$\mbox{\hyperlink{classparser_1_1_search_by_regex_expression}{Search\+By\+Regex\+Expression}}$>$ parser.\+Search\+By\+Regex\+Expression.\+sub\+Expressoes\+Search\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+se uma expressão contém mais sub-\/expressões, como expressao operador, ou chamadas de metodo aninhada, ou propriedades aninhadas, é registrado nesta lista. 
+
+\Hypertarget{classparser_1_1_search_by_regex_expression_a4242af38fb5ac13275611228db3949a4}\index{parser.SearchByRegexExpression@{parser.SearchByRegexExpression}!TipoExpressao@{TipoExpressao}}
+\index{TipoExpressao@{TipoExpressao}!parser.SearchByRegexExpression@{parser.SearchByRegexExpression}}
+\doxysubsubsection{\texorpdfstring{TipoExpressao}{TipoExpressao}}
+{\footnotesize\ttfamily \label{classparser_1_1_search_by_regex_expression_a4242af38fb5ac13275611228db3949a4} 
+Type parser.\+Search\+By\+Regex\+Expression.\+Tipo\+Expressao\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+tipo de expressão associada ao search regex. economiza um bocado de código no processamento de expressoes, através de searchers. 
+
+\Hypertarget{classparser_1_1_search_by_regex_expression_a1f3f84629a1277674156c23ab91fc67f}\index{parser.SearchByRegexExpression@{parser.SearchByRegexExpression}!tokens@{tokens}}
+\index{tokens@{tokens}!parser.SearchByRegexExpression@{parser.SearchByRegexExpression}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily \label{classparser_1_1_search_by_regex_expression_a1f3f84629a1277674156c23ab91fc67f} 
+List$<$string$>$ parser.\+Search\+By\+Regex\+Expression.\+tokens\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+BACUKPS/\+Projeto\+Orquidea2024\+\_\+2/\+Project\+Orquidea2024/\+Project\+Orquidea2024/componentes\+De\+Interpretadores\+ECompiladores/\+PROGRAMACAO ORIENTADA A OBJETOS/\mbox{\hyperlink{_search_by_regex_expression_8cs}{Search\+By\+Regex\+Expression.\+cs}}\end{DoxyCompactItemize}
