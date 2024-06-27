@@ -1,0 +1,9 @@
+string code_0_update = "Prompt.sWrite(" + \" + "atualizando" + \" + ");";
+
+Imagem img1= create("18.png");
+
+ObjectGame obj1 = create(code_0_update, img1);
+LoopGame loop = create();
+loop.AddObjectGame(obj1);
+
+ loop.Run();

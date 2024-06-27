@@ -1,0 +1,14 @@
+FunctionsGame fnc= create();
+int chanceToShot=0;
+int saida=0;
+string text="";
+
+
+while (saida<1)
+{
+	chanceToShot=fnc.RandomInt(0, 100);
+	text= "numero:  "+Castings.ToString(chanceToShot);
+	Prompt.sWrite(text);
+}
+
+

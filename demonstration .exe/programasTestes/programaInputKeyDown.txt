@@ -1,0 +1,31 @@
+LoopGame wnd= create(1000,700,"game catch gliders!");
+wnd.SetFps(48);
+
+int continua=1;
+
+while (continua>0)
+{
+
+	wnd.dispachEvents();
+	
+	
+	wnd.BeginDraw();
+
+	wnd.EndDraw();
+
+
+	// controle do player.
+	if (Input.isKeyDown("left"))
+	{
+		Prompt.sWrite("jogador de movimentando.");
+	
+	};
+	
+	// controle do player;
+	if (Input.isKeyDown("right"))
+	{
+		Prompt.sWrite("jogador de movimentando.");
+	};	
+	
+	
+};

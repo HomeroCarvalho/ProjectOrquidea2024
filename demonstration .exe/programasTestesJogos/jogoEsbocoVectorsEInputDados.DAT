@@ -1,0 +1,101 @@
+public class Entity{ 
+
+
+	public Imagem imageEntity;
+
+	public ExpressionBase inputMoveLeft;
+	public ExpressionBase inputMoveRight;
+	
+	public double xxEntity;
+	public double yyEntity;
+	
+	
+
+	// construtor. carrega a imagem do Entity, e seta as coordenadas de desenho da imagem do Entity.
+	public Entity(string pathFileImage, double xEntity, double yEntity){
+	
+	
+		// registra handlers de teclado.
+		Input.AddKeyDown("left", "actual.DecX();");
+		Input.AddKeyDown("right", "actual.IncX();");
+		
+		
+		actual.xxEntity= xEntity;
+		actual.yyEntity= yEntity;
+		
+		actual.imageEntity= create(pathFileImage);
+		actual.imageEntity.SetX(xEntity);
+		actual.imageEntity.SetY(yEntity);
+		
+	}; 
+	
+	
+		
+	// atualiza a situação do Entity.
+	public UpdateEntity()
+	{
+		  Prompt.sWrite("atualizando..");
+	
+	};
+		
+	public DrawEntity(LoopGame ls)
+	{
+		ls.Draw(0, actual.xxEntity, actual.yyEntity);
+		
+	};
+
+	public IncX(){
+		
+		actual.xxEntity= actual.xxEntity+15.0;
+	}
+	
+	public DecX(){
+		
+		actual.xxEntity= actual.xxEntity-15.0;
+	}
+ }
+ 
+
+// instancia o loop do game.
+LoopGame loopX= create();
+// seta as coordenadas da tela.
+loopX.StartScreen(900,700);
+
+
+// instancia um Entity, com possibilidade de instanciar mais, em escala industrial.
+Entity[] v1[20];
+Entity e = create("images\set1\Wraith_1.png", 100.0, 400.0);
+v1[0] = e; 
+
+
+
+
+ 
+
+
+int saida=1;
+// carrega imagens.
+loopX.LoadImages(); 
+
+// loop de iteração do jogo.
+while  (saida>0){
+	
+	// processamento de desenhos.
+	loopX.BeginToDraw();
+
+		v1[0].DrawEntity(loopX);
+		
+		
+	loopX.ClearScreen();
+	
+	loopX.EndToDraw();
+
+	// processamento de teclado.
+	Input.Update();
+	
+	
+	// atualiza a malha while.
+	saida= loopX.CloseWindow();
+};
+
+

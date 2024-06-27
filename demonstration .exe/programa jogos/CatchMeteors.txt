@@ -1,0 +1,445 @@
+ 
+public class METEORO
+{
+	
+	// coordenadas do meteoro;
+	public double xM;
+	public double yM;
+
+
+
+	// imagem do metoro.
+	public Imagem imageMeteoro;
+	
+	
+	
+	// velocidade do bullet.
+	public double velocityPar;
+	
+	
+	public int isDestroyed;
+	public int isLanding;
+	
+	
+	
+	
+	
+	public METEORO(double xPAR, double yPAR)
+	{
+		
+		// constroi a imagem de meteoro.
+		imageMeteoro= create("programa jogos\assets space invaders\meteor.png");
+		
+		
+		// velocidade do bullet.
+		velocityPar= 3.0;
+		
+		// coordenadas iniciais.
+		xM=xPAR;
+		yM=yPAR;
+		isDestroyed= 0;
+		isLanding= 0;
+	};
+	
+	
+	public void UpdateMeteoro(double xp, double yp)
+	{
+		// atualiza a posicao vertical do meteoro.
+		yM = yM + velocityPar;
+		
+		// aceleracao da gravidade;
+		velocityPar= velocityPar+ 0.01;
+		
+		// verifica se o player conseguiu capturar um meteoro.
+		RectangleCollision rect= create(xM,yM,60,58);
+		if (rect.isCollideImagens(xM,yM, xp, yp, 60, 58, 80, 80))
+		{
+			isDestroyed=1;
+		};
+		
+		
+		if (yM>=700.0)
+		{	
+			isLanding=1;
+		
+		};
+		
+	};
+	
+	
+	public void DrawMeteoro(LoopGame ls)
+	{
+		ls.Draw(imageMeteoro, xM, yM);
+	};
+	
+
+};
+
+ 
+
+public class Ship
+{ 
+
+	public METEORO[] meteoros;
+
+	
+	// imagem do ship.
+	public Imagem imageShip;
+	
+	
+	// coordenada x de posicao.
+	public double xxImage;
+
+	// coordenada y de posicao.
+	public double yyImage;
+	
+	// direcao do ship.
+	public double direction;
+
+	// velocidade horizontal do ship.
+	public double velocity;
+	
+
+	
+	// contagem de meteoros que foram lancados.
+	public int countMeteoros;
+	// maximo de meteoros serem lançados.
+	public int maxMeteoros;
+
+
+	
+	
+	// contagem de meteoros que atingiram a Terra.
+	public int countMeteorosPontuacao;
+	
+	// som de meteoro caindo na Terra.
+	public Sound soundCrash;
+	
+	
+	// som de meteoro sendo capturado.
+	public Sound soundCatch;
+	
+	// elmento do vector meteoros;
+	public METEORO umMetoro;
+	
+	
+	// construtor. carrega a imagem do ship, e seta as coordenadas iniciais de desenho da imagem do ship.
+	public Ship(string pathFileImage, double xEntity2, double yEntity2)
+	{
+	
+		// coordenadas do ship na tela.
+		xxImage = xEntity2;
+		yyImage = yEntity2;
+		
+		
+		// imagem do ship;
+		imageShip=create(pathFileImage);
+		
+		// variaveis de update das coordenadas.
+		direction=1.0;
+		velocity= 5.0;
+
+		// inicializa o contador de pontuacao.
+		countMeteorosPontuacao=0;
+	
+		
+		countMeteoros=0;
+		maxMeteoros= 10;
+		meteoros.Clear();
+		
+		
+		// SOMS UTILIZADOS NO GAME.
+		soundCrash=create();
+		soundCatch= create();
+		
+		// carrega os arquivos de sons.
+		soundCrash.LoadSound("programa jogos\assets space invaders\shotPlayer.ogg", "crash");
+		soundCatch.LoadSound("programa jogos\assets space invaders\hit.ogg", "catch");
+			
+		
+	}; 
+
+	// desenha, entre outros detalhes que poderia se implementar, a imagem do ship.
+	public void DrawShip(LoopGame ls)
+	{
+		// desenha os meteoros lancados por este ship.
+		for (int x=0;x<countMeteoros;x++)
+		{
+			meteoros[x].DrawMeteoro(ls);
+		};
+		
+		// desenha o ship.
+		ls.Draw(imageShip, xxImage, yyImage);
+	};
+
+
+	// atualiza a posicao do ship, dando andamento ao jogo.
+	public void UpdateShip(double xx_player, double yy_player)
+	{
+		
+				
+		// atualização da coordenada x do ship.
+		xxImage= xxImage + direction*velocity;
+		
+		
+		// andamento a queda de meteoros, na Terra.
+		for (int x=0;x<countMeteoros;x++)
+		{
+			meteoros[x].UpdateMeteoro(xx_player,yy_player);
+				
+			int dt= meteoros[x].isDestroyed;
+			int ld= meteoros[x].isLanding;
+			
+			
+			if (dt==1)
+			{
+				
+				// emite um som de captura de meteoro.
+				soundCatch.PlaySound("catch");
+				
+				// remove o meteoro que caiu
+				meteoros.remove(x);
+				// possibilita mais meteoros serem lançados.
+				countMeteoros= countMeteoros-1;
+			
+			
+				
+				// acerta a contagem de pontuacao.
+				countMeteorosPontuacao=  countMeteorosPontuacao+1;
+				
+			
+			};
+			
+			if (ld==1)
+			{
+				
+				// emite um som de meteoro atingindo o planeta (nao a Terra).
+				soundCrash.PlaySound("crash");
+				
+				
+				// remove o meteoro que caiu, na Terra.
+				meteoros.remove(x);
+				// possibilita nos meteoros serem lançados.
+				countMeteoros= countMeteoros-1;
+			
+			
+				
+				// acerta a contagem de pontuacao, estatica.
+				countMeteorosPontuacao=  countMeteorosPontuacao-3;
+				
+	
+							
+			};
+		};		
+		FunctionsGame funcao= create();
+		int chanceToShot= funcao.RandomInt(0, 100);
+		if ((chanceToShot<=5) && (countMeteoros<=maxMeteoros)){
+			
+		
+			// instancia um meteoro.
+			METEORO mt= create(xxImage,yyImage);
+			// e o adiciona ao vector de meteoros.
+			meteoros.Append(mt);
+		
+		
+			// atualiza a contagem de meteoros lancados.
+			countMeteoros= countMeteoros+1;
+		};
+		// teste de limite de borda.
+		if (xxImage>1000.0)
+		{
+			xxImage= 1000.0 - 80.0;
+			direction=-1.0;
+		};
+		
+		// teste de limite de borda.
+		if (xxImage<0.0)
+		{
+			xxImage= 0.0 + 5.0;
+			direction=1.0;
+			
+		};
+
+		
+	};
+	
+	
+	
+ };
+
+
+// instancia o loop do game.
+LoopGame wnd= create(1000,700,"destroy meteors!");
+wnd.SetFps(48);
+
+
+// variavel de malha for.
+int k=0;
+// quantidade de transport troppers no jogo.
+int qtdShips=4;
+
+
+double xPlayer= 500.0;
+double yPlayer= 550.0;
+Imagem imagePlayer= create("programa jogos\assets space invaders\player_paraquedista.png");
+
+
+
+// vector de [Ship] transport troppers
+Ship[] tropShips[qtdShips];
+tropShips.Clear();
+
+FunctionsGame fnc= create();
+// cria ships invader.
+for (k=0;k<qtdShips;k++)
+{
+	double pos= Castings.IntToDouble(k);
+	Ship aShip=create("programa jogos\assets space invaders\transportShip.png", pos*87.0, 50.0);
+	tropShips.Append(aShip);
+};
+
+
+
+
+
+
+// texto de apresentação.
+Text apresentacao= create("destroy the meteors!",200.0,0.0, 42);
+Text score= create("SCORE:  0", 0.0,35.0, 35);
+Text txtGameOver= create("game over: press enter to playe again",300.0,100.0,50);
+
+string newTextScore="score: 0";
+
+// tempo de jogo.
+TimeReaction timer= create();
+
+int stateGame=0;
+
+// contador de pontos do jogo.
+int placar=0;
+// variavel de controle da instrucao while.
+int continua=1;
+// loop de iteração do jogo.
+while  (continua>0)
+{
+	
+	wnd.dispachEvents();
+	
+	
+	wnd.BeginDraw();
+
+	// desenho de texto de apresentação do jogo.
+	wnd.DrawText(apresentacao, 200.0, 0.0);
+	wnd.DrawText(1,0.0,35.0);
+	
+	
+
+
+	// desenho de texto de fim de jogo.
+	if (stateGame==1)
+	{
+		wnd.DrawText(2,100.0,300.0);
+	};
+
+	// desenho de objetos do jogo rodando.
+	if (stateGame==0)
+	{
+		placar=0;
+		// desenho da nave do player.
+		wnd.Draw(imagePlayer, xPlayer,yPlayer);
+
+		for (k=0;k<qtdShips;k++)
+		{
+			// atualizacao do movimento dos transport ships.
+			tropShips[k].UpdateShip(xPlayer,yPlayer);
+
+			
+			// desenho da imagem dos ships de lancadores de meteoros.
+			tropShips[k].DrawShip(wnd);
+			
+			int scoreOneShip= tropShips[k].countMeteorosPontuacao;
+			placar= placar+scoreOneShip;
+		};	
+
+		// constroi a pontuacao.
+		string signalBalance="";
+		// sinal de contagem: -negativo: player perdendo, +positivo: player vencendo.
+		if (placar<0)
+		{
+			signalBalance="-";
+		};
+		else
+		{
+			signalBalance="+";
+		}
+		
+		// atualiza placar.
+		string newTextScore="score:  "+signalBalance+Castings.ToString(placar);
+		score.SetText(newTextScore,0.0,35.0);
+
+		
+	};
+	
+
+	
+
+	wnd.EndDraw();
+
+
+	
+	// teste de fim de jogo, player deixou meteoros cairem suficiente para avariar o planeta!
+	if (placar<-20)
+	{
+		stateGame=1;
+		
+	};
+	
+	
+	// controle da nave do player, INDO PARA ESQUERDA.
+	if (Input.isKeyDown("left"))
+	{
+		xPlayer=xPlayer-6.5;
+		if (xPlayer<0.0)
+		{
+			xPlayer=0.0;
+			
+		};
+	};
+	
+	// controle da nave do player, INDO PARA DIREITA.
+	if (Input.isKeyDown("right"))
+	{
+		xPlayer=xPlayer+6.5;
+		if (xPlayer>880.0)
+		{
+			xPlayer= 880.0;
+		};
+	};
+
+
+	// tecla de restart o game.
+	if ((Input.isKeyDown("enter"))&& (stateGame==1))
+	{
+		// reseta o placar.
+		countMeteorosPontuacao=0;
+		
+		// reseta os ships.
+		tropShips.Clear();
+		for (k=0;k<qtdShips;k++)
+		{
+			double pos= Castings.IntToDouble(k);
+			Ship aShip=create("programa jogos\assets space invaders\transportShip.png", pos*65.0, 50.0);
+			tropShips.Append(aShip);
+		};
+		
+		// passa para o estado jogar (codigo 0).
+		stateGame=0;
+		
+	};
+	
+};
+
+
+wnd.CloseWindow();
+
+

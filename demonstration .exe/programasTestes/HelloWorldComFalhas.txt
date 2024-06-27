@@ -1,0 +1,10 @@
+// programa com erros, para contabilizar as linhas onde ocorreu falhas.
+Prompt.sWrite("Hello, World!");
+
+
+
+// este é um comentario...
+i=1;
+
+
+j=5;

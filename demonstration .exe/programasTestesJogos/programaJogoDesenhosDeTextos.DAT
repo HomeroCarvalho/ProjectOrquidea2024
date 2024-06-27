@@ -1,0 +1,50 @@
+int widthTela= 1000;
+int heightTela= 800;
+
+
+LoopGame loop= create();
+loop.StartScreen(widthTela,heightTela);
+
+
+
+loop.LoadImages();
+Text txtHello= create("contando...");
+int idTextHello= 0;
+int xTextHello = 400;
+int yTextHello = 300;
+
+
+Vector2D positionMouse = create(50.0,150.0);
+FunctionsGame functions = create();
+int saida=1;
+int contadorText= 1;
+int contador=1;
+string newText = "1";
+
+while (saida>0)
+{
+	loop.BeginToDraw();
+
+		loop.DrawText(idTextHello,xTextHello,yTextHello);
+		loop.ClearScreen();
+		
+
+	loop.EndToDraw();
+	
+	
+	
+	contadorText= 15*functions.RandomInt(1, 5);
+	xTextHello= contadorText+100;
+
+	
+	newText=functions.ParseFromIntToString(contador);
+	contador=contador+1;
+	txtHello.ModifyText(newText);		
+	
+	
+	
+	saida= loop.CloseWindow();
+	
+	
+};
+

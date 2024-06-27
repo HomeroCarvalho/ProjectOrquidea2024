@@ -1,0 +1,40 @@
+int widthTela= 1000;
+int heightTela= 800;
+
+
+LoopGame loop= create();
+loop.StartScreen(widthTela,heightTela);
+
+
+Imagem img1= create("18.png");
+Text txtHello= create("ola!");
+loop.LoadImages();
+
+
+
+int idTextHello= 0;
+int idPlayer= 0;
+int xPlayer=0;
+int yPlayer=100;
+
+int xTextHello= 0;
+int yTextHello=0;
+
+int saida=1;
+int saidaParams= 1;
+while (saida>0)
+{
+	loop.BeginToDraw();
+
+		loop.Draw(idPlayer,xPlayer+500, yPlayer);
+		loop.DrawText(idTextHello,xTextHello,yTextHello);
+			
+	loop.ClearScreen();
+
+	loop.EndToDraw();
+	
+	xPlayer=xPlayer+1;
+	
+	saida= loop.CloseWindow();
+	
+}

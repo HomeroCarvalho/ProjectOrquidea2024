@@ -1,0 +1,236 @@
+ 
+public class PARAQUEDISTA
+{
+	// imagem do paraquedista;
+	public Imagem imagePARAQUEDISTA;
+	
+	
+	// coordenadas do paraquedista;
+	public double xb;
+	public double yb;
+	
+	// velocidade do bullet.
+	public double velocityPar;
+	
+	// verificacao se o paraquedista alcançou o solo.
+	public bool isLanding;
+	
+	public PARAQUEDISTA(double xPAR, double yPAR)
+	{
+		// coordenadas iniciais.
+		xb=xPAR;
+		yb=yPAR;
+		
+		// constroi a imagem de paraquedista.
+		imagePARAQUEDISTA= create("programa jogos\assets space invaders\paraquedista_1.png");
+		
+		// velocidade do bullet.
+		velocityPar= 5.0;
+		
+		isLanding=FALSE;
+	};
+	
+	public void UpdateParaquedista()
+	{
+		// atualiza a posicao vertical do paraquedista.
+		yb = yb + velocityPar;
+		if (yb>=500.0)
+		{
+			isLanding=TRUE;
+			
+		};
+	};
+	
+	
+	public void DrawParaquedista(LoopGame ls)
+	{
+		ls.Draw(imagePARAQUEDISTA, xb, yb);
+	};
+};
+
+ 
+
+public class Ship
+{ 
+
+
+	
+	// imagem do ship.
+	public Imagem imageShip;
+	
+	
+	// coordenada x de posicao.
+	public double xxImage;
+
+	// coordenada y de posicao.
+	public double yyImage;
+	
+	// direcao do ship.
+	public double direction;
+
+	// velocidade horizontal do ship.
+	public double velocity;
+	
+	
+	public int countParaquedistas;
+	public int maxParaquedistas;
+
+
+	public PARAQUEDISTA[] paraquedistas;
+	
+	// construtor. carrega a imagem do ship, e seta as coordenadas iniciais de desenho da imagem do ship.
+	public Ship(string pathFileImage, double xEntity2, double yEntity2)
+	{
+	
+		// coordenadas do ship na tela.
+		xxImage = xEntity2;
+		yyImage = yEntity2;
+		
+		
+		// imagem do ship;
+		imageShip=create(pathFileImage);
+		
+		// variaveis de update das coordenadas.
+		direction=1.0;
+		velocity= 5.0;
+
+		countParaquedistas=0;
+		maxParaquedistas= 3;
+		paraquedistas.Clear();
+		
+		
+	}; 
+
+	// desenha, entre outros detalhes que poderia se implementar, a imagem do ship.
+	public void DrawShip(LoopGame ls)
+	{
+		int max= countParaquedistas;
+		for (int x=0;x<max;x++)
+		{
+			paraquedistas[x].DrawParaquedista(ls);
+		};
+		
+		
+		ls.Draw(imageShip, xxImage, yyImage);
+	};
+
+	// atualiza a posicao do ship, dando andamento ao jogo.
+	public void UpdateShip()
+	{
+		// andamento do salto dos paraquedistas.
+		for (int x=0;x<countParaquedistas;x++)
+		{
+			paraquedistas[x].UpdateParaquedista();
+		};		
+
+
+		FunctionsGame funcao= create();
+		int chanceToShot= funcao.RandomInt(0, 100);
+		if ((chanceToShot<=1) && (countParaquedistas<=maxParaquedistas)){
+			
+			// coordenadas de salto do paraquedista.
+			double yPos= yyImage+35.0;
+			double xPos= xxImage;
+		
+			// instancia um paraquedista;
+			PARAQUEDISTA par= create(xPos,yPos);
+			// e o adiciona ao vector propriedade paraquedistas.
+			paraquedistas.Append(par);
+		
+		
+			// atualiza a contagem de paraquedistas lancados.
+			countParaquedistas= countParaquedistas+1;
+			
+			Prompt.sWrite("paraquedista saltou!");
+			
+		};
+
+				
+		
+		// teste de limite de borda.
+		if (xxImage>1100.0)
+		{
+			xxImage= 1000.0 - 43.0;
+			direction=-1.0;
+		};
+		
+		// teste de limite de borda.
+		if (xxImage<20.0)
+		{
+			xxImage= 30.0;
+			direction=1.0;
+			
+		};
+		
+		// atualização da coordenada x do ship.
+		xxImage= xxImage + direction*velocity;
+		
+	};
+	
+ };
+
+
+// instancia o loop do game.
+LoopGame wnd= create(1000,700,"game catch gliders!");
+wnd.SetFps(48);
+
+
+// variavel de malha for.
+int k=0;
+// quantidade de transport troppers no jogo.
+int qtdShips=3;
+
+
+
+// vector de [Ship] transport troppers
+Ship[] tropShips[qtdShips];
+tropShips.Clear();
+
+FunctionsGame fnc= create();
+// cria ships invader.
+for (k=0;k<qtdShips;k++)
+{
+	double randomPos= fnc.RandomDouble()*150.0;
+	Ship aShip=create("programa jogos\assets space invaders\transportShip.png", Castings.IntToDouble(k)*45.0+randomPos, 300.0);
+	tropShips.Append(aShip);
+};
+
+
+
+
+// texto de apresentação.
+Text apresentacao= create("jogo resgate paraquedistas",200.0,0.0, 35);
+
+
+// variavel de controle da instrucao while.
+int continua=1;
+// loop de iteração do jogo.
+while  (continua==1)
+{
+	
+	wnd.dispachEvents();
+	
+	
+	wnd.BeginDraw();
+
+	// desenho de texto de apresentação do jogo.
+	wnd.DrawText(apresentacao, 200.0, 0.0);
+
+	for (k=0;k<qtdShips;k++)
+	{
+		// atualizacao do movimento dos transport ships.
+		tropShips[k].UpdateShip();
+
+		
+		// desenho da imagem dos transport ships.
+		tropShips[k].DrawShip(wnd);
+
+	};
+
+	wnd.EndDraw();
+	
+};
+
+wnd.CloseWindow();
+
+
