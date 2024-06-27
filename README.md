@@ -18,3 +18,6 @@ e com operadores que não sejam apenas o operador igual).
 
 A linguagem orientada a objetos tem sintaxe muito semelhante a de linguagens C++,Java,C Sharp, porque
 é um estudo, sem a intenção de lançar uma linguagem competitiva no universo das linguagens de programação.
+
+second branch contains .exe files, and assets and libraries SFML.NET, to running the game Catch Meteors,
+if you to execute the project (./ProjectOrquidea2024.exe), this a option to run this game.
