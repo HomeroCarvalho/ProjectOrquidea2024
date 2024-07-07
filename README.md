@@ -21,3 +21,18 @@ A linguagem orientada a objetos tem sintaxe muito semelhante a de linguagens C++
 
 second branch contains .exe files, and assets and libraries SFML.NET, to running the game Catch Meteors,
 if you to execute the project (./ProjectOrquidea2024.exe), this a option to run this game.
+
+
+Jogos completos feito na lingugem orquidea:
+	SpaceInvadersSFML_ComImagens.txt (1.5 min para compilar)
+	CatchMeteors.txt  (2-3min para compilar)
+	
+	
+Segue nos proximos dias uma descrição completa de comandos de programação estruturada: for,if/else,while, casesOfUse,
+return, break, continue.
+
+Nos proximos dias também verificarei se a classe Aspecto ainda está funcional. Faz muito tempo desde que
+realizei testes de programação orientada a Aspectos, que depende desta classe.
+
+	
+	
