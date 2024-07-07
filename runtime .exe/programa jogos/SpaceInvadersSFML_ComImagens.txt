@@ -140,7 +140,7 @@ for (i=0;i<maxInvaders;i++)
 	coordsYInvader[i]= 20.0;
 };
 
-RectangleCollision rectColisoes= create(0.0,0.0,0,0);
+RectangleCollision rect= create(0.0,0.0,0,0);
 
 // loop de iteração do jogo.
 while (continua==0)
@@ -305,9 +305,9 @@ while (continua==0)
 			
 			// direção da onda dos invaders.
 			direction=1.0;
-		}
+		};
 		
-	}
+	};
 	
 	
 	// DISPARO DO PLAYER;
