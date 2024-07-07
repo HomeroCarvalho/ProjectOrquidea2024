@@ -24,8 +24,8 @@ if you to execute the project (./ProjectOrquidea2024.exe), this a option to run 
 
 
 Jogos completos feito na lingugem orquidea:
-	SpaceInvadersSFML_ComImagens.txt (1.5 min para compilar)
-	CatchMeteors.txt  (2-3min para compilar)
+	1- SpaceInvadersSFML_ComImagens.txt (1.5 min para compilar)
+	2- CatchMeteors.txt  (2-3min para compilar)
 	
 	
 Segue nos proximos dias uma descrição completa de comandos de programação estruturada: for,if/else,while, casesOfUse,
