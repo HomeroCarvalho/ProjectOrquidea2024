@@ -27,12 +27,28 @@ Jogos completos feito na lingugem orquidea:
 	1- SpaceInvadersSFML_ComImagens.txt (1.5 min para compilar)
 	2- CatchMeteors.txt  (2-3min para compilar)
 	
-	
+
+
+ 
 Segue nos proximos dias uma descrição completa de comandos de programação estruturada: for,if/else,while, casesOfUse,
 return, break, continue.
 
 Nos proximos dias também verificarei se a classe Aspecto ainda está funcional. Faz muito tempo desde que
 realizei testes de programação orientada a Aspectos, que depende desta classe.
 
+Olá, caras, bom dia.
+Fiquei de dar um retorno de melhor documentação do projeto.
+	A melhor descrição sobre como a linguagem funciona, já está num dos arquivos de documentação disponibilizado: 
+	[ProjectOrquidea2024\Documentos do Projeto\MANUTENCAO CLASSES\ManutencaoAditivaBibliotecasOrquidea.txt].
+
+
+	Outro fato é que há falhas no sistema de testes. Você muda a posição na sequência dos cenários, e os teste validam.
+Isto é porque há um problema no classificador de tokens, não sanada. Mas não é falha fatal: o efeito ocorre
+quando se execute de uma só vez, muitos pequenos programas. Numa situação real, isto não falha,é como se executasse
+num só processo no Sistema Operacional, vários programas.
+
+	Quanto ao tempo de compilação, já está se planejando um compilador de classes quando não há modificações
+do código de classe. Isto será feito com uma serialização de classes, métodos, propriedades, instruções e expressões.
 	
+
 	
