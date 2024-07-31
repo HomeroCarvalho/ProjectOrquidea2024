@@ -1,0 +1,12 @@
+Oi, caras, bom dia..
+O retorno prometido sobre alguns assuntos que ficaram pendentes, como a Programação Orientado a Aspecto,
+já houve testes, mas creio que foi removido do projeto,numa dessas migrações de versões do código.
+Mas, com o que se tem, algo a considerar: um teste feito foi de interceptação de objetos tipo [int],
+o que não é boa coisa, porque toda expressão, seja expressão objeto, ou expressão chamada de método (
+invocação de uma função) que contenha um objeto do tipo [int], haverá inserção da função de corte do Aspecto.
+Imagine se a inserção ocorra num loop for, que tem objeto [int] na sua formação? Então,
+tem que ser com parcimônia...
+Aspectos podem ser interessantes para tratamento de objeto nulo. Ou inserção de blocos try/catch.
+Mas os objetos tem que ser muito particular, não dá para ser objetos como [int], [char], [bool],
+porque haverá perda drástica de desempenho do código.
+E é isso. Encontro vocês em outras ocasiões.
